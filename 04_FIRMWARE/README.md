@@ -5,4 +5,4 @@ title: "Updating Firmware"
 description: "Updating Firmware of ROSRider control card"
 ---
 
-## Hardware Specifications
+Updating Firmware
