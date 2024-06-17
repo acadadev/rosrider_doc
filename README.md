@@ -10,3 +10,4 @@ ROSRider aims to lower the cost barrier for building ROS based robots. Using com
 
 [![ROSRider Control Card](/images/ROSRider4D_photo.png)](https://acada.dev/products)
 
+ROSRider has a bootloader system where the user can upgrade firmware over USB, without a specialized programmer.
