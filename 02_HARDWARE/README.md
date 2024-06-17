@@ -1,4 +1,11 @@
-# ROSRider Control Card Hardware Specifications
+---
+layout: default
+title_url: /02_HARDWARE/README.html
+title: "Hardware Specifications"
+description: "ROSRider Control Card Hardware Specifications"
+---
+
+## Hardware Specifications
 
 - 32-bit ARM Cortex MCU: TM4C123GH6PM
 - Two channel motor drivers up to 2.5Amps, with current feedback
