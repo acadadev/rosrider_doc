@@ -2,7 +2,7 @@
 layout: default
 title_url: /01_INTRO/README.html
 title: "Introduction"
-description: "Introcution to ROSRider control card"
+description: "Introduction to ROSRider control card"
 ---
 
 ## Introduction
