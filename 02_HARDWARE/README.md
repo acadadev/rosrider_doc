@@ -22,3 +22,5 @@ description: "ROSRider Control Card Hardware Specifications"
 - Hardware PolyFuse, and also software fuse implemented
 - Uses standard JST connectors, and commodity JST cables
 - XT30 power connector
+
+__Next Chapter:__ [Software Drivers](../03_SOFTWARE/README.md)

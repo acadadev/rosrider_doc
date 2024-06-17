@@ -6,3 +6,5 @@ description: "Updating Firmware of ROSRider control card"
 ---
 
 **Updating Firmware**
+
+__Next Chapter:__ [Troubleshooting](../10_DEBUG/README.md)
