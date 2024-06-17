@@ -5,4 +5,4 @@ title: "Troubleshooting"
 description: "Error codes and conditions on the ROSRider control card"
 ---
 
-Troubleshooting
+**Troubleshooting**
