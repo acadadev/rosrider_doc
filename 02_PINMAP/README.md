@@ -16,8 +16,7 @@ Below is a diagram of ports of ROSRider control card.
 | -------- | ------- |
 | ![Left Motor Connector](../images/dia_left_motor.png) | This is left motor connector |
 | ![Right Motor Connector](../images/dia_right_motor.png) | This is right motor connector |
-
-![Servo Connector](../images/dia_servo_port.png)
+| ![Servo Connector](../images/dia_servo_port.png) | Servo Connector |
 
 ![AUX Power Port](../images/dia_pwr_aux.png)
 
