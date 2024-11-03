@@ -1,6 +1,6 @@
 ---
 layout: default
-title_url: /02_HARDWARE/README.html
+title_url: /07_HARDWARE/README.html
 title: "Hardware Specifications"
 description: "ROSRider Control Card Hardware Specifications"
 ---
@@ -23,4 +23,4 @@ description: "ROSRider Control Card Hardware Specifications"
 - Uses standard JST connectors, and commodity JST cables
 - XT30 power connector
 
-__Next Chapter:__ [Software Drivers](../03_SOFTWARE/README.md)
+__Next Chapter:__ [Troubleshooting](../10_DEBUG/README.md)
