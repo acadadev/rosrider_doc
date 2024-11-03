@@ -7,4 +7,6 @@ description: "Pinmap and Connections"
 
 **Pinmap**
 
+[![ROSRider Pinmap](/images/ROSRider4D_pinmap.svg)](https://acada.dev/products)
+
 __Next Chapter:__ [Connecting ROSRider to Host Computer](../03_CONNECT/README.md)
