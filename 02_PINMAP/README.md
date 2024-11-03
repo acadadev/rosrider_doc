@@ -13,4 +13,9 @@ Below is a diagram of ports of ROSRider control card.
 
 **Pinmap**
 
+
+[![Left Motor Connector](../images/left_motor_dia.png)](https://acada.dev/products)
+
+[![Right Motor Connector](../images/left_motor_dia.png)](https://acada.dev/products)
+
 __Next Chapter:__ [Connecting ROSRider to Host Computer](../03_CONNECT/README.md)
