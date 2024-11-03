@@ -9,13 +9,33 @@ description: "Pinmap and Connections"
 
 Below is a diagram of ports of ROSRider control card.  
   
-[![ROSRider Pinmap](../images/ROSRider4D_ports.png)](https://acada.dev/products)
+[![ROSRider Pinmap](../images/ROSRider4D_portmap.png)](https://acada.dev/products)
 
 **Pinmap**
 
+![Left Motor Connector](../images/dia_left_motor.png)
 
-[![Left Motor Connector](../images/left_motor_dia.png)]
+![Right Motor Connector](../images/dia_right_motor.png)
 
-[![Right Motor Connector](../images/left_motor_dia.png)]
+![Servo Connector](../images/dia_servo_port.png)
+
+![AUX Power Port](../images/dia_pwr_aux.png)
+
+![Power Control Port](../images/dia_power_control_port.png)
+
+![Communications Port](../images/dia_comm_port.png)
+
+![QWIC A Port](../images/dia_qwic_a.png)
+
+![QWIC B Port](../images/dia_qwic_b.png)
+
+![SPI Port](../images/dia_spi_port.png)
+
+![Serial Port](../images/dia_serial_port.png)
+
+![Power Connector](../images/dia_power_port.png)
+
+![Battery](../images/dia_dia_battery.png)
+
 
 __Next Chapter:__ [Connecting ROSRider to Host Computer](../03_CONNECT/README.md)
