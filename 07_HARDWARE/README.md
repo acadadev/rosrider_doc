@@ -23,4 +23,4 @@ description: "ROSRider Control Card Hardware Specifications"
 - Uses standard JST connectors, and commodity JST cables
 - XT30 power connector
 
-__Next Chapter:__ [Troubleshooting](../10_DEBUG/README.md)
+__Next Chapter:__ [Status Registers](../09_STATUS/README.md)

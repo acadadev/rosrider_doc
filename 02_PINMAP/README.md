@@ -7,5 +7,4 @@ description: "PINMAP and Connections"
 
 **PINMAP**
 
-
 __Next Chapter:__ [Connecting ROSRider to Host Computer](../03_CONNECT/README.md)
