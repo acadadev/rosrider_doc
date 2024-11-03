@@ -13,7 +13,10 @@ Below is a diagram of ports of ROSRider control card.
 
 **Pinmap**
 
-![Left Motor Connector](../images/dia_left_motor.png)
+| -------- | ------- |
+| ![Left Motor Connector](../images/dia_left_motor.png)  | This is left motor connector |
+
+
 
 ![Right Motor Connector](../images/dia_right_motor.png)
 
