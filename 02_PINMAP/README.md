@@ -14,7 +14,7 @@ Below is a diagram of ports of ROSRider control card.
 **Pinmap**
 
 | -------- | ------- |
-| ![Left Motor Connector](../images/d_left_motor.png) | This is left motor connector |
+| ![Left Motor Connector](../images/d_left_motor.png) | - MT1_M2  - MT1_M1  - 3V3  - Left A  - Left B  - Ground   |
 | ![Right Motor Connector](../images/d_right_motor.png) | This is right motor connector |
 | ![Servo Connector](../images/d_servo_port.png) | Servo connector |
 | ![AUX Power Port](../images/d_aux_power.png) | AUX Power connector |
