@@ -24,7 +24,7 @@ Below is a diagram of ports of ROSRider control card.
 | ![QWIC B Port](../images/dia_qwic_b.png) | QWIC B Port |
 | ![SPI Port](../images/dia_spi_port.png) | SPI Port |
 | ![Serial Port](../images/dia_serial_port.png) | Serial Port |
-| ![Power Connector](../images/dia_power_port.png) | Power Connector |
+| ![Power Connector](../images/dia_xt30.png) | Power Connector |
 | ![Battery](../images/dia_dia_battery.png) | Battery |
 
 
