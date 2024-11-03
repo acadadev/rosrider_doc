@@ -18,7 +18,7 @@ Below is a diagram of ports of ROSRider control card.
 | ![Right Motor Connector](../images/d_right_motor.png) | This is right motor connector |
 | ![Servo Connector](../images/d_servo_port.png) | Servo connector |
 | ![AUX Power Port](../images/d_aux_power.png) | AUX Power connector |
-| ![Power Control Port](../images/d_power_control_port.png) | Power control port |
+| ![Power Control Port](../images/d_power_control.png) | Power control port |
 | ![Communications Port](../images/d_comm_port.png) | Communications port |
 | ![QWIC A Port](../images/d_qwic_a.png) | QWIC A Port |
 | ![QWIC B Port](../images/d_qwic_b.png) | QWIC B Port |
