@@ -16,7 +16,10 @@ Below is a diagram of ports of ROSRider control card:
 
 <style type="text/css">
   table#portmap tr td {
-    border: none;
+    border: none !important;
+  }
+  table.pinmap tr td {
+  	border: 1px solid red !important;
   }
 </style>
 
@@ -25,7 +28,7 @@ Below is a diagram of ports of ROSRider control card:
 <tr>
 	<td><img src="../images/pinmap/con_left_motor.png" alt="left motor connector"></td>
 	<td>
-	    <table>
+	    <table class="pinmap">
 	    	<thead>
 	    		<th>Pin No</th>
 	    		<th>Description</th>
