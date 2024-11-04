@@ -18,7 +18,7 @@ Below is a diagram of ports of ROSRider control card:
 ## Left Motor Connector
 
 <div style="display: flex; flex-direction: row;">
-  <div style="flex: 1;">
+  <div style="flex: 1; padding-left:20px;">
     <table>
     	<thead>
     		<td>Pin No</td>
