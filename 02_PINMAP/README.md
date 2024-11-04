@@ -21,6 +21,7 @@ Below is a diagram of ports of ROSRider control card:
 </style>
 
 <table id="portmap">
+<tbody>
 <tr>
 	<td><img src="../images/pinmap/con_left_motor.png" alt="left motor connector"></td>
 	<td>
@@ -358,6 +359,7 @@ Below is a diagram of ports of ROSRider control card:
 	<td>Use standard CR1225 Battery</td>
 </tr>
 <tr></tr>
+</tbody>
 </table>
 
 ## Left Motor Connector
