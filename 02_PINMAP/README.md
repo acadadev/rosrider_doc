@@ -14,7 +14,7 @@ Below is a diagram of ports of ROSRider control card:
   
 [![ROSRider Pinmap](../images/ROSRider4D_portmap.png)](https://acada.dev/products)
 
-<table>
+<table class="table">
 <tr>
 	<td><img src="../images/pinmap/con_left_motor.png" alt="left motor connector"></td>
 	<td>
@@ -140,292 +140,219 @@ Below is a diagram of ports of ROSRider control card:
 	</td>
 </tr>
 <tr>
-	<td></td>
-	<td></td>
+	<td><img src="../images/pinmap/con_power_control.png" alt="power control port"></td>
+	<td>
+	    <table>
+	    	<thead>
+	    		<td>Pin No</td>
+	    		<td>Description</td>
+	    	</thead>
+	    	<tr>
+	    		<td>1</td>
+	    		<td>Ground</td>
+	    	</tr> 
+	    	<tr>
+	    		<td>2</td>
+	    		<td>Bootloader Button</td>
+	    	</tr>   
+	    	<tr>
+	    		<td>3</td>
+	    		<td>Power On</td>
+	    	</tr>  
+	    	<tr>
+	    		<td>4</td>
+	    		<td>Internal Reset</td>
+	    	</tr>     	   	 	 	   	    	    	    	   	 	
+	    </table>		
+	</td>
 </tr>
 <tr>
-	<td></td>
-	<td></td>
+	<td><img src="../images/pinmap/con_comm.png" alt="communications port"></td>
+	<td>
+	    <table>
+	    	<thead>
+	    		<td>Pin No</td>
+	    		<td>Description</td>
+	    	</thead>
+	    	<tr>
+	    		<td>1</td>
+	    		<td>Ground</td>
+	    	</tr> 
+	    	<tr>
+	    		<td>2</td>
+	    		<td>Reset</td>
+	    	</tr>  
+	    	<tr>
+	    		<td>3</td>
+	    		<td>SCL0</td>
+	    	</tr> 
+	    	<tr>
+	    		<td>4</td>
+	    		<td>SDA0</td>
+	    	</tr>  
+	    	<tr>
+	    		<td>5</td>
+	    		<td>TX0</td>
+	    	</tr> 
+	    	<tr>
+	    		<td>6</td>
+	    		<td>RX0</td>
+	    	</tr>      	    	  	 	   	    	    	    	   	 	
+	    </table>		
+	</td>
 </tr>
 <tr>
-	<td></td>
-	<td></td>
+	<td><img src="../images/pinmap/con_qwic_a.png" alt="qwic port a"></td>
+	<td>
+		<table>
+	    	<thead>
+	    		<td>Pin No</td>
+	    		<td>Description</td>
+	    	</thead>
+	    	<tr>
+	    		<td>1</td>
+	    		<td>Ground</td>
+	    	</tr> 
+	    	<tr>
+	    		<td>2</td>
+	    		<td>VCC</td>
+	    	</tr>   
+	    	<tr>
+	    		<td>3</td>
+	    		<td>SDA0</td>
+	    	</tr>    
+	    	<tr>
+	    		<td>4</td>
+	    		<td>SCL0</td>
+	    	</tr>      	  	 	 	   	    	    	    	   	 	
+	    </table>
+	</td>
 </tr>
 <tr>
-	<td></td>
-	<td></td>
+	<td><img src="../images/pinmap/con_qwic_b.png" alt="qwic port b"></td>
+	<td>
+	    <table>
+	    	<thead>
+	    		<td>Pin No</td>
+	    		<td>Description</td>
+	    	</thead>
+	    	<tr>
+	    		<td>1</td>
+	    		<td>Ground</td>
+	    	</tr> 
+	    	<tr>
+	    		<td>2</td>
+	    		<td>VCC</td>
+	    	</tr>   
+	    	<tr>
+	    		<td>3</td>
+	    		<td>SDA0</td>
+	    	</tr>    
+	    	<tr>
+	    		<td>4</td>
+	    		<td>SCL0</td>
+	    	</tr>   	 	   	    	    	    	   	 	
+	    </table>		
+	</td>
 </tr>
 <tr>
-	<td></td>
-	<td></td>
+	<td><img src="../images/pinmap/con_spi.png" alt="spi port"></td>
+	<td>
+	    <table>
+	    	<thead>
+	    		<td>Pin No</td>
+	    		<td>Description</td>
+	    	</thead>
+	    	<tr>
+	    		<td>1</td>
+	    		<td>Ground</td>
+	    	</tr> 
+	    	<tr>
+	    		<td>2</td>
+	    		<td>SSI0RX</td>
+	    	</tr>   
+	    	<tr>
+	    		<td>3</td>
+	    		<td>SSI0FSS</td>
+	    	</tr> 
+	    	<tr>
+	    		<td>4</td>
+	    		<td>SSI0TX</td>
+	    	</tr>   
+	    	<tr>
+	    		<td>5</td>
+	    		<td>SSI0CLK</td>
+	    	</tr> 
+	    	<tr>
+	    		<td>6</td>
+	    		<td>3.3V</td>
+	    	</tr>       	    	 	 	   	    	    	    	   	 	
+	    </table>		
+	</td>
 </tr>
 <tr>
-	<td></td>
-	<td></td>
+	<td><img src="../images/pinmap/con_serial.png" alt="serial port"></td>
+	<td>
+	    <table>
+	    	<thead>
+	    		<td>Pin No</td>
+	    		<td>Description</td>
+	    	</thead>
+	    	<tr>
+	    		<td>1</td>
+	    		<td>Ground</td>
+	    	</tr> 
+	    	<tr>
+	    		<td>2</td>
+	    		<td>RX0</td>
+	    	</tr>   
+	    	<tr>
+	    		<td>3</td>
+	    		<td>TX0</td>
+	    	</tr> 
+	     	<tr>
+	    		<td>4</td>
+	    		<td>Ground</td>
+	    	</tr>    	    	 	 	   	    	    	    	   	 	
+	    </table>		
+	</td>
 </tr>
 <tr>
-	<td></td>
-	<td></td>
+	<td><img src="../images/pinmap/con_xt30.png" alt="power connector"></td>
+	<td>
+	    <table>
+	    	<thead>
+	    		<td>Pin No</td>
+	    		<td>Description</td>
+	    	</thead>
+	    	<tr>
+	    		<td>1</td>
+	    		<td>Power Input</td>
+	    	</tr> 
+	    	<tr>
+	    		<td>2</td>
+	    		<td>Ground</td>
+	    	</tr>    	 	   	    	    	    	   	 	
+	    </table>		
+	</td>
 </tr>
-
+<tr>
+	<td><img src="../images/pinmap/con_battery.png" alt="cr1225 battery"></td>
+	<td>Use standard CR1225 Battery</td>
+</tr>
 </table>
 
 ## Left Motor Connector
 ## Right Motor Connector
 ## Servo Connector
 ## AUX Power Port
-
-<div style="display: flex; flex-direction: row;">
-  <div style="flex: 1;">
-  	
-  </div>	
-  <div style="flex: 2; padding-left:20px;">
-
-  </div>
-</div>
-
 ## Power Control Port
-
-<div style="display: flex; flex-direction: row;">
-  <div style="flex: 1;">
-  	<img src="../images/pinmap/con_power_control.png" alt="">
-  </div>	
-  <div style="flex: 2; padding-left:20px;">
-    <table>
-    	<thead>
-    		<td>Pin No</td>
-    		<td>Description</td>
-    	</thead>
-    	<tr>
-    		<td>1</td>
-    		<td>Ground</td>
-    	</tr> 
-    	<tr>
-    		<td>2</td>
-    		<td>Bootloader Button</td>
-    	</tr>   
-    	<tr>
-    		<td>3</td>
-    		<td>Power On</td>
-    	</tr>  
-    	<tr>
-    		<td>4</td>
-    		<td>Internal Reset</td>
-    	</tr>     	   	 	 	   	    	    	    	   	 	
-    </table>
-  </div>
-</div>
-
 ## Communications Port
-
-<div style="display: flex; flex-direction: row;">
-  <div style="flex: 1;">
-  	<img src="../images/pinmap/con_comm.png" alt="">
-  </div>	
-  <div style="flex: 2; padding-left:20px;">
-    <table>
-    	<thead>
-    		<td>Pin No</td>
-    		<td>Description</td>
-    	</thead>
-    	<tr>
-    		<td>1</td>
-    		<td>Ground</td>
-    	</tr> 
-    	<tr>
-    		<td>2</td>
-    		<td>Reset</td>
-    	</tr>  
-    	<tr>
-    		<td>3</td>
-    		<td>SCL0</td>
-    	</tr> 
-    	<tr>
-    		<td>4</td>
-    		<td>SDA0</td>
-    	</tr>  
-    	<tr>
-    		<td>5</td>
-    		<td>TX0</td>
-    	</tr> 
-    	<tr>
-    		<td>6</td>
-    		<td>RX0</td>
-    	</tr>      	    	  	 	   	    	    	    	   	 	
-    </table>
-  </div>
-</div>
-
 ## QWIC A Port
-
-<div style="display: flex; flex-direction: row;">
-  <div style="flex: 1;">
-  	<img src="../images/pinmap/con_qwic_a.png" alt="">
-  </div>	
-  <div style="flex: 2; padding-left:20px;">
-    <table>
-    	<thead>
-    		<td>Pin No</td>
-    		<td>Description</td>
-    	</thead>
-    	<tr>
-    		<td>1</td>
-    		<td>Ground</td>
-    	</tr> 
-    	<tr>
-    		<td>2</td>
-    		<td>VCC</td>
-    	</tr>   
-    	<tr>
-    		<td>3</td>
-    		<td>SDA0</td>
-    	</tr>    
-    	<tr>
-    		<td>4</td>
-    		<td>SCL0</td>
-    	</tr>      	  	 	 	   	    	    	    	   	 	
-    </table>
-  </div>
-</div>
-
 ## QWIC B Port
-
-<div style="display: flex; flex-direction: row;">
-  <div style="flex: 1;">
-  	<img src="../images/pinmap/con_qwic_b.png" alt="">
-  </div>	
-  <div style="flex: 2; padding-left:20px;">
-    <table>
-    	<thead>
-    		<td>Pin No</td>
-    		<td>Description</td>
-    	</thead>
-    	<tr>
-    		<td>1</td>
-    		<td>Ground</td>
-    	</tr> 
-    	<tr>
-    		<td>2</td>
-    		<td>VCC</td>
-    	</tr>   
-    	<tr>
-    		<td>3</td>
-    		<td>SDA0</td>
-    	</tr>    
-    	<tr>
-    		<td>4</td>
-    		<td>SCL0</td>
-    	</tr>   	 	   	    	    	    	   	 	
-    </table>
-  </div>
-</div>
-
 ## SPI Port
-
-<div style="display: flex; flex-direction: row;">
-  <div style="flex: 1;">
-  	<img src="../images/pinmap/con_spi.png" alt="">
-  </div>	
-  <div style="flex: 2; padding-left:20px;">
-    <table>
-    	<thead>
-    		<td>Pin No</td>
-    		<td>Description</td>
-    	</thead>
-    	<tr>
-    		<td>1</td>
-    		<td>Ground</td>
-    	</tr> 
-    	<tr>
-    		<td>2</td>
-    		<td>SSI0RX</td>
-    	</tr>   
-    	<tr>
-    		<td>3</td>
-    		<td>SSI0FSS</td>
-    	</tr> 
-    	<tr>
-    		<td>4</td>
-    		<td>SSI0TX</td>
-    	</tr>   
-    	<tr>
-    		<td>5</td>
-    		<td>SSI0CLK</td>
-    	</tr> 
-    	<tr>
-    		<td>6</td>
-    		<td>3.3V</td>
-    	</tr>       	    	 	 	   	    	    	    	   	 	
-    </table>
-  </div>
-</div>
-
 ## Serial Port
-
-<div style="display: flex; flex-direction: row;">
-  <div style="flex: 1;">
-  	<img src="../images/pinmap/con_serial.png" alt="">
-  </div>	
-  <div style="flex: 2; padding-left:20px;">
-    <table>
-    	<thead>
-    		<td>Pin No</td>
-    		<td>Description</td>
-    	</thead>
-    	<tr>
-    		<td>1</td>
-    		<td>Ground</td>
-    	</tr> 
-    	<tr>
-    		<td>2</td>
-    		<td>RX0</td>
-    	</tr>   
-    	<tr>
-    		<td>3</td>
-    		<td>TX0</td>
-    	</tr> 
-     	<tr>
-    		<td>4</td>
-    		<td>Ground</td>
-    	</tr>    	    	 	 	   	    	    	    	   	 	
-    </table>
-  </div>
-</div>
-
 ## Power Connector
-
-<div style="display: flex; flex-direction: row;">
-  <div style="flex: 1;">
-  	<img src="../images/pinmap/con_xt30.png" alt="">
-  </div>	
-  <div style="flex: 2; padding-left:20px;">
-    <table>
-    	<thead>
-    		<td>Pin No</td>
-    		<td>Description</td>
-    	</thead>
-    	<tr>
-    		<td>1</td>
-    		<td>Power Input</td>
-    	</tr> 
-    	<tr>
-    		<td>2</td>
-    		<td>Ground</td>
-    	</tr>    	 	   	    	    	    	   	 	
-    </table>
-  </div>
-</div>
-
 ## Battery
-
-<div style="display: flex; flex-direction: row;">
-  <div style="flex: 1;">
-  	<img src="../images/pinmap/con_battery.png" alt="">
-  </div>	
-  <div style="flex: 2; padding-left:20px;">
-  	Use standard CR1225 Battery
-  </div>
-</div>
-
 
 __Next Chapter:__ [Connecting ROSRider to Host Computer](../03_CONNECT/README.md)
