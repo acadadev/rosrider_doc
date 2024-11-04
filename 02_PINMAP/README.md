@@ -30,7 +30,7 @@ Below is a diagram of ports of ROSRider control card:
 <tbody>
 <tr style="border:none;">
 	<td colspan="2" style="border:none;">
-		## Left Motor Connector
+		<b>Left Motor Connector</b>
 	</td>
 </tr>
 <tr></tr>
