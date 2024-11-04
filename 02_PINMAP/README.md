@@ -19,7 +19,7 @@ Below is a diagram of ports of ROSRider control card:
     border: 1px solid red;
   }
 </style>
-<table id="portmap">
+<table id="portmap" class="table-no-striping">
 <tr>
 	<td><img src="../images/pinmap/con_left_motor.png" alt="left motor connector"></td>
 	<td>
