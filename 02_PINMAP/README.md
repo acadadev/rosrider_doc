@@ -19,12 +19,22 @@ Below is a diagram of ports of ROSRider control card:
 
 <div style="display: flex; flex-direction: row;">
   <div style="flex: 1;">
-    <img src="../images/pinmap/con_left_motor.png" alt="left motor connector">
+    <table>
+    	<thead>
+    		<td>Pin No</td>
+    		<td>Description</td>
+    	</thead>
+    	<tr>
+    		<td>1</td>
+    		<td>Motor Negative MT1_M2</td>
+    	</tr>
+    </table>
   </div>
   <div style="flex: 2;">
+  	<img src="../images/pinmap/con_left_motor.png" alt="left motor connector">
 | -------- | ------- | 
-| Pin No | Description | 
-| 1 | Motor Negative MT1_M2 | 
+| Pin No |  | 
+| 1 |  | 
 | 2 | Motor Positive MT1_M1 | 
 | 3 | 3V3 | 
 | 4 | Encoder Phase B | 
