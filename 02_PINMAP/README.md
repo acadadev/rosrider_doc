@@ -19,7 +19,7 @@ Below is a diagram of ports of ROSRider control card:
 #### Left Motor Connector
 
 | -------- | ------- |
-| 0        | ![Left Motor Connector](../images/pinmap/con_left_motor.png) |
+| ![Left Motor Connector](../images/pinmap/con_left_motor.png) |
 | A        | Motor Negative |
 | B        | Motor Positive |
 | C        | 3V3 |
