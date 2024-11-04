@@ -123,14 +123,14 @@ Below is a diagram of ports of ROSRider control card:
     		<td>4</td>
     		<td>AUX Power</td>
     	</tr>
-    	<td>
+    	<tr>
     		<td>5</td>
     		<td>Servo1 PWM</td>
-    	</td>   
-    	<td>
+    	</tr>   
+    	<tr>
     		<td>6</td>
     		<td>Servo2 PWM</td>
-    	</td>      	 	   	    	    	    	   	 	
+    	</tr>      	 	   	    	    	    	   	 	
     </table>
   </div>
 </div>
