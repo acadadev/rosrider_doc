@@ -19,7 +19,7 @@ Below is a diagram of ports of ROSRider control card:
     border: 1px solid red;
   }
 </style>
-<table id="portmap" class="table-no-striping">
+<table>
 <tr>
 	<td><img src="../images/pinmap/con_left_motor.png" alt="left motor connector"></td>
 	<td>
@@ -91,6 +91,7 @@ Below is a diagram of ports of ROSRider control card:
 	    </table>		
 	</td>
 </tr>
+<tr></tr>
 <tr>
 	<td><img src="../images/pinmap/con_servo.png" alt="servo connector"></td>
 	<td>
@@ -126,6 +127,7 @@ Below is a diagram of ports of ROSRider control card:
 	    </table>		
 	</td>
 </tr>
+<tr></tr>
 <tr>
 	<td><img src="../images/pinmap/con_power_aux.png" alt="power aux connector"></td>
 	<td>
@@ -145,6 +147,7 @@ Below is a diagram of ports of ROSRider control card:
 	    </table>		
 	</td>
 </tr>
+<tr></tr>
 <tr>
 	<td><img src="../images/pinmap/con_power_control.png" alt="power control port"></td>
 	<td>
@@ -172,6 +175,7 @@ Below is a diagram of ports of ROSRider control card:
 	    </table>		
 	</td>
 </tr>
+<tr></tr>
 <tr>
 	<td><img src="../images/pinmap/con_comm.png" alt="communications port"></td>
 	<td>
@@ -207,6 +211,7 @@ Below is a diagram of ports of ROSRider control card:
 	    </table>		
 	</td>
 </tr>
+<tr></tr>
 <tr>
 	<td><img src="../images/pinmap/con_qwic_a.png" alt="qwic port a"></td>
 	<td>
@@ -234,6 +239,7 @@ Below is a diagram of ports of ROSRider control card:
 	    </table>
 	</td>
 </tr>
+<tr></tr>
 <tr>
 	<td><img src="../images/pinmap/con_qwic_b.png" alt="qwic port b"></td>
 	<td>
@@ -261,6 +267,7 @@ Below is a diagram of ports of ROSRider control card:
 	    </table>		
 	</td>
 </tr>
+<tr></tr>
 <tr>
 	<td><img src="../images/pinmap/con_spi.png" alt="spi port"></td>
 	<td>
@@ -296,6 +303,7 @@ Below is a diagram of ports of ROSRider control card:
 	    </table>		
 	</td>
 </tr>
+<tr></tr>
 <tr>
 	<td><img src="../images/pinmap/con_serial.png" alt="serial port"></td>
 	<td>
@@ -323,6 +331,7 @@ Below is a diagram of ports of ROSRider control card:
 	    </table>		
 	</td>
 </tr>
+<tr></tr>
 <tr>
 	<td><img src="../images/pinmap/con_xt30.png" alt="power connector"></td>
 	<td>
@@ -342,10 +351,12 @@ Below is a diagram of ports of ROSRider control card:
 	    </table>		
 	</td>
 </tr>
+<tr></tr>
 <tr>
 	<td><img src="../images/pinmap/con_battery.png" alt="cr1225 battery"></td>
 	<td>Use standard CR1225 Battery</td>
 </tr>
+<tr></tr>
 </table>
 
 ## Left Motor Connector
