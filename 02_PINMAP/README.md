@@ -97,7 +97,43 @@ Below is a diagram of ports of ROSRider control card:
 
 ## Servo Connector
 
-![Servo Connector](../images/pinmap/con_servo.png)
+<div style="display: flex; flex-direction: row;">
+  <div style="flex: 1;">
+  	<img src="../images/pinmap/con_servo.png" alt="">
+  </div>	
+  <div style="flex: 2;">
+    <table>
+    	<thead>
+    		<td>Pin No</td>
+    		<td>Description</td>
+    	</thead>
+    	<tr>
+    		<td>1</td>
+    		<td>Ground</td>
+    	</tr> 
+    	<tr>
+    		<td>2</td>
+    		<td>Ground</td>
+    	</tr>   
+    	<tr>
+    		<td>3</td>
+    		<td>AUX Power</td>
+    	</tr> 
+    	<tr>
+    		<td>4</td>
+    		<td>AUX Power</td>
+    	</tr>
+    	<td>
+    		<td>5</td>
+    		<td>Servo1 PWM</td>
+    	</td>   
+    	<td>
+    		<td>6</td>
+    		<td>Servo2 PWM</td>
+    	</td>      	 	   	    	    	    	   	 	
+    </table>
+  </div>
+</div>
 
 ## AUX Power Port
 
