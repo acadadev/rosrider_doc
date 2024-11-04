@@ -18,7 +18,19 @@ Below is a diagram of ports of ROSRider control card:
 ## Left Motor Connector
 
 <div>
-<div align="left">![Left Motor Connector](../images/pinmap/con_left_motor.png)</div>
+<div align="left">
+![Left Motor Connector](../images/pinmap/con_left_motor.png)
+</div>
+<div align="right">
+A
+</div>
+</div>
+
+
+<div>
+<div align="left">
+![Left Motor Connector](../images/pinmap/con_left_motor.png)
+</div>
 <div align="right">
 | -------- | ------- |
 | Pin No   | Description |
@@ -34,7 +46,9 @@ Below is a diagram of ports of ROSRider control card:
 ## Right Motor Connector
 
 <div>
-<div align="left">![Right Motor Connector](../images/pinmap/con_right_motor.png)</div>
+<div align="left">
+	![Right Motor Connector](../images/pinmap/con_right_motor.png)
+</div>
 <div align="right">
 | -------- | ------- |
 | Pin No   | Description |
