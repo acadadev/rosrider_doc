@@ -5,13 +5,13 @@ title: "Pinmap"
 description: "Pinmap and Connections"
 ---
 
-**Connectors**
+**Board Port Diagram**
 
 Below is a diagram of ports of ROSRider control card.  
   
 [![ROSRider Pinmap](../images/ROSRider4D_portmap.png)](https://acada.dev/products)
 
-**Pinmap**
+**List of Ports**
 
 | -------- | ------- |
 | ![Left Motor Connector](../images/con/con_left_motor.png) | Left motor connector |
