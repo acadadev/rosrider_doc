@@ -309,12 +309,28 @@ Below is a diagram of ports of ROSRider control card:
     	</thead>
     	<tr>
     		<td>1</td>
-    		<td></td>
+    		<td>Ground</td>
     	</tr> 
     	<tr>
     		<td>2</td>
-    		<td></td>
-    	</tr>    	 	   	    	    	    	   	 	
+    		<td>SSI0RX</td>
+    	</tr>   
+    	<tr>
+    		<td>3</td>
+    		<td>SSI0FSS</td>
+    	</tr> 
+    	<tr>
+    		<td>4</td>
+    		<td>SSI0TX</td>
+    	</tr>   
+    	<tr>
+    		<td>5</td>
+    		<td>SSI0CLK</td>
+    	</tr> 
+    	<tr>
+    		<td>6</td>
+    		<td>3.3V</td>
+    	</tr>       	    	 	 	   	    	    	    	   	 	
     </table>
   </div>
 </div>
