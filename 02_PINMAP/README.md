@@ -20,8 +20,8 @@ Below is a diagram of ports of ROSRider control card:
 ![Left Motor Connector](../images/pinmap/con_left_motor.png)
 
 <div>
-<div align="left">B</div>
-<div align="right">A</div>
+<div align="left">BB</div>
+<div align="right">AA</div>
 </div>
 
 <div>
