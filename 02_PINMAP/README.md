@@ -30,30 +30,32 @@ Below is a diagram of ports of ROSRider control card:
 	    		<th>Pin No</th>
 	    		<th>Description</th>
 	    	</thead>
-	    	<tr>
-	    		<td>1</td>
-	    		<td>Motor Negative MT1_M2</td>
-	    	</tr>
-	    	<tr>
-	    		<td>2</td>
-	    		<td>Motor Positive MT1_M1</td>
-	    	</tr>   
-	    	<tr>
-	    		<td>3</td>
-	    		<td>3.3V</td>
-	    	</tr>   
-	    	<tr>
-	    		<td>4</td>
-	    		<td>Encoder Phase B</td>
-	    	</tr>  
-	    	<tr>
-	    		<td>5</td>
-	    		<td>Encoder Phase A</td>
-	    	</tr>  
-	    	<tr>
-	    		<td>6</td>
-	    		<td>Ground</td>
-	    	</tr>      	    	    	   	 	
+	    	<tbody>
+		    	<tr>
+		    		<td>1</td>
+		    		<td>Motor Negative MT1_M2</td>
+		    	</tr>
+		    	<tr>
+		    		<td>2</td>
+		    		<td>Motor Positive MT1_M1</td>
+		    	</tr>   
+		    	<tr>
+		    		<td>3</td>
+		    		<td>3.3V</td>
+		    	</tr>   
+		    	<tr>
+		    		<td>4</td>
+		    		<td>Encoder Phase B</td>
+		    	</tr>  
+		    	<tr>
+		    		<td>5</td>
+		    		<td>Encoder Phase A</td>
+		    	</tr>  
+		    	<tr>
+		    		<td>6</td>
+		    		<td>Ground</td>
+		    	</tr>
+	    	</tbody>     	    	    	   	 	
 	    </table>
 	</td>
 </tr>
@@ -66,30 +68,32 @@ Below is a diagram of ports of ROSRider control card:
 	    		<th>Pin No</th>
 	    		<th>Description</th>
 	    	</thead>
-	    	<tr>
-	    		<td>6</td>
-	    		<td>Ground</td>
-	    	</tr>
-	    	<tr>
-	    		<td>5</td>
-	    		<td>Encoder Phase A</td>
-	    	</tr>   
-	    	<tr>
-	    		<td>4</td>
-	    		<td>Encoder Phase B</td>
-	    	</tr>   
-	    	<tr>
-	    		<td>3</td>
-	    		<td>3.3V</td>
-	    	</tr>  
-	    	<tr>
-	    		<td>2</td>
-	    		<td>Motor Positive MT1_M1</td>
-	    	</tr>  
-	    	<tr>
-	    		<td>1</td>
-	    		<td>Motor Negative MT1_M2</td>
-	    	</tr>      	    	    	   	 	
+	    	<tbody>
+		    	<tr>
+		    		<td>6</td>
+		    		<td>Ground</td>
+		    	</tr>
+		    	<tr>
+		    		<td>5</td>
+		    		<td>Encoder Phase A</td>
+		    	</tr>   
+		    	<tr>
+		    		<td>4</td>
+		    		<td>Encoder Phase B</td>
+		    	</tr>   
+		    	<tr>
+		    		<td>3</td>
+		    		<td>3.3V</td>
+		    	</tr>  
+		    	<tr>
+		    		<td>2</td>
+		    		<td>Motor Positive MT1_M1</td>
+		    	</tr>  
+		    	<tr>
+		    		<td>1</td>
+		    		<td>Motor Negative MT1_M2</td>
+		    	</tr>
+	    	</tbody>  	    	    	   	 	
 	    </table>		
 	</td>
 </tr>
@@ -102,30 +106,32 @@ Below is a diagram of ports of ROSRider control card:
 	    		<th>Pin No</th>
 	    		<th>Description</th>
 	    	</thead>
-	    	<tr>
-	    		<td>1</td>
-	    		<td>Ground</td>
-	    	</tr> 
-	    	<tr>
-	    		<td>2</td>
-	    		<td>Ground</td>
-	    	</tr>   
-	    	<tr>
-	    		<td>3</td>
-	    		<td>AUX Power</td>
-	    	</tr> 
-	    	<tr>
-	    		<td>4</td>
-	    		<td>AUX Power</td>
-	    	</tr>
-	    	<tr>
-	    		<td>5</td>
-	    		<td>Servo1 PWM</td>
-	    	</tr>   
-	    	<tr>
-	    		<td>6</td>
-	    		<td>Servo2 PWM</td>
-	    	</tr>      	 	   	    	    	    	   	 	
+	    	<tbody>
+		    	<tr>
+		    		<td>1</td>
+		    		<td>Ground</td>
+		    	</tr> 
+		    	<tr>
+		    		<td>2</td>
+		    		<td>Ground</td>
+		    	</tr>   
+		    	<tr>
+		    		<td>3</td>
+		    		<td>AUX Power</td>
+		    	</tr> 
+		    	<tr>
+		    		<td>4</td>
+		    		<td>AUX Power</td>
+		    	</tr>
+		    	<tr>
+		    		<td>5</td>
+		    		<td>Servo1 PWM</td>
+		    	</tr>   
+		    	<tr>
+		    		<td>6</td>
+		    		<td>Servo2 PWM</td>
+		    	</tr>
+	    	</tbody>   	 	   	    	    	    	   	 	
 	    </table>		
 	</td>
 </tr>
@@ -138,14 +144,16 @@ Below is a diagram of ports of ROSRider control card:
 	    		<th>Pin No</th>
 	    		<th>Description</th>
 	    	</thead>
-	    	<tr>
-	    		<td>1</td>
-	    		<td>PWR AUX (5V)</td>
-	    	</tr> 
-	    	<tr>
-	    		<td>2</td>
-	    		<td>Ground</td>
-	    	</tr>    	 	   	    	    	    	   	 	
+	    	<tbody>
+		    	<tr>
+		    		<td>1</td>
+		    		<td>PWR AUX (5V)</td>
+		    	</tr> 
+		    	<tr>
+		    		<td>2</td>
+		    		<td>Ground</td>
+		    	</tr>
+	    	</tbody> 	 	   	    	    	    	   	 	
 	    </table>		
 	</td>
 </tr>
@@ -158,22 +166,24 @@ Below is a diagram of ports of ROSRider control card:
 	    		<th>Pin No</th>
 	    		<th>Description</th>
 	    	</thead>
-	    	<tr>
-	    		<td>1</td>
-	    		<td>Ground</td>
-	    	</tr> 
-	    	<tr>
-	    		<td>2</td>
-	    		<td>Bootloader Button</td>
-	    	</tr>   
-	    	<tr>
-	    		<td>3</td>
-	    		<td>Power On</td>
-	    	</tr>  
-	    	<tr>
-	    		<td>4</td>
-	    		<td>Internal Reset</td>
-	    	</tr>     	   	 	 	   	    	    	    	   	 	
+	    	<tbody>
+		    	<tr>
+		    		<td>1</td>
+		    		<td>Ground</td>
+		    	</tr> 
+		    	<tr>
+		    		<td>2</td>
+		    		<td>Bootloader Button</td>
+		    	</tr>   
+		    	<tr>
+		    		<td>3</td>
+		    		<td>Power On</td>
+		    	</tr>  
+		    	<tr>
+		    		<td>4</td>
+		    		<td>Internal Reset</td>
+		    	</tr>
+	    	</tbody>   	   	 	 	   	    	    	    	   	 	
 	    </table>		
 	</td>
 </tr>
@@ -186,30 +196,32 @@ Below is a diagram of ports of ROSRider control card:
 	    		<th>Pin No</th>
 	    		<th>Description</th>
 	    	</thead>
-	    	<tr>
-	    		<td>1</td>
-	    		<td>Ground</td>
-	    	</tr> 
-	    	<tr>
-	    		<td>2</td>
-	    		<td>Reset</td>
-	    	</tr>  
-	    	<tr>
-	    		<td>3</td>
-	    		<td>SCL0</td>
-	    	</tr> 
-	    	<tr>
-	    		<td>4</td>
-	    		<td>SDA0</td>
-	    	</tr>  
-	    	<tr>
-	    		<td>5</td>
-	    		<td>TX0</td>
-	    	</tr> 
-	    	<tr>
-	    		<td>6</td>
-	    		<td>RX0</td>
-	    	</tr>      	    	  	 	   	    	    	    	   	 	
+	    	<tbody>
+		    	<tr>
+		    		<td>1</td>
+		    		<td>Ground</td>
+		    	</tr> 
+		    	<tr>
+		    		<td>2</td>
+		    		<td>Reset</td>
+		    	</tr>  
+		    	<tr>
+		    		<td>3</td>
+		    		<td>SCL0</td>
+		    	</tr> 
+		    	<tr>
+		    		<td>4</td>
+		    		<td>SDA0</td>
+		    	</tr>  
+		    	<tr>
+		    		<td>5</td>
+		    		<td>TX0</td>
+		    	</tr> 
+		    	<tr>
+		    		<td>6</td>
+		    		<td>RX0</td>
+		    	</tr>
+	    	</tbody>     	    	  	 	   	    	    	    	   	 	
 	    </table>		
 	</td>
 </tr>
@@ -222,22 +234,24 @@ Below is a diagram of ports of ROSRider control card:
 	    		<th>Pin No</th>
 	    		<th>Description</th>
 	    	</thead>
-	    	<tr>
-	    		<td>1</td>
-	    		<td>Ground</td>
-	    	</tr> 
-	    	<tr>
-	    		<td>2</td>
-	    		<td>VCC</td>
-	    	</tr>   
-	    	<tr>
-	    		<td>3</td>
-	    		<td>SDA0</td>
-	    	</tr>    
-	    	<tr>
-	    		<td>4</td>
-	    		<td>SCL0</td>
-	    	</tr>      	  	 	 	   	    	    	    	   	 	
+	    	<tbody>
+		    	<tr>
+		    		<td>1</td>
+		    		<td>Ground</td>
+		    	</tr> 
+		    	<tr>
+		    		<td>2</td>
+		    		<td>VCC</td>
+		    	</tr>   
+		    	<tr>
+		    		<td>3</td>
+		    		<td>SDA0</td>
+		    	</tr>    
+		    	<tr>
+		    		<td>4</td>
+		    		<td>SCL0</td>
+		    	</tr>
+	    	</tbody>    	  	 	 	   	    	    	    	   	 	
 	    </table>
 	</td>
 </tr>
@@ -250,22 +264,24 @@ Below is a diagram of ports of ROSRider control card:
 	    		<th>Pin No</th>
 	    		<th>Description</th>
 	    	</thead>
-	    	<tr>
-	    		<td>1</td>
-	    		<td>Ground</td>
-	    	</tr> 
-	    	<tr>
-	    		<td>2</td>
-	    		<td>VCC</td>
-	    	</tr>   
-	    	<tr>
-	    		<td>3</td>
-	    		<td>SDA0</td>
-	    	</tr>    
-	    	<tr>
-	    		<td>4</td>
-	    		<td>SCL0</td>
-	    	</tr>   	 	   	    	    	    	   	 	
+	    	<tbody>
+		    	<tr>
+		    		<td>1</td>
+		    		<td>Ground</td>
+		    	</tr> 
+		    	<tr>
+		    		<td>2</td>
+		    		<td>VCC</td>
+		    	</tr>   
+		    	<tr>
+		    		<td>3</td>
+		    		<td>SDA0</td>
+		    	</tr>    
+		    	<tr>
+		    		<td>4</td>
+		    		<td>SCL0</td>
+		    	</tr>
+	    	</tbody>  	 	   	    	    	    	   	 	
 	    </table>		
 	</td>
 </tr>
@@ -278,30 +294,32 @@ Below is a diagram of ports of ROSRider control card:
 	    		<th>Pin No</th>
 	    		<th>Description</th>
 	    	</thead>
-	    	<tr>
-	    		<td>1</td>
-	    		<td>Ground</td>
-	    	</tr> 
-	    	<tr>
-	    		<td>2</td>
-	    		<td>SSI0RX</td>
-	    	</tr>   
-	    	<tr>
-	    		<td>3</td>
-	    		<td>SSI0FSS</td>
-	    	</tr> 
-	    	<tr>
-	    		<td>4</td>
-	    		<td>SSI0TX</td>
-	    	</tr>   
-	    	<tr>
-	    		<td>5</td>
-	    		<td>SSI0CLK</td>
-	    	</tr> 
-	    	<tr>
-	    		<td>6</td>
-	    		<td>3.3V</td>
-	    	</tr>       	    	 	 	   	    	    	    	   	 	
+	    	<tbody>
+		    	<tr>
+		    		<td>1</td>
+		    		<td>Ground</td>
+		    	</tr> 
+		    	<tr>
+		    		<td>2</td>
+		    		<td>SSI0RX</td>
+		    	</tr>   
+		    	<tr>
+		    		<td>3</td>
+		    		<td>SSI0FSS</td>
+		    	</tr> 
+		    	<tr>
+		    		<td>4</td>
+		    		<td>SSI0TX</td>
+		    	</tr>   
+		    	<tr>
+		    		<td>5</td>
+		    		<td>SSI0CLK</td>
+		    	</tr> 
+		    	<tr>
+		    		<td>6</td>
+		    		<td>3.3V</td>
+		    	</tr>
+	    	</tbody>      	    	 	 	   	    	    	    	   	 	
 	    </table>		
 	</td>
 </tr>
@@ -314,22 +332,24 @@ Below is a diagram of ports of ROSRider control card:
 	    		<th>Pin No</th>
 	    		<th>Description</th>
 	    	</thead>
-	    	<tr>
-	    		<td>1</td>
-	    		<td>Ground</td>
-	    	</tr> 
-	    	<tr>
-	    		<td>2</td>
-	    		<td>RX0</td>
-	    	</tr>   
-	    	<tr>
-	    		<td>3</td>
-	    		<td>TX0</td>
-	    	</tr> 
-	     	<tr>
-	    		<td>4</td>
-	    		<td>Ground</td>
-	    	</tr>    	    	 	 	   	    	    	    	   	 	
+	    	<tbody>
+		    	<tr>
+		    		<td>1</td>
+		    		<td>Ground</td>
+		    	</tr> 
+		    	<tr>
+		    		<td>2</td>
+		    		<td>RX0</td>
+		    	</tr>   
+		    	<tr>
+		    		<td>3</td>
+		    		<td>TX0</td>
+		    	</tr> 
+		     	<tr>
+		    		<td>4</td>
+		    		<td>Ground</td>
+		    	</tr>
+	    	</tbody>  	    	 	 	   	    	    	    	   	 	
 	    </table>		
 	</td>
 </tr>
@@ -342,14 +362,16 @@ Below is a diagram of ports of ROSRider control card:
 	    		<th>Pin No</th>
 	    		<th>Description</th>
 	    	</thead>
-	    	<tr>
-	    		<td>1</td>
-	    		<td>Power Input</td>
-	    	</tr> 
-	    	<tr>
-	    		<td>2</td>
-	    		<td>Ground</td>
-	    	</tr>    	 	   	    	    	    	   	 	
+	    	<tbody>
+		    	<tr>
+		    		<td>1</td>
+		    		<td>Power Input</td>
+		    	</tr> 
+		    	<tr>
+		    		<td>2</td>
+		    		<td>Ground</td>
+		    	</tr>
+	    	</tbody> 	 	   	    	    	    	   	 	
 	    </table>		
 	</td>
 </tr>
