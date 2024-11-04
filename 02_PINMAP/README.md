@@ -14,24 +14,18 @@ Below is a diagram of ports of ROSRider control card.
 **Pinmap**
 
 | -------- | ------- |
-| ![Left Motor Connector](../images/d_left_motor.png) | A |
-| B | C |
-
-
-test
-
-
-| ![Right Motor Connector](../images/d_right_motor.png) | This is right motor connector |
-| ![Servo Connector](../images/d_servo_port.png) | Servo connector |
-| ![AUX Power Port](../images/d_aux_power.png) | AUX Power connector |
-| ![Power Control Port](../images/d_power_control.png) | Power control port |
-| ![Communications Port](../images/d_comm_port.png) | Communications port |
-| ![QWIC A Port](../images/d_qwic_a.png) | QWIC A Port |
-| ![QWIC B Port](../images/d_qwic_b.png) | QWIC B Port |
-| ![SPI Port](../images/d_spi_port.png) | SPI Port |
-| ![Serial Port](../images/d_serial_port.png) | Serial Port |
-| ![Power Connector](../images/d_xt30.png) | Power Connector |
-| ![Battery](../images/d_battery.png) | Battery |
+| ![Left Motor Connector](../images/con/con_left_motor.png) | Left motor connector |
+| ![Right Motor Connector](../images/con/con_right_motor.png) | Right motor connector |
+| ![Servo Connector](../images/con/con_servo_port.png) | Servo connector |
+| ![AUX Power Port](../images/con/con_aux_power.png) | AUX Power connector |
+| ![Power Control Port](../images/con/con_power_control.png) | Power control port |
+| ![Communications Port](../images/con/con_comm_port.png) | Communications port |
+| ![QWIC A Port](../images/con/con_qwic_a.png) | QWIC A Port |
+| ![QWIC B Port](../images/con/con_qwic_b.png) | QWIC B Port |
+| ![SPI Port](../images/con/con_spi_port.png) | SPI Port |
+| ![Serial Port](../images/con/con_serial_port.png) | Serial Port |
+| ![Power Connector](../images/con/con_xt30.png) | Power Connector |
+| ![Battery](../images/con/con_battery.png) | Battery |
 
 
 __Next Chapter:__ [Connecting ROSRider to Host Computer](../03_CONNECT/README.md)
