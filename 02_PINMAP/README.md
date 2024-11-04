@@ -18,7 +18,7 @@ Below is a diagram of ports of ROSRider control card:
   table#portmap tr td {
   	border: none;
   }
-  table.pinmap tr td {
+  table.pinmap tbody tr td {
   	border: 1px solid red;
   }
   table.pinmap thead th {
