@@ -137,7 +137,27 @@ Below is a diagram of ports of ROSRider control card:
 
 ## AUX Power Port
 
-![AUX Power Port](../images/pinmap/con_power_aux.png)
+<div style="display: flex; flex-direction: row;">
+  <div style="flex: 1;">
+  	<img src="../images/pinmap/con_power_aux.png" alt="">
+  </div>	
+  <div style="flex: 2;">
+    <table>
+    	<thead>
+    		<td>Pin No</td>
+    		<td>Description</td>
+    	</thead>
+    	<tr>
+    		<td>1</td>
+    		<td>Ground</td>
+    	</tr> 
+    	<tr>
+    		<td>2</td>
+    		<td>Ground</td>
+    	</tr>    	 	   	    	    	    	   	 	
+    </table>
+  </div>
+</div>
 
 ## Power Control Port
 
