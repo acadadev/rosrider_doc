@@ -31,18 +31,11 @@ Below is a diagram of ports of ROSRider control card:
 </div>
 </div>
 
-
-
-
-
-
-
-
-
 ## Right Motor Connector
 
-![Right Motor Connector](../images/pinmap/con_right_motor.png)
-
+<div>
+<div align="left">![Right Motor Connector](../images/pinmap/con_right_motor.png)</div>
+<div align="right">
 | -------- | ------- |
 | Pin No   | Description |
 | 6        | Ground |
@@ -51,6 +44,8 @@ Below is a diagram of ports of ROSRider control card:
 | 3        | 3V3 |
 | 2        | Motor Positive MT2_M1 |
 | 1        | Motor Negative MT2_M2 |
+</div>
+</div>
 
 ## Servo Connector
 
