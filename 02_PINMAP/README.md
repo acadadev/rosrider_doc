@@ -18,7 +18,7 @@ Below is a diagram of ports of ROSRider control card:
 ## Left Motor Connector
 
 <div style="display: flex; flex-direction: row;">
-  <div style="flex: 1; padding-left:20px;">
+  <div style="flex: 1;">
     <table>
     	<thead>
     		<td>Pin No</td>
@@ -50,7 +50,7 @@ Below is a diagram of ports of ROSRider control card:
     	</tr>      	    	    	   	 	
     </table>
   </div>
-  <div style="flex: 2;">
+  <div style="flex: 2; padding-left:20px;">
   	<img src="../images/pinmap/con_left_motor.png" alt="left motor connector">
   </div>
 </div>
@@ -61,7 +61,7 @@ Below is a diagram of ports of ROSRider control card:
   <div style="flex: 1;">
   	<img src="../images/pinmap/con_right_motor.png" alt="right motor connector">
   </div>	
-  <div style="flex: 2;">
+  <div style="flex: 2; padding-left:20px;">
     <table>
     	<thead>
     		<td>Pin No</td>
@@ -101,7 +101,7 @@ Below is a diagram of ports of ROSRider control card:
   <div style="flex: 1;">
   	<img src="../images/pinmap/con_servo.png" alt="">
   </div>	
-  <div style="flex: 2;">
+  <div style="flex: 2; padding-left:20px;">
     <table>
     	<thead>
     		<td>Pin No</td>
@@ -141,7 +141,7 @@ Below is a diagram of ports of ROSRider control card:
   <div style="flex: 1;">
   	<img src="../images/pinmap/con_power_aux.png" alt="">
   </div>	
-  <div style="flex: 2;">
+  <div style="flex: 2; padding-left:20px;">
     <table>
     	<thead>
     		<td>Pin No</td>
@@ -165,7 +165,7 @@ Below is a diagram of ports of ROSRider control card:
   <div style="flex: 1;">
   	<img src="../images/pinmap/con_power_control.png" alt="">
   </div>	
-  <div style="flex: 2;">
+  <div style="flex: 2; padding-left:20px;">
     <table>
     	<thead>
     		<td>Pin No</td>
@@ -197,7 +197,7 @@ Below is a diagram of ports of ROSRider control card:
   <div style="flex: 1;">
   	<img src="../images/pinmap/con_comm.png" alt="">
   </div>	
-  <div style="flex: 2;">
+  <div style="flex: 2; padding-left:20px;">
     <table>
     	<thead>
     		<td>Pin No</td>
@@ -237,7 +237,7 @@ Below is a diagram of ports of ROSRider control card:
   <div style="flex: 1;">
   	<img src="../images/pinmap/con_qwic_a.png" alt="">
   </div>	
-  <div style="flex: 2;">
+  <div style="flex: 2; padding-left:20px;">
     <table>
     	<thead>
     		<td>Pin No</td>
@@ -269,7 +269,7 @@ Below is a diagram of ports of ROSRider control card:
   <div style="flex: 1;">
   	<img src="../images/pinmap/con_qwic_b.png" alt="">
   </div>	
-  <div style="flex: 2;">
+  <div style="flex: 2; padding-left:20px;">
     <table>
     	<thead>
     		<td>Pin No</td>
@@ -301,7 +301,7 @@ Below is a diagram of ports of ROSRider control card:
   <div style="flex: 1;">
   	<img src="../images/pinmap/con_spi.png" alt="">
   </div>	
-  <div style="flex: 2;">
+  <div style="flex: 2; padding-left:20px;">
     <table>
     	<thead>
     		<td>Pin No</td>
@@ -341,7 +341,7 @@ Below is a diagram of ports of ROSRider control card:
   <div style="flex: 1;">
   	<img src="../images/pinmap/con_serial.png" alt="">
   </div>	
-  <div style="flex: 2;">
+  <div style="flex: 2; padding-left:20px;">
     <table>
     	<thead>
     		<td>Pin No</td>
@@ -373,7 +373,7 @@ Below is a diagram of ports of ROSRider control card:
   <div style="flex: 1;">
   	<img src="../images/pinmap/con_xt30.png" alt="">
   </div>	
-  <div style="flex: 2;">
+  <div style="flex: 2; padding-left:20px;">
     <table>
     	<thead>
     		<td>Pin No</td>
@@ -397,7 +397,7 @@ Below is a diagram of ports of ROSRider control card:
   <div style="flex: 1;">
   	<img src="../images/pinmap/con_battery.png" alt="">
   </div>	
-  <div style="flex: 2;">
+  <div style="flex: 2; padding-left:20px;">
   	Use standard CR1225 Battery
   </div>
 </div>
