@@ -15,7 +15,6 @@ Below is a diagram of ports of ROSRider control card:
 [![ROSRider Pinmap](../images/ROSRider4D_portmap.png)](https://acada.dev/products)
 
 <style type="text/css">
-
   table.pinmap tbody tr td {
   	border: 2px solid black;
   }
@@ -31,7 +30,7 @@ Below is a diagram of ports of ROSRider control card:
 	<td>
 	    <table class="pinmap">
 	    	<thead>
-	    		<th>Pin No</th>
+	    		<th>Pin Number</th>
 	    		<th>Description</th>
 	    	</thead>
 	    	<tbody>
@@ -67,9 +66,9 @@ Below is a diagram of ports of ROSRider control card:
 <tr>
 	<td><img src="../images/pinmap/con_right_motor.png" alt="right motor connector"></td>
 	<td>
-	    <table>
+	    <table class="pinmap">
 	    	<thead>
-	    		<th>Pin No</th>
+	    		<th>Pin Number</th>
 	    		<th>Description</th>
 	    	</thead>
 	    	<tbody>
@@ -105,9 +104,9 @@ Below is a diagram of ports of ROSRider control card:
 <tr>
 	<td><img src="../images/pinmap/con_servo.png" alt="servo connector"></td>
 	<td>
-	    <table>
+	    <table class="pinmap">
 	    	<thead>
-	    		<th>Pin No</th>
+	    		<th>Pin Number</th>
 	    		<th>Description</th>
 	    	</thead>
 	    	<tbody>
@@ -143,9 +142,9 @@ Below is a diagram of ports of ROSRider control card:
 <tr>
 	<td><img src="../images/pinmap/con_power_aux.png" alt="power aux connector"></td>
 	<td>
-	    <table>
+	    <table class="pinmap">
 	    	<thead>
-	    		<th>Pin No</th>
+	    		<th>Pin Number</th>
 	    		<th>Description</th>
 	    	</thead>
 	    	<tbody>
@@ -165,9 +164,9 @@ Below is a diagram of ports of ROSRider control card:
 <tr>
 	<td><img src="../images/pinmap/con_power_control.png" alt="power control port"></td>
 	<td>
-	    <table>
+	    <table class="pinmap">
 	    	<thead>
-	    		<th>Pin No</th>
+	    		<th>Pin Number</th>
 	    		<th>Description</th>
 	    	</thead>
 	    	<tbody>
@@ -195,9 +194,9 @@ Below is a diagram of ports of ROSRider control card:
 <tr>
 	<td><img src="../images/pinmap/con_comm.png" alt="communications port"></td>
 	<td>
-	    <table>
+	    <table class="pinmap">
 	    	<thead>
-	    		<th>Pin No</th>
+	    		<th>Pin Number</th>
 	    		<th>Description</th>
 	    	</thead>
 	    	<tbody>
@@ -233,9 +232,9 @@ Below is a diagram of ports of ROSRider control card:
 <tr>
 	<td><img src="../images/pinmap/con_qwic_a.png" alt="qwic port a"></td>
 	<td>
-		<table>
+		<table class="pinmap">
 	    	<thead>
-	    		<th>Pin No</th>
+	    		<th>Pin Number</th>
 	    		<th>Description</th>
 	    	</thead>
 	    	<tbody>
@@ -263,9 +262,9 @@ Below is a diagram of ports of ROSRider control card:
 <tr>
 	<td><img src="../images/pinmap/con_qwic_b.png" alt="qwic port b"></td>
 	<td>
-	    <table>
+	    <table class="pinmap">
 	    	<thead>
-	    		<th>Pin No</th>
+	    		<th>Pin Number</th>
 	    		<th>Description</th>
 	    	</thead>
 	    	<tbody>
@@ -293,9 +292,9 @@ Below is a diagram of ports of ROSRider control card:
 <tr>
 	<td><img src="../images/pinmap/con_spi.png" alt="spi port"></td>
 	<td>
-	    <table>
+	    <table class="pinmap">
 	    	<thead>
-	    		<th>Pin No</th>
+	    		<th>Pin Number</th>
 	    		<th>Description</th>
 	    	</thead>
 	    	<tbody>
@@ -331,9 +330,9 @@ Below is a diagram of ports of ROSRider control card:
 <tr>
 	<td><img src="../images/pinmap/con_serial.png" alt="serial port"></td>
 	<td>
-	    <table>
+	    <table class="pinmap">
 	    	<thead>
-	    		<th>Pin No</th>
+	    		<th>Pin Number</th>
 	    		<th>Description</th>
 	    	</thead>
 	    	<tbody>
@@ -361,9 +360,9 @@ Below is a diagram of ports of ROSRider control card:
 <tr>
 	<td><img src="../images/pinmap/con_xt30.png" alt="power connector"></td>
 	<td>
-	    <table>
+	    <table class="pinmap">
 	    	<thead>
-	    		<th>Pin No</th>
+	    		<th>Pin Number</th>
 	    		<th>Description</th>
 	    	</thead>
 	    	<tbody>
