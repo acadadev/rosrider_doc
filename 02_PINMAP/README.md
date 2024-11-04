@@ -26,8 +26,8 @@ Below is a diagram of ports of ROSRider control card:
 	<td>
 	    <table id="portmap">
 	    	<thead>
-	    		<td>Pin No</td>
-	    		<td>Description</td>
+	    		<th>Pin No</th>
+	    		<th>Description</th>
 	    	</thead>
 	    	<tr>
 	    		<td>1</td>
@@ -62,8 +62,8 @@ Below is a diagram of ports of ROSRider control card:
 	<td>
 	    <table>
 	    	<thead>
-	    		<td>Pin No</td>
-	    		<td>Description</td>
+	    		<th>Pin No</th>
+	    		<th>Description</th>
 	    	</thead>
 	    	<tr>
 	    		<td>6</td>
@@ -98,8 +98,8 @@ Below is a diagram of ports of ROSRider control card:
 	<td>
 	    <table>
 	    	<thead>
-	    		<td>Pin No</td>
-	    		<td>Description</td>
+	    		<th>Pin No</th>
+	    		<th>Description</th>
 	    	</thead>
 	    	<tr>
 	    		<td>1</td>
@@ -134,8 +134,8 @@ Below is a diagram of ports of ROSRider control card:
 	<td>
 	    <table>
 	    	<thead>
-	    		<td>Pin No</td>
-	    		<td>Description</td>
+	    		<th>Pin No</th>
+	    		<th>Description</th>
 	    	</thead>
 	    	<tr>
 	    		<td>1</td>
@@ -154,8 +154,8 @@ Below is a diagram of ports of ROSRider control card:
 	<td>
 	    <table>
 	    	<thead>
-	    		<td>Pin No</td>
-	    		<td>Description</td>
+	    		<th>Pin No</th>
+	    		<th>Description</th>
 	    	</thead>
 	    	<tr>
 	    		<td>1</td>
@@ -182,8 +182,8 @@ Below is a diagram of ports of ROSRider control card:
 	<td>
 	    <table>
 	    	<thead>
-	    		<td>Pin No</td>
-	    		<td>Description</td>
+	    		<th>Pin No</th>
+	    		<th>Description</th>
 	    	</thead>
 	    	<tr>
 	    		<td>1</td>
@@ -218,8 +218,8 @@ Below is a diagram of ports of ROSRider control card:
 	<td>
 		<table>
 	    	<thead>
-	    		<td>Pin No</td>
-	    		<td>Description</td>
+	    		<th>Pin No</th>
+	    		<th>Description</th>
 	    	</thead>
 	    	<tr>
 	    		<td>1</td>
@@ -246,8 +246,8 @@ Below is a diagram of ports of ROSRider control card:
 	<td>
 	    <table>
 	    	<thead>
-	    		<td>Pin No</td>
-	    		<td>Description</td>
+	    		<th>Pin No</th>
+	    		<th>Description</th>
 	    	</thead>
 	    	<tr>
 	    		<td>1</td>
@@ -274,8 +274,8 @@ Below is a diagram of ports of ROSRider control card:
 	<td>
 	    <table>
 	    	<thead>
-	    		<td>Pin No</td>
-	    		<td>Description</td>
+	    		<th>Pin No</th>
+	    		<th>Description</th>
 	    	</thead>
 	    	<tr>
 	    		<td>1</td>
@@ -310,8 +310,8 @@ Below is a diagram of ports of ROSRider control card:
 	<td>
 	    <table>
 	    	<thead>
-	    		<td>Pin No</td>
-	    		<td>Description</td>
+	    		<th>Pin No</th>
+	    		<th>Description</th>
 	    	</thead>
 	    	<tr>
 	    		<td>1</td>
@@ -338,8 +338,8 @@ Below is a diagram of ports of ROSRider control card:
 	<td>
 	    <table>
 	    	<thead>
-	    		<td>Pin No</td>
-	    		<td>Description</td>
+	    		<th>Pin No</th>
+	    		<th>Description</th>
 	    	</thead>
 	    	<tr>
 	    		<td>1</td>
