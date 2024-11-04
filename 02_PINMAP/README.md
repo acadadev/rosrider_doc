@@ -7,6 +7,8 @@ description: "Pinmap and Connections"
 
 **Board Port Diagram**
 
+ROSRider card is equipped with number of ports and connectors, for connecting to encoder motors, and other peripherals.  
+
 Below is a diagram of ports of ROSRider control card.  
   
 [![ROSRider Pinmap](../images/ROSRider4D_portmap.png)](https://acada.dev/products)
