@@ -17,54 +17,21 @@ Below is a diagram of ports of ROSRider control card:
 
 ## Left Motor Connector
 
+<div style="display: flex; flex-direction: row;">
+  <div style="flex: 1;">
+    <img src="../images/pinmap/con_left_motor.png" alt="left motor connector">
+  </div>
+  <div style="flex: 2;">
+    This is the text content for the right column. You can add as much text as you want here.
+  </div>
+</div>
+
+
 ![Left Motor Connector](../images/pinmap/con_left_motor.png)
-
-<div>
-<div align="left">BB</div>
-<div align="right">AA</div>
-</div>
-
-<div>
-<div align="left">![Left Motor Connector](../images/pinmap/con_left_motor.png)</div>
-<div align="right">
-A
-</div>
-</div>
-
-
-<div>
-<div align="left">
-![Left Motor Connector](../images/pinmap/con_left_motor.png)
-</div>
-<div align="right">
-| -------- | ------- |
-| Pin No   | Description |
-| 1        | Motor Negative MT1_M2 |
-| 2        | Motor Positive MT1_M1 |
-| 3        | 3V3 |
-| 4        | Encoder Phase B |
-| 5        | Encoder Phase A |
-| 6        | Ground |	
-</div>
-</div>
 
 ## Right Motor Connector
 
-<div>
-<div align="left">
-	![Right Motor Connector](../images/pinmap/con_right_motor.png)
-</div>
-<div align="right">
-| -------- | ------- |
-| Pin No   | Description |
-| 6        | Ground |
-| 5        | Encoder Phase B |
-| 4        | Encoder Phase B |
-| 3        | 3V3 |
-| 2        | Motor Positive MT2_M1 |
-| 1        | Motor Negative MT2_M2 |
-</div>
-</div>
+![Right Motor Connector](../images/pinmap/con_right_motor.png)
 
 ## Servo Connector
 
