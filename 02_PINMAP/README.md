@@ -177,7 +177,7 @@ Below is a diagram of ports of ROSRider control card:
     	</tr> 
     	<tr>
     		<td>2</td>
-    		<td>USR Button (Boot)</td>
+    		<td>Bootloader Button</td>
     	</tr>   
     	<tr>
     		<td>3</td>
@@ -193,11 +193,9 @@ Below is a diagram of ports of ROSRider control card:
 
 ## Communications Port
 
-![Communications Port](../images/pinmap/con_comm.png)
-
 <div style="display: flex; flex-direction: row;">
   <div style="flex: 1;">
-  	<img src="../images/pinmap/con_.png" alt="">
+  	<img src="../images/pinmap/con_comm.png" alt="">
   </div>	
   <div style="flex: 2;">
     <table>
@@ -207,12 +205,28 @@ Below is a diagram of ports of ROSRider control card:
     	</thead>
     	<tr>
     		<td>1</td>
-    		<td></td>
+    		<td>Ground</td>
     	</tr> 
     	<tr>
     		<td>2</td>
-    		<td></td>
-    	</tr>    	 	   	    	    	    	   	 	
+    		<td>Reset</td>
+    	</tr>  
+    	<tr>
+    		<td>3</td>
+    		<td>SCL0</td>
+    	</tr> 
+    	<tr>
+    		<td>4</td>
+    		<td>SDA0</td>
+    	</tr>  
+    	<tr>
+    		<td>5</td>
+    		<td>TX0</td>
+    	</tr> 
+    	<tr>
+    		<td>6</td>
+    		<td>RX0</td>
+    	</tr>      	    	  	 	   	    	    	    	   	 	
     </table>
   </div>
 </div>
