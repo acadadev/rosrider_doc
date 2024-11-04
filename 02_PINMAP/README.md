@@ -149,7 +149,7 @@ Below is a diagram of ports of ROSRider control card:
     	</thead>
     	<tr>
     		<td>1</td>
-    		<td>Ground</td>
+    		<td>PWR AUX (5V)</td>
     	</tr> 
     	<tr>
     		<td>2</td>
@@ -161,35 +161,217 @@ Below is a diagram of ports of ROSRider control card:
 
 ## Power Control Port
 
-![Power Control Port](../images/pinmap/con_power_control.png)
+<div style="display: flex; flex-direction: row;">
+  <div style="flex: 1;">
+  	<img src="../images/pinmap/con_power_control.png" alt="">
+  </div>	
+  <div style="flex: 2;">
+    <table>
+    	<thead>
+    		<td>Pin No</td>
+    		<td>Description</td>
+    	</thead>
+    	<tr>
+    		<td>1</td>
+    		<td>Ground</td>
+    	</tr> 
+    	<tr>
+    		<td>2</td>
+    		<td>USR Button (Boot)</td>
+    	</tr>   
+    	<tr>
+    		<td>3</td>
+    		<td>Power On</td>
+    	</tr>  
+    	<tr>
+    		<td>4</td>
+    		<td>Internal Reset</td>
+    	</tr>     	   	 	 	   	    	    	    	   	 	
+    </table>
+  </div>
+</div>
 
 ## Communications Port
 
 ![Communications Port](../images/pinmap/con_comm.png)
 
+<div style="display: flex; flex-direction: row;">
+  <div style="flex: 1;">
+  	<img src="../images/pinmap/con_.png" alt="">
+  </div>	
+  <div style="flex: 2;">
+    <table>
+    	<thead>
+    		<td>Pin No</td>
+    		<td>Description</td>
+    	</thead>
+    	<tr>
+    		<td>1</td>
+    		<td></td>
+    	</tr> 
+    	<tr>
+    		<td>2</td>
+    		<td></td>
+    	</tr>    	 	   	    	    	    	   	 	
+    </table>
+  </div>
+</div>
+
 ## QWIC A Port
 
 ![QWIC A Port](../images/pinmap/con_qwic_a.png)
+
+<div style="display: flex; flex-direction: row;">
+  <div style="flex: 1;">
+  	<img src="../images/pinmap/con_.png" alt="">
+  </div>	
+  <div style="flex: 2;">
+    <table>
+    	<thead>
+    		<td>Pin No</td>
+    		<td>Description</td>
+    	</thead>
+    	<tr>
+    		<td>1</td>
+    		<td></td>
+    	</tr> 
+    	<tr>
+    		<td>2</td>
+    		<td></td>
+    	</tr>    	 	   	    	    	    	   	 	
+    </table>
+  </div>
+</div>
 
 ## QWIC B Port
 
 ![QWIC B Port](../images/pinmap/con_qwic_b.png)
 
+<div style="display: flex; flex-direction: row;">
+  <div style="flex: 1;">
+  	<img src="../images/pinmap/con_.png" alt="">
+  </div>	
+  <div style="flex: 2;">
+    <table>
+    	<thead>
+    		<td>Pin No</td>
+    		<td>Description</td>
+    	</thead>
+    	<tr>
+    		<td>1</td>
+    		<td></td>
+    	</tr> 
+    	<tr>
+    		<td>2</td>
+    		<td></td>
+    	</tr>    	 	   	    	    	    	   	 	
+    </table>
+  </div>
+</div>
+
 ## SPI Port
 
 ![SPI Port](../images/pinmap/con_spi.png)
+
+<div style="display: flex; flex-direction: row;">
+  <div style="flex: 1;">
+  	<img src="../images/pinmap/con_.png" alt="">
+  </div>	
+  <div style="flex: 2;">
+    <table>
+    	<thead>
+    		<td>Pin No</td>
+    		<td>Description</td>
+    	</thead>
+    	<tr>
+    		<td>1</td>
+    		<td></td>
+    	</tr> 
+    	<tr>
+    		<td>2</td>
+    		<td></td>
+    	</tr>    	 	   	    	    	    	   	 	
+    </table>
+  </div>
+</div>
 
 ## Serial Port
 
 ![Serial Port](../images/pinmap/con_serial.png)
 
+<div style="display: flex; flex-direction: row;">
+  <div style="flex: 1;">
+  	<img src="../images/pinmap/con_.png" alt="">
+  </div>	
+  <div style="flex: 2;">
+    <table>
+    	<thead>
+    		<td>Pin No</td>
+    		<td>Description</td>
+    	</thead>
+    	<tr>
+    		<td>1</td>
+    		<td></td>
+    	</tr> 
+    	<tr>
+    		<td>2</td>
+    		<td></td>
+    	</tr>    	 	   	    	    	    	   	 	
+    </table>
+  </div>
+</div>
+
 ## Power Connector
 
 ![Power Connector](../images/pinmap/con_xt30.png)
 
+<div style="display: flex; flex-direction: row;">
+  <div style="flex: 1;">
+  	<img src="../images/pinmap/con_.png" alt="">
+  </div>	
+  <div style="flex: 2;">
+    <table>
+    	<thead>
+    		<td>Pin No</td>
+    		<td>Description</td>
+    	</thead>
+    	<tr>
+    		<td>1</td>
+    		<td></td>
+    	</tr> 
+    	<tr>
+    		<td>2</td>
+    		<td></td>
+    	</tr>    	 	   	    	    	    	   	 	
+    </table>
+  </div>
+</div>
+
 ## Battery
 
 ![Battery](../images/pinmap/con_battery.png)
+
+<div style="display: flex; flex-direction: row;">
+  <div style="flex: 1;">
+  	<img src="../images/pinmap/con_.png" alt="">
+  </div>	
+  <div style="flex: 2;">
+    <table>
+    	<thead>
+    		<td>Pin No</td>
+    		<td>Description</td>
+    	</thead>
+    	<tr>
+    		<td>1</td>
+    		<td></td>
+    	</tr> 
+    	<tr>
+    		<td>2</td>
+    		<td></td>
+    	</tr>    	 	   	    	    	    	   	 	
+    </table>
+  </div>
+</div>
 
 
 __Next Chapter:__ [Connecting ROSRider to Host Computer](../03_CONNECT/README.md)
