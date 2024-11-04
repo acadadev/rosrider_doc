@@ -354,7 +354,15 @@ Below is a diagram of ports of ROSRider control card:
     	<tr>
     		<td>2</td>
     		<td></td>
-    	</tr>    	 	   	    	    	    	   	 	
+    	</tr>   
+    	<tr>
+    		<td>3</td>
+    		<td></td>
+    	</tr> 
+     	<tr>
+    		<td>4</td>
+    		<td></td>
+    	</tr>    	    	 	 	   	    	    	    	   	 	
     </table>
   </div>
 </div>
