@@ -50,56 +50,92 @@ Below is a diagram of ports of ROSRider control card:
 	    </table>
 	</td>
 </tr>
-<table>
+<tr>
+	<td><img src="../images/pinmap/con_right_motor.png" alt="right motor connector"></td>
+	<td>
+	    <table>
+	    	<thead>
+	    		<td>Pin No</td>
+	    		<td>Description</td>
+	    	</thead>
+	    	<tr>
+	    		<td>6</td>
+	    		<td>Ground</td>
+	    	</tr>
+	    	<tr>
+	    		<td>5</td>
+	    		<td>Encoder Phase A</td>
+	    	</tr>   
+	    	<tr>
+	    		<td>4</td>
+	    		<td>Encoder Phase B</td>
+	    	</tr>   
+	    	<tr>
+	    		<td>3</td>
+	    		<td>3.3V</td>
+	    	</tr>  
+	    	<tr>
+	    		<td>2</td>
+	    		<td>Motor Positive MT1_M1</td>
+	    	</tr>  
+	    	<tr>
+	    		<td>1</td>
+	    		<td>Motor Negative MT1_M2</td>
+	    	</tr>      	    	    	   	 	
+	    </table>		
+	</td>
+</tr>
+<tr>
+	<td></td>
+	<td></td>
+</tr>
 
-<div style="display: flex; flex-direction: row;">
-  <div style="flex: 1;">
+<tr>
+	<td></td>
+	<td></td>
+</tr>
 
-  </div>
-  <div style="flex: 2; padding-left:20px;">
-  	
-  </div>
-</div>
+<tr>
+	<td></td>
+	<td></td>
+</tr>
 
+<tr>
+	<td></td>
+	<td></td>
+</tr>
+
+<tr>
+	<td></td>
+	<td></td>
+</tr>
+
+<tr>
+	<td></td>
+	<td></td>
+</tr>
+
+<tr>
+	<td></td>
+	<td></td>
+</tr>
+
+<tr>
+	<td></td>
+	<td></td>
+</tr>
+
+<tr>
+	<td></td>
+	<td></td>
+</tr>
+
+</table>
+
+## Left Motor Connector
 ## Right Motor Connector
 
-<div style="display: flex; flex-direction: row;">
-  <div style="flex: 1;">
-  	<img src="../images/pinmap/con_right_motor.png" alt="right motor connector">
-  </div>	
-  <div style="flex: 2; padding-left:20px;">
-    <table>
-    	<thead>
-    		<td>Pin No</td>
-    		<td>Description</td>
-    	</thead>
-    	<tr>
-    		<td>6</td>
-    		<td>Ground</td>
-    	</tr>
-    	<tr>
-    		<td>5</td>
-    		<td>Encoder Phase A</td>
-    	</tr>   
-    	<tr>
-    		<td>4</td>
-    		<td>Encoder Phase B</td>
-    	</tr>   
-    	<tr>
-    		<td>3</td>
-    		<td>3.3V</td>
-    	</tr>  
-    	<tr>
-    		<td>2</td>
-    		<td>Motor Positive MT1_M1</td>
-    	</tr>  
-    	<tr>
-    		<td>1</td>
-    		<td>Motor Negative MT1_M2</td>
-    	</tr>      	    	    	   	 	
-    </table>
-  </div>
-</div>
+
 
 ## Servo Connector
 
