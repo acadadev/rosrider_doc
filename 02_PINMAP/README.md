@@ -37,8 +37,8 @@ Below is a diagram of ports of ROSRider control card:
     		<td>3.3V</td>
     	</tr>   
     	<tr>
+    		<td>4</td>
     		<td>Encoder Phase B</td>
-    		<td></td>
     	</tr>  
     	<tr>
     		<td>5</td>
@@ -57,7 +57,6 @@ Below is a diagram of ports of ROSRider control card:
 
 ## Right Motor Connector
 
-
 <div style="display: flex; flex-direction: row;">
   <div style="flex: 1;">
   	<img src="../images/pinmap/con_right_motor.png" alt="right motor connector">
@@ -69,35 +68,32 @@ Below is a diagram of ports of ROSRider control card:
     		<td>Description</td>
     	</thead>
     	<tr>
-    		<td>1</td>
-    		<td>Motor Negative MT1_M2</td>
+    		<td>6</td>
+    		<td>Ground</td>
     	</tr>
     	<tr>
-    		<td>2</td>
-    		<td>Motor Positive MT1_M1</td>
+    		<td>5</td>
+    		<td>Encoder Phase A</td>
+    	</tr>   
+    	<tr>
+    		<td>4</td>
+    		<td>Encoder Phase B</td>
     	</tr>   
     	<tr>
     		<td>3</td>
     		<td>3.3V</td>
-    	</tr>   
-    	<tr>
-    		<td>Encoder Phase B</td>
-    		<td></td>
     	</tr>  
     	<tr>
-    		<td>5</td>
-    		<td>Encoder Phase A</td>
+    		<td>2</td>
+    		<td>Motor Positive MT1_M1</td>
     	</tr>  
     	<tr>
-    		<td>6</td>
-    		<td>Ground</td>
+    		<td>1</td>
+    		<td>Motor Negative MT1_M2</td>
     	</tr>      	    	    	   	 	
     </table>
   </div>
-
 </div>
-
-![Right Motor Connector](../images/pinmap/con_right_motor.png)
 
 ## Servo Connector
 
