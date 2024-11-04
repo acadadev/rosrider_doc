@@ -33,11 +33,6 @@ Below is a diagram of ports of ROSRider control card:
 <table id="portmap">
 <tbody>
 <tr>
-	<td colspan="2">
-		## Left Motor Connector
-	</td>
-</tr>
-<tr>
 	<td style="border:none;"><img src="../images/pinmap/con_left_motor.png" alt="left motor connector"></td>
 	<td style="border:none; vertical-align:middle;">
 	    <table class="pinmap">
@@ -398,7 +393,7 @@ Below is a diagram of ports of ROSRider control card:
 </tbody>
 </table>
 
-
+## Left Motor Connector
 ## Right Motor Connector
 ## Servo Connector
 ## AUX Power Port
