@@ -55,6 +55,7 @@ Below is a diagram of ports of ROSRider control card:
 	    </table>
 	</td>
 </tr>
+<tr></tr>
 <tr>
 	<td><img src="../images/pinmap/con_right_motor.png" alt="right motor connector"></td>
 	<td>
