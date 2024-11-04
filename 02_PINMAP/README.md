@@ -349,19 +349,19 @@ Below is a diagram of ports of ROSRider control card:
     	</thead>
     	<tr>
     		<td>1</td>
-    		<td></td>
+    		<td>Ground</td>
     	</tr> 
     	<tr>
     		<td>2</td>
-    		<td></td>
+    		<td>RX0</td>
     	</tr>   
     	<tr>
     		<td>3</td>
-    		<td></td>
+    		<td>TX0</td>
     	</tr> 
      	<tr>
     		<td>4</td>
-    		<td></td>
+    		<td>Ground</td>
     	</tr>    	    	 	 	   	    	    	    	   	 	
     </table>
   </div>
@@ -381,11 +381,11 @@ Below is a diagram of ports of ROSRider control card:
     	</thead>
     	<tr>
     		<td>1</td>
-    		<td></td>
+    		<td>Power Input</td>
     	</tr> 
     	<tr>
     		<td>2</td>
-    		<td></td>
+    		<td>Ground</td>
     	</tr>    	 	   	    	    	    	   	 	
     </table>
   </div>
