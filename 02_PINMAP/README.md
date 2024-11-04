@@ -17,10 +17,10 @@ Below is a diagram of ports of ROSRider control card:
 <style type="text/css">
 
   table.pinmap tbody tr td {
-  	border: 1px solid red;
+  	border: 2px solid black;
   }
   table.pinmap thead th {
-  	border: 1px solid blue;
+  	border: 2px solid black;
   }
 </style>
 
