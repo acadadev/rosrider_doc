@@ -398,20 +398,7 @@ Below is a diagram of ports of ROSRider control card:
   	<img src="../images/pinmap/con_battery.png" alt="">
   </div>	
   <div style="flex: 2;">
-    <table>
-    	<thead>
-    		<td>Pin No</td>
-    		<td>Description</td>
-    	</thead>
-    	<tr>
-    		<td>1</td>
-    		<td></td>
-    	</tr> 
-    	<tr>
-    		<td>2</td>
-    		<td></td>
-    	</tr>    	 	   	    	    	    	   	 	
-    </table>
+  	Use standard CR1225 Battery
   </div>
 </div>
 
