@@ -15,7 +15,7 @@ Below is a diagram of ports of ROSRider control card:
 [![ROSRider Pinmap](../images/ROSRider4D_portmap.png)](https://acada.dev/products)
 
 <style type="text/css">
-  table#portmap td {
+  #portmap td {
     border: 1px solid red;
   }
 </style>
