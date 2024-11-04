@@ -8,8 +8,9 @@ description: "Pinmap and Connections"
 **Board Port Diagram**
 
 ROSRider card is equipped with number of ports and connectors, for connecting to encoder motors, and other peripherals.  
+Pinmaps of each connector and port will be illustrated in detail.  
 
-Below is a diagram of ports of ROSRider control card.  
+Below is a diagram of ports of ROSRider control card:  
   
 [![ROSRider Pinmap](../images/ROSRider4D_portmap.png)](https://acada.dev/products)
 
@@ -17,7 +18,12 @@ Below is a diagram of ports of ROSRider control card.
 
 | -------- | ------- |
 | ![Left Motor Connector](../images/pinmap/con_left_motor.png) | Left motor connector |
+
+
+| -------- | ------- |
 | ![Right Motor Connector](../images/pinmap/con_right_motor.png) | Right motor connector |
+
+  
 | ![Servo Connector](../images/pinmap/con_servo.png) | Servo connector |
 | ![AUX Power Port](../images/pinmap/con_power_aux.png) | AUX Power connector |
 | ![Power Control Port](../images/pinmap/con_power_control.png) | Power control port |
