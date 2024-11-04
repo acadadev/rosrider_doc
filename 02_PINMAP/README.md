@@ -26,7 +26,7 @@ Below is a diagram of ports of ROSRider control card:
 
 <table id="portmap">
 <tbody>
-<tr>
+<tr style="border:none;">
 	<td style="border:none;"><img src="../images/pinmap/con_left_motor.png" alt="left motor connector"></td>
 	<td style="border:none;">
 	    <table class="pinmap">
@@ -64,7 +64,7 @@ Below is a diagram of ports of ROSRider control card:
 	</td>
 </tr>
 <tr></tr>
-<tr>
+<tr style="border:none;">
 	<td style="border:none;"><img src="../images/pinmap/con_right_motor.png" alt="right motor connector"></td>
 	<td style="border:none;">
 	    <table class="pinmap">
