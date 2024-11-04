@@ -14,6 +14,13 @@ Below is a diagram of ports of ROSRider control card:
   
 [![ROSRider Pinmap](../images/ROSRider4D_portmap.png)](https://acada.dev/products)
 
+<div>
+<div align="left">left</div>
+<div align="right">right</div>
+</div>
+
+
+
 ## Left Motor Connector
 
 ![Left Motor Connector](../images/pinmap/con_left_motor.png) 
