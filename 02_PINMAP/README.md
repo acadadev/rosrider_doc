@@ -14,44 +14,50 @@ Below is a diagram of ports of ROSRider control card:
   
 [![ROSRider Pinmap](../images/ROSRider4D_portmap.png)](https://acada.dev/products)
 
-
-## Left Motor Connector
+<table>
+<tr>
+	<td><img src="../images/pinmap/con_left_motor.png" alt="left motor connector"></td>
+	<td>
+	    <table>
+	    	<thead>
+	    		<td>Pin No</td>
+	    		<td>Description</td>
+	    	</thead>
+	    	<tr>
+	    		<td>1</td>
+	    		<td>Motor Negative MT1_M2</td>
+	    	</tr>
+	    	<tr>
+	    		<td>2</td>
+	    		<td>Motor Positive MT1_M1</td>
+	    	</tr>   
+	    	<tr>
+	    		<td>3</td>
+	    		<td>3.3V</td>
+	    	</tr>   
+	    	<tr>
+	    		<td>4</td>
+	    		<td>Encoder Phase B</td>
+	    	</tr>  
+	    	<tr>
+	    		<td>5</td>
+	    		<td>Encoder Phase A</td>
+	    	</tr>  
+	    	<tr>
+	    		<td>6</td>
+	    		<td>Ground</td>
+	    	</tr>      	    	    	   	 	
+	    </table>
+	</td>
+</tr>
+<table>
 
 <div style="display: flex; flex-direction: row;">
   <div style="flex: 1;">
-    <table>
-    	<thead>
-    		<td>Pin No</td>
-    		<td>Description</td>
-    	</thead>
-    	<tr>
-    		<td>1</td>
-    		<td>Motor Negative MT1_M2</td>
-    	</tr>
-    	<tr>
-    		<td>2</td>
-    		<td>Motor Positive MT1_M1</td>
-    	</tr>   
-    	<tr>
-    		<td>3</td>
-    		<td>3.3V</td>
-    	</tr>   
-    	<tr>
-    		<td>4</td>
-    		<td>Encoder Phase B</td>
-    	</tr>  
-    	<tr>
-    		<td>5</td>
-    		<td>Encoder Phase A</td>
-    	</tr>  
-    	<tr>
-    		<td>6</td>
-    		<td>Ground</td>
-    	</tr>      	    	    	   	 	
-    </table>
+
   </div>
   <div style="flex: 2; padding-left:20px;">
-  	<img src="../images/pinmap/con_left_motor.png" alt="left motor connector">
+  	
   </div>
 </div>
 
