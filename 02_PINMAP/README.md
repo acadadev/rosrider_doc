@@ -28,7 +28,9 @@ Below is a diagram of ports of ROSRider control card:
 
 
 | -------- | ------- |
-| ![Right Motor Connector](../images/pinmap/con_right_motor.png) | Right motor connector |
+| ![Right Motor Connector](../images/pinmap/con_right_motor.png) |
+<table><thead><tr><th>Z-value</th><th>06</th></tr></thead><tbody><tr><td>Protocol</td><td>04 05</td></tr></tbody>  </table> 
+|
 
 
 | ![Servo Connector](../images/pinmap/con_servo.png) | Servo connector |
