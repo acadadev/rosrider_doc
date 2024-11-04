@@ -14,9 +14,7 @@ Below is a diagram of ports of ROSRider control card:
   
 [![ROSRider Pinmap](../images/ROSRider4D_portmap.png)](https://acada.dev/products)
 
-## List of Ports
-
-#### Left Motor Connector
+## Left Motor Connector
 
 ![Left Motor Connector](../images/pinmap/con_left_motor.png) 
 
@@ -30,7 +28,7 @@ Below is a diagram of ports of ROSRider control card:
 | 6        | Ground |
 
 
-### Right Motor Connector
+## Right Motor Connector
 
 ![Right Motor Connector](../images/pinmap/con_right_motor.png)
 
@@ -43,43 +41,43 @@ Below is a diagram of ports of ROSRider control card:
 | 2        | Motor Positive MT2_M1 |
 | 1        | Motor Negative MT2_M2 |
 
-### Servo Connector
+## Servo Connector
 
 ![Servo Connector](../images/pinmap/con_servo.png)
 
-### AUX Power Port
+## AUX Power Port
 
 ![AUX Power Port](../images/pinmap/con_power_aux.png)
 
-### Power Control Port
+## Power Control Port
 
 ![Power Control Port](../images/pinmap/con_power_control.png)
 
-### Communications Port
+## Communications Port
 
 ![Communications Port](../images/pinmap/con_comm.png)
 
-### QWIC A Port
+## QWIC A Port
 
 ![QWIC A Port](../images/pinmap/con_qwic_a.png)
 
-### QWIC B Port
+## QWIC B Port
 
 ![QWIC B Port](../images/pinmap/con_qwic_b.png)
 
-### SPI Port
+## SPI Port
 
 ![SPI Port](../images/pinmap/con_spi.png)
 
-### Serial Port
+## Serial Port
 
 ![Serial Port](../images/pinmap/con_serial.png)
 
-### Power Connector
+## Power Connector
 
 ![Power Connector](../images/pinmap/con_xt30.png)
 
-### Battery
+## Battery
 
 ![Battery](../images/pinmap/con_battery.png)
 
