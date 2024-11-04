@@ -233,11 +233,9 @@ Below is a diagram of ports of ROSRider control card:
 
 ## QWIC A Port
 
-![QWIC A Port](../images/pinmap/con_qwic_a.png)
-
 <div style="display: flex; flex-direction: row;">
   <div style="flex: 1;">
-  	<img src="../images/pinmap/con_.png" alt="">
+  	<img src="../images/pinmap/con_qwic_a.png" alt="">
   </div>	
   <div style="flex: 2;">
     <table>
@@ -247,23 +245,29 @@ Below is a diagram of ports of ROSRider control card:
     	</thead>
     	<tr>
     		<td>1</td>
-    		<td></td>
+    		<td>Ground</td>
     	</tr> 
     	<tr>
     		<td>2</td>
-    		<td></td>
-    	</tr>    	 	   	    	    	    	   	 	
+    		<td>VCC</td>
+    	</tr>   
+    	<tr>
+    		<td>3</td>
+    		<td>SDA0</td>
+    	</tr>    
+    	<tr>
+    		<td>4</td>
+    		<td>SCL0</td>
+    	</tr>      	  	 	 	   	    	    	    	   	 	
     </table>
   </div>
 </div>
 
 ## QWIC B Port
 
-![QWIC B Port](../images/pinmap/con_qwic_b.png)
-
 <div style="display: flex; flex-direction: row;">
   <div style="flex: 1;">
-  	<img src="../images/pinmap/con_.png" alt="">
+  	<img src="../images/pinmap/con_qwic_b.png" alt="">
   </div>	
   <div style="flex: 2;">
     <table>
@@ -273,23 +277,29 @@ Below is a diagram of ports of ROSRider control card:
     	</thead>
     	<tr>
     		<td>1</td>
-    		<td></td>
+    		<td>Ground</td>
     	</tr> 
     	<tr>
     		<td>2</td>
-    		<td></td>
-    	</tr>    	 	   	    	    	    	   	 	
+    		<td>VCC</td>
+    	</tr>   
+    	<tr>
+    		<td>3</td>
+    		<td>SDA0</td>
+    	</tr>    
+    	<tr>
+    		<td>4</td>
+    		<td>SCL0</td>
+    	</tr>   	 	   	    	    	    	   	 	
     </table>
   </div>
 </div>
 
 ## SPI Port
 
-![SPI Port](../images/pinmap/con_spi.png)
-
 <div style="display: flex; flex-direction: row;">
   <div style="flex: 1;">
-  	<img src="../images/pinmap/con_.png" alt="">
+  	<img src="../images/pinmap/con_spi.png" alt="">
   </div>	
   <div style="flex: 2;">
     <table>
@@ -311,11 +321,9 @@ Below is a diagram of ports of ROSRider control card:
 
 ## Serial Port
 
-![Serial Port](../images/pinmap/con_serial.png)
-
 <div style="display: flex; flex-direction: row;">
   <div style="flex: 1;">
-  	<img src="../images/pinmap/con_.png" alt="">
+  	<img src="../images/pinmap/con_serial.png" alt="">
   </div>	
   <div style="flex: 2;">
     <table>
@@ -337,11 +345,9 @@ Below is a diagram of ports of ROSRider control card:
 
 ## Power Connector
 
-![Power Connector](../images/pinmap/con_xt30.png)
-
 <div style="display: flex; flex-direction: row;">
   <div style="flex: 1;">
-  	<img src="../images/pinmap/con_.png" alt="">
+  	<img src="../images/pinmap/con_xt30.png" alt="">
   </div>	
   <div style="flex: 2;">
     <table>
@@ -363,11 +369,9 @@ Below is a diagram of ports of ROSRider control card:
 
 ## Battery
 
-![Battery](../images/pinmap/con_battery.png)
-
 <div style="display: flex; flex-direction: row;">
   <div style="flex: 1;">
-  	<img src="../images/pinmap/con_.png" alt="">
+  	<img src="../images/pinmap/con_battery.png" alt="">
   </div>	
   <div style="flex: 2;">
     <table>
