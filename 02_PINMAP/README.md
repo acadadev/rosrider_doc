@@ -86,45 +86,83 @@ Below is a diagram of ports of ROSRider control card:
 	</td>
 </tr>
 <tr>
-	<td></td>
-	<td></td>
+	<td><img src="../images/pinmap/con_servo.png" alt="servo connector"></td>
+	<td>
+	    <table>
+	    	<thead>
+	    		<td>Pin No</td>
+	    		<td>Description</td>
+	    	</thead>
+	    	<tr>
+	    		<td>1</td>
+	    		<td>Ground</td>
+	    	</tr> 
+	    	<tr>
+	    		<td>2</td>
+	    		<td>Ground</td>
+	    	</tr>   
+	    	<tr>
+	    		<td>3</td>
+	    		<td>AUX Power</td>
+	    	</tr> 
+	    	<tr>
+	    		<td>4</td>
+	    		<td>AUX Power</td>
+	    	</tr>
+	    	<tr>
+	    		<td>5</td>
+	    		<td>Servo1 PWM</td>
+	    	</tr>   
+	    	<tr>
+	    		<td>6</td>
+	    		<td>Servo2 PWM</td>
+	    	</tr>      	 	   	    	    	    	   	 	
+	    </table>		
+	</td>
 </tr>
-
+<tr>
+	<td><img src="../images/pinmap/con_power_aux.png" alt="power aux connector"></td>
+	<td>
+	    <table>
+	    	<thead>
+	    		<td>Pin No</td>
+	    		<td>Description</td>
+	    	</thead>
+	    	<tr>
+	    		<td>1</td>
+	    		<td>PWR AUX (5V)</td>
+	    	</tr> 
+	    	<tr>
+	    		<td>2</td>
+	    		<td>Ground</td>
+	    	</tr>    	 	   	    	    	    	   	 	
+	    </table>		
+	</td>
+</tr>
 <tr>
 	<td></td>
 	<td></td>
 </tr>
-
 <tr>
 	<td></td>
 	<td></td>
 </tr>
-
 <tr>
 	<td></td>
 	<td></td>
 </tr>
-
 <tr>
 	<td></td>
 	<td></td>
 </tr>
-
 <tr>
 	<td></td>
 	<td></td>
 </tr>
-
 <tr>
 	<td></td>
 	<td></td>
 </tr>
-
-<tr>
-	<td></td>
-	<td></td>
-</tr>
-
 <tr>
 	<td></td>
 	<td></td>
@@ -134,70 +172,15 @@ Below is a diagram of ports of ROSRider control card:
 
 ## Left Motor Connector
 ## Right Motor Connector
-
-
-
 ## Servo Connector
-
-<div style="display: flex; flex-direction: row;">
-  <div style="flex: 1;">
-  	<img src="../images/pinmap/con_servo.png" alt="">
-  </div>	
-  <div style="flex: 2; padding-left:20px;">
-    <table>
-    	<thead>
-    		<td>Pin No</td>
-    		<td>Description</td>
-    	</thead>
-    	<tr>
-    		<td>1</td>
-    		<td>Ground</td>
-    	</tr> 
-    	<tr>
-    		<td>2</td>
-    		<td>Ground</td>
-    	</tr>   
-    	<tr>
-    		<td>3</td>
-    		<td>AUX Power</td>
-    	</tr> 
-    	<tr>
-    		<td>4</td>
-    		<td>AUX Power</td>
-    	</tr>
-    	<tr>
-    		<td>5</td>
-    		<td>Servo1 PWM</td>
-    	</tr>   
-    	<tr>
-    		<td>6</td>
-    		<td>Servo2 PWM</td>
-    	</tr>      	 	   	    	    	    	   	 	
-    </table>
-  </div>
-</div>
-
 ## AUX Power Port
 
 <div style="display: flex; flex-direction: row;">
   <div style="flex: 1;">
-  	<img src="../images/pinmap/con_power_aux.png" alt="">
+  	
   </div>	
   <div style="flex: 2; padding-left:20px;">
-    <table>
-    	<thead>
-    		<td>Pin No</td>
-    		<td>Description</td>
-    	</thead>
-    	<tr>
-    		<td>1</td>
-    		<td>PWR AUX (5V)</td>
-    	</tr> 
-    	<tr>
-    		<td>2</td>
-    		<td>Ground</td>
-    	</tr>    	 	   	    	    	    	   	 	
-    </table>
+
   </div>
 </div>
 
