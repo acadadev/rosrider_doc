@@ -18,14 +18,16 @@ Below is a diagram of ports of ROSRider control card:
 
 #### Left Motor Connector
 
+![Left Motor Connector](../images/pinmap/con_left_motor.png) 
+
 | -------- | ------- |
-| ![Left Motor Connector](../images/pinmap/con_left_motor.png) |
-| A        | Motor Negative |
-| B        | Motor Positive |
-| C        | 3V3 |
-| D        | Encoder Phase B |
-| E        | Encoder Phase A |
-| F        | Ground |
+| pins               |
+| 1        | Motor Negative |
+| 2        | Motor Positive |
+| 3        | 3V3 |
+| 4        | Encoder Phase B |
+| 5        | Encoder Phase A |
+| 6        | Ground |
 
 
 ### Right Motor Connector
