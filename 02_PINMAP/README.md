@@ -15,17 +15,13 @@ Below is a diagram of ports of ROSRider control card:
 [![ROSRider Pinmap](../images/ROSRider4D_portmap.png)](https://acada.dev/products)
 
 <style type="text/css">
-
   table.pinmap tbody tr td {
   	border: 2px solid black;
   }
-
   table.pinmap thead th {
   	border: 2px solid black;
   }
-
 </style>
-
 <table id="portmap">
 <tbody>
 <tr style="border:none;">
@@ -71,7 +67,7 @@ Below is a diagram of ports of ROSRider control card:
 	    </table>
 	</td>
 </tr>
-<tr></tr>
+<tr style="border:none;"></tr>
 <tr style="border:none;">
 	<td colspan="2" style="border:none;">
 		<b>Right Motor Connector</b>
@@ -115,7 +111,7 @@ Below is a diagram of ports of ROSRider control card:
 	    </table>		
 	</td>
 </tr>
-<tr></tr>
+<tr style="border:none;"></tr>
 <tr style="border:none;">
 	<td colspan="2" style="border:none;">
 		<b>Servo Connector</b>
@@ -159,7 +155,7 @@ Below is a diagram of ports of ROSRider control card:
 	    </table>		
 	</td>
 </tr>
-<tr></tr>
+<tr style="border:none;"></tr>
 <tr style="border:none;">
 	<td colspan="2" style="border:none;">
 		<b>AUX Power Port</b>
@@ -187,7 +183,7 @@ Below is a diagram of ports of ROSRider control card:
 	    </table>		
 	</td>
 </tr>
-<tr></tr>
+<tr style="border:none;"></tr>
 <tr style="border:none;">
 	<td colspan="2" style="border:none;">
 		<b>Power Control Port</b>
@@ -223,7 +219,7 @@ Below is a diagram of ports of ROSRider control card:
 	    </table>		
 	</td>
 </tr>
-<tr></tr>
+<tr style="border:none;"></tr>
 <tr style="border:none;">
 	<td colspan="2" style="border:none;">
 		<b>Communications Port</b>
@@ -267,7 +263,7 @@ Below is a diagram of ports of ROSRider control card:
 	    </table>		
 	</td>
 </tr>
-<tr></tr>
+<tr style="border:none;"></tr>
 <tr style="border:none;">
 	<td colspan="2" style="border:none;">
 		<b>I2C QWIC Port A</b>
@@ -303,7 +299,7 @@ Below is a diagram of ports of ROSRider control card:
 	    </table>
 	</td>
 </tr>
-<tr></tr>
+<tr style="border:none;"></tr>
 <tr style="border:none;">
 	<td colspan="2" style="border:none;">
 		<b>I2C QWIC Port B</b>
@@ -339,7 +335,7 @@ Below is a diagram of ports of ROSRider control card:
 	    </table>		
 	</td>
 </tr>
-<tr></tr>
+<tr style="border:none;"></tr>
 <tr style="border:none;">
 	<td colspan="2" style="border:none;">
 		<b>SPI Port</b>
@@ -383,7 +379,7 @@ Below is a diagram of ports of ROSRider control card:
 	    </table>		
 	</td>
 </tr>
-<tr></tr>
+<tr style="border:none;"></tr>
 <tr style="border:none;">
 	<td colspan="2" style="border:none;">
 		<b>Serial Port</b>
@@ -419,7 +415,7 @@ Below is a diagram of ports of ROSRider control card:
 	    </table>		
 	</td>
 </tr>
-<tr></tr>
+<tr style="border:none;"></tr>
 <tr style="border:none;">
 	<td colspan="2" style="border:none;">
 		<b>Power Connector</b>
@@ -447,7 +443,7 @@ Below is a diagram of ports of ROSRider control card:
 	    </table>		
 	</td>
 </tr>
-<tr></tr>
+<tr style="border:none;"></tr>
 <tr style="border:none;">
 	<td colspan="2" style="border:none;">
 		<b>Battery</b>
