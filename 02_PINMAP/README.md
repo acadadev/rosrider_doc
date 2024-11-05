@@ -29,7 +29,7 @@ Below is a diagram of ports of ROSRider control card:
 		<h3>Left Motor Connector</h3>
 	</td>
 </tr>
-<tr style="padding-top:15px;"></tr>
+<tr style="border:none;"></tr>
 <tr style="border:none;">
 	<td style="border:none;"><img src="../images/pinmap/con_left_motor.png" alt="left motor connector"></td>
 	<td style="border:none; vertical-align:middle;">
@@ -73,7 +73,7 @@ Below is a diagram of ports of ROSRider control card:
 		<h3>Right Motor Connector</h3>
 	</td>
 </tr>
-<tr></tr>
+<tr style="border:none;"></tr>
 <tr style="border:none;">
 	<td style="border:none;"><img src="../images/pinmap/con_right_motor.png" alt="right motor connector"></td>
 	<td style="border:none; vertical-align:middle;">
@@ -117,7 +117,7 @@ Below is a diagram of ports of ROSRider control card:
 		<h3>Servo Connector</h3>
 	</td>
 </tr>
-<tr></tr>
+<tr style="border:none;"></tr>
 <tr style="border:none;">
 	<td style="border:none;"><img src="../images/pinmap/con_servo.png" alt="servo connector"></td>
 	<td style="border:none; vertical-align:middle;">
@@ -161,7 +161,7 @@ Below is a diagram of ports of ROSRider control card:
 		<h3>AUX Power Port</h3>
 	</td>
 </tr>
-<tr></tr>
+<tr style="border:none;"></tr>
 <tr style="border:none;">
 	<td style="border:none;"><img src="../images/pinmap/con_power_aux.png" alt="power aux connector"></td>
 	<td style="border:none; vertical-align:middle;">
@@ -189,7 +189,7 @@ Below is a diagram of ports of ROSRider control card:
 		<h3>Power Control Port</h3>
 	</td>
 </tr>
-<tr></tr>
+<tr style="border:none;"></tr>
 <tr style="border:none;">
 	<td style="border:none;"><img src="../images/pinmap/con_power_control.png" alt="power control port"></td>
 	<td style="border:none; vertical-align:middle;">
@@ -225,7 +225,7 @@ Below is a diagram of ports of ROSRider control card:
 		<h3>Communications Port</h3>
 	</td>
 </tr>
-<tr></tr>
+<tr style="border:none;"></tr>
 <tr style="border:none;">
 	<td style="border:none;"><img src="../images/pinmap/con_comm.png" alt="communications port"></td>
 	<td style="border:none; vertical-align:middle;">
@@ -269,7 +269,7 @@ Below is a diagram of ports of ROSRider control card:
 		<h3>I2C QWIC Port A</h3>
 	</td>
 </tr>
-<tr></tr>
+<tr style="border:none;"></tr>
 <tr style="border:none;">
 	<td style="border:none;"><img src="../images/pinmap/con_qwic_a.png" alt="qwic port a"></td>
 	<td style="border:none; vertical-align:middle;">
@@ -305,7 +305,7 @@ Below is a diagram of ports of ROSRider control card:
 		<h3>I2C QWIC Port B</h3>
 	</td>
 </tr>
-<tr></tr>
+<tr style="border:none;"></tr>
 <tr style="border:none;">
 	<td style="border:none;"><img src="../images/pinmap/con_qwic_b.png" alt="qwic port b"></td>
 	<td style="border:none; vertical-align:middle;">
@@ -341,7 +341,7 @@ Below is a diagram of ports of ROSRider control card:
 		<h3>SPI Port</h3>
 	</td>
 </tr>
-<tr></tr>
+<tr style="border:none;"></tr>
 <tr style="border:none;">
 	<td style="border:none;"><img src="../images/pinmap/con_spi.png" alt="spi port"></td>
 	<td style="border:none; vertical-align:middle;">
@@ -385,7 +385,7 @@ Below is a diagram of ports of ROSRider control card:
 		<h3>Serial Port</h3>
 	</td>
 </tr>
-<tr></tr>
+<tr style="border:none;"></tr>
 <tr style="border:none;">
 	<td style="border:none;"><img src="../images/pinmap/con_serial.png" alt="serial port"></td>
 	<td style="border:none; vertical-align:middle;">
@@ -421,7 +421,7 @@ Below is a diagram of ports of ROSRider control card:
 		<h3>Power Connector</h3>
 	</td>
 </tr>
-<tr></tr>
+<tr style="border:none;"></tr>
 <tr style="border:none;">
 	<td style="border:none;"><img src="../images/pinmap/con_xt30.png" alt="power connector"></td>
 	<td style="border:none; vertical-align:middle;">
@@ -449,7 +449,7 @@ Below is a diagram of ports of ROSRider control card:
 		<h3>Battery</h3>
 	</td>
 </tr>
-<tr></tr>
+<tr style="border:none;"></tr>
 <tr style="border:none;">
 	<td style="border:none;"><img src="../images/pinmap/con_battery.png" alt="cr1225 battery"></td>
 	<td style="border:none; vertical-align:middle;">Use standard CR1225 Battery</td>
