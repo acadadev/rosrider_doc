@@ -26,7 +26,7 @@ Below is a diagram of ports of ROSRider control card:
 <tbody>
 <tr style="border:none;">
 	<td colspan="2" style="border:none;">
-		<b>Left Motor Connector</b>
+		<h4>Left Motor Connector</h4>
 	</td>
 </tr>
 <tr></tr>
@@ -70,7 +70,7 @@ Below is a diagram of ports of ROSRider control card:
 <tr style="border:none;"></tr>
 <tr style="border:none;">
 	<td colspan="2" style="border:none;">
-		<b>Right Motor Connector</b>
+		<h4>Right Motor Connector</h4>
 	</td>
 </tr>
 <tr></tr>
@@ -114,7 +114,7 @@ Below is a diagram of ports of ROSRider control card:
 <tr style="border:none;"></tr>
 <tr style="border:none;">
 	<td colspan="2" style="border:none;">
-		<b>Servo Connector</b>
+		<h4>Servo Connector</h4>
 	</td>
 </tr>
 <tr></tr>
@@ -158,7 +158,7 @@ Below is a diagram of ports of ROSRider control card:
 <tr style="border:none;"></tr>
 <tr style="border:none;">
 	<td colspan="2" style="border:none;">
-		<b>AUX Power Port</b>
+		<h4>AUX Power Port</h4>
 	</td>
 </tr>
 <tr></tr>
@@ -186,7 +186,7 @@ Below is a diagram of ports of ROSRider control card:
 <tr style="border:none;"></tr>
 <tr style="border:none;">
 	<td colspan="2" style="border:none;">
-		<b>Power Control Port</b>
+		<h4>Power Control Port</h4>
 	</td>
 </tr>
 <tr></tr>
@@ -222,7 +222,7 @@ Below is a diagram of ports of ROSRider control card:
 <tr style="border:none;"></tr>
 <tr style="border:none;">
 	<td colspan="2" style="border:none;">
-		<b>Communications Port</b>
+		<h4>Communications Port</h4>
 	</td>
 </tr>
 <tr></tr>
@@ -266,7 +266,7 @@ Below is a diagram of ports of ROSRider control card:
 <tr style="border:none;"></tr>
 <tr style="border:none;">
 	<td colspan="2" style="border:none;">
-		<b>I2C QWIC Port A</b>
+		<h4>I2C QWIC Port A</h4>
 	</td>
 </tr>
 <tr></tr>
@@ -302,7 +302,7 @@ Below is a diagram of ports of ROSRider control card:
 <tr style="border:none;"></tr>
 <tr style="border:none;">
 	<td colspan="2" style="border:none;">
-		<b>I2C QWIC Port B</b>
+		<h4>I2C QWIC Port B</h4>
 	</td>
 </tr>
 <tr></tr>
@@ -338,7 +338,7 @@ Below is a diagram of ports of ROSRider control card:
 <tr style="border:none;"></tr>
 <tr style="border:none;">
 	<td colspan="2" style="border:none;">
-		<b>SPI Port</b>
+		<h4>SPI Port</h4>
 	</td>
 </tr>
 <tr></tr>
@@ -382,7 +382,7 @@ Below is a diagram of ports of ROSRider control card:
 <tr style="border:none;"></tr>
 <tr style="border:none;">
 	<td colspan="2" style="border:none;">
-		<b>Serial Port</b>
+		<h4>Serial Port</h4>
 	</td>
 </tr>
 <tr></tr>
@@ -418,7 +418,7 @@ Below is a diagram of ports of ROSRider control card:
 <tr style="border:none;"></tr>
 <tr style="border:none;">
 	<td colspan="2" style="border:none;">
-		<b>Power Connector</b>
+		<h4>Power Connector</h4>
 	</td>
 </tr>
 <tr></tr>
@@ -446,7 +446,7 @@ Below is a diagram of ports of ROSRider control card:
 <tr style="border:none;"></tr>
 <tr style="border:none;">
 	<td colspan="2" style="border:none;">
-		<b>Battery</b>
+		<h4>Battery</h4>
 	</td>
 </tr>
 <tr></tr>
