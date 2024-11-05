@@ -72,6 +72,12 @@ Below is a diagram of ports of ROSRider control card:
 	</td>
 </tr>
 <tr></tr>
+<tr style="border:none;">
+	<td colspan="2" style="border:none;">
+		<b>Right Motor Connector</b>
+	</td>
+</tr>
+<tr></tr>
 <tr>
 	<td style="border:none;"><img src="../images/pinmap/con_right_motor.png" alt="right motor connector"></td>
 	<td style="border:none; vertical-align:middle;">
@@ -107,6 +113,12 @@ Below is a diagram of ports of ROSRider control card:
 		    	</tr>
 	    	</tbody>  	    	    	   	 	
 	    </table>		
+	</td>
+</tr>
+<tr></tr>
+<tr style="border:none;">
+	<td colspan="2" style="border:none;">
+		<b>Servo Connector</b>
 	</td>
 </tr>
 <tr></tr>
@@ -148,6 +160,12 @@ Below is a diagram of ports of ROSRider control card:
 	</td>
 </tr>
 <tr></tr>
+<tr style="border:none;">
+	<td colspan="2" style="border:none;">
+		<b>AUX Power Port</b>
+	</td>
+</tr>
+<tr></tr>
 <tr>
 	<td style="border:none;"><img src="../images/pinmap/con_power_aux.png" alt="power aux connector"></td>
 	<td style="border:none; vertical-align:middle;">
@@ -167,6 +185,12 @@ Below is a diagram of ports of ROSRider control card:
 		    	</tr>
 	    	</tbody> 	 	   	    	    	    	   	 	
 	    </table>		
+	</td>
+</tr>
+<tr></tr>
+<tr style="border:none;">
+	<td colspan="2" style="border:none;">
+		<b>Power Control Port</b>
 	</td>
 </tr>
 <tr></tr>
@@ -197,6 +221,12 @@ Below is a diagram of ports of ROSRider control card:
 		    	</tr>
 	    	</tbody>   	   	 	 	   	    	    	    	   	 	
 	    </table>		
+	</td>
+</tr>
+<tr></tr>
+<tr style="border:none;">
+	<td colspan="2" style="border:none;">
+		<b>Communications Port</b>
 	</td>
 </tr>
 <tr></tr>
@@ -238,6 +268,12 @@ Below is a diagram of ports of ROSRider control card:
 	</td>
 </tr>
 <tr></tr>
+<tr style="border:none;">
+	<td colspan="2" style="border:none;">
+		<b>I2C QWIC Port A</b>
+	</td>
+</tr>
+<tr></tr>
 <tr>
 	<td style="border:none;"><img src="../images/pinmap/con_qwic_a.png" alt="qwic port a"></td>
 	<td style="border:none; vertical-align:middle;">
@@ -268,6 +304,12 @@ Below is a diagram of ports of ROSRider control card:
 	</td>
 </tr>
 <tr></tr>
+<tr style="border:none;">
+	<td colspan="2" style="border:none;">
+		<b>I2C QWIC Port B</b>
+	</td>
+</tr>
+<tr></tr>
 <tr>
 	<td style="border:none;"><img src="../images/pinmap/con_qwic_b.png" alt="qwic port b"></td>
 	<td style="border:none; vertical-align:middle;">
@@ -295,6 +337,12 @@ Below is a diagram of ports of ROSRider control card:
 		    	</tr>
 	    	</tbody>  	 	   	    	    	    	   	 	
 	    </table>		
+	</td>
+</tr>
+<tr></tr>
+<tr style="border:none;">
+	<td colspan="2" style="border:none;">
+		<b>SPI Port</b>
 	</td>
 </tr>
 <tr></tr>
@@ -336,6 +384,12 @@ Below is a diagram of ports of ROSRider control card:
 	</td>
 </tr>
 <tr></tr>
+<tr style="border:none;">
+	<td colspan="2" style="border:none;">
+		<b>Serial Port</b>
+	</td>
+</tr>
+<tr></tr>
 <tr>
 	<td style="border:none;"><img src="../images/pinmap/con_serial.png" alt="serial port"></td>
 	<td style="border:none; vertical-align:middle;">
@@ -366,6 +420,12 @@ Below is a diagram of ports of ROSRider control card:
 	</td>
 </tr>
 <tr></tr>
+<tr style="border:none;">
+	<td colspan="2" style="border:none;">
+		<b>Power Connector</b>
+	</td>
+</tr>
+<tr></tr>
 <tr>
 	<td style="border:none;"><img src="../images/pinmap/con_xt30.png" alt="power connector"></td>
 	<td style="border:none; vertical-align:middle;">
@@ -388,6 +448,12 @@ Below is a diagram of ports of ROSRider control card:
 	</td>
 </tr>
 <tr></tr>
+<tr style="border:none;">
+	<td colspan="2" style="border:none;">
+		<b>Battery</b>
+	</td>
+</tr>
+<tr></tr>
 <tr>
 	<td style="border:none;"><img src="../images/pinmap/con_battery.png" alt="cr1225 battery"></td>
 	<td style="border:none; vertical-align:middle;">Use standard CR1225 Battery</td>
@@ -395,18 +461,5 @@ Below is a diagram of ports of ROSRider control card:
 <tr></tr>
 </tbody>
 </table>
-
-## Left Motor Connector
-## Right Motor Connector
-## Servo Connector
-## AUX Power Port
-## Power Control Port
-## Communications Port
-## QWIC A Port
-## QWIC B Port
-## SPI Port
-## Serial Port
-## Power Connector
-## Battery
 
 __Next Chapter:__ [Connecting ROSRider to Host Computer](../03_CONNECT/README.md)
