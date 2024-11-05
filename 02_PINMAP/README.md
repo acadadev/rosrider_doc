@@ -454,7 +454,7 @@ Below is a diagram of ports of ROSRider control card:
 	<td style="border:none;"><img src="../images/pinmap/con_battery.png" alt="cr1225 battery"></td>
 	<td style="border:none; vertical-align:middle;">Use standard CR1225 Battery</td>
 </tr>
-<tr></tr>
+<tr style="border:none;"></tr>
 </tbody>
 </table>
 
