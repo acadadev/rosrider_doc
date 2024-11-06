@@ -90,6 +90,6 @@ XT30 Power Connector. Apply maximum 12V.
 
 Use CR1225 3V coin battery.
 
-![CR1225 Battery](../images/pinmap/dwg_battery.png)
+![CR1225 Battery](../images/pinmap/dwg_cr1225.png)
 
 __Next Chapter:__ [Connecting ROSRider to Host Computer](../03_CONNECT/README.md)
