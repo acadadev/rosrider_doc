@@ -8,7 +8,7 @@ description: "Connections and Ports of ROSRider Card"
 <style type="text/css">
 
 	h2 {
-		border-top: 3px solid #eaecef;
+		border-bottom: 3px solid #eaecef;
 		padding-left:10px;
 	}
 
