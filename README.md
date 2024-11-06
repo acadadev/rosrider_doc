@@ -1,7 +1,7 @@
 ROSRider is an electronics hardware product that allows the control of any differential drive robot using Robot Operating System. 
 
 - [Introduction](01_INTRO/README.md)
-- [Pinmap](02_PINMAP/README.md)
+- [Connections and Pinmaps](02_PINMAP/README.md)
 - [Connecting ROSRider to Host Computer](03_CONNECT/README.md)
 - [ROS2 Drivers](04_DRIVERS/README.md)
 - [Parameters](05_PARAMETERS/README.md)
