@@ -18,9 +18,13 @@ Below is a diagram of ports of ROSRider control card:
 
 ![Left Motor Connector](../images/dwg/dwg_left_motor.png)
 
+This is a standard 6 wire encoder motor connector, that is compatible with many motors and can be connected with standard cables. ROSRider card can be used with dual phase or single phase encoders, and encoder type can be configured via software. If single phase encoder is used, use Encoder Phase A pin, and leave Encoder Phase B pin unconnected.
+
 ## Right Motor Connector
 
 ![Right Motor Connector](../images/dwg/dwg_right_motor.png)
+
+Right motor connector is mirrored version of Left motor connector.
 
 ## Servo Connector
 
@@ -38,6 +42,8 @@ Software controllable auxillary power port, will generate 5V when turned on.
 
 ![Power Control Port](../images/dwg/dwg_power_control.png)
 
+This is an internal connector, that can be used to control buttons on the board remotely. The connector is not soldered, and left for future expansion.
+
 ## Communications Port
 
 ![Communications Port](../images/dwg/dwg_comm.png)
@@ -48,12 +54,13 @@ Both I2C0 and Serial Port can be accessed using this pin header. Reset pin is de
 
 ![I2C QWIC Port A](../images/dwg/dwg_qwic_a.png)
 
-This is a standard QWIC port, which can be connected by a standard QWIC cable. There are two QWIC ports, that can be used to connect
-other QWIC devices, or piggyback another ROSRider card. The VCC from QWIC cable is used to wake up the board from hibernate state and is isolated from device.
+This is a standard QWIC port, which can be connected by a standard QWIC cable. The VCC from QWIC cable is used to wake up the board from hibernate state and is isolated from device.
 
 ## I2C QWIC Port B
 
 ![I2C QWIC Port B](../images/dwg/dwg_qwic_b.png)
+
+There are two identical QWIC ports, that can be used to connect other QWIC devices, or piggyback another ROSRider card.
 
 ## SPI Port
 
