@@ -9,7 +9,6 @@ description: "Connections and Ports of ROSRider Card"
 
 	.markdown-body h2 {
 		border-bottom: 3px solid #eaecef !important;
-		padding-left:10px;
 	}
 
 </style>
