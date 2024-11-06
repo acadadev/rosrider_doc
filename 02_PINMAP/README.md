@@ -5,6 +5,15 @@ title: "Connections and Pinmaps"
 description: "Connections and Ports of ROSRider Card"
 ---
 
+<style type="text/css">
+
+	h4 {
+		border-top: 3px solid #eaecef;
+		padding-left:10px;
+	}
+
+</style>
+
 ## Board Port Diagram
 
 ROSRider card is equipped with number of ports and connectors, for connecting to encoder motors, and other peripherals.  
@@ -84,6 +93,6 @@ XT30 Power Connector. Apply maximum 12V.
 
 ![CR1225 Battery](../images/pinmap/dwg_battery.png)
 
-Use CR1225 coin battery.
+Use CR1225 3V coin battery.
 
 __Next Chapter:__ [Connecting ROSRider to Host Computer](../03_CONNECT/README.md)
