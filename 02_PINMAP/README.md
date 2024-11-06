@@ -13,8 +13,6 @@ description: "Connections and Ports of ROSRider Card"
 
 </style>
 
-## Board Port Diagram
-
 ROSRider card is equipped with number of ports and connectors, for connecting to encoder motors, and other peripherals.  
 Pinmaps of each connector and port will be illustrated in detail.  
 
