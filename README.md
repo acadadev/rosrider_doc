@@ -13,6 +13,6 @@ ROSRider is an electronics hardware product that allows the control of any diffe
 
 ROSRider aims to lower the cost barrier for building ROS based robots. Using commodity parts, users can build robots that can run the Robot Operating System.
 
-[![ROSRider Control Card](/images/ROSRIDERv4X.png)](https://acada.dev/products)
+[![ROSRider Control Card](/images/ROSRider4D.png)](https://acada.dev/products)
 
 ROSRider has a bootloader system where the user can upgrade firmware over USB, without a specialized programmer.
