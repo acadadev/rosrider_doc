@@ -11,6 +11,7 @@ ROSRider is a versatile electronics card that empowers you to create custom ROS-
 
 <p align="center">
 <img src="../images/sorcerer_rosrider_intro.jpg" alt="ROSRider application project">
+*Fig1: I2C connection with Raspberry PI*
 </p>
 
 <p align="center">
