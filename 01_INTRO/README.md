@@ -16,6 +16,7 @@ ROSRider is a versatile electronics card that empowers you to create custom ROS-
 
 <p align="center">
 <img src="../images/caretta_with_ros2rpi_intro.jpg" alt="Caretta with ROS2RPI">
+*Fig2: Connection with ROS2RPI*
 </p>
 
 
