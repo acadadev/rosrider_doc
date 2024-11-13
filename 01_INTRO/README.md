@@ -60,13 +60,17 @@ ROSRider is primarily designed for Raspberry Pi and Jetson platforms, leveraging
 </div>
 
 
-**Advanced**
+**Robust Protection** 
 
-**Robust Protection:** Built-in current monitoring and a hardware-resettable fuse safeguard the motors and battery. Software-based current limiting and remote threshold configuration enhance safety and flexibility.
+Built-in current monitoring and a hardware-resettable fuse safeguard the motors and battery. Software-based current limiting and remote threshold configuration enhance safety and flexibility.
 
-**Timekeeping:** The integrated Real-Time Clock (RTC) enables precise timekeeping and scheduled wake-up events, facilitating autonomous operation and data logging.
+**Timekeeping** 
 
-**Enhanced Diagnostics:** The system publishes detailed diagnostic information, including battery voltage, current consumption, and motor current feedback, to aid in remote debugging and system monitoring.
+The integrated Real-Time Clock (RTC) enables precise timekeeping and scheduled wake-up events, facilitating autonomous operation and data logging.
+
+**Enhanced Diagnostics** 
+
+The system publishes detailed diagnostic information, including battery voltage, current consumption, and motor current feedback, to aid in remote debugging and system monitoring.
 
 **Parameters**
 [TODO]
