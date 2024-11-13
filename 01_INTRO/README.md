@@ -28,6 +28,18 @@ The ROS2RPI card offers flexible serial port routing, enabling remote access to 
 
 The ROSRider supports a wide range of encoder gear motors, which can be configured as servos through YAML files. Its dual-channel drivers, capable of delivering 1A continuous and 2.8A peak current, provide ample power for various robotic applications.
 
+<p align="center">
+<img src="../images/metal_gear_motor_a.png" alt="Metal gear motor">
+</p>
+
+<p align="center">
+<img src="../images/plastic_gear_motor.png" alt="Plastic gear motor">
+</p>
+
+<p align="center">
+<img src="../images/vacuum_robot_motor.png" alt="Vacuum cleaner spare motor">
+</p>
+
 **Supported Platforms**
 
 ROSRider is primarily designed for Raspberry Pi and Jetson platforms, leveraging their powerful processing capabilities and compact form factors. However, the card is compatible with any Linux-based system equipped with an I2C port.
