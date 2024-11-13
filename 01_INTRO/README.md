@@ -28,15 +28,7 @@ The ROS2RPI card offers flexible serial port routing, enabling remote access to 
 
 ROSRider can drive a wide range of encoder gear motors, from simple DC motors to high-precision gear motors commonly found in robotic vacuum cleaners. It supports both single-phase and dual-phase encoders, with parameters such as encoder PPR and gear reduction ratio configurable through YAML files. The dual-channel drivers, delivering 1A continuous and 2.8A peak current, provide ample power for various robotic applications. Additionally, users can fine-tune motor performance by adjusting parameters like forward and backward deadzones, PWM frequency (up to 18kHz for reduced noise), and motor driver configurations (brake mode, low-side and high-side decay).
 
-<!--
-<div style="display: flex; justify-content: space-around;">
-<img src="../images/metal_gear_motor_a.png" style="width: 33%;" alt="Metal gear motor">
-<img src="../images/plastic_gear_motor.png" style="width: 33%;" alt="Plastic gear motor">
-<img src="../images/vacuum_robot_motor.png" style="width: 33%;" alt="Vacuum cleaner spare motor">
-</div>
--->
-
-<div style="display: flex; justify-content: space-around; margin: 20px 0;">
+<div style="display: flex; justify-content: space-around; margin: 25px 0;">
   <img src="../images/metal_gear_motor_a.png" alt="Metal gear motor" style="width: 30%; border: 1px solid #ccc; border-radius: 5px; box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);">
   <img src="../images/plastic_gear_motor.png" alt="Plastic gear motor" style="width: 30%; border: 1px solid #ccc; border-radius: 5px; box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);">
   <img src="../images/vacuum_robot_motor.png" alt="Vacuum cleaner spare motor" style="width: 30%; border: 1px solid #ccc; border-radius: 5px; box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);">
@@ -46,7 +38,7 @@ ROSRider can drive a wide range of encoder gear motors, from simple DC motors to
 
 To further enhance the integration of ROSRider with open-source robotics, we have developed two open-source robot platforms: Sorcerer and Caretta. These low-cost, pre-built robots, accompanied by URDF files for ROS and Gazebo simulation, streamline the development process. Developers can rapidly prototype and test algorithms in simulation before deploying them to physical hardware, significantly accelerating development time and reducing costs associated with physical experimentation.
 
-<img src="../images/ros_logo.png" alt="Robot Operating System">
+<img src="../images/ros_logo.png" align="left" style="width:10%;" alt="Robot Operating System"> bla
 
 **Future-Proof Design**
 
@@ -56,7 +48,7 @@ To ensure long-term usability and adaptability, the ROSRider card supports firmw
 
 ROSRider is primarily designed for Raspberry Pi and Jetson platforms, leveraging their powerful processing capabilities and compact form factors. However, the card is compatible with any Linux-based system equipped with an I2C port.
 
-<div style="display: flex; justify-content: space-around; margin: 20px 0;">
+<div style="display: flex; justify-content: space-around; margin: 25px 0;">
   <img src="../images/rpi.png" alt="Raspberry Pi 5" style="width: 30%; border: 1px solid #ccc; border-radius: 5px; box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);">
   <img src="../images/jetson_nano.png" alt="Jetson Nano" style="width: 30%; border: 1px solid #ccc; border-radius: 5px; box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);">
   <img src="../images/jetson_agx.png" alt="Jetson AGX" style="width: 30%; border: 1px solid #ccc; border-radius: 5px; box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);">
