@@ -9,7 +9,7 @@ description: "Introduction to ROSRider control card"
 
 ROSRider is a versatile electronics card that empowers you to create custom ROS-compatible robots. ROSRider can control and power a range of small encoder gear motors, enabling the construction of 2-wheeled or 4-wheeled robots of small to medium size. By cascading multiple ROSRider cards, you can expand the robot's capabilities to support higher wheel counts and more complex configurations.
 
-Below is a picture of minimal chassis, composed of two encoder gear motors, a RPI4 computer and ROSRider card. This specific chassis is designed for lane following tru image processing.
+Below is an image of a minimal chassis designed for lane-following tasks using image processing. This compact setup incorporates two encoder gear motors, a Raspberry Pi 4 computer, and a ROSRider card, all seamlessly integrated into a minimal footprint. This streamlined platform empowers developers to quickly prototype and experiment with autonomous vehicle concepts, making it an ideal tool for learning and innovation in robotics.
 <p align="center">
 <img src="../images/sorcerer_rosrider_intro.jpg" alt="ROSRider application project">
 </p>
@@ -18,6 +18,7 @@ Below is a picture of minimal chassis, composed of two encoder gear motors, a RP
 <img src="../images/caretta_with_ros2rpi_intro.jpg" alt="Caretta with ROS2RPI">
 </p>
 
+something.
 
 
 
