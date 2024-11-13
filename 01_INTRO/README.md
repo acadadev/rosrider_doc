@@ -30,13 +30,7 @@ The ROSRider supports a wide range of encoder gear motors, which can be configur
 
 <p align="center">
 <img src="../images/metal_gear_motor_a.png" alt="Metal gear motor">
-</p>
-
-<p align="center">
 <img src="../images/plastic_gear_motor.png" alt="Plastic gear motor">
-</p>
-
-<p align="center">
 <img src="../images/vacuum_robot_motor.png" alt="Vacuum cleaner spare motor">
 </p>
 
