@@ -7,6 +7,8 @@ description: "Introduction to ROSRider control card"
 
 **Introduction**
 
+ROSRider is a versatile electronics card that empowers you to create custom ROS-compatible robots.
+
 
 **Supported Motors**
 
@@ -14,6 +16,9 @@ description: "Introduction to ROSRider control card"
 
 
 [photos of motors]
+
+**Supported Platforms**
+
 
 **Advanced**
 
