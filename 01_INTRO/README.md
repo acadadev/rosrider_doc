@@ -13,7 +13,9 @@ ROSRider is a versatile electronics card that empowers you to create custom ROS-
 ![ROSRider application project](../images/sorcerer_rosrider_intro.jpg)
 </div>
 
+<div align="center">
 ![CARETTA application project](../images/caretta_with_ros2rpi_intro.jpg)
+</div>
 
 **Supported Motors**
 
