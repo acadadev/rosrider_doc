@@ -34,13 +34,11 @@ ROSRider can drive a wide range of encoder gear motors, from simple DC motors to
 <img src="../images/vacuum_robot_motor.png" style="width: 33%;" alt="Vacuum cleaner spare motor">
 </div>
 
-
-
 **ROS integration**
 
-<img src="../images/ros_logo.png" style="width: 33%;" alt="Robot Operating System">
-
 To further enhance the integration of ROSRider with open-source robotics, we have developed two open-source robot platforms: Sorcerer and Caretta. These low-cost, pre-built robots, accompanied by URDF files for ROS and Gazebo simulation, streamline the development process. Developers can rapidly prototype and test algorithms in simulation before deploying them to physical hardware, significantly accelerating development time and reducing costs associated with physical experimentation.
+
+<img src="../images/ros_logo.png" style="width: 33%;" alt="Robot Operating System">
 
 **Future-Proof Design**
 
@@ -50,7 +48,7 @@ To ensure long-term usability and adaptability, the ROSRider card supports firmw
 
 ROSRider is primarily designed for Raspberry Pi and Jetson platforms, leveraging their powerful processing capabilities and compact form factors. However, the card is compatible with any Linux-based system equipped with an I2C port.
 
-<div style="display: flex; justify-content: space-around;">
+<div style="display: flex; justify-content: space-around; padding-bottom:20px;">
 <img src="../images/rpi5.png" style="width: 20%;" alt="RaspberryPI 5">
 <img src="../images/jetson_nano.png" style="width: 20%;" alt="Jetson Nano">
 <img src="../images/jetson_agx.png" style="width: 20%;" alt="Jetson AGX">
