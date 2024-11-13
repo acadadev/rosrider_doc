@@ -34,15 +34,7 @@ ROSRider can drive a wide range of encoder gear motors, from simple DC motors to
 <img src="../images/vacuum_robot_motor.png" style="width: 33%;" alt="Vacuum cleaner spare motor">
 </div>
 
-**Supported Platforms**
 
-ROSRider is primarily designed for Raspberry Pi and Jetson platforms, leveraging their powerful processing capabilities and compact form factors. However, the card is compatible with any Linux-based system equipped with an I2C port.
-
-<div style="display: flex; justify-content: space-around;">
-<img src="../images/rpi5.png" style="width: 33%;" alt="RaspberryPI 5">
-<img src="../images/jetson_nano.png" style="width: 33%;" alt="Jetson Nano">
-<img src="../images/jetson_agx.png" style="width: 33%;" alt="Jetson AGX">
-</div>
 
 **ROS integration**
 
@@ -54,11 +46,21 @@ To further enhance the integration of ROSRider with open-source robotics, we hav
 
 To ensure long-term usability and adaptability, the ROSRider card supports firmware updates via USB. This allows for continuous improvement and the addition of new features, without requiring specialized programming tools or hardware modifications.
 
+**Supported Platforms**
+
+ROSRider is primarily designed for Raspberry Pi and Jetson platforms, leveraging their powerful processing capabilities and compact form factors. However, the card is compatible with any Linux-based system equipped with an I2C port.
+
+<div style="display: flex; justify-content: space-around;">
+<img src="../images/rpi5.png" style="width: 20%;" alt="RaspberryPI 5">
+<img src="../images/jetson_nano.png" style="width: 20%;" alt="Jetson Nano">
+<img src="../images/jetson_agx.png" style="width: 20%;" alt="Jetson AGX">
+</div>
+
 **Advanced**
 
 **Robust Protection:** Built-in current monitoring and a hardware-resettable fuse safeguard the motors and battery. Software-based current limiting and remote threshold configuration enhance safety and flexibility.
 
-**Precise Timekeeping:** The integrated Real-Time Clock (RTC) enables precise timekeeping and scheduled wake-up events, facilitating autonomous operation and data logging.
+**Timekeeping:** The integrated Real-Time Clock (RTC) enables precise timekeeping and scheduled wake-up events, facilitating autonomous operation and data logging.
 
 **Enhanced Diagnostics:** The system publishes detailed diagnostic information, including battery voltage, current consumption, and motor current feedback, to aid in remote debugging and system monitoring.
 
