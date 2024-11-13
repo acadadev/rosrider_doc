@@ -36,9 +36,7 @@ ROSRider can drive a wide range of encoder gear motors, from simple DC motors to
 
 **ROS integration**
 
-To further enhance the integration of ROSRider with open-source robotics, we have developed two open-source robot platforms: Sorcerer and Caretta. These low-cost, pre-built robots, accompanied by URDF files for ROS and Gazebo simulation, streamline the development process. Developers can rapidly prototype and test algorithms in simulation before deploying them to physical hardware, significantly accelerating development time and reducing costs associated with physical experimentation.
-
-<img src="../images/ros_logo.png" align="left" style="width:10%;" alt="Robot Operating System"> bla
+<img src="../images/ros_logo.png" align="left" style="width:16%;" alt="Robot Operating System"> To further enhance the integration of ROSRider with open-source robotics, we have developed two open-source robot platforms: Sorcerer and Caretta. These low-cost, pre-built robots, accompanied by URDF files for ROS and Gazebo simulation, streamline the development process. Developers can rapidly prototype and test algorithms in simulation before deploying them to physical hardware, significantly accelerating development time and reducing costs associated with physical experimentation.
 
 **Future-Proof Design**
 
