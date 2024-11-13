@@ -13,12 +13,15 @@ ROSRider is a versatile electronics card that empowers you to create custom ROS-
 <img src="../images/sorcerer_rosrider_intro.jpg" alt="ROSRider application project">
 </p>
 <p align="center">
-**Fig1: I2C connection with Raspberry PI**
+<em>Fig1: I2C connection with Raspberry PI</em>
 </p>
 
 <p align="center">
 <img src="../images/caretta_with_ros2rpi_intro.jpg" alt="Caretta with ROS2RPI">
-*Fig2: Connection with ROS2RPI*
+
+</p>
+<p align="center">
+<em>Fig2: Connection with ROS2RPI</em>
 </p>
 
 
