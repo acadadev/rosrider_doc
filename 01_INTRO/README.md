@@ -37,16 +37,16 @@ ROSRider can drive a wide range of encoder gear motors, from simple DC motors to
 -->
 
 <div style="display: flex; justify-content: space-around; margin: 20px 0;">
-  <img src="../images/metal_gear_motor_a.png" alt="Metal gear motor" style="width: 33%; border: 1px solid #ccc; border-radius: 5px; box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);">
-  <img src="../images/plastic_gear_motor.png" alt="Plastic gear motor" style="width: 33%; border: 1px solid #ccc; border-radius: 5px; box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);">
-  <img src="../images/vacuum_robot_motor.png" alt="Vacuum cleaner spare motor" style="width: 33%; border: 1px solid #ccc; border-radius: 5px; box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);">
+  <img src="../images/metal_gear_motor_a.png" alt="Metal gear motor" style="width: 30%; border: 1px solid #ccc; border-radius: 5px; box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);">
+  <img src="../images/plastic_gear_motor.png" alt="Plastic gear motor" style="width: 30%; border: 1px solid #ccc; border-radius: 5px; box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);">
+  <img src="../images/vacuum_robot_motor.png" alt="Vacuum cleaner spare motor" style="width: 30%; border: 1px solid #ccc; border-radius: 5px; box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);">
 </div>
 
 **ROS integration**
 
 To further enhance the integration of ROSRider with open-source robotics, we have developed two open-source robot platforms: Sorcerer and Caretta. These low-cost, pre-built robots, accompanied by URDF files for ROS and Gazebo simulation, streamline the development process. Developers can rapidly prototype and test algorithms in simulation before deploying them to physical hardware, significantly accelerating development time and reducing costs associated with physical experimentation.
 
-<img src="../images/ros_logo.png" style="width: 33%;" alt="Robot Operating System">
+<img src="../images/ros_logo.png" alt="Robot Operating System">
 
 **Future-Proof Design**
 
@@ -57,9 +57,9 @@ To ensure long-term usability and adaptability, the ROSRider card supports firmw
 ROSRider is primarily designed for Raspberry Pi and Jetson platforms, leveraging their powerful processing capabilities and compact form factors. However, the card is compatible with any Linux-based system equipped with an I2C port.
 
 <div style="display: flex; justify-content: space-around; margin: 20px 0;">
-  <img src="../images/rpi.png" alt="Raspberry Pi 5" style="width: 20%; border: 1px solid #ccc; border-radius: 5px; box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);">
-  <img src="../images/jetson_nano.png" alt="Jetson Nano" style="width: 20%; border: 1px solid #ccc; border-radius: 5px; box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);">
-  <img src="../images/jetson_agx.png" alt="Jetson AGX" style="width: 20%; border: 1px solid #ccc; border-radius: 5px; box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);">
+  <img src="../images/rpi.png" alt="Raspberry Pi 5" style="width: 30%; border: 1px solid #ccc; border-radius: 5px; box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);">
+  <img src="../images/jetson_nano.png" alt="Jetson Nano" style="width: 30%; border: 1px solid #ccc; border-radius: 5px; box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);">
+  <img src="../images/jetson_agx.png" alt="Jetson AGX" style="width: 30%; border: 1px solid #ccc; border-radius: 5px; box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);">
 </div>
 
 **Advanced**
