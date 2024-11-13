@@ -9,6 +9,8 @@ description: "Introduction to ROSRider control card"
 
 ROSRider is a versatile electronics card that empowers you to create custom ROS-compatible robots. ROSRider can control and power a range of small encoder gear motors, enabling the construction of 2-wheeled or 4-wheeled robots of small to medium size. By cascading multiple ROSRider cards, you can expand the robot's capabilities to support higher wheel counts and more complex configurations.
 
+ROSRider is designed to empower makers and students, especially in developing countries, to build robots using readily available components. Unlike pre-built kits that can be costly and limiting, ROSRider is a versatile platform that can be integrated with existing hardware, such as motors, sensors, and controllers. This approach encourages creativity, reduces costs, and promotes the reuse of existing components, making robotics accessible to a wider audience.
+
 Below is an image of a minimal chassis designed for lane-following tasks using image processing. This compact setup incorporates two encoder gear motors, a Raspberry Pi 4 computer, and a ROSRider card, all seamlessly integrated into a minimal footprint. This streamlined platform empowers developers to quickly prototype and experiment with autonomous vehicle concepts, making it an ideal tool for learning and innovation in robotics.
 <p align="center">
 <img src="../images/sorcerer_rosrider_intro.jpg" alt="ROSRider application project">
@@ -24,6 +26,8 @@ The ROSRider and ROS2RPI cards significantly simplify the user experience by aut
 
 The ROS2RPI card offers flexible serial port routing, enabling remote access to the Raspberry Pi and other devices like LiDAR sensors. This feature prevents boot conflicts caused by LiDAR serial output during system startup and allows for remote control of the LiDAR, extending its operational life and simplifying maintenance procedures.
 
+<img src="../images/ros_logo.png" align="left" style="width:16%; padding:5px;" alt="Robot Operating System"> To further enhance the integration of ROSRider with open-source robotics, we have developed two open-source robot platforms: Sorcerer and Caretta. These low-cost, pre-built robots, accompanied by URDF files for ROS and Gazebo simulation, streamline the development process. Developers can rapidly prototype and test algorithms in simulation before deploying them to physical hardware, significantly accelerating development time and reducing costs associated with physical experimentation.
+
 **Supported Motors**
 
 ROSRider can drive a wide range of encoder gear motors, from simple DC motors to high-precision gear motors commonly found in robotic vacuum cleaners. It supports both single-phase and dual-phase encoders, with parameters such as encoder PPR and gear reduction ratio configurable through YAML files. The dual-channel drivers, delivering 1A continuous and 2.8A peak current, provide ample power for various robotic applications. Additionally, users can fine-tune motor performance by adjusting parameters like forward and backward deadzones, PWM frequency (up to 18kHz for reduced noise), and motor driver configurations (brake mode, low-side and high-side decay).
@@ -34,9 +38,6 @@ ROSRider can drive a wide range of encoder gear motors, from simple DC motors to
   <img src="../images/vacuum_robot_motor.png" alt="Vacuum cleaner spare motor" style="width: 30%; border: 1px solid #ccc; border-radius: 5px; box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);">
 </div>
 
-**ROS integration**
-
-<img src="../images/ros_logo.png" align="left" style="width:16%;" alt="Robot Operating System"> To further enhance the integration of ROSRider with open-source robotics, we have developed two open-source robot platforms: Sorcerer and Caretta. These low-cost, pre-built robots, accompanied by URDF files for ROS and Gazebo simulation, streamline the development process. Developers can rapidly prototype and test algorithms in simulation before deploying them to physical hardware, significantly accelerating development time and reducing costs associated with physical experimentation.
 
 **Future-Proof Design**
 
@@ -51,6 +52,13 @@ ROSRider is primarily designed for Raspberry Pi and Jetson platforms, leveraging
   <img src="../images/jetson_nano.png" alt="Jetson Nano" style="width: 30%; border: 1px solid #ccc; border-radius: 5px; box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);">
   <img src="../images/jetson_agx.png" alt="Jetson AGX" style="width: 30%; border: 1px solid #ccc; border-radius: 5px; box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);">
 </div>
+
+<div style="display: flex; justify-content: space-around; margin: 25px 0;">
+  <img src="../images/gazebo_caretta.png" alt="Gazebo Caretta" style="width: 30%;">
+  <img src="../images/gazebo_sorcerer.png" alt="Gazebo Sorcerer" style="width: 30%;">
+  <img src="../images/rviz_cartographer.png" alt="Cartographer RVIZ" style="width: 30%;">
+</div>
+
 
 **Advanced**
 
