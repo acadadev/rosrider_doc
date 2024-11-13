@@ -7,7 +7,7 @@ description: "Introduction to ROSRider control card"
 
 **Introduction**
 
-ROSRider is a versatile electronics card that empowers you to create custom ROS-compatible robots. It can drive a variety of small encoder gear motors, allowing building of 2 wheeled or 4 wheeled small to medium sized robots.
+ROSRider is a versatile electronics card that empowers you to create custom ROS-compatible robots. ROSRider can control and power a range of small encoder gear motors, enabling the construction of 2-wheeled or 4-wheeled robots of small to medium size.
 
 <p align="center">
 <img src="../images/sorcerer_rosrider_intro.jpg" alt="ROSRider application project">
