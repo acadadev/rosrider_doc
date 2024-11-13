@@ -38,6 +38,10 @@ ROSRider can drive a wide range of encoder gear motors, from simple DC motors to
 
 ROSRider is primarily designed for Raspberry Pi and Jetson platforms, leveraging their powerful processing capabilities and compact form factors. However, the card is compatible with any Linux-based system equipped with an I2C port.
 
+**ROS integration**
+
+To further enhance the integration of ROSRider with open-source robotics, we have developed two open-source robot platforms: Sorcerer and Caretta. These low-cost, pre-built robots, accompanied by URDF files for ROS and Gazebo simulation, streamline the development process. Developers can rapidly prototype and test algorithms in simulation before deploying them to physical hardware, significantly accelerating development time and reducing costs associated with physical experimentation.
+
 **Future-Proof Design**
 
 To ensure long-term usability and adaptability, the ROSRider card supports firmware updates via USB. This allows for continuous improvement and the addition of new features, without requiring specialized programming tools or hardware modifications.
@@ -51,7 +55,7 @@ To ensure long-term usability and adaptability, the ROSRider card supports firmw
 **Enhanced Diagnostics:** The system publishes detailed diagnostic information, including battery voltage, current consumption, and motor current feedback, to aid in remote debugging and system monitoring.
 
 **Parameters**
-
+[TODO]
 
 
 __Next Chapter:__ [Connections and Pinmaps](../02_PINMAP/README.md)
