@@ -48,10 +48,17 @@ To ensure long-term usability and adaptability, the ROSRider card supports firmw
 
 ROSRider is primarily designed for Raspberry Pi and Jetson platforms, leveraging their powerful processing capabilities and compact form factors. However, the card is compatible with any Linux-based system equipped with an I2C port.
 
-<div style="display: flex; justify-content: space-around; padding-bottom:20px;">
+<div style="display: flex; justify-content: space-around; padding-top:20px; padding-bottom:20px;">
 <img src="../images/rpi5.png" style="width: 20%;" alt="RaspberryPI 5">
 <img src="../images/jetson_nano.png" style="width: 20%;" alt="Jetson Nano">
 <img src="../images/jetson_agx.png" style="width: 20%;" alt="Jetson AGX">
+</div>
+
+
+<div style="display: flex; justify-content: space-around; margin: 20px 0;">
+  <img src="../images/rpi5.png" alt="Raspberry Pi 5" style="width: 20%; border: 1px solid #ccc; border-radius: 5px; box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);">
+  <img src="../images/jetson_nano.png" alt="Jetson Nano" style="width: 20%; border: 1px solid #ccc; border-radius: 5px; box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);">
+  <img src="../images/jetson_agx.png" alt="Jetson AGX" style="width: 20%; border: 1px solid #ccc; border-radius: 5px; box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);">
 </div>
 
 **Advanced**
