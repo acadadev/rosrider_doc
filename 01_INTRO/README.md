@@ -28,11 +28,11 @@ The ROS2RPI card offers flexible serial port routing, enabling remote access to 
 
 The ROSRider supports a wide range of encoder gear motors, which can be configured as servos through YAML files. Its dual-channel drivers, capable of delivering 1A continuous and 2.8A peak current, provide ample power for various robotic applications.
 
-<p>
-<img src="../images/metal_gear_motor_a.png" alt="Metal gear motor">
-<img src="../images/plastic_gear_motor.png" alt="Plastic gear motor">
-<img src="../images/vacuum_robot_motor.png" alt="Vacuum cleaner spare motor">
-</p>
+<div style="display: flex; justify-content: space-around;">
+<img src="../images/metal_gear_motor_a.png" style="width: 33%;" alt="Metal gear motor">
+<img src="../images/plastic_gear_motor.png" style="width: 33%;" alt="Plastic gear motor">
+<img src="../images/vacuum_robot_motor.png" style="width: 33%;" alt="Vacuum cleaner spare motor">
+</div>
 
 **Supported Platforms**
 
