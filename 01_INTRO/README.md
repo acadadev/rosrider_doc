@@ -14,20 +14,20 @@ Below is an image of a minimal chassis designed for lane-following tasks using i
 <img src="../images/sorcerer_rosrider_intro.jpg" alt="ROSRider application project">
 </p>
 
+This image showcases a more advanced robotic platform designed for research and development. The integration of a ROSRider card and a ROS2RPI card with a Raspberry Pi enables the robot to execute a wide range of ROS programs and packages. The addition of a LiDAR sensor further empowers the robot with advanced capabilities such as SLAM, mapping, autonomous navigation, and autonomous exploration. This versatile platform provides a solid foundation for exploring various robotics applications and research projects.
+
 <p align="center">
 <img src="../images/caretta_with_ros2rpi_intro.jpg" alt="Caretta with ROS2RPI">
 </p>
 
-something.
+The ROSRider and ROS2RPI cards significantly simplify the user experience by automating tasks like battery management and device power cycling. This eliminates the need for manual intervention, such as disconnecting batteries or manually powering on devices. Additionally, the cards can automatically put the system into a low-power hibernation mode when idle, conserving battery life.
 
-
+The ROS2RPI card offers flexible serial port routing, enabling remote access to the Raspberry Pi and other devices like LiDAR sensors. This feature prevents boot conflicts caused by LiDAR serial output during system startup and allows for remote control of the LiDAR, extending its operational life and simplifying maintenance procedures.
 
 **Supported Motors**
 
 - Any encoder gear motor can be used as a servo motor. Parameters such as reduction ratio, wheel diameter, encoder ppr are configurable with yaml files
 
-
-[photos of motors]
 
 **Supported Platforms**
 
