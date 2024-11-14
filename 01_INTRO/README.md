@@ -48,6 +48,15 @@ ROSRider can drive a wide range of encoder gear motors, from simple DC motors to
 
 To ensure long-term usability and adaptability, the ROSRider card supports firmware updates via USB. This allows for continuous improvement and the addition of new features, without requiring specialized programming tools or hardware modifications.
 
+To further expand its compatibility, we are exploring the possibility of a USB firmware version based on user demand.
+
+**Servo Control**
+
+ROSRider can control two standard servos, enabling their integration into ROS-based robotic systems for applications like robotic arms, grippers, or camera gimbals.
+
+**Software-Switchable Auxiliary Power Supply** 
+
+A 5V power supply can be enabled or disabled via software, providing flexibility for powering external sensors and devices.
 
 **Robust Protection** 
 
