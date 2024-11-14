@@ -65,7 +65,7 @@ The following YAML file defines the configuration parameters for the ROSRider no
 
 **General configuration**
 
-| Parameter | Type | Explanation | Default |
+| parameter | type | description | default |
 | -------- | -------- | -------- | -------- |
 | I2C_ENABLED  | bool | Enables or disables I2C communication. For development only. | True |
 | ODOM_FRAME_ID | string | Sets the frame ID for the odometry data. | `odom` |
@@ -90,7 +90,7 @@ The following YAML file defines the configuration parameters for the ROSRider no
 
 **Motor Control**
 
-| Parameter | Type | Explanation | Default |
+| parameter | type | description | default |
 | -------- | -------- | -------- | -------- |
 | UPPER_LIMIT | uint16 | Maximum PWM output value. | 255 |
 | INTEGRAL_LIMIT | uint16 |  Integral term limit for PID control. | 224 |
@@ -102,7 +102,7 @@ The following YAML file defines the configuration parameters for the ROSRider no
 
 **Odometry Configuration**
 
-| Parameter | Type | Explanation | Default |
+| parameter | type | description | default |
 | -------- | -------- | -------- | -------- |
 | GEAR_RATIO | float | Gear ratio of the motors. | 65.0 |
 | WHEEL_DIA | float | Diameter of the wheels. | 0.0685 |
@@ -110,9 +110,9 @@ The following YAML file defines the configuration parameters for the ROSRider no
 
 **Power and Safety Limits**
 
-| Parameter | Type | Explanation | Default |
+| parameter | type | description | default |
 | -------- | -------- | -------- | -------- |
-| MAIN_AMP_LIMIT | float | Maximum current draw for the main power supply. | h3.6 |
+| MAIN_AMP_LIMIT | float | Maximum current draw for the main power supply. | 3.6 |
 | BAT_VOLTS_HIGH | float | Maximum battery voltage. | 15.0 |
 | BAT_VOLTS_LOW | float | Minimum battery voltage. | 6.0 |
 | MAX_RPM | float | Maximum motor RPM. | 120.0 |
@@ -121,8 +121,8 @@ The following YAML file defines the configuration parameters for the ROSRider no
 
 **PID Control Parameters**
 
-| Parameter | Type | Explanation | Default |
-| -------- | -------- | -------- | -------- |
+| parameter | type | description | default |
+| -------- | -------- | -------- | -------- 
 | LEFT_KP | float | PID proportional for left motor. | 1.2 |
 | LEFT_KI | float | PID integral for left motor. | 0.8 |
 | LEFT_KD | float | PID differential for left motor. | 0.01 |
@@ -132,8 +132,7 @@ The following YAML file defines the configuration parameters for the ROSRider no
 
 **Drive Trim Parameters**
 
-
-| Parameter | Type | Explanation | Default |
+| parameter | type | description | default |
 | -------- | -------- | -------- | -------- |
 | GAIN | float | Overall gain factor. |
 | TRIM | float | Trim value for motor output.
@@ -151,6 +150,8 @@ explain pwm frequency and pwm divider
 is it 0x33 for default
 
 word about datatypes 
+
+couple of rosparam commands
 
 
 
