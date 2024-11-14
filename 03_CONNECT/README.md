@@ -25,14 +25,14 @@ The NVIDIA Jetson has two I2C ports accessible via the header. To ensure proper 
 
 To ensure proper I2C communication, verify that I2C is enabled at the kernel level and that your user account has the necessary permissions to access the I2C bus on the host computer.
 
+There are two I2C ports on the Jetson AGX:
+
 <div style="display: flex; margin: 25px 0;">
    <img src="../images/jetson_agx_i2c0.png" alt="Jetson AGX I2C Port 1" style="width:50%; box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);">
    <img src="../images/jetson_agx_i2c1.png" alt="Jetson AGX I2C Port 2" style="width:50%; box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);">
 </div>
 
-[TODO: nvidia agx connection diagram]
-
-https://www.youtube.com/watch?v=7_H7tzcdBMU
+Here is an excellent video on connecting I2C devices to Jetson: [https://www.youtube.com/watch?v=7_H7tzcdBMU](https://www.youtube.com/watch?v=7_H7tzcdBMU). This video provides a comprehensive guide on the steps involved, from identifying I2C pins to configuring software and starting device usage.
 
 **Detecting I2C Devices**
 
