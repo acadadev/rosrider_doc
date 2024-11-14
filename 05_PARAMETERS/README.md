@@ -158,10 +158,35 @@ The `MotorConstantLeft` and `MotorConstantRight` values are used to multiply the
 
 By adjusting the TRIM parameter, we can effectively fine-tune the motor outputs to ensure accurate and precise robot motion, even in the presence of minor variations in motor performance or mechanical alignment.    
 
+
+**Understanding the Configuration Flag**
+
+The CONFIG_FLAGS parameter in the ROSRider configuration file is a bitmask that controls various hardware settings. By setting specific bits within this flag, you can configure different aspects of the ROSRider's behavior.
+
+Here's a breakdown of the individual bits and their corresponding functionalities:
+
+| bit | function | description |
+| 0   | LEFT_REVERSE | inverts the direction of the left motor |
+| 1   | RIGHT_REVERSE | inverts the direction of the left motor |
+| 2   | LEFT_SWAP | swaps the phase order of the left encoder |
+| 3   | RIGHT_SWAP | swaps the phase order of the left encoder |
+| 4   | LEFT_ENC_AB | selects the AB phase encoding for the left encoder |
+| 5   | RIGHT_ENC_AB | selects the AB phase encoding for the right encode |
+| 6   | MODE1 | Brake mode |
+| 7   | MODE2 | High side decay |
+
+The configuration flags allow you to customize the behavior of the ROSRider to match your specific hardware setup. Here's a breakdown of their functions:
+
+- Reversing Motor Direction: The LEFT_REVERSE and RIGHT_REVERSE flags allow you to invert the direction of the motors, useful for correcting wiring mistakes or physical misorientations.
+- Swapping Encoder Phases: The LEFT_SWAP and RIGHT_SWAP flags allow you to correct the phase order of the encoders, ensuring accurate position and velocity measurements.
+- Selecting Encoder Mode: The LEFT_ENC_AB and RIGHT_ENC_AB flags determine whether to use AB phase encoding or single-phase encoding for the respective encoders. For AB phase encoding, both A and B phase signals are used, while for single-phase encoding, only the A phase signal is required.
+
+By carefully configuring these flags, you can ensure that the ROSRider can work with a variety of motor and encoder configurations, providing flexibility and adaptability in your robotics projects.
+
+
 - TODO
-- config_flags explanation
 - ros2rpi config explanation
-- allowed skip before what
+- allowed skip before what, look in the code
 - explain pwm frequency and pwm divider
 - is it 0x33 for default
 - couple of rosparam commands
