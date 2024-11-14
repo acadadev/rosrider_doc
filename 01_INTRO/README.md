@@ -50,6 +50,8 @@ To ensure long-term usability and adaptability, the ROSRider card supports firmw
 
 To further expand its compatibility, we are exploring the possibility of a USB firmware version based on user demand.
 
+It includes an SPI port for potential integration of additional sensors and actuators as technology advances and user needs evolve.
+
 **Servo Control**
 
 ROSRider can control two standard servos, enabling their integration into ROS-based robotic systems for applications like robotic arms, grippers, or camera gimbals.
@@ -73,6 +75,10 @@ The integrated Real-Time Clock (RTC) enables precise timekeeping and scheduled w
 **Enhanced Diagnostics** 
 
 The system publishes detailed diagnostic information, including battery voltage, current consumption, and motor current feedback, to aid in remote debugging and system monitoring.
+
+**Remote PID Tuning**
+
+ROSRider supports remote PID tuning, allowing users to adjust control parameters dynamically without manual intervention. By leveraging ROS parameter server, users can fine-tune the PID gains to optimize robot performance, such as motor control and sensor feedback.
 
 **Customizable Input**
 
