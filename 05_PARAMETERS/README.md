@@ -182,6 +182,12 @@ The configuration flags allow you to customize the behavior of the ROSRider to m
 
 By carefully configuring these flags, you can ensure that the ROSRider can work with a variety of motor and encoder configurations, providing flexibility and adaptability in your robotics projects.
 
+**Understanding Command Timeout**
+
+The ROSRider employs a command timeout mechanism to ensure safe operation and prevent unintended movement. This mechanism monitors the frequency of incoming commands from the host computer. If the system fails to receive a command within a specified time frame, it enters a state that restrains movement.
+
+The `ALLOWED_SKIP` parameter in the ROSRider configuration determines the maximum number of consecutive command cycles that can be skipped before triggering the timeout. This value, when multiplied by the inverse of the `UPDATE_RATE` (measured in milliseconds), sets the overall timeout duration. For instance, if `ALLOWED_SKIP` is set to 3 and the `UPDATE_RATE` is 20Hz, the timeout duration would be 150 milliseconds.
+
 **Understanding PWM Frequency**
 
 - explain pwm frequency and pwm divider
@@ -190,5 +196,6 @@ By carefully configuring these flags, you can ensure that the ROSRider can work 
 - ros2rpi config explanation, is it 0x33 for default
 - allowed skip before what, look in the code
 - couple of rosparam commands
+- demonstration of timing-control with rqt_plot and all
 
 __Next Chapter:__ [Updating Firmware](../06_FIRMWARE/README.md)
