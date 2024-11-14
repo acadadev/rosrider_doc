@@ -33,11 +33,15 @@ For troubleshooting purposes, you may want to detect I2C devices connected to yo
 
 Install the `i2c-tools` package to access I2C devices:
 
-`sudo apt install i2c-tools`
+```console
+sudo apt install i2c-tools
+```
 
 Use the i2cdetect command to scan the I2C bus and identify connected devices:
 
-`sudo i2cdetect -y -r 1`
+```console
+sudo i2cdetect -y -r 1
+```
 
 <div style="display: flex; margin: 25px 0;">
 <img src="../images/i2cdetect.png" alt="Detecting I2C Devices" style="box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);">
