@@ -5,18 +5,18 @@ title: "Troubleshooting"
 description: "Error codes and conditions on the ROSRider control card"
 ---
 
-**TODO**
+__TODO__
 
 - Procedures section
 - PID Tuning, video
 - Odometry tuning, video
 - How to move teleop, video
 
-**Troubleshooting**
+__Troubleshooting__
 
 [TODO: explain output and status and also that fault_left and fault_right are not problem]
 
-**Status Registers**
+__Status Registers__
 
 #### PWR_STATUS
 

@@ -5,7 +5,7 @@ title: "Introduction"
 description: "Introduction to ROSRider control card"
 ---
 
-**Introduction**
+__Introduction__
 
 ROSRider is a versatile electronics card that empowers you to create custom ROS-compatible robots. ROSRider can control and power a range of small encoder gear motors, enabling the construction of 2-wheeled or 4-wheeled robots of small to medium size. By cascading multiple ROSRider cards, you can expand the robot's capabilities to support higher wheel counts and more complex configurations.
 
@@ -38,7 +38,7 @@ To further enhance the integration of ROSRider with open-source robotics, we hav
   <img src="../images/rviz_cartographer.png" alt="Cartographer RVIZ" style="width: 30%; box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);">
 </div>
 
-**Supported Motors**
+__Supported Motors__
 
 ROSRider can drive a wide range of encoder gear motors, from simple DC motors to high-precision gear motors commonly found in robotic vacuum cleaners. It supports both single-phase and dual-phase encoders, with parameters such as encoder PPR and gear reduction ratio configurable through YAML files. The dual-channel drivers, delivering 1A continuous and 2.8A peak current, provide ample power for various robotic applications. Additionally, users can fine-tune motor performance by adjusting parameters like forward and backward deadzones, PWM frequency (up to 18kHz for reduced noise), and motor driver configurations (brake mode, low-side and high-side decay).
 
@@ -48,7 +48,7 @@ ROSRider can drive a wide range of encoder gear motors, from simple DC motors to
   <img src="../images/vacuum_robot_motor.png" alt="Vacuum cleaner spare motor" style="width: 30%; border: 1px solid #ccc; border-radius: 5px; box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);">
 </div>
 
-**Future-Proof Design**
+__Future-Proof Design__
 
 To ensure long-term usability and adaptability, the ROSRider card supports firmware updates via USB. This allows for continuous improvement and the addition of new features, without requiring specialized programming tools or hardware modifications.
 
@@ -56,39 +56,39 @@ To further expand its compatibility, we are exploring the possibility of a USB f
 
 It includes an SPI port for potential integration of additional sensors and actuators as technology advances and user needs evolve.
 
-**Servo Control**
+__Servo Control__
 
 ROSRider can control two standard servos, enabling their integration into ROS-based robotic systems for applications like robotic arms, grippers, or camera gimbals.
 
-**Software-Switchable Auxiliary Power Supply** 
+__Software-Switchable Auxiliary Power Supply__ 
 
 A 5V power supply can be enabled or disabled via software, providing flexibility for powering external sensors and devices.
 
-**Modular Design** 
+__Modular Design__ 
 
 ROSRider utilizes standard JST connectors for motor and I2C connections, allowing for easy assembly and customization. Additionally, two QWIC connectors provide convenient expansion options for integrating various sensors and modules.
 
-**Robust Protection** 
+__Robust Protection__ 
 
 Built-in current monitoring and a hardware-resettable fuse safeguard the motors and battery. Software-based current limiting and remote threshold configuration enhance safety and flexibility.
 
-**Timekeeping** 
+__Timekeeping__ 
 
 The integrated Real-Time Clock (RTC) enables precise timekeeping and scheduled wake-up events, facilitating autonomous operation and data logging.
 
-**Enhanced Diagnostics** 
+__Enhanced Diagnostics__ 
 
 The system publishes detailed diagnostic information, including battery voltage, current consumption, and motor current feedback, to aid in remote debugging and system monitoring.
 
-**Remote PID Tuning**
+__Remote PID Tuning__
 
 ROSRider supports remote PID tuning, allowing users to adjust control parameters dynamically without manual intervention. By leveraging ROS parameter server, users can fine-tune the PID gains to optimize robot performance, such as motor control and sensor feedback.
 
-**Customizable Input**
+__Customizable Input__
 
 The button input pins on ROSRider are customizable, allowing users to connect external buttons for reset, wake-up, and user-defined functions.
 
-**Supported Platforms**
+__Supported Platforms__
 
 ROSRider is primarily designed for Raspberry Pi and Jetson platforms, leveraging their powerful processing capabilities and compact form factors. However, the card is compatible with any Linux-based system equipped with an I2C port.
 
