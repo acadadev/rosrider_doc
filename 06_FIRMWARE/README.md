@@ -18,6 +18,12 @@ To initiate the firmware update process, follow these steps:
 
     The ROSRider should now enter bootloader mode. This is indicated by a specific LED pattern or behavior, which may vary depending on your ROSRider model.
 
+```console
+sudo tail -f /var/log/syslog
+```
+
+[TODO: show typical output]
+
 Important Considerations:
 
 - Power Supply: Ensure a stable power supply during the update process.
@@ -26,5 +32,12 @@ Important Considerations:
 - Patience: The firmware update process may take some time. Avoid interrupting the process.
 
 By following these steps and adhering to the specific instructions provided by ACADA Robotics, you can successfully update your ROSRider's firmware and enhance its capabilities.
+
+__Updating Firmware with dfu-util__
+
+[TODO explain how to install dfu-util]
+[TODO you will need a linx computer]
+
+
 
 __Next Chapter:__ [Troubleshooting](../10_DEBUG/README.md)
