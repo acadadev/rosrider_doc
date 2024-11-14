@@ -70,7 +70,6 @@ dfu-util -D I2CRider.dfu
    <img src="../images/dfu_update.png" alt="DFU util update output" style="box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);">
 </div>
 
-
-[TODO: output]
+[TODO: video]
 
 __Next Chapter:__ [Troubleshooting](../10_DEBUG/README.md)
