@@ -55,9 +55,17 @@ The ROSRider firmware incorporates a timing control feature that synchronizes it
 
 **Runing the Driver**
 
-ros2 run rosrider_node rosrider_node.launch.py
+Once you've successfully installed the ROSDriver package and configured your environment, it's time to bring the ROSRider board to life!
 
-command to start
+To launch the ROSRider node and establish communication between ROS and your ROSRider hardware, execute the following command in your terminal:
+
+```ros2 run rosrider_node rosrider_node.launch.py```
+
+Important Note
+
+- Make sure you have sourced the setup script `source devel/setup.bash` either manually before running the command, or have permanently configured it in your `.bashrc` file as explained in the previous section. This ensures the system can locate the necessary ROSDriver components.
+
+
 checking diag output
 checking odometry output  
 
