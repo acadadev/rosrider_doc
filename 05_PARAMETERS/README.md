@@ -63,6 +63,8 @@ The following YAML file defines the configuration parameters for the ROSRider no
     MOTOR_CONSTANT: 1.0
 ```
 
+**General configuration**
+
 | Parameter | Type | Explanation |
 | -------- | -------- | -------- |
 | I2C_ENABLED  | bool | Enables or disables I2C communication. For development only. |
@@ -75,15 +77,20 @@ The following YAML file defines the configuration parameters for the ROSRider no
 | ROS2RPI_CONFIG | uint8 | Configuration for the ROS2RPI board (if used). |
 | AUTO_SYNC | bool | Enables automatic clock synchronization. |
 | DEBUG | bool | Enables or disables debug mode. |
-| CONFIG_FLAGS | uint8 |
-| UPDATE_RATE | uint8 |
-| ALLOWED_SKIP | uint8 |
-| PWM_DIV | uint8 |
-| DRIVE_MODE | uint8 |
-| MONITOR_RATE | uint8 |
-| PWM_SCALE | uint16 |
-| PWM_FRQ | uint16 |
-| MAX_IDLE_SECONDS | uint16 |
+| CONFIG_FLAGS | uint8 | Configuration flags for specific features. |
+| UPDATE_RATE | uint8 | Desired update rate for the control loop. |
+| ALLOWED_SKIP | uint8 | Maximum number of allowed skipped data packets. |
+| PWM_DIV | uint8 | PWM Frequency divider |
+| DRIVE_MODE | uint8 | Drive mode configuration. Should always be 3 |
+| MONITOR_RATE | uint8 | Rate at which current sensor data is monitored. |
+| PWM_SCALE | uint16 | PWM scaling factor. |
+| PWM_FRQ | uint16 | PWM frequency. |
+| MAX_IDLE_SECONDS | uint16 | Maximum idle seconds before entering hibernate mode. |
+
+**Motor Control and Odometry Configuration**
+
+| Parameter | Type | Explanation |
+| -------- | -------- | -------- |
 | UPPER_LIMIT | uint16 |
 | INTEGRAL_LIMIT | uint16 |
 | ENCODER_PPR | uint16 |
@@ -95,21 +102,47 @@ The following YAML file defines the configuration parameters for the ROSRider no
 | GEAR_RATIO | float |
 | WHEEL_DIA | float |
 | BASE_WIDTH | float |
-| MAIN_AMP_LIMIT | float |
-| BAT_VOLTS_HIGH | float |
-| BAT_VOLTS_LOW | float |
-| MAX_RPM | float |
-| LEFT_AMP_LIMIT | float |
-| RIGHT_AMP_LIMIT | float |
-| LEFT_KP | float |
-| LEFT_KI | float |
-| LEFT_KD | float |
-| RIGHT_KP | float |
-| RIGHT_KI | float |
-| RIGHT_KD | float |
+
+**Power and Safety Limits**
+
+| Parameter | Type | Explanation |
+| -------- | -------- | -------- |
+| MAIN_AMP_LIMIT | float | Maximum current draw for the main power supply. |
+| BAT_VOLTS_HIGH | float | Maximum battery voltage. |
+| BAT_VOLTS_LOW | float | Minimum battery voltage. |
+| MAX_RPM | float | Maximum motor RPM. |
+| LEFT_AMP_LIMIT | float | Maximum current limit for the left motor. |
+| RIGHT_AMP_LIMIT | float | Maximum current limit for the right motor. |
+
+**PID Control Parameters**
+
+| Parameter | Type | Explanation |
+| -------- | -------- | -------- |
+| LEFT_KP | float | PID proportional for left motor. |
+| LEFT_KI | float | PID integral for left motor. |
+| LEFT_KD | float | PID differential for left motor. |
+| RIGHT_KP | float | PID proportional for right motor. |
+| RIGHT_KI | float | PID integral for right motor. |
+| RIGHT_KD | float | PID differential for right motor. |
+
+**Drive Trim Parameters**
+
+
+
+
+
+
+
 | GAIN | float |
 | TRIM | float |
 | MOTOR_CONSTANT | float |
+
+add defaults, maybe
+config_flags explanation
+ros2rpi config explanation
+allowed skip before what
+
+explain pwm frequency and pwm divider
 
 
 
