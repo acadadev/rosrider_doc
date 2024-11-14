@@ -134,9 +134,9 @@ The following YAML file defines the configuration parameters for the ROSRider no
 
 | parameter | type | description | default |
 | -------- | -------- | -------- | -------- |
-| GAIN | float | Overall gain factor. |
-| TRIM | float | Trim value for motor output.
-| MOTOR_CONSTANT | float | Motor constant for output calculation. |
+| GAIN | float | Overall gain factor. | 1.0 |
+| TRIM | float | Trim value for motor output. | 0.0 |
+| MOTOR_CONSTANT | float | Motor constant for output calculation. | 1.0 |
 
 In the context of motor control, the motor constant is a proportionality factor that relates the input voltage to the output speed or torque. By adjusting the motor constant, we can compensate for differences in motor performance, such as variations in motor efficiency or mechanical load.
 
@@ -157,11 +157,11 @@ The `MotorConstantLeft` and `MotorConstantRight` values are used to multiply the
 By adjusting the TRIM parameter, we can effectively fine-tune the motor outputs to ensure accurate and precise robot motion, even in the presence of minor variations in motor performance or mechanical alignment.    
 
 
-config_flags explanation
-ros2rpi config explanation
-allowed skip before what
-explain pwm frequency and pwm divider
-is it 0x33 for default
-couple of rosparam commands
+-config_flags explanation
+-ros2rpi config explanation
+-allowed skip before what
+-explain pwm frequency and pwm divider
+-is it 0x33 for default
+-couple of rosparam commands
 
 __Next Chapter:__ [Updating Firmware](../06_FIRMWARE/README.md)
