@@ -247,7 +247,6 @@ By carefully considering these factors and adjusting the PWM_DIV and PWM_FRQ par
 
 - TODO
 - ros2rpi config explanation, is it 0x33 for default
-- allowed skip before what, look in the code
 - couple of rosparam commands
 - demonstration of timing-control with rqt_plot and all
 
