@@ -63,10 +63,10 @@ The following YAML file defines the configuration parameters for the ROSRider no
     MOTOR_CONSTANT: 1.0
 ```
 
-- _I2C_ENABLED_ Boolean, Enables or disables I2C communication. For development only.
+- **I2C_ENABLED** Boolean, Enables or disables I2C communication. For development only.
 
-- _ODOM_FRAME_ID_ String, Sets the frame ID for the odometry data.
+- **ODOM_FRAME_ID** String, Sets the frame ID for the odometry data.
 
-- _BASE_FRAME_ID_ String, Sets the frame ID for the robot's base frame.
+- **BASE_FRAME_ID** String, Sets the frame ID for the robot's base frame.
 
 __Next Chapter:__ [Updating Firmware](../06_FIRMWARE/README.md)
