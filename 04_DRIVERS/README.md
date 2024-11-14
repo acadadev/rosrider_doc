@@ -15,26 +15,59 @@ The ROSRider firmware incorporates a timing control feature that synchronizes it
 
 **Installation Instructions**
 
+1. Create a ROS Workspace
+
 > mkdir -p rosrider_ws/src  
 > cd rosrider_ws/src  
+
+This creates a directory called `rosrider_ws` and a subdirectory named `src` within it. The `src` directory is the standard location for ROS package source code.
+
+2. Clone the ROSRider Repository:
+
 > git clone https://github.com/acadadev/rosrider.git
 
-**Build the Workspace**
+3. Initialize ROS Dependency System (if not done during ROS installation)
+
+> sudo rosdep init
+> rosdep update
+
+**Explanation:**
+
+- These commands are crucial for managing dependencies within ROS packages.
+- `sudo rosdep init` requires administrator privileges to set up the ROS dependency system on your computer.
+- `rosdep update` refreshes the dependency information to ensure you're installing the latest compatible versions.
+- These commands are only necessary if you haven't already run them during the initial ROS installation process.
+
+4. Install ROS Dependencies
 
 > cd ..  
+> rosdep install --from-paths src -y --ignore-src
+
+**Explanation:**
+
+- This command retrieves and installs all the necessary dependencies required by the ROSDriver package based on the cloned source code in the src directory.
+- `cd ..`` navigates you back to the parent directory of `src`.
+- `rosdep install --from-paths src -y --ignore-src` performs the dependency installation.
+
+
+5. Build the Workspace
+
 > colcon build  
 > source devel/setup.bash
 
-prereg. and before that depmod.
+6. Adding ROSRider to Your Bash Environment
+
+To ensure that your system can find the necessary ROSDriver components, you'll need to add the following line to your Bash configuration file:
+
+> source ~/rosrider_ws/install/setup.bash
+
+---
 
 running the driver  
-
 
 checking diag output
 checking odometry output  
 
-
-[TODO: add line to .bashrc on the robot]
 [TODO: simulations]
 [TODO: move status to debug section]
 
