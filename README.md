@@ -7,7 +7,7 @@ ROSRider is an electronics hardware product that allows the control of any diffe
 - [Parameters](05_PARAMETERS/README.md)
 - [Updating Firmware](06_FIRMWARE/README.md)
 - [Hardware Specifications](07_HARDWARE/README.md)
-- [Status Registers](09_STATUS/README.md)
+- [Simulations](09_SIMULATIONS/README.md)
 - [Troubleshooting](10_DEBUG/README.md)
 
 
