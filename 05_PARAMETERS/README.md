@@ -144,8 +144,10 @@ The trim parameter, on the other hand, is used to introduce a small offset to th
 
 In the given equations:
 
-> MotorConstantLeft = (GAIN + TRIM) / MOTOR_CONSTANT;  
-> MotorConstantRight = (GAIN - TRIM) / MOTOR_CONSTANT;
+```console
+MotorConstantLeft = (GAIN + TRIM) / MOTOR_CONSTANT;  
+MotorConstantRight = (GAIN - TRIM) / MOTOR_CONSTANT;
+```
 
 The `MotorConstantLeft` and `MotorConstantRight` values are used to multiply the algorithm output (typically from a PID controller) to determine the appropriate PWM values for the left and right motors. These adjusted motor constants account for variations in motor performance and mechanical factors, ensuring precise and coordinated motor control.
 
