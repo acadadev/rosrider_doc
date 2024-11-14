@@ -58,6 +58,10 @@ ROSRider can control two standard servos, enabling their integration into ROS-ba
 
 A 5V power supply can be enabled or disabled via software, providing flexibility for powering external sensors and devices.
 
+**Modular Design** 
+
+ROSRider utilizes standard JST connectors for motor and I2C connections, allowing for easy assembly and customization. Additionally, two Qwiic connectors provide convenient expansion options for integrating various sensors and modules.
+
 **Robust Protection** 
 
 Built-in current monitoring and a hardware-resettable fuse safeguard the motors and battery. Software-based current limiting and remote threshold configuration enhance safety and flexibility.
