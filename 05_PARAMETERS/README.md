@@ -65,9 +65,16 @@ The following YAML file defines the configuration parameters for the ROSRider no
 
 | Parameter | Type | Explanation |
 | -------- | -------- | -------- |
-| I2C_ENABLED  | Boolean | Enables or disables I2C communication. For development only.
-| ODOM_FRAME_ID | String | Sets the frame ID for the odometry data.
-| BASE_FRAME_ID | String | Sets the frame ID for the robot's base frame.
+| I2C_ENABLED  | Boolean | Enables or disables I2C communication. For development only. |
+| ODOM_FRAME_ID | String | Sets the frame ID for the odometry data. |
+| BASE_FRAME_ID | String | Sets the frame ID for the robot's base frame. |
+| BROADCAST_TF2 | Boolean | Enables or disables TF2 broadcast. |
+| PUB_ODOMETRY | Boolean | Enables or disables odometry data publication. |
+| PUB_JOINTS | Boolean | Enables or disables joint state publication. |
+| PUB_DIAGNOSTICS | Boolean | Enables or disables diagnostic data publication. |
+| ROS2RPI_CONFIG | Byte | Configuration for the ROS2RPI board (if used). |
+| AUTO_SYNC | Boolean | Enables automatic clock synchronization. |
+| DEBUG | Boolean | Enables or disables debug mode. |
 
 
 
