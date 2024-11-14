@@ -68,8 +68,8 @@ The following YAML file defines the configuration parameters for the ROSRider no
 | Parameter | Type | Explanation | Default |
 | -------- | -------- | -------- | -------- |
 | I2C_ENABLED  | bool | Enables or disables I2C communication. For development only. | True |
-| ODOM_FRAME_ID | string | Sets the frame ID for the odometry data. | 'odom' |
-| BASE_FRAME_ID | string | Sets the frame ID for the robot's base frame. | 'base_footprint' |
+| ODOM_FRAME_ID | string | Sets the frame ID for the odometry data. | `odom` |
+| BASE_FRAME_ID | string | Sets the frame ID for the robot's base frame. | `base_footprint` |
 | BROADCAST_TF2 | bool | Enables or disables TF2 broadcast. | True |
 | PUB_ODOMETRY | bool | Enables or disables odometry data publication. | True |
 | PUB_JOINTS | bool | Enables or disables joint state publication. | True |
@@ -92,7 +92,7 @@ The following YAML file defines the configuration parameters for the ROSRider no
 
 | Parameter | Type | Explanation | Default |
 | -------- | -------- | -------- | -------- |
-| UPPER_LIMIT | uint16 | Maximum PWM output value. |
+| UPPER_LIMIT | uint16 | Maximum PWM output value. | 255 |
 | INTEGRAL_LIMIT | uint16 |  Integral term limit for PID control. | 224 |
 | ENCODER_PPR | uint16 | Encoder pulses per revolution. | 48 |
 | LEFT_FORWARD_DEADZONE | int16 | Deadzone for the left motor's forward direction. | 8 | 
@@ -104,9 +104,9 @@ The following YAML file defines the configuration parameters for the ROSRider no
 
 | Parameter | Type | Explanation | Default |
 | -------- | -------- | -------- | -------- |
-| GEAR_RATIO | float |
-| WHEEL_DIA | float |
-| BASE_WIDTH | float |
+| GEAR_RATIO | float | Gear ratio of the motors. | 65.0 |
+| WHEEL_DIA | float | Diameter of the wheels. | 0.0685 |
+| BASE_WIDTH | float | Distance between the wheels. | 0.168 |
 
 **Power and Safety Limits**
 
