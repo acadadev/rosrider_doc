@@ -27,8 +27,8 @@ To ensure proper I2C communication, verify that I2C is enabled at the kernel lev
 
 There are two I2C ports on the Jetson AGX:
 
-<div style="display: flex; margin: 25px 0;">
-   <img src="../images/jetson_agx_i2c_0.png" alt="Jetson AGX I2C Port 1" style="width:45%; box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);">
+<div style="display: flex; margin: 25px 0; gap: 20px;">
+   <img src="../images/jetson_agx_i2c_0.png" alt="Jetson AGX I2C Port 1" style="width:45%; box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); margin-right: 20px;">
    <img src="../images/jetson_agx_i2c_1.png" alt="Jetson AGX I2C Port 2" style="width:45%; box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);">
 </div>
 
