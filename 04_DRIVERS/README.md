@@ -100,4 +100,6 @@ To monitor the odometry data being published by the ROSRider, you can use the fo
 
 ```ros2 topic echo /odom```
 
+In the next chapter, we will delve into the configuration of the driver, exploring the various parameters that can be tuned to optimize its performance for specific use cases.
+
 __Next Chapter:__ [Parameters](../05_PARAMETERS/README.md)
