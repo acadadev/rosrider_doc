@@ -16,7 +16,7 @@ This wiring diagram illustrates direct I2C communication with the Raspberry PI.
 This image depicts the actual wiring configuration for direct I2C communication between the Raspberry Pi and ROSRider.
 
 <p align="center">
-<img src="../images/caretta_bare.jpg" alt="Connecting to Raspberry PI on CARETTA">
+<img style="width:50%" src="../images/caretta_bare.jpg" alt="Connecting to Raspberry PI on CARETTA">
 </p>
 
 **Connecting ROSRider to NVIDIA Jetson**
