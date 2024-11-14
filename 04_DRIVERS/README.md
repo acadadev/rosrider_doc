@@ -21,14 +21,17 @@ The ROSRider firmware incorporates a timing control feature that synchronizes it
 
 **Build the Workspace**
 
-> cd ..
-> colcon build
+> cd ..  
+> colcon build  
 > source devel/setup.bash
 
-running the driver
-checking the output
-checking odometry output
+prereg. and before that depmod.
 
+running the driver  
+
+
+checking diag output
+checking odometry output  
 
 
 [TODO: add line to .bashrc on the robot]
