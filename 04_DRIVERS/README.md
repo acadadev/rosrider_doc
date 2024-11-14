@@ -64,7 +64,7 @@ To launch the ROSRider node and establish communication between ROS and your ROS
 The following output indicates that the ROSDriver node has started successfully and is ready to communicate with your ROSRider hardware.
 
 <div style="display: flex; margin: 25px 0;">
-   <img src="../images/rosrider_node.png" alt="Running the Driver" style="box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);">
+   <img src="../images/output_rosrider_node.png" alt="Running the Driver" style="box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);">
 </div>
 
 **Important Note**
@@ -81,7 +81,7 @@ To monitor the health and performance of your ROSRider, you can view real-time d
 Running this command will output diagnostic information to your terminal. You should see an output similar to the following:
 
 <div style="display: flex; margin: 25px 0;">
-   <img src="../images/diagnostics.png" alt="Running the Driver" style="box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);">
+   <img src="../images/output_diag.png" alt="Diagnostics Output" style="box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);">
 </div>
 
 This command will output the following diagnostic information to your terminal:
