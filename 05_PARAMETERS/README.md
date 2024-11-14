@@ -7,7 +7,7 @@ description: "Parametric Configuration of the ROSRider control card"
 
 
 
-'''
+```
 /rosrider_node:
   ros__parameters:
     I2C_ENABLED: True
@@ -55,6 +55,6 @@ description: "Parametric Configuration of the ROSRider control card"
     GAIN: 1.0
     TRIM: 0.0
     MOTOR_CONSTANT: 1.0
-'''
+```
 
 __Next Chapter:__ [Updating Firmware](../06_FIRMWARE/README.md)
