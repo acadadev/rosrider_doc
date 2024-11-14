@@ -51,21 +51,21 @@ __Steps:__
 
 1. Set Device Suffix and Prefix:
 
-- Open a terminal on your Linux computer.
-- Execute the following commands to set the suffix and prefix for the DFU device:
+	- Open a terminal on your Linux computer.
+	- Execute the following commands to set the suffix and prefix for the DFU device:
 
-```console
-dfu-suffix -a I2CRider.dfu -v 0x1cbe -p 0x00ff
-dfu-prefix -s 0x2800 -a I2CRider.dfu
-```
+	```console
+	dfu-suffix -a I2CRider.dfu -v 0x1cbe -p 0x00ff
+	dfu-prefix -s 0x2800 -a I2CRider.dfu
+	```
 
 2. Start the Firmware Update:
 
-- Run the following command to initiate the firmware update process:
+	- Run the following command to initiate the firmware update process:
 
-```console
-dfu-util -D I2CRider.dfu
-```
+	```console
+	dfu-util -D I2CRider.dfu
+	```
 
 [TODO: output]
 
