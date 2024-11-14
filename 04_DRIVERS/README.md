@@ -15,8 +15,8 @@ The ROSRider firmware incorporates a timing control feature that synchronizes it
 
 **Installation Instructions**
 
-> mkdir -p rosrider_ws/src
-> cd rosrider_ws/src
+> mkdir -p rosrider_ws/src  
+> cd rosrider_ws/src  
 > git clone https://github.com/acadadev/rosrider.git
 
 **Build the Workspace**
