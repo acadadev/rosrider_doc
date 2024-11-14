@@ -8,7 +8,6 @@ description: "ROSRider Control Card Hardware Specifications"
 __Hardware Specifications__
 
 ***Features***
-
 |---|---|
 | MCU | 32-bit ARM Cortex: TM4C123GH6PM |
 | Motor Drivers | Two channel up to 2.5 amps, with current measurement |
@@ -19,7 +18,6 @@ __Hardware Specifications__
 | Firmware Update | Device firmware is updatable by end user over USB |
 
 ***Power***
-
 |---|---|
 | Power Input | 6V to 15V wide input voltage |
 | Software Controllable Switch | MOSFET switch, reverse current protection |
@@ -30,7 +28,6 @@ __Hardware Specifications__
 | Monitoring | Measures and reports bus voltage, bus current, independent motor currents |
 
 ***Communications***
-
 |---|---|
 | I2C | Dual QWIC ports, also available on header. Can be used for cascading with multiple units |
 | SPI | Serial peripheral interface connector |
@@ -38,7 +35,6 @@ __Hardware Specifications__
 | Serial | Standard Serial Port, available as JST connector or header |
 
 ***Software***
-
 |---|---|
 | ROS2 Drivers | C++ Drivers for ROS2 Humble and ROS2 Jazzy |
 | Parametric | ROSRider is configurable using yaml files |
