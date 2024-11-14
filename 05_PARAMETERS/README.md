@@ -79,7 +79,7 @@ __General configuration__
 | DEBUG | bool | Enables or disables debug mode. | False |
 | CONFIG_FLAGS | uint8 | Configuration flags for specific features. | 48 |
 | UPDATE_RATE | uint8 | Desired update rate for the control loop. | 10 |
-| ALLOWED_SKIP | uint8 | Maximum number of allowed skipped data packets. | 3 |
+| ALLOWED_SKIP | uint8 | Command timeout in units of 1 / UPDATE_RATE. | 3 |
 | PWM_DIV | uint8 | PWM Frequency divider | 64 |
 | DRIVE_MODE | uint8 | Drive mode configuration. | 3 |
 | MONITOR_RATE | uint8 | Rate at which current sensor data is monitored. | 100 |
