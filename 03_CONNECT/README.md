@@ -28,8 +28,8 @@ To ensure proper I2C communication, verify that I2C is enabled at the kernel lev
 There are two I2C ports on the Jetson AGX:
 
 <div style="display: flex; margin: 25px 0;">
-   <img src="../images/jetson_agx_i2c_0.png" alt="Jetson AGX I2C Port 1" style="width:48%; box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);">
-   <img src="../images/jetson_agx_i2c_1.png" alt="Jetson AGX I2C Port 2" style="width:48%; box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);">
+   <img src="../images/jetson_agx_i2c_0.png" alt="Jetson AGX I2C Port 1" style="width:45%; box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);">
+   <img src="../images/jetson_agx_i2c_1.png" alt="Jetson AGX I2C Port 2" style="width:45%; box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);">
 </div>
 
 Here is an excellent video on connecting I2C devices to Jetson: <a target="_blank" href="https://www.youtube.com/watch?v=7_H7tzcdBMU]" title="I2C - NVIDIA Jetson AGX Xavier">https://www.youtube.com/watch?v=7_H7tzcdBMU]</a>. This video provides a comprehensive guide on the steps involved, from identifying I2C pins to configuring software and starting device usage.
