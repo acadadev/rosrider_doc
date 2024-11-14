@@ -245,9 +245,6 @@ By carefully considering these factors and adjusting the PWM_DIV and PWM_FRQ par
 
 ---
 
-- TODO
-- ros2rpi config explanation, is it 0x33 for default
-- couple of rosparam commands
-- demonstration of timing-control with rqt_plot and all
+You've mastered the basics of configuring your ROSRider! Stay tuned for our next chapter, where we'll guide you through the process of updating your ROSRider's firmware.
 
 __Next Chapter:__ [Updating Firmware](../06_FIRMWARE/README.md)
