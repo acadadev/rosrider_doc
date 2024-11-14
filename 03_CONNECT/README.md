@@ -27,35 +27,26 @@ To ensure proper I2C communication, verify that I2C is enabled at the kernel lev
 
 [TODO: nvidia agx connection diagram]
 
-**Optional**
+**Detecting I2C Devices**
+
+For troubleshooting purposes, you may want to detect I2C devices connected to your computer. To do this, you can use the `i2cdetect` command in the terminal.
 
 Install the `i2c-tools` package to access I2C devices:
 
 `sudo apt install i2c-tools`
 
-**Detecting I2C Devices**
-
 Use the i2cdetect command to scan the I2C bus and identify connected devices:
 
 `sudo i2cdetect -y -r 1`
 
-You should see:
-
-     0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f  
-00:                         -- -- -- -- -- -- -- --  
-10: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --  
-20: 20 -- -- -- -- -- -- -- -- -- -- -- -- -- -- --  
-30: -- -- -- -- -- -- -- -- -- -- -- -- 3c -- -- --  
-40: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --  
-50: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --  
-60: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --  
-70: -- -- -- -- -- -- -- --  
+<p align="center">
+<img src="../images/i2cdetect.png" alt="Detecting I2C Devices">
+</p>
 
 This command will display a table of I2C addresses. The default address of the ROSRider is `0x3c`, and the default address of the ROS2RPI card is `0x20`.
 
 Note: If you only have a ROSRider connected directly, you should only see the address `0x3c`.
 
 Once you've confirmed the presence of the ROSRider on the I2C bus, you can proceed with installing the necessary drivers.
-
 
 __Next Chapter:__ [ROS2 Drivers](../04_DRIVERS/README.md)
