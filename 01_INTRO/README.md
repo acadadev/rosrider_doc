@@ -19,7 +19,7 @@ Below is an image of a minimal chassis designed for lane-following tasks using i
 This image showcases a more advanced robotic platform designed for research and development. The integration of a ROSRider card and a ROS2RPI card with a Raspberry Pi enables the robot to execute a wide range of ROS programs and packages. The addition of a LiDAR sensor further empowers the robot with advanced capabilities such as SLAM, mapping, autonomous navigation, and autonomous exploration. This versatile platform provides a solid foundation for exploring various robotics applications and research projects.
 
 <p align="center">
-<img src="../images/caretta_with_ros2rpi_intro.jpg" alt="Caretta with ROS2RPI">
+<img src="../images/caretta_top.jpg" alt="Caretta with ROS2RPI">
 </p>
 
 The ROSRider and ROS2RPI cards significantly simplify the user experience by automating tasks like battery management and device power cycling. This eliminates the need for manual intervention, such as disconnecting batteries or manually powering on devices. Additionally, the cards can automatically put the system into a low-power hibernation mode when idle, conserving battery life.
