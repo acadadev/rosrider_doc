@@ -13,28 +13,25 @@ description: "Connections and Ports of ROSRider Card"
 
 </style>
 
-ROSRider card is equipped with number of ports and connectors, for connecting to encoder motors, and other peripherals.  
-Pinmaps of each connector and port will be illustrated in detail.  
-
-Below is a diagram of ports of ROSRider control card:  
+Equipped with multiple ports and connectors, the ROSRider card enables connection to encoder motors and other peripherals. Pinout diagrams for each port are shown below:
   
 [![ROSRider Pinmap](../images/ROSRider4D_portmap.png)](https://acada.dev/products)
 
 ## Left Motor Connector
 
-This is a standard 6 wire encoder motor connector, that is compatible with many motors and can be connected with standard cables. ROSRider card can be used with dual phase or single phase encoders, and encoder type can be configured via software. If single phase encoder is used, use Encoder Phase A pin, and leave Encoder Phase B pin unconnected.
+This standard 6-wire encoder motor connector is compatible with various motors and can be used with standard cables. The ROSRider card supports both dual-phase and single-phase encoders, with the encoder type configurable via software. For single-phase encoders, connect to the Encoder Phase A pin and leave Encoder Phase B unconnected.
 
 ![Left Motor Connector](../images/pinmap/dwg_left_motor.png)
 
 ## Right Motor Connector
 
-Right motor connector is mirrored version of Left motor connector.
+The right motor connector is a mirrored version of the left motor connector.
 
 ![Right Motor Connector](../images/pinmap/dwg_right_motor.png)
 
 ## Servo Connector
 
-ROSRider card can control two standard servos. Servos are powered via auxillary power, and before servos can be used, auxillary power must be switched on through software.
+The ROSRider card can control two standard servos. The servos are powered by auxiliary power, which must be enabled via software before use.
 
 ![Servo Connector](../images/pinmap/dwg_servo.png)
 
@@ -52,7 +49,7 @@ This is an internal connector, that can be used to control buttons on the board 
 
 ## Communications Port
 
-Both I2C0 and Serial Port can be accessed using this pin header. Reset pin is decoupled with a 150nF capacitor to internal reset.
+This pin header can be used for both I2C0 and serial port communication. The reset pin is decoupled with a 150nF capacitor to isolate it from the internal reset.
 
 ![Communications Port](../images/pinmap/dwg_comm.png)
 
