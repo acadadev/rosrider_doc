@@ -11,18 +11,24 @@ __Updating Your ROSRider's Firmware__
 
 To initiate the firmware update process, follow these steps:
 
-    Enter Bootloader Mode:
-        Press and Hold the Boot Button: Keep the boot button pressed.
-        Press and Release the Reset Button: While still holding the boot button, press and quickly release the reset button.
-        Release the Boot Button: Once the reset button is released, you can also release the boot button.
+Enter Bootloader Mode:
+- Press and Hold the Boot Button: Keep the boot button pressed.
+- Press and Release the Reset Button: While still holding the boot button, press and quickly release the reset button.
+- Release the Boot Button: Once the reset button is released, you can also release the boot button.
 
-    The ROSRider should now enter bootloader mode. This is indicated by a specific LED pattern or behavior, which may vary depending on your ROSRider model.
+The ROSRider should now enter bootloader mode. This is indicated by the green LED lighting up constantly.
+
+Issue the following command on your console:
 
 ```console
 sudo tail -f /var/log/syslog
 ```
 
-[TODO: show typical output]
+You should see an output similar to:
+
+<div style="display: flex; justify-content: space-around; margin: 25px 0;">
+   <img src="../images/bootloader_mode.png" alt="Bootloader mode output" style="box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);">
+</div>
 
 Important Considerations:
 
