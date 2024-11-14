@@ -66,34 +66,11 @@ __Steps:__
 	```console
 	dfu-util -D I2CRider.dfu
 	```
+<div style="display: flex; justify-content: space-around; margin: 25px 0;">
+   <img src="../images/dfu_update.png" alt="DFU util update output" style="box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);">
+</div>
 
-	```console
-	$ dfu-util -D I2CRider.dfu
-	dfu-util 0.9
 
-	Copyright 2005-2009 Weston Schmidt, Harald Welte and OpenMoko Inc.
-	Copyright 2010-2016 Tormod Volden and Stefan Schmidt
-	This program is Free Software and has ABSOLUTELY NO WARRANTY
-	Please report bugs to http://sourceforge.net/p/dfu-util/tickets/
-
-	Match vendor ID from file: 1cbe
-	Match product ID from file: 00ff
-	Opening DFU capable USB device...
-	ID 1cbe:00ff
-	Run-time device DFU version 0110
-	Claiming USB DFU Interface...
-	Setting Alternate Setting #0 ...
-	Determining device status: state = dfuIDLE, status = 0
-	dfuIDLE, continuing
-	DFU mode device DFU version 0110
-	Device returned transfer size 1024
-	Copying data from PC to DFU device
-	Download	[=========================] 100%        26272 bytes
-	Download done.
-	state(2) = dfuIDLE, status(0) = No error condition is present
-	Done!
-	$ 
-	```
 [TODO: output]
 
 __Next Chapter:__ [Troubleshooting](../10_DEBUG/README.md)
