@@ -37,15 +37,15 @@ Use the i2cdetect command to scan the I2C bus and identify connected devices:
 
 You should see:
 
->     0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f  
->00:                         -- -- -- -- -- -- -- --  
->10: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --  
->20: 20 -- -- -- -- -- -- -- -- -- -- -- -- -- -- --  
->30: -- -- -- -- -- -- -- -- -- -- -- -- 3c -- -- --  
->40: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --  
->50: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --  
->60: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --  
->70: -- -- -- -- -- -- -- --  
+     0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f  
+00:                         -- -- -- -- -- -- -- --  
+10: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --  
+20: 20 -- -- -- -- -- -- -- -- -- -- -- -- -- -- --  
+30: -- -- -- -- -- -- -- -- -- -- -- -- 3c -- -- --  
+40: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --  
+50: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --  
+60: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --  
+70: -- -- -- -- -- -- -- --  
 
 This command will display a table of I2C addresses. The default address of the ROSRider is `0x3c`, and the default address of the ROS2RPI card is `0x20`.
 
@@ -53,9 +53,6 @@ Note: If you only have a ROSRider connected directly, you should only see the ad
 
 Once you've confirmed the presence of the ROSRider on the I2C bus, you can proceed with installing the necessary drivers.
 
-**ROS2RPI board connection**
-
-[TODO: explanation of power cycling]
 [TODO: nvidia agx connection diagram]
 
 __Next Chapter:__ [ROS2 Drivers](../04_DRIVERS/README.md)
