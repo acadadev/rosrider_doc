@@ -19,8 +19,8 @@ The ROSRider firmware incorporates a timing control feature that synchronizes it
 
 1. **Create a ROS Workspace:**
 
-	```mkdir -p rosrider_ws/src   
-	cd rosrider_ws/src```  
+	```mkdir -p rosrider_ws/src```   
+	```cd rosrider_ws/src```
 
 	This creates a directory called `rosrider_ws` and a subdirectory named `src` within it. The `src` directory is the standard location for ROS package source code.
 
@@ -45,7 +45,7 @@ The ROSRider firmware incorporates a timing control feature that synchronizes it
 	``colcon build``  
 	``source devel/setup.bash``
 
-**Adding ROSRider to Your Bash Environment**
+6. **Adding ROSRider to Your Bash Environment**
 
 	To ensure that your system can find the necessary ROSDriver components, you'll need to add the following line to your Bash configuration file:
 
