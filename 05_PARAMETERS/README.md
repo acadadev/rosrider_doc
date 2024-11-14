@@ -188,7 +188,27 @@ The ROSRider employs a command timeout mechanism to ensure safe operation and pr
 
 The `ALLOWED_SKIP` parameter in the ROSRider configuration determines the maximum number of consecutive command cycles that can be skipped before triggering the timeout. This value, when multiplied by the inverse of the `UPDATE_RATE` (measured in milliseconds), sets the overall timeout duration. For instance, if `ALLOWED_SKIP` is set to 3 and the `UPDATE_RATE` is 20Hz, the timeout duration would be 150 milliseconds.
 
-**Understanding PWM Frequency**
+**Understanding PWM Frequency and its Impact on Motor Control**
+
+PWM (Pulse-Width Modulation) is a technique used to control the average power supplied to a device by turning the power on and off rapidly. In the context of motor control, PWM is used to vary the speed and direction of a motor.
+
+_The Role of PWM Frequency:_
+
+The PWM frequency, measured in Hertz (Hz), determines how often the power is switched on and off. A higher frequency results in smoother motor control and reduced audible noise. However, excessively high frequencies can lead to increased power losses and potential interference with other electronic components.
+
+_Selecting the Optimal PWM Frequency:_
+
+The optimal PWM frequency depends on several factors, including:
+
+- Motor Type: Different motor types have different optimal frequency ranges. Brushed DC motors typically require lower frequencies, while brushless DC motors may benefit from higher frequencies.
+- Desired Performance: Higher frequencies can lead to smoother and quieter operation, but they may also increase power consumption and complexity of the control system.
+- Hardware Limitations: The microcontroller and power electronics used in the system may have limitations on the maximum achievable PWM frequency.
+
+_The Impact of PWM Frequency on ROSRider:_
+
+The `PWM_FRQ` parameter in the ROSRider configuration file allows you to set the PWM frequency for the motor drivers. By carefully selecting this value, you can balance performance, noise, and power consumption. A higher frequency can improve motor smoothness and responsiveness, while a lower frequency can reduce power dissipation and electromagnetic interference.
+
+Note: While a higher PWM frequency can improve motor performance, it's essential to consider the trade-offs and the specific requirements of your application. Experimentation and fine-tuning may be necessary to achieve the desired results.
 
 - explain pwm frequency and pwm divider
 
