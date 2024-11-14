@@ -64,7 +64,7 @@ To launch the ROSRider node and establish communication between ROS and your ROS
 The following output indicates that the ROSDriver node has started successfully and is ready to communicate with your ROSRider hardware.
 
 <div style="display: flex; margin: 25px 0;">
-   <img src="../images/rosrider_node.png" alt="Running the Driver" style="width:50%; box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);">
+   <img src="../images/rosrider_node.png" alt="Running the Driver" style="box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);">
 </div>
 
 Important Note
