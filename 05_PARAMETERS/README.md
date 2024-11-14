@@ -138,23 +138,30 @@ The following YAML file defines the configuration parameters for the ROSRider no
 | TRIM | float | Trim value for motor output.
 | MOTOR_CONSTANT | float | Motor constant for output calculation. |
 
-gain trim motor constant explanied
+In the context of motor control, the motor constant is a proportionality factor that relates the input voltage to the output speed or torque. By adjusting the motor constant, we can compensate for differences in motor performance, such as variations in motor efficiency or mechanical load.
 
-add defaults, maybe
+The trim parameter, on the other hand, is used to introduce a small offset to the motor's output. This can be helpful in compensating for slight misalignments in the robot's mechanical structure or differences in motor characteristics.
+
+In the given equations:
+
+> MotorConstantLeft = (GAIN + TRIM) / MOTOR_CONSTANT;
+> MotorConstantRight = (GAIN - TRIM) / MOTOR_CONSTANT;
+
+The `MotorConstantLeft` and `MotorConstantRight` values are used to multiply the algorithm output (typically from a PID controller) to determine the appropriate PWM values for the left and right motors. These adjusted motor constants account for variations in motor performance and mechanical factors, ensuring precise and coordinated motor control.
+
+- `MotorConstantLeft` and `MotorConstantRight` are the adjusted motor constants for the left and right motors, respectively.
+- `GAIN` is a global gain factor that scales the overall motor output.
+- `TRIM` is a small value used to adjust the motor output.
+- `MOTOR_CONSTANT` is the nominal motor constant.
+
+By adjusting the TRIM parameter, we can effectively fine-tune the motor outputs to ensure accurate and precise robot motion, even in the presence of minor variations in motor performance or mechanical alignment.    
+
+
 config_flags explanation
 ros2rpi config explanation
 allowed skip before what
-
 explain pwm frequency and pwm divider
-
 is it 0x33 for default
-
-word about datatypes 
-
 couple of rosparam commands
-
-
-
-
 
 __Next Chapter:__ [Updating Firmware](../06_FIRMWARE/README.md)
