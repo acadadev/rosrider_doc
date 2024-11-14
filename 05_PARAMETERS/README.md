@@ -65,16 +65,51 @@ The following YAML file defines the configuration parameters for the ROSRider no
 
 | Parameter | Type | Explanation |
 | -------- | -------- | -------- |
-| I2C_ENABLED  | Boolean | Enables or disables I2C communication. For development only. |
-| ODOM_FRAME_ID | String | Sets the frame ID for the odometry data. |
-| BASE_FRAME_ID | String | Sets the frame ID for the robot's base frame. |
-| BROADCAST_TF2 | Boolean | Enables or disables TF2 broadcast. |
-| PUB_ODOMETRY | Boolean | Enables or disables odometry data publication. |
-| PUB_JOINTS | Boolean | Enables or disables joint state publication. |
-| PUB_DIAGNOSTICS | Boolean | Enables or disables diagnostic data publication. |
-| ROS2RPI_CONFIG | Byte | Configuration for the ROS2RPI board (if used). |
-| AUTO_SYNC | Boolean | Enables automatic clock synchronization. |
-| DEBUG | Boolean | Enables or disables debug mode. |
+| I2C_ENABLED  | bool | Enables or disables I2C communication. For development only. |
+| ODOM_FRAME_ID | string | Sets the frame ID for the odometry data. |
+| BASE_FRAME_ID | string | Sets the frame ID for the robot's base frame. |
+| BROADCAST_TF2 | bool | Enables or disables TF2 broadcast. |
+| PUB_ODOMETRY | bool | Enables or disables odometry data publication. |
+| PUB_JOINTS | bool | Enables or disables joint state publication. |
+| PUB_DIAGNOSTICS | bool | Enables or disables diagnostic data publication. |
+| ROS2RPI_CONFIG | uint8 | Configuration for the ROS2RPI board (if used). |
+| AUTO_SYNC | bool | Enables automatic clock synchronization. |
+| DEBUG | bool | Enables or disables debug mode. |
+| CONFIG_FLAGS | uint8 |
+| UPDATE_RATE | uint8 |
+| ALLOWED_SKIP | uint8 |
+| PWM_DIV | uint8 |
+| DRIVE_MODE | uint8 |
+| MONITOR_RATE | uint8 |
+| PWM_SCALE | uint16 |
+| PWM_FRQ | uint16 |
+| MAX_IDLE_SECONDS | uint16 |
+| UPPER_LIMIT | uint16 |
+| INTEGRAL_LIMIT | uint16 |
+| ENCODER_PPR | uint16 |
+| RTC_TRIM | uint32 |
+| LEFT_FORWARD_DEADZONE | int16 |
+| LEFT_REVERSE_DEADZONE | int16 |
+| RIGHT_FORWARD_DEADZONE | int16 |
+| RIGHT_REVERSE_DEADZONE | int16 |
+| GEAR_RATIO | float |
+| WHEEL_DIA | float |
+| BASE_WIDTH | float |
+| MAIN_AMP_LIMIT | float |
+| BAT_VOLTS_HIGH | float |
+| BAT_VOLTS_LOW | float |
+| MAX_RPM | float |
+| LEFT_AMP_LIMIT | float |
+| RIGHT_AMP_LIMIT | float |
+| LEFT_KP | float |
+| LEFT_KI | float |
+| LEFT_KD | float |
+| RIGHT_KP | float |
+| RIGHT_KI | float |
+| RIGHT_KD | float |
+| GAIN | float |
+| TRIM | float |
+| MOTOR_CONSTANT | float |
 
 
 
