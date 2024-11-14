@@ -18,13 +18,13 @@ Enter Bootloader Mode:
 
 The ROSRider should now enter bootloader mode. This is indicated by the green LED lighting up constantly.
 
-Issue the following command on your console:
+Run this command to view system logs in real-time. 
 
 ```console
 sudo tail -f /var/log/syslog
 ```
 
-You should see an output similar to:
+You should see a message indicating successful entry into bootloader mode, which typically reads:
 
 <div style="display: flex; justify-content: space-around; margin: 25px 0;">
    <img src="../images/bootloader_mode.png" alt="Bootloader mode output" style="box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);">
