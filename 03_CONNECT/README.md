@@ -47,9 +47,11 @@ You should see:
 >60: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --  
 >70: -- -- -- -- -- -- -- --  
 
-0x3c is default address of ROSRider. 0x20 is the default adress of ROS2RPI card. If you have only ROSRider and connected directly, you should only see 0x3c.
+This command will display a table of I2C addresses. The default address of the ROSRider is `0x3c`, and the default address of the ROS2RPI card is `0x20`.
 
-After you can see ROSRider on the I2C bus, you may proceed to install drivers.
+Note: If you only have a ROSRider connected directly, you should only see the address `0x3c`.
+
+Once you've confirmed the presence of the ROSRider on the I2C bus, you can proceed with installing the necessary drivers.
 
 **ROS2RPI board connection**
 
