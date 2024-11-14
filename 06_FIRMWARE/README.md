@@ -39,10 +39,34 @@ You should see a message indicating successful entry into bootloader mode, which
 
 By following these steps and adhering to the specific instructions provided by ACADA Robotics, you can successfully update your ROSRider's firmware and enhance its capabilities.
 
-__Updating Firmware with dfu-util__
+__Updating ROSRider Firmware with I2CRider.dfu__
 
-[TODO explain how to install dfu-util]  
-[TODO you will need a linx computer]  
+__Prerequisites:__
 
+- Linux Computer: You'll need a Linux-based computer (e.g., Ubuntu, Debian) to perform the firmware update.
+- `dfu-util`: Ensure you have `dfu-util` installed on your system. It's a common tool for device firmware updates.
+- `I2CRider.dfu`: Obtain this file from Acada Robotics. It contains the firmware update for your ROSRider.
+
+__Steps:__
+
+1. Set Device Suffix and Prefix:
+
+- Open a terminal on your Linux computer.
+- Execute the following commands to set the suffix and prefix for the DFU device:
+
+```console
+dfu-suffix -a I2CRider.dfu -v 0x1cbe -p 0x00ff
+dfu-prefix -s 0x2800 -a I2CRider.dfu
+```
+
+2. Start the Firmware Update:
+
+- Run the following command to initiate the firmware update process:
+
+```console
+dfu-util -D I2CRider.dfu
+```
+
+[TODO: output]
 
 __Next Chapter:__ [Troubleshooting](../10_DEBUG/README.md)
