@@ -41,9 +41,8 @@ By following these steps and adhering to the specific instructions provided by A
 
 __Updating Firmware with dfu-util__
 
-[TODO explain how to install dfu-util]
-[TODO you will need a linx computer]
-
+[TODO explain how to install dfu-util]  
+[TODO you will need a linx computer]  
 
 
 __Next Chapter:__ [Troubleshooting](../10_DEBUG/README.md)
