@@ -5,7 +5,7 @@ title: "Parameters"
 description: "Parametric Configuration of the ROSRider control card"
 ---
 
-**Parameters**
+
 
 '''
 /rosrider_node:
