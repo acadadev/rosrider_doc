@@ -65,48 +65,53 @@ The following YAML file defines the configuration parameters for the ROSRider no
 
 **General configuration**
 
-| Parameter | Type | Explanation |
-| -------- | -------- | -------- |
-| I2C_ENABLED  | bool | Enables or disables I2C communication. For development only. |
-| ODOM_FRAME_ID | string | Sets the frame ID for the odometry data. |
-| BASE_FRAME_ID | string | Sets the frame ID for the robot's base frame. |
-| BROADCAST_TF2 | bool | Enables or disables TF2 broadcast. |
-| PUB_ODOMETRY | bool | Enables or disables odometry data publication. |
-| PUB_JOINTS | bool | Enables or disables joint state publication. |
-| PUB_DIAGNOSTICS | bool | Enables or disables diagnostic data publication. |
-| ROS2RPI_CONFIG | uint8 | Configuration for the ROS2RPI board (if used). |
-| AUTO_SYNC | bool | Enables automatic clock synchronization. |
-| DEBUG | bool | Enables or disables debug mode. |
-| CONFIG_FLAGS | uint8 | Configuration flags for specific features. |
-| UPDATE_RATE | uint8 | Desired update rate for the control loop. |
-| ALLOWED_SKIP | uint8 | Maximum number of allowed skipped data packets. |
-| PWM_DIV | uint8 | PWM Frequency divider |
-| DRIVE_MODE | uint8 | Drive mode configuration. Should always be 3 |
-| MONITOR_RATE | uint8 | Rate at which current sensor data is monitored. |
-| PWM_SCALE | uint16 | PWM scaling factor. |
-| PWM_FRQ | uint16 | PWM frequency. |
-| MAX_IDLE_SECONDS | uint16 | Maximum idle seconds before entering hibernate mode. |
+| Parameter | Type | Explanation | Default |
+| -------- | -------- | -------- | -------- |
+| I2C_ENABLED  | bool | Enables or disables I2C communication. For development only. | True |
+| ODOM_FRAME_ID | string | Sets the frame ID for the odometry data. | 'odom' |
+| BASE_FRAME_ID | string | Sets the frame ID for the robot's base frame. | 'base_footprint' |
+| BROADCAST_TF2 | bool | Enables or disables TF2 broadcast. | True |
+| PUB_ODOMETRY | bool | Enables or disables odometry data publication. | True |
+| PUB_JOINTS | bool | Enables or disables joint state publication. | True |
+| PUB_DIAGNOSTICS | bool | Enables or disables diagnostic data publication. | True |
+| ROS2RPI_CONFIG | uint8 | Configuration for the ROS2RPI board (if used). | 0x33 |
+| AUTO_SYNC | bool | Enables automatic clock synchronization. | True |
+| DEBUG | bool | Enables or disables debug mode. | False |
+| CONFIG_FLAGS | uint8 | Configuration flags for specific features. | 48 |
+| UPDATE_RATE | uint8 | Desired update rate for the control loop. | 10 |
+| ALLOWED_SKIP | uint8 | Maximum number of allowed skipped data packets. | 3 |
+| PWM_DIV | uint8 | PWM Frequency divider | 64 |
+| DRIVE_MODE | uint8 | Drive mode configuration. | 3 |
+| MONITOR_RATE | uint8 | Rate at which current sensor data is monitored. | 100 |
+| PWM_SCALE | uint16 | PWM scaling factor. | 256 |
+| PWM_FRQ | uint16 | PWM frequency. |  50 |
+| MAX_IDLE_SECONDS | uint16 | Maximum idle seconds before entering hibernate mode. | 3600 |
+| RTC_TRIM | uint32 | Real-Time Clock trim value. | 0x7FFF |
 
-**Motor Control and Odometry Configuration**
+**Motor Control**
 
-| Parameter | Type | Explanation |
-| -------- | -------- | -------- |
-| UPPER_LIMIT | uint16 |
-| INTEGRAL_LIMIT | uint16 |
-| ENCODER_PPR | uint16 |
-| RTC_TRIM | uint32 |
-| LEFT_FORWARD_DEADZONE | int16 |
-| LEFT_REVERSE_DEADZONE | int16 |
-| RIGHT_FORWARD_DEADZONE | int16 |
-| RIGHT_REVERSE_DEADZONE | int16 |
+| Parameter | Type | Explanation | Default |
+| -------- | -------- | -------- | -------- |
+| UPPER_LIMIT | uint16 | Maximum PWM output value. |
+| INTEGRAL_LIMIT | uint16 |  Integral term limit for PID control. | 224 |
+| ENCODER_PPR | uint16 | Encoder pulses per revolution. | 48 |
+| LEFT_FORWARD_DEADZONE | int16 | Deadzone for the left motor's forward direction. | 8 | 
+| LEFT_REVERSE_DEADZONE | int16 | Deadzone for the left motor's reverse direction. | 8 |
+| RIGHT_FORWARD_DEADZONE | int16 | Deadzone for the right motor's forward direction. | 8 |
+| RIGHT_REVERSE_DEADZONE | int16 | Deadzone for the right motor's reverse direction. | 8 |
+
+**Odometry Configuration**
+
+| Parameter | Type | Explanation | Default |
+| -------- | -------- | -------- | -------- |
 | GEAR_RATIO | float |
 | WHEEL_DIA | float |
 | BASE_WIDTH | float |
 
 **Power and Safety Limits**
 
-| Parameter | Type | Explanation |
-| -------- | -------- | -------- |
+| Parameter | Type | Explanation | Default |
+| -------- | -------- | -------- | -------- |
 | MAIN_AMP_LIMIT | float | Maximum current draw for the main power supply. |
 | BAT_VOLTS_HIGH | float | Maximum battery voltage. |
 | BAT_VOLTS_LOW | float | Minimum battery voltage. |
@@ -116,14 +121,14 @@ The following YAML file defines the configuration parameters for the ROSRider no
 
 **PID Control Parameters**
 
-| Parameter | Type | Explanation |
-| -------- | -------- | -------- |
-| LEFT_KP | float | PID proportional for left motor. |
-| LEFT_KI | float | PID integral for left motor. |
-| LEFT_KD | float | PID differential for left motor. |
-| RIGHT_KP | float | PID proportional for right motor. |
-| RIGHT_KI | float | PID integral for right motor. |
-| RIGHT_KD | float | PID differential for right motor. |
+| Parameter | Type | Explanation | Default |
+| -------- | -------- | -------- | -------- |
+| LEFT_KP | float | PID proportional for left motor. | 1.2 |
+| LEFT_KI | float | PID integral for left motor. | 0.8 |
+| LEFT_KD | float | PID differential for left motor. | 0.01 |
+| RIGHT_KP | float | PID proportional for right motor. | 1.2 |
+| RIGHT_KI | float | PID integral for right motor. | 0.8 |
+| RIGHT_KD | float | PID differential for right motor. | 0.01 |
 
 **Drive Trim Parameters**
 
@@ -137,12 +142,18 @@ The following YAML file defines the configuration parameters for the ROSRider no
 | TRIM | float |
 | MOTOR_CONSTANT | float |
 
+gain trim motor constant explanied
+
 add defaults, maybe
 config_flags explanation
 ros2rpi config explanation
 allowed skip before what
 
 explain pwm frequency and pwm divider
+
+is it 0x33 for default
+
+word about datatypes 
 
 
 
