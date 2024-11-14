@@ -10,7 +10,7 @@ description: "Connecting ROSRider Control Card to Host Computer"
 This wiring diagram illustrates direct I2C communication with the Raspberry PI.
 
 <div style="display: flex; justify-content: space-around; margin: 25px 0;">
-   <img src="../images/rpi5_wiring.png" alt="Connecting to Raspberry PI diagram" style="box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);">
+   <img src="../images/rpi4b_wiring.png" alt="Connecting to Raspberry PI diagram" style="box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);">
 </div>
 
 This image depicts the actual wiring configuration for direct I2C communication between the Raspberry Pi and ROSRider.
