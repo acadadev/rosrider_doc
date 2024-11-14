@@ -156,12 +156,12 @@ The `MotorConstantLeft` and `MotorConstantRight` values are used to multiply the
 
 By adjusting the TRIM parameter, we can effectively fine-tune the motor outputs to ensure accurate and precise robot motion, even in the presence of minor variations in motor performance or mechanical alignment.    
 
-
--config_flags explanation
--ros2rpi config explanation
--allowed skip before what
--explain pwm frequency and pwm divider
--is it 0x33 for default
--couple of rosparam commands
+- TODO
+- config_flags explanation
+- ros2rpi config explanation
+- allowed skip before what
+- explain pwm frequency and pwm divider
+- is it 0x33 for default
+- couple of rosparam commands
 
 __Next Chapter:__ [Updating Firmware](../06_FIRMWARE/README.md)
