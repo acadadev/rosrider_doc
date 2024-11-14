@@ -12,9 +12,12 @@ __TODO__
 - Odometry tuning, video
 - How to move teleop, video
 - demonstration of timing-control with rqt_plot and all, video
-
 - ros2rpi config explanation, is it 0x33 for default
 - couple of rosparam commands
+- led blink documentation
+- software fuse documentation
+- sysctl commands
+- rosrider_smbus
 
 __Troubleshooting__
 
