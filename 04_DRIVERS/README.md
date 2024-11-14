@@ -5,7 +5,7 @@ title: "ROS2 Drivers"
 description: "Compiling and Installing ROS2 Drivers"
 ---
 
-**Installing ROSRider Drivers**
+__Installing ROSRider Drivers__
 
 The ROSRider package provides the necessary ROS nodes and drivers to interact with the ROSRider board. It allows you to control motors, read sensor data, and perform other tasks using ROS.
 
@@ -15,7 +15,7 @@ The ROSRider firmware incorporates a timing control feature that synchronizes it
 
 ---
 
-**Installation Instructions**
+__Installation Instructions__
 
 1. Create a ROS Workspace:
 
@@ -65,7 +65,7 @@ The ROSRider firmware incorporates a timing control feature that synchronizes it
 
 ---
 
-**Running the Driver**
+__Running the Driver__
 
 Once you've successfully installed the ROSDriver package and configured your environment, it's time to bring the ROSRider board to life!
 
@@ -81,12 +81,12 @@ The following output indicates that the ROSDriver node has started successfully 
    <img src="../images/output_rosrider_node.png" alt="Running the Driver" style="box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);">
 </div>
 
-**Important Note**
+__Important Note__
 
 - Make sure you have sourced the setup script `source devel/setup.bash` either manually before running the command, or have permanently configured it in your `.bashrc` file as explained in the previous section. This ensures the system can locate the necessary ROSDriver components.
 
 
-**Monitoring diagnostics topic**
+__Monitoring diagnostics topic__
 
 To monitor the health and performance of your ROSRider, you can view real-time diagnostic information by using the following command:
 
@@ -110,7 +110,7 @@ This command will output the following diagnostic information to your terminal:
 
 By monitoring these values, you can ensure optimal performance and troubleshoot any potential issues.
 
-**Monitoring odometry output**  
+__Monitoring odometry output__  
 
 To monitor the odometry data being published by the ROSRider, you can use the following command:
 
