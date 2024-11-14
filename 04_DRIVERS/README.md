@@ -13,6 +13,8 @@ While previous versions of ROSRider utilized middleware to integrate with ROS, o
 
 The ROSRider firmware incorporates a timing control feature that synchronizes itself to the host computer's polling rate, resulting in a latency of 1-2 milliseconds. By actively adjusting its internal clock based on received packets, the ROSRider firmware ensures precise timing and synchronization, preventing data inconsistencies and errors that can occur due to timing drifts. This guarantees that ROS packets are delivered on time, ensuring reliable and efficient system operation.
 
+---
+
 **Installation Instructions**
 
 1. Create a ROS Workspace
@@ -38,7 +40,6 @@ The ROSRider firmware incorporates a timing control feature that synchronizes it
 
 	This command retrieves and installs all the necessary dependencies required by the ROSDriver package based on the cloned source code in the src directory.
 
-
 5. Build the Workspace
 
 	> colcon build  
@@ -52,14 +53,14 @@ The ROSRider firmware incorporates a timing control feature that synchronizes it
 
 ---
 
-instrumnting robot to turn lidar on off. ros2rpi
+**Runing the Driver**
 
-running the driver  
-
+command to start
 checking diag output
 checking odometry output  
 
 [TODO: simulations]
+[instrumenting robot to turn lidar on off, ros2rpi]
 [TODO: move status to debug section]
 
 __Next Chapter:__ [Parameters](../05_PARAMETERS/README.md)
