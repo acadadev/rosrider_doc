@@ -81,7 +81,7 @@ The following output indicates that the ROSDriver node has started successfully 
    <img src="../images/output_rosrider_node.png" alt="Running the Driver" style="box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);">
 </div>
 
-__Important Note__
+***Important Note***
 
 - Make sure you have sourced the setup script `source devel/setup.bash` either manually before running the command, or have permanently configured it in your `.bashrc` file as explained in the previous section. This ensures the system can locate the necessary ROSDriver components.
 
