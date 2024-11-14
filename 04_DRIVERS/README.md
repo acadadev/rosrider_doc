@@ -28,30 +28,40 @@ The ROSRider firmware incorporates a timing control feature that synchronizes it
 
 2. Clone the ROSRider Repository:
 
-	```git clone https://github.com/acadadev/rosrider.git```
+	```console
+	git clone https://github.com/acadadev/rosrider.git
+	```
 
 3. Initialize ROS Dependency System (if not done during ROS installation)
 
-	```sudo rosdep init```  
-	```rosdep update```
+	```console
+	sudo rosdep init  
+	rosdep update
+	```
 
 4. Install ROS Dependencies
 
-	``cd ..``  
-	``rosdep install --from-paths src -y --ignore-src``
+	```console
+	cd ..  
+	rosdep install --from-paths src -y --ignore-src
+	```
 
 	This command retrieves and installs all the necessary dependencies required by the ROSDriver package based on the cloned source code in the src directory.
 
 5. Build the Workspace
 
-	``colcon build``  
-	``source devel/setup.bash``
+	```console
+	colcon build 
+	source devel/setup.bash
+	```
 
 6. Adding ROSRider to Your Bash Environment
 
 	To ensure that your system can find the necessary ROSDriver components, you'll need to add the following line to your Bash configuration file:
 
-	```source ~/rosrider_ws/install/setup.bash```
+	```console
+	source ~/rosrider_ws/install/setup.bash
+	```
 
 ---
 
@@ -61,7 +71,9 @@ Once you've successfully installed the ROSDriver package and configured your env
 
 To launch the ROSRider node and establish communication between ROS and your ROSRider hardware, execute the following command in your terminal:
 
-```ros2 launch rosrider_node rosrider_node.launch.py```
+```console
+ros2 launch rosrider_node rosrider_node.launch.py
+```
 
 The following output indicates that the ROSDriver node has started successfully and is ready to communicate with your ROSRider hardware.
 
@@ -78,7 +90,9 @@ The following output indicates that the ROSDriver node has started successfully 
 
 To monitor the health and performance of your ROSRider, you can view real-time diagnostic information by using the following command:
 
-```ros2 topic echo /rosrider/diagnostics```
+```console
+ros2 topic echo /rosrider/diagnostics
+```
 
 Running this command will output diagnostic information to your terminal. You should see an output similar to the following:
 
@@ -100,9 +114,9 @@ By monitoring these values, you can ensure optimal performance and troubleshoot 
 
 To monitor the odometry data being published by the ROSRider, you can use the following command:
 
-```ros2 topic echo /odom```
-
-
+```console
+ros2 topic echo /odom
+```
 
 In the next chapter, we will delve into the configuration of the driver, exploring the various parameters that can be tuned to optimize its performance for specific use cases.
 
