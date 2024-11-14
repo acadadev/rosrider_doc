@@ -60,7 +60,7 @@ A 5V power supply can be enabled or disabled via software, providing flexibility
 
 **Modular Design** 
 
-ROSRider utilizes standard JST connectors for motor and I2C connections, allowing for easy assembly and customization. Additionally, two Qwiic connectors provide convenient expansion options for integrating various sensors and modules.
+ROSRider utilizes standard JST connectors for motor and I2C connections, allowing for easy assembly and customization. Additionally, two QWIC connectors provide convenient expansion options for integrating various sensors and modules.
 
 **Robust Protection** 
 
@@ -73,6 +73,10 @@ The integrated Real-Time Clock (RTC) enables precise timekeeping and scheduled w
 **Enhanced Diagnostics** 
 
 The system publishes detailed diagnostic information, including battery voltage, current consumption, and motor current feedback, to aid in remote debugging and system monitoring.
+
+**Customizable Input**
+
+The button input pins on ROSRider are customizable, allowing users to connect external buttons for reset, wake-up, and user-defined functions.
 
 **Supported Platforms**
 
