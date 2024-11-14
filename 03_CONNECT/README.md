@@ -5,7 +5,7 @@ title: "Connecting ROSRider to Host Computer"
 description: "Connecting ROSRider Control Card to Host Computer"
 ---
 
-**Connecting ROSRider to Raspberry PI**
+__Connecting ROSRider to Raspberry PI__
 
 This wiring diagram illustrates direct I2C communication with the Raspberry PI.
 
@@ -19,7 +19,7 @@ This image depicts the actual wiring configuration for direct I2C communication 
    <img src="../images/caretta_bare.jpg" alt="Connecting to Raspberry PI" style="width:50%; box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);">
 </div>
 
-**Connecting ROSRider to NVIDIA Jetson**
+__Connecting ROSRider to NVIDIA Jetson__
 
 The NVIDIA Jetson has two I2C ports accessible via the header. To ensure proper communication with I2C devices, it's crucial to configure the I2C voltage level. This is accomplished using a jumper (J514) on the board. To select 3.3V I2C, position the jumper accordingly.
 
@@ -35,7 +35,7 @@ There are two I2C ports on the Jetson AGX:
 Here is an excellent video on connecting I2C devices to Jetson: <a target="_blank" href="https://www.youtube.com/watch?v=7_H7tzcdBMU]" title="I2C - NVIDIA Jetson AGX Xavier">https://www.youtube.com/watch?v=7_H7tzcdBMU]</a>. This video provides a comprehensive guide on the steps involved, from identifying I2C pins to configuring software and starting device usage.
 
 
-**Detecting I2C Devices**
+__Detecting I2C Devices__
 
 For troubleshooting purposes, you may want to detect I2C devices connected to your computer. To do this, you can use the `i2cdetect` command in the terminal.
 
