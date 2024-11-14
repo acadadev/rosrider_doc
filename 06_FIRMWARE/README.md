@@ -30,7 +30,7 @@ You should see a message indicating successful entry into bootloader mode, which
    <img src="../images/bootloader_mode.png" alt="Bootloader mode output" style="box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);">
 </div>
 
-Important Considerations:
+***Before Starting Update: Important Considerations***
 
 - Power Supply: Ensure a stable power supply during the update process.
 - USB Connection: A reliable USB connection is crucial.
