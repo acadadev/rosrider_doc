@@ -32,7 +32,8 @@ There are two I2C ports on the Jetson AGX:
    <img src="../images/jetson_agx_i2c_1.png" alt="Jetson AGX I2C Port 2" style="width:48%; box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);">
 </div>
 
-Here is an excellent video on connecting I2C devices to Jetson: [https://www.youtube.com/watch?v=7_H7tzcdBMU](https://www.youtube.com/watch?v=7_H7tzcdBMU). This video provides a comprehensive guide on the steps involved, from identifying I2C pins to configuring software and starting device usage.
+Here is an excellent video on connecting I2C devices to Jetson: <a href="https://www.youtube.com/watch?v=7_H7tzcdBMU]" title="I2C - NVIDIA Jetson AGX Xavier">https://www.youtube.com/watch?v=7_H7tzcdBMU]</a>. This video provides a comprehensive guide on the steps involved, from identifying I2C pins to configuring software and starting device usage.
+
 
 **Detecting I2C Devices**
 
