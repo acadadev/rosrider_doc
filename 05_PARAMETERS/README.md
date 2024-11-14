@@ -63,7 +63,7 @@ The following YAML file defines the configuration parameters for the ROSRider no
     MOTOR_CONSTANT: 1.0
 ```
 
-**General configuration**
+__General configuration__
 
 | parameter | type | description | default |
 | -------- | -------- | -------- | -------- |
@@ -88,7 +88,7 @@ The following YAML file defines the configuration parameters for the ROSRider no
 | MAX_IDLE_SECONDS | uint16 | Maximum idle seconds before entering hibernate mode. | 3600 |
 | RTC_TRIM | uint32 | Real-Time Clock trim value. | 0x7FFF |
 
-**Motor Control**
+__Motor Control__
 
 | parameter | type | description | default |
 | -------- | -------- | -------- | -------- |
@@ -100,7 +100,7 @@ The following YAML file defines the configuration parameters for the ROSRider no
 | RIGHT_FORWARD_DEADZONE | int16 | Deadzone for the right motor's forward direction. | 8 |
 | RIGHT_REVERSE_DEADZONE | int16 | Deadzone for the right motor's reverse direction. | 8 |
 
-**Odometry Configuration**
+__Odometry Configuration__
 
 | parameter | type | description | default |
 | -------- | -------- | -------- | -------- |
@@ -108,7 +108,7 @@ The following YAML file defines the configuration parameters for the ROSRider no
 | WHEEL_DIA | float | Diameter of the wheels. | 0.0685 |
 | BASE_WIDTH | float | Distance between the wheels. | 0.168 |
 
-**Power and Safety Limits**
+__Power and Safety Limits__
 
 | parameter | type | description | default |
 | -------- | -------- | -------- | -------- |
@@ -119,7 +119,7 @@ The following YAML file defines the configuration parameters for the ROSRider no
 | LEFT_AMP_LIMIT | float | Maximum current limit for the left motor. | 1.6 |
 | RIGHT_AMP_LIMIT | float | Maximum current limit for the right motor. | 1.6 |
 
-**PID Control Parameters**
+__PID Control Parameters__
 
 | parameter | type | description | default |
 | -------- | -------- | -------- | -------- 
@@ -130,7 +130,7 @@ The following YAML file defines the configuration parameters for the ROSRider no
 | RIGHT_KI | float | PID integral for right motor. | 0.8 |
 | RIGHT_KD | float | PID differential for right motor. | 0.01 |
 
-**Drive Trim Parameters**
+__Drive Trim Parameters__
 
 | parameter | type | description | default |
 | -------- | -------- | -------- | -------- |
@@ -158,7 +158,7 @@ The `MotorConstantLeft` and `MotorConstantRight` values are used to multiply the
 
 By adjusting the TRIM parameter, we can effectively fine-tune the motor outputs to ensure accurate and precise robot motion, even in the presence of minor variations in motor performance or mechanical alignment.    
 
-**Understanding the Configuration Flag**
+__Understanding the Configuration Flag__
 
 The `CONFIG_FLAGS` parameter in the ROSRider configuration file is a bitmask that controls various hardware settings. By setting specific bits within this flag, you can configure different aspects of the ROSRider's behavior.
 
@@ -182,21 +182,21 @@ The configuration flags allow you to customize the behavior of the ROSRider to m
 
 By carefully configuring these flags, you can ensure that the ROSRider can work with a variety of motor and encoder configurations, providing flexibility and adaptability in your robotics projects.
 
-**Understanding Command Timeout**
+__Understanding Command Timeout__
 
 The ROSRider employs a command timeout mechanism to ensure safe operation and prevent unintended movement. This mechanism monitors the frequency of incoming commands from the host computer. If the system fails to receive a command within a specified time frame, it enters a state that restrains movement.
 
 The `ALLOWED_SKIP` parameter in the ROSRider configuration determines the maximum number of consecutive command cycles that can be skipped before triggering the timeout. This value, when multiplied by the inverse of the `UPDATE_RATE` (measured in milliseconds), sets the overall timeout duration. For instance, if `ALLOWED_SKIP` is set to 3 and the `UPDATE_RATE` is 20Hz, the timeout duration would be 150 milliseconds.
 
-**Understanding PWM Frequency and its Impact on Motor Control**
+__Understanding PWM Frequency and its Impact on Motor Control__
 
 PWM (Pulse-Width Modulation) is a technique used to control the average power supplied to a device by turning the power on and off rapidly. In the context of motor control, PWM is used to vary the speed and direction of a motor.
 
-__The Role of PWM Frequency:__
+***The Role of PWM Frequency:***
 
 The PWM frequency, measured in Hertz (Hz), determines how often the power is switched on and off. A higher frequency results in smoother motor control and reduced audible noise. However, excessively high frequencies can lead to increased power losses and potential interference with other electronic components.
 
-__Selecting the Optimal PWM Frequency:__
+***Selecting the Optimal PWM Frequency:***
 
 The optimal PWM frequency depends on several factors, including:
 
@@ -204,7 +204,7 @@ The optimal PWM frequency depends on several factors, including:
 - Desired Performance: Higher frequencies can lead to smoother and quieter operation, but they may also increase power consumption and complexity of the control system.
 - Hardware Limitations: The microcontroller and power electronics used in the system may have limitations on the maximum achievable PWM frequency.
 
-__The Impact of PWM Frequency on ROSRider:__
+***The Impact of PWM Frequency on ROSRider:***
 
 The `PWM_FRQ` parameter in the ROSRider configuration file plays a crucial role in determining the performance and efficiency of your robot's motors. By carefully selecting this value, you can optimize motor smoothness, responsiveness, power consumption, and electromagnetic interference (EMI).
 
@@ -218,14 +218,14 @@ However, a higher frequency can also result in:
 - Increased Power Dissipation: More switching losses in the motor driver.
 - Higher EMI: Increased electromagnetic interference.
 
-__The Role of PWM_DIV:__
+***The Role of PWM_DIV:***
 
 To achieve the desired PWM frequency, you'll need to set the `PWM_DIV` parameter appropriately. This parameter divides the system clock to generate the PWM clock. A higher PWM_DIV value results in a lower PWM clock frequency.
 
 - This setting determines the clock frequency for the PWM module.
 - It's a hardware-based division of the system clock (80000000).
 
-__Balancing Performance and Efficiency:__
+***Balancing Performance and Efficiency:***
 
 The optimal PWM frequency depends on various factors, including:
 
@@ -233,7 +233,7 @@ The optimal PWM frequency depends on various factors, including:
 - Load Conditions: The expected load on the motors.
 - Desired Performance: The required level of smoothness, responsiveness, and efficiency.
 
-__Practical Considerations:__
+***Practical Considerations:***
 
 - Start with a Moderate Frequency: Begin with a moderate PWM frequency and gradually increase it if needed.
 - Monitor Motor Performance: Observe the motor's behavior and adjust the frequency accordingly.
