@@ -7,6 +7,8 @@ description: "Error codes and conditions on the ROSRider control card"
 
 __TODO__
 
+- video of dfu update
+
 - Procedures section
 - PID Tuning, video
 - Odometry tuning, video
@@ -18,6 +20,7 @@ __TODO__
 - software fuse documentation
 - sysctl commands
 - rosrider_smbus
+
 
 __Troubleshooting__
 
