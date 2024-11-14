@@ -67,7 +67,7 @@ The following output indicates that the ROSDriver node has started successfully 
    <img src="../images/rosrider_node.png" alt="Running the Driver" style="box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);">
 </div>
 
-Important Note
+**Important Note**
 
 - Make sure you have sourced the setup script `source devel/setup.bash` either manually before running the command, or have permanently configured it in your `.bashrc` file as explained in the previous section. This ensures the system can locate the necessary ROSDriver components.
 
@@ -76,7 +76,7 @@ Important Note
 
 To monitor the health and performance of your ROSRider, you can view real-time diagnostic information by using the following command:
 
-```ros2 topic echo /rosrider/diagnostics````
+```ros2 topic echo /rosrider/diagnostics```
 
 Running this command will output diagnostic information to your terminal. You should see an output similar to the following:
 
@@ -84,7 +84,20 @@ Running this command will output diagnostic information to your terminal. You sh
    <img src="../images/diagnostics.png" alt="Running the Driver" style="box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);">
 </div>
 
+This command will output the following diagnostic information to your terminal:
+
+- Motor Control: PWM values for left and right motors, and their corresponding RPMs.
+- Current Sensing: Current consumption of the left and right motors.
+- Power Status: Information about the battery voltage and current draw.
+- System Status: Overall system health and error flags.
+- Packet Age: The delay between the ROSRider and the host computer.
+
+By monitoring these values, you can ensure optimal performance and troubleshoot any potential issues.
+
 **Checking odometry output**  
+
+
+[TODO: explain output and status and also that fault_left and fault_right are not problem]
 
 [TODO: simulations]
 [instrumenting robot to turn lidar on off, ros2rpi]
