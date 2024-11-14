@@ -112,12 +112,12 @@ The following YAML file defines the configuration parameters for the ROSRider no
 
 | Parameter | Type | Explanation | Default |
 | -------- | -------- | -------- | -------- |
-| MAIN_AMP_LIMIT | float | Maximum current draw for the main power supply. |
-| BAT_VOLTS_HIGH | float | Maximum battery voltage. |
-| BAT_VOLTS_LOW | float | Minimum battery voltage. |
-| MAX_RPM | float | Maximum motor RPM. |
-| LEFT_AMP_LIMIT | float | Maximum current limit for the left motor. |
-| RIGHT_AMP_LIMIT | float | Maximum current limit for the right motor. |
+| MAIN_AMP_LIMIT | float | Maximum current draw for the main power supply. | h3.6 |
+| BAT_VOLTS_HIGH | float | Maximum battery voltage. | 15.0 |
+| BAT_VOLTS_LOW | float | Minimum battery voltage. | 6.0 |
+| MAX_RPM | float | Maximum motor RPM. | 120.0 |
+| LEFT_AMP_LIMIT | float | Maximum current limit for the left motor. | 1.6 |
+| RIGHT_AMP_LIMIT | float | Maximum current limit for the right motor. | 1.6 |
 
 **PID Control Parameters**
 
@@ -133,14 +133,11 @@ The following YAML file defines the configuration parameters for the ROSRider no
 **Drive Trim Parameters**
 
 
-
-
-
-
-
-| GAIN | float |
-| TRIM | float |
-| MOTOR_CONSTANT | float |
+| Parameter | Type | Explanation | Default |
+| -------- | -------- | -------- | -------- |
+| GAIN | float | Overall gain factor. |
+| TRIM | float | Trim value for motor output.
+| MOTOR_CONSTANT | float | Motor constant for output calculation. |
 
 gain trim motor constant explanied
 
