@@ -165,6 +165,7 @@ The `CONFIG_FLAGS` parameter in the ROSRider configuration file is a bitmask tha
 Here's a breakdown of the individual bits and their corresponding functionalities:
 
 | bit | function | description |
+| ----- | ----- | ----- |
 | 0   | LEFT_REVERSE | inverts the direction of the left motor |
 | 1   | RIGHT_REVERSE | inverts the direction of the left motor |
 | 2   | LEFT_SWAP | swaps the phase order of the left encoder |
