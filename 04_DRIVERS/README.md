@@ -100,9 +100,4 @@ To monitor the odometry data being published by the ROSRider, you can use the fo
 
 ```ros2 topic echo /odom```
 
-
-[instrumenting robot to turn lidar on off, ros2rpi]
-
 __Next Chapter:__ [Parameters](../05_PARAMETERS/README.md)
-
-
