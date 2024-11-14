@@ -19,8 +19,8 @@ The ROSRider firmware incorporates a timing control feature that synchronizes it
 
 1. Create a ROS Workspace
 
-	> mkdir -p rosrider_ws/src  
-	> cd rosrider_ws/src  
+	```mkdir -p rosrider_ws/src  
+	cd rosrider_ws/src```  
 
 	This creates a directory called `rosrider_ws` and a subdirectory named `src` within it. The `src` directory is the standard location for ROS package source code.
 
