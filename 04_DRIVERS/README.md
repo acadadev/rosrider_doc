@@ -17,30 +17,30 @@ The ROSRider firmware incorporates a timing control feature that synchronizes it
 
 **Installation Instructions**
 
-**Create a ROS Workspace:**
+1. **Create a ROS Workspace:**
 
 	```mkdir -p rosrider_ws/src   
 	cd rosrider_ws/src```  
 
 	This creates a directory called `rosrider_ws` and a subdirectory named `src` within it. The `src` directory is the standard location for ROS package source code.
 
-**Clone the ROSRider Repository:**
+2. **Clone the ROSRider Repository:**
 
 	```git clone https://github.com/acadadev/rosrider.git```
 
-**Initialize ROS Dependency System (if not done during ROS installation)**
+3. **Initialize ROS Dependency System (if not done during ROS installation)**
 
 	```sudo rosdep init```  
 	```rosdep update```
 
-**Install ROS Dependencies**
+4. **Install ROS Dependencies**
 
 	``cd ..``  
 	``rosdep install --from-paths src -y --ignore-src``
 
 	This command retrieves and installs all the necessary dependencies required by the ROSDriver package based on the cloned source code in the src directory.
 
-**Build the Workspace**
+5. **Build the Workspace**
 
 	``colcon build``  
 	``source devel/setup.bash``
