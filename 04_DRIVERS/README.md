@@ -46,9 +46,8 @@ This creates a directory called `rosrider_ws` and a subdirectory named `src` wit
 **Explanation:**
 
 - This command retrieves and installs all the necessary dependencies required by the ROSDriver package based on the cloned source code in the src directory.
-- `cd ..`` navigates you back to the parent directory of `src`.
+- `cd ..` navigates you back to the parent directory of `src`.
 - `rosdep install --from-paths src -y --ignore-src` performs the dependency installation.
-
 
 5. Build the Workspace
 
