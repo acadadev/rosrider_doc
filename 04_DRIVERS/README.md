@@ -19,8 +19,10 @@ The ROSRider firmware incorporates a timing control feature that synchronizes it
 
 1. Create a ROS Workspace:
 
-	```mkdir -p rosrider_ws/src```   
-	```cd rosrider_ws/src```
+	```console
+	mkdir -p rosrider_ws/src  
+	cd rosrider_ws/src  
+	```
 
 	This creates a directory called `rosrider_ws` and a subdirectory named `src` within it. The `src` directory is the standard location for ROS package source code.
 
@@ -100,9 +102,13 @@ To monitor the odometry data being published by the ROSRider, you can use the fo
 
 ```ros2 topic echo /odom```
 
+
+
 In the next chapter, we will delve into the configuration of the driver, exploring the various parameters that can be tuned to optimize its performance for specific use cases.
 
 [TODO: Procedures section]
 [TODO: Pid Tuning with video]
+[TODO: odometry tuning with video]
+[TODO: how to move robot, with teleop]
 
 __Next Chapter:__ [Parameters](../05_PARAMETERS/README.md)
