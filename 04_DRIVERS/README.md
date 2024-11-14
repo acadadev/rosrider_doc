@@ -120,9 +120,4 @@ ros2 topic echo /odom
 
 In the next chapter, we will delve into the configuration of the driver, exploring the various parameters that can be tuned to optimize its performance for specific use cases.
 
-[TODO: Procedures section]
-[TODO: Pid Tuning with video]
-[TODO: odometry tuning with video]
-[TODO: how to move robot, with teleop]
-
 __Next Chapter:__ [Parameters](../05_PARAMETERS/README.md)

@@ -98,4 +98,6 @@ ROSRider is primarily designed for Raspberry Pi and Jetson platforms, leveraging
   <img src="../images/jetson_agx.png" alt="Jetson AGX" style="width: 30%; border: 1px solid #ccc; border-radius: 5px; box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);">
 </div>
 
+With a solid understanding of the hardware layout, users can unleash the full potential of ROSRider. The subsequent chapter explores the pinmap system, showcasing the flexibility and customization options available.
+
 __Next Chapter:__ [Connections and Pinmaps](../02_PINMAP/README.md)

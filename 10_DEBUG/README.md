@@ -5,6 +5,13 @@ title: "Troubleshooting"
 description: "Error codes and conditions on the ROSRider control card"
 ---
 
+**TODO**
+
+- Procedures section
+- PID Tuning, video
+- Odometry tuning, video
+- How to move teleop, video
+
 **Troubleshooting**
 
 [TODO: explain output and status and also that fault_left and fault_right are not problem]
