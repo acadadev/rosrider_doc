@@ -7,7 +7,7 @@ description: "Parametric Configuration of the ROSRider control card"
 
 
 
-```
+```yaml
 /rosrider_node:
   ros__parameters:
     I2C_ENABLED: True
