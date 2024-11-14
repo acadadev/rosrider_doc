@@ -94,14 +94,14 @@ This command will output the following diagnostic information to your terminal:
 
 By monitoring these values, you can ensure optimal performance and troubleshoot any potential issues.
 
-**Checking odometry output**  
+**Monitoring odometry output**  
+
+To monitor the odometry data being published by the ROSRider, you can use the following command:
+
+```ros2 topic echo /odom```
 
 
-[TODO: explain output and status and also that fault_left and fault_right are not problem]
-
-[TODO: simulations]
 [instrumenting robot to turn lidar on off, ros2rpi]
-[TODO: move status to debug section]
 
 __Next Chapter:__ [Parameters](../05_PARAMETERS/README.md)
 

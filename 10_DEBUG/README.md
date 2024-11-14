@@ -7,6 +7,8 @@ description: "Error codes and conditions on the ROSRider control card"
 
 **Troubleshooting**
 
+[TODO: explain output and status and also that fault_left and fault_right are not problem]
+
 **Status Registers**
 
 #### PWR_STATUS
