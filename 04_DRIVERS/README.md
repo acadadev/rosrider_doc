@@ -72,8 +72,19 @@ Important Note
 - Make sure you have sourced the setup script `source devel/setup.bash` either manually before running the command, or have permanently configured it in your `.bashrc` file as explained in the previous section. This ensures the system can locate the necessary ROSDriver components.
 
 
-checking diag output
-checking odometry output  
+**Monitoring diagnostics topic**
+
+To monitor the health and performance of your ROSRider, you can view real-time diagnostic information by using the following command:
+
+```ros2 topic echo /rosrider/diagnostics````
+
+Running this command will output diagnostic information to your terminal. You should see an output similar to the following:
+
+<div style="display: flex; margin: 25px 0;">
+   <img src="../images/diagnostics.png" alt="Running the Driver" style="box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);">
+</div>
+
+**Checking odometry output**  
 
 [TODO: simulations]
 [instrumenting robot to turn lidar on off, ros2rpi]
