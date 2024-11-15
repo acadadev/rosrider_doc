@@ -7,13 +7,17 @@ description: "Procedures for Practicing Robotics"
 
 __Procedures__
 
-[TODO: make movies with the following subjects]
+#### PID Tuning
 
-1. PID tuning
-2. Odometry Validation
-3. How to teleop
-4. Diagnostics health check
-6. demonstration of timing-control with rqt_plot and all
+#### Odometry Validation
+
+#### How to remotely control the robot, Teleop
+
+#### Diagnostics health check
+
+#### Demonstration of Timing-Control features with rqt_plot
+
+[TODO: make movies with the following subjects]
 
 You can now proceed to the next chapter, where we'll delve into simulations and virtual environments to test and refine your robotic applications.
 
