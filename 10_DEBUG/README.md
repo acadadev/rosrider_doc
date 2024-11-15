@@ -5,6 +5,16 @@ title: "Troubleshooting"
 description: "Error codes and conditions on the ROSRider control card"
 ---
 
+__OTHER CHAPTERS__
+
+slam, navigation and others, must be adsorbed by new chapters, or
+some chapters are overlapping.
+
+we an skip the intro, and remove simulations. and just focus on basic robotics concepts in ros.
+
+start the other ros2rpi doc asap, it will take little time
+
+
 __TODO__
 
 - video of dfu update
@@ -15,6 +25,8 @@ __TODO__
 - led blink documentation
 - sysctl commands
 - rosrider_smbus
+
+fix broken link in https://www.youtube.com/watch?v=hVF9496yM-w
 
 
 __Troubleshooting__

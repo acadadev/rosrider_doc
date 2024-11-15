@@ -12,9 +12,9 @@ __Updating Your ROSRider's Firmware__
 To initiate the firmware update process, follow these steps:
 
 Enter Bootloader Mode:
-- Press and Hold the Boot Button: Keep the boot button pressed.
-- Press and Release the Reset Button: While still holding the boot button, press and quickly release the reset button.
-- Release the Boot Button: Once the reset button is released, you can also release the boot button.
+- Press and Hold the Reset Button: Keep the reset button pressed.
+- Press and Hold the Boot Button: While still holding the reset button, press the boot button.
+- Release the Reset Button: Once the reset button is released, you can also release the boot button.
 
 The ROSRider should now enter bootloader mode. This is indicated by the green LED lighting up constantly.
 
@@ -67,6 +67,10 @@ If the update is successful, you will see the message `No error condition is pre
 <div style="display: flex; justify-content: space-around; margin: 25px 0;">
    <img src="../images/dfu_update.png" alt="DFU util update output" style="box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);">
 </div>
+
+--
+
+<iframe width="980" height="551" src="https://www.youtube.com/embed/1hf_wuRrhHc?&autoplay=1" frameborder="0" allowfullscreen></iframe>
 
 You can now proceed to the next chapter, we'll delve into the intricacies of robotic procedures such as PID tuning, odometry validation, and covariance estimation.
 
