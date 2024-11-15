@@ -9,10 +9,7 @@ __TODO__
 
 - video of dfu update
 - Procedures section
-- PID Tuning, video
-- Odometry tuning, video
-- How to move teleop, video
-- demonstration of timing-control with rqt_plot and all, video
+
 - ros2rpi config explanation, is it 0x33 for default
 - couple of rosparam commands
 - led blink documentation

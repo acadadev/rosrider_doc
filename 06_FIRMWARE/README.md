@@ -68,6 +68,6 @@ If the update is successful, you will see the message `No error condition is pre
    <img src="../images/dfu_update.png" alt="DFU util update output" style="box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);">
 </div>
 
-You can now proceed to the next chapter, where we'll delve into simulations and virtual environments to test and refine your robotic applications.
+You can now proceed to the next chapter, we'll delve into the intricacies of robotic procedures such as PID tuning, odometry validation, and covariance estimation.
 
-__Next Chapter:__ [Simulations](../09_SIMULATIONS/README.md)
+__Next Chapter:__ [Procedures](../08_PROCEDURES/README.md)
