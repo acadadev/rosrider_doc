@@ -17,7 +17,7 @@ __TODO__
 
 - ros2rpi config explanation, is it 0x33 for default
 - couple of rosparam commands
-- led blink documentation
+- led blink documentation - red
 - sysctl commands
 - rosrider_smbus
 - connecting servos
