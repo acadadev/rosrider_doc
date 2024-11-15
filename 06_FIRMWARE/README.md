@@ -64,7 +64,7 @@ __Steps:__
 
 If the update is successful, you will see the message "No error condition is present" This indicates that the firmware has been successfully written to the device.
 
-<div style="display: flex; margin: 25px 0;">
+<div style="display: flex; justify-content: space-around; margin: 25px 0;">
    <img src="../images/dfu_update.png" alt="DFU util update output" style="box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);">
 </div>
 
