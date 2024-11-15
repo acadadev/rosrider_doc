@@ -9,7 +9,7 @@ __Updating Your ROSRider's Firmware__
 
 ***Important Note:*** Before proceeding with the firmware update, ensure you have the correct firmware file for your specific ROSRider model. Incorrect firmware can lead to device malfunction.
 
-<iframe width="980" height="551" src="https://www.youtube.com/embed/1hf_wuRrhHc?&autoplay=1" frameborder="0" allowfullscreen></iframe>
+<iframe width="980" height="551" src="https://www.youtube.com/embed/bSIpw-cIJeE?&autoplay=1" frameborder="0" allowfullscreen></iframe>
 
 To initiate the firmware update process, follow these steps:
 
