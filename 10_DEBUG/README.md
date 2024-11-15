@@ -20,6 +20,8 @@ __TODO__
 - led blink documentation
 - sysctl commands
 - rosrider_smbus
+- connecting servos
+- connecting rosrider with qwic
 
 
 __Troubleshooting__
