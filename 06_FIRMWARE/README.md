@@ -62,10 +62,12 @@ __Steps:__
 	dfu-util -D I2CRider.dfu
 	```
 
-If the update is successful, you will see the message "No error condition is present" This indicates that the firmware has been successfully written to the device.
+If the update is successful, you will see the message `No error condition is present` This indicates that the firmware has been successfully written to the device.
 
 <div style="display: flex; justify-content: space-around; margin: 25px 0;">
    <img src="../images/dfu_update.png" alt="DFU util update output" style="box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);">
 </div>
 
-__Next Chapter:__ [Troubleshooting](../10_DEBUG/README.md)
+You can now proceed to the next chapter, where we'll delve into simulations and virtual environments to test and refine your robotic applications.
+
+__Next Chapter:__ [Simulations](../09_SIMULATIONS/README.md)

@@ -12,6 +12,7 @@ ROSRider is a versatile electronics card that empowers you to create custom ROS-
 ROSRider is designed to empower makers and students, especially in developing countries, to build robots using readily available components. Unlike pre-built kits that can be costly and limiting, ROSRider is a versatile platform that can be integrated with existing hardware, such as motors, sensors, and controllers. This approach encourages creativity, reduces costs, and promotes the reuse of existing components, making robotics accessible to a wider audience.
 
 Below is an image of a minimal chassis designed for lane-following tasks using image processing. This compact setup incorporates two encoder gear motors, a Raspberry Pi 4 computer, and a ROSRider card, all seamlessly integrated into a minimal footprint. This streamlined platform empowers developers to quickly prototype and experiment with autonomous vehicle concepts, making it an ideal tool for learning and innovation in robotics.
+
 <p align="center">
 <img src="../images/sorcerer_rosrider_intro.jpg" alt="ROSRider application project">
 </p>
@@ -97,6 +98,45 @@ ROSRider is primarily designed for Raspberry Pi and Jetson platforms, leveraging
   <img src="../images/jetson_nano.png" alt="Jetson Nano" style="width: 30%; border: 1px solid #ccc; border-radius: 5px; box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);">
   <img src="../images/jetson_agx.png" alt="Jetson AGX" style="width: 30%; border: 1px solid #ccc; border-radius: 5px; box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);">
 </div>
+
+__Hardware Specifications__
+
+__Features__
+
+|---|---|
+| MCU | 32-bit ARM Cortex: TM4C123GH6PM |
+| Motor Drivers | Two channel up to 2.5 amps, with current measurement |
+| Hardware QEI | Can use any encoder gear motor, single or double phase |
+| Servo Control | Two channel standard servos |
+| Connections | Uses standard JST connectors, and commodity JST cables |
+| RTC | On board RTC, wake on alarm possible |
+| Firmware Update | Device firmware is updatable by end user over USB |
+
+__Power__
+
+|---|---|
+| Power Input | 6V to 15V wide input voltage |
+| Software Controllable Switch | MOSFET switch, reverse current protection |
+| Hibernation | Auto sleep, Device hibernates if not used certain time |
+| Current Protection | PTC Resetable Fuse, and also software current protection |
+| Power Input Connector | XT30 or Klemens Type Connector |
+| Power Output | Software Controllable Auxillary Power Output 5V, 400mA |
+| Monitoring | Measures and reports bus voltage, bus current, independent motor currents |
+
+__Communications__
+
+|---|---|
+| I2C | Dual QWIC ports, also available on header. Can be used for cascading with multiple units |
+| SPI | Serial peripheral interface connector |
+| USB | CDC-USB Serial, 921600 Bauds |
+| Serial | Standard Serial Port, available as JST connector or header |
+
+__Software__
+
+|---|---|
+| ROS2 Drivers | C++ Drivers for ROS2 Humble and ROS2 Jazzy |
+| Parametric | ROSRider is configurable using yaml files |
+| Innovation | Autosyncs with host to generate low latency data |
 
 With a solid understanding of the hardware layout, users can unleash the full potential of ROSRider. The subsequent chapter explores the pinmap system, showcasing the flexibility and customization options available.
 
