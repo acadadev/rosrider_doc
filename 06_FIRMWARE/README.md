@@ -9,6 +9,8 @@ __Updating Your ROSRider's Firmware__
 
 ***Important Note:*** Before proceeding with the firmware update, ensure you have the correct firmware file for your specific ROSRider model. Incorrect firmware can lead to device malfunction.
 
+<iframe width="980" height="551" src="https://www.youtube.com/embed/bSIpw-cIJeE" frameborder="0" allowfullscreen></iframe>
+
 To initiate the firmware update process, follow these steps:
 
 Enter Bootloader Mode:
@@ -67,13 +69,6 @@ If the update is successful, you will see the message `No error condition is pre
 <div style="display: flex; justify-content: space-around; margin: 25px 0;">
    <img src="../images/dfu_update.png" alt="DFU util update output" style="box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);">
 </div>
-
----
-Here is a video of the entire process:
-
-<iframe width="980" height="551" src="https://www.youtube.com/embed/bSIpw-cIJeE" frameborder="0" allowfullscreen></iframe>
-
----
 
 You can now proceed to the next chapter, we'll delve into the intricacies of robotic procedures such as PID tuning, odometry validation, and covariance estimation.
 
