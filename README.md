@@ -6,6 +6,7 @@ ROSRider is an electronics hardware product that allows the control of any diffe
 - [ROS2 Drivers](04_DRIVERS/README.md)
 - [Parameters](05_PARAMETERS/README.md)
 - [Updating Firmware](06_FIRMWARE/README.md)
+- [Procedures](08_PROCEDURES/README.md)
 - [Simulations](09_SIMULATIONS/README.md)
 - [Troubleshooting](10_DEBUG/README.md)
 

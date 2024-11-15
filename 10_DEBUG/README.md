@@ -8,7 +8,6 @@ description: "Error codes and conditions on the ROSRider control card"
 __TODO__
 
 - video of dfu update
-
 - Procedures section
 - PID Tuning, video
 - Odometry tuning, video
@@ -17,7 +16,6 @@ __TODO__
 - ros2rpi config explanation, is it 0x33 for default
 - couple of rosparam commands
 - led blink documentation
-- software fuse documentation
 - sysctl commands
 - rosrider_smbus
 
