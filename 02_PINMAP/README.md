@@ -1,8 +1,8 @@
 ---
 layout: default
 title_url: /02_PINMAP/README.html
-title: "Connections and Pinmaps"
-description: "Connections and Ports of ROSRider Card"
+title: "Connections, Pinmaps and Hardware Specifications"
+description: "Connections and Specifications of ROSRider Card"
 ---
 
 <style type="text/css">
