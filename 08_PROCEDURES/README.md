@@ -1,8 +1,8 @@
 ---
 layout: default
 title_url: /08_PROCEDURES/README.html
-title: "Procedures"
-description: "Procedures for Practicing Robotics"
+title: "Procedures in Robotics"
+description: "Detailed Procedures for working with a ROSRider robot"
 ---
 
 __Procedures__
