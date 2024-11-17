@@ -7,7 +7,7 @@ description: "Procedures for Practicing Robotics"
 
 __Procedures__
 
-- [PID Tuning](01_PID/README.html)
+- [PID Tuning](/08_PROCEDURES/01_PID/README.html)
 - [Robot Teleoperation](02_TELEOP/README.html)
 - [Odometry Validation](03_ODOMETRY/README.html)
 - [Diagnostics](04_DIAGNOSTICS/README.html)
