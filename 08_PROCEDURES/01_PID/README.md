@@ -18,6 +18,10 @@ To start the ROSRider driver, execute the following command on the robot:
 ros run rosrider_node rosrider_node.launch.py
 ```
 
+<div style="display: flex; justify-content: space-around; margin: 25px 0;">
+   <img src="../images/rosrider_launch.gif alt="ROSRider driver launch" style="box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);">
+</div>
+
 To view the list of parameters for the ROSRider node, use the following command:
 
 ```bash
