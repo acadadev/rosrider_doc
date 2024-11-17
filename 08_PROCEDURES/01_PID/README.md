@@ -37,3 +37,10 @@ Let's verify the parameter change by requesting it from the ROS Parameter Server
 ```bash
 ros2 param get /rosrider_node LEFT_KP
 ```
+
+<clipboard-copy for="#code-block" class="btn btn-sm BtnGroup-item">Copy</clipboard-copy>
+<pre id="code-block">
+  ```bash
+  ls -al
+  ```
+</pre>
