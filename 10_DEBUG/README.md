@@ -22,6 +22,7 @@ __TODO__
 - rosrider_smbus
 - connecting servos
 - connecting rosrider with qwic
+- Explanation of parameter 0x33 in rosrider, 0x0 to cancel.
 
 
 __Troubleshooting__

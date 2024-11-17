@@ -9,9 +9,9 @@ __Procedures__
 
 #### PID Tuning
 
-#### Odometry Validation
-
 #### How to remotely control the robot, Teleop
+
+#### Odometry Validation
 
 #### Diagnostics health check
 
