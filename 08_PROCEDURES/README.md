@@ -7,15 +7,15 @@ description: "Procedures for Practicing Robotics"
 
 __Procedures__
 
-#### PID Tuning
+- [PID Tuning](01_PID/README.md)
 
-#### How to remotely control the robot, Teleop
+- [How to remotely control the robot, Teleop]
 
-#### Odometry Validation
+- [Odometry Validation]
 
-#### Diagnostics health check
+- [Diagnostics health check]
 
-#### Demonstration of Timing-Control features with rqt_plot
+- [Demonstration of Timing-Control features with rqt_plot]
 
 [TODO: make movies with the following subjects]
 
