@@ -7,11 +7,11 @@ description: "Procedures for Practicing Robotics"
 
 __Procedures__
 
-- [PID Tuning](01_PID/README.md)
-- [Robot Teleoperation](02_TELEOP/README.md)
-- [Odometry Validation](03_ODOMETRY/README.md)
-- [Diagnostics](04_DIAGNOSTICS/README.md)
-- [Timing-Control](05_TIMING/README.md)
+- [PID Tuning](01_PID/README.html)
+- [Robot Teleoperation](02_TELEOP/README.html)
+- [Odometry Validation](03_ODOMETRY/README.html)
+- [Diagnostics](04_DIAGNOSTICS/README.html)
+- [Timing-Control](05_TIMING/README.html)
 
 You can now proceed to the next chapter, where we'll delve into simulations and virtual environments to test and refine your robotic applications.
 
