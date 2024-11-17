@@ -19,7 +19,7 @@ ros run rosrider_node rosrider_node.launch.py
 ```
 
 <div style="display: flex; justify-content: space-around; margin: 25px 0;">
-   <img src="../images/rosrider_node_launch.gif" alt="ROSRider node launch" style="box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);">
+   <img src="/images/rosrider_node_launch.gif" alt="ROSRider node launch" style="box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);">
 </div>
 
 To view the list of parameters for the ROSRider node, use the following command:
