@@ -51,7 +51,6 @@ ros2 param get /rosrider_node LEFT_KP
 
 ---
 
-<p><strong>If you are running Ubuntu on a virtual machine</strong>, install the package</p>
 
 
 ---
@@ -60,8 +59,8 @@ ros2 param get /rosrider_node LEFT_KP
 ---
 
 <div class="highlight notranslate">
-  <div class="highlight">
+  <div id="blob-path2" class="highlight">
     <pre><span></span>sudo apt install open-vm-tools</pre>
   </div>
-  <clipboard-copy for="blob-path">Copy</clipboard-copy>
+  <clipboard-copy for="blob-path2">Copy</clipboard-copy>
 </div>
