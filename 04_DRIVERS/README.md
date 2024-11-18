@@ -14,11 +14,15 @@ While previous versions of ROSRider utilized middleware to integrate with ROS, o
 The ROSRider firmware incorporates a timing control feature that synchronizes itself to the host computer's polling rate, resulting in a latency of 1-2 milliseconds. By actively adjusting its internal clock based on received packets, the ROSRider firmware ensures precise timing and synchronization, preventing data inconsistencies and errors that can occur due to timing drifts. This guarantees that ROS packets are delivered on time, ensuring reliable and efficient system operation.
 
 
-
-<p><strong>Checkpoint ✅</strong></p>
-
-> [!IMPORTANT]  
+> <p><strong>Checkpoint ✅</strong></p>
 > Before continuing, run the following test command.
+
+**Expected Result**
+This command should output a version number for the pip3 package.
+
+**Tip**
+<p>Never skip a checkpoint!</p>
+<p>If you continue past a test that did not work, you will have further software issues down the line, and they will be more complex to fix.</p>
 
 <div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
 <div class="sd-card-body docutils">
@@ -46,9 +50,7 @@ The ROSRider firmware incorporates a timing control feature that synchronizes it
 </div>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
-<p>Never skip a checkpoint!</p>
-</div>
-<p>If you continue past a test that did not work, you will have further software issues down the line, and they will be more complex to fix. Instead, if you do not get the expected outcome at any checkpoint:</p>
+
 
 
 
