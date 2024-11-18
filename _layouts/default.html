@@ -52,8 +52,8 @@
       document.addEventListener('clipboard-copy', function (event) {
 
         const element = event.target;
-        const svg_copy = element.querySelector('.svg-copy');
-        const svg_ok = element.querySelector('.svg-ok');
+        const svg_copy = element.querySelector('.js-clipboard-copy-icon');
+        const svg_ok = element.querySelector('.js-clipboard-check-icon');
 
         svg_copy.style.display = 'none';
         svg_ok.style.display = 'initial';
