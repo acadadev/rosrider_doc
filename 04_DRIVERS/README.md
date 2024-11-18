@@ -18,12 +18,12 @@ The ROSRider firmware incorporates a timing control feature that synchronizes it
 > Before continuing, run the following test command.
 > ```ros2 topic list```
 >
-> **Expected Result**
+> **Expected Result**  
 > This command should output a version number for the pip3 package.
 >
-> **Tip**
-> Never skip a checkpoint!
-> If you continue past a test that did not work, you will have further software issues down the line, and they will be more complex to fix.
+> **Tip**  
+> Never skip a checkpoint!  
+> Ignoring a failed test case can result in the propagation of underlying defects, leading to more severe and difficult-to-resolve software issues in subsequent development stages.
 
 __Installation Instructions__
 
