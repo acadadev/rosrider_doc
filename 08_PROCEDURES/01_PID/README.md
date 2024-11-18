@@ -58,7 +58,7 @@ ros2 param get /rosrider_node LEFT_KP
 <div id="blob-path">src/index.js</div>
 ---
 
-<div class="highlight notranslate">
+<div class="highlight notranslate position-relative overflow-auto">
   <div id="blob-path2" class="highlight">
     <pre><span></span>sudo apt install open-vm-tools</pre>
   </div>
