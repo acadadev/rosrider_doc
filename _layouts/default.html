@@ -49,6 +49,7 @@
     <script type="module" src="/modules/clipboard-copy-element/dist/index.js"></script>
     <script>
       document.addEventListener('clipboard-copy', function (event) {
+        alert(0);
         const notice = event.target.querySelector('.notice')
         announce.setAttribute('aria-label', 'Copied');
         notice.hidden = false
