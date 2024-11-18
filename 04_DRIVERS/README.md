@@ -20,7 +20,7 @@ The ROSRider firmware incorporates a timing control feature that synchronizes it
 > ```ros2 topic list```
 >
 > **Expected Result**  
-> This command should output a version number for the pip3 package.
+> This command should output at least two ROS topics `/rosout` and `/parameter_events`
 >
 > **Tip**  
 > Never skip a checkpoint!  
