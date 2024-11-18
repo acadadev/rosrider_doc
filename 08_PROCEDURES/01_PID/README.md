@@ -63,3 +63,8 @@ Let's verify the parameter change by requesting it from the ROS Parameter Server
 <button class="copybtn o-tooltip--left" data-tooltip="Copy" data-clipboard-target="#codecell1"></button>
 
 </div>
+
+
+
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>open -a XQuartz</pre></div>
+</div>
