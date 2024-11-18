@@ -40,26 +40,27 @@
       clipboard-copy:focus-visible {
         outline: 2px solid #0969da;
       }
-      .textarea {
-        margin-top: 30px;
-        display: block;
-      }
 
     </style>
 
     <script type="module" src="/modules/clipboard-copy-element/dist/index.js"></script>
     <script>
       document.addEventListener('clipboard-copy', function (event) {
+        const button = event.target
+        button.classList.add('highlight')
+        /*
         const notice = event.target.querySelector('.notice')
         announce.setAttribute('aria-label', 'Copied');
         notice.hidden = false
         setTimeout(function () {
           announce.setAttribute('aria-label', '');
           notice.hidden = true
-        }, 1000)
+        }, 1000)*/
+
+
       })
     </script>
-    
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
