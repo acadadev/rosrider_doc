@@ -42,9 +42,10 @@ Let's verify the parameter change by requesting it from the ROS Parameter Server
 ros2 param get /rosrider_node LEFT_KP
 ```
 
+<clipboard-copy for="blob-path">Copy full URL</clipboard-copy>
+<a id="blob-path" href="/path/to#my-blob">Link text will not be copied</a>
+
 <clipboard-copy for="blob-path" class="btn btn-sm BtnGroup-item">
   Copy path
 </clipboard-copy>
 <div id="blob-path">src/index.js</div>
-
-</pre>
