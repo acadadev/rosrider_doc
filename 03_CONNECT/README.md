@@ -72,7 +72,7 @@ Use the i2cdetect command to scan the I2C bus and identify connected devices:
 </div>
 
 <div style="display: flex; margin: 25px 0;">
-<img src="../images/i2cdetect.gif" alt="Detecting I2C Devices" style="box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);">
+<img class="replay" src="../images/i2cdetect.gif" alt="Detecting I2C Devices" style="box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);">
 </div>
 
 This command will display a table of I2C addresses. The default address of the ROSRider is `0x3c`, and the default address of the ROS2RPI card is `0x20`.
