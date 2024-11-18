@@ -95,7 +95,6 @@
       const replays = document.querySelectorAll('.replay');
       replays.forEach(image => {
         image.addEventListener('click', function(event) {
-          alert(0);
           const timestamp = new Date().getTime();
           const current_src = image.src;
           image.src = current_src + '?' + timestamp;
