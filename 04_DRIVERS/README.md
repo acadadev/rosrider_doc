@@ -177,11 +177,11 @@ Running this command will output diagnostic information to your terminal. You sh
 
 This command will output the following diagnostic information to your terminal:
 
-- Motor Control: PWM values for left and right motors, and their corresponding RPMs.
-- Current Sensing: Current consumption of the left and right motors.
-- Power Status: Information about the battery voltage and current draw.
-- System Status: Overall system health and error flags.
-- Packet Age: The delay between the ROSRider and the host computer.
+- **Motor Control:** PWM values for left and right motors, and their corresponding RPMs.
+- **Current Sensing:** Current consumption of the left and right motors.
+- **Power Status:** Information about the battery voltage and current draw.
+- **System Status:** Overall system health and error flags.
+- **Packet Age:** The delay between the ROSRider and the host computer.
 
 By monitoring these values, you can ensure optimal performance and troubleshoot any potential issues.
 
@@ -202,6 +202,8 @@ To monitor the odometry data being published by the ROSRider, you can use the fo
     </svg>    
   </clipboard-copy>
 </div>
+
+[TODO: odometry output]
 
 In the next chapter, we will delve into the configuration of the driver, exploring the various parameters that can be tuned to optimize its performance for specific use cases.
 
