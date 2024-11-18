@@ -56,7 +56,6 @@ Let's verify the parameter change by requesting it from the ROS Parameter Server
 <button class="copybtn o-tooltip--left" data-tooltip="Copy" data-clipboard-target="#command_01">
 
 
-  
 </button>
 </div>
 
@@ -69,14 +68,20 @@ Let's verify the parameter change by requesting it from the ROS Parameter Server
   <path d="M16 8v-2a2 2 0 0 0 -2 -2h-8a2 2 0 0 0 -2 2v8a2 2 0 0 0 2 2h2"></path>  
 </button>
 
-
-
 ---
 
 <div class="highlight-none notranslate"><pre id="command_01">
   <span></span>sudo apt install open-vm-tools
 </pre>
 <button class="copybtn o-tooltip--left" data-tooltip="Copy" data-clipboard-target="#command_01"></button>
+</div>
+
+---
+
+<p><strong>If you are running Ubuntu on a virtual machine</strong>, install the package <code class="docutils literal notranslate"><span class="pre">open-vm-tools</span></code> in addition to the
+normal Ubuntu dependencies:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>sudo apt install open-vm-tools
+</pre></div>
 </div>
 
 
