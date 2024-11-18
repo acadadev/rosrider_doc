@@ -38,9 +38,7 @@ Next, we'll modify the `kP` parameter, which controls the proportional gain for 
 
 Let's verify the parameter change by requesting it from the ROS Parameter Server.
 
-```bash
-ros2 param get /rosrider_node LEFT_KP
-```
+
 
 <clipboard-copy for="blob-path">Copy full URL</clipboard-copy>
 <a id="blob-path" href="/path/to#my-blob">Link text will not be copied</a>
@@ -48,4 +46,17 @@ ros2 param get /rosrider_node LEFT_KP
 <clipboard-copy for="blob-path" class="btn btn-sm BtnGroup-item">
   Copy path
 </clipboard-copy>
-<div id="blob-path">src/index.js</div>
+<div id="blob-path">
+```bash
+ros2 param get /rosrider_node LEFT_KP
+```
+</div>
+
+  <section>
+    <p>Copy from an element specified by the <code>for</code> attribute:</p>
+    <div id="name">@hubot copied from &lt;div&gt;</div>
+    <clipboard-copy for="name">
+      Copy
+      <span class="notice" hidden>Copied!</span>
+    </clipboard-copy>
+  </section>
