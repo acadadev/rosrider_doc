@@ -13,6 +13,41 @@ While previous versions of ROSRider utilized middleware to integrate with ROS, o
 
 The ROSRider firmware incorporates a timing control feature that synchronizes itself to the host computer's polling rate, resulting in a latency of 1-2 milliseconds. By actively adjusting its internal clock based on received packets, the ROSRider firmware ensures precise timing and synchronization, preventing data inconsistencies and errors that can occur due to timing drifts. This guarantees that ROS packets are delivered on time, ensuring reliable and efficient system operation.
 
+<p><strong>Checkpoint ✅</strong></p>
+<p>Before continuing, run the following test command</p>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<div class="sd-container-fluid sd-sphinx-override sd-m-0 docutils">
+<div class="sd-row sd-row-cols-2 sd-row-cols-xs-2 sd-row-cols-sm-2 sd-row-cols-md-2 sd-row-cols-lg-2 docutils">
+<div class="sd-col sd-d-flex-column sd-col-12 sd-col-xs-12 sd-col-sm-3 sd-col-md-3 sd-col-lg-2 sd-p-0 sd-text-right docutils">
+<p class="sd-card-text"><span class="sd-sphinx-override sd-badge sd-bg-secondary sd-bg-text-secondary">Test</span></p>
+</div>
+<div class="sd-col sd-d-flex-column sd-col-12 sd-col-xs-12 sd-col-sm-9 sd-col-md-9 sd-col-lg-10 docutils">
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pip3<span class="w"> </span>--version
+</pre></div>
+</div>
+</div>
+<div class="sd-col sd-d-flex-column sd-col-12 sd-col-xs-12 sd-col-sm-12 sd-col-md-12 sd-col-lg-12 docutils">
+</div>
+<div class="sd-col sd-d-flex-column sd-col-12 sd-col-xs-12 sd-col-sm-3 sd-col-md-3 sd-col-lg-2 sd-p-0 sd-text-right docutils">
+<p class="sd-card-text"><span class="sd-sphinx-override sd-badge sd-bg-success sd-bg-text-success">Expected Result</span></p>
+</div>
+<div class="sd-col sd-d-flex-column sd-col-12 sd-col-xs-12 sd-col-sm-9 sd-col-md-9 sd-col-lg-10 docutils">
+<p class="sd-card-text">This command should output a version number for the <code class="docutils literal notranslate"><span class="pre">pip3</span></code> package.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Never skip a checkpoint!</p>
+</div>
+<p>If you continue past a test that did not work, you will have further software issues down the line, and they will be more complex to fix. Instead, if you do not get the expected outcome at any checkpoint:</p>
+
+
+
+
 __Installation Instructions__
 
 **1. Create a ROS Workspace:**
