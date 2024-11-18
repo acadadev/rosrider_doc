@@ -38,7 +38,7 @@ Run this command to view system logs in real-time.
 
 You should see a message indicating successful entry into bootloader mode, which typically reads:
 
-<div style="display: flex; justify-content: space-around; margin: 25px 0;">
+<div style="display: flex; margin: 25px 0;">
    <img src="../images/view_syslog.gif" alt="Bootloader mode output" style="box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);">
 </div>
 
@@ -96,7 +96,7 @@ dfu-prefix -s 0x2800 -a I2CRider.dfu</pre>
 
 If the update is successful, you will see the message `No error condition is present` This indicates that the firmware has been successfully written to the device.
 
-<div style="display: flex; justify-content: space-around; margin: 25px 0;">
+<div style="display: flex; margin: 25px 0;">
    <img src="../images/dfu_update.gif" alt="DFU util update output" style="box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);">
 </div>
 
