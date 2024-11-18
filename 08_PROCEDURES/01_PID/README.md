@@ -63,7 +63,7 @@ ros2 param get /rosrider_node LEFT_KP
 
 <p><strong>If you are running Ubuntu on a virtual machine</strong>, install the package <code class="docutils literal notranslate"><span class="pre">open-vm-tools</span></code> in addition to the
 normal Ubuntu dependencies:</p>
-<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>sudo apt install open-vm-tools
+<div class="highlight notranslate"><div class="highlight"><pre><span></span>sudo apt install open-vm-tools
 </pre></div>
 </div>
 
