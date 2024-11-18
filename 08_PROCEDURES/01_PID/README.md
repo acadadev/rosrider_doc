@@ -43,7 +43,7 @@ Let's verify the parameter change by requesting it from the ROS Parameter Server
 
 ---
 
-    ros2 param get /rosrider_node LEFT_KP
+ros2 param get /rosrider_node LEFT_KP
 
 ---
 
@@ -51,7 +51,7 @@ Let's verify the parameter change by requesting it from the ROS Parameter Server
 
 ---
 
-<p><strong>If you are running Ubuntu on a virtual machine</strong>, install the package <code class="docutils literal notranslate"><span class="pre">open-vm-tools</span></code> in addition to the normal Ubuntu dependencies:</p>
+<p><strong>If you are running Ubuntu on a virtual machine</strong>, install the package</p>
 <div class="highlight notranslate"><div class="highlight"><pre><span></span>sudo apt install open-vm-tools
 </pre></div>
 </div>
