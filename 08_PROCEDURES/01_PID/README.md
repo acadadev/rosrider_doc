@@ -65,3 +65,11 @@ ros2 param get /rosrider_node LEFT_KP
 
 
 --
+
+
+```html
+<clipboard-copy for="blob-path4" class="btn btn-sm BtnGroup-item">
+  Copy path
+</clipboard-copy>
+<div id="blob-path4">src/index.js</div>
+```
