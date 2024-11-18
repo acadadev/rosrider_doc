@@ -3,10 +3,22 @@
   <head>
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-DP45K3ZV1H"></script>
     <script>
+      
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
       gtag('config', 'G-DP45K3ZV1H');
+
+      document.addEventListener('clipboard-copy', function (event) {
+        const notice = event.target.querySelector('.notice')
+        announce.setAttribute('aria-label', 'Copied');
+        notice.hidden = false
+        setTimeout(function () {
+          announce.setAttribute('aria-label', '');
+          notice.hidden = true
+        }, 1000)
+      });
+
     </script>
     <style type="text/css">
 
@@ -17,6 +29,32 @@
       div.language-console span.go {
         color: #000000;
       }
+
+      clipboard-copy {
+        -webkit-appearance: button;
+        -moz-appearance: button;
+        padding: 0.4em 0.6em;
+        font: 0.9rem system-ui, sans-serif;
+        display: inline-block;
+        cursor: default;
+        color: rgb(36, 41, 47);
+        background: rgb(246, 248, 250);
+        border-radius: 6px;
+        border: 1px solid rgba(31, 35, 40, 0.15);
+        box-shadow: rgba(31, 35, 40, 0.04) 0 1px 0 0, rgba(255, 255, 255, 0.25) 0 1 0 0 inset;
+      }
+
+      clipboard-copy:hover {
+        background: rgb(243, 244, 246);
+      }
+
+      clipboard-copy:active {
+        background: #ebecf0;
+      }
+
+      clipboard-copy:focus-visible {
+        outline: 2px solid #0969da;
+      }  
 
     </style>
     <meta charset="UTF-8">
