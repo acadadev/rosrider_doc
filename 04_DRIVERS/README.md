@@ -171,7 +171,12 @@ The following output indicates that the ROSDriver node has started successfully 
 
 - Make sure you have sourced the setup script `source devel/setup.bash` either manually before running the command, or have permanently configured it in your `.bashrc` file as explained in the previous section. This ensures the system can locate the necessary ROSDriver components.
 
-__Monitoring diagnostics topic__
+<div class="checkpoint">
+  <p>✅&nbsp;<strong>Checkpoint</strong></p>
+  <p>Ensure you are receiving the expected diagnostics and odometry data according to the following instructions.</p>
+</div>
+
+__Monitoring Diagnostics__
 
 To monitor the health and performance of your ROSRider, you can view real-time diagnostic information by using the following command:
 
