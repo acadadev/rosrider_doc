@@ -40,16 +40,10 @@ Let's verify the parameter change by requesting it from the ROS Parameter Server
 
 
 
-<div id="blob-path">
-  blabla
-<clipboard-copy for="blob-path" class="btn btn-sm BtnGroup-item">
-  Copy
-</clipboard-copy>
-</div>
 
 ---
 
-<button class="cpybutton" data-clipboard-target="#code-snippet">Copy</button>
+<button class="copybtn" data-clipboard-target="#code-snippet">Copy</button>
 <pre id="code-snippet">
     ros2 param get /rosrider_node LEFT_KP
 </pre>
