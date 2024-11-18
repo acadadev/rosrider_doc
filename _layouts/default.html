@@ -78,7 +78,6 @@
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.0/anchor.min.js" integrity="sha256-lZaRhKri35AyJSypXXs4o6OPFTbTmUoltBbDCbdzegg=" crossorigin="anonymous"></script>
     <script>anchors.add();</script>
-
     <script type="module" src="/modules/clipboard-copy-element/dist/index.js"></script>
     <script>
       document.addEventListener('clipboard-copy', function (event) {
@@ -93,17 +92,14 @@
         }, 2000);
 
       });
-
       const replays = document.querySelectorAll('.refresh');
       replays.forEach(link => {
         link.addEventListener('click', function(event) {
+          var timestamp = new Date().getTime();
+          document.getElementById('target_image').attr('src','../images/dfu_update.gif?' + timestamp);
           event.preventDefault();
-          alert(0);
-          document.getElementById('target_image').attr('src','../images/dfu_update.gif');
         });
       });
-
     </script>
-    
   </body>
 </html>
