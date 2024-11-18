@@ -48,16 +48,12 @@
 
     <script type="module" src="/modules/clipboard-copy-element/dist/index.js"></script>
     <script>
-
       document.addEventListener('clipboard-copy', function (event) {
-
         const element = event.target;
         const svg_copy = element.querySelector('.js-clipboard-copy-icon');
         const svg_ok = element.querySelector('.js-clipboard-check-icon');
-
         svg_copy.classList.add('d-none');
         svg_ok.classList.remove('d-none');
-
         setTimeout(function () {
           svg_copy.classList.remove('d-none');
           svg_ok.classList.add('d-none');
