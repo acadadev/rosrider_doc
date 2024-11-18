@@ -55,3 +55,10 @@ Let's verify the parameter change by requesting it from the ROS Parameter Server
 <div class="highlight notranslate"><div class="highlight"><pre><span></span>sudo apt install open-vm-tools
 </pre></div>
 </div>
+
+---
+
+<clipboard-copy for="blob-path">Copy</clipboard-copy>
+<div id="blob-path">src/index.js</div>
+
+--
