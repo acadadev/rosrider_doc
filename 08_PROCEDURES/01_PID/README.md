@@ -66,9 +66,3 @@ Let's verify the parameter change by requesting it from the ROS Parameter Server
 </button>
 
 </div>
-
-
-
-<script>
-  copybutton.init();
-</script>
