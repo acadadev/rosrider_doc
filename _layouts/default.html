@@ -46,35 +46,6 @@
 
     </style>
 
-    <script type="module" src="/modules/clipboard-copy-element/dist/index.js"></script>
-    <script>
-      document.addEventListener('clipboard-copy', function (event) {
-        const element = event.target;
-        const svg_copy = element.querySelector('.js-clipboard-copy-icon');
-        const svg_ok = element.querySelector('.js-clipboard-check-icon');
-        svg_copy.classList.add('d-none');
-        svg_ok.classList.remove('d-none');
-        setTimeout(function () {
-          svg_copy.classList.remove('d-none');
-          svg_ok.classList.add('d-none');
-        }, 2000);
-
-      });
-
-      const replays = document.querySelectorAll('.refresh');
-      replays.forEach(link => {
-        link.addEventListener('click', function(event) {
-          event.preventDefault();
-          alert(0);
-        });
-      });
-
-      //document.addEventListener('.refresh').click(function(event) {
-        
-        //document.getElementById('target_image').attr('src','../images/dfu_update.gif');
-      //});
-    </script>
-
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -107,5 +78,32 @@
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.0/anchor.min.js" integrity="sha256-lZaRhKri35AyJSypXXs4o6OPFTbTmUoltBbDCbdzegg=" crossorigin="anonymous"></script>
     <script>anchors.add();</script>
+
+    <script type="module" src="/modules/clipboard-copy-element/dist/index.js"></script>
+    <script>
+      document.addEventListener('clipboard-copy', function (event) {
+        const element = event.target;
+        const svg_copy = element.querySelector('.js-clipboard-copy-icon');
+        const svg_ok = element.querySelector('.js-clipboard-check-icon');
+        svg_copy.classList.add('d-none');
+        svg_ok.classList.remove('d-none');
+        setTimeout(function () {
+          svg_copy.classList.remove('d-none');
+          svg_ok.classList.add('d-none');
+        }, 2000);
+
+      });
+
+      const replays = document.querySelectorAll('.refresh');
+      replays.forEach(link => {
+        link.addEventListener('click', function(event) {
+          event.preventDefault();
+          alert(0);
+          document.getElementById('target_image').attr('src','../images/dfu_update.gif');
+        });
+      });
+
+    </script>
+    
   </body>
 </html>
