@@ -129,7 +129,7 @@ To launch the ROSRider node and establish communication between ROS and your ROS
 
 <div class="highlight notranslate position-relative">
   <div class="highlight">
-    <pre id="command-node-launch"><span></span>ros run rosrider_node rosrider_node.launch.py</pre>
+    <pre id="command-node-launch"><span></span>ros2 launch rosrider_node rosrider_node.launch.py</pre>
   </div>
   <clipboard-copy style="position:absolute; right:8px; top:8px;" for="command-node-launch">
     <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-copy js-clipboard-copy-icon">
