@@ -95,8 +95,9 @@
       const replays = document.querySelectorAll('.refresh');
       replays.forEach(link => {
         link.addEventListener('click', function(event) {
-          var timestamp = new Date().getTime();
-          document.getElementById('target_image').attr('src','../images/dfu_update.gif?' + timestamp);
+          const timestamp = new Date().getTime();
+          const current_src = image.src;
+          image.src = currentSrc + '?' + timestamp;
           event.preventDefault();
         });
       });
