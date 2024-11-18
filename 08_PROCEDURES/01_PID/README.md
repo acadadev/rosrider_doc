@@ -50,15 +50,20 @@ Let's verify the parameter change by requesting it from the ROS Parameter Server
 
 ---
 
-<div class="highlight"><pre id="codecell1">
+<div class="highlight notranslate"><pre id="command_01">
   <span></span>sudo apt install open-vm-tools
 </pre>
+<button class="copybtn o-tooltip--left" data-tooltip="Copy" data-clipboard-target="#command_01"></button>
+</div>
 
-<button class="copybtn o-tooltip--left" data-tooltip="Copy" data-clipboard-target="#codecell1"></button>
+---
 
+<div class="highlight-none notranslate"><pre id="command_01">
+  <span></span>sudo apt install open-vm-tools
+</pre>
+<button class="copybtn o-tooltip--left" data-tooltip="Copy" data-clipboard-target="#command_01"></button>
 </div>
 
 
 
-<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>open -a XQuartz</pre></div>
-</div>
+
