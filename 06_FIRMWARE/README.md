@@ -98,8 +98,8 @@ If the update is successful, you will see the message `No error condition is pre
 
 <div style="display: flex; margin: 25px 0;">
    <img src="../images/dfu_update.gif" alt="DFU util update output" style="box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);">
-   <a class="refresh" href="#">R</a>
 </div>
+<a class="refresh" href="#">Refresh</a>
 
 You can now proceed to the next chapter, we'll delve into the intricacies of robotic procedures such as PID tuning, odometry validation, and covariance estimation.
 
