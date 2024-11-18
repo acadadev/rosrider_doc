@@ -59,8 +59,9 @@ ros2 param get /rosrider_node LEFT_KP
 
 <div class="highlight notranslate"><div id="blob-path" class="highlight"><pre><span></span>sudo apt install open-vm-tools
 </pre></div>
+<clipboard-copy for="blob-path">Copy</clipboard-copy>
 </div>
 
-<clipboard-copy for="blob-path">Copy</clipboard-copy>
+
 
 --
