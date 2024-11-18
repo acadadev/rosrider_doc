@@ -57,7 +57,7 @@ ros2 param get /rosrider_node LEFT_KP
 ---
 
 
-<clipboard-copy for="blob-path">Copy</clipboard-copy>
+<clipboard-copy class="copybtn" for="blob-path">Copy</clipboard-copy>
 <div id="blob-path">src/index.js</div>
 ---
 
