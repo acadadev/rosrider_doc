@@ -51,18 +51,17 @@
 
       document.addEventListener('clipboard-copy', function (event) {
 
-      const clipboardCopyElement = event.target;
-      const hiddenSvg = clipboardCopyElement.querySelector('.svg-copy');
-      const visibleSvg = clipboardCopyElement.querySelector('.svg-ok');
+        const element = event.target;
+        const svg_copy = element.querySelector('.svg-copy');
+        const svg_ok = element.querySelector('.svg-ok');
 
+        svg_copy.style.display = 'none';
+        svg_ok.style.display = 'initial';
 
-      hiddenSvg.style.display = 'none';
-      visibleSvg.style.display = 'initial';
-
-      setTimeout(function () {
-        hiddenSvg.style.display = ''; 
-        visibleSvg.style.display = ''; 
-      }, 1000);
+        setTimeout(function () {
+          svg_copy.style.display = ''; 
+          svg_ok.style.display = ''; 
+        }, 1000);
 
 
 
