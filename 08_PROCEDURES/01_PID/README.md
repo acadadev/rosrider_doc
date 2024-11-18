@@ -49,7 +49,7 @@ Let's verify the parameter change by requesting it from the ROS Parameter Server
 
 ---
 
-<button class="copy-button" data-clipboard-target="#code-snippet">Copy</button>
+<button class="cpybutton" data-clipboard-target="#code-snippet">Copy</button>
 <pre id="code-snippet">
     ros2 param get /rosrider_node LEFT_KP
 </pre>
