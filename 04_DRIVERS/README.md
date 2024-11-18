@@ -14,11 +14,14 @@ While previous versions of ROSRider utilized middleware to integrate with ROS, o
 The ROSRider firmware incorporates a timing control feature that synchronizes itself to the host computer's polling rate, resulting in a latency of 1-2 milliseconds. By actively adjusting its internal clock based on received packets, the ROSRider firmware ensures precise timing and synchronization, preventing data inconsistencies and errors that can occur due to timing drifts. This guarantees that ROS packets are delivered on time, ensuring reliable and efficient system operation.
 
 <div class="checkpoint">
-<p><strong>Checkpoint ✅</strong></p>
-<p>Before continuing, run the following test command to see if ROS is installed.</p>
-```ros2 topic list```
-<p>This command should output at least two ROS topics `/rosout` and `/parameter_events`</p>
-<p>Ignoring a failed checkpoint can result in the propagation of underlying defects, leading to more severe and difficult-to-resolve software issues in subsequent development stages.</p>
+  <p><strong>Checkpoint ✅</strong></p>
+  <div class="highlight">
+    <pre><span></span>ros2 topic list</pre>
+  </div>
+  <p>Before continuing, run the following test command to see if ROS is installed.</p>
+  <p>ros2 topic list</p>
+  <p>This command should output at least two ROS topics `/rosout` and `/parameter_events`</p>
+  <p>Ignoring a failed checkpoint can result in the propagation of underlying defects, leading to more severe and difficult-to-resolve software issues in subsequent development stages.</p>
 </div>
 
 __Installation Instructions__
