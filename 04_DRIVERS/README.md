@@ -19,12 +19,9 @@ The ROSRider firmware incorporates a timing control feature that synchronizes it
 >  
 > ```ros2 topic list```
 >
-> **Expected Result**  
 > This command should output at least two ROS topics `/rosout` and `/parameter_events`
 >
-> **Tip**  
-> Never skip a checkpoint!  
-> Ignoring a failed test case can result in the propagation of underlying defects, leading to more severe and difficult-to-resolve software issues in subsequent development stages.
+> Ignoring a failed checkpoint can result in the propagation of underlying defects, leading to more severe and difficult-to-resolve software issues in subsequent development stages.
 
 __Installation Instructions__
 
