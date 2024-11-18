@@ -56,8 +56,8 @@ Let's verify the parameter change by requesting it from the ROS Parameter Server
 
 
 <div class="highlight notranslate position-relative">
-  <div id="command-get-param" class="highlight">
-    <pre><span></span>ros2 param get /rosrider_node LEFT_KP</pre>
+  <div class="highlight">
+    <pre id="command-get-param"><span></span>ros2 param get /rosrider_node LEFT_KP</pre>
   </div>
   <clipboard-copy style="position:absolute; right:4px; top:4px;" for="command-get-param">
     <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-copy js-clipboard-copy-icon">
