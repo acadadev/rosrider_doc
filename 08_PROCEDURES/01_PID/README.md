@@ -62,7 +62,7 @@ ros2 param get /rosrider_node LEFT_KP
   <div id="blob-path2" class="highlight">
     <pre><span></span>sudo apt install open-vm-tools</pre>
   </div>
-  <clipboard-copy class="ClipboardButton btn js-clipboard-copy" for="blob-path2">Copy</clipboard-copy>
+  <clipboard-copy style="text-align:left;" for="blob-path2">Copy</clipboard-copy>
 </div>
 
 
