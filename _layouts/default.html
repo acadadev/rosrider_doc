@@ -55,12 +55,12 @@
         const svg_copy = element.querySelector('.js-clipboard-copy-icon');
         const svg_ok = element.querySelector('.js-clipboard-check-icon');
 
-        svg_copy.style.display = 'none';
-        svg_ok.style.display = 'inline';
+        svg_copy.classList.add('d-none');
+        svg_ok.classList.remove('d-none');
 
         setTimeout(function () {
-          svg_copy.style.display = 'inline'; 
-          svg_ok.style.display = 'none'; 
+          svg_copy.classList.remove('d-none');
+          svg_ok.classList.add('d-none');
         }, 2000);
 
       })
