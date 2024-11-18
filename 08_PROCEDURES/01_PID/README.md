@@ -39,10 +39,10 @@ Next, we'll modify the `kP` parameter, which controls the proportional gain for 
 Let's verify the parameter change by requesting it from the ROS Parameter Server.
 
 
+
+<div id="blob-path">ros2 param get /rosrider_node LEFT_KP
 <clipboard-copy for="blob-path" class="btn btn-sm BtnGroup-item">
-  Copy path
+  Copy
 </clipboard-copy>
-<div id="blob-path">
-ros2 param get /rosrider_node LEFT_KP
 </div>
 
