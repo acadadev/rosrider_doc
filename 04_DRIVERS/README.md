@@ -15,7 +15,8 @@ The ROSRider firmware incorporates a timing control feature that synchronizes it
 
 
 > <p><strong>Checkpoint ✅</strong></p>
-> Before continuing, run the following test command.
+> Before continuing, run the following test command to see if ROS is installed.  
+>  
 > ```ros2 topic list```
 >
 > **Expected Result**  
