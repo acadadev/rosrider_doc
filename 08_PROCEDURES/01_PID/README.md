@@ -43,24 +43,10 @@ Let's verify the parameter change by requesting it from the ROS Parameter Server
 
 ---
 
-<button class="copybtn" data-clipboard-target="#code-snippet">Copy</button>
-<pre id="code-snippet">
     ros2 param get /rosrider_node LEFT_KP
-</pre>
 
 ---
 
-
-<pre id="command_02">  <span></span>sudo apt install open-vm-tools
-</pre>
-<button class="copybtn o-tooltip--left" data-tooltip="Copy" data-clipboard-target="#command_02">
-  <title>Copy to clipboard</title>
-  <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-  <rect x="8" y="8" width="12" height="12" rx="2"></rect>
-  <path d="M16 8v-2a2 2 0 0 0 -2 -2h-8a2 2 0 0 0 -2 2v8a2 2 0 0 0 2 2h2"></path>  
-</button>
-
----
 
 
 ---
