@@ -238,7 +238,10 @@ To monitor the odometry data being published by the ROSRider, you can use the fo
   </clipboard-copy>
 </div>
 
-[TODO: odometry output]
+<div style="display: flex; margin: 25px 0;">
+   <img class="replay" src="../images/monitoring_odometry.gif" alt="Monitoring Odometry Output" style="box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);">
+</div>
+
 
 In the next chapter, we will delve into the configuration of the driver, exploring the various parameters that can be tuned to optimize its performance for specific use cases.
 
