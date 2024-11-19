@@ -107,7 +107,7 @@ To launch the RQT Reconfigure tool, execute the following command:
   </clipboard-copy>
 </div>
 
-<video controls width="960">
+<video controls width="980">
   <source src="/rosrider_doc/videos/rqt_reconfigure.webm" type="video/webm" />
   <source src="/rosrider_doc/videos/rqt_reconfigure.mp4" type="video/mp4" />
 </video>
