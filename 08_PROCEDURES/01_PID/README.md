@@ -91,6 +91,8 @@ Let's verify the parameter change by requesting it from the ROS Parameter Server
    <img class="replay" src="../../images/ros2_param_get.gif" alt="Get ROS Parameter" style="box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);">
 </div>
 
+---
+
 To launch the RQT Reconfigure tool, execute the following command:
 
 <div class="highlight notranslate position-relative">
