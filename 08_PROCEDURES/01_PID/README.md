@@ -107,4 +107,4 @@ To launch the RQT Reconfigure tool, execute the following command:
   </clipboard-copy>
 </div>
 
-[TODO: equalize windows]
+[TODO: rosparam video]
