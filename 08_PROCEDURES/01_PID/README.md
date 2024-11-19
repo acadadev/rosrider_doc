@@ -48,7 +48,7 @@ To get a list of parameters for `rosrider_node`, execute the following command:
 </div>
 
 <div style="display: flex; margin: 25px 0;">
-   <img class="replay" src="../images/ros_param_list.gif" alt="ROS Parameter list for rosrider_node" style="box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);">
+   <img class="replay" src="../../images/ros_param_list.gif" alt="ROS Parameter list for rosrider_node" style="box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);">
 </div>
 
 To launch the RQT Reconfigure tool, execute the following command:
