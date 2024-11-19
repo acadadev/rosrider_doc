@@ -107,4 +107,7 @@ To launch the RQT Reconfigure tool, execute the following command:
   </clipboard-copy>
 </div>
 
-[TODO: rosparam video]
+<video controls width="960">
+  <source src="images/rqt_reconfigure.webm" type="video/webm" />
+  <source src="media/rqt_reconfigure" type="video/mp4" />
+</video>
