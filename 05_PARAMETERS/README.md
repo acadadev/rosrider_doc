@@ -144,7 +144,7 @@ The trim parameter, on the other hand, is used to introduce a small offset to th
 
 In the given equations:
 
-```
+```c
 MotorConstantLeft = (GAIN + TRIM) / MOTOR_CONSTANT;
 MotorConstantRight = (GAIN - TRIM) / MOTOR_CONSTANT;
 ```
