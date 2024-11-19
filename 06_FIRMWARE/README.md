@@ -97,7 +97,7 @@ dfu-prefix -s 0x2800 -a I2CRider.dfu</pre>
 If the update is successful, you will see the message `No error condition is present` This indicates that the firmware has been successfully written to the device.
 
 <div style="display: flex; margin: 25px 0;">
-   <img class="replay" id="target_image" src="../images/dfu_update.gif" alt="DFU util update output" style="box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);">
+   <img class="replay" id="target_image" src="../images/dfu_firmware_update.gif" alt="DFU util update output" style="box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);">
 </div>
 
 You can now proceed to the next chapter, we'll delve into the intricacies of robotic procedures such as PID tuning, odometry validation, and covariance estimation.
