@@ -197,7 +197,7 @@ To monitor the health and performance of your ROSRider, you can view real-time d
 Running this command will output diagnostic information to your terminal. You should see an output similar to the following:
 
 <div style="display: flex; margin: 25px 0;">
-   <img class="replay" src="../images/monitor_diag.gif" alt="Diagnostics Output" style="box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);">
+   <img class="replay" src="../images/monitoring_diagnostics.gif" alt="Diagnostics Output" style="box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);">
 </div>
 
 This command will output the following diagnostic information to your terminal:
@@ -229,7 +229,7 @@ To monitor the odometry data being published by the ROSRider, you can use the fo
 </div>
 
 <div style="display: flex; margin: 25px 0;">
-   <img class="replay" src="../images/monitoring_odometry.gif" alt="Monitoring Odometry Output" style="box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);">
+   <img class="replay" src="../images/monitoring_odom.gif" alt="Monitoring Odometry Output" style="box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);">
 </div>
 
 
