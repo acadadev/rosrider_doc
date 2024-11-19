@@ -28,7 +28,7 @@ To start the ROSRider driver, execute the following command on the robot:
 </div>
 
 <div style="display: flex; margin: 25px 0;">
-   <img class="replay" src="../../images/rosrider_node_launch.gif" alt="ROSRider node launch" style="box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);">
+   <img class="replay" src="../../images/rosrider_launch.gif" alt="ROSRider node launch" style="box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);">
 </div>
 
 To get a list of parameters for `rosrider_node`, execute the following command:
