@@ -94,7 +94,7 @@ dfu-prefix -s 0x2800 -a I2CRider.dfu</pre>
   </clipboard-copy>
 </div>
 
-If the update is successful, you will see the message `No error condition is present` This indicates that the firmware has been successfully written to the device.
+If the update is successful, you will see the message `No error condition is present` This indicates that the firmware has been successfully written to the device. Remember to reset the board by pressing the reset button to exit bootloader mode and enter normal operation.
 
 <div style="display: flex; margin: 25px 0;">
    <img class="replay" id="target_image" src="../images/dfu_firmware_update.gif" alt="DFU util update output" style="box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);">

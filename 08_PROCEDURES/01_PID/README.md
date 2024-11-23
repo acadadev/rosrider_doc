@@ -113,3 +113,6 @@ To launch the RQT Reconfigure tool, execute the following command:
   <source src="/rosrider_doc/videos/rqt_reconfigure.webm" type="video/webm" />
   <source src="/rosrider_doc/videos/rqt_reconfigure.mp4" type="video/mp4" />
 </video>
+
+rqt_plot
+teleop input
