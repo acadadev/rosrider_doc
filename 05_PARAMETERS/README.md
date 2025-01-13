@@ -246,7 +246,8 @@ By carefully considering these factors and adjusting the PWM_DIV and PWM_FRQ par
 ***ROS2RPI_CONFIG Parameter***
 
 When operating the ROSRider card in conjunction with the ROS2RPI card on a Raspberry Pi platform, the driver provides the capability to transmit commands to the ROS2RPI card. 
-This functionality is particularly valuable for controlling peripheral devices, such as lidar units, during the driver initialization sequence. 
+This functionality is particularly valuable for controlling peripheral devices, such as lidar units, during the driver initialization sequence.  
+
 If the ROSRider card is deployed independently (standalone configuration), set this parameter to 0. For configurations involving the ROS2RPI card, refer to the [ROS2RPI documentation](https://docs.acada.dev/ros2rpi_doc) for appropriate parameter selection.
 
 ---
