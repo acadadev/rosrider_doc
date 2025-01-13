@@ -243,6 +243,12 @@ The optimal PWM frequency depends on various factors, including:
 
 By carefully considering these factors and adjusting the PWM_DIV and PWM_FRQ parameters, you can optimize your ROSRider's performance and efficiency.
 
+***ROS2RPI_CONFIG Parameter***
+
+When operating the ROSRider card in conjunction with the ROS2RPI card on a Raspberry Pi platform, the driver provides the capability to transmit commands to the ROS2RPI card. 
+This functionality is particularly valuable for controlling peripheral devices, such as lidar units, during the driver initialization sequence. 
+If the ROSRider card is deployed independently (standalone configuration), set this parameter to 0. For configurations involving the ROS2RPI card, refer to the [ROS2RPI documentation](https://docs.acada.dev/ros2rpi_doc) for appropriate parameter selection.
+
 ---
 
 You've mastered the basics of configuring your ROSRider! Stay tuned for our next chapter, where we'll guide you through the process of updating your ROSRider's firmware.
