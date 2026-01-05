@@ -1,0 +1,14 @@
+<div class="tab-container">
+  <div class="tab-header">
+    <button class="tab-btn active" onclick="openTab(event, 'tab1')">{{ include.tab1_title }}</button>
+    <button class="tab-btn" onclick="openTab(event, 'tab2')">{{ include.tab2_title }}</button>
+  </div>
+
+  <div class="tab-content" data-tab-id="tab1" style="display: block;">
+    {{ include.tab1_content }}
+  </div>
+
+  <div class="tab-content" data-tab-id="tab2">
+    {{ include.tab2_content }}
+  </div>
+</div>

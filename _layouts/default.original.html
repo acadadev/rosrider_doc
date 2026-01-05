@@ -16,54 +16,6 @@
     <link rel="stylesheet" href="{{ "/assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}">
     <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico">
     <meta property="og:image" content="https://repository-images.githubusercontent.com/819133700/b298fc02-8de1-4335-98ec-512975d0fc26" />
-
-    <style>
-      .tab-container {
-        border: 1px solid #d0d7de;
-        border-radius: 6px;
-        margin-bottom: 16px;
-        background-color: #fff;
-      }
-      .tab-header {
-        background-color: #f6f8fa;
-        border-bottom: 1px solid #d0d7de;
-        display: flex;
-        flex-wrap: wrap;
-        border-radius: 6px 6px 0 0;
-      }
-      .tab-btn {
-        background-color: transparent;
-        border: none;
-        outline: none;
-        cursor: pointer;
-        padding: 12px 20px;
-        font-size: 14px;
-        font-weight: 600;
-        color: #57606a;
-        transition: 0.2s;
-        border-right: 1px solid #d0d7de;
-      }
-      .tab-btn:hover {
-        background-color: #ffffff;
-        color: #0969da;
-      }
-      .tab-btn.active {
-        background-color: #ffffff;
-        color: #0969da;
-        border-bottom: 2px solid #fd8c73;
-        margin-bottom: -1px;
-      }
-      .tab-content {
-        display: none;
-        padding: 16px;
-        border-radius: 0 0 6px 6px;
-      }
-      /* Fix for markdown code blocks inside tabs */
-      .tab-content pre {
-        margin-bottom: 0;
-        border: none;
-      }
-    </style>
   </head>
   <body>
     <div class="container-fluid px-3">
@@ -72,14 +24,14 @@
       </div>
       <div class="pt-2 pb-2">
          <h4>
-           <a href="https://acada.dev">ACADA Robotics</a> •
-           <a href="https://docs.acada.dev">Documentation</a> •
-           <a href="https://docs.acada.dev/rosrider_doc">ROSRider</a>
+           <a href="https://acada.dev">ACADA Robotics</a> • 
+           <a href="https://docs.acada.dev">Documentation</a> • 
+           <a href="https://docs.acada.dev/rosrider_doc">ROSRider</a> 
            {% if page.section_title %} • <a href="https://docs.acada.dev/rosrider_doc{{ page.section_url }}">{{ page.section_title }}</a>{% endif %}
-           {% if page.parent_title %} • <a href="https://docs.acada.dev/rosrider_doc{{ page.parent_url }}">{{ page.parent_title }}</a>{% endif %}
-           {% if page.title %} • <a href="https://docs.acada.dev/rosrider_doc{{ page.title_url }}">{{ page.title }}</a>{% endif %}
+           {% if page.parent_title %} • <a href="https://docs.acada.dev/rosrider_doc{{ page.parent_url }}">{{ page.parent_title }}</a>{% endif %} 
+           {% if page.title %} • <a href="https://docs.acada.dev/rosrider_doc{{ page.title_url }}">{{ page.title }}</a>{% endif %} 
          </h4>
-      </div>
+      </div>      
     </div>
     <div class="container-fluid px-3 markdown-body">
       <hr>
@@ -112,29 +64,6 @@
           event.preventDefault();
         });
       });
-    </script>
-
-    <script>
-      function openTab(evt, tabId) {
-
-        var container = evt.currentTarget.closest('.tab-container');
-
-        var contents = container.getElementsByClassName("tab-content");
-        for (var i = 0; i < contents.length; i++) {
-          contents[i].style.display = "none";
-        }
-
-        var btns = container.getElementsByClassName("tab-btn");
-        for (var i = 0; i < btns.length; i++) {
-          btns[i].classList.remove("active");
-        }
-
-        var target = container.querySelector('[data-tab-id="' + tabId + '"]');
-        if (target) {
-            target.style.display = "block";
-            evt.currentTarget.classList.add("active");
-        }
-      }
     </script>
   </body>
 </html>
