@@ -252,6 +252,6 @@ If the ROSRider card is deployed independently (standalone configuration), set t
 
 ---
 
-You've mastered the basics of configuring your ROSRider! Stay tuned for our next chapter, where we'll guide you through the process of updating your ROSRider's firmware.
+Stay tuned for our next chapter, where we'll guide you through the process of updating your ROSRider's firmware.
 
 __Next Chapter:__ [Updating Firmware](../06_FIRMWARE/README.md)

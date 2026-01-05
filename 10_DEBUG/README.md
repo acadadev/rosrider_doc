@@ -16,13 +16,14 @@ start the other ros2rpi doc asap, it will take little time
 __TODO__
 
 - ros2rpi config explanation, is it 0x33 for default
-- couple of rosparam commands
+- couple of ros param commands
 - led blink documentation - red
 - sysctl commands
 - rosrider_smbus
 - connecting servos
 - connecting rosrider with qwic
 - Explanation of parameter 0x33 in rosrider, 0x0 to cancel.
+
 
 
 __Troubleshooting__
@@ -50,8 +51,10 @@ b5	RIGHT_REV (0=REV, 1=FWD)
 b4	LEFT_REV  
 b3	MODE_2  
 b2	MODE_1  
-b1      DRIVE_MODE_MSB  
+b1  DRIVE_MODE_MSB  
 b0	DRIVE_MODE_LSB  
+
+#### Drive Mode
 
 MODE_BRAKE = 00  
 MODE_PWM   = 01  
@@ -60,8 +63,9 @@ MODE_PID   = 11
 
 #### SYS_STATUS
 
-b7	EPROM_INIT_OK=0  
-b6	RESTART_REQUIRED=1  
-b0	EEPROM_WRITE_WRITE_OK=0  
+b7	EPROM_INIT_OK = 0  
+b6	RESTART_REQUIRED = 1  
+b1  INITIAL_UPDATE_ERROR = 1  
+b0	EEPROM_WRITE_WRITE_OK = 0  
 
 __Return to the introduction:__ [Introduction](../README.md)
