@@ -54,7 +54,7 @@ b2	MODE_1
 b1  DRIVE_MODE_MSB  
 b0	DRIVE_MODE_LSB  
 
-#### Drive Mode
+#### DRIVE_MODE
 
 MODE_BRAKE = 00  
 MODE_PWM   = 01  
