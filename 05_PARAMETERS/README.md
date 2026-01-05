@@ -13,6 +13,23 @@ The ROSRider node reads the configuration parameters from the YAML file and stor
 
 The following YAML file defines the configuration parameters for the ROSRider node. This file is crucial for customizing the behavior and performance of the ROSRider, tailoring it to specific robotic applications.
 
+
+{% capture my_tab_1 %}
+### First Tab Content
+You can write normal **Markdown** here.
+* List item A
+* List item B
+{% endcapture %}
+
+{% capture my_tab_2 %}
+### Second Tab Content
+You can even put code blocks here:
+```bash
+echo "Hello World"
+{% endcapture %}
+
+{% include tabs.html tab1_title="Simple Tab" tab1_content=my_tab_1 tab2_title="Advanced Tab" tab2_content=my_tab_2 %}
+
 ```yaml
 /rosrider_node:
   ros__parameters:
