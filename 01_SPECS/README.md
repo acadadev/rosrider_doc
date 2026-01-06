@@ -27,12 +27,13 @@ description: "Hardware Specifications"
 
 | :---| :---|
 | ***MCU*** | 32-bit ARM Cortex: TM4C123GH6PM |
-| ***Motor Drivers*** | Two channel up to 2.5 amps, with current feedback |
+| ***Motor Drivers*** | Two channel up to 2.5 amps with current feedback |
 | ***Hardware QEI*** | Can use any encoder gear motor, single or double phase |
 | ***Servo Control*** | Two channel standard servos |
 | ***Connections*** | Uses standard JST connectors, and commodity JST cables |
 | ***RTC*** | The integrated Real-Time Clock (RTC) enables precise timekeeping |
 | ***Firmware Update*** | Device firmware is updatable by end user over USB |
+| ***Enhanced Diagnostics*** | The system publishes detailed diagnostic information, including battery voltage, current consumption, and motor current feedback |
 
 ***Power***
 
@@ -68,8 +69,6 @@ ROSRider utilizes standard JST connectors for motor and I2C connections, allowin
 __Robust Protection__
 Built-in current monitoring and a hardware-resettable fuse safeguard the motors and battery. Software-based current limiting and remote threshold configuration enhance safety and flexibility.
 
-__Enhanced Diagnostics__
-The system publishes detailed diagnostic information, including battery voltage, current consumption, and motor current feedback, to aid in remote debugging and system monitoring.
 
 __Remote PID Tuning__
 ROSRider supports remote PID tuning, allowing users to adjust control parameters dynamically without manual intervention. By leveraging ROS parameter server, users can fine-tune the PID gains to optimize robot performance, such as motor control and sensor feedback.
