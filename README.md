@@ -7,8 +7,8 @@ ROSRider is designed to empower makers and students, to build robots using readi
 Below is an image of a minimal chassis designed for lane-following tasks using image processing. This compact setup incorporates two encoder gear motors, a Raspberry Pi 4 computer, and a ROSRider card, all seamlessly integrated into a minimal footprint. This streamlined platform empowers developers to quickly prototype and experiment with autonomous vehicle concepts, making it an ideal tool for learning and innovation in robotics.
 
 <div style="display: flex; justify-content: space-around; margin: 25px 0;">
-  <img src="images/sorcerer_rosrider_intro.jpg" alt="Sorcerer with ROSRider" style="width: 30%; border: 1px solid #ccc; border-radius: 5px; box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);">
-  <img src="images/caretta_top.jpg" alt="Caretta with ROS2RPI" style="width: 30%; border: 1px solid #ccc; border-radius: 5px; box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);">
+  <img src="images/sorcerer_rosrider.jpg" alt="Sorcerer with ROSRider" style="width: 30%; border: 1px solid #ccc; border-radius: 5px; box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);">
+  <img src="images/caretta_top_sq.jpg" alt="Caretta with ROS2RPI" style="width: 30%; border: 1px solid #ccc; border-radius: 5px; box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);">
   <img src="images/ROSRider4D.png" alt="ROSRider Control Card" style="width: 30%; border: 1px solid #ccc; border-radius: 5px; box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);">
 </div>
 
