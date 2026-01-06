@@ -19,8 +19,15 @@ The following YAML file defines the configuration parameters for the ROSRider no
 # DRIVER config
 DRIVE_MODE: 3          # MODE_PID 3 for ROS
 CONFIG_FLAGS: 112      #
-UPDATE_RATE: 20        # 16, 20, 32, 50, 64
+UPDATE_RATE: 20        # 10, 16, 20, 32, 50, 64
 ```
+
+| parameter    | type  | description                         | default |
+|--------------|-------|-------------------------------------|---------|
+| DRIVE_MODE   | uint8 | Drive Mode Configuration, 3 for ROS | 3       |
+| CONFIG_FLAGS | uint8 | Hardware Config Bitmask             | 48      |
+| UPDATE_RATE  | uint8 | Update Rate of Outer PID Loop       | 20      |
+
 ```yaml
 # PWM config  
 PWM_DIV: 16  
