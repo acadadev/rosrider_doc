@@ -23,8 +23,6 @@ description: "Hardware Specifications"
     </div>
 </div>
 
-__Features__
-
 | :---| :---|
 | ***Features*** | |
 | MCU | 32-bit ARM Cortex: TM4C123GH6PM |
@@ -50,8 +48,6 @@ __Features__
 | ROS2 Drivers | C++ Drivers for ROS2 Humble and ROS2 Jazzy |
 | Parametric | ROSRider is configurable using yaml files |
 | Innovation | Autosyncs with host to generate low latency data |
-
-With a solid understanding of the hardware layout, users can unleash the full potential of ROSRider. The subsequent chapter explores the pinmap system, showcasing the flexibility and customization options available.
 
 
 
