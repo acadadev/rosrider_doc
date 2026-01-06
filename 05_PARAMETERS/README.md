@@ -102,6 +102,9 @@ RIGHT_KT_W: -0.008
 {% endcapture %}
 
 {% capture tab6 %}
+{% endcapture %}
+
+{% capture tab7 %}
 ```yaml
 # enable SCV, if not deadzone values will be used
 OUTER_SCV: True
@@ -126,7 +129,7 @@ RIGHT_REVERSE_DEADZONE: 12
 ```
 {% endcapture %}
 
-{% capture tab7 %}
+{% capture tab8 %}
 ```yaml
 # TRIM MODEL
 TRIM_GAIN: 1.0  
@@ -135,7 +138,7 @@ TRIM_CONSTANT: 0.0
 ```
 {% endcapture %}
 
-{% capture tab8 %}
+{% capture tab9 %}
 ```yaml
 # FILTER CONFIGS
 OMEGA_FILTER_TYPE: 1  
@@ -152,7 +155,7 @@ CURRENT_OMEGA_FILTER: True
 ```
 {% endcapture %}
 
-{% capture tab9 %}
+{% capture tab10 %}
 ```yaml
 # ADC
 ADC_SYNC: True  
@@ -166,7 +169,7 @@ CS_RIGHT_OFFSET: 0
 ```
 {% endcapture %}
 
-{% capture tab10 %}
+{% capture tab11 %}
 ```yaml
 # features
 AUTO_SYNC: True  
@@ -176,7 +179,7 @@ CASCADED: True
 ```
 {% endcapture %}
 
-{% capture tab11 %}
+{% capture tab12 %}
 ```yaml
 # Synchronization
 SYNC_KP: 256  
@@ -188,7 +191,7 @@ DT_THRESHOLD: 2
 ```
 {% endcapture %}
 
-{% capture tab12 %}
+{% capture tab13 %}
 ```yaml
 # experimental
 CROSS_COUPLED_CONTROL: True  
@@ -201,7 +204,7 @@ CROSS_K_RIGHT: 1.0
 ```
 {% endcapture %}
 
-{% capture tab13 %}
+{% capture tab14 %}
 ```yaml
 # system parameters
 I2C_ENABLED: True  
