@@ -31,7 +31,6 @@ __Communications__
 
 |---|---|
 | I2C | Dual QWIC ports, also available on header. Can be used for cascading with multiple units |
-| SPI | Serial peripheral interface connector |
 | USB | CDC-USB Serial, 921600 Bauds |
 | Serial | Standard Serial Port, available as JST connector or header |
 
