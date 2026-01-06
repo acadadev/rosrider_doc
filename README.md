@@ -104,36 +104,6 @@ This allows for continuous improvement and the addition of new features, without
 ROSRider aims to lower the cost barrier for building ROS based robots. Using commodity parts, users can build robots that can run the Robot Operating System.
 
 <div style="
-    border: 2px solid #333;
-    background-color: #fafafa;
-    color: #333;
-    padding: 30px;
-    text-align: center;
-    margin: 30px 0;
-    position: relative;
-    font-family: 'Ubuntu', sans-serif;
-">
-    <span style="
-        background: #333;
-        color: #fff;
-        padding: 5px 15px;
-        text-transform: uppercase;
-        font-size: 0.8em;
-        letter-spacing: 2px;
-        font-weight: bold;
-        position: absolute;
-        top: -15px;
-        left: 50%;
-        transform: translateX(-50%);
-    ">
-        Philosophy
-    </span>
-    <h3 style="margin: 10px 0 0 0; font-weight: 400; font-size: 1.4em;">
-        Simplicity in Hardware. Complexity in Software.
-    </h3>
-</div>
-
-<div style="
     background-color: #1e1e1e;
     border-left: 6px solid #4CAF50;
     color: #e0e0e0;
@@ -143,27 +113,10 @@ ROSRider aims to lower the cost barrier for building ROS based robots. Using com
     font-family: 'Ubuntu', sans-serif;
 ">
     <div style="font-size: 1.4em; font-weight: bold; color: #4CAF50; margin-bottom: 5px;">
-        > ROSRider System Ready
+        > ROSRider aims to lower the cost barrier for building ROS based robots.
     </div>
     <div style="font-size: 1.1em; line-height: 1.5;">
-        "Empowering makers to bridge the gap between hardware and intelligence."
+        "Using commodity parts, users can build robots that can run the Robot Operating System."
     </div>
 </div>
 
-<div style="
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    color: white;
-    padding: 30px;
-    border-radius: 8px;
-    text-align: center;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-    margin: 30px 0;
-    font-family: 'Ubuntu', sans-serif;
-">
-    <h2 style="margin: 0; font-size: 1.5em; font-weight: 700; color: white;">
-        Build Robots, Not Infrastructure.
-    </h2>
-    <p style="margin-top: 10px; opacity: 0.9; font-size: 1.1em;">
-        The all-in-one platform for rapid ROS development.
-    </p>
-</div>
