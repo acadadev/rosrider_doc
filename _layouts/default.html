@@ -116,19 +116,15 @@
 
     <script>
       function openTab(evt, tabId) {
-
         var container = evt.currentTarget.closest('.tab-container');
-
         var contents = container.getElementsByClassName("tab-content");
         for (var i = 0; i < contents.length; i++) {
           contents[i].style.display = "none";
         }
-
         var btns = container.getElementsByClassName("tab-btn");
         for (var i = 0; i < btns.length; i++) {
           btns[i].classList.remove("active");
         }
-
         var target = container.querySelector('[data-tab-id="' + tabId + '"]');
         if (target) {
             target.style.display = "block";

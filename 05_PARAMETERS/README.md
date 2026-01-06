@@ -14,18 +14,48 @@ The ROSRider node reads the configuration parameters from the YAML file and stor
 The following YAML file defines the configuration parameters for the ROSRider node. This file is crucial for customizing the behavior and performance of the ROSRider, tailoring it to specific robotic applications.
 
 
-{% capture my_tab_1 %}
-### First Tab Content
-You can write normal **Markdown** here.
-* List item A
-* List item B
+{% capture t1 %}
+### DRIVER config
+DRIVE_MODE: 3
+CONFIG_FLAGS: 112
+UPDATE_RATE: 20 
 {% endcapture %}
 
-{% capture my_tab_2 %}
-### Second Tab Content
-You can even put code blocks here:
-```bash
-echo "Hello World"
+{% capture t2 %}
+# PWM config
+PWM_DIV: 16
+PWM_SCALE: 256
+PWM_FRQ: 1000
+{% endcapture %}
+
+{% capture t3 %}
+{% endcapture %}
+
+{% capture t4 %}
+{% endcapture %}
+
+{% capture t5 %}
+{% endcapture %}
+
+{% capture t6 %}
+{% endcapture %}
+
+{% capture t7 %}
+{% endcapture %}
+
+{% capture t8 %}
+{% endcapture %}
+
+{% capture t9 %}
+{% endcapture %}
+
+{% capture t10 %}
+{% endcapture %}
+
+{% capture t11 %}
+{% endcapture %}
+
+{% capture t12 %}
 {% endcapture %}
 
 {% include tabs.html tab1_title="Simple Tab" tab1_content=my_tab_1 tab2_title="Advanced Tab" tab2_content=my_tab_2 %}
