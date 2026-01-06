@@ -87,6 +87,10 @@ RIGHT_KT_W: -0.008
 
 {% capture tab5 %}
 ```yaml
+# enable SCV, if not deadzone values will be used
+OUTER_SCV: True
+```
+```yaml
 # STRIBECK friction model  
 STATIC_KICK: 0.8  
 COULOMB_RUN: 0.2  
@@ -180,13 +184,13 @@ CASCADED: True
 OUTER_FEEDFORWARD: True
 OUTER_SCV: True
 ```
+{% endcapture %}
+
+{% capture tab11 %}
 ```yaml
 # experimental
 CROSS_COUPLED_CONTROL: True
 ```
-{% endcapture %}
-
-{% capture tab11 %}
 ```yaml
 # experimental
 CROSS_KP: 4.0
