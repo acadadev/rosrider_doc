@@ -8,19 +8,8 @@ description: "Introduction to ROSRider control card"
 __Introduction__
 
 
-This image showcases a more advanced robotic platform designed for research and development. 
-The integration of a ROSRider card and a ROS2RPI card with a Raspberry Pi enables the robot to execute a wide range of ROS programs and packages. 
-The addition of a LiDAR sensor further empowers the robot with advanced capabilities such as SLAM, mapping, autonomous navigation, and autonomous exploration.
-This versatile platform provides a solid foundation for exploring various robotics applications and research projects.
 
 
-The ROSRider and ROS2RPI cards significantly simplify the user experience by automating tasks like battery management and device power cycling. This eliminates the need for manual intervention, such as disconnecting batteries or manually powering on devices. Additionally, the cards can automatically put the system into a low-power hibernation mode when idle, conserving battery life.
-
-The ROS2RPI card offers flexible serial port routing, enabling remote access to the Raspberry Pi and other devices like LiDAR sensors. This feature prevents boot conflicts caused by LiDAR serial output during system startup and allows for remote control of the LiDAR, extending its operational life and simplifying maintenance procedures.
-
-<div style="display: flex; justify-content: space-around; margin: 25px 0;">
-  <img src="../images/odometry-house-sm.gif" alt="Odometry Plot" style="box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);">
-</div>
 
 To further enhance the integration of ROSRider with open-source robotics, we have developed two open-source robot platforms: Sorcerer and Caretta. These low-cost, pre-built robots, accompanied by URDF files for ROS and Gazebo simulation, streamline the development process. Developers can rapidly prototype and test algorithms in simulation before deploying them to physical hardware, significantly accelerating development time and reducing costs associated with physical experimentation.
 
