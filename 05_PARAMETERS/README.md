@@ -30,12 +30,6 @@ PWM_FRQ: 1000
 
 {% capture tab2 %}
 ```yaml
-
-```
-{% endcapture %}
-
-{% capture tab3 %}
-```yaml
 ### MOTOR config  
 GEAR_RATIO: 65.0
 ENCODER_PPR: 48
@@ -43,6 +37,10 @@ WHEEL_DIA: 0.0685
 BASE_WIDTH: 0.174
 MAX_RPM: 160.0
 ```
+{% endcapture %}
+
+{% capture tab3 %}
+T3
 {% endcapture %}
 
 {% capture tab4 %}
