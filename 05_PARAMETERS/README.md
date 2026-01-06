@@ -225,9 +225,9 @@ INA219_CAL: 8192
    tab3_content=tab3
    tab4_title="CASCADED" 
    tab4_content=tab4
-   tab5_title="Friction / Deadzone / Trim" 
+   tab5_title="Friction / Deadzone" 
    tab5_content=tab5
-   tab6_title="Electrical" 
+   tab6_title="Trim Model" 
    tab6_content=tab6
    tab7_title="Filtering" 
    tab7_content=tab7
