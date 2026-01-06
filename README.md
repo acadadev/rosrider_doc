@@ -23,6 +23,8 @@ This approach encourages creativity, reduces costs, and promotes the reuse of ex
 
 </div>
 
+__ROS Enabled Robotics__
+
 The typical minimal setup incorporates two encoder gear motors, a Raspberry Pi computer, and a ROSRider card, all seamlessly integrated into a minimal footprint.
 This integrated control card, paired with its comprehensive ROS software package, streamlines development by handling complex low-level tasks. This empowers developers to rapidly prototype and experiment with autonomous vehicle concepts, making it an ideal toolkit for learning and innovation in robotics.
 
@@ -38,23 +40,25 @@ This feature prevents boot conflicts caused by LiDAR serial output during system
   </figure>
 </div>
 
+__Gazebo Simulation Support__
+
 To further enhance the integration of ROSRider with open-source robotics, we have developed two open-source robot platforms: Sorcerer and Caretta. These low-cost, pre-built robots, accompanied by URDF files for ROS and Gazebo simulation, streamline the development process. Developers can rapidly prototype and test algorithms in simulation before deploying them to physical hardware, significantly accelerating development time and reducing costs associated with physical experimentation.
 
 <div style="display: flex; justify-content: space-around; margin: 25px 0;">
   
   <figure style="width: 25%; margin: 0; text-align: center;">
     <img src="images/gazebo_caretta.png" alt="Gazebo CARETTA" style="width: 100%; border: 1px solid #ccc; border-radius: 5px; box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);">
-    <figcaption style="font-size: 0.85em; margin-top: 10px; font-style: italic; color: #666;">Fig 1. Minimal chassis designed for lane-following tasks using image processing</figcaption>
+    <figcaption style="font-size: 0.85em; margin-top: 10px; font-style: italic; color: #666;">Fig 5. Gazebo Simulation with CARETTA</figcaption>
   </figure>
 
   <figure style="width: 25%; margin: 0; text-align: center;">
     <img src="images/gazebo_sorcerer.png" alt="Gazebo SORCERER" style="width: 100%; border: 1px solid #ccc; border-radius: 5px; box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);">
-    <figcaption style="font-size: 0.85em; margin-top: 10px; font-style: italic; color: #666;">Fig 2. Chassis with LIDAR designed for  SLAM / Navigation</figcaption>
+    <figcaption style="font-size: 0.85em; margin-top: 10px; font-style: italic; color: #666;">Fig 6. Gazebo Simulation with SORCERER</figcaption>
   </figure>
 
   <figure style="width: 25%; margin: 0; text-align: center;">
     <img src="images/rviz_cartographer_sq.png" alt="Cartographer RVIZ" style="width: 100%; border: 1px solid #ccc; border-radius: 5px; box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);">
-    <figcaption style="font-size: 0.85em; margin-top: 10px; font-style: italic; color: #666;">Fig 3. ROSRider Control Card</figcaption>
+    <figcaption style="font-size: 0.85em; margin-top: 10px; font-style: italic; color: #666;">Fig 7. RVIZ visualization of Simulated Robot</figcaption>
   </figure>
 
 </div>
