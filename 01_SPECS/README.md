@@ -23,7 +23,7 @@ description: "Hardware Specifications"
     </div>
 </div>
 
-***System Features*** 
+__System Features__
 
 | :---| :---|
 | ***MCU*** | 32-bit ARM Cortex: TM4C123GH6PM |
@@ -38,7 +38,7 @@ description: "Hardware Specifications"
 
 ROSRider utilizes standard JST connectors for motor and I2C connections, allowing for easy assembly and customization. Additionally, two QWIC connectors provide convenient expansion options for integrating various sensors and modules.
 
-***Power***
+__Power__
 
 | :---| :---|
 | ***Power Input*** | 6V to 15V wide input voltage |
@@ -53,14 +53,14 @@ A 5V power supply can be enabled or disabled via software, providing flexibility
 
 Built-in current monitoring and a hardware-resettable fuse safeguard the motors and battery. Software-based current limiting and remote threshold configuration enhance safety and flexibility.  
 
-***Communications***
+__Communications__
 
 | :---| :---|
 | ***I2C*** | Dual QWIC ports, also available on header. Can be used for cascading with multiple units |
 | ***USB*** | CDC-USB Serial, 921600 Bauds |
 | ***Serial*** | Standard Serial Port, available as JST connector or header |
 
-***Software***
+__Software__
 
 | :---| :---|
 | ***ROS Drivers*** | C++ Drivers for ROS2 Humble and ROS2 Jazzy |
