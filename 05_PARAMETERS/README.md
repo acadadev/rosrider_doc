@@ -20,6 +20,9 @@ The following YAML file defines the configuration parameters for the ROSRider no
 DRIVE_MODE: 3
 CONFIG_FLAGS: 112
 UPDATE_RATE: 20
+```
+
+```yaml
 ### PWM config  
 PWM_DIV: 16
 PWM_SCALE: 256
@@ -97,6 +100,9 @@ VISCOUS_FRICTION_LIMIT: 1.2
 EB_FF_LIMIT: 12.0  
 SCV_OMEGA_THRESHOLD: 0.05  
 SCV_LATCH_THRESHOLD: 1.0
+```
+
+```yaml
 # dead zones  
 LEFT_FORWARD_DEADZONE: 12  
 LEFT_REVERSE_DEADZONE: 12  
@@ -123,6 +129,9 @@ BAT_VOLTS_LOW: 6.0
 LEFT_AMP_LIMIT: 2.4
 RIGHT_AMP_LIMIT: 2.4
 INA219_CAL: 8192
+```
+
+```yaml
 # adc bias calibration
 CS_LEFT_OFFSET: 0
 CS_RIGHT_OFFSET: 0
