@@ -38,6 +38,22 @@ __System Features__
 
 ROSRider utilizes standard JST connectors for motor and I2C connections, allowing for easy assembly and customization. Additionally, two QWIC connectors provide convenient expansion options for integrating various sensors and modules.
 
+__Advanced Features__
+
+| :---| :---|
+| ***Cascaded Current Loop*** | A cascaded current loop enables precise torque control and superior dynamic response |
+| ***Synchronized ADC*** | ADC samples current synchronized with the PWM generator and selectively integrates waveform |
+| ***Current Measurement and Filtering*** | Motor currents are filtered, and linear regression is applied |
+| ***Velocity Measurement and Filtering*** | Velocity is measured via hardware QEI (Quadrature Encoder Interface) and then filtered |
+| ***Kinematic Feedforwards*** | Acceleration and Velocity Feedforwards |
+| ***Stribeck Friction Model*** | Static Kick, Coulomb Run, Viscous Friction |
+| ***BEMF Compensation*** | Back-EMF compensated from current measurements |
+| ***Selectable Filters*** | The firmware also implements custom, selectable filters for both current (I) and rotational speed (ω) filtering |
+
+The inclusion of a cascaded current loop significantly enhances the control architecture by 
+placing a high-bandwidth current controller inside the velocity loop; this allows for precise torque control, 
+faster response to disturbances, and a more stable overall system compared to simple single-loop designs.
+
 __Power__
 
 | :---| :---|
