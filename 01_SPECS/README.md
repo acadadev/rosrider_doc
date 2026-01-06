@@ -36,8 +36,6 @@ __System Features__
 | ***Enhanced Diagnostics*** | The system publishes detailed diagnostic information including battery voltage, current consumption and motor current feedback |
 | ***Synchronization***| Synchronizes with the host computer to ensure low-latency data transmission |
 
-ROSRider utilizes standard JST connectors for motor and I2C connections, allowing for easy assembly and customization. Additionally, two QWIC connectors provide convenient expansion options for integrating various sensors and modules.
-
 __Advanced Features__
 
 | :---| :---|
@@ -66,7 +64,8 @@ __Power__
 | ***Power Monitoring*** | Measures and reports bus voltage, bus current, independent motor currents |
 
 Built-in current monitoring and a hardware-resettable fuse safeguard the motors and battery. Software-based current limiting and remote threshold configuration enhance safety and flexibility.
-A 5V power supply can be enabled or disabled via software, providing flexibility for powering external sensors and devices.  
+A 5V power supply can be enabled or disabled via software, providing flexibility for powering external sensors and devices.
+ROSRider utilizes standard JST connectors for motor and I2C connections, allowing for easy assembly and customization. Additionally, two QWIC connectors provide convenient expansion options for integrating various sensors and modules.
 
 __Communications__
 
