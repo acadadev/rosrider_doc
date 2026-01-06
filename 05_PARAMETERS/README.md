@@ -59,10 +59,6 @@ K_FF_ACCEL: 0.08
 {% endcapture %}
 
 {% capture tab4 %}
-T4
-{% endcapture %}
-
-{% capture tab5 %}
 ```yaml
 ### CASCADED loop
 INNER_LIMIT: 240
@@ -81,11 +77,7 @@ RIGHT_KT_W: -0.008
 ```
 {% endcapture %}
 
-{% capture tab6 %}
-T6
-{% endcapture %}
-
-{% capture tab7 %}
+{% capture tab5 %}
 ```yaml
 # stribeck friction model  
 STATIC_KICK: 0.8  
@@ -102,6 +94,19 @@ LEFT_REVERSE_DEADZONE: 12
 RIGHT_FORWARD_DEADZONE: 12  
 RIGHT_REVERSE_DEADZONE: 12
 ```
+{% endcapture %}
+
+{% capture tab6 %}
+```yaml
+# trim model
+TRIM_GAIN: 1.0
+TRIM_MOTOR_K: 1.0
+TRIM_CONSTANT: 0.0
+```
+{% endcapture %}
+
+{% capture tab7 %}
+
 {% endcapture %}
 
 {% capture tab8 %}
@@ -124,12 +129,7 @@ CS_RIGHT_OFFSET: 0
 {% endcapture %}
 
 {% capture tab10 %}
-```yaml
-# trim model
-TRIM_GAIN: 1.0
-TRIM_MOTOR_K: 1.0
-TRIM_CONSTANT: 0.0
-```
+
 {% endcapture %}
 
 {% capture tab11 %}
