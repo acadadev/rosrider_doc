@@ -54,6 +54,15 @@ WHEEL_DIA: 0.0685
 BASE_WIDTH: 0.174  
 MAX_RPM: 160.0  
 ```
+
+| Parameter   | Type   | Description                    | Default |
+|-------------|--------|--------------------------------|---------|
+| GEAR_RATIO  | float  | Gear ratio of the motors.      | 65.0    |
+| ENCODER_PPR | uint16 | Encoder pulses per revolution. | 48      |
+| WHEEL_DIA   | float  | Diameter of the wheels.        | 0.0685  |
+| BASE_WIDTH  | float  | Distance between the wheels.   | 0.168   |
+| MAX_RPM     | float  | Distance between the wheels.   | 90.0    |
+
 {% endcapture %}
 
 {% capture tab4 %}
@@ -66,10 +75,25 @@ LEFT_KD: 0.0
 RIGHT_KP: 8.0  
 RIGHT_KI: 6.0  
 RIGHT_KD: 0.0  
-TANH_DIV: 2.0  
-SIGM_DIV: 10.0  
 K_FB_WINDUP: 0.5  
 ```
+
+| Parameter   | Type   | Description                       | Default |
+|-------------|--------|-----------------------------------|---------|
+| UPPER_LIMIT | uint16 | Maximum PWM output value.         | 255     |
+| LEFT_KP     | float  | PID proportional for left motor.  | 1.2     |
+| LEFT_KI     | float  | PID integral for left motor.      | 0.8     |
+| LEFT_KD     | float  | PID differential for left motor.  | 0.01    |
+| RIGHT_KP    | float  | PID proportional for right motor. | 1.2     |
+| RIGHT_KI    | float  | PID integral for right motor.     | 0.8     |
+| RIGHT_KD    | float  | PID differential for right motor. | 0.01    |
+| K_FB_WINDUP | float  | Anti windup coefficient           | 0.5     |
+
+```yaml
+TANH_DIV: 2.0  
+SIGM_DIV: 10.0  
+```
+
 {% endcapture %}
 
 {% capture tab5 %}
@@ -305,7 +329,7 @@ __Motor Control__
 
 | parameter | type | description | default |
 | -------- | -------- | -------- | -------- |
-| UPPER_LIMIT | uint16 | Maximum PWM output value. | 255 |
+
 | INTEGRAL_LIMIT | uint16 |  Integral term limit for PID control. | 224 |
 | ENCODER_PPR | uint16 | Encoder pulses per revolution. | 48 |
 | LEFT_FORWARD_DEADZONE | int16 | Deadzone for the left motor's forward direction. | 8 | 
@@ -334,14 +358,7 @@ __Power and Safety Limits__
 
 __PID Control Parameters__
 
-| parameter | type | description | default |
-| -------- | -------- | -------- | -------- 
-| LEFT_KP | float | PID proportional for left motor. | 1.2 |
-| LEFT_KI | float | PID integral for left motor. | 0.8 |
-| LEFT_KD | float | PID differential for left motor. | 0.01 |
-| RIGHT_KP | float | PID proportional for right motor. | 1.2 |
-| RIGHT_KI | float | PID integral for right motor. | 0.8 |
-| RIGHT_KD | float | PID differential for right motor. | 0.01 |
+
 
 __Drive Trim Parameters__
 
