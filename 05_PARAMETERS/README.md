@@ -190,8 +190,16 @@ DT_I2C: 32
 DT_THRESHOLD: 2  
 ```
 {% endcapture %}
-
+T13
 {% capture tab13 %}
+
+{% endcapture %}
+
+{% capture tab14 %}
+T14
+{% endcapture %}
+
+{% capture tab15 %}
 ```yaml
 # experimental
 CROSS_COUPLED_CONTROL: True  
@@ -204,7 +212,7 @@ CROSS_K_RIGHT: 1.0
 ```
 {% endcapture %}
 
-{% capture tab14 %}
+{% capture tab16 %}
 ```yaml
 # system parameters
 I2C_ENABLED: True  
