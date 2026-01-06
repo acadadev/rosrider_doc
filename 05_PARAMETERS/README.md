@@ -202,11 +202,11 @@ MAX_IDLE_SECONDS: 1800
    tab2_content=tab2
    tab3_title="PID" 
    tab3_content=tab3
-   tab4_title="TAB3" 
+   tab4_title="CASCADED" 
    tab4_content=tab4
-   tab5_title="Cascaded" 
+   tab5_title="Friction/Deadzone" 
    tab5_content=tab5
-   tab6_title="Torque/Friction" 
+   tab6_title="Trim Model" 
    tab6_content=tab6
    tab7_title="Electrical" 
    tab7_content=tab7
