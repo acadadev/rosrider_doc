@@ -1,11 +1,9 @@
 ---
 layout: default
 title_url: /01_SPECS/README.html
-title: "Introduction"
-description: "Introduction to ROSRider control card"
+title: "Specifications"
+description: "Hardware Specifications"
 ---
-
-__Hardware Specifications__
 
 __Features__
 
