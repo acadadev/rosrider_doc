@@ -26,12 +26,10 @@ This approach encourages creativity, reduces costs, and promotes the reuse of ex
 
 </div>
 
-Below is an image of a minimal chassis designed for lane-following tasks using image processing. 
-This compact setup incorporates two encoder gear motors, a Raspberry Pi 4 computer, 
+The typical minimal setup incorporates two encoder gear motors, a Raspberry Pi computer, 
 and a ROSRider card, all seamlessly integrated into a minimal footprint. 
 
-This streamlined platform empowers developers to quickly prototype and experiment with autonomous vehicle concepts, 
-making it an ideal tool for learning and innovation in robotics.
+This integrated control card, paired with its comprehensive ROS software package, streamlines development by handling complex low-level tasks. This empowers developers to rapidly prototype and experiment with autonomous vehicle concepts, making it an ideal toolkit for learning and innovation in robotics.
 
 - [Introduction](01_INTRO/README.md)
 - [Connections and Pinmaps](02_PINMAP/README.md)
