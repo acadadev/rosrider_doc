@@ -247,7 +247,7 @@ INA219_CAL: 8192
    tab5_content=tab5
    tab6_title="Feedforwards" 
    tab6_content=tab6
-   tab7_title="Friction / Deadzone" 
+   tab7_title="Friction" 
    tab7_content=tab7
    tab8_title="Trim Model" 
    tab8_content=tab8
@@ -259,10 +259,14 @@ INA219_CAL: 8192
    tab11_content=tab11
    tab12_title="Synchronization" 
    tab12_content=tab12
-   tab13_title="Experimental" 
+   tab13_title="ROS" 
    tab13_content=tab13
-   tab14_title="System" 
-   tab14_content=tab14 
+   tab14_title="Safety" 
+   tab14_content=tab14
+   tab15_title="Experimental" 
+   tab15_content=tab15
+   tab16_title="System" 
+   tab16_content=tab16
 %}
 
 __General configuration__
