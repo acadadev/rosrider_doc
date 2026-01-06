@@ -7,7 +7,7 @@ This approach encourages creativity, reduces costs, and promotes the reuse of ex
 <div style="display: flex; justify-content: space-around; margin: 25px 0;">
   
   <figure style="width: 30%; margin: 0; text-align: center;">
-    <img src="images/sorcerer_rosrider.jpg" alt="Sorcerer with ROSRider" 
+    <img src="images/sorcerer_rosrider.png" alt="Sorcerer with ROSRider" 
          style="width: 100%; border: 1px solid #ccc; border-radius: 5px; box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);">
     <figcaption style="font-size: 0.85em; margin-top: 10px; font-style: italic; color: #555;">Fig 1. Minimal chassis designed for lane-following tasks using image processing</figcaption>
   </figure>
