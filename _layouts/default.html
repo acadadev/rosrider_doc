@@ -27,25 +27,53 @@
         font-family: 'Roboto Slab', serif !important;
         font-weight: 700;
       }
-      .sidebar {
-          display: none;
+      .layout-wrapper {
+          display: flex;
+          flex-direction: row;
+          min-height: 100vh;
       }
-      @media (min-width: 768px) {
-          .sidebar {
-              display: block;
-              position: fixed;
-              top: 0;
-              bottom: 0;
-              left: 0;
-              z-index: 100;
-              padding: 48px 0 0;
-              box-shadow: inset -1px 0 0 rgba(0, 0, 0, .1);
-          }
+      .sidebar {
+          width: 250px;           /* Fixed width for the menu */
+          flex-shrink: 0;         /* Prevent menu from getting squished */
+          background-color: #fafafa;
+          border-right: 1px solid #e1e4e8;
+          height: 100vh;          /* Full screen height */
+          position: sticky;       /* MAGIC: Stays visible while scrolling, but sits IN the layout */
+          top: 0;
+          overflow-y: auto;       /* Scrollable if menu is long */
+          padding: 20px;
+          box-sizing: border-box;
+      }
+      .main-content {
+          flex-grow: 1;           /* Take up all remaining space */
+          padding: 20px 40px;     /* Breathing room for text */
+          min-width: 0;           /* Prevents large images/tables from breaking layout */
+      }
+      .nav-link {
+          color: #333;
+          text-decoration: none;
+          display: block;
+          padding: 8px 10px;
       }
       .nav-link:hover {
           background-color: #e9ecef;
           color: #000 !important;
           border-radius: 4px;
+      }
+      @media (max-width: 768px) {
+          .layout-wrapper {
+              flex-direction: column;
+          }
+          .sidebar {
+              width: 100%;        /* Full width */
+              height: auto;       /* Natural height */
+              position: relative; /* Scrolls with page */
+              border-right: none;
+              border-bottom: 1px solid #eee;
+          }
+          .main-content {
+              padding: 20px;
+          }
       }
     </style>
   </head>
@@ -65,30 +93,11 @@
          </h4>
       </div>
     </div>
-    <div class="container-fluid px-3">
-      <div class="row">
-        <nav class="col-md-3 col-lg-2 d-md-block sidebar collapse" style="background-color: #fafafa; border-right: 1px solid #eee;">
-          <div class="position-sticky pt-3" style="top: 0; height: 100vh; overflow-y: auto;">
-            <ul class="nav flex-column">
-              {% for item in site.data.navigation %}
-                <li class="nav-item">
-                  <a class="nav-link" href="{{ item.url }}" style="color: #333; padding: 10px 15px; display: block; text-decoration: none;">
-                    {{ item.title }}
-                  </a>
-                </li>
-              {% endfor %}
-            </ul>
-          </div>
-        </nav>
-        <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4 markdown-body">
-          <hr>
-          {{ content }}
-          <hr>
-          <div class="footer-text">
-            Copyright © 2024, ACADA Robotics • <a href="https://acada.dev">https://acada.dev</a>
-          </div>
+    <div class="layout-wrapper">
+        <nav class="sidebar"></nav>
+        <main class="main-content markdown-body">
+           {{ content }}
         </main>
-      </div>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.0/anchor.min.js" integrity="sha256-lZaRhKri35AyJSypXXs4o6OPFTbTmUoltBbDCbdzegg=" crossorigin="anonymous"></script>
     <script>anchors.add();</script>
