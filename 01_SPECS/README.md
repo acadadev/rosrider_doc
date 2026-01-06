@@ -43,8 +43,8 @@ __Advanced Features__
 | :---| :---|
 | ***Cascaded Current Loop*** | A cascaded current loop enables precise torque control and superior dynamic response |
 | ***Synchronized ADC*** | ADC samples current synchronized with the PWM generator and selectively integrates waveform |
-| ***Current Measurement and Filtering*** | Motor currents are filtered, and linear regression is applied |
-| ***Velocity Measurement and Filtering*** | Velocity is measured via hardware QEI (Quadrature Encoder Interface) and then filtered |
+| ***Current Measurement*** | Motor currents are measured and filtered |
+| ***Velocity Measurement*** | Velocity is measured via hardware QEI (Quadrature Encoder Interface) and then filtered |
 | ***Kinematic Feedforwards*** | Acceleration and Velocity Feedforwards |
 | ***Stribeck Friction Model*** | Static Kick, Coulomb Run, Viscous Friction |
 | ***BEMF Compensation*** | Back-EMF compensated from current measurements |
