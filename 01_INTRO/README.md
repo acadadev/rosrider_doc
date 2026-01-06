@@ -10,33 +10,6 @@ __Introduction__
 
 
 
-
-To further enhance the integration of ROSRider with open-source robotics, we have developed two open-source robot platforms: Sorcerer and Caretta. These low-cost, pre-built robots, accompanied by URDF files for ROS and Gazebo simulation, streamline the development process. Developers can rapidly prototype and test algorithms in simulation before deploying them to physical hardware, significantly accelerating development time and reducing costs associated with physical experimentation.
-
-<div style="display: flex; justify-content: space-around; margin: 25px 0;">
-  <img src="../images/gazebo_caretta.png" alt="Gazebo Caretta" style="width: 30%; box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);">
-  <img src="../images/gazebo_sorcerer.png" alt="Gazebo Sorcerer" style="width: 30%; box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);">
-  <img src="../images/rviz_cartographer.png" alt="Cartographer RVIZ" style="width: 30%; box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);">
-</div>
-
-__Supported Motors__
-
-ROSRider can drive a wide range of encoder gear motors, from simple DC motors to high-precision gear motors commonly found in robotic vacuum cleaners. It supports both single-phase and dual-phase encoders, with parameters such as encoder PPR and gear reduction ratio configurable through YAML files. The dual-channel drivers, delivering 1A continuous and 2.8A peak current, provide ample power for various robotic applications. Additionally, users can fine-tune motor performance by adjusting parameters like forward and backward deadzones, PWM frequency (up to 18kHz for reduced noise), and motor driver configurations (brake mode, low-side and high-side decay).
-
-<div style="display: flex; justify-content: space-around; margin: 25px 0;">
-  <img src="../images/metal_gear_motor_a.png" alt="Metal gear motor" style="width: 30%; border: 1px solid #ccc; border-radius: 5px; box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);">
-  <img src="../images/plastic_gear_motor.png" alt="Plastic gear motor" style="width: 30%; border: 1px solid #ccc; border-radius: 5px; box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);">
-  <img src="../images/vacuum_robot_motor.png" alt="Vacuum cleaner spare motor" style="width: 30%; border: 1px solid #ccc; border-radius: 5px; box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);">
-</div>
-
-__Future-Proof Design__
-
-To ensure long-term usability and adaptability, the ROSRider card supports firmware updates via USB. This allows for continuous improvement and the addition of new features, without requiring specialized programming tools or hardware modifications.
-
-To further expand its compatibility, we are exploring the possibility of a USB firmware version based on user demand.
-
-It includes an SPI port for potential integration of additional sensors and actuators as technology advances and user needs evolve.
-
 __Servo Control__
 
 ROSRider can control two standard servos, enabling their integration into ROS-based robotic systems for applications like robotic arms, grippers, or camera gimbals.
