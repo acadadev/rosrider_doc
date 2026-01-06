@@ -21,6 +21,7 @@ DRIVE_MODE: 3          # MODE_PID 3 for ROS
 CONFIG_FLAGS: 112      #
 UPDATE_RATE: 20        # 10, 16, 20, 32, 50, 64
 ```
+
 | Parameter    | Type  | Description                         | Default |
 |--------------|-------|-------------------------------------|---------|
 | DRIVE_MODE   | uint8 | Drive Mode Configuration, 3 for ROS | 3       |
@@ -33,11 +34,13 @@ PWM_DIV: 16
 PWM_SCALE: 256  
 PWM_FRQ: 1000  
 ```
+
 | Parameter | Type   | Description                         | Default |
 |-----------|--------|-------------------------------------|---------|
 | PWM_DIV   | uint8  | Drive Mode Configuration, 3 for ROS | 64      |
 | PWM_SCALE | uint16 | Hardware Config Bitmask             | 256     |
 | PWM_FRQ   | uint16 | Outer PID Loop Update Rate          | 50      |
+
 {% endcapture %}
 
 {% capture tab2 %}
