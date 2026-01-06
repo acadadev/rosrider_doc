@@ -33,12 +33,11 @@ PWM_DIV: 16
 PWM_SCALE: 256  
 PWM_FRQ: 1000  
 ```
-
-| Parameter    | Type   | Description                         | Default |
-|--------------|--------|-------------------------------------|---------|
+| Parameter | Type   | Description                         | Default |
+|-----------|--------|-------------------------------------|---------|
 | PWM_DIV   | uint8  | Drive Mode Configuration, 3 for ROS | 64      |
 | PWM_SCALE | uint16 | Hardware Config Bitmask             | 256     |
-| PWM_FRQ  | uint16 | Outer PID Loop Update Rate          | 50      |
+| PWM_FRQ   | uint16 | Outer PID Loop Update Rate          | 50      |
 {% endcapture %}
 
 {% capture tab2 %}
