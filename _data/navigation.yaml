@@ -1,23 +1,26 @@
+- title: Introduction
+  url: /rosrider_doc/README.html
+
 - title: Specifications
-  url: /rosrider_doc/01_SPECS/README.md
+  url: /rosrider_doc/01_SPECS/README.html
 
 - title: Connections
-  url: /rosrider_doc/02_PINMAP/README.md
+  url: /rosrider_doc/02_PINMAP/README.html
 
 - title: Host Connection
-  url: /rosrider_doc/03_CONNECT/README.md
+  url: /rosrider_doc/03_CONNECT/README.html
 
 - title: ROS2 Drivers
-  url: /rosrider_doc/04_DRIVERS/README.md
+  url: /rosrider_doc/04_DRIVERS/README.html
 
 - title: Parameters
-  url: /rosrider_doc/05_PARAMETERS/README.md
+  url: /rosrider_doc/05_PARAMETERS/README.html
 
 - title: Firmware
-  url: /rosrider_doc/06_FIRMWARE/README.md
+  url: /rosrider_doc/06_FIRMWARE/README.html
 
 - title: Procedures
-  url: /rosrider_doc/08_PROCEDURES/README.md
+  url: /rosrider_doc/08_PROCEDURES/README.html
 
 - title: Troubleshooting
-  url: /rosrider_doc/10_DEBUG/README.md
+  url: /rosrider_doc/10_DEBUG/README.html
