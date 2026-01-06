@@ -64,9 +64,22 @@ __Supported Motors__
 ROSRider can drive a wide range of encoder gear motors, from simple DC motors to high-precision gear motors commonly found in robotic vacuum cleaners. It supports both single-phase and dual-phase encoders, with parameters such as encoder PPR and gear reduction ratio configurable through YAML files. The dual-channel drivers, delivering 1A continuous and 2.8A peak current, provide ample power for various robotic applications. Additionally, users can fine-tune motor performance by adjusting parameters like forward and backward deadzones, PWM frequency (up to 18kHz for reduced noise), and motor driver configurations (brake mode, low-side and high-side decay).
 
 <div style="display: flex; justify-content: space-around; margin: 25px 0;">
-  <img src="images/metal_gear_motor_a.png" alt="Metal gear motor" style="width: 30%; border: 1px solid #ccc; border-radius: 5px; box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);">
-  <img src="images/plastic_gear_motor.png" alt="Plastic gear motor" style="width: 30%; border: 1px solid #ccc; border-radius: 5px; box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);">
-  <img src="images/vacuum_robot_motor.png" alt="Vacuum cleaner spare motor" style="width: 30%; border: 1px solid #ccc; border-radius: 5px; box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);">
+  
+  <figure style="width: 25%; margin: 0; text-align: center;">
+    <img src="images/metal_gear_motor_a.png" alt="Metal Gear Motor" style="width: 100%; border: 1px solid #ccc; border-radius: 5px; box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);">
+    <figcaption style="font-size: 0.85em; margin-top: 10px; font-style: italic; color: #666;">Fig 1. Metal Gear Motor</figcaption>
+  </figure>
+
+  <figure style="width: 25%; margin: 0; text-align: center;">
+    <img src="images/plastic_gear_motor.png" alt="Plastic Gear Motor" style="width: 100%; border: 1px solid #ccc; border-radius: 5px; box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);">
+    <figcaption style="font-size: 0.85em; margin-top: 10px; font-style: italic; color: #666;">Fig 2. Plastic Gear Motor (DG01D-E)</figcaption>
+  </figure>
+
+  <figure style="width: 25%; margin: 0; text-align: center;">
+    <img src="images/vacuum_robot_motor.png" alt="Vacuum cleaner robot spare motor" style="width: 100%; border: 1px solid #ccc; border-radius: 5px; box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);">
+    <figcaption style="font-size: 0.85em; margin-top: 10px; font-style: italic; color: #666;">Fig 3. Vacuum Cleaner Spare Part</figcaption>
+  </figure>
+
 </div>
 
 __Future-Proof Design__
