@@ -15,12 +15,12 @@ The following YAML file defines the configuration parameters for the ROSRider no
 
 
 {% capture tab1 %}
-### DRIVER config
-```yaml
-DRIVE_MODE: 3
-CONFIG_FLAGS: 112
-UPDATE_RATE: 20
-```
+
+<h4>DRIVER config</h4>
+DRIVE_MODE: 3</br>
+CONFIG_FLAGS: 112</br>
+UPDATE_RATE: 20</br>
+
 {% endcapture %}
 
 {% capture tab2 %}
