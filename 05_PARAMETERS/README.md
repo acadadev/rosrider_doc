@@ -113,10 +113,6 @@ TRIM_CONSTANT: 0.0
 {% endcapture %}
 
 {% capture tab6 %}
-
-{% endcapture %}
-
-{% capture tab7 %}
 ```yaml
 # ELECTRICAL LIMITS
 MAIN_AMP_LIMIT: 3.6
@@ -128,7 +124,7 @@ INA219_CAL: 8192
 ```
 {% endcapture %}
 
-{% capture tab8 %}
+{% capture tab7 %}
 ```yaml
 # FILTER CONFIGS
 OMEGA_FILTER_TYPE: 1
@@ -145,7 +141,7 @@ CURRENT_OMEGA_FILTER: True
 ```
 {% endcapture %}
 
-{% capture tab9 %}
+{% capture tab8 %}
 ```yaml
 # Synchronization
 SYNC_KP: 256
@@ -157,7 +153,7 @@ DT_THRESHOLD: 2
 ```
 {% endcapture %}
 
-{% capture tab10 %}
+{% capture tab9 %}
 ```yaml
 # ADC
 ADC_SYNC: True
@@ -171,7 +167,7 @@ CS_RIGHT_OFFSET: 0
 ```
 {% endcapture %}
 
-{% capture tab11 %}
+{% capture tab10 %}
 ```yaml
 # features
 AUTO_SYNC: True
@@ -190,13 +186,16 @@ CROSS_COUPLED_CONTROL: True
 ```
 {% endcapture %}
 
-{% capture tab12 %}
+{% capture tab11 %}
 ```yaml
 # experimental
 CROSS_KP: 4.0
 CROSS_K_LEFT: 1.0
 CROSS_K_RIGHT: 1.0
 ```
+{% endcapture %}
+
+{% capture tab12 %}
 ```yaml
 # system parameters
 I2C_ENABLED: True
