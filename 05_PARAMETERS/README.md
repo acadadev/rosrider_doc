@@ -106,14 +106,6 @@ TRIM_CONSTANT: 0.0
 {% endcapture %}
 
 {% capture tab7 %}
-
-{% endcapture %}
-
-{% capture tab8 %}
-T8
-{% endcapture %}
-
-{% capture tab9 %}
 ```yaml
 # electrical limits
 MAIN_AMP_LIMIT: 3.6
@@ -126,6 +118,14 @@ INA219_CAL: 8192
 CS_LEFT_OFFSET: 0
 CS_RIGHT_OFFSET: 0
 ```
+{% endcapture %}
+
+{% capture tab8 %}
+T8
+{% endcapture %}
+
+{% capture tab9 %}
+
 {% endcapture %}
 
 {% capture tab10 %}
