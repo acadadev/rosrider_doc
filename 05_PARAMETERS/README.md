@@ -52,10 +52,10 @@ RIGHT_KI: 6.0
 RIGHT_KD: 0.0
 TANH_DIV: 2.0
 SIGM_DIV: 10.0
+K_FB_WINDUP: 0.5
 ```
 ```yaml
-# Anti windup
-K_FB_WINDUP: 0.5
+OUTER_FEEDFORWARD: True
 ```
 ```yaml
 # Feed forwards
