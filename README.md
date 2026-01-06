@@ -12,6 +12,28 @@ Below is an image of a minimal chassis designed for lane-following tasks using i
   <img src="images/ROSRider4D_sq.png" alt="ROSRider Control Card" style="width: 30%; border: 1px solid #ccc; border-radius: 5px; box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);">
 </div>
 
+<div style="display: flex; justify-content: space-around; margin: 25px 0;">
+  
+  <figure style="width: 30%; margin: 0; text-align: center;">
+    <img src="images/sorcerer_rosrider.jpg" alt="Sorcerer with ROSRider" 
+         style="width: 100%; border: 1px solid #ccc; border-radius: 5px; box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);">
+    <figcaption style="margin-top: 10px; font-style: italic; color: #555;">Fig 1. Sorcerer setup</figcaption>
+  </figure>
+
+  <figure style="width: 30%; margin: 0; text-align: center;">
+    <img src="images/caretta_top_sq.jpg" alt="Caretta with ROS2RPI" 
+         style="width: 100%; border: 1px solid #ccc; border-radius: 5px; box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);">
+    <figcaption style="margin-top: 10px; font-style: italic; color: #555;">Fig 2. Caretta view</figcaption>
+  </figure>
+
+  <figure style="width: 30%; margin: 0; text-align: center;">
+    <img src="images/ROSRider4D_sq.png" alt="ROSRider Control Card" 
+         style="width: 100%; border: 1px solid #ccc; border-radius: 5px; box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);">
+    <figcaption style="margin-top: 10px; font-style: italic; color: #555;">Fig 3. ROSRider card</figcaption>
+  </figure>
+
+</div>
+
 test
 
 - [Introduction](01_INTRO/README.md)
