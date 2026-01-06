@@ -129,6 +129,14 @@ CS_RIGHT_OFFSET: 0
 {% endcapture %}
 
 {% capture tab10 %}
+```yaml
+# filtering
+VOLTAGE_FILTER: True
+BEMF_FILTERED_OMEGA: True
+PID_FILTERED_OMEGA: True
+SCV_FILTERED_OMEGA: True
+CURRENT_OMEGA_FILTER: True
+```
 
 {% endcapture %}
 
@@ -149,12 +157,6 @@ OUTER_FEEDFORWARD: True
 OUTER_SCV: True
 # experimental
 CROSS_COUPLED_CONTROL: True
-# filtering
-VOLTAGE_FILTER: True
-BEMF_FILTERED_OMEGA: True
-PID_FILTERED_OMEGA: True
-SCV_FILTERED_OMEGA: True
-CURRENT_OMEGA_FILTER: True
 ```
 {% endcapture %}
 
