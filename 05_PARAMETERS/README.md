@@ -78,16 +78,16 @@ RIGHT_KD: 0.0
 K_FB_WINDUP: 0.5  
 ```
 
-| Parameter   | Type   | Description                       | Default |
-|-------------|--------|-----------------------------------|---------|
-| UPPER_LIMIT | uint16 | Maximum PWM output value.         | 255     |
-| LEFT_KP     | float  | PID proportional for left motor.  | 1.2     |
-| LEFT_KI     | float  | PID integral for left motor.      | 0.8     |
-| LEFT_KD     | float  | PID differential for left motor.  | 0.01    |
-| RIGHT_KP    | float  | PID proportional for right motor. | 1.2     |
-| RIGHT_KI    | float  | PID integral for right motor.     | 0.8     |
-| RIGHT_KD    | float  | PID differential for right motor. | 0.01    |
-| K_FB_WINDUP | float  | Anti windup coefficient           | 0.5     |
+| Parameter   | Type   | Description                      | Default |
+|-------------|--------|----------------------------------|---------|
+| UPPER_LIMIT | uint16 | Maximum Controller PWM output    | 192     |
+| LEFT_KP     | float  | PID proportional for left motor  | 2.4     |
+| LEFT_KI     | float  | PID integral for left motor      | 1.2     |
+| LEFT_KD     | float  | PID differential for left motor  | 0.0     |
+| RIGHT_KP    | float  | PID proportional for right motor | 2.4     |
+| RIGHT_KI    | float  | PID integral for right motor     | 1.2     |
+| RIGHT_KD    | float  | PID differential for right motor | 0.0     |
+| K_FB_WINDUP | float  | Anti windup coefficient          | 0.5     |
 
 ```yaml
 TANH_DIV: 2.0  
@@ -108,6 +108,17 @@ CURRENT_OMEGA_K_LEFT: -2.4
 CURRENT_OMEGA_K_RIGHT: -2.4  
 R_ARM: 2.0
 ```
+| Parameter               | Type   | Description                           | Default |
+|-------------------------|--------|---------------------------------------|---------|
+| INNER_LIMIT             | uint16 | Maximum Controller PWM output         | 192     |
+| CURRENT_KP              | float  | Inner Loop Current Error Proportional | 2.4     |
+| CURRENT_KI              | float  | Inner Loop Current Error Integral     | 1.2     |
+| CURRENT_MULTIPLIER_LEFT | float  | Current Multiplier Left               | 4.8     |
+| CURRENT_MULTIPLIER_LEFT | float  | Current Multiplier Right              | 4.8     |
+| CURRENT_OMEGA_K_LEFT    | float  | Current Omega Compensation Left       | 0.0     |
+| CURRENT_OMEGA_K_RIGHT   | float  | Current Omega Compensation Right      | 0.0     |
+| R_ARM                   | float  | Motor Armature Resistance             | 2.0     |
+
 ```yaml
 # TORQUE constant
 LEFT_KT: 0.016
@@ -115,6 +126,9 @@ LEFT_KT_W: -0.008
 RIGHT_KT: 0.016
 RIGHT_KT_W: -0.008
 ```
+
+| Parameter   | Type   | Description                       | Default |
+|-------------|--------|-----------------------------------|---------|
 {% endcapture %}
 
 {% capture tab6 %}
