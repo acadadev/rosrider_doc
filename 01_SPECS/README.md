@@ -49,7 +49,6 @@ description: "Hardware Specifications"
 | Synchronization | Synchronizes with the host computer to ensure low-latency data transmission |
 
 
-
 __Servo Control__
 ROSRider can control two standard servos, enabling their integration into ROS-based robotic systems for applications like robotic arms, grippers, or camera gimbals.
 
