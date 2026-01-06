@@ -190,13 +190,21 @@ DT_I2C: 32
 DT_THRESHOLD: 2  
 ```
 {% endcapture %}
-T13
-{% capture tab13 %}
 
+{% capture tab13 %}
+T13
 {% endcapture %}
 
 {% capture tab14 %}
-T14
+```yaml
+# ELECTRICAL LIMITS
+MAIN_AMP_LIMIT: 3.6  
+BAT_VOLTS_HIGH: 15.0  
+BAT_VOLTS_LOW: 6.0  
+LEFT_AMP_LIMIT: 2.4  
+RIGHT_AMP_LIMIT: 2.4  
+INA219_CAL: 8192  
+```
 {% endcapture %}
 
 {% capture tab15 %}
@@ -230,15 +238,6 @@ ALLOWED_SKIP: 3
 MONITOR_RATE: 100  
 MAX_IDLE_SECONDS: 1800  
 CMD_VEL_TOPIC: 'cmd_vel_nav'  
-```
-```yaml
-# ELECTRICAL LIMITS
-MAIN_AMP_LIMIT: 3.6  
-BAT_VOLTS_HIGH: 15.0  
-BAT_VOLTS_LOW: 6.0  
-LEFT_AMP_LIMIT: 2.4  
-RIGHT_AMP_LIMIT: 2.4  
-INA219_CAL: 8192  
 ```
 {% endcapture %}
 
