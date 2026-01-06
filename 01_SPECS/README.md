@@ -59,7 +59,6 @@ description: "Hardware Specifications"
 | ***Synchronization***| Synchronizes with the host computer to ensure low-latency data transmission |
 
 
-
 __Software-Switchable Auxiliary Power Supply__
 A 5V power supply can be enabled or disabled via software, providing flexibility for powering external sensors and devices.
 
