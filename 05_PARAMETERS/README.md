@@ -122,7 +122,14 @@ CS_RIGHT_OFFSET: 0
 
 {% capture tab8 %}
 ```yaml
-# filtering
+# filter configs
+OMEGA_FILTER_TYPE: 1
+CURRENT_FILTER_TYPE: 3
+OUTPUT_FILTER_TYPE: 0
+```
+
+```yaml
+# filter routing
 VOLTAGE_FILTER: True
 BEMF_FILTERED_OMEGA: True
 PID_FILTERED_OMEGA: True
@@ -144,12 +151,7 @@ DT_THRESHOLD: 2
 {% endcapture %}
 
 {% capture tab10 %}
-```yaml
-# filter configs
-OMEGA_FILTER_TYPE: 1
-CURRENT_FILTER_TYPE: 3
-OUTPUT_FILTER_TYPE: 0
-```
+
 {% endcapture %}
 
 {% capture tab11 %}
@@ -174,17 +176,6 @@ CROSS_COUPLED_CONTROL: True
 
 {% capture tab12 %}
 ```yaml
-# filter configs
-OMEGA_FILTER_TYPE: 1
-CURRENT_FILTER_TYPE: 3
-OUTPUT_FILTER_TYPE: 0
-# synchronization
-SYNC_KP: 256
-SYNC_KI: 4
-SYNC_LIMIT: 4096
-SYNC_INTERVAL: 8
-DT_I2C: 32
-DT_THRESHOLD: 2
 # experimental
 CROSS_KP: 4.0
 CROSS_K_LEFT: 1.0
