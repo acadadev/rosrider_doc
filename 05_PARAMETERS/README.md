@@ -22,7 +22,7 @@ CONFIG_FLAGS: 112      #
 UPDATE_RATE: 20        # 10, 16, 20, 32, 50, 64
 ```
 
-| parameter    | type  | description                         | default |
+| Parameter    | Type  | Description                         | Default |
 |--------------|-------|-------------------------------------|---------|
 | DRIVE_MODE   | uint8 | Drive Mode Configuration, 3 for ROS | 3       |
 | CONFIG_FLAGS | uint8 | Hardware Config Bitmask             | 48      |
