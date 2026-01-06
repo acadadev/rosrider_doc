@@ -251,13 +251,13 @@ INA219_CAL: 8192
    tab3_content=tab3
    tab4_title="PID" 
    tab4_content=tab4
-   tab5_title="CASCADED" 
+   tab5_title="Cascaded" 
    tab5_content=tab5
    tab6_title="Feedforwards" 
    tab6_content=tab6
    tab7_title="Friction" 
    tab7_content=tab7
-   tab8_title="Trim Model" 
+   tab8_title="Trim" 
    tab8_content=tab8
    tab0_title="Filtering" 
    tab0_content=tab9
@@ -265,7 +265,7 @@ INA219_CAL: 8192
    tab10_content=tab10
    tab11_title="Features" 
    tab11_content=tab11
-   tab12_title="Synchronization" 
+   tab12_title="Synch" 
    tab12_content=tab12
    tab13_title="ROS" 
    tab13_content=tab13
