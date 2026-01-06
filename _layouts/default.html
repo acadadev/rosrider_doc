@@ -94,9 +94,24 @@
       </div>
     </div>
     <div class="layout-wrapper">
-        <nav class="sidebar"></nav>
+        <nav class="sidebar">
+          <h4 style="margin-top: 0; font-size: 1.1em; color: #999; text-transform: uppercase; letter-spacing: 1px;">Contents</h4>
+          <ul style="list-style: none; padding: 0; margin: 0;">
+              {% for item in site.data.navigation %}
+              <li style="margin-bottom: 8px;">
+                  <a href="{{ item.url }}" style="text-decoration: none; color: #333; font-weight: 500; display: block; padding: 5px 0;">
+                      {{ item.title }}
+                  </a>
+              </li>
+              {% endfor %}
+          </ul>
+        </nav>
         <main class="main-content markdown-body">
-           {{ content }}
+            {{ content }}
+            <hr style="margin-top: 50px;">
+            <p style="font-size: 0.9em; color: #777;">
+                Copyright © 2026, ACADA Robotics • <a href="https://acada.dev">https://acada.dev</a>
+            </p>
         </main>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.0/anchor.min.js" integrity="sha256-lZaRhKri35AyJSypXXs4o6OPFTbTmUoltBbDCbdzegg=" crossorigin="anonymous"></script>
