@@ -120,3 +120,38 @@ ROSRider aims to lower the cost barrier for building ROS based robots. Using com
     </div>
 </div>
 
+<div style="
+    background-color: #f8f9fa; /* Light gray background */
+    border-left: 6px solid #4CAF50;
+    color: #333333; /* Dark text for readability */
+    padding: 25px;
+    border-radius: 4px;
+    margin: 30px 0;
+    font-family: 'Ubuntu', sans-serif;
+">
+    <div style="font-size: 1.4em; font-weight: bold; color: #4CAF50; margin-bottom: 5px;">
+        > ROSRider aims to lower the cost barrier for building ROS based robots.
+    </div>
+    <div style="font-size: 1.1em; line-height: 1.5;">
+        "Using commodity parts, users can build robots that can run the Robot Operating System."
+    </div>
+</div>
+
+<div style="
+    background-color: #ffffff; /* Pure white background */
+    border-left: 6px solid #4CAF50;
+    color: #333333; /* Dark text */
+    padding: 25px;
+    border-radius: 4px;
+    margin: 30px 0;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08); /* Subtle shadow for depth */
+    font-family: 'Ubuntu', sans-serif;
+">
+    <div style="font-size: 1.4em; font-weight: bold; color: #4CAF50; margin-bottom: 5px;">
+        > ROSRider aims to lower the cost barrier for building ROS based robots.
+    </div>
+    <div style="font-size: 1.1em; line-height: 1.5;">
+        "Using commodity parts, users can build robots that can run the Robot Operating System."
+    </div>
+</div>
+
