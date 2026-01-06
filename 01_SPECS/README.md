@@ -23,16 +23,20 @@ description: "Hardware Specifications"
     </div>
 </div>
 
+***Features*** 
+
 | :---| :---|
-| ***Features*** | |
-| MCU | 32-bit ARM Cortex: TM4C123GH6PM |
-| Motor Drivers | Two channel up to 2.5 amps, with current measurement |
-| Hardware QEI | Can use any encoder gear motor, single or double phase |
-| Servo Control | Two channel standard servos |
-| Connections | Uses standard JST connectors, and commodity JST cables |
-| RTC | The integrated Real-Time Clock (RTC) enables precise timekeeping |
-| Firmware Update | Device firmware is updatable by end user over USB |
-| ***Power*** | |
+| ***MCU*** | 32-bit ARM Cortex: TM4C123GH6PM |
+| ***Motor Drivers*** | Two channel up to 2.5 amps, with current feedback |
+| ***Hardware QEI** | Can use any encoder gear motor, single or double phase |
+| ***Servo Control*** | Two channel standard servos |
+| ***Connections*** | Uses standard JST connectors, and commodity JST cables |
+| ***RTC*** | The integrated Real-Time Clock (RTC) enables precise timekeeping |
+| ***Firmware Update*** | Device firmware is updatable by end user over USB |
+
+***Power***
+
+| :---| :---|
 | Power Input | 6V to 15V wide input voltage |
 | Software Controllable Switch | MOSFET switch, reverse current protection |
 | Hibernation | Auto sleep, Device hibernates if not used certain time |
@@ -40,11 +44,17 @@ description: "Hardware Specifications"
 | Power Input Connector | XT30 or Klemens Type Connector |
 | Power Output | Software Controllable Auxiliary Power Output 5V, 400mA |
 | Monitoring | Measures and reports bus voltage, bus current, independent motor currents |
-| ***Communications*** | |
+
+***Communications***
+
+| :---| :---|
 | I2C | Dual QWIC ports, also available on header. Can be used for cascading with multiple units |
 | USB | CDC-USB Serial, 921600 Bauds |
 | Serial | Standard Serial Port, available as JST connector or header |
-| ***Software*** | |
+
+***Software***
+
+| :---| :---|
 | ROS Drivers | C++ Drivers for ROS2 Humble and ROS2 Jazzy |
 | Synchronization | Synchronizes with the host computer to ensure low-latency data transmission |
 
