@@ -121,14 +121,6 @@ CS_RIGHT_OFFSET: 0
 {% endcapture %}
 
 {% capture tab8 %}
-T88
-{% endcapture %}
-
-{% capture tab9 %}
-
-{% endcapture %}
-
-{% capture tab10 %}
 ```yaml
 # filtering
 VOLTAGE_FILTER: True
@@ -137,7 +129,27 @@ PID_FILTERED_OMEGA: True
 SCV_FILTERED_OMEGA: True
 CURRENT_OMEGA_FILTER: True
 ```
+{% endcapture %}
 
+{% capture tab9 %}
+```yaml
+# synchronization
+SYNC_KP: 256
+SYNC_KI: 4
+SYNC_LIMIT: 4096
+SYNC_INTERVAL: 8
+DT_I2C: 32
+DT_THRESHOLD: 2
+```
+{% endcapture %}
+
+{% capture tab10 %}
+```yaml
+# filter configs
+OMEGA_FILTER_TYPE: 1
+CURRENT_FILTER_TYPE: 3
+OUTPUT_FILTER_TYPE: 0
+```
 {% endcapture %}
 
 {% capture tab11 %}
