@@ -65,34 +65,31 @@ To further enhance the integration of ROSRider with open-source robotics, we hav
 
 __Supported Motors__
 
-ROSRider can drive a wide range of encoder gear motors, from simple DC motors to high-precision gear motors commonly found in robotic vacuum cleaners. It supports both single-phase and dual-phase encoders, with parameters such as encoder PPR and gear reduction ratio configurable through YAML files. The dual-channel drivers, delivering 1A continuous and 2.8A peak current, provide ample power for various robotic applications. Additionally, users can fine-tune motor performance by adjusting parameters like forward and backward deadzones, PWM frequency (up to 18kHz for reduced noise), and motor driver configurations (brake mode, low-side and high-side decay).
+ROSRider can drive a wide range of encoder gear motors, from simple DC motors to high-precision gear motors commonly found in robotic vacuum cleaners. It supports both single-phase and dual-phase encoders, with parameters such as encoder PPR and gear reduction ratio configurable through YAML files. The dual-channel drivers, delivering 1A continuous and 2.8A peak current, provide ample power for various robotic applications.
 
 <div style="display: flex; justify-content: space-around; margin: 25px 0;">
   
   <figure style="width: 25%; margin: 0; text-align: center;">
     <img src="images/metal_gear_motor_a.png" alt="Metal Gear Motor" style="width: 100%; border: 1px solid #ccc; border-radius: 5px; box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);">
-    <figcaption style="font-size: 0.85em; margin-top: 10px; font-style: italic; color: #666;">Fig 1. Metal Gear Motor</figcaption>
+    <figcaption style="font-size: 0.85em; margin-top: 10px; font-style: italic; color: #666;">Fig 8. Metal Gear Motor</figcaption>
   </figure>
 
   <figure style="width: 25%; margin: 0; text-align: center;">
     <img src="images/plastic_gear_motor.png" alt="Plastic Gear Motor" style="width: 100%; border: 1px solid #ccc; border-radius: 5px; box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);">
-    <figcaption style="font-size: 0.85em; margin-top: 10px; font-style: italic; color: #666;">Fig 2. Plastic Gear Motor (DG01D-E)</figcaption>
+    <figcaption style="font-size: 0.85em; margin-top: 10px; font-style: italic; color: #666;">Fig 9. Plastic Gear Motor (DG01D-E)</figcaption>
   </figure>
 
   <figure style="width: 25%; margin: 0; text-align: center;">
     <img src="images/vacuum_robot_motor.png" alt="Vacuum cleaner robot spare motor" style="width: 100%; border: 1px solid #ccc; border-radius: 5px; box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);">
-    <figcaption style="font-size: 0.85em; margin-top: 10px; font-style: italic; color: #666;">Fig 3. Vacuum Cleaner Spare Part</figcaption>
+    <figcaption style="font-size: 0.85em; margin-top: 10px; font-style: italic; color: #666;">Fig 10. Vacuum Cleaner Spare Part</figcaption>
   </figure>
 
 </div>
 
-__Future-Proof Design__
+__Firmware Update__
 
-To ensure long-term usability and adaptability, the ROSRider card supports firmware updates via USB. This allows for continuous improvement and the addition of new features, without requiring specialized programming tools or hardware modifications.
-
-To further expand its compatibility, we are exploring the possibility of a USB firmware version based on user demand.
-
-It includes an SPI port for potential integration of additional sensors and actuators as technology advances and user needs evolve.
+To ensure long-term usability and adaptability, the ROSRider card supports firmware updates via USB.
+This allows for continuous improvement and the addition of new features, without requiring specialized programming tools or hardware modifications.
 
 - [Introduction](01_INTRO/README.md)
 - [Connections and Pinmaps](02_PINMAP/README.md)
@@ -104,10 +101,4 @@ It includes an SPI port for potential integration of additional sensors and actu
 - [Simulations](09_SIMULATIONS/README.md)
 - [Troubleshooting](10_DEBUG/README.md)
 
-
-
 ROSRider aims to lower the cost barrier for building ROS based robots. Using commodity parts, users can build robots that can run the Robot Operating System.
-
-[![ROSRider Control Card](/images/ROSRider4D.png)](https://acada.dev/products)
-
-ROSRider has a bootloader system where the user can upgrade firmware over USB, without a specialized programmer.
