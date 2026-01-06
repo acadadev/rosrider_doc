@@ -34,6 +34,7 @@ description: "Hardware Specifications"
 | ***RTC*** | The integrated Real-Time Clock enables precise timekeeping |
 | ***Firmware Update*** | Device firmware is updatable by end user over USB |
 | ***Enhanced Diagnostics*** | The system publishes detailed diagnostic information, including battery voltage, current consumption, and motor current feedback |
+| ***Synchronization***| Synchronizes with the host computer to ensure low-latency data transmission |
 
 ROSRider utilizes standard JST connectors for motor and I2C connections, allowing for easy assembly and customization. Additionally, two QWIC connectors provide convenient expansion options for integrating various sensors and modules.
 
@@ -63,26 +64,10 @@ Built-in current monitoring and a hardware-resettable fuse safeguard the motors 
 
 | :---| :---|
 | ***ROS Drivers*** | C++ Drivers for ROS2 Humble and ROS2 Jazzy |
-| ***Synchronization***| Synchronizes with the host computer to ensure low-latency data transmission |
-
-
-__Software-Switchable Auxiliary Power Supply__
-
-
-__Remote PID Tuning__
-ROSRider supports remote PID tuning, allowing users to adjust control parameters dynamically without manual intervention. By leveraging ROS parameter server, users can fine-tune the PID gains to optimize robot performance, such as motor control and sensor feedback.
-
-
-
 
 __Supported Platforms__
-ROSRider is primarily designed for Raspberry Pi and Jetson platforms, leveraging their powerful processing capabilities and compact form factors. However, the card is compatible with any Linux-based system equipped with an I2C port.
 
-<div style="display: flex; justify-content: space-around; margin: 25px 0;">
-  <img src="../images/rpi.png" alt="" style="width: 30%; border: 1px solid #ccc; border-radius: 5px; box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);">
-  <img src="../images/jetson_nano.png" alt="Jetson Nano" style="width: 30%; border: 1px solid #ccc; border-radius: 5px; box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);">
-  <img src="../images/jetson_agx.png" alt="Jetson AGX" style="width: 30%; border: 1px solid #ccc; border-radius: 5px; box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);">
-</div>
+ROSRider is primarily designed for Raspberry Pi and Jetson platforms, leveraging their powerful processing capabilities and compact form factors. However, the card is compatible with any Linux-based system equipped with an I2C port.
 
 <div style="display: flex; justify-content: space-around; margin: 25px 0;">
   
