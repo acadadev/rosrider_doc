@@ -16,29 +16,29 @@ The following YAML file defines the configuration parameters for the ROSRider no
 
 {% capture tab1 %}
 ### DRIVER config
-DRIVE_MODE: 3
-CONFIG_FLAGS: 112
-UPDATE_RATE: 20 
+DRIVE_MODE: 3  
+CONFIG_FLAGS: 112  
+UPDATE_RATE: 20  
 {% endcapture %}
 
 {% capture tab2 %}
-# PWM config
-PWM_DIV: 16
-PWM_SCALE: 256
-PWM_FRQ: 1000
+### PWM config  
+PWM_DIV: 16  
+PWM_SCALE: 256  
+PWM_FRQ: 1000  
 {% endcapture %}
 
 {% capture tab3 %}
-# MOTOR config
-GEAR_RATIO: 65.0
-ENCODER_PPR: 48
-WHEEL_DIA: 0.0685
-BASE_WIDTH: 0.174
-MAX_RPM: 160.0
+### MOTOR config  
+GEAR_RATIO: 65.0  
+ENCODER_PPR: 48  
+WHEEL_DIA: 0.0685  
+BASE_WIDTH: 0.174  
+MAX_RPM: 160.0  
 {% endcapture %}
 
 {% capture tab4 %}
-# PID config
+### PID config  
 UPPER_LIMIT: 240
 LEFT_KP: 8.0
 LEFT_KI: 6.0
@@ -48,15 +48,15 @@ RIGHT_KI: 6.0
 RIGHT_KD: 0.0
 TANH_DIV: 2.0
 SIGM_DIV: 10.0
-# Anti windup
+### Anti windup
 K_FB_WINDUP: 0.5
-# Feed forwards
+### Feed forwards
 K_FF_VEL: 0.12
 K_FF_ACCEL: 0.08
 {% endcapture %}
 
 {% capture tab5 %}
-# CASCADED loop
+### CASCADED loop
 INNER_LIMIT: 240
 CURRENT_KP: 8.0
 CURRENT_KI: 6.0
@@ -65,33 +65,32 @@ CURRENT_MULTIPLIER_RIGHT: 4.8
 CURRENT_OMEGA_K_LEFT: -2.4
 CURRENT_OMEGA_K_RIGHT: -2.4
 R_ARM: 2.0
-{% endcapture %}
-
-# TORQUE constant
+### TORQUE constant
 LEFT_KT: 0.016
 LEFT_KT_W: -0.008
 RIGHT_KT: 0.016
 RIGHT_KT_W: -0.008
+{% endcapture %}
 
 {% capture tab6 %}
 T6
 {% endcapture %}
 
 {% capture tab7 %}
-# stribeck friction model
-STATIC_KICK: 0.8
-COULOMB_RUN: 0.2
-STRIBECK_WIDTH: 2.1
-VISCOUS_FRICTION: 0.064
-VISCOUS_FRICTION_LIMIT: 1.2
-EB_FF_LIMIT: 12.0
-SCV_OMEGA_THRESHOLD: 0.05
-SCV_LATCH_THRESHOLD: 1.0
-# dead zones
-LEFT_FORWARD_DEADZONE: 12
-LEFT_REVERSE_DEADZONE: 12
-RIGHT_FORWARD_DEADZONE: 12
-RIGHT_REVERSE_DEADZONE: 12
+# stribeck friction model  
+STATIC_KICK: 0.8  
+COULOMB_RUN: 0.2  
+STRIBECK_WIDTH: 2.1  
+VISCOUS_FRICTION: 0.064  
+VISCOUS_FRICTION_LIMIT: 1.2  
+EB_FF_LIMIT: 12.0  
+SCV_OMEGA_THRESHOLD: 0.05  
+SCV_LATCH_THRESHOLD: 1.0  
+# dead zones  
+LEFT_FORWARD_DEADZONE: 12  
+LEFT_REVERSE_DEADZONE: 12  
+RIGHT_FORWARD_DEADZONE: 12  
+RIGHT_REVERSE_DEADZONE: 12  
 {% endcapture %}
 
 {% capture tab8 %}
