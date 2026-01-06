@@ -16,14 +16,14 @@ The following YAML file defines the configuration parameters for the ROSRider no
 
 {% capture tab1 %}
 ```yaml
-### DRIVER config
+# DRIVER config
 DRIVE_MODE: 3
 CONFIG_FLAGS: 112
 UPDATE_RATE: 20
 ```
 
 ```yaml
-### PWM config  
+# PWM config  
 PWM_DIV: 16
 PWM_SCALE: 256
 PWM_FRQ: 1000
@@ -32,7 +32,7 @@ PWM_FRQ: 1000
 
 {% capture tab2 %}
 ```yaml
-### MOTOR config  
+# MOTOR config  
 GEAR_RATIO: 65.0
 ENCODER_PPR: 48
 WHEEL_DIA: 0.0685
@@ -43,7 +43,7 @@ MAX_RPM: 160.0
 
 {% capture tab3 %}
 ```yaml
-### PID config  
+# PID config  
 UPPER_LIMIT: 240
 LEFT_KP: 8.0
 LEFT_KI: 6.0
@@ -56,12 +56,12 @@ SIGM_DIV: 10.0
 ```
 
 ```yaml
-### Anti windup
+# Anti windup
 K_FB_WINDUP: 0.5
 ```
 
 ```yaml
-### Feed forwards
+# Feed forwards
 K_FF_VEL: 0.12
 K_FF_ACCEL: 0.08
 ```
@@ -69,7 +69,7 @@ K_FF_ACCEL: 0.08
 
 {% capture tab4 %}
 ```yaml
-### CASCADED loop
+# CASCADED loop
 INNER_LIMIT: 240
 CURRENT_KP: 8.0
 CURRENT_KI: 6.0
@@ -81,7 +81,7 @@ R_ARM: 2.0
 ```
 
 ```yaml
-### TORQUE constant
+# TORQUE constant
 LEFT_KT: 0.016
 LEFT_KT_W: -0.008
 RIGHT_KT: 0.016
@@ -91,7 +91,7 @@ RIGHT_KT_W: -0.008
 
 {% capture tab5 %}
 ```yaml
-# stribeck friction model  
+# STRIBECK friction model  
 STATIC_KICK: 0.8  
 COULOMB_RUN: 0.2  
 STRIBECK_WIDTH: 2.1  
@@ -103,7 +103,7 @@ SCV_LATCH_THRESHOLD: 1.0
 ```
 
 ```yaml
-# dead zones  
+# DEAD ZONES
 LEFT_FORWARD_DEADZONE: 12  
 LEFT_REVERSE_DEADZONE: 12  
 RIGHT_FORWARD_DEADZONE: 12  
@@ -113,7 +113,7 @@ RIGHT_REVERSE_DEADZONE: 12
 
 {% capture tab6 %}
 ```yaml
-# trim model
+# TRIM MODEL
 TRIM_GAIN: 1.0
 TRIM_MOTOR_K: 1.0
 TRIM_CONSTANT: 0.0
@@ -122,7 +122,7 @@ TRIM_CONSTANT: 0.0
 
 {% capture tab7 %}
 ```yaml
-# electrical limits
+# ELECTRICAL LIMITS
 MAIN_AMP_LIMIT: 3.6
 BAT_VOLTS_HIGH: 15.0
 BAT_VOLTS_LOW: 6.0
@@ -132,7 +132,7 @@ INA219_CAL: 8192
 ```
 
 ```yaml
-# adc bias calibration
+# ADC BIAS CALIBRATION
 CS_LEFT_OFFSET: 0
 CS_RIGHT_OFFSET: 0
 ```
@@ -140,14 +140,14 @@ CS_RIGHT_OFFSET: 0
 
 {% capture tab8 %}
 ```yaml
-# filter configs
+# FILTER CONFIGS
 OMEGA_FILTER_TYPE: 1
 CURRENT_FILTER_TYPE: 3
 OUTPUT_FILTER_TYPE: 0
 ```
 
 ```yaml
-# filter routing
+# FILTER USE
 VOLTAGE_FILTER: True
 BEMF_FILTERED_OMEGA: True
 PID_FILTERED_OMEGA: True
@@ -158,7 +158,7 @@ CURRENT_OMEGA_FILTER: True
 
 {% capture tab9 %}
 ```yaml
-# synchronization
+# Synchronization
 SYNC_KP: 256
 SYNC_KI: 4
 SYNC_LIMIT: 4096
@@ -169,7 +169,12 @@ DT_THRESHOLD: 2
 {% endcapture %}
 
 {% capture tab10 %}
-
+```yaml
+# ADC
+ADC_SYNC: True
+ADC_MULTIPHASE: True
+ADC_BIPHASE: False
+```
 {% endcapture %}
 
 {% capture tab11 %}
@@ -237,7 +242,7 @@ MAX_IDLE_SECONDS: 1800
    tab8_content=tab8
    tab9_title="Synchronization" 
    tab9_content=tab9
-   tab10_title="Filters" 
+   tab10_title="ADC" 
    tab10_content=tab10
    tab11_title="Sync/Exp" 
    tab11_content=tab11
