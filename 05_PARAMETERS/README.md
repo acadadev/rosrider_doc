@@ -126,11 +126,6 @@ LEFT_AMP_LIMIT: 2.4
 RIGHT_AMP_LIMIT: 2.4
 INA219_CAL: 8192
 ```
-```yaml
-# ADC BIAS CALIBRATION
-CS_LEFT_OFFSET: 0
-CS_RIGHT_OFFSET: 0
-```
 {% endcapture %}
 
 {% capture tab8 %}
@@ -168,6 +163,11 @@ DT_THRESHOLD: 2
 ADC_SYNC: True
 ADC_MULTIPHASE: True
 ADC_BIPHASE: False
+```
+```yaml
+# ADC BIAS CALIBRATION
+CS_LEFT_OFFSET: 0
+CS_RIGHT_OFFSET: 0
 ```
 {% endcapture %}
 
