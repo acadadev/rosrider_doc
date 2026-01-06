@@ -30,61 +30,48 @@ description: "Hardware Specifications"
 | Hardware QEI | Can use any encoder gear motor, single or double phase |
 | Servo Control | Two channel standard servos |
 | Connections | Uses standard JST connectors, and commodity JST cables |
-| RTC | On board RTC, wake on alarm possible |
+| RTC | The integrated Real-Time Clock (RTC) enables precise timekeeping |
 | Firmware Update | Device firmware is updatable by end user over USB |
 | ***Power*** | |
 | Power Input | 6V to 15V wide input voltage |
 | Software Controllable Switch | MOSFET switch, reverse current protection |
 | Hibernation | Auto sleep, Device hibernates if not used certain time |
-| Current Protection | PTC Resetable Fuse, and also software current protection |
+| Current Protection | PTC Resettable Fuse, and also software current protection |
 | Power Input Connector | XT30 or Klemens Type Connector |
-| Power Output | Software Controllable Auxillary Power Output 5V, 400mA |
+| Power Output | Software Controllable Auxiliary Power Output 5V, 400mA |
 | Monitoring | Measures and reports bus voltage, bus current, independent motor currents |
 | ***Communications*** | |
 | I2C | Dual QWIC ports, also available on header. Can be used for cascading with multiple units |
 | USB | CDC-USB Serial, 921600 Bauds |
 | Serial | Standard Serial Port, available as JST connector or header |
 | ***Software*** | |
-| ROS2 Drivers | C++ Drivers for ROS2 Humble and ROS2 Jazzy |
-| Parametric | ROSRider is configurable using yaml files |
-| Innovation | Autosyncs with host to generate low latency data |
+| ROS Drivers | C++ Drivers for ROS2 Humble and ROS2 Jazzy |
+| Synchronization | Synchronizes with the host computer to ensure low-latency data transmission |
 
 
 
 __Servo Control__
-
 ROSRider can control two standard servos, enabling their integration into ROS-based robotic systems for applications like robotic arms, grippers, or camera gimbals.
 
-__Software-Switchable Auxiliary Power Supply__ 
-
+__Software-Switchable Auxiliary Power Supply__
 A 5V power supply can be enabled or disabled via software, providing flexibility for powering external sensors and devices.
 
-__Modular Design__ 
-
+__Modular Design__
 ROSRider utilizes standard JST connectors for motor and I2C connections, allowing for easy assembly and customization. Additionally, two QWIC connectors provide convenient expansion options for integrating various sensors and modules.
 
-__Robust Protection__ 
-
+__Robust Protection__
 Built-in current monitoring and a hardware-resettable fuse safeguard the motors and battery. Software-based current limiting and remote threshold configuration enhance safety and flexibility.
 
-__Timekeeping__ 
-
-The integrated Real-Time Clock (RTC) enables precise timekeeping and scheduled wake-up events, facilitating autonomous operation and data logging.
-
-__Enhanced Diagnostics__ 
-
+__Enhanced Diagnostics__
 The system publishes detailed diagnostic information, including battery voltage, current consumption, and motor current feedback, to aid in remote debugging and system monitoring.
 
 __Remote PID Tuning__
-
 ROSRider supports remote PID tuning, allowing users to adjust control parameters dynamically without manual intervention. By leveraging ROS parameter server, users can fine-tune the PID gains to optimize robot performance, such as motor control and sensor feedback.
 
-__Customizable Input__
 
-The button input pins on ROSRider are customizable, allowing users to connect external buttons for reset, wake-up, and user-defined functions.
+
 
 __Supported Platforms__
-
 ROSRider is primarily designed for Raspberry Pi and Jetson platforms, leveraging their powerful processing capabilities and compact form factors. However, the card is compatible with any Linux-based system equipped with an I2C port.
 
 <div style="display: flex; justify-content: space-around; margin: 25px 0;">
