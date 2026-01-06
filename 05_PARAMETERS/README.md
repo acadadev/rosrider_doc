@@ -50,8 +50,14 @@ RIGHT_KI: 6.0
 RIGHT_KD: 0.0
 TANH_DIV: 2.0
 SIGM_DIV: 10.0
+```
+
+```yaml
 ### Anti windup
 K_FB_WINDUP: 0.5
+```
+
+```yaml
 ### Feed forwards
 K_FF_VEL: 0.12
 K_FF_ACCEL: 0.08
@@ -69,6 +75,9 @@ CURRENT_MULTIPLIER_RIGHT: 4.8
 CURRENT_OMEGA_K_LEFT: -2.4
 CURRENT_OMEGA_K_RIGHT: -2.4
 R_ARM: 2.0
+```
+
+```yaml
 ### TORQUE constant
 LEFT_KT: 0.016
 LEFT_KT_W: -0.008
