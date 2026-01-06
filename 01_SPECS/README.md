@@ -16,10 +16,10 @@ description: "Hardware Specifications"
     font-family: 'Ubuntu', sans-serif;
 ">
     <div style="font-size: 1.4em; font-weight: bold; color: #4CAF50; margin-bottom: 5px;">
-        > ROSRider aims to lower the cost barrier for building ROS based robots.
+        > Turn Commodity Parts into Intelligent Robots.
     </div>
     <div style="font-size: 1.1em; line-height: 1.5;">
-        "Using commodity parts, users can build robots that can run the Robot Operating System."
+        "The affordable, robust, and ROS2-native control board designed to bring your Raspberry Pi and Jetson projects to life."
     </div>
 </div>
 
