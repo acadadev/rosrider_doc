@@ -28,6 +28,9 @@ UPDATE_RATE: 20        # 10, 16, 20, 32, 50, 64
 | CONFIG_FLAGS | uint8 | Hardware Config Bitmask             | 48      |
 | UPDATE_RATE  | uint8 | Outer PID Loop Update Rate          | 20      |
 
+{% endcapture %}
+
+{% capture tab2 %}
 ```yaml
 # PWM config  
 PWM_DIV: 16  
@@ -40,10 +43,9 @@ PWM_FRQ: 1000
 | PWM_DIV   | uint8  | Drive Mode Configuration, 3 for ROS | 64      |
 | PWM_SCALE | uint16 | Hardware Config Bitmask             | 256     |
 | PWM_FRQ   | uint16 | Outer PID Loop Update Rate          | 50      |
-
 {% endcapture %}
 
-{% capture tab2 %}
+{% capture tab3 %}
 ```yaml
 # MOTOR config  
 GEAR_RATIO: 65.0  
@@ -54,7 +56,7 @@ MAX_RPM: 160.0
 ```
 {% endcapture %}
 
-{% capture tab3 %}
+{% capture tab4 %}
 ```yaml
 # PID config  
 UPPER_LIMIT: 240  
@@ -78,7 +80,7 @@ K_FF_ACCEL: 0.08
 ```
 {% endcapture %}
 
-{% capture tab4 %}
+{% capture tab5 %}
 ```yaml
 # CASCADED loop
 INNER_LIMIT: 240  
@@ -99,7 +101,7 @@ RIGHT_KT_W: -0.008
 ```
 {% endcapture %}
 
-{% capture tab5 %}
+{% capture tab6 %}
 ```yaml
 # enable SCV, if not deadzone values will be used
 OUTER_SCV: True
@@ -124,7 +126,7 @@ RIGHT_REVERSE_DEADZONE: 12
 ```
 {% endcapture %}
 
-{% capture tab6 %}
+{% capture tab7 %}
 ```yaml
 # TRIM MODEL
 TRIM_GAIN: 1.0  
@@ -133,7 +135,7 @@ TRIM_CONSTANT: 0.0
 ```
 {% endcapture %}
 
-{% capture tab7 %}
+{% capture tab8 %}
 ```yaml
 # FILTER CONFIGS
 OMEGA_FILTER_TYPE: 1  
@@ -150,7 +152,7 @@ CURRENT_OMEGA_FILTER: True
 ```
 {% endcapture %}
 
-{% capture tab8 %}
+{% capture tab9 %}
 ```yaml
 # ADC
 ADC_SYNC: True  
@@ -164,7 +166,7 @@ CS_RIGHT_OFFSET: 0
 ```
 {% endcapture %}
 
-{% capture tab9 %}
+{% capture tab10 %}
 ```yaml
 # features
 AUTO_SYNC: True  
@@ -174,7 +176,7 @@ CASCADED: True
 ```
 {% endcapture %}
 
-{% capture tab10 %}
+{% capture tab11 %}
 ```yaml
 # Synchronization
 SYNC_KP: 256  
@@ -186,7 +188,7 @@ DT_THRESHOLD: 2
 ```
 {% endcapture %}
 
-{% capture tab11 %}
+{% capture tab12 %}
 ```yaml
 # experimental
 CROSS_COUPLED_CONTROL: True  
@@ -199,7 +201,7 @@ CROSS_K_RIGHT: 1.0
 ```
 {% endcapture %}
 
-{% capture tab12 %}
+{% capture tab13 %}
 ```yaml
 # system parameters
 I2C_ENABLED: True  
@@ -230,30 +232,32 @@ INA219_CAL: 8192
 {% endcapture %}
 
 {% include tabs.html 
-   tab1_title="Driver & PWM" 
+   tab1_title="Driver" 
    tab1_content=tab1
-   tab2_title="Motor" 
+   tab2_title="PWM" 
    tab2_content=tab2
-   tab3_title="PID" 
+   tab3_title="Motor" 
    tab3_content=tab3
-   tab4_title="CASCADED" 
+   tab4_title="PID" 
    tab4_content=tab4
-   tab5_title="Friction / Deadzone" 
+   tab5_title="CASCADED" 
    tab5_content=tab5
-   tab6_title="Trim Model" 
+   tab6_title="Friction / Deadzone" 
    tab6_content=tab6
-   tab7_title="Filtering" 
+   tab7_title="Trim Model" 
    tab7_content=tab7
-   tab8_title="ADC" 
+   tab8_title="Filtering" 
    tab8_content=tab8
-   tab9_title="Features" 
+   tab9_title="ADC" 
    tab9_content=tab9
-   tab10_title="Synchronization" 
+   tab10_title="Features" 
    tab10_content=tab10
-   tab11_title="Experimental" 
+   tab11_title="Synchronization" 
    tab11_content=tab11
-   tab12_title="System" 
-   tab12_content=tab12 
+   tab12_title="Experimental" 
+   tab12_content=tab12
+   tab13_title="System" 
+   tab13_content=tab13 
 %}
 
 ```yaml

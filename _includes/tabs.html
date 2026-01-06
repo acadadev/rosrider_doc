@@ -12,6 +12,7 @@
     {% if include.tab10_title %}<button class="tab-btn" onclick="openTab(event, 'tab10')">{{ include.tab10_title }}</button>{% endif %}
     {% if include.tab11_title %}<button class="tab-btn" onclick="openTab(event, 'tab11')">{{ include.tab11_title }}</button>{% endif %}
     {% if include.tab12_title %}<button class="tab-btn" onclick="openTab(event, 'tab12')">{{ include.tab12_title }}</button>{% endif %}
+    {% if include.tab13_title %}<button class="tab-btn" onclick="openTab(event, 'tab13')">{{ include.tab13_title }}</button>{% endif %}
   </div>
 
   <div class="tab-content" data-tab-id="tab1" style="display: block;">
@@ -30,4 +31,5 @@
   {% if include.tab10_title %}<div class="tab-content" data-tab-id="tab10">{{ include.tab10_content | markdownify }}</div>{% endif %}
   {% if include.tab11_title %}<div class="tab-content" data-tab-id="tab11">{{ include.tab11_content | markdownify }}</div>{% endif %}
   {% if include.tab12_title %}<div class="tab-content" data-tab-id="tab12">{{ include.tab12_content | markdownify }}</div>{% endif %}
+  {% if include.tab13_title %}<div class="tab-content" data-tab-id="tab13">{{ include.tab13_content | markdownify }}</div>{% endif %}
 </div>
