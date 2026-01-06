@@ -6,17 +6,17 @@ This approach encourages creativity, reduces costs, and promotes the reuse of ex
 
 <div style="display: flex; justify-content: space-around; margin: 25px 0;">
   
-  <figure style="width: 30%; margin: 0; text-align: center;">
+  <figure style="width: 25%; margin: 0; text-align: center;">
     <img src="images/sorcerer_rosrider.png" alt="Sorcerer with ROSRider" style="width: 100%; border: 1px solid #ccc; border-radius: 5px; box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);">
     <figcaption style="font-size: 0.85em; margin-top: 10px; font-style: italic; color: #666;">Fig 1. Minimal chassis designed for lane-following tasks using image processing</figcaption>
   </figure>
 
-  <figure style="width: 30%; margin: 0; text-align: center;">
+  <figure style="width: 25%; margin: 0; text-align: center;">
     <img src="images/caretta_top_sq.jpg" alt="Caretta with ROS2RPI" style="width: 100%; border: 1px solid #ccc; border-radius: 5px; box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);">
     <figcaption style="font-size: 0.85em; margin-top: 10px; font-style: italic; color: #666;">Fig 2. Chassis with LIDAR designed for  SLAM / Navigation</figcaption>
   </figure>
 
-  <figure style="width: 30%; margin: 0; text-align: center;">
+  <figure style="width: 25%; margin: 0; text-align: center;">
     <img src="images/ROSRider4D_sq.png" alt="ROSRider Control Card" style="width: 100%; border: 1px solid #ccc; border-radius: 5px; box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);">
     <figcaption style="font-size: 0.85em; margin-top: 10px; font-style: italic; color: #666;">Fig 3. ROSRider Control Card</figcaption>
   </figure>
@@ -32,7 +32,7 @@ The ROS2RPI card offers flexible serial port routing, enabling remote access to 
 This feature prevents boot conflicts caused by LiDAR serial output during system startup and allows for remote control of the LiDAR, extending its operational life and simplifying maintenance procedures.
 
 <div style="display: flex; justify-content: space-around; margin: 25px 0;">
-  <figure style="width: 30%; margin: 0; text-align: center;">
+  <figure style="width: 50%; margin: 0; text-align: center;">
     <img src="images/odometry-house-sm.gif" alt="Odometry Plot" style="width: 100%; border: 1px solid #ccc; border-radius: 5px; box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);">
     <figcaption style="font-size: 0.85em; margin-top: 10px; font-style: italic; color: #666;">Fig 4. Odometry and LIDAR data visualization</figcaption>
   </figure>
@@ -42,17 +42,17 @@ To further enhance the integration of ROSRider with open-source robotics, we hav
 
 <div style="display: flex; justify-content: space-around; margin: 25px 0;">
   
-  <figure style="width: 20%; margin: 0; text-align: center;">
+  <figure style="width: 25%; margin: 0; text-align: center;">
     <img src="images/gazebo_caretta.png" alt="Gazebo CARETTA" style="width: 100%; border: 1px solid #ccc; border-radius: 5px; box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);">
     <figcaption style="font-size: 0.85em; margin-top: 10px; font-style: italic; color: #666;">Fig 1. Minimal chassis designed for lane-following tasks using image processing</figcaption>
   </figure>
 
-  <figure style="width: 20%; margin: 0; text-align: center;">
+  <figure style="width: 25%; margin: 0; text-align: center;">
     <img src="images/gazebo_sorcerer.png" alt="Gazebo SORCERER" style="width: 100%; border: 1px solid #ccc; border-radius: 5px; box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);">
     <figcaption style="font-size: 0.85em; margin-top: 10px; font-style: italic; color: #666;">Fig 2. Chassis with LIDAR designed for  SLAM / Navigation</figcaption>
   </figure>
 
-  <figure style="width: 20%; margin: 0; text-align: center;">
+  <figure style="width: 25%; margin: 0; text-align: center;">
     <img src="images/rviz_cartographer.png" alt="Cartographer RVIZ" style="width: 100%; border: 1px solid #ccc; border-radius: 5px; box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);">
     <figcaption style="font-size: 0.85em; margin-top: 10px; font-style: italic; color: #666;">Fig 3. ROSRider Control Card</figcaption>
   </figure>
