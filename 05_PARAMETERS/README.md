@@ -15,20 +15,22 @@ The following YAML file defines the configuration parameters for the ROSRider no
 
 
 {% capture tab1 %}
+### DRIVER config
 ```yaml
 ### DRIVER config
 DRIVE_MODE: 3
 CONFIG_FLAGS: 112
 UPDATE_RATE: 20
+### PWM config  
+PWM_DIV: 16
+PWM_SCALE: 256
+PWM_FRQ: 1000
 ```
 {% endcapture %}
 
 {% capture tab2 %}
 ```yaml
-### PWM config  
-PWM_DIV: 16
-PWM_SCALE: 256
-PWM_FRQ: 1000
+
 ```
 {% endcapture %}
 
