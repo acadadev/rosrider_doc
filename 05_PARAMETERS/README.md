@@ -113,105 +113,105 @@ RIGHT_REVERSE_DEADZONE: 12
 {% capture tab6 %}
 ```yaml
 # TRIM MODEL
-TRIM_GAIN: 1.0
-TRIM_MOTOR_K: 1.0
-TRIM_CONSTANT: 0.0
+TRIM_GAIN: 1.0  
+TRIM_MOTOR_K: 1.0  
+TRIM_CONSTANT: 0.0  
 ```
 {% endcapture %}
 
 {% capture tab7 %}
 ```yaml
 # FILTER CONFIGS
-OMEGA_FILTER_TYPE: 1
-CURRENT_FILTER_TYPE: 3
-OUTPUT_FILTER_TYPE: 0
+OMEGA_FILTER_TYPE: 1  
+CURRENT_FILTER_TYPE: 3  
+OUTPUT_FILTER_TYPE: 0  
 ```
 ```yaml
 # FILTER USE
-VOLTAGE_FILTER: True
-BEMF_FILTERED_OMEGA: True
-PID_FILTERED_OMEGA: True
-SCV_FILTERED_OMEGA: True
-CURRENT_OMEGA_FILTER: True
+VOLTAGE_FILTER: True  
+BEMF_FILTERED_OMEGA: True  
+PID_FILTERED_OMEGA: True  
+SCV_FILTERED_OMEGA: True  
+CURRENT_OMEGA_FILTER: True  
 ```
 {% endcapture %}
 
 {% capture tab8 %}
 ```yaml
 # ADC
-ADC_SYNC: True
-ADC_MULTIPHASE: True
-ADC_BIPHASE: False
+ADC_SYNC: True  
+ADC_MULTIPHASE: True  
+ADC_BIPHASE: False  
 ```
 ```yaml
 # ADC BIAS CALIBRATION
-CS_LEFT_OFFSET: 0
-CS_RIGHT_OFFSET: 0
+CS_LEFT_OFFSET: 0  
+CS_RIGHT_OFFSET: 0  
 ```
 {% endcapture %}
 
 {% capture tab9 %}
 ```yaml
 # features
-AUTO_SYNC: True
-AUTO_BIAS: True
-AUTO_BRAKE: False
-CASCADED: True
+AUTO_SYNC: True  
+AUTO_BIAS: True  
+AUTO_BRAKE: False  
+CASCADED: True  
 ```
 {% endcapture %}
 
 {% capture tab10 %}
 ```yaml
 # Synchronization
-SYNC_KP: 256
-SYNC_KI: 4
-SYNC_LIMIT: 4096
-SYNC_INTERVAL: 8
-DT_I2C: 32
-DT_THRESHOLD: 2
+SYNC_KP: 256  
+SYNC_KI: 4  
+SYNC_LIMIT: 4096  
+SYNC_INTERVAL: 8  
+DT_I2C: 32  
+DT_THRESHOLD: 2  
 ```
 {% endcapture %}
 
 {% capture tab11 %}
 ```yaml
 # experimental
-CROSS_COUPLED_CONTROL: True
+CROSS_COUPLED_CONTROL: True  
 ```
 ```yaml
 # experimental
-CROSS_KP: 4.0
-CROSS_K_LEFT: 1.0
-CROSS_K_RIGHT: 1.0
+CROSS_KP: 4.0  
+CROSS_K_LEFT: 1.0  
+CROSS_K_RIGHT: 1.0  
 ```
 {% endcapture %}
 
 {% capture tab12 %}
 ```yaml
 # system parameters
-I2C_ENABLED: True
-ODOM_FRAME_ID: 'odom'
-BASE_FRAME_ID: 'base_footprint'
-BROADCAST_TF2: True
-PUB_ODOMETRY: True
-PUB_JOINTS: True
-PUB_DIAGNOSTICS: True
+I2C_ENABLED: True  
+ODOM_FRAME_ID: 'odom'  
+BASE_FRAME_ID: 'base_footprint'  
+BROADCAST_TF2: True  
+PUB_ODOMETRY: True  
+PUB_JOINTS: True  
+PUB_DIAGNOSTICS: True  
 ROS2RPI_CONFIG: 0x33 # 0x00 # 0x0F # 0x33
-I2C_ADDRESS: 0x3c
-DEBUG: False
-RTC_TRIM: 0x7FFF
-ALLOWED_SKIP: 3
-MONITOR_RATE: 100
-MAX_IDLE_SECONDS: 1800
-CMD_VEL_TOPIC: 'cmd_vel_nav'
+I2C_ADDRESS: 0x3c  
+DEBUG: False  
+RTC_TRIM: 0x7FFF  
+ALLOWED_SKIP: 3  
+MONITOR_RATE: 100  
+MAX_IDLE_SECONDS: 1800  
+CMD_VEL_TOPIC: 'cmd_vel_nav'  
 ```
 ```yaml
 # ELECTRICAL LIMITS
-MAIN_AMP_LIMIT: 3.6
-BAT_VOLTS_HIGH: 15.0
-BAT_VOLTS_LOW: 6.0
-LEFT_AMP_LIMIT: 2.4
-RIGHT_AMP_LIMIT: 2.4
-INA219_CAL: 8192
+MAIN_AMP_LIMIT: 3.6  
+BAT_VOLTS_HIGH: 15.0  
+BAT_VOLTS_LOW: 6.0  
+LEFT_AMP_LIMIT: 2.4  
+RIGHT_AMP_LIMIT: 2.4  
+INA219_CAL: 8192  
 ```
 {% endcapture %}
 
