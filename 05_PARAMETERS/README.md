@@ -33,6 +33,7 @@ PWM_DIV: 16
 PWM_SCALE: 256  
 PWM_FRQ: 1000  
 ```
+
 | Parameter    | Type   | Description                         | Default |
 |--------------|--------|-------------------------------------|---------|
 | PWM_DIV   | uint8  | Drive Mode Configuration, 3 for ROS | 64      |
