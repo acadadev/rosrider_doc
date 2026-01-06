@@ -48,13 +48,15 @@ RIGHT_KI: 6.0
 RIGHT_KD: 0.0
 TANH_DIV: 2.0
 SIGM_DIV: 10.0
+# Anti windup
 K_FB_WINDUP: 0.5
+# Feed forwards
 K_FF_VEL: 0.12
 K_FF_ACCEL: 0.08
 {% endcapture %}
 
 {% capture t5 %}
-# cascaded loop settings
+# CASCADED loop
 INNER_LIMIT: 240
 CURRENT_KP: 8.0
 CURRENT_KI: 6.0
@@ -65,12 +67,14 @@ CURRENT_OMEGA_K_RIGHT: -2.4
 R_ARM: 2.0
 {% endcapture %}
 
-{% capture t6 %}
-# torque constant
+# TORQUE constant
 LEFT_KT: 0.016
 LEFT_KT_W: -0.008
 RIGHT_KT: 0.016
 RIGHT_KT_W: -0.008
+
+{% capture t6 %}
+T6
 {% endcapture %}
 
 {% capture t7 %}
@@ -95,82 +99,82 @@ T8
 {% endcapture %}
 
 {% capture t9 %}
-    # electrical limits
-    MAIN_AMP_LIMIT: 3.6
-    BAT_VOLTS_HIGH: 15.0
-    BAT_VOLTS_LOW: 6.0
-    LEFT_AMP_LIMIT: 2.4
-    RIGHT_AMP_LIMIT: 2.4
-    INA219_CAL: 8192
-    # adc bias calibration
-    CS_LEFT_OFFSET: 0
-    CS_RIGHT_OFFSET: 0
+# electrical limits
+MAIN_AMP_LIMIT: 3.6
+BAT_VOLTS_HIGH: 15.0
+BAT_VOLTS_LOW: 6.0
+LEFT_AMP_LIMIT: 2.4
+RIGHT_AMP_LIMIT: 2.4
+INA219_CAL: 8192
+# adc bias calibration
+CS_LEFT_OFFSET: 0
+CS_RIGHT_OFFSET: 0
 {% endcapture %}
 
 {% capture t10 %}
-    # trim model
-    TRIM_GAIN: 1.0
-    TRIM_MOTOR_K: 1.0
-    TRIM_CONSTANT: 0.0
+# trim model
+TRIM_GAIN: 1.0
+TRIM_MOTOR_K: 1.0
+TRIM_CONSTANT: 0.0
 {% endcapture %}
 
 {% capture t11 %}
-    # features
-    AUTO_SYNC: True
-    AUTO_BIAS: True
-    AUTO_BRAKE: False
-    # adc
-    ADC_SYNC: True
-    ADC_MULTIPHASE: True
-    ADC_BIPHASE: False
-    # inner loop
-    CASCADED: True
-    # physics, acceleration, velocity and friction
-    OUTER_FEEDFORWARD: True
-    OUTER_SCV: True
-    # experimental
-    CROSS_COUPLED_CONTROL: True
-    # filtering
-    VOLTAGE_FILTER: True
-    BEMF_FILTERED_OMEGA: True
-    PID_FILTERED_OMEGA: True
-    SCV_FILTERED_OMEGA: True
-    CURRENT_OMEGA_FILTER: True
+# features
+AUTO_SYNC: True
+AUTO_BIAS: True
+AUTO_BRAKE: False
+# adc
+ADC_SYNC: True
+ADC_MULTIPHASE: True
+ADC_BIPHASE: False
+# inner loop
+CASCADED: True
+# physics, acceleration, velocity and friction
+OUTER_FEEDFORWARD: True
+OUTER_SCV: True
+# experimental
+CROSS_COUPLED_CONTROL: True
+# filtering
+VOLTAGE_FILTER: True
+BEMF_FILTERED_OMEGA: True
+PID_FILTERED_OMEGA: True
+SCV_FILTERED_OMEGA: True
+CURRENT_OMEGA_FILTER: True
 {% endcapture %}
 
 {% capture t12 %}
-    # filter configs
-    OMEGA_FILTER_TYPE: 1
-    CURRENT_FILTER_TYPE: 3
-    OUTPUT_FILTER_TYPE: 0
-    # synchronization
-    SYNC_KP: 256
-    SYNC_KI: 4
-    SYNC_LIMIT: 4096
-    SYNC_INTERVAL: 8
-    DT_I2C: 32
-    DT_THRESHOLD: 2
-    # experimental
-    CROSS_KP: 4.0
-    CROSS_K_LEFT: 1.0
-    CROSS_K_RIGHT: 1.0
-    # topic parameters
-    CMD_VEL_TOPIC: 'cmd_vel_nav'
-    # system parameters
-    I2C_ENABLED: True
-    ODOM_FRAME_ID: 'odom'
-    BASE_FRAME_ID: 'base_footprint'
-    BROADCAST_TF2: True
-    PUB_ODOMETRY: True
-    PUB_JOINTS: True
-    PUB_DIAGNOSTICS: True
-    ROS2RPI_CONFIG: 0x33 # 0x00 # 0x0F # 0x33
-    I2C_ADDRESS: 0x3c
-    DEBUG: False
-    RTC_TRIM: 0x7FFF
-    ALLOWED_SKIP: 3
-    MONITOR_RATE: 100
-    MAX_IDLE_SECONDS: 1800
+# filter configs
+OMEGA_FILTER_TYPE: 1
+CURRENT_FILTER_TYPE: 3
+OUTPUT_FILTER_TYPE: 0
+# synchronization
+SYNC_KP: 256
+SYNC_KI: 4
+SYNC_LIMIT: 4096
+SYNC_INTERVAL: 8
+DT_I2C: 32
+DT_THRESHOLD: 2
+# experimental
+CROSS_KP: 4.0
+CROSS_K_LEFT: 1.0
+CROSS_K_RIGHT: 1.0
+# topic parameters
+CMD_VEL_TOPIC: 'cmd_vel_nav'
+# system parameters
+I2C_ENABLED: True
+ODOM_FRAME_ID: 'odom'
+BASE_FRAME_ID: 'base_footprint'
+BROADCAST_TF2: True
+PUB_ODOMETRY: True
+PUB_JOINTS: True
+PUB_DIAGNOSTICS: True
+ROS2RPI_CONFIG: 0x33 # 0x00 # 0x0F # 0x33
+I2C_ADDRESS: 0x3c
+DEBUG: False
+RTC_TRIM: 0x7FFF
+ALLOWED_SKIP: 3
+MONITOR_RATE: 100
+MAX_IDLE_SECONDS: 1800
 {% endcapture %}
 
 {% include tabs.html tab1_title="Simple Tab" tab1_content=my_tab_1 tab2_title="Advanced Tab" tab2_content=my_tab_2 %}
