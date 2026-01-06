@@ -109,15 +109,17 @@ LEFT_REVERSE_DEADZONE: 12
 RIGHT_FORWARD_DEADZONE: 12  
 RIGHT_REVERSE_DEADZONE: 12
 ```
-{% endcapture %}
 
-{% capture tab6 %}
 ```yaml
 # TRIM MODEL
 TRIM_GAIN: 1.0
 TRIM_MOTOR_K: 1.0
 TRIM_CONSTANT: 0.0
 ```
+{% endcapture %}
+
+{% capture tab6 %}
+
 {% endcapture %}
 
 {% capture tab7 %}
@@ -232,9 +234,9 @@ MAX_IDLE_SECONDS: 1800
    tab3_content=tab3
    tab4_title="CASCADED" 
    tab4_content=tab4
-   tab5_title="Friction/Deadzone" 
+   tab5_title="Friction / Deadzone / Trim" 
    tab5_content=tab5
-   tab6_title="Trim Model" 
+   tab6_title="T6" 
    tab6_content=tab6
    tab7_title="Electrical" 
    tab7_content=tab7
