@@ -26,9 +26,10 @@ This approach encourages creativity, reduces costs, and promotes the reuse of ex
 The typical minimal setup incorporates two encoder gear motors, a Raspberry Pi computer, and a ROSRider card, all seamlessly integrated into a minimal footprint.
 This integrated control card, paired with its comprehensive ROS software package, streamlines development by handling complex low-level tasks. This empowers developers to rapidly prototype and experiment with autonomous vehicle concepts, making it an ideal toolkit for learning and innovation in robotics.
 
-The ROSRider and ROS2RPI cards significantly simplify the user experience by automating tasks like battery management and device power cycling. This eliminates the need for manual intervention, such as disconnecting batteries or manually powering on devices.
-
-The ROS2RPI card offers flexible serial port routing, enabling remote access to the Raspberry Pi and other devices like LiDAR sensors. This feature prevents boot conflicts caused by LiDAR serial output during system startup and allows for remote control of the LiDAR, extending its operational life and simplifying maintenance procedures.
+Our products significantly simplify the user experience by automating tasks like battery management and device power cycling.
+This eliminates the need for manual intervention, such as disconnecting batteries or manually powering on devices.
+The ROS2RPI card offers flexible serial port routing, enabling remote access to the Raspberry Pi and other devices like LiDAR sensors.
+This feature prevents boot conflicts caused by LiDAR serial output during system startup and allows for remote control of the LiDAR, extending its operational life and simplifying maintenance procedures.
 
 <div style="display: flex; justify-content: space-around; margin: 25px 0;">
   <img src="images/odometry-house-sm.gif" alt="Odometry Plot" style="box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);">
