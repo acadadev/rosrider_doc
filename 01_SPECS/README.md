@@ -23,28 +23,34 @@ description: "Hardware Specifications"
     </div>
 </div>
 
-***Features*** 
+***System Features*** 
 
 | :---| :---|
 | ***MCU*** | 32-bit ARM Cortex: TM4C123GH6PM |
 | ***Motor Drivers*** | Two channel up to 2.5 amps with current feedback |
 | ***Hardware QEI*** | Can use any encoder gear motor, single or double phase |
 | ***Servo Control*** | Two channel standard servos |
-| ***Connections*** | Uses standard JST connectors, and commodity JST cables |
-| ***RTC*** | The integrated Real-Time Clock (RTC) enables precise timekeeping |
+| ***Connections*** | Uses standard JST connectors and commodity JST cables |
+| ***RTC*** | The integrated Real-Time Clock enables precise timekeeping |
 | ***Firmware Update*** | Device firmware is updatable by end user over USB |
 | ***Enhanced Diagnostics*** | The system publishes detailed diagnostic information, including battery voltage, current consumption, and motor current feedback |
+
+ROSRider utilizes standard JST connectors for motor and I2C connections, allowing for easy assembly and customization. Additionally, two QWIC connectors provide convenient expansion options for integrating various sensors and modules.
 
 ***Power***
 
 | :---| :---|
-| ***Power Input | 6V to 15V wide input voltage |
+| ***Power Input*** | 6V to 15V wide input voltage |
 | ***Software Controllable Switch*** | MOSFET switch, reverse current protection |
 | ***Hibernation*** | Auto sleep, Device hibernates if not used certain time |
 | ***Current Protection*** | PTC Resettable Fuse, and also software current protection |
 | ***Power Input Connector*** | XT30 or Klemens Type Connector |
 | ***Power Output*** | Software Controllable Auxiliary Power Output 5V, 400mA |
 | ***Power Monitoring*** | Measures and reports bus voltage, bus current, independent motor currents |
+
+A 5V power supply can be enabled or disabled via software, providing flexibility for powering external sensors and devices.  
+
+Built-in current monitoring and a hardware-resettable fuse safeguard the motors and battery. Software-based current limiting and remote threshold configuration enhance safety and flexibility.  
 
 ***Communications***
 
@@ -61,13 +67,6 @@ description: "Hardware Specifications"
 
 
 __Software-Switchable Auxiliary Power Supply__
-A 5V power supply can be enabled or disabled via software, providing flexibility for powering external sensors and devices.
-
-__Modular Design__
-ROSRider utilizes standard JST connectors for motor and I2C connections, allowing for easy assembly and customization. Additionally, two QWIC connectors provide convenient expansion options for integrating various sensors and modules.
-
-__Robust Protection__
-Built-in current monitoring and a hardware-resettable fuse safeguard the motors and battery. Software-based current limiting and remote threshold configuration enhance safety and flexibility.
 
 
 __Remote PID Tuning__
