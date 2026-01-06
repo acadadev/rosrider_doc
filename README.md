@@ -16,6 +16,16 @@
     </div>
 </div>
 
+- [Hardware Specifications](01_SPECS/README.md)
+- [Connections and Pinmaps](02_PINMAP/README.md)
+- [Connecting ROSRider to Host Computer](03_CONNECT/README.md)
+- [ROS2 Drivers](04_DRIVERS/README.md)
+- [Parameters](05_PARAMETERS/README.md)
+- [Updating Firmware](06_FIRMWARE/README.md)
+- [Procedures in Robotics](08_PROCEDURES/README.md)
+- [Simulations](09_SIMULATIONS/README.md)
+- [Troubleshooting](10_DEBUG/README.md)
+
 ROSRider is a versatile electronics card that empowers you to create custom ROS-compatible robots.
 It supports a range of small encoder gear motors, enabling the construction of 2-wheeled or 4-wheeled robots of small to medium size.
 ROSRider is designed to empower makers and students, to build robots using readily available components.
@@ -108,13 +118,3 @@ __Firmware Update__
 
 To ensure long-term usability and adaptability, the ROSRider card supports firmware updates via USB.
 This allows for continuous improvement and the addition of new features, without requiring specialized programming tools or hardware modifications.
-
-- [Hardware Specifications](01_SPECS/README.md)
-- [Connections and Pinmaps](02_PINMAP/README.md)
-- [Connecting ROSRider to Host Computer](03_CONNECT/README.md)
-- [ROS2 Drivers](04_DRIVERS/README.md)
-- [Parameters](05_PARAMETERS/README.md)
-- [Updating Firmware](06_FIRMWARE/README.md)
-- [Procedures in Robotics](08_PROCEDURES/README.md)
-- [Simulations](09_SIMULATIONS/README.md)
-- [Troubleshooting](10_DEBUG/README.md)
