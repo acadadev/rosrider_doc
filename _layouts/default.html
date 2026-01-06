@@ -17,68 +17,8 @@
     <link rel="stylesheet" href="{{ "/assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}">
     <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico">
     <meta property="og:image" content="https://repository-images.githubusercontent.com/819133700/b298fc02-8de1-4335-98ec-512975d0fc26" />
-    <style>
-      body, .markdown-body {
-        font-family: 'Roboto Slab', serif !important;
-        line-height: 1.6;
-        color: #333;
-      }
-      h1, h2, h3, h4 {
-        font-family: 'Roboto Slab', serif !important;
-        font-weight: 700;
-      }
-      .layout-wrapper {
-          display: flex;
-          flex-direction: row;
-          min-height: 100vh;
-      }
-      .sidebar {
-          width: 250px;           /* Fixed width for the menu */
-          flex-shrink: 0;         /* Prevent menu from getting squished */
-          background-color: #fafafa;
-          border-right: 1px solid #e1e4e8;
-          height: 100vh;          /* Full screen height */
-          position: sticky;       /* MAGIC: Stays visible while scrolling, but sits IN the layout */
-          top: 0;
-          overflow-y: auto;       /* Scrollable if menu is long */
-          padding: 20px;
-          box-sizing: border-box;
-      }
-      .main-content {
-          flex-grow: 1;           /* Take up all remaining space */
-          padding: 20px 40px;     /* Breathing room for text */
-          min-width: 0;           /* Prevents large images/tables from breaking layout */
-      }
-      .nav-link {
-          color: #333;
-          text-decoration: none;
-          display: block;
-          padding: 8px 10px;
-      }
-      .nav-link:hover {
-          background-color: #e9ecef;
-          color: #000 !important;
-          border-radius: 4px;
-      }
-      @media (max-width: 768px) {
-          .layout-wrapper {
-              flex-direction: column;
-          }
-          .sidebar {
-              width: 100%;        /* Full width */
-              height: auto;       /* Natural height */
-              position: relative; /* Scrolls with page */
-              border-right: none;
-              border-bottom: 1px solid #eee;
-          }
-          .main-content {
-              padding: 20px;
-          }
-      }
-    </style>
   </head>
   <body>
-
     <div class="layout-wrapper">
       <nav class="sidebar">
         <div class="sidebar-header">
@@ -109,7 +49,6 @@
                {% if page.title %} • <a href="https://docs.acada.dev/rosrider_doc{{ page.title_url }}">{{ page.title }}</a>{% endif %}
              </h4>
           </div>
-          <hr style="margin-top: 10px; margin-bottom: 30px; border-top: 1px solid #eee;">
           {{ content }}
           <hr style="margin-top: 50px;">
           <p style="font-size: 0.9em; color: #777;">
