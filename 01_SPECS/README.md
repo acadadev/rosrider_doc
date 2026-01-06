@@ -48,7 +48,7 @@ __Advanced Features__
 | ***Kinematic Feedforwards*** | Acceleration and Velocity Feedforwards |
 | ***Stribeck Friction Model*** | Static Kick, Coulomb Run, Viscous Friction |
 | ***BEMF Compensation*** | Back-EMF compensated from current measurements |
-| ***Selectable Filters*** | The firmware also implements custom, selectable filters for both current (I) and rotational speed (ω) filtering |
+| ***Selectable Filters*** | The firmware also implements custom selectable filters for both current (I) and rotational speed (ω) filtering |
 
 The inclusion of a cascaded current loop significantly enhances the control architecture by 
 placing a high-bandwidth current controller inside the velocity loop; this allows for precise torque control, 
