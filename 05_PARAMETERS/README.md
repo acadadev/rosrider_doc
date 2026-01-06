@@ -21,7 +21,6 @@ DRIVE_MODE: 3
 CONFIG_FLAGS: 112
 UPDATE_RATE: 20
 ```
-
 ```yaml
 # PWM config  
 PWM_DIV: 16
@@ -54,12 +53,10 @@ RIGHT_KD: 0.0
 TANH_DIV: 2.0
 SIGM_DIV: 10.0
 ```
-
 ```yaml
 # Anti windup
 K_FB_WINDUP: 0.5
 ```
-
 ```yaml
 # Feed forwards
 K_FF_VEL: 0.12
@@ -79,7 +76,6 @@ CURRENT_OMEGA_K_LEFT: -2.4
 CURRENT_OMEGA_K_RIGHT: -2.4
 R_ARM: 2.0
 ```
-
 ```yaml
 # TORQUE constant
 LEFT_KT: 0.016
@@ -101,7 +97,6 @@ EB_FF_LIMIT: 12.0
 SCV_OMEGA_THRESHOLD: 0.05  
 SCV_LATCH_THRESHOLD: 1.0
 ```
-
 ```yaml
 # DEAD ZONES
 LEFT_FORWARD_DEADZONE: 12  
@@ -109,7 +104,6 @@ LEFT_REVERSE_DEADZONE: 12
 RIGHT_FORWARD_DEADZONE: 12  
 RIGHT_REVERSE_DEADZONE: 12
 ```
-
 ```yaml
 # TRIM MODEL
 TRIM_GAIN: 1.0
@@ -132,7 +126,6 @@ LEFT_AMP_LIMIT: 2.4
 RIGHT_AMP_LIMIT: 2.4
 INA219_CAL: 8192
 ```
-
 ```yaml
 # ADC BIAS CALIBRATION
 CS_LEFT_OFFSET: 0
@@ -147,7 +140,6 @@ OMEGA_FILTER_TYPE: 1
 CURRENT_FILTER_TYPE: 3
 OUTPUT_FILTER_TYPE: 0
 ```
-
 ```yaml
 # FILTER USE
 VOLTAGE_FILTER: True
@@ -185,15 +177,14 @@ ADC_BIPHASE: False
 AUTO_SYNC: True
 AUTO_BIAS: True
 AUTO_BRAKE: False
-# adc
-ADC_SYNC: True
-ADC_MULTIPHASE: True
-ADC_BIPHASE: False
-# inner loop
 CASCADED: True
+```
+```yaml
 # physics, acceleration, velocity and friction
 OUTER_FEEDFORWARD: True
 OUTER_SCV: True
+```
+```yaml
 # experimental
 CROSS_COUPLED_CONTROL: True
 ```
@@ -205,8 +196,8 @@ CROSS_COUPLED_CONTROL: True
 CROSS_KP: 4.0
 CROSS_K_LEFT: 1.0
 CROSS_K_RIGHT: 1.0
-# topic parameters
-CMD_VEL_TOPIC: 'cmd_vel_nav'
+```
+```yaml
 # system parameters
 I2C_ENABLED: True
 ODOM_FRAME_ID: 'odom'
@@ -222,6 +213,10 @@ RTC_TRIM: 0x7FFF
 ALLOWED_SKIP: 3
 MONITOR_RATE: 100
 MAX_IDLE_SECONDS: 1800
+```
+```yaml
+# topic parameters
+CMD_VEL_TOPIC: 'cmd_vel_nav'
 ```
 {% endcapture %}
 
@@ -246,7 +241,7 @@ MAX_IDLE_SECONDS: 1800
    tab9_content=tab9
    tab10_title="ADC" 
    tab10_content=tab10
-   tab11_title="Sync/Exp" 
+   tab11_title="Features" 
    tab11_content=tab11
    tab12_title="System" 
    tab12_content=tab12 
