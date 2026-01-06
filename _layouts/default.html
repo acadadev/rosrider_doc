@@ -29,13 +29,17 @@
         <div class="sidebar-menu">
             <ul style="list-style: none; padding: 0; margin: 0;">
                 {% for item in site.data.navigation %}
-                  <li style="margin-bottom: 8px;">
 
-                      <div style="font-size: 11px; color: red; background: #ffe6e6; border: 1px solid red; padding: 2px;">
-                         Page: "{{ page.url }}" <br>
-                         Item: "{{ item.url }}"
-                      </div>
-                      <a class="nav-link {% if page.url == item.url %}active{% endif %}" href="{{ item.url }}README.html">
+                  {% assign link_href = item.url %}
+                  {% unless item.url == '/rosrider_doc/' %}
+                     {% assign link_href = item.url | append: 'README.html' %}
+                  {% endunless %}
+
+                  {% assign current_dir = page.url | replace: 'index.html', '' | replace: 'README.html', '' %}
+                  {% assign item_dir = item.url | replace: 'index.html', '' | replace: 'README.html', '' %}
+
+                  <li style="margin-bottom: 8px;">
+                      <a class="nav-link {% if current_dir == item_dir %}active{% endif %}" href="{{ link_href }}">
                           {{ item.title }}
                       </a>
                   </li>
