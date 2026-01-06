@@ -108,16 +108,15 @@ LEFT_REVERSE_DEADZONE: 12
 RIGHT_FORWARD_DEADZONE: 12  
 RIGHT_REVERSE_DEADZONE: 12
 ```
+{% endcapture %}
+
+{% capture tab6 %}
 ```yaml
 # TRIM MODEL
 TRIM_GAIN: 1.0
 TRIM_MOTOR_K: 1.0
 TRIM_CONSTANT: 0.0
 ```
-{% endcapture %}
-
-{% capture tab6 %}
-
 {% endcapture %}
 
 {% capture tab7 %}
