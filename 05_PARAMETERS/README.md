@@ -39,10 +39,6 @@ MAX_RPM: 160.0
 {% endcapture %}
 
 {% capture tab3 %}
-T3
-{% endcapture %}
-
-{% capture tab4 %}
 ```yaml
 ### PID config  
 UPPER_LIMIT: 240
@@ -60,6 +56,10 @@ K_FB_WINDUP: 0.5
 K_FF_VEL: 0.12
 K_FF_ACCEL: 0.08
 ```
+{% endcapture %}
+
+{% capture tab4 %}
+T4
 {% endcapture %}
 
 {% capture tab5 %}
@@ -200,9 +200,9 @@ MAX_IDLE_SECONDS: 1800
    tab1_content=tab1
    tab2_title="Motor" 
    tab2_content=tab2
-   tab3_title="Dead Zones" 
+   tab3_title="PID" 
    tab3_content=tab3
-   tab4_title="PID" 
+   tab4_title="TAB3" 
    tab4_content=tab4
    tab5_title="Cascaded" 
    tab5_content=tab5
