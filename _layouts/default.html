@@ -34,12 +34,11 @@
                   {% unless item.url == '/rosrider_doc/' %}
                      {% assign link_href = item.url | append: 'README.html' %}
                   {% endunless %}
-
-                  {% assign current_dir = page.url | replace: 'index.html', '' | replace: 'README.html', '' %}
-                  {% assign item_dir = item.url | replace: 'index.html', '' | replace: 'README.html', '' %}
+                  {% assign current_clean = page.url | replace: 'index.html', '' | replace: 'README.html', '' %}
+                  {% assign item_clean = item.url | replace: '/rosrider_doc', '' | replace: 'index.html', '' | replace: 'README.html', '' %}
 
                   <li style="margin-bottom: 8px;">
-                      <a class="nav-link {% if current_dir == item_dir %}active{% endif %}" href="{{ link_href }}">
+                      <a class="nav-link {% if current_clean == item_clean %}active{% endif %}" href="{{ link_href }}">
                           {{ item.title }}
                       </a>
                   </li>
