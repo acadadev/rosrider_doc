@@ -17,6 +17,7 @@ Below is an image of a minimal chassis designed for lane-following tasks using i
 - [Troubleshooting](10_DEBUG/README.md)
 
 
+
 ROSRider aims to lower the cost barrier for building ROS based robots. Using commodity parts, users can build robots that can run the Robot Operating System.
 
 [![ROSRider Control Card](/images/ROSRider4D.png)](https://acada.dev/products)
