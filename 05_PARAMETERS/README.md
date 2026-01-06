@@ -147,18 +147,6 @@ CURRENT_OMEGA_FILTER: True
 
 {% capture tab8 %}
 ```yaml
-# Synchronization
-SYNC_KP: 256
-SYNC_KI: 4
-SYNC_LIMIT: 4096
-SYNC_INTERVAL: 8
-DT_I2C: 32
-DT_THRESHOLD: 2
-```
-{% endcapture %}
-
-{% capture tab9 %}
-```yaml
 # ADC
 ADC_SYNC: True
 ADC_MULTIPHASE: True
@@ -171,13 +159,25 @@ CS_RIGHT_OFFSET: 0
 ```
 {% endcapture %}
 
-{% capture tab10 %}
+{% capture tab9 %}
 ```yaml
 # features
 AUTO_SYNC: True
 AUTO_BIAS: True
 AUTO_BRAKE: False
 CASCADED: True
+```
+{% endcapture %}
+
+{% capture tab10 %}
+```yaml
+# Synchronization
+SYNC_KP: 256
+SYNC_KI: 4
+SYNC_LIMIT: 4096
+SYNC_INTERVAL: 8
+DT_I2C: 32
+DT_THRESHOLD: 2
 ```
 {% endcapture %}
 
@@ -230,11 +230,11 @@ CMD_VEL_TOPIC: 'cmd_vel_nav'
    tab6_content=tab6
    tab7_title="Filtering" 
    tab7_content=tab7
-   tab8_title="Synchronization" 
+   tab8_title="ADC" 
    tab8_content=tab8
-   tab9_title="ADC" 
+   tab9_title="Features" 
    tab9_content=tab9
-   tab10_title="Features" 
+   tab10_title="Synchronization" 
    tab10_content=tab10
    tab11_title="Experimental" 
    tab11_content=tab11
