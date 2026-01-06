@@ -27,6 +27,26 @@
         font-family: 'Roboto Slab', serif !important;
         font-weight: 700;
       }
+      .sidebar {
+          display: none;
+      }
+      @media (min-width: 768px) {
+          .sidebar {
+              display: block;
+              position: fixed;
+              top: 0;
+              bottom: 0;
+              left: 0;
+              z-index: 100;
+              padding: 48px 0 0;
+              box-shadow: inset -1px 0 0 rgba(0, 0, 0, .1);
+          }
+      }
+      .nav-link:hover {
+          background-color: #e9ecef;
+          color: #000 !important;
+          border-radius: 4px;
+      }
     </style>
   </head>
   <body>
@@ -45,11 +65,30 @@
          </h4>
       </div>
     </div>
-    <div class="container-fluid px-3 markdown-body">
-      <hr>
-      {{ content }}
-      <hr>
-      Copyright © 2024, ACADA Robotics • <a href="https://acada.dev">https://acada.dev</a>
+    <div class="container-fluid px-3">
+      <div class="row">
+        <nav class="col-md-3 col-lg-2 d-md-block sidebar collapse" style="background-color: #fafafa; border-right: 1px solid #eee;">
+          <div class="position-sticky pt-3" style="top: 0; height: 100vh; overflow-y: auto;">
+            <ul class="nav flex-column">
+              {% for item in site.data.navigation %}
+                <li class="nav-item">
+                  <a class="nav-link" href="{{ item.url }}" style="color: #333; padding: 10px 15px; display: block; text-decoration: none;">
+                    {{ item.title }}
+                  </a>
+                </li>
+              {% endfor %}
+            </ul>
+          </div>
+        </nav>
+        <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4 markdown-body">
+          <hr>
+          {{ content }}
+          <hr>
+          <div class="footer-text">
+            Copyright © 2024, ACADA Robotics • <a href="https://acada.dev">https://acada.dev</a>
+          </div>
+        </main>
+      </div>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.0/anchor.min.js" integrity="sha256-lZaRhKri35AyJSypXXs4o6OPFTbTmUoltBbDCbdzegg=" crossorigin="anonymous"></script>
     <script>anchors.add();</script>

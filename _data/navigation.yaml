@@ -1,0 +1,23 @@
+- title: Specifications
+  url: /rosrider_doc/01_SPECS/
+
+- title: Connections
+  url: /rosrider_doc/02_PINMAP/
+
+- title: Host Connection
+  url: /rosrider_doc/03_CONNECT/
+
+- title: ROS2 Drivers
+  url: /rosrider_doc/04_DRIVERS/
+
+- title: Parameters
+  url: /rosrider_doc/05_PARAMETERS/
+
+- title: Firmware
+  url: /rosrider_doc/06_FIRMWARE/
+
+- title: Procedures
+  url: /rosrider_doc/08_PROCEDURES/
+
+- title: Troubleshooting
+  url: /rosrider_doc/10_DEBUG/
