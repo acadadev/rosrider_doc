@@ -70,14 +70,6 @@ TANH_DIV: 2.0
 SIGM_DIV: 10.0  
 K_FB_WINDUP: 0.5  
 ```
-```yaml
-OUTER_FEEDFORWARD: True
-```
-```yaml
-# Feed forwards
-K_FF_VEL: 0.12  
-K_FF_ACCEL: 0.08  
-```
 {% endcapture %}
 
 {% capture tab5 %}
@@ -102,6 +94,14 @@ RIGHT_KT_W: -0.008
 {% endcapture %}
 
 {% capture tab6 %}
+```yaml
+OUTER_FEEDFORWARD: True
+```
+```yaml
+# Feed forwards
+K_FF_VEL: 0.12  
+K_FF_ACCEL: 0.08  
+```
 {% endcapture %}
 
 {% capture tab7 %}
