@@ -245,24 +245,24 @@ INA219_CAL: 8192
    tab4_content=tab4
    tab5_title="CASCADED" 
    tab5_content=tab5
-   tab5_title="Feedforward" 
-   tab5_content=tab6
-   tab6_title="Friction / Deadzone" 
-   tab6_content=tab7
-   tab7_title="Trim Model" 
-   tab7_content=tab8
-   tab8_title="Filtering" 
-   tab8_content=tab9
-   tab9_title="ADC" 
-   tab9_content=tab10
-   tab10_title="Features" 
-   tab10_content=tab11
-   tab11_title="Synchronization" 
-   tab11_content=tab12
-   tab12_title="Experimental" 
-   tab12_content=tab13
-   tab13_title="System" 
-   tab13_content=tab14 
+   tab6_title="Feedforwards" 
+   tab6_content=tab6
+   tab7_title="Friction / Deadzone" 
+   tab7_content=tab7
+   tab8_title="Trim Model" 
+   tab8_content=tab8
+   tab0_title="Filtering" 
+   tab0_content=tab9
+   tab10_title="ADC" 
+   tab10_content=tab10
+   tab11_title="Features" 
+   tab11_content=tab11
+   tab12_title="Synchronization" 
+   tab12_content=tab12
+   tab13_title="Experimental" 
+   tab13_content=tab13
+   tab14_title="System" 
+   tab14_content=tab14 
 %}
 
 __General configuration__
