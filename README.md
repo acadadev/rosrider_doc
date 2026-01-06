@@ -42,17 +42,17 @@ To further enhance the integration of ROSRider with open-source robotics, we hav
 
 <div style="display: flex; justify-content: space-around; margin: 25px 0;">
   
-  <figure style="width: 30%; margin: 0; text-align: center;">
+  <figure style="width: 20%; margin: 0; text-align: center;">
     <img src="images/gazebo_caretta.png" alt="Gazebo CARETTA" style="width: 100%; border: 1px solid #ccc; border-radius: 5px; box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);">
     <figcaption style="font-size: 0.85em; margin-top: 10px; font-style: italic; color: #666;">Fig 1. Minimal chassis designed for lane-following tasks using image processing</figcaption>
   </figure>
 
-  <figure style="width: 30%; margin: 0; text-align: center;">
+  <figure style="width: 20%; margin: 0; text-align: center;">
     <img src="images/gazebo_sorcerer.png" alt="Gazebo SORCERER" style="width: 100%; border: 1px solid #ccc; border-radius: 5px; box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);">
     <figcaption style="font-size: 0.85em; margin-top: 10px; font-style: italic; color: #666;">Fig 2. Chassis with LIDAR designed for  SLAM / Navigation</figcaption>
   </figure>
 
-  <figure style="width: 30%; margin: 0; text-align: center;">
+  <figure style="width: 20%; margin: 0; text-align: center;">
     <img src="images/rviz_cartographer.png" alt="Cartographer RVIZ" style="width: 100%; border: 1px solid #ccc; border-radius: 5px; box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);">
     <figcaption style="font-size: 0.85em; margin-top: 10px; font-style: italic; color: #666;">Fig 3. ROSRider Control Card</figcaption>
   </figure>
