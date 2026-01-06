@@ -15,7 +15,6 @@ The following YAML file defines the configuration parameters for the ROSRider no
 
 
 {% capture tab1 %}
-### DRIVER config
 ```yaml
 ### DRIVER config
 DRIVE_MODE: 3
