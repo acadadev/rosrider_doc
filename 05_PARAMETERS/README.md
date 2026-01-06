@@ -15,32 +15,36 @@ The following YAML file defines the configuration parameters for the ROSRider no
 
 
 {% capture tab1 %}
-
 ```yaml
-DRIVE_MODE: 3  
-CONFIG_FLAGS: 112  
+### DRIVER config
+DRIVE_MODE: 3
+CONFIG_FLAGS: 112
 UPDATE_RATE: 20
 ```
-
 {% endcapture %}
 
 {% capture tab2 %}
+```yaml
 ### PWM config  
-PWM_DIV: 16  
-PWM_SCALE: 256  
-PWM_FRQ: 1000  
+PWM_DIV: 16
+PWM_SCALE: 256
+PWM_FRQ: 1000
+```
 {% endcapture %}
 
 {% capture tab3 %}
+```yaml
 ### MOTOR config  
-GEAR_RATIO: 65.0  
-ENCODER_PPR: 48  
-WHEEL_DIA: 0.0685  
-BASE_WIDTH: 0.174  
-MAX_RPM: 160.0  
+GEAR_RATIO: 65.0
+ENCODER_PPR: 48
+WHEEL_DIA: 0.0685
+BASE_WIDTH: 0.174
+MAX_RPM: 160.0
+```
 {% endcapture %}
 
 {% capture tab4 %}
+```yaml
 ### PID config  
 UPPER_LIMIT: 240
 LEFT_KP: 8.0
@@ -56,9 +60,11 @@ K_FB_WINDUP: 0.5
 ### Feed forwards
 K_FF_VEL: 0.12
 K_FF_ACCEL: 0.08
+```
 {% endcapture %}
 
 {% capture tab5 %}
+```yaml
 ### CASCADED loop
 INNER_LIMIT: 240
 CURRENT_KP: 8.0
@@ -73,6 +79,7 @@ LEFT_KT: 0.016
 LEFT_KT_W: -0.008
 RIGHT_KT: 0.016
 RIGHT_KT_W: -0.008
+```
 {% endcapture %}
 
 {% capture tab6 %}
@@ -80,6 +87,7 @@ T6
 {% endcapture %}
 
 {% capture tab7 %}
+```yaml
 # stribeck friction model  
 STATIC_KICK: 0.8  
 COULOMB_RUN: 0.2  
@@ -88,12 +96,13 @@ VISCOUS_FRICTION: 0.064
 VISCOUS_FRICTION_LIMIT: 1.2  
 EB_FF_LIMIT: 12.0  
 SCV_OMEGA_THRESHOLD: 0.05  
-SCV_LATCH_THRESHOLD: 1.0  
+SCV_LATCH_THRESHOLD: 1.0
 # dead zones  
 LEFT_FORWARD_DEADZONE: 12  
 LEFT_REVERSE_DEADZONE: 12  
 RIGHT_FORWARD_DEADZONE: 12  
-RIGHT_REVERSE_DEADZONE: 12  
+RIGHT_REVERSE_DEADZONE: 12
+```
 {% endcapture %}
 
 {% capture tab8 %}
@@ -101,6 +110,7 @@ T8
 {% endcapture %}
 
 {% capture tab9 %}
+```yaml
 # electrical limits
 MAIN_AMP_LIMIT: 3.6
 BAT_VOLTS_HIGH: 15.0
@@ -111,16 +121,20 @@ INA219_CAL: 8192
 # adc bias calibration
 CS_LEFT_OFFSET: 0
 CS_RIGHT_OFFSET: 0
+```
 {% endcapture %}
 
 {% capture tab10 %}
+```yaml
 # trim model
 TRIM_GAIN: 1.0
 TRIM_MOTOR_K: 1.0
 TRIM_CONSTANT: 0.0
+```
 {% endcapture %}
 
 {% capture tab11 %}
+```yaml
 # features
 AUTO_SYNC: True
 AUTO_BIAS: True
@@ -142,9 +156,11 @@ BEMF_FILTERED_OMEGA: True
 PID_FILTERED_OMEGA: True
 SCV_FILTERED_OMEGA: True
 CURRENT_OMEGA_FILTER: True
+```
 {% endcapture %}
 
 {% capture tab12 %}
+```yaml
 # filter configs
 OMEGA_FILTER_TYPE: 1
 CURRENT_FILTER_TYPE: 3
@@ -177,6 +193,7 @@ RTC_TRIM: 0x7FFF
 ALLOWED_SKIP: 3
 MONITOR_RATE: 100
 MAX_IDLE_SECONDS: 1800
+```
 {% endcapture %}
 
 {% include tabs.html 
