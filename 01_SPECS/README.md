@@ -64,6 +64,7 @@ Built-in current monitoring and a hardware-resettable fuse safeguard the motors 
 
 | :---| :---|
 | ***ROS Drivers*** | C++ Drivers for ROS2 Humble and ROS2 Jazzy |
+| ***Gazebo Environment*** | Gazebo implementation and environments for our robots |
 
 __Supported Platforms__
 
