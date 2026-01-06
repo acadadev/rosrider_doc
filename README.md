@@ -1,9 +1,9 @@
-ROSRider is a versatile electronics card that empowers you to create custom ROS-compatible robots. 
+ROSRider is a versatile electronics card that empowers you to create custom ROS-compatible robots.
 It supports a range of small encoder gear motors, enabling the construction of 2-wheeled or 4-wheeled robots of small to medium size.
 
-ROSRider is designed to empower makers and students, to build robots using readily available components. Unlike pre-built kits that can be costly and limiting, ROSRider that can be integrated with existing hardware. This approach encourages creativity, reduces costs, and promotes the reuse of existing components, making robotics accessible to a wider audience.
-
-Below is an image of a minimal chassis designed for lane-following tasks using image processing. This compact setup incorporates two encoder gear motors, a Raspberry Pi 4 computer, and a ROSRider card, all seamlessly integrated into a minimal footprint. This streamlined platform empowers developers to quickly prototype and experiment with autonomous vehicle concepts, making it an ideal tool for learning and innovation in robotics.
+ROSRider is designed to empower makers and students, to build robots using readily available components.
+Unlike pre-built kits that can be costly and limiting, it can be integrated with existing hardware.
+This approach encourages creativity, reduces costs, and promotes the reuse of existing components, making robotics accessible to a wider audience.
 
 <div style="display: flex; justify-content: space-around; margin: 25px 0;">
   
@@ -26,6 +26,13 @@ Below is an image of a minimal chassis designed for lane-following tasks using i
   </figure>
 
 </div>
+
+Below is an image of a minimal chassis designed for lane-following tasks using image processing. 
+This compact setup incorporates two encoder gear motors, a Raspberry Pi 4 computer, 
+and a ROSRider card, all seamlessly integrated into a minimal footprint. 
+
+This streamlined platform empowers developers to quickly prototype and experiment with autonomous vehicle concepts, 
+making it an ideal tool for learning and innovation in robotics.
 
 - [Introduction](01_INTRO/README.md)
 - [Connections and Pinmaps](02_PINMAP/README.md)
