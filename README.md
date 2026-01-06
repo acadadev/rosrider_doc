@@ -53,7 +53,7 @@ To further enhance the integration of ROSRider with open-source robotics, we hav
   </figure>
 
   <figure style="width: 25%; margin: 0; text-align: center;">
-    <img src="images/rviz_cartographer.png" alt="Cartographer RVIZ" style="width: 100%; border: 1px solid #ccc; border-radius: 5px; box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);">
+    <img src="images/rviz_cartographer_sq.png" alt="Cartographer RVIZ" style="width: 100%; border: 1px solid #ccc; border-radius: 5px; box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);">
     <figcaption style="font-size: 0.85em; margin-top: 10px; font-style: italic; color: #666;">Fig 3. ROSRider Control Card</figcaption>
   </figure>
 
