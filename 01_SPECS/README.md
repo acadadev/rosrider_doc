@@ -26,7 +26,7 @@ description: "Hardware Specifications"
 __Features__
 
 |---|---|
-| Features | |
+| <b>Features</b> | |
 | MCU | 32-bit ARM Cortex: TM4C123GH6PM |
 | Motor Drivers | Two channel up to 2.5 amps, with current measurement |
 | Hardware QEI | Can use any encoder gear motor, single or double phase |
