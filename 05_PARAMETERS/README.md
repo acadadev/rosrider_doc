@@ -224,9 +224,9 @@ MAX_IDLE_SECONDS: 1800
    tab6_content=tab6
    tab7_title="Electrical" 
    tab7_content=tab7
-   tab8_title="Calib/Trim" 
+   tab8_title="Filtering" 
    tab8_content=tab8
-   tab9_title="Booleans" 
+   tab9_title="Synchronization" 
    tab9_content=tab9
    tab10_title="Filters" 
    tab10_content=tab10
