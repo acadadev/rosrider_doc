@@ -179,11 +179,6 @@ AUTO_BIAS: True
 AUTO_BRAKE: False
 CASCADED: True
 ```
-```yaml
-# physics, acceleration, velocity and friction
-OUTER_FEEDFORWARD: True
-OUTER_SCV: True
-```
 {% endcapture %}
 
 {% capture tab11 %}
