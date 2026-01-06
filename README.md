@@ -32,7 +32,10 @@ The ROS2RPI card offers flexible serial port routing, enabling remote access to 
 This feature prevents boot conflicts caused by LiDAR serial output during system startup and allows for remote control of the LiDAR, extending its operational life and simplifying maintenance procedures.
 
 <div style="display: flex; justify-content: space-around; margin: 25px 0;">
-  <img src="images/odometry-house-sm.gif" alt="Odometry Plot" style="box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);">
+  <figure style="width: 30%; margin: 0; text-align: center;">
+    <img src="images/odometry-house-sm.gif" alt="Odometry Plot" style="width: 100%; border: 1px solid #ccc; border-radius: 5px; box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);">
+    <figcaption style="font-size: 0.85em; margin-top: 10px; font-style: italic; color: #666;">Fig 4. Odometry and LIDAR data visualization</figcaption>
+  </figure>
 </div>
 
 To further enhance the integration of ROSRider with open-source robotics, we have developed two open-source robot platforms: Sorcerer and Caretta. These low-cost, pre-built robots, accompanied by URDF files for ROS and Gazebo simulation, streamline the development process. Developers can rapidly prototype and test algorithms in simulation before deploying them to physical hardware, significantly accelerating development time and reducing costs associated with physical experimentation.
