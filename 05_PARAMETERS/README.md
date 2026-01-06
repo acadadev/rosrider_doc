@@ -213,9 +213,6 @@ RTC_TRIM: 0x7FFF
 ALLOWED_SKIP: 3
 MONITOR_RATE: 100
 MAX_IDLE_SECONDS: 1800
-```
-```yaml
-# topic parameters
 CMD_VEL_TOPIC: 'cmd_vel_nav'
 ```
 {% endcapture %}
