@@ -91,7 +91,7 @@ __Firmware Update__
 To ensure long-term usability and adaptability, the ROSRider card supports firmware updates via USB.
 This allows for continuous improvement and the addition of new features, without requiring specialized programming tools or hardware modifications.
 
-- [Introduction](01_INTRO/README.md)
+- [Introduction](01_SPECS/README.md)
 - [Connections and Pinmaps](02_PINMAP/README.md)
 - [Connecting ROSRider to Host Computer](03_CONNECT/README.md)
 - [ROS2 Drivers](04_DRIVERS/README.md)

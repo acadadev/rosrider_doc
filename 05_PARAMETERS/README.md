@@ -1,6 +1,6 @@
 ---
 layout: default
-title_url: /01_INTRO/README.html
+title_url: /01_SPECS/README.html
 title: "Parameters"
 description: "Parametric Configuration of the ROSRider control card"
 ---
