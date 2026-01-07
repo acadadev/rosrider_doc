@@ -575,12 +575,17 @@ The `ALLOWED_SKIP` parameter in the ROSRider configuration determines the maximu
 
 __ROS2RPI_CONFIG__
 
+When operating the ROSRider card in conjunction with the ROS2RPI card on a Raspberry Pi platform, the driver provides the capability to transmit commands to the ROS2RPI card.
+This functionality is particularly valuable for controlling peripheral devices, such as lidar units, during the driver initialization sequence.
+If the ROSRider card is deployed independently (standalone configuration), set this parameter to 0.
+
 | Hat Command | Description                                   |
 |-------------|-----------------------------------------------|
 | 0x00        | No Command                                    |
 | 0x0F        | ROSRider ON, Serial Routed to DEBUG           |
 | 0x33        | ROSRider ON, LIDAR ON, Serial Routed to LIDAR |
 
+For configurations involving the ROS2RPI card, refer to the [ROS2RPI documentation](https://docs.acada.dev/ros2rpi_doc) for appropriate parameter selection.
 
 {% endcapture %}
 
@@ -618,15 +623,5 @@ __ROS2RPI_CONFIG__
    tab16_title="System" 
    tab16_content=tab16
 %}
-
-__ROS2RPI_CONFIG Parameter__
-
-When operating the ROSRider card in conjunction with the ROS2RPI card on a Raspberry Pi platform, the driver provides the capability to transmit commands to the ROS2RPI card. 
-This functionality is particularly valuable for controlling peripheral devices, such as lidar units, during the driver initialization sequence.  
-
-If the ROSRider card is deployed independently (standalone configuration), set this parameter to 0. For configurations involving the ROS2RPI card, refer to the [ROS2RPI documentation](https://docs.acada.dev/ros2rpi_doc) for appropriate parameter selection.
-
-
-Stay tuned for our next chapter, where we'll guide you through the process of updating your ROSRider's firmware.
 
 __Next Chapter:__ [Updating Firmware](../06_FIRMWARE/README.md)
