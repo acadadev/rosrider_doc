@@ -16,7 +16,7 @@ description: "Connections and Pinmaps of ROSRider Card"
     font-family: 'Ubuntu', sans-serif;
 ">
     <div style="font-size: 1.4em; font-weight: bold; color: #4CAF50; margin-bottom: 5px;">
-        > Detailed pinouts and electrical specifications.
+        > Detailed pinouts and connector specifications
     </div>
 </div>
 
@@ -174,7 +174,7 @@ Use CR1225 3V coin battery.
     font-family: 'Ubuntu', sans-serif;
 ">
     <div style="font-size: 1.4em; font-weight: bold; color: #4CAF50; margin-bottom: 5px;">
-        > Connecting to Host Computer.
+        > Connecting to Host Computer
     </div>
 </div>
 
