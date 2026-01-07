@@ -1,8 +1,8 @@
 ---
 layout: default
 title_url: /07_DIAGRAM/README.html
-title: "Connecting ROSRider to Host Computer"
-description: "Connecting ROSRider Control Card to Host Computer"
+title: "Controller Diagram"
+description: "ROSRider Motor Control Theory of Operation"
 ---
 
 <div style="
@@ -23,6 +23,11 @@ description: "Connecting ROSRider Control Card to Host Computer"
     </div>
 </div>
 
+<div style="display: flex; justify-content: space-around; margin: 25px 0;">
+  <figure style="width: 60%; margin: 0; text-align: center;">
+    <img src="../images/sch/ROSRIDER_PID_LOOP.png" alt="" style="width: 100%;">
+    <figcaption>ROSRider PID Loop, Classic Mode</figcaption>
+  </figure>
+</div>
 
-
-__Next Chapter:__ [ROS2 Drivers](../04_DRIVERS/README.md)
+__Next Chapter:__ [Procedures](../08_PROCEDURES/README.md)
