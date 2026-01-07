@@ -155,9 +155,8 @@ K_FF_ACCEL: 0.08
 
 {% capture tab7 %}
 ```yaml
-# Enable SCV if not deadzone will be used
-OUTER_SCV: True
 # STRIBECK friction model  
+OUTER_SCV: True
 STATIC_KICK: 0.8  
 COULOMB_RUN: 0.2  
 STRIBECK_WIDTH: 2.1  
@@ -168,17 +167,17 @@ SCV_OMEGA_THRESHOLD: 0.05
 SCV_LATCH_THRESHOLD: 1.0  
 ```
 
-| Parameter              | Type    | Description | Default |
-|------------------------|---------|-------------|---------|
-| OUTER_SCV              | boolean |             | False   |
-| STATIC_KICK            | float   |             | 6.0     |
-| COULOMB_RUN            | float   |             | 3.0     |
-| STRIBECK_WIDTH         | float   |             | 64      | 
-| VISCOUS_FRICTION       | float   |             | 0.001   | 
-| VISCOUS_FRICTION_LIMIT | float   |             | 1.2     | 
-| EB_FF_LIMIT            | float   |             | 12.0    | 
-| SCV_OMEGA_THRESHOLD    | float   |             | 0.05    | 
-| SCV_LATCH_THRESHOLD    | float   |             | 1.0     | 
+| Parameter              | Type    | Description                                            | Default |
+|------------------------|---------|--------------------------------------------------------|---------|
+| OUTER_SCV              | boolean | Enable SCV if not deadzone will be used                | False   |
+| STATIC_KICK            | float   | Initial Kick in Volts                                  | 6.0     |
+| COULOMB_RUN            | float   | Minimum energy for motor to turn in Volts              | 3.0     |
+| STRIBECK_WIDTH         | float   | Statick Kick Decay rate                                | 64      | 
+| VISCOUS_FRICTION       | float   | Viscous Friction Coefficient                           | 0.001   | 
+| VISCOUS_FRICTION_LIMIT | float   | Viscous Friction Limit                                 | 1.2     | 
+| EB_FF_LIMIT            | float   | Calculated BEMF Limit in Volts                         | 12.0    | 
+| SCV_OMEGA_THRESHOLD    | float   | Below this threshold SCV will not be triggered         | 0.05    | 
+| SCV_LATCH_THRESHOLD    | float   | Below this threshold Static kick will not be triggered | 1.0     | 
 
 
 ```yaml
@@ -189,12 +188,12 @@ RIGHT_FORWARD_DEADZONE: 12
 RIGHT_REVERSE_DEADZONE: 12  
 ```
 
-| Parameter              | Type  | Description | Default |
-|------------------------|-------|-------------|---------|
-| LEFT_FORWARD_DEADZONE  | int16 |             | 0       |
-| LEFT_REVERSE_DEADZONE  | int16 |             | 0       |
-| RIGHT_FORWARD_DEADZONE | int16 |             | 0       |
-| RIGHT_REVERSE_DEADZONE | int16 |             | 0       |
+| Parameter              | Type  | Description                  | Default |
+|------------------------|-------|------------------------------|---------|
+| LEFT_FORWARD_DEADZONE  | int16 | Left Motor Forward Deadzone  | 0       |
+| LEFT_REVERSE_DEADZONE  | int16 | Left Motor Reverse Deadzone  | 0       |
+| RIGHT_FORWARD_DEADZONE | int16 | Right Motor Forward Deadzone | 0       |
+| RIGHT_REVERSE_DEADZONE | int16 | Right Motor Reverse Deadzone | 0       |
 {% endcapture %}
 
 {% capture tab8 %}
