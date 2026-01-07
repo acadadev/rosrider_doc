@@ -42,8 +42,7 @@ After installation, verify the connection using `sudo i2cdetect -y 1` to detect 
 __Detecting I2C Devices__
 
 For troubleshooting purposes, you may want to detect I2C devices connected to your computer. To do this, you can use the `i2cdetect` command in the terminal.
-
-Install the `i2c-tools` package to access I2C devices:
+Install the `i2c-tools` package to access I2C devices:  
 
 <div class="highlight notranslate position-relative">
   <div class="highlight">
@@ -85,8 +84,9 @@ Note: If you only have a ROSRider connected directly, you should only see the ad
 
 __Connecting ROSRider to NVIDIA Jetson__
 
-The NVIDIA Jetson has two I2C ports accessible via the header. To ensure proper communication with I2C devices, it's crucial to configure the I2C voltage level. This is accomplished using a jumper (J514) on the board. To select 3.3V I2C, position the jumper accordingly.
-
+The NVIDIA Jetson has two I2C ports accessible via the header.
+To ensure proper communication with I2C devices, it's crucial to configure the I2C voltage level.
+This is accomplished using a jumper (J514) on the board. To select 3.3V I2C, position the jumper accordingly.
 To ensure proper I2C communication, verify that I2C is enabled at the kernel level and that your user account has the necessary permissions to access the I2C bus on the host computer.
 
 There are two I2C ports on the Jetson AGX:
