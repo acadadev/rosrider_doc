@@ -19,7 +19,7 @@ description: "Compiling and Installing ROS2 Drivers"
         > Native ROS, Out of the Box.
     </div>
     <div style="font-size: 1.1em; font-style: italic; line-height: 1.5;">
-        "No middleware, no hacks. Just pure, high-performance C++ nodes."
+        "No middleware. Just pure, high-performance C++ nodes."
     </div>
 </div>
 
