@@ -510,8 +510,7 @@ MAX_IDLE_SECONDS: 1800
    tab16_content=tab16
 %}
 
-__Power and Safety Limits__
-
+__Trim Model__
 
 In the context of motor control, the motor constant is a proportionality factor that relates the input voltage to the output speed or torque. By adjusting the motor constant, we can compensate for differences in motor performance, such as variations in motor efficiency or mechanical load.
 
@@ -561,18 +560,17 @@ By carefully configuring these flags, you can ensure that the ROSRider can work 
 __Understanding Command Timeout__
 
 The ROSRider employs a command timeout mechanism to ensure safe operation and prevent unintended movement. This mechanism monitors the frequency of incoming commands from the host computer. If the system fails to receive a command within a specified time frame, it enters a state that restrains movement.
-
 The `ALLOWED_SKIP` parameter in the ROSRider configuration determines the maximum number of consecutive command cycles that can be skipped before triggering the timeout. This value, when multiplied by the inverse of the `UPDATE_RATE` (measured in milliseconds), sets the overall timeout duration. For instance, if `ALLOWED_SKIP` is set to 3 and the `UPDATE_RATE` is 20Hz, the timeout duration would be 150 milliseconds.
 
 __Understanding PWM Frequency and its Impact on Motor Control__
 
 PWM (Pulse-Width Modulation) is a technique used to control the average power supplied to a device by turning the power on and off rapidly. In the context of motor control, PWM is used to vary the speed and direction of a motor.
 
-***The Role of PWM Frequency:***
+__The Role of PWM Frequency:__
 
 The PWM frequency, measured in Hertz (Hz), determines how often the power is switched on and off. A higher frequency results in smoother motor control and reduced audible noise. However, excessively high frequencies can lead to increased power losses and potential interference with other electronic components.
 
-***Selecting the Optimal PWM Frequency:***
+__Selecting the Optimal PWM Frequency:__
 
 The optimal PWM frequency depends on several factors, including:
 
@@ -580,7 +578,7 @@ The optimal PWM frequency depends on several factors, including:
 - Desired Performance: Higher frequencies can lead to smoother and quieter operation, but they may also increase power consumption and complexity of the control system.
 - Hardware Limitations: The microcontroller and power electronics used in the system may have limitations on the maximum achievable PWM frequency.
 
-***The Impact of PWM Frequency on ROSRider:***
+__The Impact of PWM Frequency on ROSRider:__
 
 The `PWM_FRQ` parameter in the ROSRider configuration file plays a crucial role in determining the performance and efficiency of your robot's motors. By carefully selecting this value, you can optimize motor smoothness, responsiveness, power consumption, and electromagnetic interference (EMI).
 
@@ -594,14 +592,14 @@ However, a higher frequency can also result in:
 - Increased Power Dissipation: More switching losses in the motor driver.
 - Higher EMI: Increased electromagnetic interference.
 
-***The Role of PWM_DIV:***
+__The Role of PWM_DIV:__
 
 To achieve the desired PWM frequency, you'll need to set the `PWM_DIV` parameter appropriately. This parameter divides the system clock to generate the PWM clock. A higher PWM_DIV value results in a lower PWM clock frequency.
 
 - This setting determines the clock frequency for the PWM module.
 - It's a hardware-based division of the system clock (80000000).
 
-***Balancing Performance and Efficiency:***
+__Balancing Performance and Efficiency:__
 
 The optimal PWM frequency depends on various factors, including:
 
@@ -609,7 +607,7 @@ The optimal PWM frequency depends on various factors, including:
 - Load Conditions: The expected load on the motors.
 - Desired Performance: The required level of smoothness, responsiveness, and efficiency.
 
-***Practical Considerations:***
+__Practical Considerations:__
 
 - Start with a Moderate Frequency: Begin with a moderate PWM frequency and gradually increase it if needed.
 - Monitor Motor Performance: Observe the motor's behavior and adjust the frequency accordingly.
@@ -618,14 +616,13 @@ The optimal PWM frequency depends on various factors, including:
 
 By carefully considering these factors and adjusting the PWM_DIV and PWM_FRQ parameters, you can optimize your ROSRider's performance and efficiency.
 
-***ROS2RPI_CONFIG Parameter***
+__ROS2RPI_CONFIG Parameter__
 
 When operating the ROSRider card in conjunction with the ROS2RPI card on a Raspberry Pi platform, the driver provides the capability to transmit commands to the ROS2RPI card. 
 This functionality is particularly valuable for controlling peripheral devices, such as lidar units, during the driver initialization sequence.  
 
 If the ROSRider card is deployed independently (standalone configuration), set this parameter to 0. For configurations involving the ROS2RPI card, refer to the [ROS2RPI documentation](https://docs.acada.dev/ros2rpi_doc) for appropriate parameter selection.
 
----
 
 Stay tuned for our next chapter, where we'll guide you through the process of updating your ROSRider's firmware.
 
