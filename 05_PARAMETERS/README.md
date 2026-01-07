@@ -75,11 +75,6 @@ PWM_FRQ: 1000
 
 __Understanding PWM Frequency and its Impact on Motor Control__
 
-PWM (Pulse-Width Modulation) is a technique used to control the average power supplied to a device by turning the power on and off rapidly.
-In the context of motor control, PWM is used to vary the speed and direction of a motor.
-
-__The Role of PWM Frequency:__
-
 The PWM frequency, measured in Hertz (Hz), determines how often the power is switched on and off. 
 A higher frequency results in smoother motor control and reduced audible noise. 
 However, excessively high frequencies can lead to increased power losses and potential interference with other electronic components.
