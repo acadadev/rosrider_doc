@@ -155,10 +155,8 @@ K_FF_ACCEL: 0.08
 
 {% capture tab7 %}
 ```yaml
-# enable SCV, if not deadzone values will be used
+# Enable SCV if not deadzone will be used
 OUTER_SCV: True
-```
-```yaml
 # STRIBECK friction model  
 STATIC_KICK: 0.8  
 COULOMB_RUN: 0.2  
@@ -169,6 +167,20 @@ EB_FF_LIMIT: 12.0
 SCV_OMEGA_THRESHOLD: 0.05  
 SCV_LATCH_THRESHOLD: 1.0  
 ```
+
+| Parameter              | Type    | Description | Default |
+|------------------------|---------|-------------|---------|
+| OUTER_SCV              | boolean |             | False   |
+| STATIC_KICK            | float   |             | 6.0     |
+| COULOMB_RUN            | float   |             | 3.0     |
+| STRIBECK_WIDTH         | float   |             | 64      | 
+| VISCOUS_FRICTION       | float   |             | 0.001   | 
+| VISCOUS_FRICTION_LIMIT | float   |             | 1.2     | 
+| EB_FF_LIMIT            | float   |             | 12.0    | 
+| SCV_OMEGA_THRESHOLD    | float   |             | 0.05    | 
+| SCV_LATCH_THRESHOLD    | float   |             | 1.0     | 
+
+
 ```yaml
 # DEAD ZONES
 LEFT_FORWARD_DEADZONE: 12  
@@ -176,6 +188,13 @@ LEFT_REVERSE_DEADZONE: 12
 RIGHT_FORWARD_DEADZONE: 12  
 RIGHT_REVERSE_DEADZONE: 12  
 ```
+
+| Parameter              | Type  | Description | Default |
+|------------------------|-------|-------------|---------|
+| LEFT_FORWARD_DEADZONE  | int16 |             | 0       |
+| LEFT_REVERSE_DEADZONE  | int16 |             | 0       |
+| RIGHT_FORWARD_DEADZONE | int16 |             | 0       |
+| RIGHT_REVERSE_DEADZONE | int16 |             | 0       |
 {% endcapture %}
 
 {% capture tab8 %}
