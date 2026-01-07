@@ -312,6 +312,7 @@ __ADC Bias Calibration__
 CS_LEFT_OFFSET: 0  
 CS_RIGHT_OFFSET: 0  
 ```
+
 {% endcapture %}
 
 {% capture tab11 %}
