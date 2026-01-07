@@ -24,6 +24,10 @@ description: "Connections and Pinmaps of ROSRider Card"
 </div>
 
 {% capture tab1 %}
+T1
+{% endcapture %}
+
+{% capture tab2 %}
 
 __Left Motor Connector__
 
@@ -33,7 +37,7 @@ This standard 6-wire encoder motor connector is compatible with various motors a
 
 {% endcapture %}
 
-{% capture tab2 %}
+{% capture tab3 %}
 
 __Right Motor Connector__
 
@@ -43,7 +47,7 @@ The right motor connector is a mirrored version of the left motor connector.
 
 {% endcapture %}
 
-{% capture tab3 %}
+{% capture tab4 %}
 
 __Servo Connector__
 
@@ -53,7 +57,7 @@ The ROSRider card can control two standard servos. The servos are powered by aux
 
 {% endcapture %}
 
-{% capture tab4 %}
+{% capture tab5 %}
 
 __AUX Power Port__
 
@@ -63,7 +67,7 @@ Software controllable auxillary power port, will generate 5V when turned on.
 
 {% endcapture %}
 
-{% capture tab5 %}
+{% capture tab6 %}
 
 __Power Control Port__
 
@@ -73,7 +77,7 @@ This is an internal connector, that can be used to control buttons on the board 
 
 {% endcapture %}
 
-{% capture tab6 %}
+{% capture tab7 %}
 
 __Communications Port__
 
@@ -83,7 +87,7 @@ This pin header can be used for both I2C0 and serial port communication. The res
 
 {% endcapture %}
 
-{% capture tab7 %}
+{% capture tab8 %}
 
 __I2C QWIC Port A__
 
@@ -93,7 +97,7 @@ This is a standard QWIC port, which can be connected by a standard QWIC cable. T
 
 {% endcapture %}
 
-{% capture tab8 %}
+{% capture tab9 %}
 
 __I2C QWIC Port B__
 
@@ -103,7 +107,7 @@ There are two identical QWIC ports, that can be used to connect other QWIC devic
 
 {% endcapture %}
 
-{% capture tab8 %}
+{% capture tab10 %}
 
 __Serial Port__
 
@@ -113,7 +117,7 @@ Serial Port debug connector, this can be connected to ROS2RPI card for accessing
 
 {% endcapture %}
 
-{% capture tab9 %}
+{% capture tab11 %}
 
 __Power Connector__
 
@@ -123,7 +127,7 @@ XT30 Power Connector. Apply maximum 12V.
 
 {% endcapture %}
 
-{% capture tab10 %}
+{% capture tab12 %}
 
 __Battery__
 
