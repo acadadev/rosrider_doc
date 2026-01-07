@@ -357,6 +357,16 @@ SYNC_INTERVAL: 8
 DT_I2C: 32  
 DT_THRESHOLD: 2  
 ```
+
+| Parameter     | Type   | Description                                        | Default |
+|---------------|--------|----------------------------------------------------|---------|
+| SYNC_KP       | uint16 | Phase Error Proportional Coefficient               | True    |
+| SYNC_KI       | uint16 | Phase Error Integral Coefficient                   | True    |
+| SYNC_LIMIT    | uint16 | Timer Adjustment Limit                             | False   |
+| SYNC_INTERVAL | uint8  | Timer Adjustment Interval                          | False   |
+| DT_I2C        | uint16 | Desired Phase Error                                | False   |
+| DT_THRESHOLD  | uint16 | If below this threshold Timer will not be adjusted | False   |
+
 {% endcapture %}
 
 {% capture tab13 %}
