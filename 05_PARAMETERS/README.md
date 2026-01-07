@@ -163,13 +163,13 @@ BASE_WIDTH: 0.174
 MAX_RPM: 160.0  
 ```
 
-| Parameter   | Type   | Description                    | Default |
-|-------------|--------|--------------------------------|---------|
-| GEAR_RATIO  | float  | Gear ratio of the motors.      | 65.0    |
-| ENCODER_PPR | uint16 | Encoder pulses per revolution. | 48      |
-| WHEEL_DIA   | float  | Diameter of the wheels.        | 0.0685  |
-| BASE_WIDTH  | float  | Distance between the wheels.   | 0.168   |
-| MAX_RPM     | float  | Distance between the wheels.   | 90.0    |
+| Parameter   | Type   | Description                   | Default |
+|-------------|--------|-------------------------------|---------|
+| GEAR_RATIO  | float  | Gear ratio of the motors      | 65.0    |
+| ENCODER_PPR | uint16 | Encoder pulses per revolution | 48      |
+| WHEEL_DIA   | float  | Diameter of the wheels        | 0.0685  |
+| BASE_WIDTH  | float  | Distance between the wheels   | 0.168   |
+| MAX_RPM     | float  | Distance between the wheels   | 90.0    |
 
 {% endcapture %}
 
