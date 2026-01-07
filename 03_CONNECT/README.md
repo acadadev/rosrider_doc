@@ -28,9 +28,8 @@ __Connecting ROSRider to Raspberry PI__
 This wiring diagram illustrates direct I2C communication with the Raspberry PI.  
 
 To enable I2C communication on a Raspberry Pi running Ubuntu, first ensure I2C is enabled by adding
-`dtparam=i2c_arm=on` to `/boot/firmware/config.txt` and rebooting.  
-
-Install the necessary tools with `sudo apt install i2c-tools`. Use jumper wires to connect your Raspberry PI using GPIO pins 2 (SDA) and 3 (SCL).
+`dtparam=i2c_arm=on` to `/boot/firmware/config.txt` and rebooting. Install the necessary tools with `sudo apt install i2c-tools`.
+Use jumper wires to connect your Raspberry PI using GPIO pins 2 (SDA) and 3 (SCL).
 After installation, verify the connection using `sudo i2cdetect -y 1` to detect connected devices.  
 
 <div style="display: flex; justify-content: space-around; margin: 25px 0;">
