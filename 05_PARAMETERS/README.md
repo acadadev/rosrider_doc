@@ -185,6 +185,13 @@ TRIM_GAIN: 1.0
 TRIM_MOTOR_K: 1.0  
 TRIM_CONSTANT: 0.0  
 ```
+
+| Parameter     | Type  | Description                           | Default |
+|---------------|-------|---------------------------------------|---------|
+| TRIM_GAIN     | float | Overall Gain Factor                   | 1.0     |
+| TRIM_MOTOR_K  | float | Motor constant for output calculation | 1.0     |
+| TRIM_CONSTANT | float | Trim value for motor output           | 1.0     | 
+
 {% endcapture %}
 
 {% capture tab9 %}
@@ -381,17 +388,7 @@ __Power and Safety Limits__
 | LEFT_AMP_LIMIT | float | Maximum current limit for the left motor. | 1.6 |
 | RIGHT_AMP_LIMIT | float | Maximum current limit for the right motor. | 1.6 |
 
-__PID Control Parameters__
 
-
-
-__Drive Trim Parameters__
-
-| parameter | type | description | default |
-| -------- | -------- | -------- | -------- |
-| GAIN | float | Overall gain factor. | 1.0 |
-| TRIM | float | Trim value for motor output. | 0.0 |
-| MOTOR_CONSTANT | float | Motor constant for output calculation. | 1.0 |
 
 In the context of motor control, the motor constant is a proportionality factor that relates the input voltage to the output speed or torque. By adjusting the motor constant, we can compensate for differences in motor performance, such as variations in motor efficiency or mechanical load.
 
