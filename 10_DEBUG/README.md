@@ -5,6 +5,24 @@ title: "Troubleshooting"
 description: "Error codes and conditions on the ROSRider control card"
 ---
 
+<div style="
+    background-color: #f8f9fa;
+    border-left: 6px solid #4CAF50;
+    color: #333333;
+    padding: 25px;
+    border-radius: 4px;
+    margin: 30px 0;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    font-family: 'Ubuntu', sans-serif;
+">
+    <div style="font-size: 1.4em; font-weight: bold; color: #4CAF50; margin-bottom: 5px;">
+        > Debug with Confidence.
+    </div>
+    <div style="font-size: 1.1em; font-style: italic; line-height: 1.5;">
+        "Every robot builder faces challenges. Here is information for overcoming them -— featuring common solutions, error code definitions, and diagnostic procedures."
+    </div>
+</div>
+
 __OTHER CHAPTERS__
 
 slam, navigation and others, must be adsorbed by new chapters, or
