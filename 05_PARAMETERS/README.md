@@ -510,37 +510,7 @@ MAX_IDLE_SECONDS: 1800
    tab16_content=tab16
 %}
 
-__General configuration__
-
-| parameter | type | description | default |
-| -------- | -------- | -------- | -------- |
-| I2C_ENABLED  | bool | Enables or disables I2C communication. For development only. | True |
-| ODOM_FRAME_ID | string | Sets the frame ID for the odometry data. | `odom` |
-| BASE_FRAME_ID | string | Sets the frame ID for the robot's base frame. | `base_footprint` |
-| BROADCAST_TF2 | bool | Enables or disables TF2 broadcast. | True |
-| PUB_ODOMETRY | bool | Enables or disables odometry data publication. | True |
-| PUB_JOINTS | bool | Enables or disables joint state publication. | True |
-| PUB_DIAGNOSTICS | bool | Enables or disables diagnostic data publication. | True |
-| ROS2RPI_CONFIG | uint8 | Configuration for the ROS2RPI board (if used). | 0x33 |
-| AUTO_SYNC | bool | Enables automatic clock synchronization. | True |
-| DEBUG | bool | Enables or disables debug mode. | False |
-| CONFIG_FLAGS | uint8 | Configuration flags for specific features. | 48 |
-| UPDATE_RATE | uint8 | Desired update rate for the control loop. | 10 |
-| ALLOWED_SKIP | uint8 | Command timeout in units of 1 / UPDATE_RATE. | 3 |
-| PWM_DIV | uint8 | PWM Frequency divider | 64 |
-| DRIVE_MODE | uint8 | Drive mode configuration. | 3 |
-| MONITOR_RATE | uint8 | Rate at which current sensor data is monitored. | 100 |
-| PWM_SCALE | uint16 | PWM scaling factor. | 256 |
-| PWM_FRQ | uint16 | PWM frequency. |  50 |
-| MAX_IDLE_SECONDS | uint16 | Maximum idle seconds before entering hibernate mode. | 3600 |
-| RTC_TRIM | uint32 | Real-Time Clock trim value. | 0x7FFF |
-
-
-
 __Power and Safety Limits__
-
-
-
 
 
 In the context of motor control, the motor constant is a proportionality factor that relates the input voltage to the output speed or torque. By adjusting the motor constant, we can compensate for differences in motor performance, such as variations in motor efficiency or mechanical load.
@@ -569,16 +539,16 @@ The `CONFIG_FLAGS` parameter in the ROSRider configuration file is a bitmask tha
 
 Here's a breakdown of the individual bits and their corresponding functionalities:
 
-| bit | function | description |
-| ----- | ----- | ----- |
-| 0   | LEFT_REVERSE | inverts the direction of the left motor |
-| 1   | RIGHT_REVERSE | inverts the direction of the left motor |
-| 2   | LEFT_SWAP | swaps the phase order of the left encoder |
-| 3   | RIGHT_SWAP | swaps the phase order of the left encoder |
-| 4   | LEFT_ENC_AB | selects the AB phase encoding for the left encoder |
-| 5   | RIGHT_ENC_AB | selects the AB phase encoding for the right encode |
-| 6   | MODE1 | Brake mode |
-| 7   | MODE2 | High side decay |
+| Bit | Function      | Description                                        |
+|-----|---------------|----------------------------------------------------|
+| 0   | LEFT_REVERSE  | inverts the direction of the left motor            |
+| 1   | RIGHT_REVERSE | inverts the direction of the left motor            |
+| 2   | LEFT_SWAP     | swaps the phase order of the left encoder          |
+| 3   | RIGHT_SWAP    | swaps the phase order of the left encoder          |
+| 4   | LEFT_ENC_AB   | selects the AB phase encoding for the left encoder |
+| 5   | RIGHT_ENC_AB  | selects the AB phase encoding for the right encode |
+| 6   | MODE1         | Brake mode                                         |
+| 7   | MODE2         | High side decay                                    |
 
 The configuration flags allow you to customize the behavior of the ROSRider to match your specific hardware setup. Here's a breakdown of their functions:
 
