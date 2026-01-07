@@ -366,6 +366,8 @@ PUB_DIAGNOSTICS: True
 | PUB_JOINTS      | bool   | Enables or disables joint state publication     | True             |
 | PUB_DIAGNOSTICS | bool   | Enables or disables diagnostic data publication | True             |
 
+{% endcapture %}
+
 {% capture tab14 %}
 
 __Electrical Limits__
