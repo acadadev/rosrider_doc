@@ -26,17 +26,17 @@ This approach encourages creativity, reduces costs, and promotes the reuse of ex
   
   <figure style="width: 25%; margin: 0; text-align: center;">
     <img src="images/rosrider/sorcerer_rosrider.png" alt="Sorcerer with ROSRider" style="width: 100%; border: 1px solid #ccc; border-radius: 5px; box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);">
-    <figcaption style="margin-top: 10px; font-style: italic; color: #666;">Fig 1. Minimal chassis designed for lane-following tasks using image processing</figcaption>
+    <figcaption>Fig 1. Minimal chassis designed for lane-following tasks using image processing</figcaption>
   </figure>
 
   <figure style="width: 25%; margin: 0; text-align: center;">
     <img src="images/rosrider/caretta_top_sq.jpg" alt="Caretta with ROS2RPI" style="width: 100%; border: 1px solid #ccc; border-radius: 5px; box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);">
-    <figcaption style="margin-top: 10px; font-style: italic; color: #666;">Fig 2. Chassis with LIDAR designed for  SLAM / Navigation</figcaption>
+    <figcaption>Fig 2. Chassis with LIDAR designed for  SLAM / Navigation</figcaption>
   </figure>
 
   <figure style="width: 25%; margin: 0; text-align: center;">
     <img src="images/rosrider/ROSRider4D_sq.png" alt="ROSRider Control Card" style="width: 100%; border: 1px solid #ccc; border-radius: 5px; box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);">
-    <figcaption style="margin-top: 10px; font-style: italic; color: #666;">Fig 3. ROSRider Control Card</figcaption>
+    <figcaption>Fig 3. ROSRider Control Card</figcaption>
   </figure>
 
 </div>
@@ -54,7 +54,7 @@ This feature prevents boot conflicts caused by LiDAR serial output during system
 <div style="display: flex; justify-content: space-around; margin: 25px 0;">
   <figure style="width: 50%; margin: 0; text-align: center;">
     <img src="images/rosrider/odometry-house-sm.gif" alt="Odometry Plot" style="width: 100%; border: 1px solid #ccc; border-radius: 5px; box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);">
-    <figcaption style="margin-top: 10px; font-style: italic; color: #666;">Fig 4. Odometry and LIDAR data visualization</figcaption>
+    <figcaption>Fig 4. Odometry and LIDAR data visualization</figcaption>
   </figure>
 </div>
 
@@ -66,17 +66,17 @@ To further enhance the integration of ROSRider with open-source robotics, we hav
   
   <figure style="width: 25%; margin: 0; text-align: center;">
     <img src="images/rosrider/gazebo_caretta.png" alt="Gazebo CARETTA" style="width: 100%; border: 1px solid #ccc; border-radius: 5px; box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);">
-    <figcaption style="margin-top: 10px; font-style: italic; color: #666;">Fig 5. Gazebo Simulation with CARETTA</figcaption>
+    <figcaption>Fig 5. Gazebo Simulation with CARETTA</figcaption>
   </figure>
 
   <figure style="width: 25%; margin: 0; text-align: center;">
     <img src="images/rosrider/gazebo_sorcerer.png" alt="Gazebo SORCERER" style="width: 100%; border: 1px solid #ccc; border-radius: 5px; box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);">
-    <figcaption style="margin-top: 10px; font-style: italic; color: #666;">Fig 6. Gazebo Simulation with SORCERER</figcaption>
+    <figcaption>Fig 6. Gazebo Simulation with SORCERER</figcaption>
   </figure>
 
   <figure style="width: 25%; margin: 0; text-align: center;">
     <img src="images/rosrider/rviz_cartographer_sq.png" alt="Cartographer RVIZ" style="width: 100%; border: 1px solid #ccc; border-radius: 5px; box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);">
-    <figcaption style="margin-top: 10px; font-style: italic; color: #666;">Fig 7. RVIZ visualization of Simulated Robot</figcaption>
+    <figcaption>Fig 7. RVIZ visualization of Simulated Robot</figcaption>
   </figure>
 
 </div>
@@ -89,17 +89,17 @@ ROSRider can drive a wide range of encoder gear motors, from simple DC motors to
   
   <figure style="width: 25%; margin: 0; text-align: center;">
     <img src="images/rosrider/metal_gear_motor_a.png" alt="Metal Gear Motor" style="width: 100%; border: 1px solid #ccc; border-radius: 5px; box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);">
-    <figcaption style="margin-top: 10px; font-style: italic; color: #666;">Fig 8. Metal Gear Motor</figcaption>
+    <figcaption>Fig 8. Metal Gear Motor</figcaption>
   </figure>
 
   <figure style="width: 25%; margin: 0; text-align: center;">
     <img src="images/rosrider/plastic_gear_motor.png" alt="Plastic Gear Motor" style="width: 100%; border: 1px solid #ccc; border-radius: 5px; box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);">
-    <figcaption style="margin-top: 10px; font-style: italic; color: #666;">Fig 9. Plastic Gear Motor (DG01D-E)</figcaption>
+    <figcaption>Fig 9. Plastic Gear Motor (DG01D-E)</figcaption>
   </figure>
 
   <figure style="width: 25%; margin: 0; text-align: center;">
     <img src="images/rosrider/vacuum_robot_motor.png" alt="Vacuum cleaner robot spare motor" style="width: 100%; border: 1px solid #ccc; border-radius: 5px; box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);">
-    <figcaption style="margin-top: 10px; font-style: italic; color: #666;">Fig 10. Vacuum Cleaner Spare Part</figcaption>
+    <figcaption>Fig 10. Vacuum Cleaner Spare Part</figcaption>
   </figure>
 
 </div>
