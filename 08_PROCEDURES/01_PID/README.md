@@ -28,7 +28,7 @@ To start the ROSRider driver, execute the following command on the robot:
 </div>
 
 <div style="display: flex; margin: 25px 0;">
-   <img class="replay" src="../../images/rosrider_launch.gif" alt="ROSRider node launch" style="box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);">
+   <img class="replay" src="../../images/rosrider/rosrider_launch.gif" alt="ROSRider node launch" style="box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);">
 </div>
 
 To get a list of parameters for `rosrider_node`, execute the following command:
@@ -48,7 +48,7 @@ To get a list of parameters for `rosrider_node`, execute the following command:
 </div>
 
 <div style="display: flex; margin: 25px 0;">
-   <img class="replay" src="../../images/ros2_param_list.gif" alt="ROS Parameter list for rosrider_node" style="box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);">
+   <img class="replay" src="../../images/rosrider/ros2_param_list.gif" alt="ROS Parameter list for rosrider_node" style="box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);">
 </div>
 
 Next, we'll modify the `kP` parameter, which controls the proportional gain for the left motor.
@@ -68,7 +68,7 @@ Next, we'll modify the `kP` parameter, which controls the proportional gain for 
 </div>
 
 <div style="display: flex; margin: 25px 0;">
-   <img class="replay" src="../../images/ros2_param_set.gif" alt="Set ROS Parameter" style="box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);">
+   <img class="replay" src="../../images/rosrider/ros2_param_set.gif" alt="Set ROS Parameter" style="box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);">
 </div>
 
 Let's verify the parameter change by requesting it from the ROS Parameter Server.
@@ -88,7 +88,7 @@ Let's verify the parameter change by requesting it from the ROS Parameter Server
 </div>
 
 <div style="display: flex; margin: 25px 0;">
-   <img class="replay" src="../../images/ros2_param_get.gif" alt="Get ROS Parameter" style="box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);">
+   <img class="replay" src="../../images/rosrider/ros2_param_get.gif" alt="Get ROS Parameter" style="box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);">
 </div>
 
 ---
@@ -110,8 +110,8 @@ To launch the RQT Reconfigure tool, execute the following command:
 </div>
 
 <video controls width="980">
-  <source src="/rosrider_doc/videos/rqt_reconfigure.webm" type="video/webm" />
-  <source src="/rosrider_doc/videos/rqt_reconfigure.mp4" type="video/mp4" />
+  <source src="../../videos/rqt_reconfigure.webm" type="video/webm" />
+  <source src="../../videos/rqt_reconfigure.mp4" type="video/mp4" />
 </video>
 
 rqt_plot
