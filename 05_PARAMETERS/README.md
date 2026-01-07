@@ -30,7 +30,7 @@ UPDATE_RATE: 20        # 10, 16, 20, 32, 50, 64
 | CONFIG_FLAGS | uint8 | Hardware Config Bitmask             | 48      |
 | UPDATE_RATE  | uint8 | Outer PID Loop Update Rate          | 20      |
 
-__Understanding the Configuration Flag__
+__Hardware Configuration Flags__
 
 The `CONFIG_FLAGS` parameter in the ROSRider configuration file is a bitmask that controls various hardware settings. By setting specific bits within this flag, you can configure different aspects of the ROSRider's behavior.
 
