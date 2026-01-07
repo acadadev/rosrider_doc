@@ -33,7 +33,7 @@ description: "Connections and Pinmaps of ROSRider Card"
 
 __Left Motor Connector__
 
-This standard 6-wire encoder motor connector is compatible with various motors and can be used with standard cables. The ROSRider card supports both dual-phase and single-phase encoders, with the encoder type configurable via software. For single-phase encoders, connect to the Encoder Phase A pin and leave Encoder Phase B unconnected.  
+This standard 6-wire encoder motor connector is compatible with various motors and can be used with standard cables.
 
 ![Left Motor Connector](../images/pinmap/dwg_left_motor.png)
 
