@@ -145,7 +145,7 @@ RIGHT_KT_W: -0.008
 
 {% capture tab6 %}
 
-__Feed Forwards__
+__Physics Feed Forwards__
 
 ```yaml
 OUTER_FEEDFORWARD: True
@@ -300,11 +300,16 @@ CURRENT_OMEGA_FILTER: True
 __ADC Config__
 
 ```yaml
-# ADC
 ADC_SYNC: True  
 ADC_MULTIPHASE: True  
 ADC_BIPHASE: False  
 ```
+
+| Parameter      | Type    | Description                                          | Default |
+|----------------|---------|------------------------------------------------------|---------|
+| ADC_SYNC       | boolean | ADC Syncronized with PWM. Required for Cascaded Mode | False   |
+| ADC_MULTIPHASE | boolean | Multi-Phase ADC Measurement. BEMF compensated Mode   | False   |
+| ADC_BIPHASE    | boolean | Bi-Phase ADC Measurement                             | False   |
 
 __ADC Bias Calibration__
 
@@ -313,6 +318,11 @@ CS_LEFT_OFFSET: 0
 CS_RIGHT_OFFSET: 0  
 ```
 
+| Parameter       | Type  | Description                           | Default |
+|-----------------|-------|---------------------------------------|---------|
+| CS_LEFT_OFFSET  | int16 | Current Sense Calibration Value Left  | 0       |
+| CS_RIGHT_OFFSET | int16 | Current Sense Calibration Value Right | 0       |
+
 {% endcapture %}
 
 {% capture tab11 %}
@@ -320,12 +330,19 @@ CS_RIGHT_OFFSET: 0
 __Enable Features__
 
 ```yaml
-# features
 AUTO_SYNC: True  
 AUTO_BIAS: True  
 AUTO_BRAKE: False  
 CASCADED: True  
 ```
+
+| Parameter  | Type    | Description                      | Default |
+|------------|---------|----------------------------------|---------|
+| AUTO_SYNC  | boolean | Automatic Syncronization Enabled | True    |
+| AUTO_BIAS  | boolean | Auto Bias Enabled                | True    |
+| AUTO_BRAKE | boolean | Auto Brake Enabled               | False   |
+| CASCADED   | boolean | Cascaded Inner Loop Enabled      | False   |
+
 {% endcapture %}
 
 {% capture tab12 %}
