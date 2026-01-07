@@ -16,10 +16,10 @@ description: "Parametric Configuration of the ROSRider control card"
     font-family: 'Ubuntu', sans-serif;
 ">
     <div style="font-size: 1.4em; font-weight: bold; color: #4CAF50; margin-bottom: 5px;">
-        > ROSRider aims to lower the cost barrier for building ROS based robots.
+        > Complete Parametric Freedom.
     </div>
     <div style="font-size: 1.1em; font-style: italic; line-height: 1.5;">
-        "Using commodity parts, users can build robots that can run the Robot Operating System."
+        "Every variable—from low-level physics to control loops—is dynamically adjustable in real-time via the ROS parameter server."
     </div>
 </div>
 
