@@ -25,7 +25,7 @@ description: "Connections and Pinmaps of ROSRider Card"
 
 {% capture tab1 %}
 
-![ROSRider Port Diagram](../images/ROSRider4D_portmap.png)
+![ROSRider Port Diagram](../images/rosrider/ROSRider4D_portmap.png)
 
 {% endcapture %}
 
