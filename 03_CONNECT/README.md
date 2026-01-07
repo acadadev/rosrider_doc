@@ -31,12 +31,12 @@ This wiring diagram illustrates direct I2C communication with the Raspberry PI.
   
   <figure style="width: 45%; margin: 0; text-align: center;">
     <img src="../images/rosrider/RPI5_ROSRider.png" alt="Raspberry PI Wiring Diagram" style="width: 100%;">
-    <figcaption style="font-size: 0.85em; margin-top: 10px; font-style: italic; color: #666;">Raspberry PI Wiring Diagram.</figcaption>
+    <figcaption style="margin-top: 10px; font-style: italic; color: #666;">Raspberry PI Wiring Diagram.</figcaption>
   </figure>
 
   <figure style="width: 45%; margin: 0; text-align: center;">
     <img src="../images/rosrider/caretta_i2c.jpg" alt="Connecting to Raspberry PI" style="width: 100%;">
-    <figcaption style="font-size: 0.85em; margin-top: 10px; font-style: italic; color: #666;">This image depicts the actual wiring configuration for direct I2C communication between the Raspberry Pi and ROSRider.</figcaption>
+    <figcaption style="margin-top: 10px; font-style: italic; color: #666;">This image depicts the actual wiring configuration for direct I2C communication between the Raspberry Pi and ROSRider.</figcaption>
   </figure>
 
 </div>
@@ -53,12 +53,12 @@ There are two I2C ports on the Jetson AGX:
   
   <figure style="width: 45%; margin: 0; text-align: center;">
     <img src="../images/rosrider/jetson_agx_i2c_0.png" alt="Jetson AGX I2C Port 1" style="width: 100%;">
-    <figcaption style="font-size: 0.85em; margin-top: 10px; font-style: italic; color: #666;">Raspberry PI Wiring Diagram.</figcaption>
+    <figcaption style="margin-top: 10px; font-style: italic; color: #666;">Raspberry PI Wiring Diagram.</figcaption>
   </figure>
 
   <figure style="width: 45%; margin: 0; text-align: center;">
     <img src="../images/rosrider/jetson_agx_i2c_1.png" alt="Jetson AGX I2C Port 2" style="width: 100%;">
-    <figcaption style="font-size: 0.85em; margin-top: 10px; font-style: italic; color: #666;">This image depicts the actual wiring configuration for direct I2C communication between the Raspberry Pi and ROSRider.</figcaption>
+    <figcaption style="margin-top: 10px; font-style: italic; color: #666;">This image depicts the actual wiring configuration for direct I2C communication between the Raspberry Pi and ROSRider.</figcaption>
   </figure>
 
 </div>
