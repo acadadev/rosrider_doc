@@ -221,6 +221,27 @@ TRIM_CONSTANT: 0.0
 | TRIM_MOTOR_K  | float | Motor constant for output calculation | 1.0     |
 | TRIM_CONSTANT | float | Trim value for motor output           | 1.0     | 
 
+In the context of motor control, the motor constant is a proportionality factor that relates the input voltage to the output speed or torque. By adjusting the motor constant, we can compensate for differences in motor performance, such as variations in motor efficiency or mechanical load.
+
+The trim parameter, on the other hand, is used to introduce a small offset to the motor's output. This can be helpful in compensating for slight misalignments in the robot's mechanical structure or differences in motor characteristics.
+
+In the given equations:
+
+```c
+MotorConstantLeft = (GAIN + TRIM) / MOTOR_CONSTANT;
+MotorConstantRight = (GAIN - TRIM) / MOTOR_CONSTANT;
+```
+
+The `MotorConstantLeft` and `MotorConstantRight` values are used to multiply the algorithm output (typically from a PID controller) to determine the appropriate PWM values for the left and right motors. These adjusted motor constants account for variations in motor performance and mechanical factors, ensuring precise and coordinated motor control.
+
+- `MotorConstantLeft` and `MotorConstantRight` are the adjusted motor constants for the left and right motors, respectively.
+- `GAIN` is a global gain factor that scales the overall motor output.
+- `TRIM` is a small value used to adjust the motor output.
+- `MOTOR_CONSTANT` is the nominal motor constant.
+
+By adjusting the TRIM parameter, we can effectively fine-tune the motor outputs to ensure accurate and precise robot motion, even in the presence of minor variations in motor performance or mechanical alignment.    
+
+
 {% endcapture %}
 
 {% capture tab9 %}
@@ -510,27 +531,6 @@ MAX_IDLE_SECONDS: 1800
    tab16_content=tab16
 %}
 
-__Trim Model__
-
-In the context of motor control, the motor constant is a proportionality factor that relates the input voltage to the output speed or torque. By adjusting the motor constant, we can compensate for differences in motor performance, such as variations in motor efficiency or mechanical load.
-
-The trim parameter, on the other hand, is used to introduce a small offset to the motor's output. This can be helpful in compensating for slight misalignments in the robot's mechanical structure or differences in motor characteristics.
-
-In the given equations:
-
-```c
-MotorConstantLeft = (GAIN + TRIM) / MOTOR_CONSTANT;
-MotorConstantRight = (GAIN - TRIM) / MOTOR_CONSTANT;
-```
-
-The `MotorConstantLeft` and `MotorConstantRight` values are used to multiply the algorithm output (typically from a PID controller) to determine the appropriate PWM values for the left and right motors. These adjusted motor constants account for variations in motor performance and mechanical factors, ensuring precise and coordinated motor control.
-
-- `MotorConstantLeft` and `MotorConstantRight` are the adjusted motor constants for the left and right motors, respectively.
-- `GAIN` is a global gain factor that scales the overall motor output.
-- `TRIM` is a small value used to adjust the motor output.
-- `MOTOR_CONSTANT` is the nominal motor constant.
-
-By adjusting the TRIM parameter, we can effectively fine-tune the motor outputs to ensure accurate and precise robot motion, even in the presence of minor variations in motor performance or mechanical alignment.    
 
 __Understanding the Configuration Flag__
 
