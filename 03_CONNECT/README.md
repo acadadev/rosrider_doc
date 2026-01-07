@@ -30,7 +30,7 @@ This wiring diagram illustrates direct I2C communication with the Raspberry PI.
 <div style="display: flex; justify-content: space-around; margin: 25px 0;">
   
   <figure style="width: 60%; margin: 0; text-align: center;">
-    <img src="../images/rpi4b_wiring.png" alt="Raspberry PI Wiring Diagram" style="width: 100%; border: 1px solid #ccc; border-radius: 5px; box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);">
+    <img src="../images/rosrider/rpi4b_wiring.png" alt="Raspberry PI Wiring Diagram" style="width: 100%; border: 1px solid #ccc; border-radius: 5px; box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);">
     <figcaption style="font-size: 0.85em; margin-top: 10px; font-style: italic; color: #666;">Raspberry PI Wiring Diagram.</figcaption>
   </figure>
 
@@ -39,7 +39,7 @@ This wiring diagram illustrates direct I2C communication with the Raspberry PI.
 <div style="display: flex; justify-content: space-around; margin: 25px 0;">
 
   <figure style="width: 50%; margin: 0; text-align: center;">
-    <img src="../images/caretta_bare.jpg" alt="Connecting to Raspberry PI" style="width: 100%; border: 1px solid #ccc; border-radius: 5px; box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);">
+    <img src="../images/rosrider/caretta_bare.jpg" alt="Connecting to Raspberry PI" style="width: 100%; border: 1px solid #ccc; border-radius: 5px; box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);">
     <figcaption style="font-size: 0.85em; margin-top: 10px; font-style: italic; color: #666;">This image depicts the actual wiring configuration for direct I2C communication between the Raspberry Pi and ROSRider.</figcaption>
   </figure>
 
@@ -56,12 +56,12 @@ There are two I2C ports on the Jetson AGX:
 <div style="display: flex; justify-content: space-around; margin: 25px 0;">
   
   <figure style="width: 45%; margin: 0; text-align: center;">
-    <img src="../images/jetson_agx_i2c_0.png" alt="Jetson AGX I2C Port 1" style="width: 100%; border: 1px solid #ccc; border-radius: 5px; box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);">
+    <img src="../images/rosrider/jetson_agx_i2c_0.png" alt="Jetson AGX I2C Port 1" style="width: 100%; border: 1px solid #ccc; border-radius: 5px; box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);">
     <figcaption style="font-size: 0.85em; margin-top: 10px; font-style: italic; color: #666;">Raspberry PI Wiring Diagram.</figcaption>
   </figure>
 
   <figure style="width: 45%; margin: 0; text-align: center;">
-    <img src="../images/jetson_agx_i2c_1.png" alt="Jetson AGX I2C Port 2" style="width: 100%; border: 1px solid #ccc; border-radius: 5px; box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);">
+    <img src="../images/rosrider/jetson_agx_i2c_1.png" alt="Jetson AGX I2C Port 2" style="width: 100%; border: 1px solid #ccc; border-radius: 5px; box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);">
     <figcaption style="font-size: 0.85em; margin-top: 10px; font-style: italic; color: #666;">This image depicts the actual wiring configuration for direct I2C communication between the Raspberry Pi and ROSRider.</figcaption>
   </figure>
 
@@ -106,7 +106,7 @@ Use the i2cdetect command to scan the I2C bus and identify connected devices:
 </div>
 
 <div style="display: flex; margin: 25px 0;">
-<img class="replay" src="../images/i2c_detect.gif" alt="Detecting I2C Devices" style="box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);">
+<img class="replay" src="../images/rosrider/i2c_detect.gif" alt="Detecting I2C Devices" style="box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);">
 </div>
 
 This command will display a table of I2C addresses. The default address of the ROSRider is `0x3C`, and the default address of the ROS2RPI card is `0x20`.
