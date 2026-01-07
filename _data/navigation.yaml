@@ -7,9 +7,6 @@
 - title: Pinmap
   url: /rosrider_doc/02_PINMAP/
 
-- title: Host Connection
-  url: /rosrider_doc/03_CONNECT/
-
 - title: ROS2 Drivers
   url: /rosrider_doc/04_DRIVERS/
 
@@ -18,6 +15,9 @@
 
 - title: Firmware
   url: /rosrider_doc/06_FIRMWARE/
+
+- title: Controller Diagram
+  url: /rosrider_doc/07_DIAGRAM/
 
 - title: Procedures
   url: /rosrider_doc/08_PROCEDURES/

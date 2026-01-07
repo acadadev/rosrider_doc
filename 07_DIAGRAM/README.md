@@ -1,6 +1,6 @@
 ---
 layout: default
-title_url: /03_CONNECT/README.html
+title_url: /07_DIAGRAM/README.html
 title: "Connecting ROSRider to Host Computer"
 description: "Connecting ROSRider Control Card to Host Computer"
 ---
