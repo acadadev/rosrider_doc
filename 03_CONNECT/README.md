@@ -10,13 +10,17 @@ __Connecting ROSRider to Raspberry PI__
 This wiring diagram illustrates direct I2C communication with the Raspberry PI.
 
 <div style="display: flex; justify-content: space-around; margin: 25px 0;">
-   <img src="../images/rpi4b_wiring.png" alt="Connecting to Raspberry PI diagram" style="box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);">
-</div>
+  
+  <figure style="width: 40%; margin: 0; text-align: center;">
+    <img src="images/rpi4b_wiring.png" alt="Raspberry PI Wiring Diagram" style="width: 100%; border: 1px solid #ccc; border-radius: 5px; box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);">
+    <figcaption style="font-size: 0.85em; margin-top: 10px; font-style: italic; color: #666;">Raspberry PI Wiring Diagram.</figcaption>
+  </figure>
 
-This image depicts the actual wiring configuration for direct I2C communication between the Raspberry Pi and ROSRider.
+  <figure style="width: 40%; margin: 0; text-align: center;">
+    <img src="images/caretta_bare.png" alt="Connecting to Raspberry PI" style="width: 100%; border: 1px solid #ccc; border-radius: 5px; box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);">
+    <figcaption style="font-size: 0.85em; margin-top: 10px; font-style: italic; color: #666;">This image depicts the actual wiring configuration for direct I2C communication between the Raspberry Pi and ROSRider.</figcaption>
+  </figure>
 
-<div style="display: flex; margin: 25px 0;">
-   <img src="../images/caretta_bare.jpg" alt="Connecting to Raspberry PI" style="width:50%; box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);">
 </div>
 
 __Connecting ROSRider to NVIDIA Jetson__
