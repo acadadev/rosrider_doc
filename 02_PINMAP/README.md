@@ -24,7 +24,9 @@ description: "Connections and Pinmaps of ROSRider Card"
 </div>
 
 {% capture tab1 %}
-T1
+
+![ROSRider Port Diagram](../images/ROSRider4D_portmap.png)
+
 {% endcapture %}
 
 {% capture tab2 %}
@@ -163,13 +165,6 @@ Use CR1225 3V coin battery.
    tab12_title="Battery" 
    tab12_content=tab12
 %}
-
-<div style="display: flex; justify-content: space-around; margin: 25px 0;">
-  <figure style="width: 50%; margin: 0; text-align: center;">
-    <img src="../images/ROSRider4D_portmap.png" alt="ROSRider Connection Diagram" style="width: 100%; border: 1px solid #ccc; border-radius: 5px; box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);">
-    <figcaption style="font-size: 0.85em; margin-top: 10px; font-style: italic; color: #666;">Equipped with multiple ports and connectors, the ROSRider card enables connection to encoder motors and other peripherals.</figcaption>
-  </figure>
-</div>
 
 The subsequent chapter provides clear diagrams and instructions for connecting to popular platforms like Raspberry Pi and NVIDIA Jetson.
 
