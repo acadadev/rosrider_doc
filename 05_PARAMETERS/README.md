@@ -108,6 +108,7 @@ CURRENT_OMEGA_K_LEFT: -2.4
 CURRENT_OMEGA_K_RIGHT: -2.4  
 R_ARM: 2.0
 ```
+
 | Parameter               | Type   | Description                           | Default |
 |-------------------------|--------|---------------------------------------|---------|
 | INNER_LIMIT             | uint16 | Maximum Controller PWM output         | 192     |
@@ -126,6 +127,7 @@ LEFT_KT_W: -0.008
 RIGHT_KT: 0.016
 RIGHT_KT_W: -0.008
 ```
+
 | Parameter  | Type  | Description                              | Default |
 |------------|-------|------------------------------------------|---------|
 | LEFT_KT    | float | Torque Constant for Left Motor           | 0.016   |
@@ -143,6 +145,7 @@ OUTER_FEEDFORWARD: True
 K_FF_VEL: 0.12  
 K_FF_ACCEL: 0.08  
 ```
+
 | Parameter         | Type    | Description                    | Default |
 |-------------------|---------|--------------------------------|---------|
 | OUTER_FEEDFORWARD | boolean | Enable Outer Loop Feedforwards | False   |
