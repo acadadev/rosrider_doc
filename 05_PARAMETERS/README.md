@@ -16,7 +16,7 @@ The following YAML file defines the configuration parameters for the ROSRider no
 
 {% capture tab1 %}
 
-__DRIVER config__
+__Driver Config__
 
 ```yaml
 DRIVE_MODE: 3          # MODE_PID 3 for ROS
@@ -33,8 +33,10 @@ UPDATE_RATE: 20        # 10, 16, 20, 32, 50, 64
 {% endcapture %}
 
 {% capture tab2 %}
+
+__PWM Config__
+
 ```yaml
-# PWM config  
 PWM_DIV: 16  
 PWM_SCALE: 256  
 PWM_FRQ: 1000  
