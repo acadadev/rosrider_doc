@@ -198,7 +198,6 @@ __Detecting I2C Devices__
 
 For troubleshooting purposes, you may want to detect I2C devices connected to your computer.
 To do this, you can use the `i2cdetect` command in the terminal. Run the following command to install i2c-tools: `sudo apt install i2c-tools`.
-
 Use the `i2cdetect` command to scan the I2C bus and identify connected devices:  
 
 <div class="highlight notranslate position-relative">
