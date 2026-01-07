@@ -79,8 +79,7 @@ Use the `i2cdetect` command to scan the I2C bus and identify connected devices:
 </div>
 
 This command will display a table of I2C addresses. The default address of the ROSRider is `0x3C`, and the default address of the ROS2RPI card is `0x20`.
-
-Note: If you only have a ROSRider connected directly, you should only see the address `0x3C`.
+If you only have a ROSRider connected directly, you should only see the address `0x3C`.
 
 __Connecting ROSRider to NVIDIA Jetson__
 
