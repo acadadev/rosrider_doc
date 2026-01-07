@@ -134,28 +134,30 @@ Use CR1225 3V coin battery.
 {% endcapture %}
 
 {% include tabs.html 
-   tab1_title="Left" 
+   tab1_title="Diagram" 
    tab1_content=tab1
-   tab2_title="Right" 
+   tab2_title="Left" 
    tab2_content=tab2
-   tab3_title="Servo" 
+   tab3_title="Right" 
    tab3_content=tab3
-   tab4_title="AUX" 
+   tab4_title="Servo" 
    tab4_content=tab4
-   tab5_title="Power Control" 
+   tab5_title="AUX" 
    tab5_content=tab5
-   tab6_title="Comms" 
+   tab6_title="Power Control" 
    tab6_content=tab6
-   tab7_title="I2C A" 
+   tab7_title="Comms" 
    tab7_content=tab7
-   tab8_title="I2C B" 
+   tab8_title="I2C A" 
    tab8_content=tab8
-   tab9_title="Serial" 
+   tab9_title="I2C B" 
    tab9_content=tab9
-   tab10_title="Power" 
+   tab10_title="Serial" 
    tab10_content=tab10
-   tab11_title="Battery" 
+   tab11_title="Power" 
    tab11_content=tab11
+   tab12_title="Battery" 
+   tab12_content=tab12
 %}
 
 <div style="display: flex; justify-content: space-around; margin: 25px 0;">
