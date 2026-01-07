@@ -162,7 +162,7 @@ __Practical Considerations:__
 - Minimum PWM Frequency: Use 50 HZ
 - Maximum PWM Frequency: Use 18000 HZ, if using high > 2 kHZ, disable `ADC_SYNC` 
 
-By carefully considering these factors and adjusting the PWM_DIV and PWM_FRQ parameters, you can optimize your ROSRider's performance and efficiency.
+By carefully considering these factors and adjusting the `PWM_DIV` and `PWM_FRQ` parameters, you can optimize your ROSRider's performance and efficiency.
 
 {% endcapture %}
 
