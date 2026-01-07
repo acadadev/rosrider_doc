@@ -50,8 +50,10 @@ PWM_FRQ: 1000
 {% endcapture %}
 
 {% capture tab3 %}
+
+__Motor Config__
+
 ```yaml
-# MOTOR config  
 GEAR_RATIO: 65.0  
 ENCODER_PPR: 48  
 WHEEL_DIA: 0.0685  
@@ -70,8 +72,10 @@ MAX_RPM: 160.0
 {% endcapture %}
 
 {% capture tab4 %}
+
+__PID Config__
+
 ```yaml
-# PID config  
 UPPER_LIMIT: 240  
 LEFT_KP: 8.0  
 LEFT_KI: 6.0  
@@ -96,8 +100,10 @@ K_FB_WINDUP: 0.5
 {% endcapture %}
 
 {% capture tab5 %}
+
+__Cascaded Loop__
+
 ```yaml
-# CASCADED loop
 INNER_LIMIT: 240  
 CURRENT_KP: 8.0  
 CURRENT_KI: 6.0  
@@ -119,8 +125,9 @@ R_ARM: 2.0
 | CURRENT_OMEGA_K_RIGHT   | float  | Current Omega Compensation Right      | 0.0     |
 | R_ARM                   | float  | Motor Armature Resistance             | 2.0     |
 
+__Torque Constant__
+
 ```yaml
-# TORQUE constant
 LEFT_KT: 0.016
 LEFT_KT_W: -0.008
 RIGHT_KT: 0.016
@@ -138,9 +145,10 @@ RIGHT_KT_W: -0.008
 
 {% capture tab6 %}
 
+__Feed Forwards__
+
 ```yaml
 OUTER_FEEDFORWARD: True
-# Feed forwards
 K_FF_VEL: 0.12  
 K_FF_ACCEL: 0.08  
 ```
