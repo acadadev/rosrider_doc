@@ -354,7 +354,16 @@ PUB_ODOMETRY: True
 PUB_JOINTS: True  
 PUB_DIAGNOSTICS: True  
 ```
-{% endcapture %}
+
+| Parameter       | Type   | Description                                     | Default          |
+|-----------------|--------|-------------------------------------------------|------------------|
+| ODOM_FRAME_ID   | string | Sets the frame ID for the odometry data         | `odom`           |
+| BASE_FRAME_ID   | string | Sets the frame ID for the robot's base frame    | `base_footprint` |
+| CMD_VEL_TOPIC   | string | Command Topic Name                              | `cmd_vel`        |
+| BROADCAST_TF2   | bool   | Enables or disables TF2 broadcast               | True             |
+| PUB_ODOMETRY    | bool   | Enables or disables odometry data publication   | True             |
+| PUB_JOINTS      | bool   | Enables or disables joint state publication     | True             |
+| PUB_DIAGNOSTICS | bool   | Enables or disables diagnostic data publication | True             |
 
 {% capture tab14 %}
 
@@ -406,6 +415,18 @@ ALLOWED_SKIP: 3
 MONITOR_RATE: 100  
 MAX_IDLE_SECONDS: 1800  
 ```
+
+| Parameter        | Type   | Description                                                  | Default |
+|------------------|--------|--------------------------------------------------------------|---------|
+| ROS2RPI_CONFIG   | uint8  | Configuration for the ROS2RPI board (if used)                | 0x00    |
+| I2C_ADDRESS      | uint8  | I2C address of the card                                      | 0x3C    |
+| I2C_ENABLED      | bool   | Enables or disables I2C communication. For development only. | True    |
+| DEBUG            | bool   | Enables or disables debug mode                               | False   |
+| RTC_TRIM         | uint32 | Real-Time Clock trim value                                   | 0x7FFF  |
+| ALLOWED_SKIP     | uint8  | Command timeout in units of 1 / UPDATE_RATE.                 | 3       |
+| MONITOR_RATE     | uint8  | Rate at which current sensor data is monitored               | 100     |
+| MAX_IDLE_SECONDS | uint16 | Maximum idle seconds before entering hibernate mode          | 3600    |
+
 
 | Name | Filter Type                                   |
 |------|-----------------------------------------------|
