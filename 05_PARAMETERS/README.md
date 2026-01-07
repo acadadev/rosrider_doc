@@ -89,11 +89,6 @@ K_FB_WINDUP: 0.5
 | RIGHT_KD    | float  | PID differential for right motor | 0.0     |
 | K_FB_WINDUP | float  | Anti windup coefficient          | 0.5     |
 
-```yaml
-TANH_DIV: 2.0  
-SIGM_DIV: 10.0  
-```
-
 {% endcapture %}
 
 {% capture tab5 %}
@@ -252,6 +247,16 @@ ___Output Filter___
 | SIGM | 2  | Sigmoid     |
 
 ```yaml
+TANH_DIV: 2.0  
+SIGM_DIV: 10.0  
+```
+
+| Parameter | Type  | Description                     | Default |
+|-----------|-------|---------------------------------|---------|
+| TANH_DIV  | float | Tanh filter prescaler           | 2.0     |
+| SIGM_DIV  | float | Sigmoid output filter prescaler | 10.0    |
+
+```yaml
 # FILTER USE
 VOLTAGE_FILTER: True  
 BEMF_FILTERED_OMEGA: True  
@@ -259,6 +264,7 @@ PID_FILTERED_OMEGA: True
 SCV_FILTERED_OMEGA: True  
 CURRENT_OMEGA_FILTER: True  
 ```
+
 {% endcapture %}
 
 {% capture tab10 %}
