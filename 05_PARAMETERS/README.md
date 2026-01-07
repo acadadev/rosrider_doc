@@ -16,7 +16,7 @@ The following YAML file defines the configuration parameters for the ROSRider no
 
 {% capture tab1 %}
 
-__Driver Config__
+__Driver Configuration__
 
 ```yaml
 DRIVE_MODE: 3          # MODE_PID 3 for ROS
@@ -34,7 +34,7 @@ UPDATE_RATE: 20        # 10, 16, 20, 32, 50, 64
 
 {% capture tab2 %}
 
-__PWM Config__
+__PWM Configuration__
 
 ```yaml
 PWM_DIV: 16  
@@ -51,7 +51,7 @@ PWM_FRQ: 1000
 
 {% capture tab3 %}
 
-__Motor Config__
+__Motor Configuration__
 
 ```yaml
 GEAR_RATIO: 65.0  
@@ -73,7 +73,7 @@ MAX_RPM: 160.0
 
 {% capture tab4 %}
 
-__PID Config__
+__PID Configuration__
 
 ```yaml
 UPPER_LIMIT: 240  
@@ -225,7 +225,7 @@ TRIM_CONSTANT: 0.0
 
 {% capture tab9 %}
 
-__Filter Configs__
+__Filter Configuration__
 
 ```yaml
 OMEGA_FILTER_TYPE: 1  
