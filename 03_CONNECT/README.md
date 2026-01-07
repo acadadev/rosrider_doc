@@ -29,12 +29,12 @@ This wiring diagram illustrates direct I2C communication with the Raspberry PI.
 
 <div style="display: flex; justify-content: space-around; margin: 25px 0;">
   
-  <figure style="width: 40%; margin: 0; text-align: center;">
+  <figure style="width: 45%; margin: 0; text-align: center;">
     <img src="../images/rpi4b_wiring.png" alt="Raspberry PI Wiring Diagram" style="width: 100%; border: 1px solid #ccc; border-radius: 5px; box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);">
     <figcaption style="font-size: 0.85em; margin-top: 10px; font-style: italic; color: #666;">Raspberry PI Wiring Diagram.</figcaption>
   </figure>
 
-  <figure style="width: 40%; margin: 0; text-align: center;">
+  <figure style="width: 45%; margin: 0; text-align: center;">
     <img src="../images/caretta_bare.jpg" alt="Connecting to Raspberry PI" style="width: 100%; border: 1px solid #ccc; border-radius: 5px; box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);">
     <figcaption style="font-size: 0.85em; margin-top: 10px; font-style: italic; color: #666;">This image depicts the actual wiring configuration for direct I2C communication between the Raspberry Pi and ROSRider.</figcaption>
   </figure>
@@ -50,12 +50,20 @@ To ensure proper I2C communication, verify that I2C is enabled at the kernel lev
 There are two I2C ports on the Jetson AGX:
 
 <div style="display: flex; justify-content: space-around; margin: 25px 0;">
-   <img src="../images/jetson_agx_i2c_0.png" alt="Jetson AGX I2C Port 1" style="width:45%; box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);">
-   <img src="../images/jetson_agx_i2c_1.png" alt="Jetson AGX I2C Port 2" style="width:45%; box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);">
+  
+  <figure style="width: 45%; margin: 0; text-align: center;">
+    <img src="../images/jetson_agx_i2c_0.png" alt="Jetson AGX I2C Port 1" style="width: 100%; border: 1px solid #ccc; border-radius: 5px; box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);">
+    <figcaption style="font-size: 0.85em; margin-top: 10px; font-style: italic; color: #666;">Raspberry PI Wiring Diagram.</figcaption>
+  </figure>
+
+  <figure style="width: 45%; margin: 0; text-align: center;">
+    <img src="../images/jetson_agx_i2c_1.png" alt="Jetson AGX I2C Port 2" style="width: 100%; border: 1px solid #ccc; border-radius: 5px; box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);">
+    <figcaption style="font-size: 0.85em; margin-top: 10px; font-style: italic; color: #666;">This image depicts the actual wiring configuration for direct I2C communication between the Raspberry Pi and ROSRider.</figcaption>
+  </figure>
+
 </div>
 
 Here is an excellent video on connecting I2C devices to Jetson: <a target="_blank" href="https://www.youtube.com/watch?v=7_H7tzcdBMU]" title="I2C - NVIDIA Jetson AGX Xavier">https://www.youtube.com/watch?v=7_H7tzcdBMU]</a>. This video provides a comprehensive guide on the steps involved, from identifying I2C pins to configuring software and starting device usage.
-
 
 __Detecting I2C Devices__
 
