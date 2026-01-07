@@ -35,7 +35,7 @@ This wiring diagram illustrates direct I2C communication with the Raspberry PI.
   </figure>
 
   <figure style="width: 40%; margin: 0; text-align: center;">
-    <img src="../images/caretta_bare.png" alt="Connecting to Raspberry PI" style="width: 100%; border: 1px solid #ccc; border-radius: 5px; box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);">
+    <img src="../images/caretta_bare.jpg" alt="Connecting to Raspberry PI" style="width: 100%; border: 1px solid #ccc; border-radius: 5px; box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);">
     <figcaption style="font-size: 0.85em; margin-top: 10px; font-style: italic; color: #666;">This image depicts the actual wiring configuration for direct I2C communication between the Raspberry Pi and ROSRider.</figcaption>
   </figure>
 
