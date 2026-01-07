@@ -219,6 +219,38 @@ OMEGA_FILTER_TYPE: 1
 CURRENT_FILTER_TYPE: 3  
 OUTPUT_FILTER_TYPE: 0  
 ```
+| Parameter           | Type  | Description          | Default |
+|---------------------|-------|----------------------|---------|
+| OMEGA_FILTER_TYPE   | uint8 | Velocity Filter Type | 1       |
+| CURRENT_FILTER_TYPE | uint8 | Current Filter Type  | 3       |
+| OUTPUT_FILTER_TYPE  | uint8 | Output Filter Type   | 0       | 
+
+___Omega Filter___
+
+| Name            | ID | Filter Type                           | Details                      |
+|-----------------|----|---------------------------------------|------------------------------|
+| EWMA4           | 0  | Exponentially Weighted Moving Average | Last 4 Values                | 
+| EWMA8           | 1  | Exponentially Weighted Moving Average | Last 8 Values                |
+| EWMA16          | 2  | Exponentially Weighted Moving Average | Last 16 Values               |
+| BIQUAD_20HZ_2HZ | 3  | Biquad Filter                         | 20HZ update rate, 2HZ cutoff |
+| BIQUAD_20HZ_4HZ | 4  | Biquad Filter                         | 20HZ update rate, 4HZ cutoff |
+
+___Current Filter___
+
+| Name            | ID | Filter Type                           | Details                      |
+|-----------------|----|---------------------------------------|------------------------------|
+| EWMA4           | 0  | Exponentially Weighted Moving Average | Last 4 Values                | 
+| EWMA8           | 1  | Exponentially Weighted Moving Average | Last 8 Values                |
+| EWMA16          | 2  | Exponentially Weighted Moving Average | Last 16 Values               |
+
+___Output Filter___
+
+| Name | ID | Filter Type |
+|------|----|-------------|
+| None | 0  | None        |
+| TANH | 1  | Tanh        |
+| SIGM | 2  | Sigmoid     |
+
 ```yaml
 # FILTER USE
 VOLTAGE_FILTER: True  
