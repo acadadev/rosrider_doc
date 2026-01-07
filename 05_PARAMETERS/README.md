@@ -106,13 +106,11 @@ PWM_FRQ: 1000
 
 __Understanding PWM Frequency and its Impact on Motor Control__
 
-The PWM frequency, measured in Hertz (Hz), determines how often the power is switched on and off. 
-A higher frequency results in smoother motor control and reduced audible noise. 
-However, excessively high frequencies can lead to increased power losses and potential interference with other electronic components.
+The PWM frequency, measured in Hertz (Hz), determines how often the power is switched on and off.
+A higher frequency results in smoother motor control and reduced audible noise.
+However, excessively high frequencies can lead to increased power losses and potential interference with other electronic components.  
 
-__Selecting the Optimal PWM Frequency:__
-
-The optimal PWM frequency depends on several factors, including:
+The optimal PWM frequency depends on several factors, including:  
 
 - Motor Type: Different motor types have different optimal frequency ranges. Brushed DC motors typically require lower frequencies, while brushless DC motors may benefit from higher frequencies
 - Desired Performance: Higher frequencies can lead to smoother and quieter operation, but they may also increase power consumption and complexity of the control system
@@ -121,7 +119,7 @@ The optimal PWM frequency depends on several factors, including:
 __The Impact of PWM Frequency on ROSRider:__
 
 The `PWM_FRQ` parameter in the ROSRider configuration file plays a crucial role in determining the performance and efficiency of your robot's motors.
-By carefully selecting this value, you can optimize motor smoothness, responsiveness, power consumption, and electromagnetic interference (EMI).
+By carefully selecting this value, you can optimize motor smoothness, responsiveness, power consumption, and electromagnetic interference (EMI).  
 
 A higher PWM frequency generally leads to:
 
@@ -133,21 +131,11 @@ However, a higher frequency can also result in:
 - Increased Power Dissipation: More switching losses in the motor driver
 - Higher EMI: Increased electromagnetic interference
 
-__The Role of `PWM_DIV`:__
-
 To achieve the desired PWM frequency, you'll need to set the `PWM_DIV` parameter appropriately.
-This parameter divides the system clock to generate the PWM clock. A higher `PWM_DIV` value results in a lower PWM clock frequency.
+This parameter divides the system clock to generate the PWM clock. A higher `PWM_DIV` value results in a lower PWM clock frequency.  
 
 - This setting determines the clock frequency for the PWM module
 - It's a hardware-based division of the system clock (80000000)
-
-__Balancing Performance and Efficiency:__
-
-The optimal PWM frequency depends on various factors, including:
-
-- Motor Characteristics: The type and size of the motors
-- Load Conditions: The expected load on the motors
-- Desired Performance: The required level of smoothness, responsiveness, and efficiency
 
 __Practical Considerations:__
 
