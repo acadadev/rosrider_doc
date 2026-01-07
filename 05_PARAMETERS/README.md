@@ -23,9 +23,6 @@ description: "Parametric Configuration of the ROSRider control card"
     </div>
 </div>
 
-A YAML file is a human-readable text format used to store configuration parameters in ROS.
-The provided YAML file defines parameters that influence the behavior of the ROSRider node, such as motor control, sensor settings, and communication protocols.
-
 The ROS Parameter Server is a mechanism that allows you to dynamically configure parameters in your ROS nodes.
 When you launch a ROS node with a YAML file, the parameters defined in the file are loaded into the ROS Parameter Server.
 This makes them accessible to other nodes and allows you to modify them at runtime using tools like `ros2 param`.
