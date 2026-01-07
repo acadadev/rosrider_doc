@@ -5,6 +5,24 @@ title: "Parameters"
 description: "Parametric Configuration of the ROSRider control card"
 ---
 
+<div style="
+    background-color: #f8f9fa;
+    border-left: 6px solid #4CAF50;
+    color: #333333;
+    padding: 25px;
+    border-radius: 4px;
+    margin: 30px 0;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    font-family: 'Ubuntu', sans-serif;
+">
+    <div style="font-size: 1.4em; font-weight: bold; color: #4CAF50; margin-bottom: 5px;">
+        > ROSRider aims to lower the cost barrier for building ROS based robots.
+    </div>
+    <div style="font-size: 1.1em; font-style: italic; line-height: 1.5;">
+        "Using commodity parts, users can build robots that can run the Robot Operating System."
+    </div>
+</div>
+
 A YAML file is a human-readable text format used to store configuration parameters in ROS.
 The provided YAML file defines parameters that influence the behavior of the ROSRider node, such as motor control, sensor settings, and communication protocols.
 
@@ -118,10 +136,10 @@ However, a higher frequency can also result in:
 - Increased Power Dissipation: More switching losses in the motor driver
 - Higher EMI: Increased electromagnetic interference
 
-__The Role of PWM_DIV:__
+__The Role of `PWM_DIV`:__
 
 To achieve the desired PWM frequency, you'll need to set the `PWM_DIV` parameter appropriately.
-This parameter divides the system clock to generate the PWM clock. A higher PWM_DIV value results in a lower PWM clock frequency.
+This parameter divides the system clock to generate the PWM clock. A higher `PWM_DIV` value results in a lower PWM clock frequency.
 
 - This setting determines the clock frequency for the PWM module
 - It's a hardware-based division of the system clock (80000000)
