@@ -30,6 +30,31 @@ UPDATE_RATE: 20        # 10, 16, 20, 32, 50, 64
 | CONFIG_FLAGS | uint8 | Hardware Config Bitmask             | 48      |
 | UPDATE_RATE  | uint8 | Outer PID Loop Update Rate          | 20      |
 
+__Understanding the Configuration Flag__
+
+The `CONFIG_FLAGS` parameter in the ROSRider configuration file is a bitmask that controls various hardware settings. By setting specific bits within this flag, you can configure different aspects of the ROSRider's behavior.
+
+Here's a breakdown of the individual bits and their corresponding functionalities:
+
+| Bit | Function      | Description                                        |
+|-----|---------------|----------------------------------------------------|
+| 0   | LEFT_REVERSE  | inverts the direction of the left motor            |
+| 1   | RIGHT_REVERSE | inverts the direction of the left motor            |
+| 2   | LEFT_SWAP     | swaps the phase order of the left encoder          |
+| 3   | RIGHT_SWAP    | swaps the phase order of the left encoder          |
+| 4   | LEFT_ENC_AB   | selects the AB phase encoding for the left encoder |
+| 5   | RIGHT_ENC_AB  | selects the AB phase encoding for the right encode |
+| 6   | MODE1         | Brake mode                                         |
+| 7   | MODE2         | High side decay                                    |
+
+The configuration flags allow you to customize the behavior of the ROSRider to match your specific hardware setup. Here's a breakdown of their functions:
+
+- Reversing Motor Direction: The `LEFT_REVERSE` and `RIGHT_REVERSE` flags allow you to invert the direction of the motors, useful for correcting wiring mistakes or physical misorientations.
+- Swapping Encoder Phases: The `LEFT_SWAP` and `RIGHT_SWAP` flags allow you to correct the phase order of the encoders, ensuring accurate position and velocity measurements.
+- Selecting Encoder Mode: The `LEFT_ENC_AB` and `RIGHT_ENC_AB` flags determine whether to use AB phase encoding or single-phase encoding for the respective encoders. For AB phase encoding, both A and B phase signals are used, while for single-phase encoding, only the A phase signal is required.
+
+By carefully configuring these flags, you can ensure that the ROSRider can work with a variety of motor and encoder configurations, providing flexibility and adaptability in your robotics projects.
+
 {% endcapture %}
 
 {% capture tab2 %}
@@ -487,12 +512,19 @@ MAX_IDLE_SECONDS: 1800
 | MONITOR_RATE     | uint8  | Rate at which current sensor data is monitored               | 100     |
 | MAX_IDLE_SECONDS | uint16 | Maximum idle seconds before entering hibernate mode          | 3600    |
 
+__ALLOWED_SKIP__
 
-| Name | Filter Type                                   |
-|------|-----------------------------------------------|
-| 0x00 | No Command                                    |
-| 0x0F | ROSRider ON, Serial Routed to DEBUG           |
-| 0x33 | ROSRider ON, LIDAR ON, Serial Routed to LIDAR |
+The ROSRider employs a command timeout mechanism to ensure safe operation and prevent unintended movement. This mechanism monitors the frequency of incoming commands from the host computer. If the system fails to receive a command within a specified time frame, it enters a state that restrains movement.
+The `ALLOWED_SKIP` parameter in the ROSRider configuration determines the maximum number of consecutive command cycles that can be skipped before triggering the timeout. This value, when multiplied by the inverse of the `UPDATE_RATE` (measured in milliseconds), sets the overall timeout duration. For instance, if `ALLOWED_SKIP` is set to 3 and the `UPDATE_RATE` is 20Hz, the timeout duration would be 150 milliseconds.
+
+__ROS2RPI_CONFIG__
+
+| Hat Command | Description                                   |
+|-------------|-----------------------------------------------|
+| 0x00        | No Command                                    |
+| 0x0F        | ROSRider ON, Serial Routed to DEBUG           |
+| 0x33        | ROSRider ON, LIDAR ON, Serial Routed to LIDAR |
+
 
 {% endcapture %}
 
@@ -530,37 +562,6 @@ MAX_IDLE_SECONDS: 1800
    tab16_title="System" 
    tab16_content=tab16
 %}
-
-
-__Understanding the Configuration Flag__
-
-The `CONFIG_FLAGS` parameter in the ROSRider configuration file is a bitmask that controls various hardware settings. By setting specific bits within this flag, you can configure different aspects of the ROSRider's behavior.
-
-Here's a breakdown of the individual bits and their corresponding functionalities:
-
-| Bit | Function      | Description                                        |
-|-----|---------------|----------------------------------------------------|
-| 0   | LEFT_REVERSE  | inverts the direction of the left motor            |
-| 1   | RIGHT_REVERSE | inverts the direction of the left motor            |
-| 2   | LEFT_SWAP     | swaps the phase order of the left encoder          |
-| 3   | RIGHT_SWAP    | swaps the phase order of the left encoder          |
-| 4   | LEFT_ENC_AB   | selects the AB phase encoding for the left encoder |
-| 5   | RIGHT_ENC_AB  | selects the AB phase encoding for the right encode |
-| 6   | MODE1         | Brake mode                                         |
-| 7   | MODE2         | High side decay                                    |
-
-The configuration flags allow you to customize the behavior of the ROSRider to match your specific hardware setup. Here's a breakdown of their functions:
-
-- Reversing Motor Direction: The `LEFT_REVERSE` and `RIGHT_REVERSE` flags allow you to invert the direction of the motors, useful for correcting wiring mistakes or physical misorientations.
-- Swapping Encoder Phases: The `LEFT_SWAP` and `RIGHT_SWAP` flags allow you to correct the phase order of the encoders, ensuring accurate position and velocity measurements.
-- Selecting Encoder Mode: The `LEFT_ENC_AB` and `RIGHT_ENC_AB` flags determine whether to use AB phase encoding or single-phase encoding for the respective encoders. For AB phase encoding, both A and B phase signals are used, while for single-phase encoding, only the A phase signal is required.
-
-By carefully configuring these flags, you can ensure that the ROSRider can work with a variety of motor and encoder configurations, providing flexibility and adaptability in your robotics projects.
-
-__Understanding Command Timeout__
-
-The ROSRider employs a command timeout mechanism to ensure safe operation and prevent unintended movement. This mechanism monitors the frequency of incoming commands from the host computer. If the system fails to receive a command within a specified time frame, it enters a state that restrains movement.
-The `ALLOWED_SKIP` parameter in the ROSRider configuration determines the maximum number of consecutive command cycles that can be skipped before triggering the timeout. This value, when multiplied by the inverse of the `UPDATE_RATE` (measured in milliseconds), sets the overall timeout duration. For instance, if `ALLOWED_SKIP` is set to 3 and the `UPDATE_RATE` is 20Hz, the timeout duration would be 150 milliseconds.
 
 __Understanding PWM Frequency and its Impact on Motor Control__
 
