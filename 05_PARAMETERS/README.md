@@ -126,20 +126,28 @@ LEFT_KT_W: -0.008
 RIGHT_KT: 0.016
 RIGHT_KT_W: -0.008
 ```
+| Parameter  | Type  | Description                              | Default |
+|------------|-------|------------------------------------------|---------|
+| LEFT_KT    | float | Torque Constant for Left Motor           | 0.016   |
+| LEFT_KT_W  | float | Torque Constant Omega Compensation Left  | -0.008  |
+| RIGHT_KT   | float | Torque Constant for Right Motor          | 0.016   |
+| RIGHT_KT_W | float | Torque Constant Omega Compensation Right | -0.008  |
 
-| Parameter   | Type   | Description                       | Default |
-|-------------|--------|-----------------------------------|---------|
 {% endcapture %}
 
 {% capture tab6 %}
+
 ```yaml
 OUTER_FEEDFORWARD: True
-```
-```yaml
 # Feed forwards
 K_FF_VEL: 0.12  
 K_FF_ACCEL: 0.08  
 ```
+| Parameter         | Type    | Description                    | Default |
+|-------------------|---------|--------------------------------|---------|
+| OUTER_FEEDFORWARD | boolean | Enable Outer Loop Feedforwards | False   |
+| K_FF_VEL          | float   | Velocity Feedforward / s       | 0.16    |
+| K_FF_ACCEL        | float   | Acceleration Feedforward / s²  | 0.12    | 
 {% endcapture %}
 
 {% capture tab7 %}
