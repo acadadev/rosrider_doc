@@ -109,9 +109,9 @@ Use the i2cdetect command to scan the I2C bus and identify connected devices:
 <img class="replay" src="../images/i2c_detect.gif" alt="Detecting I2C Devices" style="box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);">
 </div>
 
-This command will display a table of I2C addresses. The default address of the ROSRider is `0x3c`, and the default address of the ROS2RPI card is `0x20`.
+This command will display a table of I2C addresses. The default address of the ROSRider is `0x3C`, and the default address of the ROS2RPI card is `0x20`.
 
-Note: If you only have a ROSRider connected directly, you should only see the address `0x3c`.
+Note: If you only have a ROSRider connected directly, you should only see the address `0x3C`.
 
 Once you've confirmed the presence of the ROSRider on the I2C bus, you can proceed with installing the necessary drivers.
 

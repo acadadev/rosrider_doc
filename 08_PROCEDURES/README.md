@@ -45,6 +45,4 @@ We will explore various tools and techniques to monitor the robot's health and p
 
 - [Timing-Control](05_TIMING/README.md)
 
-You can now proceed to the next chapter, where we'll delve into simulations and virtual environments to test and refine your robotic applications.
-
 __Next Chapter:__ [Simulations](../09_SIMULATIONS/README.md)

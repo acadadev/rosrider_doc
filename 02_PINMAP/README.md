@@ -166,6 +166,4 @@ Use CR1225 3V coin battery.
    tab12_content=tab12
 %}
 
-The next chapter provides clear diagrams and instructions for connecting to popular platforms like Raspberry Pi and NVIDIA Jetson.
-
 __Next Chapter:__ [Connecting ROSRider to Host Computer](../03_CONNECT/README.md)
