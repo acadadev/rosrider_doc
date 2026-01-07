@@ -5,6 +5,24 @@ title: "ROS2 Drivers"
 description: "Compiling and Installing ROS2 Drivers"
 ---
 
+<div style="
+    background-color: #f8f9fa;
+    border-left: 6px solid #4CAF50;
+    color: #333333;
+    padding: 25px;
+    border-radius: 4px;
+    margin: 30px 0;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    font-family: 'Ubuntu', sans-serif;
+">
+    <div style="font-size: 1.4em; font-weight: bold; color: #4CAF50; margin-bottom: 5px;">
+        > Native ROS, Out of the Box.
+    </div>
+    <div style="font-size: 1.1em; font-style: italic; line-height: 1.5;">
+        "No middleware, no hacks. Just pure, high-performance C++ nodes."
+    </div>
+</div>
+
 __Installing ROSRider Drivers__
 
 The ROSRider package provides the necessary ROS nodes and drivers to interact with the ROSRider board. It allows you to control motors, read sensor data, and perform other tasks using ROS.
