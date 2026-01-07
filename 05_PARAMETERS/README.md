@@ -360,12 +360,12 @@ DT_THRESHOLD: 2
 
 | Parameter     | Type   | Description                                        | Default |
 |---------------|--------|----------------------------------------------------|---------|
-| SYNC_KP       | uint16 | Phase Error Proportional Coefficient               | True    |
-| SYNC_KI       | uint16 | Phase Error Integral Coefficient                   | True    |
-| SYNC_LIMIT    | uint16 | Timer Adjustment Limit                             | False   |
-| SYNC_INTERVAL | uint8  | Timer Adjustment Interval                          | False   |
-| DT_I2C        | uint16 | Desired Phase Error                                | False   |
-| DT_THRESHOLD  | uint16 | If below this threshold Timer will not be adjusted | False   |
+| SYNC_KP       | uint16 | Phase Error Proportional Coefficient               | 256     |
+| SYNC_KI       | uint16 | Phase Error Integral Coefficient                   | 4       |
+| SYNC_LIMIT    | uint16 | Timer Adjustment Limit                             | 4096    |
+| SYNC_INTERVAL | uint8  | Timer Adjustment Interval                          | 8       |
+| DT_I2C        | uint16 | Desired Phase Error                                | 32      |
+| DT_THRESHOLD  | uint16 | If below this threshold Timer will not be adjusted | 2       |
 
 {% endcapture %}
 
@@ -429,6 +429,15 @@ CROSS_KP: 4.0
 CROSS_K_LEFT: 1.0  
 CROSS_K_RIGHT: 1.0  
 ```
+
+| Parameter             | Type  | Description                      | Default |
+|-----------------------|-------|----------------------------------|---------|
+| CROSS_COUPLED_CONTROL | bool  | Enable Cross Coupled Control     | False   |
+| CROSS_KP              | float | Cross Proportional Coefficient   | 4.0     |
+| CROSS_K_LEFT          | float | Cross Feedback Left Coefficient  | 1.0     |
+| CROSS_K_RIGHT         | float | Cross Feedback Right Coefficient | 1.0     |
+
+
 {% endcapture %}
 
 {% capture tab16 %}
