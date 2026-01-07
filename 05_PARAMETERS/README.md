@@ -214,6 +214,7 @@ OMEGA_FILTER_TYPE: 1
 CURRENT_FILTER_TYPE: 3  
 OUTPUT_FILTER_TYPE: 0  
 ```
+
 | Parameter           | Type  | Description          | Default |
 |---------------------|-------|----------------------|---------|
 | OMEGA_FILTER_TYPE   | uint8 | Velocity Filter Type | 1       |
@@ -264,6 +265,14 @@ PID_FILTERED_OMEGA: True
 SCV_FILTERED_OMEGA: True  
 CURRENT_OMEGA_FILTER: True  
 ```
+
+| Parameter            | Type    | Description                                           | Default |
+|----------------------|---------|-------------------------------------------------------|---------|
+| VOLTAGE_FILTER       | boolean | Use Filtered voltage for Cascaded Loop Calculations   | False   |
+| BEMF_FILTERED_OMEGA  | boolean | Use Filtered Omega for Cascaded Loop Calculations     | False   |
+| PID_FILTERED_OMEGA   | boolean | Use Filtered Omega for PID Error Calculations         | False   |
+| SCV_FILTERED_OMEGA   | boolean | Use Filtered Omega for SCV Model                      | False   |
+| CURRENT_OMEGA_FILTER | boolean | Use Filterd Omega for Current Multiplier Compensation | False   |
 
 {% endcapture %}
 
@@ -327,6 +336,16 @@ LEFT_AMP_LIMIT: 2.4
 RIGHT_AMP_LIMIT: 2.4  
 INA219_CAL: 8192  
 ```
+
+| Parameter       | Type   | Description                                    | Default |
+|-----------------|--------|------------------------------------------------|---------|
+| MAIN_AMP_LIMIT  | float  | Maximum current draw for the main power supply | 3.6     |
+| BAT_VOLTS_HIGH  | float  | Maximum battery voltage                        | 15.0    |
+| BAT_VOLTS_LOW   | float  | Minimum battery voltage                        | 6.0     |
+| LEFT_AMP_LIMIT  | float  | Maximum current limit for the left motor       | 1.6     |
+| RIGHT_AMP_LIMIT | float  | Maximum current limit for the right motor      | 1.6     |
+| INA219_CAL      | uint16 | INA219 Calibration Value                       | 8192    |
+
 {% endcapture %}
 
 {% capture tab15 %}
@@ -415,36 +434,11 @@ __General configuration__
 | MAX_IDLE_SECONDS | uint16 | Maximum idle seconds before entering hibernate mode. | 3600 |
 | RTC_TRIM | uint32 | Real-Time Clock trim value. | 0x7FFF |
 
-__Motor Control__
 
-| parameter | type | description | default |
-| -------- | -------- | -------- | -------- |
-
-| INTEGRAL_LIMIT | uint16 |  Integral term limit for PID control. | 224 |
-| ENCODER_PPR | uint16 | Encoder pulses per revolution. | 48 |
-| LEFT_FORWARD_DEADZONE | int16 | Deadzone for the left motor's forward direction. | 8 | 
-| LEFT_REVERSE_DEADZONE | int16 | Deadzone for the left motor's reverse direction. | 8 |
-| RIGHT_FORWARD_DEADZONE | int16 | Deadzone for the right motor's forward direction. | 8 |
-| RIGHT_REVERSE_DEADZONE | int16 | Deadzone for the right motor's reverse direction. | 8 |
-
-__Odometry Configuration__
-
-| parameter | type | description | default |
-| -------- | -------- | -------- | -------- |
-| GEAR_RATIO | float | Gear ratio of the motors. | 65.0 |
-| WHEEL_DIA | float | Diameter of the wheels. | 0.0685 |
-| BASE_WIDTH | float | Distance between the wheels. | 0.168 |
 
 __Power and Safety Limits__
 
-| parameter | type | description | default |
-| -------- | -------- | -------- | -------- |
-| MAIN_AMP_LIMIT | float | Maximum current draw for the main power supply. | 3.6 |
-| BAT_VOLTS_HIGH | float | Maximum battery voltage. | 15.0 |
-| BAT_VOLTS_LOW | float | Minimum battery voltage. | 6.0 |
-| MAX_RPM | float | Maximum motor RPM. | 120.0 |
-| LEFT_AMP_LIMIT | float | Maximum current limit for the left motor. | 1.6 |
-| RIGHT_AMP_LIMIT | float | Maximum current limit for the right motor. | 1.6 |
+
 
 
 
