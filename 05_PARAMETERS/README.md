@@ -161,8 +161,10 @@ K_FF_ACCEL: 0.08
 {% endcapture %}
 
 {% capture tab7 %}
+
+__Stribeck Friction Model__
+
 ```yaml
-# STRIBECK friction model  
 OUTER_SCV: True
 STATIC_KICK: 0.8  
 COULOMB_RUN: 0.2  
@@ -186,9 +188,9 @@ SCV_LATCH_THRESHOLD: 1.0
 | SCV_OMEGA_THRESHOLD    | float   | Below this threshold SCV will not be triggered         | 0.05    | 
 | SCV_LATCH_THRESHOLD    | float   | Below this threshold Static kick will not be triggered | 1.0     | 
 
+__Dead Zones__
 
 ```yaml
-# DEAD ZONES
 LEFT_FORWARD_DEADZONE: 12  
 LEFT_REVERSE_DEADZONE: 12  
 RIGHT_FORWARD_DEADZONE: 12  
@@ -204,8 +206,10 @@ RIGHT_REVERSE_DEADZONE: 12
 {% endcapture %}
 
 {% capture tab8 %}
+
+__Trim Model__
+
 ```yaml
-# TRIM MODEL
 TRIM_GAIN: 1.0  
 TRIM_MOTOR_K: 1.0  
 TRIM_CONSTANT: 0.0  
@@ -220,8 +224,10 @@ TRIM_CONSTANT: 0.0
 {% endcapture %}
 
 {% capture tab9 %}
+
+__Filter Configs__
+
 ```yaml
-# FILTER CONFIGS
 OMEGA_FILTER_TYPE: 1  
 CURRENT_FILTER_TYPE: 3  
 OUTPUT_FILTER_TYPE: 0  
@@ -269,8 +275,9 @@ SIGM_DIV: 10.0
 | TANH_DIV  | float | Tanh filter prescaler           | 2.0     |
 | SIGM_DIV  | float | Sigmoid output filter prescaler | 10.0    |
 
+__Filter Use__
+
 ```yaml
-# FILTER USE
 VOLTAGE_FILTER: True  
 BEMF_FILTERED_OMEGA: True  
 PID_FILTERED_OMEGA: True  
@@ -289,20 +296,28 @@ CURRENT_OMEGA_FILTER: True
 {% endcapture %}
 
 {% capture tab10 %}
+
+__ADC Config__
+
 ```yaml
 # ADC
 ADC_SYNC: True  
 ADC_MULTIPHASE: True  
 ADC_BIPHASE: False  
 ```
+
+__ADC Bias Calibration__
+
 ```yaml
-# ADC BIAS CALIBRATION
 CS_LEFT_OFFSET: 0  
 CS_RIGHT_OFFSET: 0  
 ```
 {% endcapture %}
 
 {% capture tab11 %}
+
+__Enable Features__
+
 ```yaml
 # features
 AUTO_SYNC: True  
@@ -313,8 +328,10 @@ CASCADED: True
 {% endcapture %}
 
 {% capture tab12 %}
+
+__Synchronization__
+
 ```yaml
-# Synchronization
 SYNC_KP: 256  
 SYNC_KI: 4  
 SYNC_LIMIT: 4096  
@@ -325,8 +342,10 @@ DT_THRESHOLD: 2
 {% endcapture %}
 
 {% capture tab13 %}
-```yaml
 
+__ROS Parameters__
+
+```yaml
 ODOM_FRAME_ID: 'odom'  
 BASE_FRAME_ID: 'base_footprint'  
 CMD_VEL_TOPIC: 'cmd_vel_nav'  
@@ -335,12 +354,13 @@ PUB_ODOMETRY: True
 PUB_JOINTS: True  
 PUB_DIAGNOSTICS: True  
 ```
-
 {% endcapture %}
 
 {% capture tab14 %}
+
+__Electrical Limits__
+
 ```yaml
-# ELECTRICAL LIMITS
 MAIN_AMP_LIMIT: 3.6  
 BAT_VOLTS_HIGH: 15.0  
 BAT_VOLTS_LOW: 6.0  
@@ -361,12 +381,11 @@ INA219_CAL: 8192
 {% endcapture %}
 
 {% capture tab15 %}
+
+__Experimental Features__
+
 ```yaml
-# experimental
 CROSS_COUPLED_CONTROL: True  
-```
-```yaml
-# experimental
 CROSS_KP: 4.0  
 CROSS_K_LEFT: 1.0  
 CROSS_K_RIGHT: 1.0  
@@ -374,6 +393,9 @@ CROSS_K_RIGHT: 1.0
 {% endcapture %}
 
 {% capture tab16 %}
+
+__System Configuration__
+
 ```yaml
 ROS2RPI_CONFIG: 0x33 # 0x00 # 0x0F # 0x33  
 I2C_ADDRESS: 0x3c  
@@ -384,6 +406,13 @@ ALLOWED_SKIP: 3
 MONITOR_RATE: 100  
 MAX_IDLE_SECONDS: 1800  
 ```
+
+| Name | Filter Type                                   |
+|------|-----------------------------------------------|
+| 0x00 | No Command                                    |
+| 0x0F | ROSRider ON, Serial Routed to DEBUG           |
+| 0x33 | ROSRider ON, LIDAR ON, Serial Routed to LIDAR |
+
 {% endcapture %}
 
 {% include tabs.html 
