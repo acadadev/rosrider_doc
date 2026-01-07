@@ -22,8 +22,8 @@ __Driver Configuration__
 
 ```yaml
 DRIVE_MODE: 3          # MODE_PID 3 for ROS
-CONFIG_FLAGS: 112      #
-UPDATE_RATE: 20        # 10, 16, 20, 32, 50, 64
+CONFIG_FLAGS: 112  
+UPDATE_RATE: 20  
 ```
 
 | Parameter    | Type  | Description                         | Default |
@@ -56,6 +56,10 @@ The configuration flags allow you to customize the behavior of the ROSRider to m
 - Selecting Encoder Mode: The `LEFT_ENC_AB` and `RIGHT_ENC_AB` flags determine whether to use AB phase encoding or single-phase encoding for the respective encoders. For AB phase encoding, both A and B phase signals are used, while for single-phase encoding, only the A phase signal is required.
 
 By carefully configuring these flags, you can ensure that the ROSRider can work with a variety of motor and encoder configurations, providing flexibility and adaptability in your robotics projects.
+
+__UPDATE RATE__
+
+`UPDATE_RATE` determines outer PID loop speed. Use 20 HZ for normal operation. Supported values are 10, 16, 20, 32, 50, 64
 
 {% endcapture %}
 
