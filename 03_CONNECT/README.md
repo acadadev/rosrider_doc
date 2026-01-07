@@ -36,30 +36,6 @@ This wiring diagram illustrates direct I2C communication with the Raspberry PI.
 
 </div>
 
-__Connecting ROSRider to NVIDIA Jetson__
-
-The NVIDIA Jetson has two I2C ports accessible via the header. To ensure proper communication with I2C devices, it's crucial to configure the I2C voltage level. This is accomplished using a jumper (J514) on the board. To select 3.3V I2C, position the jumper accordingly.
-
-To ensure proper I2C communication, verify that I2C is enabled at the kernel level and that your user account has the necessary permissions to access the I2C bus on the host computer.
-
-There are two I2C ports on the Jetson AGX:
-
-<div style="display: flex; justify-content: space-around; margin: 25px 0;">
-  
-  <figure style="width: 45%; margin: 0; text-align: center;">
-    <img src="../images/rosrider/jetson_agx_i2c_0.png" alt="Jetson AGX I2C Port 1" style="width: 100%;">
-    <figcaption>Jetson AGX I2C Port 0</figcaption>
-  </figure>
-
-  <figure style="width: 45%; margin: 0; text-align: center;">
-    <img src="../images/rosrider/jetson_agx_i2c_1.png" alt="Jetson AGX I2C Port 2" style="width: 100%;">
-    <figcaption>Jetson AGX I2C Port 1</figcaption>
-  </figure>
-
-</div>
-
-Here is an excellent video on connecting I2C devices to Jetson: <a target="_blank" href="https://www.youtube.com/watch?v=7_H7tzcdBMU]" title="I2C - NVIDIA Jetson AGX Xavier">https://www.youtube.com/watch?v=7_H7tzcdBMU]</a>. This video provides a comprehensive guide on the steps involved, from identifying I2C pins to configuring software and starting device usage.
-
 __Detecting I2C Devices__
 
 For troubleshooting purposes, you may want to detect I2C devices connected to your computer. To do this, you can use the `i2cdetect` command in the terminal.
@@ -104,6 +80,29 @@ This command will display a table of I2C addresses. The default address of the R
 
 Note: If you only have a ROSRider connected directly, you should only see the address `0x3C`.
 
-Once you've confirmed the presence of the ROSRider on the I2C bus, you can proceed with installing the necessary drivers.
+__Connecting ROSRider to NVIDIA Jetson__
+
+The NVIDIA Jetson has two I2C ports accessible via the header. To ensure proper communication with I2C devices, it's crucial to configure the I2C voltage level. This is accomplished using a jumper (J514) on the board. To select 3.3V I2C, position the jumper accordingly.
+
+To ensure proper I2C communication, verify that I2C is enabled at the kernel level and that your user account has the necessary permissions to access the I2C bus on the host computer.
+
+There are two I2C ports on the Jetson AGX:
+
+<div style="display: flex; justify-content: space-around; margin: 25px 0;">
+  
+  <figure style="width: 45%; margin: 0; text-align: center;">
+    <img src="../images/rosrider/jetson_agx_i2c_0.png" alt="Jetson AGX I2C Port 1" style="width: 100%;">
+    <figcaption>Jetson AGX I2C Port 0</figcaption>
+  </figure>
+
+  <figure style="width: 45%; margin: 0; text-align: center;">
+    <img src="../images/rosrider/jetson_agx_i2c_1.png" alt="Jetson AGX I2C Port 2" style="width: 100%;">
+    <figcaption>Jetson AGX I2C Port 1</figcaption>
+  </figure>
+
+</div>
+
+Here is an excellent video on connecting I2C devices to Jetson: <a target="_blank" href="https://www.youtube.com/watch?v=7_H7tzcdBMU]" title="I2C - NVIDIA Jetson AGX Xavier">https://www.youtube.com/watch?v=7_H7tzcdBMU]</a>. This video provides a comprehensive guide on the steps involved, from identifying I2C pins to configuring software and starting device usage.
+
 
 __Next Chapter:__ [ROS2 Drivers](../04_DRIVERS/README.md)
