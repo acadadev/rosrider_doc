@@ -259,13 +259,13 @@ MotorConstantRight = (GAIN - TRIM) / MOTOR_CONSTANT;
 
 The `MotorConstantLeft` and `MotorConstantRight` values are used to multiply the algorithm output (typically from a PID controller) to determine the appropriate PWM values for the left and right motors. These adjusted motor constants account for variations in motor performance and mechanical factors, ensuring precise and coordinated motor control.
 
-- `MotorConstantLeft` and `MotorConstantRight` are the adjusted motor constants for the left and right motors, respectively.
-- `GAIN` is a global gain factor that scales the overall motor output.
-- `TRIM` is a small value used to adjust the motor output.
-- `MOTOR_CONSTANT` is the nominal motor constant.
+- `MotorConstantLeft` and `MotorConstantRight` are the adjusted motor constants for the left and right motors, respectively
+- `TRIM_GAIN` is a global gain factor that scales the overall motor output
+- `TRIM_MOTOR_K` is the nominal motor constant
+- `TRIM_CONSTANT` is a small value used to adjust the motor output
+
 
 By adjusting the TRIM parameter, we can effectively fine-tune the motor outputs to ensure accurate and precise robot motion, even in the presence of minor variations in motor performance or mechanical alignment.    
-
 
 {% endcapture %}
 
