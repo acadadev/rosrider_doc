@@ -59,7 +59,7 @@ Install the `i2c-tools` package to access I2C devices:
   </clipboard-copy>
 </div>
 
-Use the i2cdetect command to scan the I2C bus and identify connected devices:
+Use the `i2cdetect` command to scan the I2C bus and identify connected devices:
 
 <div class="highlight notranslate position-relative">
   <div class="highlight">
@@ -106,6 +106,5 @@ There are two I2C ports on the Jetson AGX:
 </div>
 
 Here is an excellent video on connecting I2C devices to Jetson: <a target="_blank" href="https://www.youtube.com/watch?v=7_H7tzcdBMU]" title="I2C - NVIDIA Jetson AGX Xavier">https://www.youtube.com/watch?v=7_H7tzcdBMU]</a>. This video provides a comprehensive guide on the steps involved, from identifying I2C pins to configuring software and starting device usage.
-
 
 __Next Chapter:__ [ROS2 Drivers](../04_DRIVERS/README.md)
