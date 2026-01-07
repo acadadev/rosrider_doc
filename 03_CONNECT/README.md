@@ -5,6 +5,24 @@ title: "Connecting ROSRider to Host Computer"
 description: "Connecting ROSRider Control Card to Host Computer"
 ---
 
+<div style="
+    background-color: #f8f9fa;
+    border-left: 6px solid #4CAF50;
+    color: #333333;
+    padding: 25px;
+    border-radius: 4px;
+    margin: 30px 0;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    font-family: 'Ubuntu', sans-serif;
+">
+    <div style="font-size: 1.4em; font-weight: bold; color: #4CAF50; margin-bottom: 5px;">
+        > The Gateway to ROS.
+    </div>
+    <div style="font-size: 1.1em; font-style: italic; line-height: 1.5;">
+        "ROSRider auto-synchronizes with your host to ensure low-latency command execution and precise telemetry streaming."
+    </div>
+</div>
+
 __Connecting ROSRider to Raspberry PI__
 
 This wiring diagram illustrates direct I2C communication with the Raspberry PI.
@@ -12,12 +30,12 @@ This wiring diagram illustrates direct I2C communication with the Raspberry PI.
 <div style="display: flex; justify-content: space-around; margin: 25px 0;">
   
   <figure style="width: 40%; margin: 0; text-align: center;">
-    <img src="images/rpi4b_wiring.png" alt="Raspberry PI Wiring Diagram" style="width: 100%; border: 1px solid #ccc; border-radius: 5px; box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);">
+    <img src="../images/rpi4b_wiring.png" alt="Raspberry PI Wiring Diagram" style="width: 100%; border: 1px solid #ccc; border-radius: 5px; box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);">
     <figcaption style="font-size: 0.85em; margin-top: 10px; font-style: italic; color: #666;">Raspberry PI Wiring Diagram.</figcaption>
   </figure>
 
   <figure style="width: 40%; margin: 0; text-align: center;">
-    <img src="images/caretta_bare.png" alt="Connecting to Raspberry PI" style="width: 100%; border: 1px solid #ccc; border-radius: 5px; box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);">
+    <img src="../images/caretta_bare.png" alt="Connecting to Raspberry PI" style="width: 100%; border: 1px solid #ccc; border-radius: 5px; box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);">
     <figcaption style="font-size: 0.85em; margin-top: 10px; font-style: italic; color: #666;">This image depicts the actual wiring configuration for direct I2C communication between the Raspberry Pi and ROSRider.</figcaption>
   </figure>
 
