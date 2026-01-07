@@ -128,17 +128,17 @@ Use CR1225 3V coin battery.
 {% endcapture %}
 
 {% include tabs.html 
-   tab1_title="Left Motor Connector" 
+   tab1_title="Left Connector" 
    tab1_content=tab1
-   tab2_title="Right Motor Connector" 
+   tab2_title="Right Connector" 
    tab2_content=tab2
-   tab3_title="Servo Connector" 
+   tab3_title="Servo" 
    tab3_content=tab3
-   tab4_title="AUX Power Port" 
+   tab4_title="AUX Power" 
    tab4_content=tab4
-   tab5_title="Power Control Port" 
+   tab5_title="Power Control" 
    tab5_content=tab5
-   tab6_title="Communications Port" 
+   tab6_title="Communications" 
    tab6_content=tab6
    tab7_title="I2C QWIC Port A" 
    tab7_content=tab7
@@ -146,7 +146,7 @@ Use CR1225 3V coin battery.
    tab8_content=tab8
    tab9_title="Serial Port" 
    tab9_content=tab9
-   tab10_title="Power Connector" 
+   tab10_title="Power" 
    tab10_content=tab10
    tab11_title="Battery" 
    tab11_content=tab11
