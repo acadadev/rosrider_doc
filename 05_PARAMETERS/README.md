@@ -125,6 +125,8 @@ __Practical Considerations:__
 - Consider Power Dissipation and EMI: If power consumption or EMI becomes a concern, reduce the PWM frequency
 - Experiment and Fine-Tune: The best PWM frequency may vary depending on your specific application
 - Synchronized ADC: Limit PWM Frequency 1-2kHZ
+- Minimum PWM Frequency: Use 50 HZ
+- Maximum PWM Frequency: Use 18000 HZ, if using high > 2 kHZ, disable `ADC_SYNC` 
 
 By carefully considering these factors and adjusting the PWM_DIV and PWM_FRQ parameters, you can optimize your ROSRider's performance and efficiency.
 
