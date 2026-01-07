@@ -23,9 +23,12 @@ description: "Connections and Pinmaps of ROSRider Card"
     </div>
 </div>
 
-Equipped with multiple ports and connectors, the ROSRider card enables connection to encoder motors and other peripherals. Pinout diagrams for each port are shown below:
-  
-[![ROSRider Pinmap](../images/ROSRider4D_portmap.png)](https://acada.dev/products)
+<div style="display: flex; justify-content: space-around; margin: 25px 0;">
+  <figure style="width: 50%; margin: 0; text-align: center;">
+    <img src="../images/ROSRider4D_portmap.png" alt="ROSRider Connection Diagram" style="width: 100%; border: 1px solid #ccc; border-radius: 5px; box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);">
+    <figcaption style="font-size: 0.85em; margin-top: 10px; font-style: italic; color: #666;">Equipped with multiple ports and connectors, the ROSRider card enables connection to encoder motors and other peripherals.</figcaption>
+  </figure>
+</div>
 
 {% capture tab1 %}
 
