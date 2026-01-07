@@ -17,77 +17,142 @@ Equipped with multiple ports and connectors, the ROSRider card enables connectio
   
 [![ROSRider Pinmap](../images/ROSRider4D_portmap.png)](https://acada.dev/products)
 
-### Left Motor Connector
+{% capture tab1 %}
 
-This standard 6-wire encoder motor connector is compatible with various motors and can be used with standard cables. The ROSRider card supports both dual-phase and single-phase encoders, with the encoder type configurable via software. For single-phase encoders, connect to the Encoder Phase A pin and leave Encoder Phase B unconnected.
+__Left Motor Connector__
+
+This standard 6-wire encoder motor connector is compatible with various motors and can be used with standard cables. The ROSRider card supports both dual-phase and single-phase encoders, with the encoder type configurable via software. For single-phase encoders, connect to the Encoder Phase A pin and leave Encoder Phase B unconnected.  
 
 ![Left Motor Connector](../images/pinmap/dwg_left_motor.png)
 
-### Right Motor Connector
+{% endcapture %}
+
+{% capture tab2 %}
+
+__Right Motor Connector__
 
 The right motor connector is a mirrored version of the left motor connector.
 
 ![Right Motor Connector](../images/pinmap/dwg_right_motor.png)
 
-### Servo Connector
+{% endcapture %}
+
+{% capture tab3 %}
+
+__Servo Connector__
 
 The ROSRider card can control two standard servos. The servos are powered by auxiliary power, which must be enabled via software before use.
 
 ![Servo Connector](../images/pinmap/dwg_servo.png)
 
-### AUX Power Port
+{% endcapture %}
+
+{% capture tab4 %}
+
+__AUX Power Port__
 
 Software controllable auxillary power port, will generate 5V when turned on.
 
 ![AUX Power Port](../images/pinmap/dwg_power_aux.png)
 
-### Power Control Port
+{% endcapture %}
+
+{% capture tab5 %}
+
+__Power Control Port__
 
 This is an internal connector, that can be used to control buttons on the board remotely. The connector is not soldered, and left for future expansion.
 
 ![Power Control Port](../images/pinmap/dwg_power_control.png)
 
-### Communications Port
+{% endcapture %}
+
+{% capture tab6 %}
+
+__Communications Port__
 
 This pin header can be used for both I2C0 and serial port communication. The reset pin is decoupled with a 150nF capacitor to isolate it from the internal reset.
 
 ![Communications Port](../images/pinmap/dwg_comm.png)
 
-### I2C QWIC Port A
+{% endcapture %}
+
+{% capture tab7 %}
+
+__I2C QWIC Port A__
 
 This is a standard QWIC port, which can be connected by a standard QWIC cable. The VCC from QWIC cable is used to wake up the board from hibernate state and is isolated from device.
 
 ![I2C QWIC Port A](../images/pinmap/dwg_qwic_a.png)
 
-### I2C QWIC Port B
+{% endcapture %}
+
+{% capture tab8 %}
+
+__I2C QWIC Port B__
 
 There are two identical QWIC ports, that can be used to connect other QWIC devices, or piggyback another ROSRider card.
 
 ![I2C QWIC Port B](../images/pinmap/dwg_qwic_b.png)
 
-### SPI Port
+{% endcapture %}
 
-SPI port has been added for future expansion, and not supported by firmware at this point.
+{% capture tab8 %}
 
-![SPI Port](../images/pinmap/dwg_spi.png)
-
-### Serial Port
+__Serial Port__
 
 Serial Port debug connector, this can be connected to ROS2RPI card for accessing serial port. **DO NOT** connect to a QWIC port, as this may short the power supply.
 
 ![Serial Port](../images/pinmap/dwg_serial.png)
 
-### Power Connector
+{% endcapture %}
+
+{% capture tab9 %}
+
+__Power Connector__
 
 XT30 Power Connector. Apply maximum 12V.
 
 ![Power Connector](../images/pinmap/dwg_xt30.png)
 
-### Battery
+{% endcapture %}
+
+{% capture tab10 %}
+
+__Battery__
 
 Use CR1225 3V coin battery.
 
 ![CR1225 Battery](../images/pinmap/dwg_cr1225.png)
+
+{% endcapture %}
+
+{% include tabs.html 
+   tab1_title="Left Motor Connector" 
+   tab1_content=tab1
+   tab2_title="Right Motor Connector" 
+   tab2_content=tab2
+   tab3_title="Servo Connector" 
+   tab3_content=tab3
+   tab4_title="AUX Power Port" 
+   tab4_content=tab4
+   tab5_title="Power Control Port" 
+   tab5_content=tab5
+   tab6_title="Communications Port" 
+   tab6_content=tab6
+   tab7_title="I2C QWIC Port A" 
+   tab7_content=tab7
+   tab8_title="I2C QWIC Port B" 
+   tab8_content=tab8
+   tab9_title="Serial Port" 
+   tab9_content=tab9
+   tab10_title="Power Connector" 
+   tab10_content=tab10
+   tab11_title="Battery" 
+   tab11_content=tab11
+%}
+
+
 
 Armed with the knowledge of the pinmap, the next step is to physically connect ROSRider to your hardware. The subsequent chapter provides clear diagrams and instructions for connecting to popular platforms like Raspberry Pi and NVIDIA Jetson.
 
