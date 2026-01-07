@@ -30,7 +30,7 @@ This wiring diagram illustrates direct I2C communication with the Raspberry PI.
 <div style="display: flex; justify-content: space-around; margin: 25px 0;">
   
   <figure style="width: 60%; margin: 0; text-align: center;">
-    <img src="../images/rosrider/rpi4b_wiring.png" alt="Raspberry PI Wiring Diagram" style="width: 100%; border: 1px solid #ccc; border-radius: 5px; box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);">
+    <img src="../images/rosrider/RPI5_ROSRider.png" alt="Raspberry PI Wiring Diagram" style="width: 100%; border: 1px solid #ccc; border-radius: 5px; box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);">
     <figcaption style="font-size: 0.85em; margin-top: 10px; font-style: italic; color: #666;">Raspberry PI Wiring Diagram.</figcaption>
   </figure>
 
