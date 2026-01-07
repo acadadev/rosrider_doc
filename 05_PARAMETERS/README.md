@@ -21,16 +21,16 @@ Dynamic parameters, such as PID control gains, can be adjusted on-the-fly using 
 __Driver Configuration__
 
 ```yaml
-DRIVE_MODE: 3          # MODE_PID 3 for ROS
 CONFIG_FLAGS: 112  
 UPDATE_RATE: 20  
+DRIVE_MODE: 3  
 ```
 
 | Parameter    | Type  | Description                         | Default |
 |--------------|-------|-------------------------------------|---------|
-| DRIVE_MODE   | uint8 | Drive Mode Configuration, 3 for ROS | 3       |
 | CONFIG_FLAGS | uint8 | Hardware Config Bitmask             | 48      |
 | UPDATE_RATE  | uint8 | Outer PID Loop Update Rate          | 20      |
+| DRIVE_MODE   | uint8 | Drive Mode Configuration, 3 for ROS | 3       |
 
 __Hardware Configuration Flags__
 
@@ -57,9 +57,19 @@ The configuration flags allow you to customize the behavior of the ROSRider to m
 
 By carefully configuring these flags, you can ensure that the ROSRider can work with a variety of motor and encoder configurations, providing flexibility and adaptability in your robotics projects.
 
-__UPDATE RATE__
+__Update Rate__
 
 `UPDATE_RATE` determines outer PID loop speed. Use 20 HZ for normal operation. Supported values are 10, 16, 20, 32, 50, 64
+
+__Drive Mode__
+
+| DRIVE_MODE | Value | MODE             |
+|------------|-------|------------------|
+| MODE_BRAKE | 0     | Brake            |
+| MODE_PWM   | 1     | PWM              |
+| MODE_VEL   | 2     | Command Velocity |
+| MODE_PID   | 3     | PID, ROS Default |              
+
 
 {% endcapture %}
 
