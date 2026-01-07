@@ -162,8 +162,6 @@ Use CR1225 3V coin battery.
    tab11_content=tab11
 %}
 
-
-
-Armed with the knowledge of the pinmap, the next step is to physically connect ROSRider to your hardware. The subsequent chapter provides clear diagrams and instructions for connecting to popular platforms like Raspberry Pi and NVIDIA Jetson.
+The subsequent chapter provides clear diagrams and instructions for connecting to popular platforms like Raspberry Pi and NVIDIA Jetson.
 
 __Next Chapter:__ [Connecting ROSRider to Host Computer](../03_CONNECT/README.md)
