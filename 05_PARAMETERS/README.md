@@ -15,8 +15,10 @@ The following YAML file defines the configuration parameters for the ROSRider no
 
 
 {% capture tab1 %}
+
+__DRIVER config__
+
 ```yaml
-# DRIVER config
 DRIVE_MODE: 3          # MODE_PID 3 for ROS
 CONFIG_FLAGS: 112      #
 UPDATE_RATE: 20        # 10, 16, 20, 32, 50, 64
