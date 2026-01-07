@@ -304,7 +304,17 @@ DT_THRESHOLD: 2
 {% endcapture %}
 
 {% capture tab13 %}
-T13
+```yaml
+
+ODOM_FRAME_ID: 'odom'  
+BASE_FRAME_ID: 'base_footprint'  
+CMD_VEL_TOPIC: 'cmd_vel_nav'  
+BROADCAST_TF2: True  
+PUB_ODOMETRY: True  
+PUB_JOINTS: True  
+PUB_DIAGNOSTICS: True  
+```
+
 {% endcapture %}
 
 {% capture tab14 %}
@@ -334,22 +344,14 @@ CROSS_K_RIGHT: 1.0
 
 {% capture tab16 %}
 ```yaml
-# system parameters
-I2C_ENABLED: True  
-ODOM_FRAME_ID: 'odom'  
-BASE_FRAME_ID: 'base_footprint'  
-BROADCAST_TF2: True  
-PUB_ODOMETRY: True  
-PUB_JOINTS: True  
-PUB_DIAGNOSTICS: True  
-ROS2RPI_CONFIG: 0x33 # 0x00 # 0x0F # 0x33
+ROS2RPI_CONFIG: 0x33 # 0x00 # 0x0F # 0x33  
 I2C_ADDRESS: 0x3c  
+I2C_ENABLED: True  
 DEBUG: False  
 RTC_TRIM: 0x7FFF  
 ALLOWED_SKIP: 3  
 MONITOR_RATE: 100  
 MAX_IDLE_SECONDS: 1800  
-CMD_VEL_TOPIC: 'cmd_vel_nav'  
 ```
 {% endcapture %}
 
