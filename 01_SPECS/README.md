@@ -12,8 +12,9 @@ description: "Hardware Specifications"
 </div>
 
 <div class="img_dv">
-  <figure class="img_fg80">
-    <img src="../images/rosrider/ROSRider_PID_Tuner.png" alt="ROSRider PID Tuner" style="width: 100%;">
+  <figure class="img_fg50">
+    <img src="../images/rosrider/ROSRider_PID_Tool.png" alt="ROSRider PID Tuner" style="width: 100%;">
+    <figcaption>Fig 1. ROSRider PID Tuning Tool visualizes the </figcaption>
   </figure>
 </div>
 
