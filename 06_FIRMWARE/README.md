@@ -47,12 +47,13 @@ You should see a message indicating successful entry into bootloader mode, which
    <img class="replay" src="../images/rosrider/tailing_syslog.gif" alt="Bootloader Mode Output">
 </div>
 
-***Before Starting Update: Important Considerations***
-
-- Power Supply: Ensure a stable power supply during the update process.
-- USB Connection: A reliable USB connection is crucial.
-- Firmware Compatibility: Always use the firmware provided by ACADA Robotics for your specific model.
-- Patience: The firmware update process may take some time. Avoid interrupting the process.
+<div class="checkpoint">
+    <p class="ch">✔&nbsp;Before Starting Update: Important Considerations</p>
+    <p>Power Supply: Ensure a stable power supply during the update process.</p>
+    <p>USB Connection: A reliable USB connection is crucial.</p>
+    <p>Firmware Compatibility: Always use the firmware provided by ACADA Robotics for your specific model.</p>
+    <p>Patience: The firmware update process may take some time. Avoid interrupting the process.</p>
+</div>
 
 By following these steps and adhering to the specific instructions provided by ACADA Robotics, you can successfully update your ROSRider's firmware and enhance its capabilities.
 
@@ -61,8 +62,6 @@ By following these steps and adhering to the specific instructions provided by A
         > Updating ROSRider Firmware with I2CRider.dfu
     </div>
 </div>
-
-<iframe width="980" height="551" src="https://www.youtube.com/embed/bSIpw-cIJeE" frameborder="0" allowfullscreen></iframe>
 
 __Prerequisites:__
 

@@ -206,7 +206,7 @@ To monitor the health and performance of your ROSRider, you can view real-time d
   </clipboard-copy>
 </div>
 
-Running this command will output diagnostic information to your terminal. You should see an output similar to the following:
+Running this command will output diagnostic information to your terminal. You should see an output similar to the following
 
 <div class="img_dv">
    <img class="replay" src="../images/rosrider/monitoring_diagnostics.gif" alt="Diagnostics Output" style="box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);">
