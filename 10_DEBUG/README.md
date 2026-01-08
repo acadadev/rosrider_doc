@@ -29,7 +29,7 @@ __ROSRider SMBUS__
 ROSRider SMBus enables you to write your own python programs to control ROSRider board without the ROS drivers.
 Python code is available at [https://github.com/acadadev/rosrider_smbus](https://github.com/acadadev/rosrider_smbus)
 
-Also, a set of utilities is included that allows you to:
+Also, a set of utilities is included that allows you to
 
  - Send System Control Commands
  - Set Parameters
