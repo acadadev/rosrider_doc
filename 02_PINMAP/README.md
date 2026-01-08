@@ -187,7 +187,7 @@ To enable I2C communication on a Raspberry Pi running Ubuntu, first ensure I2C i
 Use jumper wires to connect your Raspberry PI using GPIO pins 2 (SDA) and 3 (SCL).
 After installation, verify the connection using `sudo i2cdetect -y 1` to detect connected devices.  
 
-<div style="display: flex; justify-content: space-around; margin: 25px 0;">
+<div style="display: flex; margin: 25px 0;">
   <figure style="width: 60%; margin: 0; text-align: center;">
     <img src="../images/rosrider/RPI5_ROSRider.png" alt="Raspberry PI Wiring Diagram" style="width: 100%;">
     <figcaption>Raspberry PI Wiring Diagram.</figcaption>
