@@ -181,7 +181,7 @@ The following output indicates that the ROSRider Node has started successfully a
 
 <div class="checkpoint">
   <p class="ch">✔&nbsp;Checkpoint</p>
-  <p>Ensure you are receiving the expected diagnostics and odometry data according to the following instructions.</p>
+  <p>Ensure you are receiving the expected diagnostics and odometry data, following instructions below.</p>
 </div>
 
 <div class="sl">
