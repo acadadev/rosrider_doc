@@ -18,7 +18,7 @@ While previous versions of ROSRider utilized middleware to integrate with ROS, o
 The ROSRider firmware incorporates a timing control feature that synchronizes itself to the host computer's polling rate, resulting in a latency of 1-2 milliseconds. By actively adjusting its internal clock based on received packets, the ROSRider firmware ensures precise timing and synchronization, preventing data inconsistencies and errors that can occur due to timing drifts. This guarantees that ROS packets are delivered on time, ensuring reliable and efficient system operation.
 
 <div class="checkpoint">
-  <p class="ch">⚠️&nbsp;Checkpoint</p>
+  <p class="ch">⚠️&nbsp;Checkpoint:&nbsp;Test if ROS is installed</p>
   <p>Before continuing, run the following test command to see if ROS is installed.</p>
   <div class="highlight notranslate position-relative">
     <div class="highlight">
@@ -145,7 +145,7 @@ To ensure that your system can find the necessary ROSRider components, you'll ne
 </div>	
 
 <div class="checkpoint">
-  <p class="ch">⚠️&nbsp;Checkpoint: Verify Workspace Sourcing</p>
+  <p class="ch">⚠️&nbsp;Checkpoint:&nbsp;Verify Workspace Sourcing</p>
   <p>Confirm that ROS 2 can find the rosrider package by running: `ros2 pkg prefix rosrider`</p>
     <div class="highlight notranslate position-relative">
       <div class="highlight">
