@@ -11,11 +11,21 @@ description: "Detailed Procedures for working with a ROSRider robot"
     </div>
 </div>
 
-__Procedures__
+<div class="sl">
+    <div class="sl1">
+        > PID Tuning
+    </div>
+</div>
 
 We will demonstrate how to optimize the robot's control system by adjusting PID parameters.
 
 - [PID Tuning](01_PID/README.md)
+
+<div class="sl">
+    <div class="sl1">
+        > Teleoperation
+    </div>
+</div>
 
 We will show how to remotely control the robot using a joystick or keyboard.
 
