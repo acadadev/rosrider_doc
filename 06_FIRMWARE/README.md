@@ -20,11 +20,6 @@ description: "Updating Firmware of ROSRider control card"
     </div>
 </div>
 
-<div class="checkpoint">
-  <p class="ch">⚠️&nbsp;Checkpoint</p>
-  <p>Before proceeding with the firmware update, ensure you have the correct firmware file for your specific ROSRider model. Incorrect firmware can lead to device malfunction.</p>
-</div>
-
 __Enter Bootloader Mode:__
 - Press and Hold the Reset Button: Keep the reset button pressed.
 - Press and Hold the Boot Button: While still holding the reset button, press the boot button.
