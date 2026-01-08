@@ -17,7 +17,7 @@ This makes them accessible to other nodes and allows you to modify them at runti
 
 The ROSRider node reads the configuration parameters from the YAML file and stores them in its non-volatile memory (EEPROM).
 This allows the ROSRider to retain its configuration settings even after a power cycle.
-Dynamic parameters, such as PID control gains, can be adjusted on-the-fly using tools like `ros2 param` or our custom `ROSRider Parameter Manager`, and the changes are immediately applied.
+Dynamic parameters, such as PID control gains, can be adjusted on-the-fly using tools like `ros2 param` or our custom `ROSRider Parameter Manager` and the changes are immediately applied.
 
 {% capture tab1 %}
 
