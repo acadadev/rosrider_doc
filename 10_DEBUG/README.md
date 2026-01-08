@@ -7,11 +7,9 @@ description: "Error codes and conditions on the ROSRider control card"
 
 <div class="sl">
     <div class="sl1">
-        > Troubleshooting
+        > ROSRider SMBUS
     </div>
 </div>
-
-__ROSRider SMBUS__
 
 The ROSRider SMBus library allows for direct control of the ROSRider board using Python, independent of standard ROS drivers.
 The source code is available at [https://github.com/acadadev/rosrider_smbus](https://github.com/acadadev/rosrider_smbus)
@@ -24,9 +22,11 @@ This package includes a suite of utilities enabling you to:
  - Set PID and PWM Targets
  - Profile Motor Torque Constant
 
----
-
-__LED Blink Codes__
+<div class="sl">
+    <div class="sl1">
+        > LED Blink Codes
+    </div>
+</div>
 
 | Color | Visual Pattern | Duration | System State     | Description                                           |
 |-------|----------------|----------|------------------|-------------------------------------------------------|
@@ -38,8 +38,6 @@ __LED Blink Codes__
 
 A red LED indicates a system fault. While rare, these errors are usually recoverable.
 Please check the status codes listed below to diagnose the problem and find the appropriate solution.  
-
----
 
 <div class="sl">
     <div class="sl1">
