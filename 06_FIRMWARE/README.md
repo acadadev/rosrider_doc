@@ -46,7 +46,7 @@ You should see a message indicating successful entry into bootloader mode, which
 </div>
 
 <div class="checkpoint">
-    <p class="ch">✔&nbsp;Before Starting Update: Important Considerations</p>
+    <p><strong>Before Starting Update: Important Considerations</strong></p>
     <p><strong>Power Supply:</strong> Ensure a stable power supply during the update process.</p>
     <p><strong>USB Connection:</strong> A reliable USB connection is crucial.</p>
     <p><strong>Firmware: Compatibility:</strong> Always use the firmware provided by ACADA Robotics for your specific model.</p>
