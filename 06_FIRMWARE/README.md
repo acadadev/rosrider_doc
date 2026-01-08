@@ -12,7 +12,7 @@ description: "Updating Firmware of ROSRider control card"
 </div>
 
 <div class="checkpoint">
-  <p class="ch">✔&nbsp;Checkpoint</p>
+  <p class="ch">⚠️&nbsp;Checkpoint</p>
   <p>Before proceeding with the firmware update, ensure you have the correct firmware file for your specific ROSRider model. Incorrect firmware can lead to device malfunction.</p>
 </div>
 
