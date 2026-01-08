@@ -208,7 +208,7 @@ The following output indicates that the ROSDriver node has started successfully 
 
 ***Important Note***
 
-- Make sure you have sourced the setup script `source devel/setup.bash` either manually before running the command, or have permanently configured it in your `.bashrc` file as explained in the previous section. This ensures the system can locate the necessary ROSDriver components.
+- Make sure you have sourced the setup script `source devel/setup.bash` either manually before running the command, or have permanently configured it in your `.bashrc` file. This ensures the system can locate the necessary ROS components.
 
 <div class="checkpoint">
   <p>✅&nbsp;<strong>Checkpoint</strong></p>
