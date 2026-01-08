@@ -24,12 +24,13 @@ TODO:
 
 __LED Blink Codes__
 
-| :---| :---| :---|
-| LED Color | Visual Pattern | Duration | System State Description |
-| Green | 3x Blink | 50ms | Restart Complete: The system has successfully rebooted. |
-| Red | 3x Blink | 50ms | Request Acknowledged: Soft Reset, Hard Reset, or Hibernate request received. |
-| Green | Solid ON | N/A |Active: Commands have been successfully received. |
-| Red | Solid ON | N/A | System Disabled: A critical status check is required. |
+
+| LED Color | Visual Pattern | Duration | System State Description                                                     |
+|-----------|----------------|----------|------------------------------------------------------------------------------|
+| Green     | 3x Blink       | 50ms     | Restart Complete: The system has successfully rebooted.                      |
+| Red       | 3x Blink       | 50ms     | Request Acknowledged: Soft Reset, Hard Reset, or Hibernate request received. |
+| Green     | Solid ON       | N/A      | Active: Commands have been successfully received.                            |
+| Red       | Solid ON       | N/A      | System Disabled: A critical status check is required.                        |
 
 __ROSRider SMBUS__
 
