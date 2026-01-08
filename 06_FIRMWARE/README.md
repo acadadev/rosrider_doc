@@ -16,7 +16,7 @@ description: "Updating Firmware of ROSRider control card"
     font-family: 'Ubuntu', sans-serif;
 ">
     <div style="font-size: 1.4em; font-weight: bold; color: #4CAF50; margin-bottom: 5px;">
-        > Built to Evolve.
+        > Updating Firmware
     </div>
     <div style="font-size: 1.1em; font-style: italic; line-height: 1.5;">
         "Update your ROSRider directly over USB with a simple button press."

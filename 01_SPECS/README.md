@@ -16,10 +16,10 @@ description: "Hardware Specifications"
     font-family: 'Ubuntu', sans-serif;
 ">
     <div style="font-size: 1.4em; font-weight: bold; color: #4CAF50; margin-bottom: 5px;">
-        > Turn Commodity Parts into Intelligent Robots.
+        > Specifications
     </div>
     <div style="font-size: 1.1em; font-style: italic; line-height: 1.5;">
-        "The affordable, robust, and ROS2-native control board designed to bring your Raspberry Pi and Jetson projects to life."
+        "Hardware Specifications."
     </div>
 </div>
 

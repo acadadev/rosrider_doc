@@ -1,23 +1,15 @@
 ---
 layout: default
 title_url: /02_PINMAP/README.html
-title: "Connections and Pinmaps"
-description: "Connections and Pinmaps of ROSRider Card"
+title: "Pinmaps and Connections"
+description: "Pinmaps and Connections of ROSRider Card"
 ---
 
-<div style="
-    background-color: #f8f9fa;
-    border-left: 6px solid #4CAF50;
-    color: #333333;
-    padding: 25px;
-    border-radius: 4px;
-    margin: 30px 0;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-    font-family: 'Ubuntu', sans-serif;
-">
-    <div style="font-size: 1.4em; font-weight: bold; color: #4CAF50; margin-bottom: 5px;">
-        > Detailed pinouts and connector specifications
-    </div>
+<div style="font-size: 1.4em; font-weight: bold; color: #4CAF50; margin-bottom: 5px;">
+  > Pinmaps and Connections
+</div>
+<div style="font-size: 1.1em; font-style: italic; line-height: 1.5;">
+  "This section provides detailed pinout mappings and connector specifications, along with the necessary steps to interface the controller with a host computer."
 </div>
 
 {% capture tab1 %}

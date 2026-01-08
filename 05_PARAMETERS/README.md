@@ -16,7 +16,7 @@ description: "Parametric Configuration of the ROSRider control card"
     font-family: 'Ubuntu', sans-serif;
 ">
     <div style="font-size: 1.4em; font-weight: bold; color: #4CAF50; margin-bottom: 5px;">
-        > Complete Parametric Freedom.
+        > ROS Parameters
     </div>
     <div style="font-size: 1.1em; font-style: italic; line-height: 1.5;">
         "Every variable—from low-level physics to control loops—is dynamically adjustable in real-time via the ROS parameter server."
