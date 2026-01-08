@@ -11,13 +11,6 @@ description: "Hardware Specifications"
     </div>
 </div>
 
-<div class="img_dv">
-  <figure class="img_fg60">
-    <img class="img_sh" src="../images/rosrider/ROSRider_PID_Tool.png" alt="ROSRider PID Tuner" style="width: 100%;">
-    <figcaption>Fig 1. ROSRider PID Tuning Tool visualizes the </figcaption>
-  </figure>
-</div>
-
 | :---| :---|
 | ***MCU*** | 32-bit ARM Cortex: TM4C123GH6PM |
 | ***Motor Drivers*** | Two channel up to 2.5 amps with current feedback |
@@ -48,6 +41,13 @@ description: "Hardware Specifications"
 The inclusion of a cascaded current loop significantly enhances the control architecture by 
 placing a high-bandwidth current controller inside the velocity loop; this allows for precise torque control, 
 faster response to disturbances, and a more stable overall system compared to simple single-loop designs.
+
+<div class="img_dv_center">
+  <figure class="img_fg60">
+    <img class="img_sh" src="../images/rosrider/ROSRider_PID_Tool.png" alt="ROSRider PID Tuner" style="width: 100%;">
+    <figcaption>Fig 1. ROSRider PID Tuning Tool visualizes the </figcaption>
+  </figure>
+</div>
 
 <div class="sl">
     <div class="sl1">
