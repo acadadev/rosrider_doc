@@ -112,7 +112,7 @@ rosdep install --from-paths src -y --ignore-src</pre>
   </clipboard-copy>
 </div>
 
-This command retrieves and installs all the necessary dependencies required by the ROSDriver package based on the cloned source code in the src directory.
+This command retrieves and installs all the necessary dependencies required by the ROSRider package based on the cloned source code in the src directory.
 
 **5. Build the Workspace**
 
@@ -133,7 +133,7 @@ source devel/setup.bash</pre>
 
 **6. Adding ROSRider to Your Bash Environment**
 
-To ensure that your system can find the necessary ROSDriver components, you'll need to add the following line to your Bash configuration file:
+To ensure that your system can find the necessary ROSRider components, you'll need to add the following line to your Bash configuration file:
 
 <div class="highlight notranslate position-relative">
   <div class="highlight">
@@ -155,7 +155,7 @@ To ensure that your system can find the necessary ROSDriver components, you'll n
     </div>
 </div>
 
-Once you've successfully installed the ROSDriver package and configured your environment, it's time to bring the ROSRider board to life!
+Once you've successfully installed the ROSRider package and configured your environment, it's time to bring the ROSRider board to life!
 
 To launch the ROSRider node and establish communication between ROS and your ROSRider hardware, execute the following command in your terminal:
 
@@ -173,15 +173,11 @@ To launch the ROSRider node and establish communication between ROS and your ROS
   </clipboard-copy>
 </div>
 
-The following output indicates that the ROSDriver node has started successfully and is ready to communicate with your ROSRider hardware.
+The following output indicates that the ROSRider Node has started successfully and is ready to communicate with your ROSRider hardware.
 
 <div class="img_dv">
    <img class="replay" src="../images/rosrider/rosrider_launch.gif" alt="ROSRider Node Launch" style="width: 65%;">
 </div>
-
-***Important Note***
-
-- Make sure you have sourced the setup script `source devel/setup.bash` either manually before running the command, or have permanently configured it in your `.bashrc` file. This ensures the system can locate the necessary ROS components.
 
 <div class="checkpoint">
   <p class="ch">✔&nbsp;Checkpoint</p>
