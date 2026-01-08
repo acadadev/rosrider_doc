@@ -13,21 +13,36 @@ description: "Error codes and conditions on the ROSRider control card"
 
 __OTHER CHAPTERS__
 
-slam, navigation and others, must be adsorbed by new chapters, or
-some chapters are overlapping.
+slam, navigation and others, must be adsorbed by new chapters, or some chapters are overlapping.
 
-we an skip the intro, and remove simulations. and just focus on basic robotics concepts in ros.
-start the other ros2rpi doc asap, it will take little time
+
+
+__LED Blink Codes__
+
+| :---| :---| :---|
+| LED Color | Visual Pattern | Duration | System State Description |
+| Green | 3x Blink | 50ms | Restart Complete: The system has successfully rebooted. |
+| Red | 3x Blink | 50ms | Request Acknowledged: Soft Reset, Hard Reset, or Hibernate request received. |
+| Green | Solid ON | N/A |Active: Commands have been successfully received. |
+| Red | Solid ON | N/A | System Disabled: A critical status check is required. |
 
 __TODO__
 
+- make videos of pid debug tool and put some screenshots between things, maybe even a video.
+- reamp parameters
+
+- led blink documentation
+- if initial update fail, then what happens?
+- rosrider_smbus
+  - sysctl commands
+  - read_status
+  - set_commands
+  - etc
 - ros2rpi config explanation, is it 0x33 for default
 - couple of ros param commands
 - led blink documentation - red
-- sysctl commands
-- rosrider_smbus
+
 - connecting servos
-- connecting rosrider with qwic
 - Explanation of parameter 0x33 in rosrider, 0x0 to cancel.
 
 
