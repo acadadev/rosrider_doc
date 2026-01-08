@@ -5,17 +5,8 @@ title: "Specifications"
 description: "Hardware Specifications"
 ---
 
-<div style="
-    background-color: #f8f9fa;
-    border-left: 6px solid #4CAF50;
-    color: #333333;
-    padding: 25px;
-    border-radius: 4px;
-    margin: 30px 0;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-    font-family: 'Ubuntu', sans-serif;
-">
-    <div style="font-size: 1.4em; font-weight: bold; color: #4CAF50; margin-bottom: 5px;">
+<div class="sl">
+    <div class="sl1">
         > System Features
     </div>
 </div>
@@ -31,17 +22,8 @@ description: "Hardware Specifications"
 | ***Enhanced Diagnostics*** | The system publishes detailed diagnostic information including battery voltage, current consumption and motor current feedback |
 | ***Synchronization***| Synchronizes with the host computer to ensure low-latency data transmission |
 
-<div style="
-    background-color: #f8f9fa;
-    border-left: 6px solid #4CAF50;
-    color: #333333;
-    padding: 25px;
-    border-radius: 4px;
-    margin: 30px 0;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-    font-family: 'Ubuntu', sans-serif;
-">
-    <div style="font-size: 1.4em; font-weight: bold; color: #4CAF50; margin-bottom: 5px;">
+<div class="sl">
+    <div class="sl1">
         > Advanced Features
     </div>
 </div>
@@ -60,17 +42,8 @@ The inclusion of a cascaded current loop significantly enhances the control arch
 placing a high-bandwidth current controller inside the velocity loop; this allows for precise torque control, 
 faster response to disturbances, and a more stable overall system compared to simple single-loop designs.
 
-<div style="
-    background-color: #f8f9fa;
-    border-left: 6px solid #4CAF50;
-    color: #333333;
-    padding: 25px;
-    border-radius: 4px;
-    margin: 30px 0;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-    font-family: 'Ubuntu', sans-serif;
-">
-    <div style="font-size: 1.4em; font-weight: bold; color: #4CAF50; margin-bottom: 5px;">
+<div class="sl">
+    <div class="sl1">
         > Power
     </div>
 </div>
@@ -88,17 +61,8 @@ Built-in current monitoring and a hardware-resettable fuse safeguard the motors 
 A 5V power supply can be enabled or disabled via software, providing flexibility for powering external sensors and devices.
 ROSRider utilizes standard JST connectors for motor and I2C connections, allowing for easy assembly and customization. Additionally, two QWIC connectors provide convenient expansion options for integrating various sensors and modules.
 
-<div style="
-    background-color: #f8f9fa;
-    border-left: 6px solid #4CAF50;
-    color: #333333;
-    padding: 25px;
-    border-radius: 4px;
-    margin: 30px 0;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-    font-family: 'Ubuntu', sans-serif;
-">
-    <div style="font-size: 1.4em; font-weight: bold; color: #4CAF50; margin-bottom: 5px;">
+<div class="sl">
+    <div class="sl1">
         > Communications
     </div>
 </div>
@@ -110,17 +74,8 @@ ROSRider utilizes standard JST connectors for motor and I2C connections, allowin
 
 The device currently uses I2C for communication, but it can also operate over USB, which is primarily used for firmware updates.
 
-<div style="
-    background-color: #f8f9fa;
-    border-left: 6px solid #4CAF50;
-    color: #333333;
-    padding: 25px;
-    border-radius: 4px;
-    margin: 30px 0;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-    font-family: 'Ubuntu', sans-serif;
-">
-    <div style="font-size: 1.4em; font-weight: bold; color: #4CAF50; margin-bottom: 5px;">
+<div class="sl">
+    <div class="sl1">
         > Software
     </div>
 </div>
@@ -134,17 +89,8 @@ The device currently uses I2C for communication, but it can also operate over US
 
 This project is primarily a software-driven effort, and we continually develop and update our software as part of an ongoing, continuous development cycle.
 
-<div style="
-    background-color: #f8f9fa;
-    border-left: 6px solid #4CAF50;
-    color: #333333;
-    padding: 25px;
-    border-radius: 4px;
-    margin: 30px 0;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-    font-family: 'Ubuntu', sans-serif;
-">
-    <div style="font-size: 1.4em; font-weight: bold; color: #4CAF50; margin-bottom: 5px;">
+<div class="sl">
+    <div class="sl1">
         > Supported Platforms
     </div>
 </div>

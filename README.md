@@ -13,7 +13,7 @@ ROSRider is designed to empower makers and students, to build robots using readi
 Unlike pre-built kits that can be costly and limiting, it can be integrated with existing hardware.
 This approach encourages creativity, reduces costs, and promotes the reuse of existing components, making robotics accessible to a wider audience.
 
-<div class="img_dv">
+<div class="img_dv_center">
   
   <figure class="img_fg25">
     <img class="img_sh" src="images/rosrider/sorcerer_rosrider.png" alt="Sorcerer with ROSRider" style="width: 100%;">
@@ -53,7 +53,7 @@ __Gazebo Simulation Support__
 
 To further enhance the integration of ROSRider with open-source robotics, we have developed two open-source robot platforms: Sorcerer and Caretta. These low-cost, pre-built robots, accompanied by URDF files for ROS and Gazebo simulation, streamline the development process. Developers can rapidly prototype and test algorithms in simulation before deploying them to physical hardware, significantly accelerating development time and reducing costs associated with physical experimentation.
 
-<div class="img_dv">
+<div class="img_dv_center">
   
   <figure class="img_fg25">
     <img class="img_sh" src="images/rosrider/gazebo_caretta.png" alt="Gazebo CARETTA" style="width: 100%;">
@@ -76,7 +76,7 @@ __Supported Motors__
 
 ROSRider can drive a wide range of encoder gear motors, from simple DC motors to high-precision gear motors commonly found in robotic vacuum cleaners. It supports both single-phase and dual-phase encoders, with parameters such as encoder PPR and gear reduction ratio configurable through YAML files. The dual-channel drivers, delivering 1A continuous and 2.8A peak current, provide ample power for various robotic applications.
 
-<div class="img_dv">
+<div class="img_dv_center">
   
   <figure class="img_fg25">
     <img class="img_sh" src="images/rosrider/metal_gear_motor_a.png" alt="Metal Gear Motor" style="width: 100%;">
