@@ -156,6 +156,7 @@ To ensure that your system can find the necessary ROSRider components, you'll ne
 </div>
 
 Once you've successfully installed the ROSRider package and configured your environment, it's time to bring the ROSRider board to life!
+Make sure you have sourced the setup script `source devel/setup.bash` either manually before running the command, or have permanently configured it in your `.bashrc` file. This ensures the system can locate the necessary ROS components.
 
 To launch the ROSRider node and establish communication between ROS and your ROSRider hardware, execute the following command in your terminal:
 
