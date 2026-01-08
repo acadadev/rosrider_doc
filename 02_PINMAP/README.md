@@ -16,7 +16,7 @@ description: "Connections and Pinmaps of ROSRider Card"
     font-family: 'Ubuntu', sans-serif;
 ">
     <div style="font-size: 1.4em; font-weight: bold; color: #4CAF50; margin-bottom: 5px;">
-        > PINMAP
+        > PINMAPS
     </div>
 </div>
 
