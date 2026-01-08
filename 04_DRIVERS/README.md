@@ -59,7 +59,7 @@ cd rosrider_ws/src</pre>
   </clipboard-copy>
 </div>
 
-**Clone the ROSRider Repository:**
+*Clone the ROSRider Repository:*
 
 <div class="highlight notranslate position-relative">
   <div class="highlight">
@@ -75,7 +75,7 @@ cd rosrider_ws/src</pre>
   </clipboard-copy>
 </div>
 
-**Initialize ROS Dependency System (if not done during ROS installation)**
+*Initialize ROS Dependency System (if not done during ROS installation)*
 
 <div class="highlight notranslate position-relative">
   <div class="highlight">
@@ -92,7 +92,7 @@ rosdep update</pre>
   </clipboard-copy>
 </div>
 
-**Install ROS Dependencies**
+*Install ROS Dependencies*
 
 <div class="highlight notranslate position-relative">
   <div class="highlight">
@@ -109,7 +109,7 @@ rosdep install --from-paths src -y --ignore-src</pre>
   </clipboard-copy>
 </div>
 
-**Build the Workspace**
+*Build the Workspace*
 
 <div class="highlight notranslate position-relative">
   <div class="highlight">
@@ -126,7 +126,7 @@ source devel/setup.bash</pre>
   </clipboard-copy>
 </div>	
 
-**Adding ROSRider to Your Bash Environment**
+*Adding ROSRider to Your Bash Environment*
 
 To ensure that your system can find the necessary ROSRider components, you'll need to add the following line to your Bash configuration file:
 
