@@ -16,7 +16,7 @@ description: "Updating Firmware of ROSRider control card"
         ⚠️&nbsp;Checkpoint
     </div>
     <div class="ck1">
-        Hello
+        Before proceeding with the firmware update, ensure you have the correct firmware file for your specific ROSRider model. Incorrect firmware can lead to device malfunction.
     </div>
 </div>
 
