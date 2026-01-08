@@ -6,7 +6,7 @@ description: "Parametric Configuration of the ROSRider control card"
 ---
 
 <div class="sl">
-    <div class="sl">
+    <div class="sl1">
         > ROS Parameters
     </div>
 </div>
