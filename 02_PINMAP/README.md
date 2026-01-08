@@ -20,13 +20,9 @@ description: "Pinmaps and Connections of ROSRider Card"
     </div>
 </div>
 
-{% capture tab1 %}
-
 ![ROSRider Port Diagram](../images/rosrider/ROSRider4D_portmap.png)
 
-{% endcapture %}
-
-{% capture tab2 %}
+{% capture tab1 %}
 
 __Left Motor Connector__
 
@@ -36,7 +32,7 @@ This standard 6-wire encoder motor connector is compatible with various motors a
 
 {% endcapture %}
 
-{% capture tab3 %}
+{% capture tab2 %}
 
 __Right Motor Connector__
 
@@ -46,7 +42,7 @@ The right motor connector is a mirrored version of the left motor connector.
 
 {% endcapture %}
 
-{% capture tab4 %}
+{% capture tab3 %}
 
 __Servo Connector__
 
@@ -56,7 +52,7 @@ The ROSRider card can control two standard servos. The servos are powered by aux
 
 {% endcapture %}
 
-{% capture tab5 %}
+{% capture tab4 %}
 
 __AUX Power Port__
 
@@ -66,7 +62,7 @@ Software controllable auxillary power port, will generate 5V when turned on.
 
 {% endcapture %}
 
-{% capture tab6 %}
+{% capture tab5 %}
 
 __Power Control Port__
 
@@ -76,7 +72,7 @@ This is an internal connector, that can be used to control buttons on the board 
 
 {% endcapture %}
 
-{% capture tab7 %}
+{% capture tab6 %}
 
 __Communications Port__
 
@@ -86,7 +82,7 @@ This pin header can be used for both I2C0 and serial port communication. The res
 
 {% endcapture %}
 
-{% capture tab8 %}
+{% capture tab7 %}
 
 __I2C QWIC Port A__
 
@@ -96,7 +92,7 @@ This is a standard QWIC port, which can be connected by a standard QWIC cable. T
 
 {% endcapture %}
 
-{% capture tab9 %}
+{% capture tab8 %}
 
 __I2C QWIC Port B__
 
@@ -106,7 +102,7 @@ There are two identical QWIC ports, that can be used to connect other QWIC devic
 
 {% endcapture %}
 
-{% capture tab10 %}
+{% capture tab9 %}
 
 __Serial Port__
 
@@ -116,7 +112,7 @@ Serial Port debug connector, this can be connected to ROS2RPI card for accessing
 
 {% endcapture %}
 
-{% capture tab11 %}
+{% capture tab10 %}
 
 __Power Connector__
 
@@ -126,7 +122,7 @@ XT30 Power Connector. Apply maximum 12V.
 
 {% endcapture %}
 
-{% capture tab12 %}
+{% capture tab11 %}
 
 __Battery__
 
@@ -136,31 +132,29 @@ Use CR1225 3V coin battery.
 
 {% endcapture %}
 
-{% include tabs.html 
-   tab1_title="Diagram" 
+{% include tabs.html
+   tab1_title="Left" 
    tab1_content=tab1
-   tab2_title="Left" 
+   tab2_title="Right" 
    tab2_content=tab2
-   tab3_title="Right" 
+   tab3_title="Servo" 
    tab3_content=tab3
-   tab4_title="Servo" 
+   tab4_title="AUX" 
    tab4_content=tab4
-   tab5_title="AUX" 
+   tab5_title="Power Control" 
    tab5_content=tab5
-   tab6_title="Power Control" 
+   tab6_title="Comms" 
    tab6_content=tab6
-   tab7_title="Comms" 
+   tab7_title="I2C A" 
    tab7_content=tab7
-   tab8_title="I2C A" 
+   tab8_title="I2C B" 
    tab8_content=tab8
-   tab9_title="I2C B" 
+   tab9_title="Serial" 
    tab9_content=tab9
-   tab10_title="Serial" 
+   tab10_title="Power" 
    tab10_content=tab10
-   tab11_title="Power" 
+   tab11_title="Battery" 
    tab11_content=tab11
-   tab12_title="Battery" 
-   tab12_content=tab12
 %}
 
 <div style="
