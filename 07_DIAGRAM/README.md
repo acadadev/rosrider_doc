@@ -16,11 +16,9 @@ description: "ROSRider Motor Control Theory of Operation"
     font-family: 'Ubuntu', sans-serif;
 ">
     <div style="font-size: 1.4em; font-weight: bold; color: #4CAF50; margin-bottom: 5px;">
-        > Theory of Operation
+        PID Controller
     </div>
 </div>
-
-__PID Controller__
 
 The standard control mode uses a single-loop PID architecture augmented with predictive compensation terms.
 To improve tracking during dynamic maneuvers, the controller applies **velocity and acceleration feedforwards,**
@@ -35,7 +33,20 @@ This effectively linearizes the motor response, ensuring the control loop is dri
   </figure>
 </div>
 
-__Cascaded Current Controller__
+<div style="
+    background-color: #f8f9fa;
+    border-left: 6px solid #4CAF50;
+    color: #333333;
+    padding: 25px;
+    border-radius: 4px;
+    margin: 30px 0;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    font-family: 'Ubuntu', sans-serif;
+">
+    <div style="font-size: 1.4em; font-weight: bold; color: #4CAF50; margin-bottom: 5px;">
+        Cascaded Current Controller
+    </div>
+</div>
 
 The cascaded PID controller utilizes a nested loop architecture, where the outer loop calculates the 
 desired current reference, and the inner faster loop modulates the motor voltage to strictly regulate torque.
