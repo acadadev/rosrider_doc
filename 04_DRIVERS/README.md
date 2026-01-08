@@ -146,7 +146,7 @@ To ensure that your system can find the necessary ROSRider components, you'll ne
 
 <div class="checkpoint">
   <p class="ch">⚠️&nbsp;Checkpoint:&nbsp;Verify Workspace Sourcing</p>
-  <p>Confirm that ROS 2 can find the rosrider package by running: `ros2 pkg prefix rosrider`</p>
+  <p>Confirm that ROS 2 can find the rosrider package by running:</p>
   <div class="highlight notranslate position-relative">
       <div class="highlight">
         <pre id="command-create-workspace"><span></span>ros2 pkg prefix rosrider</pre>
