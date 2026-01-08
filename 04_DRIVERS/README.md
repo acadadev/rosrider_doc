@@ -171,12 +171,6 @@ To ensure that your system can find the necessary ROSRider components, you'll ne
     </div>
 </div>
 
-
-<div class="checkpoint">
-  <p class="ch">⚠️&nbsp;Checkpoint:&nbsp;Verify Workspace Sourcing</p>
-
-</div>
-
 <div class="sl">
     <div class="sl1">
         > Running the Driver
