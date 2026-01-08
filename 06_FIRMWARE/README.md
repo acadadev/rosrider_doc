@@ -5,17 +5,8 @@ title: "Updating Firmware"
 description: "Updating Firmware of ROSRider control card"
 ---
 
-<div style="
-    background-color: #f8f9fa;
-    border-left: 6px solid #4CAF50;
-    color: #333333;
-    padding: 25px;
-    border-radius: 4px;
-    margin: 30px 0;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-    font-family: 'Ubuntu', sans-serif;
-">
-    <div style="font-size: 1.4em; font-weight: bold; color: #4CAF50; margin-bottom: 5px;">
+<div class="sl">
+    <div class="sl1">
         > Updating Firmware
     </div>
 </div>
@@ -53,8 +44,8 @@ Run this command to view system logs in real-time.
 
 You should see a message indicating successful entry into bootloader mode, which typically reads:
 
-<div style="display: flex; margin: 25px 0;">
-   <img class="replay" src="../images/rosrider/tailing_syslog.gif" alt="Bootloader mode output" style="box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);">
+<div class="img_dv">
+   <img class="replay" src="../images/rosrider/tailing_syslog.gif" alt="Bootloader Mode Output" style="box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);">
 </div>
 
 ***Before Starting Update: Important Considerations***
@@ -111,8 +102,8 @@ dfu-prefix -s 0x2800 -a I2CRider.dfu</pre>
 
 If the update is successful, you will see the message `No error condition is present` This indicates that the firmware has been successfully written to the device. Remember to reset the board by pressing the reset button to exit bootloader mode and enter normal operation.
 
-<div style="display: flex; margin: 25px 0;">
-   <img class="replay" id="target_image" src="../images/rosrider/dfu_firmware_update.gif" alt="DFU util update output" style="box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);">
+<div class="img_dv">
+   <img class="replay" id="target_image" src="../images/rosrider/dfu_firmware_update.gif" alt="DFU util update output">
 </div>
 
 __Next Chapter:__ [Controller Diagram](../07_DIAGRAM/README.md)
