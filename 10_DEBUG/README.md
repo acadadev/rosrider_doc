@@ -30,6 +30,10 @@ __LED Blink Codes__
 | Green | Solid ON       | N/A      | Active: Commands have been successfully received.                            |
 | Red   | Solid ON       | N/A      | System Disabled: A critical status check is required.                        |
 
+// TODO: check status by using rosrider_smbus
+// TODO: rarely, an initial update problem can lead to system disabled
+// TODO: if system disabled,  it can also be initial update failed. rosrider_smbus read_status.py will tell you exactly what is happening.
+
 __ROSRider SMBUS__
 
 Python code to send commands to ROSRider Board is available at [https://github.com/acadadev/rosrider_smbus](https://github.com/acadadev/rosrider_smbus)
@@ -46,61 +50,57 @@ Also a set of utilities is included that allows you to:
 __TODO__
 
 - make videos of pid debug tool and put some screenshots between things, maybe even a video.
-- reamp parameters
-
-- if initial update fail, then what happens?
-
-- ros2rpi config explanation, is it 0x33 for default
-- Explanation of parameter 0x33 in rosrider, 0x0 to cancel.
-
+- revisit parameters, add more description
+- explain friction and feedforwards
 
 __Troubleshooting__
 
-[TODO: explain output and status and also that fault_left and fault_right are not problem]
+// TODO: FAULT_LEFT and FAULT_RIGHT after
 
 __Status Registers__
 
 ***PWR_STATUS***
 
-| Bit | Function      |
-|-----|---------------|
-| b7  | CMD_TIMEOUT   | 
-| b6  | POWER_BAD     |
-| b5  | RIGHT_AMP     | 
-| b4  | LEFT_AMP      |
-| b3  | MAIN_FUSE     |
-| b2  | OVER_VOLTAGE  |
-| b1  | UNDER_VOLTAGE |  
-| b0  | AUX_PWR       |
+| Bit | Function      | Description                                   |
+|-----|---------------|-----------------------------------------------|
+| b7  | CMD_TIMEOUT   | Command has time out, the robot will not move |
+| b6  | POWER_BAD     | Main MCU Power Supply Problem, Battery Check  |
+| b5  | RIGHT_AMP     | Left AMP Limit Triggered, Issue Soft-Reset    |
+| b4  | LEFT_AMP      | Right AMP Limit Triggered, Issue Soft-Reset   |
+| b3  | MAIN_FUSE     | Main AMP Limit exceeded, Issue Soft-Reset     |
+| b2  | OVER_VOLTAGE  | Battery Over Voltage, System Disabled         |
+| b1  | UNDER_VOLTAGE | Battery Under Voltage, System Disabled        |
+| b0  | AUX_PWR       | Auxillary Power Supply ON                     |
 
 ***MTR_STATUS***
 
-| Bit | Function       |
-|-----|----------------|
-| b7  | FAULT_RIGHT    | 
-| b6  | FAULT_LEFT     |
-| b5  | RIGHT_REV      | 
-| b4  | LEFT_REV       |
-| b3  | MODE_2         |
-| b2  | MODE_1         |
-| b1  | DRIVE_MODE_MSB |  
-| b0  | DRIVE_MODE_LSB |
+| Bit | Function       | Description                        |
+|-----|----------------|------------------------------------|
+| b7  | FAULT_RIGHT    | Left Motor Fault, will be ON < 12V |
+| b6  | FAULT_LEFT     | Left Motor Fault, will be ON < 12V |
+| b5  | RIGHT_REV      | Right Motor Connected Reverse      |
+| b4  | LEFT_REV       | Left Motor Connected Reverse       |
+| b3  | MODE_2         | Low Side Decay / High Side Decay   |
+| b2  | MODE_1         | Coast Mode / Brake Mode            |
+| b1  | DRIVE_MODE_MSB | Drive Mode Left Bit                |
+| b0  | DRIVE_MODE_LSB | Drive Mode Right Bit               |
 
 ***DRIVE_MODE***
 
-MODE_BRAKE = 00  
-MODE_PWM   = 01  
-MODE_VEL   = 10  
-MODE_PID   = 11  
+| Value | Mode       | Description                                                         |
+|-------|------------|---------------------------------------------------------------------|
+| 0     | MODE_BRAKE | Brakes applied                                                      |
+| 1     | MODE_PWM   | PWM Mode, Device accepts PWM Commands                               |
+| 2     | MODE_VEL   | VEL Mode, Device accepts linear.x in m / s and angular.z in rad / s |
+| 3     | MODE_PID   | PID Mode, Device accepts Target Velocities in rad / s               |
 
 ***SYS_STATUS***
 
-| Bit | Function                  |
-|-----|---------------------------|
-| b7  | EPROM_INIT_OK = 0         | 
-| b6  | RESTART_REQUIRED = 1      |
-| b1  | INITIAL_UPDATE_ERROR = 1  |  
-| b0  | EEPROM_WRITE_WRITE_OK = 0 |
-
+| Bit | Function             | Description                                                                                |
+|-----|----------------------|--------------------------------------------------------------------------------------------|
+| b7  | EPROM_INIT_OK = 0    | If this bit is set, EPROM has not initialized. System Disabled                             |
+| b6  | RESTART_REQUIRED     | After updating certain variables, this bit will be set requesting reset from driver        |
+| b1  | INITIAL_UPDATE_ERROR | If a parameter value from EEPROM can not pass input validation at startup. System Disabled |
+| b0  | EEPROM_WRITE_ERROR   | Denotes EEPROM write error                                                                 |
 
 __Return to the introduction:__ [Introduction](../README.md)
