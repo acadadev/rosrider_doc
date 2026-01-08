@@ -42,7 +42,7 @@ The ROSRider firmware incorporates a timing control feature that synchronizes it
     </div>
 </div>
 
-**1. Create a ROS Workspace:**
+***Create a ROS Workspace:***
 
 <div class="highlight notranslate position-relative">
   <div class="highlight">
@@ -61,7 +61,7 @@ cd rosrider_ws/src</pre>
 
 This creates a directory called `rosrider_ws` and a subdirectory named `src` within it. The `src` directory is the standard location for ROS package source code.
 
-**2. Clone the ROSRider Repository:**
+***Clone the ROSRider Repository:***
 
 <div class="highlight notranslate position-relative">
   <div class="highlight">
@@ -77,7 +77,7 @@ This creates a directory called `rosrider_ws` and a subdirectory named `src` wit
   </clipboard-copy>
 </div>
 
-**3. Initialize ROS Dependency System (if not done during ROS installation)**
+***Initialize ROS Dependency System (if not done during ROS installation)***
 
 <div class="highlight notranslate position-relative">
   <div class="highlight">
@@ -94,7 +94,7 @@ rosdep update</pre>
   </clipboard-copy>
 </div>
 
-**4. Install ROS Dependencies**
+***Install ROS Dependencies***
 
 <div class="highlight notranslate position-relative">
   <div class="highlight">
@@ -113,7 +113,7 @@ rosdep install --from-paths src -y --ignore-src</pre>
 
 This command retrieves and installs all the necessary dependencies required by the ROSRider package based on the cloned source code in the src directory.
 
-**5. Build the Workspace**
+***Build the Workspace***
 
 <div class="highlight notranslate position-relative">
   <div class="highlight">
@@ -130,7 +130,7 @@ source devel/setup.bash</pre>
   </clipboard-copy>
 </div>	
 
-**6. Adding ROSRider to Your Bash Environment**
+***Adding ROSRider to Your Bash Environment***
 
 To ensure that your system can find the necessary ROSRider components, you'll need to add the following line to your Bash configuration file:
 
