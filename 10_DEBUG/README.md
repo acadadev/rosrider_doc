@@ -55,48 +55,43 @@ __Troubleshooting__
 
 __Status Registers__
 
-***PWR_STATUS***
+| PWR_STATUS    | Bit | Description                                   |
+|---------------|-----|-----------------------------------------------|
+| CMD_TIMEOUT   | b7  | Command has time out, the robot will not move |
+| POWER_BAD     | b6  | Main MCU Power Supply Problem, Battery Check  |
+| RIGHT_AMP     | b5  | Left AMP Limit Triggered, Issue Soft-Reset    |
+| LEFT_AMP      | b4  | Right AMP Limit Triggered, Issue Soft-Reset   |
+| MAIN_FUSE     | b3  | Main AMP Limit exceeded, Issue Soft-Reset     |
+| OVER_VOLTAGE  | b2  | Battery Over Voltage, System Disabled         |
+| UNDER_VOLTAGE | b1  | Battery Under Voltage, System Disabled        |
+| AUX_PWR       | b0  | Auxillary Power Supply ON                     |
 
-| Bit | Function      | Description                                   |
-|-----|---------------|-----------------------------------------------|
-| b7  | CMD_TIMEOUT   | Command has time out, the robot will not move |
-| b6  | POWER_BAD     | Main MCU Power Supply Problem, Battery Check  |
-| b5  | RIGHT_AMP     | Left AMP Limit Triggered, Issue Soft-Reset    |
-| b4  | LEFT_AMP      | Right AMP Limit Triggered, Issue Soft-Reset   |
-| b3  | MAIN_FUSE     | Main AMP Limit exceeded, Issue Soft-Reset     |
-| b2  | OVER_VOLTAGE  | Battery Over Voltage, System Disabled         |
-| b1  | UNDER_VOLTAGE | Battery Under Voltage, System Disabled        |
-| b0  | AUX_PWR       | Auxillary Power Supply ON                     |
 
-***MTR_STATUS***
+| MTR_STATUS     | Bit | Description                        |
+|----------------|-----|------------------------------------|
+| FAULT_RIGHT    | b7  | Left Motor Fault, will be ON < 12V |
+| FAULT_LEFT     | b6  | Left Motor Fault, will be ON < 12V |
+| RIGHT_REV      | b5  | Right Motor Connected Reverse      |
+| LEFT_REV       | b4  | Left Motor Connected Reverse       |
+| MODE_2         | b3  | Low Side Decay / High Side Decay   |
+| MODE_1         | b2  | Coast Mode / Brake Mode            |
+| DRIVE_MODE_MSB | b1  | Drive Mode Left Bit                |
+| DRIVE_MODE_LSB | b0  | Drive Mode Right Bit               |
 
-| Bit | Function       | Description                        |
-|-----|----------------|------------------------------------|
-| b7  | FAULT_RIGHT    | Left Motor Fault, will be ON < 12V |
-| b6  | FAULT_LEFT     | Left Motor Fault, will be ON < 12V |
-| b5  | RIGHT_REV      | Right Motor Connected Reverse      |
-| b4  | LEFT_REV       | Left Motor Connected Reverse       |
-| b3  | MODE_2         | Low Side Decay / High Side Decay   |
-| b2  | MODE_1         | Coast Mode / Brake Mode            |
-| b1  | DRIVE_MODE_MSB | Drive Mode Left Bit                |
-| b0  | DRIVE_MODE_LSB | Drive Mode Right Bit               |
+***Notice:*** `FAULT_RIGHT` and `FAULT_LEFT` will be always on if main battery voltage is < 12V. We are using other means to monitor the bus voltage and current, so these variables are not used by our software.
 
-***DRIVE_MODE***
+| DRIVE_MODE | Mode | Description                                                         |
+|------------|------|---------------------------------------------------------------------|
+| MODE_BRAKE | 0    | Brakes applied                                                      |
+| MODE_PWM   | 1    | PWM Mode, Device accepts PWM Commands                               |
+| MODE_VEL   | 2    | VEL Mode, Device accepts linear.x in m / s and angular.z in rad / s |
+| MODE_PID   | 3    | PID Mode, Device accepts Target Velocities in rad / s               |
 
-| Value | Mode       | Description                                                         |
-|-------|------------|---------------------------------------------------------------------|
-| 0     | MODE_BRAKE | Brakes applied                                                      |
-| 1     | MODE_PWM   | PWM Mode, Device accepts PWM Commands                               |
-| 2     | MODE_VEL   | VEL Mode, Device accepts linear.x in m / s and angular.z in rad / s |
-| 3     | MODE_PID   | PID Mode, Device accepts Target Velocities in rad / s               |
-
-***SYS_STATUS***
-
-| Bit | Function             | Description                                                                                |
-|-----|----------------------|--------------------------------------------------------------------------------------------|
-| b7  | EPROM_INIT_OK = 0    | If this bit is set, EPROM has not initialized. System Disabled                             |
-| b6  | RESTART_REQUIRED     | After updating certain variables, this bit will be set requesting reset from driver        |
-| b1  | INITIAL_UPDATE_ERROR | If a parameter value from EEPROM can not pass input validation at startup. System Disabled |
-| b0  | EEPROM_WRITE_ERROR   | Denotes EEPROM write error                                                                 |
+| SYS_STATUS           | Bit | Description                                                                                |
+|----------------------|-----|--------------------------------------------------------------------------------------------|
+| EPROM_INIT_OK = 0    | b7  | If this bit is set, EPROM has not initialized. System Disabled                             |
+| RESTART_REQUIRED     | b6  | After updating certain variables, this bit will be set requesting reset from driver        |
+| INITIAL_UPDATE_ERROR | b1  | If a parameter value from EEPROM can not pass input validation at startup. System Disabled |
+| EEPROM_WRITE_ERROR   | b0  | Denotes EEPROM write error                                                                 |
 
 __Return to the introduction:__ [Introduction](../README.md)
