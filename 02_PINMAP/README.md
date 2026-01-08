@@ -20,7 +20,11 @@ description: "Pinmaps and Connections of ROSRider Card"
     </div>
 </div>
 
-![ROSRider Port Diagram](../images/rosrider/ROSRider4D_portmap.png)
+<div style="display: flex; justify-content: space-around; margin: 25px 0;">
+  <figure style="width: 60%; margin: 0; text-align: center;">
+    <img src="../images/rosrider/ROSRider4D_portmap.png" alt="ROSRider Port Diagram" style="width: 100%;">
+  </figure>
+</div>
 
 {% capture tab1 %}
 
