@@ -13,7 +13,7 @@ description: "Updating Firmware of ROSRider control card"
 
 <div class="ck">
     <div class="ck1">
-        > Checkpoint
+        ⚠️&nbsp;Checkpoint
     </div>
     <div class="ck1">
         Hello
