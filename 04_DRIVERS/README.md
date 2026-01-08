@@ -16,11 +16,9 @@ description: "Compiling and Installing ROS2 Drivers"
     font-family: 'Ubuntu', sans-serif;
 ">
     <div style="font-size: 1.4em; font-weight: bold; color: #4CAF50; margin-bottom: 5px;">
-        > ROS Drivers
+        > Installing ROSRider Drivers
     </div>
 </div>
-
-__Installing ROSRider Drivers__
 
 The ROSRider package provides the necessary ROS nodes and drivers to interact with the ROSRider board. It allows you to control motors, read sensor data, and perform other tasks using ROS.
 
@@ -205,7 +203,7 @@ To launch the ROSRider node and establish communication between ROS and your ROS
 The following output indicates that the ROSDriver node has started successfully and is ready to communicate with your ROSRider hardware.
 
 <div style="display: flex; justify-content: space-around; margin: 25px 0;">
-   <img class="replay" src="../images/rosrider/rosrider_launch.gif" alt="ROSRider node launch" style="width: 50%; box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);">
+   <img class="replay" src="../images/rosrider/rosrider_launch.gif" alt="ROSRider Node Launch" style="width: 75%; box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);">
 </div>
 
 ***Important Note***
