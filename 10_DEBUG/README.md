@@ -41,7 +41,11 @@ Please check the status codes listed below to diagnose the problem and find the 
 
 ---
 
-__Status Registers__
+<div class="sl">
+    <div class="sl1">
+        > Status Registers
+    </div>
+</div>
 
 | PWR_STATUS    | Bit | Description                                   |
 |---------------|-----|-----------------------------------------------|
