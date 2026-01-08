@@ -49,7 +49,8 @@ __Status Registers__
 | UNDER_VOLTAGE | b1  | Battery Under Voltage, System Disabled        |
 | AUX_PWR       | b0  | Auxillary Power Supply ON                     |
 
-Send a SYSCTL command to Soft-Reset or Hard-reset the board.
+Send a SYSCTL command to ***Soft-Reset*** the board in case of over-current events (`RIGHT_AMP`, `LEFT_AMP`, `MAIN_FUSE`),
+or ***Hard-Reset*** the board for critical power supply faults (`POWER_BAD`, `OVER_VOLTAGE`, `UNDER_VOLTAGE`).
 
 | MTR_STATUS     | Bit | Description                        |
 |----------------|-----|------------------------------------|
@@ -62,7 +63,8 @@ Send a SYSCTL command to Soft-Reset or Hard-reset the board.
 | DRIVE_MODE_MSB | b1  | Drive Mode Left Bit                |
 | DRIVE_MODE_LSB | b0  | Drive Mode Right Bit               |
 
-`FAULT_RIGHT` and `FAULT_LEFT` will be always on if main battery voltage is < 12V. We are using other means to monitor the bus voltage and current, so these variables are not used by our software.
+Although `FAULT_RIGHT` and `FAULT_LEFT` are monitored by the hardware (active below 12V), they are redundant in this implementation.
+The software utilizes a more precise method for monitoring bus voltage and current, so these specific flags can be safely ignored.  
 
 | DRIVE_MODE | Mode | Description                                                         |
 |------------|------|---------------------------------------------------------------------|
@@ -71,7 +73,8 @@ Send a SYSCTL command to Soft-Reset or Hard-reset the board.
 | MODE_VEL   | 2    | VEL Mode, Device accepts linear.x in m / s and angular.z in rad / s |
 | MODE_PID   | 3    | PID Mode, Device accepts Target Velocities in rad / s               |
 
-`MODE_PWM` is necessary for Torque Constant calibration. For ROS, use `MODE_PID`. `MODE_VEL` works but untested, and is not implemented in the driver.
+For standard ROS operations, use `MODE_PID`. `MODE_PWM` is reserved specifically for Torque Constant calibration.
+Please note that while `MODE_VEL is functional`, it remains untested and is not currently supported by the driver.
 
 | SYS_STATUS           | Bit | Description                                                                                |
 |----------------------|-----|--------------------------------------------------------------------------------------------|
