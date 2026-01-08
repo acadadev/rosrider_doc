@@ -17,13 +17,11 @@ __OTHER CHAPTERS__
 - navigation
 - cartographer
 
-
 __Connecting Servos__
 
-TODO:
+Two standard servos can be controlled separately then main locomotion. `AUX_PWR` must be on in order for servos to power up.
 
 __LED Blink Codes__
-
 
 | Color | Visual Pattern | Duration | System State Description                                                     |
 |-------|----------------|----------|------------------------------------------------------------------------------|
@@ -53,7 +51,7 @@ __TODO__
 - if initial update fail, then what happens?
 
 - ros2rpi config explanation, is it 0x33 for default
--  Explanation of parameter 0x33 in rosrider, 0x0 to cancel.
+- Explanation of parameter 0x33 in rosrider, 0x0 to cancel.
 
 
 __Troubleshooting__
