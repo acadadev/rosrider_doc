@@ -25,14 +25,10 @@ __LED Blink Codes__
 
 | Color | Visual Pattern | Duration | System State Description                                                     |
 |-------|----------------|----------|------------------------------------------------------------------------------|
-| Green | 3x Blink       | 50ms     | Restart Complete: The system has successfully rebooted.                      |
-| Red   | 3x Blink       | 50ms     | Request Acknowledged: Soft Reset, Hard Reset, or Hibernate request received. |
+| Green | 3X Blink       | 50ms     | Restart Complete: The system has successfully rebooted.                      |
+| Red   | 3X Blink       | 50ms     | Request Acknowledged: Soft Reset, Hard Reset, or Hibernate request received. |
 | Green | Solid ON       | N/A      | Active: Commands have been successfully received.                            |
 | Red   | Solid ON       | N/A      | System Disabled: A critical status check is required.                        |
-
-// TODO: check status by using rosrider_smbus
-// TODO: rarely, an initial update problem can lead to system disabled
-// TODO: if system disabled,  it can also be initial update failed. rosrider_smbus read_status.py will tell you exactly what is happening.
 
 __ROSRider SMBUS__
 
