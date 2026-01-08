@@ -34,7 +34,6 @@ The ROSRider firmware incorporates a timing control feature that synchronizes it
     </clipboard-copy>
   </div>
   <p>This command should output at least two ROS topics <code class="language-plaintext highlighter-rouge">/rosout</code> and <code class="language-plaintext highlighter-rouge">/parameter_events</code>.</p>
-  <p>Ignoring a failed checkpoint can result in the propagation of underlying defects, leading to more severe and difficult-to-resolve software issues in subsequent development stages.</p>
 </div>
 
 <div class="sl">
