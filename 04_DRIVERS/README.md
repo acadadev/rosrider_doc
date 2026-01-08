@@ -22,7 +22,7 @@ description: "Compiling and Installing ROS2 Drivers"
 
 The ROSRider package provides the necessary ROS nodes and drivers to interact with the ROSRider board. It allows you to control motors, read sensor data, and perform other tasks using ROS.
 
-While previous versions of ROSRider utilized middleware to integrate with ROS, our latest iterations have transitioned to native C++ drivers. This shift eliminates the performance overhead associated with middleware, resulting in faster and more predictable system behavior. By directly interfacing with the hardware, we can optimize resource utilization and minimize latency, ensuring optimal performance for your robotics applications.
+While previous versions of ROSRider utilized middleware to integrate with ROS, our latest iterations have transitioned to native C++ drivers. This shift eliminates the performance overhead associated with middleware, resulting in faster and more predictable system behavior. By directly interfacing with the hardware, we can optimize resource utilization and minimize latency, ensuring optimal performance in robotics applications.
 
 The ROSRider firmware incorporates a timing control feature that synchronizes itself to the host computer's polling rate, resulting in a latency of 1-2 milliseconds. By actively adjusting its internal clock based on received packets, the ROSRider firmware ensures precise timing and synchronization, preventing data inconsistencies and errors that can occur due to timing drifts. This guarantees that ROS packets are delivered on time, ensuring reliable and efficient system operation.
 
