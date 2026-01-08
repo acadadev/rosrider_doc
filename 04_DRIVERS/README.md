@@ -59,8 +59,6 @@ cd rosrider_ws/src</pre>
   </clipboard-copy>
 </div>
 
-This creates a directory called `rosrider_ws` and a subdirectory named `src` within it. The `src` directory is the standard location for ROS package source code.
-
 ***Clone the ROSRider Repository:***
 
 <div class="highlight notranslate position-relative">
@@ -110,8 +108,6 @@ rosdep install --from-paths src -y --ignore-src</pre>
     </svg>
   </clipboard-copy>
 </div>
-
-This command retrieves and installs all the necessary dependencies required by the ROSRider package based on the cloned source code in the src directory.
 
 ***Build the Workspace***
 
