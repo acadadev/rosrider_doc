@@ -18,9 +18,6 @@ description: "Detailed Procedures for working with a ROSRider robot"
     <div style="font-size: 1.4em; font-weight: bold; color: #4CAF50; margin-bottom: 5px;">
         > Procedures in Robotics
     </div>
-    <div style="font-size: 1.1em; font-style: italic; line-height: 1.5;">
-        "A practical guide to the critical workflows of calibration."
-    </div>
 </div>
 
 __Procedures__

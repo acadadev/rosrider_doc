@@ -18,9 +18,6 @@ description: "Parametric Configuration of the ROSRider control card"
     <div style="font-size: 1.4em; font-weight: bold; color: #4CAF50; margin-bottom: 5px;">
         > ROS Parameters
     </div>
-    <div style="font-size: 1.1em; font-style: italic; line-height: 1.5;">
-        "Every variable—from low-level physics to control loops—is dynamically adjustable in real-time via the ROS parameter server."
-    </div>
 </div>
 
 The ROS Parameter Server is a mechanism that allows you to dynamically configure parameters in your ROS nodes.

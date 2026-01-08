@@ -18,9 +18,6 @@ description: "Hardware Specifications"
     <div style="font-size: 1.4em; font-weight: bold; color: #4CAF50; margin-bottom: 5px;">
         > Specifications
     </div>
-    <div style="font-size: 1.1em; font-style: italic; line-height: 1.5;">
-        "Hardware Specifications."
-    </div>
 </div>
 
 __System Features__

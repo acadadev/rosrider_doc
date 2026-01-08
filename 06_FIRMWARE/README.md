@@ -18,9 +18,6 @@ description: "Updating Firmware of ROSRider control card"
     <div style="font-size: 1.4em; font-weight: bold; color: #4CAF50; margin-bottom: 5px;">
         > Updating Firmware
     </div>
-    <div style="font-size: 1.1em; font-style: italic; line-height: 1.5;">
-        "Update your ROSRider directly over USB with a simple button press."
-    </div>
 </div>
 
 __Updating Your ROSRider's Firmware__

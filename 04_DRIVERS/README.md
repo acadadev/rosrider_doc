@@ -18,9 +18,6 @@ description: "Compiling and Installing ROS2 Drivers"
     <div style="font-size: 1.4em; font-weight: bold; color: #4CAF50; margin-bottom: 5px;">
         > ROS Drivers
     </div>
-    <div style="font-size: 1.1em; font-style: italic; line-height: 1.5;">
-        "No middleware. Just pure, high-performance C++ nodes."
-    </div>
 </div>
 
 __Installing ROSRider Drivers__

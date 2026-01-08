@@ -18,9 +18,6 @@ description: "Error codes and conditions on the ROSRider control card"
     <div style="font-size: 1.4em; font-weight: bold; color: #4CAF50; margin-bottom: 5px;">
         > Troubleshooting
     </div>
-    <div style="font-size: 1.1em; font-style: italic; line-height: 1.5;">
-        "Every robot builder faces challenges. Here is information for overcoming them -— featuring common solutions, error code definitions, and diagnostic procedures."
-    </div>
 </div>
 
 __OTHER CHAPTERS__
