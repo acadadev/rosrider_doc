@@ -7,15 +7,14 @@ description: "Updating Firmware of ROSRider control card"
 
 <div class="sl">
     <div class="sl1">
-        > Updating Firmware
+        > Updating Your ROSRider's Firmware
     </div>
 </div>
 
-__Updating Your ROSRider's Firmware__
-
-***Important Note:*** Before proceeding with the firmware update, ensure you have the correct firmware file for your specific ROSRider model. Incorrect firmware can lead to device malfunction.
-
-<iframe width="980" height="551" src="https://www.youtube.com/embed/bSIpw-cIJeE" frameborder="0" allowfullscreen></iframe>
+<div class="checkpoint">
+  <p class="ch">✔&nbsp;Checkpoint</p>
+  <p>Before proceeding with the firmware update, ensure you have the correct firmware file for your specific ROSRider model. Incorrect firmware can lead to device malfunction.</p>
+</div>
 
 To initiate the firmware update process, follow these steps:
 
@@ -57,7 +56,13 @@ You should see a message indicating successful entry into bootloader mode, which
 
 By following these steps and adhering to the specific instructions provided by ACADA Robotics, you can successfully update your ROSRider's firmware and enhance its capabilities.
 
-__Updating ROSRider Firmware with I2CRider.dfu__
+<div class="sl">
+    <div class="sl1">
+        > Updating ROSRider Firmware with I2CRider.dfu
+    </div>
+</div>
+
+<iframe width="980" height="551" src="https://www.youtube.com/embed/bSIpw-cIJeE" frameborder="0" allowfullscreen></iframe>
 
 __Prerequisites:__
 
