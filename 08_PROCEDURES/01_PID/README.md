@@ -7,7 +7,11 @@ title: "PID Tuning"
 description: "Detailed demonstration of the PID tuning procedure"
 ---
 
-#### PID Tuning
+<div class="sl">
+    <div class="sl1">
+        > PID Tuning
+    </div>
+</div>
 
 PID tuning is a crucial process in robotics to optimize a system's response to inputs. By carefully adjusting the proportional (P), integral (I), and derivative (D) gains, engineers can fine-tune the system's behavior. This document outlines a step-by-step guide to PID tuning using the ROSRider platform. We will leverage the power of RQTreconfigure to dynamically adjust PID parameters and RQTplot to visualize the system's response in real-time. By following this procedure, you can achieve precise and efficient control of your robot.
 

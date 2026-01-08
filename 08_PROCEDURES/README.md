@@ -5,17 +5,8 @@ title: "Procedures in Robotics"
 description: "Detailed Procedures for working with a ROSRider robot"
 ---
 
-<div style="
-    background-color: #f8f9fa;
-    border-left: 6px solid #4CAF50;
-    color: #333333;
-    padding: 25px;
-    border-radius: 4px;
-    margin: 30px 0;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-    font-family: 'Ubuntu', sans-serif;
-">
-    <div style="font-size: 1.4em; font-weight: bold; color: #4CAF50; margin-bottom: 5px;">
+<div class="sl">
+    <div class="sl1">
         > Procedures in Robotics
     </div>
 </div>

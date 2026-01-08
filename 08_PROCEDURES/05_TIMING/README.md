@@ -7,4 +7,8 @@ title: "Timing Control"
 description: "Using timing control features to monitor latency"
 ---
 
-#### Timing Control Features
+<div class="sl">
+    <div class="sl1">
+        > Timing Control Features
+    </div>
+</div>

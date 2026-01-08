@@ -7,4 +7,8 @@ title: "ROSRider Diagnostics"
 description: "Detailed demonstration diagnostics feature of ROSRider"
 ---
 
-#### ROSRider Diagnostics Data
+<div class="sl">
+    <div class="sl1">
+        > Diagnostics Data
+    </div>
+</div>
