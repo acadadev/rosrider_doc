@@ -152,17 +152,8 @@ Use CR1225 3V coin battery.
    tab11_content=tab11
 %}
 
-<div style="
-    background-color: #f8f9fa;
-    border-left: 6px solid #4CAF50;
-    color: #333333;
-    padding: 25px;
-    border-radius: 4px;
-    margin: 30px 0;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-    font-family: 'Ubuntu', sans-serif;
-">
-    <div style="font-size: 1.4em; font-weight: bold; color: #4CAF50; margin-bottom: 5px;">
+<div class="sl">
+    <div class="sl1">
         > Connecting to Host Computer
     </div>
 </div>
@@ -176,24 +167,15 @@ To enable I2C communication on a Raspberry Pi running Ubuntu, first ensure I2C i
 Use jumper wires to connect your Raspberry PI using GPIO pins 2 (SDA) and 3 (SCL).
 After installation, verify the connection using `sudo i2cdetect -y 1` to detect connected devices.  
 
-<div style="display: flex; margin: 25px 0;">
-  <figure style="width: 60%; margin: 0; text-align: center;">
+<div class="img_dv">
+  <figure class="img_fg_60">
     <img src="../images/rosrider/RPI5_ROSRider.png" alt="Raspberry PI Wiring Diagram" style="width: 100%;">
     <figcaption>Raspberry PI Wiring Diagram.</figcaption>
   </figure>
 </div>
 
-<div style="
-    background-color: #f8f9fa;
-    border-left: 6px solid #4CAF50;
-    color: #333333;
-    padding: 25px;
-    border-radius: 4px;
-    margin: 30px 0;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-    font-family: 'Ubuntu', sans-serif;
-">
-    <div style="font-size: 1.4em; font-weight: bold; color: #4CAF50; margin-bottom: 5px;">
+<div class="sl">
+    <div class="sl1">
         > Detecting I2C Devices
     </div>
 </div>
@@ -216,24 +198,15 @@ Use the `i2cdetect` command to scan the I2C bus and identify connected devices:
   </clipboard-copy>
 </div>
 
-<div style="display: flex; margin: 25px 0;">
-<img class="replay" src="../images/rosrider/i2c_detect.gif" alt="Detecting I2C Devices" style="box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);">
+<div style="img_dv">
+   <img class="replay" src="../images/rosrider/i2c_detect.gif" alt="Detecting I2C Devices">
 </div>
 
 This command will display a table of I2C addresses. The default address of the ROSRider is `0x3C`, and the default address of the ROS2RPI card is `0x20`.
 If you only have a ROSRider connected directly, you should only see the address `0x3C`.
 
-<div style="
-    background-color: #f8f9fa;
-    border-left: 6px solid #4CAF50;
-    color: #333333;
-    padding: 25px;
-    border-radius: 4px;
-    margin: 30px 0;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-    font-family: 'Ubuntu', sans-serif;
-">
-    <div style="font-size: 1.4em; font-weight: bold; color: #4CAF50; margin-bottom: 5px;">
+<div class="sl">
+    <div class="sl1">
         > Connecting ROSRider to NVIDIA Jetson
     </div>
 </div>
@@ -245,18 +218,15 @@ To ensure proper I2C communication, verify that I2C is enabled at the kernel lev
 
 There are two I2C ports on the Jetson AGX:
 
-<div style="display: flex; justify-content: space-around; margin: 25px 0;">
-  
-  <figure style="width: 45%; margin: 0; text-align: center;">
-    <img src="../images/rosrider/jetson_agx_i2c_0.png" alt="Jetson AGX I2C Port 1" style="width: 100%;">
+<div class="img_dv_center">
+  <figure class="img_fg45">
+    <img class="img_sh" src="../images/rosrider/jetson_agx_i2c_0.png" alt="Jetson AGX I2C Port 1" style="width: 100%;">
     <figcaption>Jetson AGX I2C Port 0</figcaption>
   </figure>
-
-  <figure style="width: 45%; margin: 0; text-align: center;">
-    <img src="../images/rosrider/jetson_agx_i2c_1.png" alt="Jetson AGX I2C Port 2" style="width: 100%;">
+  <figure class="img_fg45">
+    <img class="img_sh" src="../images/rosrider/jetson_agx_i2c_1.png" alt="Jetson AGX I2C Port 2" style="width: 100%;">
     <figcaption>Jetson AGX I2C Port 1</figcaption>
   </figure>
-
 </div>
 
 __Next Chapter:__ [ROS2 Drivers](../04_DRIVERS/README.md)
