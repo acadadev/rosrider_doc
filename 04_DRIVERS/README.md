@@ -195,6 +195,8 @@ The following output indicates that the ROSDriver node has started successfully 
    <img class="replay" src="../images/rosrider/rosrider_launch.gif" alt="ROSRider node launch" style="box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);">
 </div>
 
+
+
 ***Important Note***
 
 - Make sure you have sourced the setup script `source devel/setup.bash` either manually before running the command, or have permanently configured it in your `.bashrc` file as explained in the previous section. This ensures the system can locate the necessary ROSDriver components.
@@ -237,8 +239,8 @@ To monitor the health and performance of your ROSRider, you can view real-time d
 
 Running this command will output diagnostic information to your terminal. You should see an output similar to the following:
 
-<div style="display: flex; margin: 25px 0;">
-   <img class="replay" src="../images/rosrider/monitoring_diagnostics.gif" alt="Diagnostics Output" style="box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);">
+<div style="display: flex; justify-content: space-around; margin: 25px 0;">
+   <img class="replay" src="../images/rosrider/monitoring_diagnostics.gif" alt="Diagnostics Output" style="width: 50%; box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);">
 </div>
 
 This command will output the following diagnostic information to your terminal:
