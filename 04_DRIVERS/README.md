@@ -42,7 +42,7 @@ The ROSRider firmware incorporates a timing control feature that synchronizes it
     </div>
 </div>
 
-**Create a ROS Workspace**
+*Create a ROS Workspace*
 
 <div class="highlight notranslate position-relative">
   <div class="highlight">
