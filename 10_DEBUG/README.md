@@ -13,25 +13,28 @@ description: "Error codes and conditions on the ROSRider control card"
 
 __ROSRider SMBUS__
 
-ROSRider SMBus enables you to write your own python programs to control ROSRider board without the ROS drivers.
-Python code is available at [https://github.com/acadadev/rosrider_smbus](https://github.com/acadadev/rosrider_smbus)
+The ROSRider SMBus library allows for direct control of the ROSRider board using Python, independent of standard ROS drivers.
+The source code is available at [https://github.com/acadadev/rosrider_smbus](https://github.com/acadadev/rosrider_smbus)
 
-Also, a set of utilities is included that allows you to
+This package includes a suite of utilities enabling you to:
 
  - Send System Control Commands
  - Set Parameters
  - Set POSIX time
- - Set PID and PWM targets
+ - Set PID and PWM Targets
  - Profile Motor Torque Constant
 
 __LED Blink Codes__
 
-| Color | Visual Pattern | Duration | System State Description                                                     |
-|-------|----------------|----------|------------------------------------------------------------------------------|
-| Green | 3X Blink       | 50ms     | Restart Complete: The system has successfully rebooted.                      |
-| Red   | 3X Blink       | 50ms     | Request Acknowledged: Soft Reset, Hard Reset, or Hibernate request received. |
-| Green | Solid ON       | N/A      | Active: Commands have been successfully received.                            |
-| Red   | Solid ON       | N/A      | System Disabled: A critical status check is required.                        |
+| Color | Visual Pattern | Duration | System State     | Description                                           |
+|-------|----------------|----------|------------------|-------------------------------------------------------|
+| Green | 3X Blink       | 50ms     | Restart Complete | The system has successfully rebooted                  |
+| Red   | 3X Blink       | 50ms     | Acknowledged     | Soft Reset, Hard Reset, or Hibernate request received |
+| Green | Solid ON       | N/A      | Active           | Commands have been successfully received              |
+| Red   | Solid ON       | N/A      | System Disabled  | A critical status check is required                   |
+
+
+A red LED indicates a system fault. While rare, these errors are usually recoverable. Please check the status codes listed below to diagnose the problem and find the appropriate solution.
 
 __Status Registers__
 
