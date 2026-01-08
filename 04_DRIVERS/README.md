@@ -176,7 +176,7 @@ To launch the ROSRider node and establish communication between ROS and your ROS
 The following output indicates that the ROSDriver node has started successfully and is ready to communicate with your ROSRider hardware.
 
 <div class="img_dv">
-   <img class="replay" src="../images/rosrider/rosrider_launch.gif" alt="ROSRider Node Launch" style="width: 75%;">
+   <img class="replay" src="../images/rosrider/rosrider_launch.gif" alt="ROSRider Node Launch" style="width: 65%;">
 </div>
 
 ***Important Note***
