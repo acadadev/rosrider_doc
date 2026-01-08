@@ -156,7 +156,20 @@ To ensure that your system can find the necessary ROSDriver components, you'll n
   </clipboard-copy>
 </div>	
 
-__Running the Driver__
+<div style="
+    background-color: #f8f9fa;
+    border-left: 6px solid #4CAF50;
+    color: #333333;
+    padding: 25px;
+    border-radius: 4px;
+    margin: 30px 0;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    font-family: 'Ubuntu', sans-serif;
+">
+    <div style="font-size: 1.4em; font-weight: bold; color: #4CAF50; margin-bottom: 5px;">
+        > Running the Driver
+    </div>
+</div>
 
 Once you've successfully installed the ROSDriver package and configured your environment, it's time to bring the ROSRider board to life!
 
@@ -191,7 +204,20 @@ The following output indicates that the ROSDriver node has started successfully 
   <p>Ensure you are receiving the expected diagnostics and odometry data according to the following instructions.</p>
 </div>
 
-__Monitoring Diagnostics__
+<div style="
+    background-color: #f8f9fa;
+    border-left: 6px solid #4CAF50;
+    color: #333333;
+    padding: 25px;
+    border-radius: 4px;
+    margin: 30px 0;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    font-family: 'Ubuntu', sans-serif;
+">
+    <div style="font-size: 1.4em; font-weight: bold; color: #4CAF50; margin-bottom: 5px;">
+        > Monitoring Diagnostics
+    </div>
+</div>
 
 To monitor the health and performance of your ROSRider, you can view real-time diagnostic information by using the following command:
 
@@ -225,7 +251,20 @@ This command will output the following diagnostic information to your terminal:
 
 By monitoring these values, you can ensure optimal performance and troubleshoot any potential issues.
 
-__Monitoring odometry output__  
+<div style="
+    background-color: #f8f9fa;
+    border-left: 6px solid #4CAF50;
+    color: #333333;
+    padding: 25px;
+    border-radius: 4px;
+    margin: 30px 0;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    font-family: 'Ubuntu', sans-serif;
+">
+    <div style="font-size: 1.4em; font-weight: bold; color: #4CAF50; margin-bottom: 5px;">
+        > Monitoring Odometry
+    </div>
+</div>
 
 To monitor the odometry data being published by the ROSRider, you can use the following command:
 
