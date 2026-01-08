@@ -5,23 +5,14 @@ title: "Pinmaps and Connections"
 description: "Pinmaps and Connections of ROSRider Card"
 ---
 
-<div style="
-    background-color: #f8f9fa;
-    border-left: 6px solid #4CAF50;
-    color: #333333;
-    padding: 25px;
-    border-radius: 4px;
-    margin: 30px 0;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-    font-family: 'Ubuntu', sans-serif;
-">
-    <div style="font-size: 1.4em; font-weight: bold; color: #4CAF50; margin-bottom: 5px;">
+<div class="sl">
+    <div class="sl1">
         > Pinmap
     </div>
 </div>
 
-<div style="display: flex; justify-content: space-around; margin: 25px 0;">
-  <figure style="width: 60%; margin: 0;">
+<div class="img_dv">
+  <figure class="img_fg60">
     <img src="../images/rosrider/ROSRider4D_portmap.png" alt="ROSRider Port Diagram" style="width: 100%;">
   </figure>
 </div>
