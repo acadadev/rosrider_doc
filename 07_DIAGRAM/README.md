@@ -18,7 +18,7 @@ We also implemented a **physics-based Stribeck friction model** to counteract me
 This effectively linearizes the motor response, ensuring the control loop is driving the load rather than just fighting against friction thresholds.  
 
 <div class="img_dv">
-  <figure class="img_fg50">
+  <figure class="img_fg60">
     <img src="../images/sch/ROSRider_Controller_Diagram_PID_Mode.png" alt="ROSRider PID Loop, Classic Mode" style="width: 100%;">
   </figure>
 </div>
@@ -37,7 +37,7 @@ By utilizing DSP-filtered velocity and current data to predict the motor's elect
 This decoupling of electrical dynamics from mechanical load simplifies tuning and ensures the system remains robust and stable even if the robot's weight or inertia changes significantly.
 
 <div class="img_dv">
-  <figure class="img_fg75">
+  <figure class="img_fg90">
     <img src="../images/sch/ROSRider_Controller_Diagram_Cascaded_Mode.png" alt="ROSRider PID Loop, Cascaded Current Control Mode" style="width: 100%;">
   </figure>
 </div>
