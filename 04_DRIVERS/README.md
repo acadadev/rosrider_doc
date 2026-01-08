@@ -21,7 +21,7 @@ The ROSRider firmware incorporates a timing control feature that synchronizes it
     <div class="ck1">
         ⚠️&nbsp;Checkpoint
     </div>
-    <div class="ck1">
+    <div class="ck2">
       <p>Before continuing, run the following test command to see if ROS is installed.</p>
       <div class="highlight notranslate position-relative">
         <div class="highlight">
