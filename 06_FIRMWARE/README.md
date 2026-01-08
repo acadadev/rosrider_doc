@@ -45,7 +45,7 @@ Run this command to view system logs in real-time.
 You should see a message indicating successful entry into bootloader mode, which typically reads:
 
 <div class="img_dv">
-   <img class="replay" src="../images/rosrider/tailing_syslog.gif" alt="Bootloader Mode Output" style="box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);">
+   <img class="replay" src="../images/rosrider/tailing_syslog.gif" alt="Bootloader Mode Output">
 </div>
 
 ***Before Starting Update: Important Considerations***
