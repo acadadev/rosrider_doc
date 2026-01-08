@@ -22,6 +22,12 @@ description: "ROSRider Motor Control Theory of Operation"
 
 __PID Controller__
 
+The standard control mode uses a single-loop PID architecture augmented with predictive compensation terms.
+To improve tracking during dynamic maneuvers, the controller applies **velocity and acceleration feedforwards,**
+essentially supplying the energy needed for the motion profile before any error occurs.
+We also implemented a **physics-based Stribeck friction model** to counteract mechanical resistance like stiction and viscous drag.
+This effectively linearizes the motor response, ensuring the control loop is driving the load rather than just fighting against friction thresholds.  
+
 <div style="display: flex; justify-content: space-around; margin: 25px 0;">
   <figure style="width: 60%; margin: 0; text-align: center;">
     <img src="../images/sch/ROSRider_Controller_Diagram_PID.png" alt="ROSRider PID Loop, Classic Mode" style="width: 100%;">
