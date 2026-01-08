@@ -16,11 +16,9 @@ description: "Hardware Specifications"
     font-family: 'Ubuntu', sans-serif;
 ">
     <div style="font-size: 1.4em; font-weight: bold; color: #4CAF50; margin-bottom: 5px;">
-        > Specifications
+        > System Features
     </div>
 </div>
-
-__System Features__
 
 | :---| :---|
 | ***MCU*** | 32-bit ARM Cortex: TM4C123GH6PM |
@@ -33,7 +31,20 @@ __System Features__
 | ***Enhanced Diagnostics*** | The system publishes detailed diagnostic information including battery voltage, current consumption and motor current feedback |
 | ***Synchronization***| Synchronizes with the host computer to ensure low-latency data transmission |
 
-__Advanced Features__
+<div style="
+    background-color: #f8f9fa;
+    border-left: 6px solid #4CAF50;
+    color: #333333;
+    padding: 25px;
+    border-radius: 4px;
+    margin: 30px 0;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    font-family: 'Ubuntu', sans-serif;
+">
+    <div style="font-size: 1.4em; font-weight: bold; color: #4CAF50; margin-bottom: 5px;">
+        > Advanced Features
+    </div>
+</div>
 
 | :---| :---|
 | ***Cascaded Current Loop*** | A cascaded current loop enables precise torque control and superior dynamic response |
@@ -49,7 +60,20 @@ The inclusion of a cascaded current loop significantly enhances the control arch
 placing a high-bandwidth current controller inside the velocity loop; this allows for precise torque control, 
 faster response to disturbances, and a more stable overall system compared to simple single-loop designs.
 
-__Power__
+<div style="
+    background-color: #f8f9fa;
+    border-left: 6px solid #4CAF50;
+    color: #333333;
+    padding: 25px;
+    border-radius: 4px;
+    margin: 30px 0;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    font-family: 'Ubuntu', sans-serif;
+">
+    <div style="font-size: 1.4em; font-weight: bold; color: #4CAF50; margin-bottom: 5px;">
+        > Power
+    </div>
+</div>
 
 | :---| :---|
 | ***Power Input*** | 6V to 15V wide input voltage |
@@ -64,7 +88,20 @@ Built-in current monitoring and a hardware-resettable fuse safeguard the motors 
 A 5V power supply can be enabled or disabled via software, providing flexibility for powering external sensors and devices.
 ROSRider utilizes standard JST connectors for motor and I2C connections, allowing for easy assembly and customization. Additionally, two QWIC connectors provide convenient expansion options for integrating various sensors and modules.
 
-__Communications__
+<div style="
+    background-color: #f8f9fa;
+    border-left: 6px solid #4CAF50;
+    color: #333333;
+    padding: 25px;
+    border-radius: 4px;
+    margin: 30px 0;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    font-family: 'Ubuntu', sans-serif;
+">
+    <div style="font-size: 1.4em; font-weight: bold; color: #4CAF50; margin-bottom: 5px;">
+        > Communications
+    </div>
+</div>
 
 | :---| :---|
 | ***I2C*** | Dual QWIC ports, also available on header |
@@ -73,7 +110,20 @@ __Communications__
 
 The device currently uses I2C for communication, but it can also operate over USB, which is primarily used for firmware updates.
 
-__Software__
+<div style="
+    background-color: #f8f9fa;
+    border-left: 6px solid #4CAF50;
+    color: #333333;
+    padding: 25px;
+    border-radius: 4px;
+    margin: 30px 0;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    font-family: 'Ubuntu', sans-serif;
+">
+    <div style="font-size: 1.4em; font-weight: bold; color: #4CAF50; margin-bottom: 5px;">
+        > Software
+    </div>
+</div>
 
 | :---| :---|
 | ***ROS Drivers*** | C++ Drivers for ROS2 Humble and ROS2 Jazzy |
@@ -84,7 +134,21 @@ __Software__
 
 This project is primarily a software-driven effort, and we continually develop and update our software as part of an ongoing, continuous development cycle.
 
-__Supported Platforms__
+<div style="
+    background-color: #f8f9fa;
+    border-left: 6px solid #4CAF50;
+    color: #333333;
+    padding: 25px;
+    border-radius: 4px;
+    margin: 30px 0;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    font-family: 'Ubuntu', sans-serif;
+">
+    <div style="font-size: 1.4em; font-weight: bold; color: #4CAF50; margin-bottom: 5px;">
+        > Supported Platforms
+    </div>
+</div>
+
 
 ROSRider is primarily designed for Raspberry Pi and Jetson platforms, leveraging their powerful processing capabilities and compact form factors. However, the card is compatible with any Linux-based system equipped with an I2C port.
 
