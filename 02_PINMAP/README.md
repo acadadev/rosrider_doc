@@ -9,7 +9,7 @@ description: "Pinmaps and Connections of ROSRider Card"
   > Pinmaps and Connections
 </div>
 <div style="font-size: 1.1em; font-style: italic; line-height: 1.5;">
-  "This section provides detailed pinout mappings and connector specifications, along with the necessary steps to interface the controller with a host computer."
+  "Covers comprehensive signal pinouts and hardware specifications, including the physical wiring required to establish communication with the host system."
 </div>
 
 {% capture tab1 %}
