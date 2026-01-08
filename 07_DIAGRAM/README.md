@@ -16,7 +16,7 @@ description: "ROSRider Motor Control Theory of Operation"
     font-family: 'Ubuntu', sans-serif;
 ">
     <div style="font-size: 1.4em; font-weight: bold; color: #4CAF50; margin-bottom: 5px;">
-        PID Controller
+        > PID Controller
     </div>
 </div>
 
@@ -43,7 +43,7 @@ This effectively linearizes the motor response, ensuring the control loop is dri
     font-family: 'Ubuntu', sans-serif;
 ">
     <div style="font-size: 1.4em; font-weight: bold; color: #4CAF50; margin-bottom: 5px;">
-        Cascaded Current Controller
+        > Cascaded Current Controller
     </div>
 </div>
 
