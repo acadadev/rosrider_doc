@@ -16,9 +16,7 @@ description: "Updating Firmware of ROSRider control card"
   <p>Before proceeding with the firmware update, ensure you have the correct firmware file for your specific ROSRider model. Incorrect firmware can lead to device malfunction.</p>
 </div>
 
-To initiate the firmware update process, follow these steps:
-
-Enter Bootloader Mode:
+__Enter Bootloader Mode:__
 - Press and Hold the Reset Button: Keep the reset button pressed.
 - Press and Hold the Boot Button: While still holding the reset button, press the boot button.
 - Release the Reset Button: Once the reset button is released, you can also release the boot button.
@@ -49,10 +47,10 @@ You should see a message indicating successful entry into bootloader mode, which
 
 <div class="checkpoint">
     <p class="ch">✔&nbsp;Before Starting Update: Important Considerations</p>
-    <p>Power Supply: Ensure a stable power supply during the update process.</p>
-    <p>USB Connection: A reliable USB connection is crucial.</p>
-    <p>Firmware Compatibility: Always use the firmware provided by ACADA Robotics for your specific model.</p>
-    <p>Patience: The firmware update process may take some time. Avoid interrupting the process.</p>
+    <p><strong>Power Supply:</strong> Ensure a stable power supply during the update process.</p>
+    <p><strong>USB Connection:</strong> A reliable USB connection is crucial.</p>
+    <p><strong>Firmware: Compatibility:</strong> Always use the firmware provided by ACADA Robotics for your specific model.</p>
+    <p><strong>Patience:</strong> The firmware update process may take some time. Avoid interrupting the process.</p>
 </div>
 
 By following these steps and adhering to the specific instructions provided by ACADA Robotics, you can successfully update your ROSRider's firmware and enhance its capabilities.
