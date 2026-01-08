@@ -31,7 +31,6 @@ __LED Blink Codes__
 | Green | Solid ON | N/A |Active: Commands have been successfully received. |
 | Red | Solid ON | N/A | System Disabled: A critical status check is required. |
 
-
 __ROSRider SMBUS__
 
 Python code to send commands to ROSRider Board is available at [https://github.com/acadadev/rosrider_smbus](https://github.com/acadadev/rosrider_smbus)
@@ -62,40 +61,47 @@ __Troubleshooting__
 
 __Status Registers__
 
-#### PWR_STATUS
+***PWR_STATUS***
 
-b7	CMD_TIMEOUT  
-b6	POWER_BAD  
-b5	RIGHT_AMP  
-b4	LEFT_AMP  
-b3	MAIN_FUSE  
-b2	OVER_VOLTAGE  
-b1	UNDER_VOLTAGE  
-b0	AUX_PWR  
+| Bit | Function      |
+|-----|---------------|
+| b7  | CMD_TIMEOUT   | 
+| b6  | POWER_BAD     |
+| b5  | RIGHT_AMP     | 
+| b4  | LEFT_AMP      |
+| b3  | MAIN_FUSE     |
+| b2  | OVER_VOLTAGE  |
+| b1  | UNDER_VOLTAGE |  
+| b0  | AUX_PWR       |
 
-#### MTR_STATUS
+***MTR_STATUS***
 
-b7	FAULT_RIGHT  
-b6	FAULT_LEFT  
-b5	RIGHT_REV (0=REV, 1=FWD)  
-b4	LEFT_REV  
-b3	MODE_2  
-b2	MODE_1  
-b1  DRIVE_MODE_MSB  
-b0	DRIVE_MODE_LSB  
+| Bit | Function       |
+|-----|----------------|
+| b7  | FAULT_RIGHT    | 
+| b6  | FAULT_LEFT     |
+| b5  | RIGHT_REV      | 
+| b4  | LEFT_REV       |
+| b3  | MODE_2         |
+| b2  | MODE_1         |
+| b1  | DRIVE_MODE_MSB |  
+| b0  | DRIVE_MODE_LSB |
 
-#### DRIVE_MODE
+***DRIVE_MODE***
 
 MODE_BRAKE = 00  
 MODE_PWM   = 01  
 MODE_VEL   = 10  
 MODE_PID   = 11  
 
-#### SYS_STATUS
+***SYS_STATUS***
 
-b7	EPROM_INIT_OK = 0  
-b6	RESTART_REQUIRED = 1  
-b1  INITIAL_UPDATE_ERROR = 1  
-b0	EEPROM_WRITE_WRITE_OK = 0  
+| Bit | Function                  |
+|-----|---------------------------|
+| b7  | EPROM_INIT_OK = 0         | 
+| b6  | RESTART_REQUIRED = 1      |
+| b1  | INITIAL_UPDATE_ERROR = 1  |  
+| b0  | EEPROM_WRITE_WRITE_OK = 0 |
+
 
 __Return to the introduction:__ [Introduction](../README.md)
