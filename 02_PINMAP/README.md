@@ -137,9 +137,9 @@ Use CR1225 3V coin battery.
 {% endcapture %}
 
 {% include tabs.html
-   tab1_title="Left" 
+   tab1_title="Left Motor" 
    tab1_content=tab1
-   tab2_title="Right" 
+   tab2_title="Right Motor" 
    tab2_content=tab2
    tab3_title="Servo" 
    tab3_content=tab3
