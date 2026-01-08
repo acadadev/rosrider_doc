@@ -194,7 +194,20 @@ After installation, verify the connection using `sudo i2cdetect -y 1` to detect 
   </figure>
 </div>
 
-__Detecting I2C Devices__
+<div style="
+    background-color: #f8f9fa;
+    border-left: 6px solid #4CAF50;
+    color: #333333;
+    padding: 25px;
+    border-radius: 4px;
+    margin: 30px 0;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    font-family: 'Ubuntu', sans-serif;
+">
+    <div style="font-size: 1.4em; font-weight: bold; color: #4CAF50; margin-bottom: 5px;">
+        > Detecting I2C Devices
+    </div>
+</div>
 
 For troubleshooting purposes, you may want to detect I2C devices connected to your computer.
 To do this, you can use the `i2cdetect` command in the terminal. Run the following command to install i2c-tools: `sudo apt install i2c-tools`.
@@ -221,7 +234,20 @@ Use the `i2cdetect` command to scan the I2C bus and identify connected devices:
 This command will display a table of I2C addresses. The default address of the ROSRider is `0x3C`, and the default address of the ROS2RPI card is `0x20`.
 If you only have a ROSRider connected directly, you should only see the address `0x3C`.
 
-__Connecting ROSRider to NVIDIA Jetson__
+<div style="
+    background-color: #f8f9fa;
+    border-left: 6px solid #4CAF50;
+    color: #333333;
+    padding: 25px;
+    border-radius: 4px;
+    margin: 30px 0;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    font-family: 'Ubuntu', sans-serif;
+">
+    <div style="font-size: 1.4em; font-weight: bold; color: #4CAF50; margin-bottom: 5px;">
+        > Connecting ROSRider to NVIDIA Jetson
+    </div>
+</div>
 
 The NVIDIA Jetson has two I2C ports accessible via the header.
 To ensure proper communication with I2C devices, it's crucial to configure the I2C voltage level.
