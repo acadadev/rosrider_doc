@@ -13,9 +13,14 @@ description: "Error codes and conditions on the ROSRider control card"
 
 __OTHER CHAPTERS__
 
-slam, navigation and others, must be adsorbed by new chapters, or some chapters are overlapping.
+- slam
+- navigation
+- cartographer
 
 
+__Connecting Servos__
+
+TODO:
 
 __LED Blink Codes__
 
@@ -26,25 +31,29 @@ __LED Blink Codes__
 | Green | Solid ON | N/A |Active: Commands have been successfully received. |
 | Red | Solid ON | N/A | System Disabled: A critical status check is required. |
 
+
+__ROSRider SMBUS__
+
+Python code to send commands to ROSRider Board is available at [https://github.com/acadadev/rosrider_smbus](https://github.com/acadadev/rosrider_smbus)
+ROSRider SMBus enables you to write your own python programs to control ROSRider board without the ROS drivers.  
+
+Also a set of utilities is included that allows you to:
+
+ - Send System Control Commands
+ - Set Parameters
+ - Set POSIX time
+ - Set PID and PWM targets
+ - Profile Motor Torque Constant
+
 __TODO__
 
 - make videos of pid debug tool and put some screenshots between things, maybe even a video.
 - reamp parameters
 
-- led blink documentation
 - if initial update fail, then what happens?
-- rosrider_smbus
-  - sysctl commands
-  - read_status
-  - set_commands
-  - etc
+
 - ros2rpi config explanation, is it 0x33 for default
-- couple of ros param commands
-- led blink documentation - red
-
-- connecting servos
-- Explanation of parameter 0x33 in rosrider, 0x0 to cancel.
-
+-  Explanation of parameter 0x33 in rosrider, 0x0 to cancel.
 
 
 __Troubleshooting__
