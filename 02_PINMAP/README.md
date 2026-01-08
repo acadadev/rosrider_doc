@@ -12,7 +12,7 @@ description: "Pinmaps and Connections of ROSRider Card"
 </div>
 
 <div class="img_dv">
-  <figure class="img_fg60">
+  <figure class="img_fg50">
     <img src="../images/rosrider/ROSRider4D_portmap.png" alt="ROSRider Port Diagram" style="width: 100%;">
   </figure>
 </div>
