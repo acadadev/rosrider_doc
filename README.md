@@ -1,17 +1,8 @@
-<div style="
-    background-color: #f8f9fa;
-    border-left: 6px solid #4CAF50;
-    color: #333333;
-    padding: 25px;
-    border-radius: 4px;
-    margin: 30px 0;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-    font-family: 'Ubuntu', sans-serif;
-">
-    <div style="font-size: 1.4em; font-weight: bold; color: #4CAF50; margin-bottom: 5px;">
+<div class="sl">
+    <div class="sl1">
         > ROSRider aims to lower the cost barrier for building ROS based robots.
     </div>
-    <div style="font-size: 1.1em; font-style: italic; line-height: 1.5;">
+    <div class="sl2">
         "Using commodity parts, users can build robots that can run the Robot Operating System."
     </div>
 </div>
@@ -22,20 +13,20 @@ ROSRider is designed to empower makers and students, to build robots using readi
 Unlike pre-built kits that can be costly and limiting, it can be integrated with existing hardware.
 This approach encourages creativity, reduces costs, and promotes the reuse of existing components, making robotics accessible to a wider audience.
 
-<div style="display: flex; justify-content: space-around; margin: 25px 0;">
+<div class="img_dv_center">
   
-  <figure style="width: 25%; margin: 0; text-align: center;">
-    <img src="images/rosrider/sorcerer_rosrider.png" alt="Sorcerer with ROSRider" style="width: 100%; border: 1px solid #ccc; border-radius: 5px; box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);">
+  <figure class="img_fg25">
+    <img class="img_sh" src="images/rosrider/sorcerer_rosrider.png" alt="Sorcerer with ROSRider" style="width: 100%;">
     <figcaption>Fig 1. Minimal chassis designed for lane-following tasks using image processing</figcaption>
   </figure>
 
-  <figure style="width: 25%; margin: 0; text-align: center;">
-    <img src="images/rosrider/caretta_top_sq.jpg" alt="Caretta with ROS2RPI" style="width: 100%; border: 1px solid #ccc; border-radius: 5px; box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);">
+  <figure class="img_fg25">
+    <img class="img_sh" src="images/rosrider/caretta_top_sq.jpg" alt="Caretta with ROS2RPI" style="width: 100%;">
     <figcaption>Fig 2. Chassis with LIDAR designed for  SLAM / Navigation</figcaption>
   </figure>
 
-  <figure style="width: 25%; margin: 0; text-align: center;">
-    <img src="images/rosrider/ROSRider4D_sq.png" alt="ROSRider Control Card" style="width: 100%; border: 1px solid #ccc; border-radius: 5px; box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);">
+  <figure class="img_fg25">
+    <img class="img_sh" src="images/rosrider/ROSRider4D_sq.png" alt="ROSRider Control Card" style="width: 100%;">
     <figcaption>Fig 3. ROSRider Control Card</figcaption>
   </figure>
 
@@ -51,9 +42,9 @@ This eliminates the need for manual intervention, such as disconnecting batterie
 The ROS2RPI card offers flexible serial port routing, enabling remote access to the Raspberry Pi and other devices like LiDAR sensors.
 This feature prevents boot conflicts caused by LiDAR serial output during system startup and allows for remote control of the LiDAR, extending its operational life and simplifying maintenance procedures.
 
-<div style="display: flex; justify-content: space-around; margin: 25px 0;">
-  <figure style="width: 50%; margin: 0; text-align: center;">
-    <img src="images/rosrider/odometry-house-sm.gif" alt="Odometry Plot" style="width: 100%; border: 1px solid #ccc; border-radius: 5px; box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);">
+<div class="img_dv">
+  <figure class="img_fg50">
+    <img class="img_sh" src="images/rosrider/odometry-house-sm.gif" alt="Odometry Plot" style="width: 100%;">
     <figcaption>Fig 4. Odometry and LIDAR data visualization</figcaption>
   </figure>
 </div>
@@ -62,20 +53,20 @@ __Gazebo Simulation Support__
 
 To further enhance the integration of ROSRider with open-source robotics, we have developed two open-source robot platforms: Sorcerer and Caretta. These low-cost, pre-built robots, accompanied by URDF files for ROS and Gazebo simulation, streamline the development process. Developers can rapidly prototype and test algorithms in simulation before deploying them to physical hardware, significantly accelerating development time and reducing costs associated with physical experimentation.
 
-<div style="display: flex; justify-content: space-around; margin: 25px 0;">
+<div class="img_dv_center">
   
-  <figure style="width: 25%; margin: 0; text-align: center;">
-    <img src="images/rosrider/gazebo_caretta.png" alt="Gazebo CARETTA" style="width: 100%; border: 1px solid #ccc; border-radius: 5px; box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);">
+  <figure class="img_fg25">
+    <img class="img_sh" src="images/rosrider/gazebo_caretta.png" alt="Gazebo CARETTA" style="width: 100%;">
     <figcaption>Fig 5. Gazebo Simulation with CARETTA</figcaption>
   </figure>
 
-  <figure style="width: 25%; margin: 0; text-align: center;">
-    <img src="images/rosrider/gazebo_sorcerer.png" alt="Gazebo SORCERER" style="width: 100%; border: 1px solid #ccc; border-radius: 5px; box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);">
+  <figure class="img_fg25">
+    <img class="img_sh" src="images/rosrider/gazebo_sorcerer.png" alt="Gazebo SORCERER" style="width: 100%;">
     <figcaption>Fig 6. Gazebo Simulation with SORCERER</figcaption>
   </figure>
 
-  <figure style="width: 25%; margin: 0; text-align: center;">
-    <img src="images/rosrider/rviz_cartographer_sq.png" alt="Cartographer RVIZ" style="width: 100%; border: 1px solid #ccc; border-radius: 5px; box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);">
+  <figure class="img_fg25">
+    <img class="img_sh" src="images/rosrider/rviz_cartographer_sq.png" alt="Cartographer RVIZ" style="width: 100%;">
     <figcaption>Fig 7. RVIZ visualization of Simulated Robot</figcaption>
   </figure>
 
@@ -85,20 +76,20 @@ __Supported Motors__
 
 ROSRider can drive a wide range of encoder gear motors, from simple DC motors to high-precision gear motors commonly found in robotic vacuum cleaners. It supports both single-phase and dual-phase encoders, with parameters such as encoder PPR and gear reduction ratio configurable through YAML files. The dual-channel drivers, delivering 1A continuous and 2.8A peak current, provide ample power for various robotic applications.
 
-<div style="display: flex; justify-content: space-around; margin: 25px 0;">
+<div class="img_dv_center">
   
-  <figure style="width: 25%; margin: 0; text-align: center;">
-    <img src="images/rosrider/metal_gear_motor_a.png" alt="Metal Gear Motor" style="width: 100%; border: 1px solid #ccc; border-radius: 5px; box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);">
+  <figure class="img_fg25">
+    <img class="img_sh" src="images/rosrider/metal_gear_motor_a.png" alt="Metal Gear Motor" style="width: 100%;">
     <figcaption>Fig 8. Metal Gear Motor</figcaption>
   </figure>
 
-  <figure style="width: 25%; margin: 0; text-align: center;">
-    <img src="images/rosrider/plastic_gear_motor.png" alt="Plastic Gear Motor" style="width: 100%; border: 1px solid #ccc; border-radius: 5px; box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);">
+  <figure class="img_fg25">
+    <img class="img_sh" src="images/rosrider/plastic_gear_motor.png" alt="Plastic Gear Motor" style="width: 100%;">
     <figcaption>Fig 9. Plastic Gear Motor (DG01D-E)</figcaption>
   </figure>
 
-  <figure style="width: 25%; margin: 0; text-align: center;">
-    <img src="images/rosrider/vacuum_robot_motor.png" alt="Vacuum cleaner robot spare motor" style="width: 100%; border: 1px solid #ccc; border-radius: 5px; box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);">
+  <figure class="img_fg25">
+    <img class="img_sh" src="images/rosrider/vacuum_robot_motor.png" alt="Vacuum cleaner robot spare motor" style="width: 100%;">
     <figcaption>Fig 10. Vacuum Cleaner Spare Part</figcaption>
   </figure>
 
