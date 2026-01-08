@@ -24,6 +24,8 @@ This package includes a suite of utilities enabling you to:
  - Set PID and PWM Targets
  - Profile Motor Torque Constant
 
+---
+
 __LED Blink Codes__
 
 | Color | Visual Pattern | Duration | System State     | Description                                           |
@@ -34,7 +36,10 @@ __LED Blink Codes__
 | Red   | Solid ON       | N/A      | System Disabled  | A critical status check is required                   |
 
 
-A red LED indicates a system fault. While rare, these errors are usually recoverable. Please check the status codes listed below to diagnose the problem and find the appropriate solution.
+A red LED indicates a system fault. While rare, these errors are usually recoverable.
+Please check the status codes listed below to diagnose the problem and find the appropriate solution.  
+
+---
 
 __Status Registers__
 
@@ -50,7 +55,9 @@ __Status Registers__
 | AUX_PWR       | b0  | Auxillary Power Supply ON                     |
 
 Send a SYSCTL command to ***Soft-Reset*** the board in case of over-current events (`RIGHT_AMP`, `LEFT_AMP`, `MAIN_FUSE`),
-or ***Hard-Reset*** the board for critical power supply faults (`POWER_BAD`, `OVER_VOLTAGE`, `UNDER_VOLTAGE`).
+or ***Hard-Reset*** the board for critical power supply faults (`POWER_BAD`, `OVER_VOLTAGE`, `UNDER_VOLTAGE`).  
+
+---
 
 | MTR_STATUS     | Bit | Description                        |
 |----------------|-----|------------------------------------|
@@ -66,6 +73,8 @@ or ***Hard-Reset*** the board for critical power supply faults (`POWER_BAD`, `OV
 Although `FAULT_RIGHT` and `FAULT_LEFT` are monitored by the hardware (active below 12V), they are redundant in this implementation.
 The software utilizes a more precise method for monitoring bus voltage and current, so these specific flags can be safely ignored.  
 
+---
+
 | DRIVE_MODE | Mode | Description                                                         |
 |------------|------|---------------------------------------------------------------------|
 | MODE_BRAKE | 0    | Brakes applied                                                      |
@@ -74,7 +83,9 @@ The software utilizes a more precise method for monitoring bus voltage and curre
 | MODE_PID   | 3    | PID Mode, Device accepts Target Velocities in rad / s               |
 
 For standard ROS operations, use `MODE_PID`. `MODE_PWM` is reserved specifically for Torque Constant calibration.
-Please note that while `MODE_VEL is functional`, it remains untested and is not currently supported by the driver.
+Please note that while `MODE_VEL is functional`, it remains untested and is not currently supported by the driver.  
+
+---
 
 | SYS_STATUS           | Bit | Description                                                                                |
 |----------------------|-----|--------------------------------------------------------------------------------------------|
@@ -83,7 +94,9 @@ Please note that while `MODE_VEL is functional`, it remains untested and is not 
 | INITIAL_UPDATE_ERROR | b1  | If a parameter value from EEPROM can not pass input validation at startup. System Disabled |
 | EEPROM_WRITE_ERROR   | b0  | Denotes EEPROM write error                                                                 |
 
-If `INITIAL_UPDATE_ERROR` you can try to send a SYSCTL command to ***restore factory defaults***
+If `INITIAL_UPDATE_ERROR` you can try to send a SYSCTL command to ***restore factory defaults***  
+
+---
 
 __Connecting Servos__
 
