@@ -18,7 +18,7 @@ While previous versions of ROSRider utilized middleware to integrate with ROS, o
 The ROSRider firmware incorporates a timing control feature that synchronizes itself to the host computer's polling rate, resulting in a latency of 1-2 milliseconds. By actively adjusting its internal clock based on received packets, the ROSRider firmware ensures precise timing and synchronization, preventing data inconsistencies and errors that can occur due to timing drifts. This guarantees that ROS packets are delivered on time, ensuring reliable and efficient system operation.
 
 <div class="checkpoint">
-  <p>✔&nbsp;Checkpoint</p>
+  <p class="ch">✔&nbsp;Checkpoint</p>
   <p>Before continuing, run the following test command to see if ROS is installed.</p>
   <div class="highlight notranslate position-relative">
     <div class="highlight">
@@ -184,7 +184,7 @@ The following output indicates that the ROSDriver node has started successfully 
 - Make sure you have sourced the setup script `source devel/setup.bash` either manually before running the command, or have permanently configured it in your `.bashrc` file. This ensures the system can locate the necessary ROS components.
 
 <div class="checkpoint">
-  <p>✔&nbsp;Checkpoint</p>
+  <p class="ch">✔&nbsp;Checkpoint</p>
   <p>Ensure you are receiving the expected diagnostics and odometry data according to the following instructions.</p>
 </div>
 
