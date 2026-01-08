@@ -160,7 +160,7 @@ To ensure that your system can find the necessary ROSRider components, you'll ne
         </svg>
       </clipboard-copy>
   </div>
-  <p>If you see `Package not found`, you must run the source command above.</p>
+  <p>If it returns <em>Package not found</em>, you must run the source command above.</p>
 </div>
 
 <div class="sl">
