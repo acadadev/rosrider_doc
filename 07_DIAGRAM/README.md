@@ -26,7 +26,7 @@ essentially supplying the energy needed for the motion profile before any error 
 We also implemented a **physics-based Stribeck friction model** to counteract mechanical resistance like stiction and viscous drag.
 This effectively linearizes the motor response, ensuring the control loop is driving the load rather than just fighting against friction thresholds.  
 
-<div style="display: flex; justify-content: space-around; margin: 25px 0;">
+<div style="display: flex; margin: 25px 0;">
   <figure style="width: 60%; margin: 0; text-align: center;">
     <img src="../images/sch/ROSRider_Controller_Diagram_PID_Mode.png" alt="ROSRider PID Loop, Classic Mode" style="width: 100%;">
   </figure>
@@ -54,7 +54,7 @@ This inner stage employs a **physics-based feedforward strategy**, injecting cal
 By utilizing DSP-filtered velocity and current data to predict the motor's electrical requirements, the PI controller is relieved of the bulk control effort and focuses solely on disturbance rejection.
 This decoupling of electrical dynamics from mechanical load simplifies tuning and ensures the system remains robust and stable even if the robot's weight or inertia changes significantly.
 
-<div style="display: flex; justify-content: space-around; margin: 25px 0;">
+<div style="display: flex; margin: 25px 0;">
   <figure style="width: 100%; margin: 0; text-align: center;">
     <img src="../images/sch/ROSRider_Controller_Diagram_Cascaded_Mode.png" alt="ROSRider PID Loop, Cascaded Current Control Mode" style="width: 100%;">
   </figure>
