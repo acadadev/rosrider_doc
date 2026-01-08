@@ -45,7 +45,7 @@ faster response to disturbances, and a more stable overall system compared to si
 <div class="img_dv_center">
   <figure class="img_fg60">
     <img class="img_sh" src="../images/rosrider/ROSRider_PID_Tool.png" alt="ROSRider PID Tuner" style="width: 100%;">
-    <figcaption>Fig 1. ROSRider PID Tuning Tool visualizes the </figcaption>
+    <figcaption>The ROSRider PID Tuning Tool interface, visualizing real-time OMEGA, PWM output, target setpoints, and current draw for both the left and right motors</figcaption>
   </figure>
 </div>
 
