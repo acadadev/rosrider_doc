@@ -5,6 +5,21 @@ title: "Controller Diagram"
 description: "ROSRider Motor Control Theory of Operation"
 ---
 
+<div style="
+    background-color: #f8f9fa;
+    border-left: 6px solid #4CAF50;
+    color: #333333;
+    padding: 25px;
+    border-radius: 4px;
+    margin: 30px 0;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    font-family: 'Ubuntu', sans-serif;
+">
+    <div style="font-size: 1.4em; font-weight: bold; color: #4CAF50; margin-bottom: 5px;">
+        > Theory of Operation
+    </div>
+</div>
+
 __PID Controller__
 
 <div style="display: flex; justify-content: space-around; margin: 25px 0;">
@@ -17,9 +32,11 @@ __PID Controller__
 __Cascaded Current Controller__
 
 The cascaded PID controller utilizes a nested loop architecture, where the outer loop calculates the 
-desired current reference, and the inner faster loop calculates current error and adjusts the output.
+desired current reference, and the inner faster loop modulates the motor voltage to strictly regulate torque.
 
-This design allows the system to correct minor disturbances immediately within the inner loop before they affect the overall system stability.
+This inner stage employs a **physics-based feedforward strategy**, injecting calculated terms for resistive voltage drop and estimated Back-EMF (BEMF) directly into the control output.
+By utilizing DSP-filtered velocity and current data to predict the motor's electrical requirements, the PI controller is relieved of the bulk control effort and focuses solely on disturbance rejection.
+This decoupling of electrical dynamics from mechanical load simplifies tuning and ensures the system remains robust and stable even if the robot's weight or inertia changes significantly.
 
 <div style="display: flex; justify-content: space-around; margin: 25px 0;">
   <figure style="width: 100%; margin: 0; text-align: center;">
