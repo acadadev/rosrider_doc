@@ -19,7 +19,7 @@ This effectively linearizes the motor response, ensuring the control loop is dri
 
 <div class="img_dv">
   <figure class="img_fg60">
-    <img src="../images/sch/ROSRider_Controller_Diagram_PID_Mode.png" alt="ROSRider PID Loop, Classic Mode" style="width: 100%;">
+    <img src="../images/sch/ROSRider_Controller_Diagram_PID.png" alt="ROSRider PID Loop, Classic Mode" style="width: 100%;">
   </figure>
 </div>
 
@@ -38,7 +38,7 @@ This decoupling of electrical dynamics from mechanical load simplifies tuning an
 
 <div class="img_dv">
   <figure class="img_fg90">
-    <img src="../images/sch/ROSRider_Controller_Diagram_Cascaded_Mode.png" alt="ROSRider PID Loop, Cascaded Current Control Mode" style="width: 100%;">
+    <img src="../images/sch/ROSRider_Controller_Diagram_Cascaded.png" alt="ROSRider PID Loop, Cascaded Current Control Mode" style="width: 100%;">
   </figure>
 </div>
 
