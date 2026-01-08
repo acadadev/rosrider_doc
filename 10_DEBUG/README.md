@@ -11,19 +11,6 @@ description: "Error codes and conditions on the ROSRider control card"
     </div>
 </div>
 
-__Connecting Servos__
-
-Two standard servos can be controlled separately then main locomotion. `AUX_PWR` must be on in order for servos to power up.
-
-__LED Blink Codes__
-
-| Color | Visual Pattern | Duration | System State Description                                                     |
-|-------|----------------|----------|------------------------------------------------------------------------------|
-| Green | 3X Blink       | 50ms     | Restart Complete: The system has successfully rebooted.                      |
-| Red   | 3X Blink       | 50ms     | Request Acknowledged: Soft Reset, Hard Reset, or Hibernate request received. |
-| Green | Solid ON       | N/A      | Active: Commands have been successfully received.                            |
-| Red   | Solid ON       | N/A      | System Disabled: A critical status check is required.                        |
-
 __ROSRider SMBUS__
 
 ROSRider SMBus enables you to write your own python programs to control ROSRider board without the ROS drivers.
@@ -36,6 +23,15 @@ Also, a set of utilities is included that allows you to
  - Set POSIX time
  - Set PID and PWM targets
  - Profile Motor Torque Constant
+
+__LED Blink Codes__
+
+| Color | Visual Pattern | Duration | System State Description                                                     |
+|-------|----------------|----------|------------------------------------------------------------------------------|
+| Green | 3X Blink       | 50ms     | Restart Complete: The system has successfully rebooted.                      |
+| Red   | 3X Blink       | 50ms     | Request Acknowledged: Soft Reset, Hard Reset, or Hibernate request received. |
+| Green | Solid ON       | N/A      | Active: Commands have been successfully received.                            |
+| Red   | Solid ON       | N/A      | System Disabled: A critical status check is required.                        |
 
 __Status Registers__
 
@@ -82,6 +78,10 @@ Send a SYSCTL command to Soft-Reset or Hard-reset the board.
 | EEPROM_WRITE_ERROR   | b0  | Denotes EEPROM write error                                                                 |
 
 If `INITIAL_UPDATE_ERROR` you can try to send a SYSCTL command to ***restore factory defaults***
+
+__Connecting Servos__
+
+Two standard servos can be controlled separately then main locomotion. `AUX_PWR` must be on in order for servos to power up.
 
 __OTHER CHAPTERS__
 
