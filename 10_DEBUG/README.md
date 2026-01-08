@@ -11,12 +11,6 @@ description: "Error codes and conditions on the ROSRider control card"
     </div>
 </div>
 
-__OTHER CHAPTERS__
-
-- slam
-- navigation
-- cartographer
-
 __Connecting Servos__
 
 Two standard servos can be controlled separately then main locomotion. `AUX_PWR` must be on in order for servos to power up.
@@ -32,26 +26,16 @@ __LED Blink Codes__
 
 __ROSRider SMBUS__
 
-Python code to send commands to ROSRider Board is available at [https://github.com/acadadev/rosrider_smbus](https://github.com/acadadev/rosrider_smbus)
-ROSRider SMBus enables you to write your own python programs to control ROSRider board without the ROS drivers.  
+ROSRider SMBus enables you to write your own python programs to control ROSRider board without the ROS drivers.
+Python code is available at [https://github.com/acadadev/rosrider_smbus](https://github.com/acadadev/rosrider_smbus)
 
-Also a set of utilities is included that allows you to:
+Also, a set of utilities is included that allows you to:
 
  - Send System Control Commands
  - Set Parameters
  - Set POSIX time
  - Set PID and PWM targets
  - Profile Motor Torque Constant
-
-__TODO__
-
-- make videos of pid debug tool and put some screenshots between things, maybe even a video.
-- revisit parameters, add more description
-- explain friction and feedforwards
-
-__Troubleshooting__
-
-// TODO: FAULT_LEFT and FAULT_RIGHT after
 
 __Status Registers__
 
@@ -93,5 +77,18 @@ __Status Registers__
 | RESTART_REQUIRED     | b6  | After updating certain variables, this bit will be set requesting reset from driver        |
 | INITIAL_UPDATE_ERROR | b1  | If a parameter value from EEPROM can not pass input validation at startup. System Disabled |
 | EEPROM_WRITE_ERROR   | b0  | Denotes EEPROM write error                                                                 |
+
+__OTHER CHAPTERS__
+
+- slam
+- navigation
+- cartographer
+
+__TODO__
+- make videos of pid debug tool and put some screenshots between things, maybe even a video.
+- revisit parameters, add more description
+- explain SCV in detail
+- explain FF in detail
+- explain Cascading in detail
 
 __Return to the introduction:__ [Introduction](../README.md)
