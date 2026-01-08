@@ -5,17 +5,8 @@ title: "ROS2 Drivers"
 description: "Compiling and Installing ROS2 Drivers"
 ---
 
-<div style="
-    background-color: #f8f9fa;
-    border-left: 6px solid #4CAF50;
-    color: #333333;
-    padding: 25px;
-    border-radius: 4px;
-    margin: 30px 0;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-    font-family: 'Ubuntu', sans-serif;
-">
-    <div style="font-size: 1.4em; font-weight: bold; color: #4CAF50; margin-bottom: 5px;">
+<div class="sl">
+    <div class="sl1">
         > Installing ROSRider Drivers
     </div>
 </div>
@@ -46,17 +37,8 @@ The ROSRider firmware incorporates a timing control feature that synchronizes it
   <p>Ignoring a failed checkpoint can result in the propagation of underlying defects, leading to more severe and difficult-to-resolve software issues in subsequent development stages.</p>
 </div>
 
-<div style="
-    background-color: #f8f9fa;
-    border-left: 6px solid #4CAF50;
-    color: #333333;
-    padding: 25px;
-    border-radius: 4px;
-    margin: 30px 0;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-    font-family: 'Ubuntu', sans-serif;
-">
-    <div style="font-size: 1.4em; font-weight: bold; color: #4CAF50; margin-bottom: 5px;">
+<div class="sl">
+    <div class="sl1">
         > Installation Instructions
     </div>
 </div>
@@ -167,17 +149,8 @@ To ensure that your system can find the necessary ROSDriver components, you'll n
   </clipboard-copy>
 </div>	
 
-<div style="
-    background-color: #f8f9fa;
-    border-left: 6px solid #4CAF50;
-    color: #333333;
-    padding: 25px;
-    border-radius: 4px;
-    margin: 30px 0;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-    font-family: 'Ubuntu', sans-serif;
-">
-    <div style="font-size: 1.4em; font-weight: bold; color: #4CAF50; margin-bottom: 5px;">
+<div class="sl">
+    <div class="sl1">
         > Running the Driver
     </div>
 </div>
@@ -202,8 +175,8 @@ To launch the ROSRider node and establish communication between ROS and your ROS
 
 The following output indicates that the ROSDriver node has started successfully and is ready to communicate with your ROSRider hardware.
 
-<div style="display: flex; margin: 25px 0;">
-   <img class="replay" src="../images/rosrider/rosrider_launch.gif" alt="ROSRider Node Launch" style="width: 75%; box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);">
+<div class="img_dv">
+   <img class="replay" src="../images/rosrider/rosrider_launch.gif" alt="ROSRider Node Launch" style="width: 75%;">
 </div>
 
 ***Important Note***
@@ -215,17 +188,8 @@ The following output indicates that the ROSDriver node has started successfully 
   <p>Ensure you are receiving the expected diagnostics and odometry data according to the following instructions.</p>
 </div>
 
-<div style="
-    background-color: #f8f9fa;
-    border-left: 6px solid #4CAF50;
-    color: #333333;
-    padding: 25px;
-    border-radius: 4px;
-    margin: 30px 0;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-    font-family: 'Ubuntu', sans-serif;
-">
-    <div style="font-size: 1.4em; font-weight: bold; color: #4CAF50; margin-bottom: 5px;">
+<div class="sl">
+    <div class="sl1">
         > Monitoring Diagnostics
     </div>
 </div>
@@ -248,7 +212,7 @@ To monitor the health and performance of your ROSRider, you can view real-time d
 
 Running this command will output diagnostic information to your terminal. You should see an output similar to the following:
 
-<div style="display: flex; margin: 25px 0;">
+<div class="img_dv">
    <img class="replay" src="../images/rosrider/monitoring_diagnostics.gif" alt="Diagnostics Output" style="box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);">
 </div>
 
@@ -262,17 +226,8 @@ This command will output the following diagnostic information to your terminal:
 
 By monitoring these values, you can ensure optimal performance and troubleshoot any potential issues.
 
-<div style="
-    background-color: #f8f9fa;
-    border-left: 6px solid #4CAF50;
-    color: #333333;
-    padding: 25px;
-    border-radius: 4px;
-    margin: 30px 0;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-    font-family: 'Ubuntu', sans-serif;
-">
-    <div style="font-size: 1.4em; font-weight: bold; color: #4CAF50; margin-bottom: 5px;">
+<div class="sl">
+    <div class="sl1">
         > Monitoring Odometry
     </div>
 </div>
@@ -293,7 +248,7 @@ To monitor the odometry data being published by the ROSRider, you can use the fo
   </clipboard-copy>
 </div>
 
-<div style="display: flex; margin: 25px 0;">
+<div class="img_dv">
    <img class="replay" src="../images/rosrider/verifying_odom.gif" alt="Monitoring Odometry Output" style="box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);">
 </div>
 
