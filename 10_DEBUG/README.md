@@ -50,6 +50,7 @@ __Status Registers__
 | UNDER_VOLTAGE | b1  | Battery Under Voltage, System Disabled        |
 | AUX_PWR       | b0  | Auxillary Power Supply ON                     |
 
+Send a SYSCTL command to Soft-Reset or Hard-reset the board.
 
 | MTR_STATUS     | Bit | Description                        |
 |----------------|-----|------------------------------------|
@@ -62,7 +63,7 @@ __Status Registers__
 | DRIVE_MODE_MSB | b1  | Drive Mode Left Bit                |
 | DRIVE_MODE_LSB | b0  | Drive Mode Right Bit               |
 
-***Notice:*** `FAULT_RIGHT` and `FAULT_LEFT` will be always on if main battery voltage is < 12V. We are using other means to monitor the bus voltage and current, so these variables are not used by our software.
+`FAULT_RIGHT` and `FAULT_LEFT` will be always on if main battery voltage is < 12V. We are using other means to monitor the bus voltage and current, so these variables are not used by our software.
 
 | DRIVE_MODE | Mode | Description                                                         |
 |------------|------|---------------------------------------------------------------------|
@@ -71,12 +72,16 @@ __Status Registers__
 | MODE_VEL   | 2    | VEL Mode, Device accepts linear.x in m / s and angular.z in rad / s |
 | MODE_PID   | 3    | PID Mode, Device accepts Target Velocities in rad / s               |
 
+`MODE_PWM` is necessary for Torque Constant calibration. For ROS, use `MODE_PID`. `MODE_VEL` works but untested, and is not implemented in the driver.
+
 | SYS_STATUS           | Bit | Description                                                                                |
 |----------------------|-----|--------------------------------------------------------------------------------------------|
 | EPROM_INIT_OK = 0    | b7  | If this bit is set, EPROM has not initialized. System Disabled                             |
 | RESTART_REQUIRED     | b6  | After updating certain variables, this bit will be set requesting reset from driver        |
 | INITIAL_UPDATE_ERROR | b1  | If a parameter value from EEPROM can not pass input validation at startup. System Disabled |
 | EEPROM_WRITE_ERROR   | b0  | Denotes EEPROM write error                                                                 |
+
+If `INITIAL_UPDATE_ERROR` you can try to send a SYSCTL command to ***restore factory defaults***
 
 __OTHER CHAPTERS__
 
