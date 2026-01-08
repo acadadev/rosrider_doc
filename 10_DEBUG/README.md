@@ -95,5 +95,6 @@ __TODO__
 - explain SCV in detail
 - explain FF in detail
 - explain Cascading in detail
+- move servos to procedures
 
 __Return to the introduction:__ [Introduction](../README.md)
