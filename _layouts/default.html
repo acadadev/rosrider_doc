@@ -43,7 +43,7 @@
                               {{ item.title }}
                           </a>
                       </li>
-                  {% elsif %}
+                  {% else %}
                       <li style="margin-bottom: 8px;">
                           <a class="nav-link {% if current_clean == item_clean %}active{% endif %}" href="{{ link_href }}">
                               {{ item.title }}
