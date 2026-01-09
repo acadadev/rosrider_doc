@@ -59,7 +59,7 @@ applying only the constant Coulomb Run voltage to prevent low-speed oscillation
 while maintaining sufficient holding force.
 
 <div class="img_dv">
-  <figure class="img_fg60">
+  <figure class="img_fg90">
     <img src="../images/rosrider/scv_friction.png" alt="Stribeck Friction Model" style="width: 100%;">
   </figure>
 </div>
