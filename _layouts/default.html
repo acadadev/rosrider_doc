@@ -45,23 +45,18 @@
                 {% endfor %}
             </ul-->
 
-            <ul class="nav-list" style="list-style: none; padding: 0; margin: 0;">
+            <!--ul class="nav-list" style="list-style: none; padding: 0; margin: 0;">
               {% for item in site.data.navigation %}
-
                 {% assign parent_href = item.url %}
                 {% unless item.url == '/rosrider_doc/' %}
                    {% assign parent_href = item.url | append: 'README.html' %}
                 {% endunless %}
-
                 {% assign current_clean = page.url | replace: '/rosrider_doc', '' | replace: 'index.html', '' | replace: 'README.html', '' %}
                 {% assign item_clean = item.url | replace: '/rosrider_doc', '' | replace: 'index.html', '' | replace: 'README.html', '' %}
-
                 {% assign parent_is_active = false %}
-
                 {% if current_clean == item_clean %}
                     {% assign parent_is_active = true %}
                 {% endif %}
-
                 {% if item.children %}
                   {% for child in item.children %}
                     {% assign child_clean = child.url | replace: '/rosrider_doc', '' | replace: 'index.html', '' | replace: 'README.html', '' %}
@@ -72,25 +67,20 @@
                 {% endif %}
 
                 <li style="margin-bottom: 8px;">
-
                     <a class="nav-link {% if parent_is_active %}active-parent{% endif %}"
                        href="{{ parent_href }}"
                        style="font-weight: bold; display: block; color: #333;">
                         {{ item.title }}
                     </a>
-
                     {% if item.children %}
                       <ul style="list-style: none; padding-left: 15px; border-left: 2px solid #eee; margin-top: 4px;">
                         {% for child in item.children %}
-
                           {% assign child_href = child.url | append: 'README.html' %}
                           {% assign child_clean_url = child.url | replace: '/rosrider_doc', '' | replace: 'index.html', '' | replace: 'README.html', '' %}
-
                           {% assign child_is_active = false %}
                           {% if current_clean == child_clean_url %}
                              {% assign child_is_active = true %}
                           {% endif %}
-
                           <li style="margin-bottom: 4px;">
                             <a class="nav-child-link {% if child_is_active %}active-child{% endif %}"
                                href="{{ child_href }}"
@@ -101,11 +91,9 @@
                         {% endfor %}
                       </ul>
                     {% endif %}
-
                 </li>
               {% endfor %}
-            </ul>
-
+            </ul-->
         </div>
       </nav>
       <main class="main-content markdown-body">
