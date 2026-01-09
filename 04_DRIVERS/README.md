@@ -30,7 +30,7 @@ The ROSRider firmware incorporates a timing control feature that synchronizes it
     </div>
 </div>
 
-Create a ROS Workspace
+__Create a ROS Workspace__
 
 <div class="highlight notranslate position-relative">
   <div class="highlight">
@@ -47,7 +47,7 @@ cd rosrider_ws/src</pre>
   </clipboard-copy>
 </div>
 
-Clone the ROSRider Repository:
+__Clone the ROSRider Repository:__
 
 <div class="highlight notranslate position-relative">
   <div class="highlight">
@@ -63,7 +63,7 @@ Clone the ROSRider Repository:
   </clipboard-copy>
 </div>
 
-*Initialize ROS Dependency System (if not done during ROS installation)*
+__Initialize ROS Dependency System (if not done during ROS installation)__
 
 <div class="highlight notranslate position-relative">
   <div class="highlight">
@@ -80,7 +80,7 @@ rosdep update</pre>
   </clipboard-copy>
 </div>
 
-*Install ROS Dependencies*
+__Install ROS Dependencies__
 
 <div class="highlight notranslate position-relative">
   <div class="highlight">
@@ -97,7 +97,7 @@ rosdep install --from-paths src -y --ignore-src</pre>
   </clipboard-copy>
 </div>
 
-*Build the Workspace*
+__Build the Workspace__
 
 <div class="highlight notranslate position-relative">
   <div class="highlight">
@@ -114,7 +114,7 @@ source devel/setup.bash</pre>
   </clipboard-copy>
 </div>	
 
-*Adding ROSRider to Your Bash Environment*
+__Adding ROSRider to Your Bash Environment__
 
 To ensure that your system can find the necessary ROSRider components, you'll need to add the following line to your Bash configuration file:
 
