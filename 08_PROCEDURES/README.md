@@ -43,4 +43,4 @@ We will explore various tools and techniques to monitor the robot's health and p
 
 - [Timing-Control](05_TIMING/README.md)
 
-__Next Chapter:__ [Simulations](../09_SIMULATIONS/README.md)
+__Next Chapter:__ [Troubleshooting](../10_DEBUG/README.md)
