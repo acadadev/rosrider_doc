@@ -110,4 +110,4 @@ If the update is successful, you will see the message `No error condition is pre
    <img class="replay" id="target_image" src="../images/rosrider/dfu_firmware_update.gif" alt="DFU util update output">
 </div>
 
-__Next Chapter:__ [Physics](../07_PHYSICS/README.md)
+__Next Chapter:__ [Controller Physics](../07_PHYSICS/README.md)

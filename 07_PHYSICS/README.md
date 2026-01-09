@@ -19,7 +19,7 @@ This effectively linearizes the motor response, ensuring the control loop is dri
 
 <div class="img_dv">
   <figure class="img_fg60">
-    <img src="../images/sch/ROSRider_Controller_Diagram_PID_Mode.png" alt="ROSRider PID Loop, Classic Mode" style="width: 100%;">
+    <img src="../images/sch/ROSRider_Controller_Diagram_PID.png" alt="ROSRider PID Loop, Classic Mode" style="width: 100%;">
   </figure>
 </div>
 
@@ -57,7 +57,7 @@ in the target speed.
 
 When the controller operates in Cascaded mode, this logic adapts by converting
 the acceleration demand into an equivalent current target `control_effort_amps`; 
-using the motor's armature resistance `R_arm`, the system calculates exactly
+using the motor's armature resistance `R_ARM`, the system calculates exactly
 how much extra current is required to generate the torque needed for that specific acceleration,
 adding this directly to the inner loop’s reference target.  
 
@@ -112,7 +112,7 @@ for the physical forces required to move the load.
 
 <div class="img_dv">
   <figure class="img_fg70">
-    <img src="../images/sch/ROSRider_Controller_Diagram_Cascaded_Mode.png" alt="ROSRider PID Loop, Cascaded Current Control Mode" style="width: 100%;">
+    <img src="../images/sch/ROSRider_Controller_Diagram_Cascaded.png" alt="ROSRider PID Loop, Cascaded Current Control Mode" style="width: 100%;">
   </figure>
 </div>
 
