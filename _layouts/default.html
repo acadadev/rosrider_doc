@@ -37,7 +37,6 @@
                   {% assign current_clean = page.url | replace: 'index.html', '' | replace: 'README.html', '' %}
                   {% assign item_clean = item.url | replace: '/rosrider_doc', '' | replace: 'index.html', '' | replace: 'README.html', '' %}
 
-
                   {% if item.title == page.parent_title %}
                       <li style="margin-bottom: 8px;">
                           <a class="nav-link {% if current_clean == item_clean %}active{% endif %}" href="{{ link_href }}">
@@ -53,7 +52,6 @@
                   {% endif %}
                 {% endfor %}
             </ul>
-
         </div>
       </nav>
       <main class="main-content markdown-body">
