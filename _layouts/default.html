@@ -40,7 +40,7 @@
 
                   {% if page.parent_title %}
                       <li style="margin-bottom: 8px;">
-                          <a class="nav-link active" href="{{ link_href }}">
+                          <a class="nav-link {% if current_clean == item_clean %}active{% endif %}" href="{{ link_href }}">
                               title: {{ item.title }} page: {{page.title}} parent: {{page.parent_title}}
                           </a>
                       </li>
