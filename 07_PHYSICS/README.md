@@ -136,4 +136,4 @@ By proactively supplying the voltage for these known physical properties,
 the inner PI controller only needs to correct for  small disturbances and transient errors
 between the target and observed current,  resulting in a stiffer and more accurate control response.
 
-__Next Chapter:__ [Controller Diagram](../07_DIAGRAM/README.md)
+__Next Chapter:__ [Procedures](../08_PROCEDURES/README.md)
