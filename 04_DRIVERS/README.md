@@ -143,12 +143,6 @@ To ensure that your system can find the necessary ROSRider components, you'll ne
     </div>
 </div>
 
-<div class="sl">
-    <div class="sl1">
-        > Running the Driver
-    </div>
-</div>
-
 Once you've successfully installed the ROSRider package and configured your environment, it's time to bring the ROSRider board to life!
 Make sure you have sourced the setup script `source devel/setup.bash` either manually before running the command, or have permanently configured it in your `.bashrc` file.  
 
@@ -183,11 +177,7 @@ The following output indicates that the ROSRider Node has started successfully a
     </div>
 </div>
 
-<div class="sl">
-    <div class="sl1">
-        > Monitoring Diagnostics
-    </div>
-</div>
+__Monitoring Diagnostics__
 
 To monitor the health and performance of your ROSRider, you can view real-time diagnostic information by using the following command:
 
@@ -221,11 +211,7 @@ This command will output the following diagnostic information to your terminal:
 
 By monitoring these values, you can ensure optimal performance and troubleshoot any potential issues.
 
-<div class="sl">
-    <div class="sl1">
-        > Monitoring Odometry
-    </div>
-</div>
+__Monitoring Odometry__
 
 To monitor the odometry data being published by the ROSRider, you can use the following command:
 
