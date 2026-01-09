@@ -39,7 +39,7 @@
 
                   <li style="margin-bottom: 8px;">
                       <a class="nav-link {% if current_clean == item_clean %}active{% endif %}" href="{{ link_href }}">
-                          {{ item_clean }} {{ item_current }} {{ item.title }}
+                          - {{ item_clean }} - {{ item_current }} - {{ item.title }}
                       </a>
                   </li>
                 {% endfor %}
