@@ -118,5 +118,3 @@ __TODO__
 - explain Cascading in detail
 - move servos to procedures
 - Sim other package, nexts are broken.
-
-__Return to the [Introduction](../README.md)__ 
