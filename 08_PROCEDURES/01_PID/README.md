@@ -25,7 +25,7 @@ this guide will enable you to achieve precise tracking and efficient control of 
         ⚠️&nbsp;Checkpoint:&nbsp;Start ROSRider Driver
     </div>
     <div class="ck2">
-        To start the driver execute <code class="language-plaintext highlighter-rouge">ros2 launch rosrider_node rosrider_node.launch.py</code>
+        To start the driver: <code class="language-plaintext highlighter-rouge">ros2 launch rosrider_node rosrider_node.launch.py</code>
     </div>
 </div>
 
