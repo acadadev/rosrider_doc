@@ -81,6 +81,7 @@ The graph below shows the total added friction volts as a function of angular ve
   <figcaption>Friction Compensation Voltage vs Angular Velocity</figcaption>
 </div>
 
+
 ### Cascaded Control Architecture
 
 In Cascaded Mode, the controller splits the regulation task into two distinct loops. An outer velocity loop 
