@@ -61,8 +61,8 @@ We'll modify the `kP` parameter, which controls the proportional gain for the le
   </clipboard-copy>
 </div>
 
-<div style="display: flex; margin: 25px 0;">
-   <img class="replay" src="../../images/rosrider/ros2_param_set.gif" alt="Set ROS Parameter">
+<div class="img_dv">
+   <img class="replay" src="../../images/rosrider/ros2_param_set.gif" alt="Set ROS Parameter" style="width: 65%;">
 </div>
 
 Let's verify the parameter change by requesting it from the ROS Parameter Server.
