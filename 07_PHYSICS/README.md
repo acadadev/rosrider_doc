@@ -89,7 +89,7 @@ while maintaining sufficient holding force.
 The graph below shows the total added friction volts as a function of angular velocity. `STATIC_KICK = 6V`, `STRIBECK_WIDTH = 16`, `COULOMB_RUN = 3V`, `VISCOUS_FRICTION = 0.001`, `SCV_LATCH_THRESHOLD = 2 rad/s`
 
 <div class="img_dv">
-  <figure class="img_fg70">
+  <figure class="img_fg75">
     <img src="../images/rosrider/scv_friction_model.png" alt="Stribeck Friction Model" style="width: 100%;">
   </figure>
 </div>
