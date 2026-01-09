@@ -75,7 +75,7 @@ while maintaining sufficient holding force.
 The graph below shows the total added friction volts as a function of angular velocity. Static Kick: 6V, Stribeck Decay: 16, Coulomb Run: 3V, Viscous Friction: 0.001, Latch Threshold: 2 rad/s
 
 <div class="img_dv">
-  <figure class="img_fg90">
+  <figure class="img_fg60">
     <img src="../images/rosrider/scv_friction_voltage.png" alt="Stribeck Friction Model" style="width: 100%;">
   </figure>
 </div>
