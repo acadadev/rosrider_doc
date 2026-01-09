@@ -7,7 +7,7 @@ description: "Hardware Specifications"
 
 <div class="sl">
     <div class="sl1">
-        > System Features
+        > Hardware Specifications
     </div>
 </div>
 
