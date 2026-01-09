@@ -15,17 +15,17 @@ This approach encourages creativity, reduces costs, and promotes the reuse of ex
 
 <div class="img_dv_center">
   
-  <figure class="img_fg25">
+  <figure class="img_fgc25">
     <img class="img_sh" src="images/rosrider/sorcerer_rosrider.png" alt="Sorcerer with ROSRider" style="width: 100%;">
     <figcaption>Fig 1. Minimal chassis designed for lane-following tasks using image processing</figcaption>
   </figure>
 
-  <figure class="img_fg25">
+  <figure class="img_fgc25">
     <img class="img_sh" src="images/rosrider/caretta_top_sq.jpg" alt="Caretta with ROS2RPI" style="width: 100%;">
     <figcaption>Fig 2. Chassis with LIDAR designed for  SLAM / Navigation</figcaption>
   </figure>
 
-  <figure class="img_fg25">
+  <figure class="img_fgc25">
     <img class="img_sh" src="images/rosrider/ROSRider4D_sq.png" alt="ROSRider Control Card" style="width: 100%;">
     <figcaption>Fig 3. ROSRider Control Card</figcaption>
   </figure>
@@ -55,17 +55,17 @@ To further enhance the integration of ROSRider with open-source robotics, we hav
 
 <div class="img_dv_center">
   
-  <figure class="img_fg25">
+  <figure class="img_fgc25">
     <img class="img_sh" src="images/rosrider/gazebo_caretta.png" alt="Gazebo CARETTA" style="width: 100%;">
     <figcaption>Fig 5. Gazebo Simulation with CARETTA</figcaption>
   </figure>
 
-  <figure class="img_fg25">
+  <figure class="img_fgc25">
     <img class="img_sh" src="images/rosrider/gazebo_sorcerer.png" alt="Gazebo SORCERER" style="width: 100%;">
     <figcaption>Fig 6. Gazebo Simulation with SORCERER</figcaption>
   </figure>
 
-  <figure class="img_fg25">
+  <figure class="img_fgc25">
     <img class="img_sh" src="images/rosrider/rviz_cartographer_sq.png" alt="Cartographer RVIZ" style="width: 100%;">
     <figcaption>Fig 7. RVIZ visualization of Simulated Robot</figcaption>
   </figure>
@@ -78,17 +78,17 @@ ROSRider can drive a wide range of encoder gear motors, from simple DC motors to
 
 <div class="img_dv_center">
   
-  <figure class="img_fg25">
+  <figure class="img_fgc25">
     <img class="img_sh" src="images/rosrider/metal_gear_motor_a.png" alt="Metal Gear Motor" style="width: 100%;">
     <figcaption>Fig 8. Metal Gear Motor</figcaption>
   </figure>
 
-  <figure class="img_fg25">
+  <figure class="img_fgc25">
     <img class="img_sh" src="images/rosrider/plastic_gear_motor.png" alt="Plastic Gear Motor" style="width: 100%;">
     <figcaption>Fig 9. Plastic Gear Motor (DG01D-E)</figcaption>
   </figure>
 
-  <figure class="img_fg25">
+  <figure class="img_fgc25">
     <img class="img_sh" src="images/rosrider/vacuum_robot_motor.png" alt="Vacuum cleaner robot spare motor" style="width: 100%;">
     <figcaption>Fig 10. Vacuum Cleaner Spare Part</figcaption>
   </figure>

@@ -106,17 +106,17 @@ ROSRider is primarily designed for Raspberry Pi and Jetson platforms, leveraging
 
 <div class="img_dv_center">
   
-  <figure class="img_fg25">
+  <figure class="img_fgc25">
     <img class="img_sh" src="../images/rosrider/rpi.png" alt="Raspberry Pi 5" style="width: 100%;">
     <figcaption>Fig 1. Raspberry Pi 5</figcaption>
   </figure>
 
-  <figure class="img_fg25">
+  <figure class="img_fgc25">
     <img class="img_sh" src="../images/rosrider/jetson_nano.png" alt="Jetson Nano" style="width: 100%;">
     <figcaption>Fig 2. Jetson Nano</figcaption>
   </figure>
 
-  <figure class="img_fg25">
+  <figure class="img_fgc25">
     <img class="img_sh" src="../images/rosrider/jetson_agx.png" alt="Jetson AGX" style="width: 100%;">
     <figcaption>Fig 3. Jetson AGX</figcaption>
   </figure>
