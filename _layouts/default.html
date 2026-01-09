@@ -37,12 +37,19 @@
                   {% assign current_clean = page.url | replace: 'index.html', '' | replace: 'README.html', '' %}
                   {% assign item_clean = item.url | replace: '/rosrider_doc', '' | replace: 'index.html', '' | replace: 'README.html', '' %}
 
-                  <li style="margin-bottom: 8px;">
-                      <a class="nav-link {% if current_clean == item_clean %}active{% endif %}" href="{{ link_href }}">
-                          {{ item.title }}
-                      </a>
-                      - {{ item_clean }} - {{ item_current }} - {{ item.title }}
-                  </li>
+                  {% if page.parent_title %}
+                      <li style="margin-bottom: 8px;">
+                          <a class="nav-link active" href="{{ link_href }}">
+                              {{ item.title }}
+                          </a>
+                      </li>
+                  {% elsif %}
+                      <li style="margin-bottom: 8px;">
+                          <a class="nav-link {% if current_clean == item_clean %}active{% endif %}" href="{{ link_href }}">
+                              {{ item.title }}
+                          </a>
+                      </li>
+                  {% endif %}
                 {% endfor %}
             </ul>
 
