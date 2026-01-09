@@ -30,13 +30,7 @@ The ROSRider firmware incorporates a timing control feature that synchronizes it
     </div>
 </div>
 
-<div class="sl">
-    <div class="sl1">
-        > Installation Instructions
-    </div>
-</div>
-
-*Create a ROS Workspace*
+Create a ROS Workspace
 
 <div class="highlight notranslate position-relative">
   <div class="highlight">
@@ -53,7 +47,7 @@ cd rosrider_ws/src</pre>
   </clipboard-copy>
 </div>
 
-*Clone the ROSRider Repository:*
+Clone the ROSRider Repository:
 
 <div class="highlight notranslate position-relative">
   <div class="highlight">
