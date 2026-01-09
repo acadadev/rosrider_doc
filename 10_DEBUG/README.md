@@ -113,7 +113,4 @@ __OTHER CHAPTERS__
 __TODO__
 - make videos of pid debug tool and put some screenshots between things, maybe even a video
 - revisit parameters, add more description
-- explain SCV in detail
-- explain FF in detail
-- explain Cascading in detail
 - move servos to procedures
