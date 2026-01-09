@@ -70,7 +70,7 @@ the rotor inertia or break static friction, are calculated here and summed direc
 This ensures the inner loop receives a "torque command" that already accounts for the physical forces required to move the 
 load.  
 
-### Inner Loop Voltage Composition ###
+### Inner Loop Voltage Composition
 
 The inner loop receives this current target and modulates the motor voltage to achieve it, 
 decoupling electrical dynamics from mechanical ones. 
