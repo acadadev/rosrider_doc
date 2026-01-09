@@ -37,7 +37,7 @@
                   {% assign current_clean = page.url | replace: 'index.html', '' | replace: 'README.html', '' %}
                   {% assign item_clean = item.url | replace: '/rosrider_doc', '' | replace: 'index.html', '' | replace: 'README.html', '' %}
 
-                  *{{ item.parent_title }}*
+                  *{{ item.parent_title }}* {{page.title}}
                   {% if item.parent_title %}
                       <li style="margin-bottom: 8px;">
                           <a class="nav-link active" href="{{ link_href }}">
