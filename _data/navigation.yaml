@@ -21,6 +21,18 @@
 
 - title: Procedures
   url: /rosrider_doc/08_PROCEDURES/
-
+  children:
+    - title: PID Tuning
+      url: /rosrider_doc/08_PROCEDURES/01_PID/
+    - title: Teleoperation
+      url: /rosrider_doc/08_PROCEDURES/02_TELEOP/
+    - title: Odometry
+      url: /rosrider_doc/08_PROCEDURES/03_ODOMETRY/
+    - title: Diagnostics
+      url: /rosrider_doc/08_PROCEDURES/04_DIAGNOSTICS/
+    - title: Teleoperation
+      url: /rosrider_doc/08_PROCEDURES/05_TIMING/
+    - title: Controlling Servos
+      url: /rosrider_doc/08_PROCEDURES/06_SERVO/
 - title: Troubleshooting
   url: /rosrider_doc/10_DEBUG/
