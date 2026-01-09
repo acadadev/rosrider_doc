@@ -148,11 +148,9 @@ Use CR1225 3V coin battery.
 
 <div class="sl">
     <div class="sl1">
-        > Connecting to Host Computer
+        > Connecting ROSRider to Raspberry PI
     </div>
 </div>
-
-__Connecting ROSRider to Raspberry PI__
 
 This wiring diagram illustrates direct I2C communication with the Raspberry PI.
 To enable I2C communication on a Raspberry Pi running Ubuntu, first ensure I2C is enabled by adding
