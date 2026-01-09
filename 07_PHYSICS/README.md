@@ -60,7 +60,7 @@ while maintaining sufficient holding force.
 
 __Friction Compensation Voltage vs Angular Velocity__
 
-Static Kick: 6V | Coulomb Run: 3V | Viscous Friction: 0.001 | Latch Threshold 2 rad / s
+**Static Kick: 6V | Coulomb Run: 3V | Viscous Friction: 0.001 | Latch Threshold 2 rad / s**
 
 <div class="img_dv">
   <figure class="img_fg90">
