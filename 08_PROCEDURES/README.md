@@ -42,7 +42,7 @@ We will explore various tools and techniques to monitor the robot's health and p
  We will discuss the importance of precise timing and control in robotic systems and how to achieve it.
 
 - [Timing Control](05_TIMING/README.md)
-- 
+
  We will discuss the importance of precise timing and control in robotic systems and how to achieve it.
 
 - [Servo Control](06_SERVO/README.md)

@@ -1,7 +1,7 @@
 ---
 layout: default
 title_url: /06_FIRMWARE/README.html
-title: "Updating Firmware"
+title: "Firmware Update"
 description: "Updating Firmware of ROSRider control card"
 ---
 
