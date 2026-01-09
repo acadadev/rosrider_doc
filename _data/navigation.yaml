@@ -16,6 +16,9 @@
 - title: Firmware
   url: /rosrider_doc/06_FIRMWARE/
 
+- title: Physics
+  url: /rosrider_doc/07_PHYSICS/
+
 - title: Controller Diagram
   url: /rosrider_doc/07_DIAGRAM/
 
