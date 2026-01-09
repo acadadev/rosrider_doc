@@ -23,10 +23,12 @@ The ROSRider firmware incorporates a timing control feature that synchronizes it
     </div>
     <div class="ck2">
       <p>
-        Before continuing, run the following test command to see if ROS is installed: 
+        Before continuing, run the following test command to see if ROS is installed:
         <code class="language-plaintext highlighter-rouge">ros2 topic list</code>
+        This command should output at least two ROS topics
+        <code class="language-plaintext highlighter-rouge">/rosout</code> and
+        <code class="language-plaintext highlighter-rouge">/parameter_events</code>.
       </p>
-      <p>This command should output at least two ROS topics <code class="language-plaintext highlighter-rouge">/rosout</code> and <code class="language-plaintext highlighter-rouge">/parameter_events</code>.</p>
     </div>
 </div>
 
@@ -143,8 +145,11 @@ To ensure that your system can find the necessary ROSRider components, you'll ne
         ⚠️&nbsp;Checkpoint:&nbsp;Verify Workspace Sourcing
     </div>
     <div class="ck2">
-      <p>Confirm that ROS 2 can find the ROSRider package by running: <code class="language-plaintext highlighter-rouge">ros2 pkg prefix rosrider</code></p>
-      <p>If it returns <code class="language-plaintext highlighter-rouge">Package not found</code>, you must run the source command above.</p>
+      <p>
+        Confirm that ROS 2 can find the ROSRider package by running:
+        <code class="language-plaintext highlighter-rouge">ros2 pkg prefix rosrider</code>
+        If it returns <code class="language-plaintext highlighter-rouge">Package not found</code>, you must run the source command above.
+      </p>
     </div>
 </div>
 
