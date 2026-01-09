@@ -111,7 +111,7 @@ This ensures the inner loop receives a **torque command** that already accounts
 for the physical forces required to move the load.  
 
 <div class="img_dv">
-  <figure class="img_fg65">
+  <figure class="img_fg70">
     <img src="../images/sch/ROSRider_Controller_Diagram_Cascaded.png" alt="ROSRider PID Loop, Cascaded Current Control Mode" style="width: 100%;">
   </figure>
 </div>
