@@ -29,7 +29,7 @@ than wasting gain trying to overcome the motor's own generated voltage.
 <div class="img_dv">
   <figure class="img_fg70">
     <img src="../images/rosrider/right_motor_classic.png" alt="PID Performance with no feedforwards nor friction" style="width: 100%;">
-    <figcaption>Classic PID, set with default values, struggling to catch the target. (Red Line)</figcaption>  
+    <figcaption>Classic PID, set with default values, struggling to catch the target</figcaption>  
   </figure>
 </div>
 
