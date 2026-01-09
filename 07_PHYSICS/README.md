@@ -17,7 +17,7 @@ Velocity feedforward prevents the controller from lagging by proactively supplyi
 to counteract the motor’s Back Electromotive Force (Back-EMF) at a given speed.
 In standard operation, this acts as a direct voltage adder proportional to the target velocity.  
 
-Crucially, in ***Cascaded mode***, this feedforward is not ignored but rather architecturally
+Crucially, in **Cascaded mode**, this feedforward is not ignored but rather architecturally
 shifted to the inner loop to improve physical accuracy; because the motor’s generated
 Back-EMF naturally "fights back" against the driving current, the inner loop explicitly calculates and 
 injects a Back-EMF compensation term (`EB_ff`).  
@@ -48,7 +48,7 @@ The friction compensation utilizes a comprehensive physics-based model—combini
 `STATIC_KICK`, `COULOMB_RUN`, and `VISCOUS_FRICTION` terms—calculated entirely within
 the outer PID loop to ensure the controller preemptively overcomes mechanical resistance. 
 
-This ***Smooth Stribeck*** approach dynamically calculates the physical voltage required to break stiction,
+This **Smooth Stribeck** approach dynamically calculates the physical voltage required to break stiction,
 decaying exponentially from a high `STATIC_KICK` value down to a steady `COULOMB_RUN`
 level as speed increases, while simultaneously adding a linear viscous term. 
 
