@@ -29,7 +29,7 @@ this guide will enable you to achieve precise tracking and efficient control of 
     </div>
 </div>
 
-To get a list of parameters for `rosrider_node`, execute the following command:
+To view a list of parameters for `rosrider_node`, execute the following command:
 
 <div class="highlight notranslate position-relative">
   <div class="highlight">
@@ -65,7 +65,7 @@ We'll modify the `LEFT_KP` parameter, which controls the proportional gain for t
    <img class="replay" src="../../images/rosrider/ros2_param_set.gif" alt="Set ROS Parameter" style="width: 80%;">
 </div>
 
-Let's verify the parameter change by requesting it from the ROS Parameter Server.
+Let's verify the parameter has actually changed:
 
 <div class="highlight notranslate position-relative">
   <div class="highlight">
