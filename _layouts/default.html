@@ -27,7 +27,7 @@
           </a>
         </div>
         <div class="sidebar-menu">
-            <ul style="list-style: none; padding: 0; margin: 0;">
+            <!--ul style="list-style: none; padding: 0; margin: 0;">
                 {% for item in site.data.navigation %}
 
                   {% assign link_href = item.url %}
@@ -43,7 +43,56 @@
                       </a>
                   </li>
                 {% endfor %}
+            </ul-->
+
+            <ul class="nav-list" style="list-style: none; padding: 0; margin: 0;">
+              {% for item in site.data.navigation %}
+                {% if item.children %}
+                  {% assign parent_active = false %}
+                  {% for child in item.children %}
+                    {% assign child_url_clean = child.url | replace: 'index.html', '' | replace: 'README.html', '' %}
+                    {% assign page_url_clean = page.url | replace: 'index.html', '' | replace: 'README.html', '' %}
+                    {% if page_url_clean contains child_url_clean %}
+                       {% assign parent_active = true %}
+                    {% endif %}
+                  {% endfor %}
+                  <li class="nav-group" style="margin-bottom: 8px;">
+                    <div class="nav-group-header {% if parent_active %}active-parent{% endif %}" style="font-weight: bold; padding: 5px 0; color: #555;">
+                        {{ item.title }}
+                    </div>
+                    <ul style="list-style: none; padding-left: 15px; border-left: 2px solid #eee;">
+                      {% for child in item.children %}
+                        {% assign link_href = child.url %}
+                        {% unless child.url == '/rosrider_doc/' %}
+                           {% assign link_href = child.url | append: 'README.html' %}
+                        {% endunless %}
+                        {% assign current_clean = page.url | replace: '/rosrider_doc', '' | replace: 'index.html', '' | replace: 'README.html', '' %}
+                        {% assign child_clean = child.url | replace: '/rosrider_doc', '' | replace: 'index.html', '' | replace: 'README.html', '' %}
+                        {% assign is_active = false %}
+                        {% if current_clean == child_clean %}
+                           {% assign is_active = true %}
+                        {% endif %}
+                        <li style="margin-bottom: 4px;">
+                          <a class="nav-link {% if is_active %}active-child{% endif %}" href="{{ link_href }}" style="color: #666; text-decoration: none; font-size: 0.95em;">
+                            {{ child.title }}
+                          </a>
+                        </li>
+                      {% endfor %}
+                    </ul>
+                  </li>
+                {% else %}
+                  {% assign link_href = item.url %}
+                   {% assign current_clean = page.url | replace: '/rosrider_doc', '' | replace: 'index.html', '' | replace: 'README.html', '' %}
+                   {% assign item_clean = item.url | replace: '/rosrider_doc', '' | replace: 'index.html', '' | replace: 'README.html', '' %}
+                  <li style="margin-bottom: 8px;">
+                      <a class="nav-link {% if current_clean == item_clean %}active{% endif %}" href="{{ link_href }}" style="font-weight: bold; color: #333;">
+                          {{ item.title }}
+                      </a>
+                  </li>
+                {% endif %}
+              {% endfor %}
             </ul>
+
         </div>
       </nav>
       <main class="main-content markdown-body">
