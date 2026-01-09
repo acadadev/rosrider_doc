@@ -42,7 +42,7 @@ The inclusion of a cascaded current loop significantly enhances the control arch
 placing a high-bandwidth current controller inside the velocity loop; this allows for precise torque control, 
 faster response to disturbances, and a more stable overall system compared to simple single-loop designs.
 
-<div class="img_dv_center">
+<div class="img_dv">
   <figure class="img_fg60">
     <img class="img_sh" src="../images/rosrider/ROSRider_PID_Visualization.png" alt="ROSRider PID Tuner" style="width: 100%;">
     <figcaption>Visualizing real-time OMEGA, PWM output, target setpoints, and current draw for both the left and right motors.</figcaption>
