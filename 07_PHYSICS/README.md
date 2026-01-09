@@ -29,7 +29,7 @@ than wasting gain trying to overcome the motor's own generated voltage.
 <div class="img_dv">
   <figure class="img_fg70">
     <img src="../images/rosrider/right_motor_classic.png" alt="PID Performance with no feedforwards nor friction" style="width: 100%;">
-    <figcaption>PID Performance with feedforwards, friction and cascaded loop</figcaption>  
+    <figcaption>Classic PID, set with default values, struggling to catch the target. (Red Line)</figcaption>  
   </figure>
 </div>
 
@@ -52,7 +52,7 @@ adding this directly to the inner loop’s reference target.
 <div class="img_dv">
   <figure class="img_fg70">
     <img src="../images/rosrider/left_motor_cascaded.png" alt="PID Performance with feedforwards, friction and cascaded loop" style="width: 100%;">
-    <figcaption>PID Performance with feedforwards, friction and cascaded loop</figcaption>
+    <figcaption>Cascaded PID, with acceleration feedforward and friction compensation</figcaption>
   </figure>
 </div>
 
@@ -72,14 +72,13 @@ the aggressive static kick and viscous terms are strictly disabled,
 applying only the constant Coulomb Run voltage to prevent low-speed oscillation 
 while maintaining sufficient holding force.
 
-### Friction Compensation Voltage vs Angular Velocity
-
 The graph below shows the total added friction volts as a function of angular velocity. Static Kick: 6V, Stribeck Decay: 16, Coulomb Run: 3V, Viscous Friction: 0.001, Latch Threshold: 2 rad/s
 
 <div class="img_dv">
   <figure class="img_fg65">
     <img src="../images/rosrider/scv_friction.png" alt="Stribeck Friction Model" style="width: 100%;">
   </figure>
+  <figcaption>Friction Compensation Voltage vs Angular Velocity</figcaption>
 </div>
 
 ### Cascaded Control Architecture
