@@ -11,6 +11,18 @@ description: "Feedforwards, Friction Model and Cascaded Current Control Explaine
     </div>
 </div>
 
+The standard control mode uses a single-loop PID architecture augmented with predictive compensation terms.
+To improve tracking during dynamic maneuvers, the controller applies **velocity and acceleration feedforwards,**
+essentially supplying the energy needed for the motion profile before any error occurs.
+We also implemented a **physics-based Stribeck friction model** to counteract mechanical resistance like stiction and viscous drag.
+This effectively linearizes the motor response, ensuring the control loop is driving the load rather than just fighting against friction thresholds.  
+
+<div class="img_dv">
+  <figure class="img_fg60">
+    <img src="../images/sch/ROSRider_Controller_Diagram_PID.png" alt="ROSRider PID Loop, Classic Mode" style="width: 100%;">
+  </figure>
+</div>
+
 ### Velocity Feedforward
 
 Velocity feedforward prevents the controller from lagging by proactively supplying the voltage necessary
