@@ -45,7 +45,7 @@ To get a list of parameters for `rosrider_node`, execute the following command:
   </clipboard-copy>
 </div>
 
-Next, we'll modify the `kP` parameter, which controls the proportional gain for the left motor.
+We'll modify the `kP` parameter, which controls the proportional gain for the left motor.
 
 <div class="highlight notranslate position-relative">
   <div class="highlight">
