@@ -77,10 +77,9 @@ The graph below shows the total added friction volts as a function of angular ve
 <div class="img_dv">
   <figure class="img_fg65">
     <img src="../images/rosrider/scv_friction.png" alt="Stribeck Friction Model" style="width: 100%;">
+    <figcaption>Friction Compensation Voltage vs Angular Velocity</figcaption>
   </figure>
-  <figcaption>Friction Compensation Voltage vs Angular Velocity</figcaption>
 </div>
-
 
 ### Cascaded Control Architecture
 
