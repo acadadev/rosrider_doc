@@ -33,16 +33,29 @@ immediate control effort whenever a change in velocity is requested,
 rather than waiting for a position or velocity error to accumulate.  
 
 In the standard control mode, this is applied as a direct voltage
-contribution (`ff_acceleration`) calculated from the rate of change
+contribution `ff_acceleration` calculated from the rate of change
 in the target speed.  
 
 When the controller operates in Cascaded mode, this logic adapts by converting
-the acceleration demand into an equivalent current target (`control_effort_amps`); 
-using the motor's armature resistance (`R_arm`), the system calculates exactly
+the acceleration demand into an equivalent current target `control_effort_amps`; 
+using the motor's armature resistance `R_arm`, the system calculates exactly
 how much extra current is required to generate the torque needed for that specific acceleration,
 adding this directly to the inner loop’s reference target.  
 
-### Friction Model
+### Stiction and Friction Injection (SCV)
 
+The friction compensation utilizes a comprehensive physics-based model—combining
+`STATIC_KICK`, `COULOMB_RUN`, and `VISCOUS_FRICTION` terms—calculated entirely within
+the outer PID loop to ensure the controller preemptively overcomes mechanical resistance. 
+
+This ***Smooth Stribeck*** approach dynamically calculates the physical voltage required to break stiction,
+decaying exponentially from a high `STATIC_KICK` value down to a steady `COULOMB_RUN`
+level as speed increases, while simultaneously adding a linear viscous term. 
+
+The application of this static kick is gated by the `SCV_LATCH_THRESHOLD`
+when the target velocity falls below this specific threshold,
+the aggressive static kick and viscous terms are strictly disabled,
+applying only the constant Coulomb Run voltage to prevent low-speed oscillation 
+while maintaining sufficient holding force.
 
 __Next Chapter:__ [Troubleshooting](../10_DEBUG/README.md)
