@@ -1,4 +1,4 @@
----
+~~---
 layout: default
 parent_url: /08_PROCEDURES/README.html
 parent_title: "Procedures in Robotics"
@@ -16,11 +16,18 @@ description: "Detailed demonstration of the PID tuning procedure"
 PID tuning is an important process in control theory to optimize a system's response to inputs. By carefully adjusting the proportional (P), integral (I), and derivative (D) gains, engineers can fine-tune the system's behavior. This document outlines a step-by-step guide to PID tuning using the ROSRider platform.
 By following this procedure, you can achieve precise and efficient control of your robot.
 
-To start the ROSRider driver, execute the following command on the robot:
+<div class="ck">
+    <div class="ck1">
+        ⚠️&nbsp;Checkpoint:&nbsp;Start ROSRider Driver
+    </div>
+    <div class="ck2">
+        To start the ROSRider driver, execute: <code class="language-plaintext highlighter-rouge">ros2 launch rosrider_node rosrider_node.launch.py<</code>
+    </div>
+</div>
 
 <div class="highlight notranslate position-relative">
   <div class="highlight">
-    <pre id="command-node-launch"><span></span>ros2 launch rosrider_node rosrider_node.launch.py</pre>
+    <pre id="command-node-launch"><span></span>/pre>
   </div>
   <clipboard-copy style="position:absolute; right:8px; top:8px;" for="command-node-launch">
     <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-copy js-clipboard-copy-icon">
