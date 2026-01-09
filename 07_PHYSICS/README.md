@@ -60,15 +60,19 @@ while maintaining sufficient holding force.
 
 ### Cascaded Control Architecture
 
-In Cascaded Mode, the controller splits the regulation task into two distinct loops—an outer velocity loop 
-and an inner current loop—transforming the primary control output from "Voltage" to "Torque."
-The outer loop processes the velocity error and PID terms, but instead of generating a direct PWM duty cycle,
-it translates the control effort into a precise Current Reference (Amps).  
+In Cascaded Mode, the controller splits the regulation task into two distinct loops. An outer velocity loop 
+and an inner current loop—transforming the primary control output from **Voltage** to **Torque**
+The outer loop processes the velocity error and PID terms,
+but instead of generating a direct PWM duty cycle, 
+it translates the control effort into a precise Current Reference (amps)  
 
-This stage effectively linearizes the mechanical response; mechanical feedforwards, such as the current required to accelerate 
-the rotor inertia or break static friction, are calculated here and summed directly into the amperage target (control_effort_amps). 
-This ensures the inner loop receives a "torque command" that already accounts for the physical forces required to move the 
-load.  
+This stage effectively linearizes the mechanical response;
+mechanical feedforwards, such as the current required to accelerate the rotor inertia or
+break static friction, are calculated here and summed directly into the
+amperage target (control_effort_amps)  
+
+This ensures the inner loop receives a **torque command** that already accounts
+for the physical forces required to move the load.  
 
 ### Inner Loop Voltage Composition
 
