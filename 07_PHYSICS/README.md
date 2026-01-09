@@ -27,7 +27,7 @@ allowing the current controller to focus entirely on torque generation rather
 than wasting gain trying to overcome the motor's own generated voltage.
 
 <div class="img_dv">
-  <figure class="img_fg60">
+  <figure class="img_fg70">
     <img src="../images/rosrider/right_motor_classic.png" alt="PID Performance with no feedforwards nor friction" style="width: 100%;">
   </figure>
 </div>
@@ -49,7 +49,7 @@ how much extra current is required to generate the torque needed for that specif
 adding this directly to the inner loop’s reference target.  
 
 <div class="img_dv">
-  <figure class="img_fg60">
+  <figure class="img_fg70">
     <img src="../images/rosrider/left_motor_cascaded.png" alt="PID Performance with feedforwards, friction and cascaded loop" style="width: 100%;">
     <figcaption>PID Performance with feedforwards, friction and cascaded loop</figcaption>
   </figure>
