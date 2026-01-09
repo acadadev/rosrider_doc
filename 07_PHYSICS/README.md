@@ -58,9 +58,11 @@ the aggressive static kick and viscous terms are strictly disabled,
 applying only the constant Coulomb Run voltage to prevent low-speed oscillation 
 while maintaining sufficient holding force.
 
+Static Kick: 6V | Coulomb Run: 3V | Viscous Friction: 0.001 | Latch Threshold 2 rad / s
+
 <div class="img_dv">
   <figure class="img_fg90">
-    <img src="../images/rosrider/scv_friction.png" alt="Stribeck Friction Model" style="width: 100%;">
+    <img src="../images/rosrider/scv_friction_voltage.png" alt="Stribeck Friction Model" style="width: 100%;">
   </figure>
 </div>
 
