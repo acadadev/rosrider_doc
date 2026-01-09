@@ -26,6 +26,12 @@ This ensures that the voltage required to simply maintain speed is supplied imme
 allowing the current controller to focus entirely on torque generation rather
 than wasting gain trying to overcome the motor's own generated voltage.
 
+<div class="img_dv">
+  <figure class="img_fg60">
+    <img src="../images/rosrider/right_motor_driver_classic.png" alt="PID Performance with no feedforwards nor friction" style="width: 100%;">
+  </figure>
+</div>
+
 ### Acceleration Feedforward
 
 Acceleration feedforward compensates for the system's mechanical inertia by injecting an
@@ -41,6 +47,12 @@ the acceleration demand into an equivalent current target `control_effort_amps`;
 using the motor's armature resistance `R_arm`, the system calculates exactly
 how much extra current is required to generate the torque needed for that specific acceleration,
 adding this directly to the inner loop’s reference target.  
+
+<div class="img_dv">
+  <figure class="img_fg60">
+    <img src="../images/rosrider/left_motor_driver_cascaded.png" alt="PID Performance with feedforwards, friction and cascaded loop" style="width: 100%;">
+  </figure>
+</div>
 
 ### Stiction and Friction Injection (SCV)
 
