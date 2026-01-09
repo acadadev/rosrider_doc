@@ -90,7 +90,7 @@ The graph below shows the total added friction volts as a function of angular ve
 
 <div class="img_dv">
   <figure class="img_fg75">
-    <img src="../images/rosrider/scv_friction_model.png" alt="Stribeck Friction Model" style="width: 100%;">
+    <img src="../images/rosrider/scv_friction.png" alt="Stribeck Friction Model" style="width: 100%;">
   </figure>
 </div>
 
