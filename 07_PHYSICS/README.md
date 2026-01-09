@@ -50,7 +50,7 @@ adding this directly to the inner loop’s reference target.
 
 <div class="img_dv">
   <figure class="img_fg60">
-    <img src="../images/rosrider/plot_right_motor_classic.png" alt="PID Performance with feedforwards, friction and cascaded loop" style="width: 100%;">
+    <img src="../images/rosrider/plot_left_motor_cascaded.png" alt="PID Performance with feedforwards, friction and cascaded loop" style="width: 100%;">
   </figure>
 </div>
 
