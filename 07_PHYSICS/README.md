@@ -5,4 +5,12 @@ title: "Physics"
 description: "Feedforwards, Friction Model and Cascaded Current Control Explained"
 ---
 
+### Velocity Feedforward
+
+### Acceleration Feedforward
+
+### Friction Model
+
+
+
 __Next Chapter:__ [Troubleshooting](../10_DEBUG/README.md)
