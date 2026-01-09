@@ -81,6 +81,6 @@ Let's verify the parameter change by requesting it from the ROS Parameter Server
   </clipboard-copy>
 </div>
 
-<div style="display: flex; margin: 25px 0;">
-   <img class="replay" src="../../images/rosrider/ros2_param_get.gif" alt="Get ROS Parameter">
+<div class="img_dv">
+   <img class="replay" src="../../images/rosrider/ros2_param_get.gif" alt="Get ROS Parameter" style="width: 65%;">
 </div>
