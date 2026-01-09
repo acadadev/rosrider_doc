@@ -72,7 +72,7 @@ the aggressive static kick and viscous terms are strictly disabled,
 applying only the constant Coulomb Run voltage to prevent low-speed oscillation 
 while maintaining sufficient holding force.
 
-#### Friction Compensation Voltage vs Angular Velocity
+### Friction Compensation Voltage vs Angular Velocity
 
 The graph below shows the total added friction volts as a function of angular velocity. Static Kick: 6V, Stribeck Decay: 16, Coulomb Run: 3V, Viscous Friction: 0.001, Latch Threshold: 2 rad/s
 
