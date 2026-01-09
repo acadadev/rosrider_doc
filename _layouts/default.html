@@ -38,7 +38,7 @@
                   {% assign item_clean = item.url | replace: '/rosrider_doc', '' | replace: 'index.html', '' | replace: 'README.html', '' %}
 
 
-                  {% if page.parent_title %}
+                  {% if item.title == page.parent_title %}
                       <li style="margin-bottom: 8px;">
                           <a class="nav-link {% if current_clean == item_clean %}active{% endif %}" href="{{ link_href }}">
                               title: {{ item.title }} page: {{page.title}} parent: {{page.parent_title}}
