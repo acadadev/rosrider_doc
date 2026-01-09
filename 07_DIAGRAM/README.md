@@ -42,4 +42,4 @@ This decoupling of electrical dynamics from mechanical load simplifies tuning an
   </figure>
 </div>
 
-__Next Chapter:__ [Physics](../07_PHYSICSREADME.md)
+__Next Chapter:__ [Physics](../07_PHYSICS/README.md)
