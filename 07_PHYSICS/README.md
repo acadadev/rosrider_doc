@@ -98,6 +98,19 @@ amperage target (control_effort_amps)
 This ensures the inner loop receives a **torque command** that already accounts
 for the physical forces required to move the load.  
 
+<div class="img_dv">
+  <figure class="img_fg90">
+    <img src="../images/sch/ROSRider_Controller_Diagram_Cascaded.png" alt="ROSRider PID Loop, Cascaded Current Control Mode" style="width: 100%;">
+  </figure>
+</div>
+
+The cascaded PID controller utilizes a nested loop architecture, where the outer loop calculates the 
+desired current reference, and the inner faster loop modulates the motor voltage to strictly regulate torque.
+
+This inner stage employs a **physics-based feedforward strategy**, injecting calculated terms for resistive voltage drop and estimated Back-EMF (BEMF) directly into the control output.
+By utilizing DSP-filtered velocity and current data to predict the motor's electrical requirements, the PI controller is relieved of the bulk control effort and focuses solely on disturbance rejection.
+This decoupling of electrical dynamics from mechanical load simplifies tuning and ensures the system remains robust and stable even if the robot's weight or inertia changes significantly.
+
 ### Inner Loop Voltage Composition
 
 The inner loop receives this current target and modulates the motor voltage to achieve it, 
