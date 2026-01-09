@@ -58,6 +58,12 @@ the aggressive static kick and viscous terms are strictly disabled,
 applying only the constant Coulomb Run voltage to prevent low-speed oscillation 
 while maintaining sufficient holding force.
 
+<div class="img_dv">
+  <figure class="img_fg60">
+    <img src="../images/rosrider/scv_friction.png" alt="Stribeck Friction Model" style="width: 100%;">
+  </figure>
+</div>
+
 ### Cascaded Control Architecture
 
 In Cascaded Mode, the controller splits the regulation task into two distinct loops. An outer velocity loop 
