@@ -1,7 +1,7 @@
 ---
 layout: default
 title_url: /04_DRIVERS/README.html
-title: "ROS2 Drivers"
+title: "ROS Drivers"
 description: "Compiling and Installing ROS2 Drivers"
 ---
 
