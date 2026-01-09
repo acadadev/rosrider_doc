@@ -13,8 +13,12 @@ description: "Detailed demonstration of the PID tuning procedure"
     </div>
 </div>
 
-PID tuning is an important process in control theory to optimize a system's response to inputs. By carefully adjusting the proportional (P), integral (I), and derivative (D) gains, engineers can fine-tune the system's behavior. This document outlines a step-by-step guide to PID tuning using the ROSRider platform.
-By following this procedure, you can achieve precise and efficient control of your robot.
+PID tuning is a critical process in control theory used to optimize system response.
+In the context of the ***ROSRider platform***, the primary objective of this tuning is to
+ensure the robot accurately captures and matches the ***target velocities*** commanded by
+either the ***ROS Navigation Stack*** or manual user input. 
+By carefully adjusting the Proportional (P), Integral (I), and Derivative (D) gains, 
+this guide will enable you to achieve precise tracking and efficient control of your robot.  
 
 <div class="ck">
     <div class="ck1">
