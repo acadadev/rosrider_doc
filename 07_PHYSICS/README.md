@@ -26,6 +26,16 @@ than wasting gain trying to overcome the motor's own generated voltage.
 
 ### Acceleration Feedforward
 
+Acceleration feedforward compensates for the system's mechanical inertia by injecting an
+immediate control effort whenever a change in velocity is requested,
+rather than waiting for a position or velocity error to accumulate. In the standard control mode,
+this is applied as a direct voltage contribution (`ff_acceleration`) calculated from the rate of change
+in the target speed. When the controller operates in Cascaded mode, this logic adapts by converting
+the acceleration demand into an equivalent current target (`control_effort_amps`); 
+using the motor's armature resistance (`R_arm`), the system calculates exactly
+how much extra current is required to generate the torque needed for that specific acceleration,
+adding this directly to the inner loop’s reference target.
+
 ### Friction Model
 
 
