@@ -1,13 +1,13 @@
 ---
 layout: default
 title_url: /07_PHYSICS/README.html
-title: "Physics"
+title: "Controller Physics"
 description: "Feedforwards, Friction Model and Cascaded Current Control Explained"
 ---
 
 <div class="sl">
     <div class="sl1">
-        > Physics
+        > Controller Physics
     </div>
 </div>
 
