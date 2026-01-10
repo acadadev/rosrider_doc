@@ -542,7 +542,7 @@ SIGM_DIV: 10.0
 | TANH_DIV  | float | Divider to scale the Tanh input range. Controls curve width. | 2.0     |
 | SIGM_DIV  | float | Divider to scale the Sigmoid input range.                    | 10.0    |
 
-The **Output Filter** applies a non-linear transformation (Hyperbolic Tangent or Sigmoid) to the final
+The Output Filter applies a non-linear transformation (Hyperbolic Tangent or Sigmoid) to the final
 control signal, creating a **soft clipping** effect that smooths out aggressive commands near the
 maximum limit. The shape of this response curve is tunable via divisor parameters (`TANH_DIV`, `SIGM_DIV`),
 allowing you to adjust how sharply the motor power saturates.  
