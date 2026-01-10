@@ -540,10 +540,16 @@ allowing you to adjust how sharply the motor power saturates.
 
 __Filter Types Explained__
 
- - ***TANH (Hyperbolic Tangent):*** A symmetric S-shaped transfer function that creates a **soft clip** effect. It is linear for small errors but smoothly saturates as the output approaches the limit.
- - ***SIGM (Sigmoid):*** A non-linear activation function that maps the control signal to a gradual S-curve.
+ - **TANH (Hyperbolic Tangent):** A symmetric S-shaped transfer function that creates a **soft clip** effect. It is linear for small errors but smoothly saturates as the output approaches the limit.
+ - **SIGM (Sigmoid):** A non-linear activation function that maps the control signal to a gradual S-curve.
 
-__Filter Use__
+__Filter Routing Configuration__
+
+This section controls Filter Routing. It determines whether the motor controller uses **Raw** (noisy, fast) or **Filtered** (smooth, slightly delayed) sensor data for specific calculations.
+
+For every calculation below, you have a binary choice:
+ - `False` **Raw Data**: The controller sees the sensor data exactly as it happens. It is instant but can be "jittery" or noisy.
+ - `True` **Filtered Data**: The controller sees a smoothed-out version of the data. It eliminates noise but reacts slightly slower (milliseconds of delay).
 
 ```yaml
 VOLTAGE_FILTER: True  
