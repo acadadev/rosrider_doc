@@ -90,9 +90,9 @@ This ensures that the voltage required to simply maintain speed is supplied imme
 allowing the current controller to focus entirely on torque generation rather
 than wasting gain trying to overcome the motor's own generated voltage.
 
-### Acceleration Feed forward
+### Acceleration Feed-forward
 
-Acceleration feed forward compensates for the system's mechanical inertia by injecting an
+Acceleration feed-forward compensates for the system's mechanical inertia by injecting an
 immediate control effort whenever a change in velocity is requested,
 rather than waiting for a position or velocity error to accumulate.  
 
