@@ -62,7 +62,7 @@ We'll modify the `LEFT_KP` parameter, which controls the proportional gain for t
 </div>
 
 <div class="img_dv">
-   <img class="replay" src="../../images/rosrider/ros2_param_set.gif" alt="Set ROS Parameter" style="width: 100%;">
+   <img class="replay" src="../../images/rosrider/ros2_param_set.gif" alt="Set ROS Parameter" style="width: 90%;">
 </div>
 
 Let's verify the parameter has actually changed:
@@ -82,5 +82,5 @@ Let's verify the parameter has actually changed:
 </div>
 
 <div class="img_dv">
-   <img class="replay" src="../../images/rosrider/ros2_param_get.gif" alt="Get ROS Parameter" style="width: 100%;">
+   <img class="replay" src="../../images/rosrider/ros2_param_get.gif" alt="Get ROS Parameter" style="width: 90%;">
 </div>
