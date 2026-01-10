@@ -23,4 +23,4 @@ Follow these guides to establish a stable baseline for your robot's navigation a
 - [Timing Control](05_TIMING/README.md)
 - [Servo Control](06_SERVO/README.md)
 
-__Next Chapter:__ [Specifications](01_SPECS/README.md)
+__Next Chapter:__ [Specifications](../01_SPECS/README.md)
