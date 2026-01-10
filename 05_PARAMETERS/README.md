@@ -107,29 +107,29 @@ By carefully selecting this value, you can optimize motor smoothness, responsive
 
 A higher PWM frequency generally leads to:
 
-- Smoother Motor Operation: More frequent switching reduces motor torque ripple
-- Improved Responsiveness: Faster reaction to control inputs
+- Smoother Motor Operation: More frequent switching reduces motor torque ripple.
+- Improved Responsiveness: Faster reaction to control inputs.
 
 However, a higher frequency can also result in:
 
-- Increased Power Dissipation: More switching losses in the motor driver
-- Higher EMI: Increased electromagnetic interference
+- Increased Power Dissipation: More switching losses in the motor driver.
+- Higher EMI: Increased electromagnetic interference.
 
 To achieve the desired PWM frequency, you'll need to set the `PWM_DIV` parameter appropriately.
 This parameter divides the system clock to generate the PWM clock. A higher `PWM_DIV` value results in a lower PWM clock frequency.  
 
-- This setting determines the clock frequency for the PWM module
-- It's a hardware-based division of the system clock (80000000)
+- This setting determines the clock frequency for the PWM module.
+- It's a hardware-based division of the system clock .(80000000)
 
 __Practical Considerations:__
 
-- Start with a Moderate Frequency: Begin with a moderate PWM frequency and gradually increase it if needed
-- Monitor Motor Performance: Observe the motor's behavior and adjust the frequency accordingly
-- Consider Power Dissipation and EMI: If power consumption or EMI becomes a concern, reduce the PWM frequency
+- Start with a Moderate Frequency: Begin with a moderate PWM frequency and gradually increase it if needed.
+- Monitor Motor Performance: Observe the motor's behavior and adjust the frequency accordingly.
+- Consider Power Dissipation and EMI: If power consumption or EMI becomes a concern, reduce the PWM frequency.
 - Experiment and Fine-Tune: The best PWM frequency may vary depending on your specific application
-- Synchronized ADC: Limit PWM Frequency 1-2kHZ
+- Synchronized ADC: Limit PWM Frequency. 1-2kHZ
 - Minimum PWM Frequency: Use 50 HZ
-- Maximum PWM Frequency: Use 18000 HZ, if using high > 2 kHZ, disable `ADC_SYNC` 
+- Maximum PWM Frequency: Use 18000 HZ, if using high > 2 kHZ, disable `ADC_SYNC`.
 
 By carefully considering these factors and adjusting the `PWM_DIV` and `PWM_FRQ` parameters, you can optimize your ROSRider's performance and efficiency.
 
@@ -166,11 +166,11 @@ __Chassis Geometry__
 These parameters define the physical dimensions of the robot base, essential for converting wheel velocities into robot velocities (inverse kinematics).
 
   - `WHEEL_DIA` This parameter acts as the scalar for converting rotational motion (motor RPM or encoder ticks) into linear displacement. It is fundamental to the odometry calculation, defining the wheel circumference `C = 𝜋 * D`
-  - `BASE_WIDTH` Used to calculate the robot's angular velocity (ω) and turning radius (𝑅). A smaller base width results in faster rotation for the same wheel speed differential
+  - `BASE_WIDTH` Used to calculate the robot's angular velocity (ω) and turning radius (𝑅). A smaller base width results in faster rotation for the same wheel speed differential.
 
 __Control Limits__
 
-  - `MAX_RPM` The maximum output shaft speed defined in RPM for readability, used to normalize control inputs and cap velocity commands before conversion to the system's native `rad/s`
+  - `MAX_RPM` The maximum output shaft speed defined in RPM for readability, used to normalize control inputs and cap velocity commands before conversion to the system's native `rad/s`.
   
 {% endcapture %}
 
@@ -210,9 +210,9 @@ Standard tuning constants for the outer velocity loop.
 These values determine how aggressively the motor corrects errors between
 the target velocity and the actual velocity.  
 
- - `LEFT_KP` / `RIGHT_KP` Determines the immediate reaction to the current error. A higher value provides a faster response but may cause oscillation
- - `LEFT_KI` / `RIGHT_KI` Accumulates past errors to eliminate steady-state offset, ensuring the motor reaches the exact target speed over time
- - `LEFT_KD` / `RIGHT_KD` Predicts future error based on the rate of change, acting as a damper to reduce overshoot and oscillation
+ - `LEFT_KP` / `RIGHT_KP` Determines the immediate reaction to the current error. A higher value provides a faster response but may cause oscillation.
+ - `LEFT_KI` / `RIGHT_KI` Accumulates past errors to eliminate steady-state offset, ensuring the motor reaches the exact target speed over time.
+ - `LEFT_KD` / `RIGHT_KD` Predicts future error based on the rate of change, acting as a damper to reduce overshoot and oscillation.
 
 __Output Constraints & Saturation__
 
@@ -220,7 +220,7 @@ __Output Constraints & Saturation__
 
 __Anti-Windup__
 
- - `K_FB_WINDUP` A **feed-back** gain used to dynamically desaturate the integral term. When the calculated PWM output exceeds `UPPER_LIMIT`, the difference (excess) is multiplied by `K_FB_WINDUP` and subtracted from the integral accumulator
+ - `K_FB_WINDUP` A **feed-back** gain used to dynamically desaturate the integral term. When the calculated PWM output exceeds `UPPER_LIMIT`, the difference (excess) is multiplied by `K_FB_WINDUP` and subtracted from the integral accumulator.
 
 {% endcapture %}
 
@@ -255,14 +255,14 @@ This allows for direct torque control and faster disturbance rejection.
 
 __Loop Constraints & Calibration__
 
- - `INNER_LIMIT` The maximum allowable PWM duty cycle for the current loop output
- - `CURRENT_LEFT_MULTIPLIER` / `CURRENT_MULTIPLIER_RIGHT` A multiplier applied to the raw current sensor reading to match the scale of the current reference setpoint
- - `CURRENT_OMEGA_K_LEFT` / `CURRENT_OMEGA_K_RIGHT` These values are added to or subtracted from the base multiplier, scaled linearly as speed increases from 0 to ω max. This corrects for drift or gain changes in the current sensing circuit at high rotational speeds
+ - `INNER_LIMIT` The maximum allowable PWM duty cycle for the current loop output.
+ - `CURRENT_LEFT_MULTIPLIER` / `CURRENT_MULTIPLIER_RIGHT` A multiplier applied to the raw current sensor reading to match the scale of the current reference setpoint.
+ - `CURRENT_OMEGA_K_LEFT` / `CURRENT_OMEGA_K_RIGHT` These values are added to or subtracted from the base multiplier, scaled linearly as speed increases from 0 to ω max. This corrects for drift or gain changes in the current sensing circuit at high rotational speeds.
 
 __PI Controller__
 
- - `CURRENT_KP` The proportional term for the inner PI loop, reacting to the immediate difference between the current reference and the measured current
- - `CURRENT_KI` The integral term for the inner PI loop. It accumulates error over time to ensure the measured current accurately tracks the current reference setpoint
+ - `CURRENT_KP` The proportional term for the inner PI loop, reacting to the immediate difference between the current reference and the measured current.
+ - `CURRENT_KI` The integral term for the inner PI loop. It accumulates error over time to ensure the measured current accurately tracks the current reference setpoint.
 
 __Armature Resistance__ 
 
@@ -292,8 +292,8 @@ the spinning motor. This voltage estimate is added to the controller output as a
 allowing the PID loop to focus solely on driving the required current rather than overcoming
 the motor's generated voltage.
 
- - `LEFT_KT` / `RIGHT_KT` The constant used to calculate the Back-EMF voltage from the motor's angular velocity (ω) when the motor is beginning to spin
- - `LEFT_KT_W` / `RIGHT_KT_W` A compensation factor that adjusts the Torque Constant linearly as the motor speed increases toward its maximum
+ - `LEFT_KT` / `RIGHT_KT` The constant used to calculate the Back-EMF voltage from the motor's angular velocity (ω) when the motor is beginning to spin.
+ - `LEFT_KT_W` / `RIGHT_KT_W` A compensation factor that adjusts the Torque Constant linearly as the motor speed increases toward its maximum.
 
 {% endcapture %}
 
@@ -324,8 +324,8 @@ __Configuration__
 
 __Coefficients__
 
- - `K_FF_VEL` Adds output power proportional to the target velocity to compensate for kinetic friction
- - `K_FF_ACCEL` Adds output power proportional to the requested acceleration (change in velocity)
+ - `K_FF_VEL` Adds output power proportional to the target velocity to compensate for kinetic friction.
+ - `K_FF_ACCEL` Adds output power proportional to the requested acceleration.
 
 <div class="ck">
     <div class="ck2">
