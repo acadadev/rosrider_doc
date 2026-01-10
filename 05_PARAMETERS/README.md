@@ -161,25 +161,23 @@ MAX_RPM: 160.0
 
 __Motor & Encoder Specifications__
 
-These parameters describe the mechanical properties of the drive motors.
+These parameters define the mechanical properties of the drive motors and are foundational to the robot's kinematic model,
+serving as the basis for converting raw encoder feedback into physical wheel movement.
 
-  - `GEAR_RATIO` is the reduction ratio of the gearbox attached to the motor
-  - `ENCODER_PPR` is the raw pulses per revolution of the motor shaft, before the gearbox
+  - `GEAR_RATIO` The reduction ratio of the gearbox attached to the motor.
+  - `ENCODER_PPR` The raw pulses per revolution measured at the motor shaft (before the gearbox).
 
 __Chassis Geometry__
 
-These parameters define the physical dimensions of the robot base,
-essential for converting wheel velocities into robot velocities (inverse kinematics).
+These parameters define the physical dimensions of the robot base, essential for converting wheel velocities into robot velocities (inverse kinematics).
 
   - `WHEEL_DIA` This parameter acts as the scalar for converting rotational motion (motor RPM or encoder ticks) into linear displacement. It is fundamental to the odometry calculation, defining the wheel circumference `C = 𝜋 * D`
   - `BASE_WIDTH` Used to calculate the robot's angular velocity (ω) and turning radius (𝑅). A smaller base width results in faster rotation for the same wheel speed differential
 
 __Control Limits__
 
-  - `MAX_RPM` 
-  - he maximum output shaft speed defined in RPM for readability, used to normalize control inputs and cap velocity commands before conversion to the system's native `rad/s
-  - The maximum rotational speed of the wheel output shaft in Revolutions Per Minute. Used for scaling and normalization. Although entire system runs on `rad/s` this parameter is RPMs
-
+  - `MAX_RPM` The maximum output shaft speed defined in RPM for readability, used to normalize control inputs and cap velocity commands before conversion to the system's native `rad/s`
+  
 {% endcapture %}
 
 {% capture tab4 %}
