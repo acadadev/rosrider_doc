@@ -521,7 +521,7 @@ High-frequency noise here is common due to PWM switching and brush arcing.
 
 <div class="ck">
     <div class="ck1">
-      ⚠️&nbsp;CRITICAL WARNING
+      ⚠️&nbsp;SOFTWARE FUSES
     </div>
     <div class="ck2">
         When the current filter is disabled or set to a low EWMA,
