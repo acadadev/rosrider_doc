@@ -473,14 +473,14 @@ This filter processes the raw velocity feedback (ω) calculated from the encoder
 Filtering here is critical because differentiation of encoder ticks often produces discrete, **step-like**
 noise that can destabilize the PID loop.
 
-| Name            | ID | Type          | Details                                                                                   |
-|-----------------|----|---------------|-------------------------------------------------------------------------------------------|
-| NONE            | 0  | N / A         | No Filter                                                                                 |
-| EWMA4           | 1  | EWMA          | Exponentially Weighted Moving Average.  Low lag, light smoothing (Last 4 samples)         | 
-| EWMA8           | 2  | EWMA          | Exponentially Weighted Moving Average (Last 8 samples)                                    |
-| EWMA16          | 3  | EWMA          | Exponentially Weighted Moving Average (Last 16 samples)                                   |
-| BIQUAD_20HZ_2HZ | 4  | Biquad Filter | 2nd Order Low-Pass Filter. Cutoff at 2Hz. (assuming 20Hz loop) aggressive noise rejection |
-| BIQUAD_20HZ_4HZ | 5  | Biquad Filter | 2nd Order Low-Pass Filter. Cutoff at 4Hz.                                                 |
+| Name            | ID | Type           | Details                                                                                   |
+|-----------------|----|----------------|-------------------------------------------------------------------------------------------|
+| NONE            | 0  | N / A          | No Filter                                                                                 |
+| EWMA4           | 1  | EWMA           | Exponentially Weighted Moving Average.  Low lag, light smoothing (Last 4 samples)         | 
+| EWMA8           | 2  | EWMA           | Exponentially Weighted Moving Average (Last 8 samples)                                    |
+| EWMA16          | 3  | EWMA           | Exponentially Weighted Moving Average (Last 16 samples)                                   |
+| BIQUAD_20HZ_2HZ | 4  | Bi-Quad Filter | 2nd Order Low-Pass Filter. Cutoff at 2Hz. (assuming 20Hz loop) aggressive noise rejection |
+| BIQUAD_20HZ_4HZ | 5  | Bi-Quad Filter | 2nd Order Low-Pass Filter. Cutoff at 4Hz.                                                 |
 
 __Current Measurement Filter__
 
@@ -497,10 +497,10 @@ High-frequency noise here is common due to PWM switching and brush arcing.
 __Filter Types Explained__
 
  - ***EWMA (Exponentially Weighted Moving Average):*** A computationally efficient filter that gives more weight to recent data.
-   - Pros: Very fast to calculate, good for general noise
-   - Cons: Can introduce lag if the window size (4, 8, 16) is too large
+   - Pros: Very fast to calculate, good for general noise.
+   - Cons: Can introduce lag if the window size (4, 8, 16) is too large.
    
- - ***Biquad (Biquadratic Filter):*** A second-order recursive linear filter.
+ - ***Bi-Quad (Biquadratic Filter):*** A second-order recursive linear filter.
    - Pros: Capable of sharp cutoffs (removing specific frequencies) better than EWMA.
    - Cons: More complex; incorrect configuration can lead to instability.
 
