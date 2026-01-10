@@ -390,7 +390,6 @@ __Parameters__
 
 __Dead Zones__
 
-
 When the advanced Stribeck Compensation Velocity (SCV) model is disabled,
 these parameters define a constant PWM offset that is added to the motor output to linearly
 overcome static friction and hardware deadbands.  
