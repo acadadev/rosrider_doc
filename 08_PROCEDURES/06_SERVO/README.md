@@ -12,3 +12,5 @@ description: "Connecting and Controlling Servos"
         > Connecting and Controlling Servos
     </div>
 </div>
+
+Two standard servos can be controlled separately then main locomotion. `AUX_PWR` must be on in order for servos to power up.

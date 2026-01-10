@@ -98,12 +98,6 @@ Please note that while `MODE_VEL is functional`, it remains untested and is not 
 
 If `INITIAL_UPDATE_ERROR` you can try to send a SYSCTL command to ***restore factory defaults***  
 
----
-
-__Connecting Servos__
-
-Two standard servos can be controlled separately then main locomotion. `AUX_PWR` must be on in order for servos to power up.
-
 __OTHER CHAPTERS__
 
 - slam
@@ -111,7 +105,10 @@ __OTHER CHAPTERS__
 - cartographer
 
 __TODO__
-- make videos of pid debug tool and put some screenshots between things, maybe even a video
+
 - revisit parameters, add more description
-- move servos to procedures
-- active-breadcrump audit
+- Procedures
+- rosrider_diag, documentation
+- rosrider_node documentation
+- maybe software section
+- make videos of pid debug tool and put some screenshots between things, maybe even a video
