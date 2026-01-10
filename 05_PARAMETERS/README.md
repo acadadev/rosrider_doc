@@ -591,8 +591,6 @@ CURRENT_OMEGA_FILTER: True
 
 {% capture tab10 %}
 
-__ADC Config__
-
 ```yaml
 AUTO_BIAS: True  
 ADC_SYNC: True  
@@ -607,6 +605,16 @@ ADC_BIPHASE: False
 | ADC_MULTIPHASE | boolean | Multi-Phase ADC Measurement. BEMF compensated Mode   | False   |
 | ADC_BIPHASE    | boolean | Bi-Phase ADC Measurement                             | False   |
 
+__ADC & Calibration Configuration__
+
+This section controls how the microcontroller calibrates its sensors and synchronizes its analog
+measurements (ADC) with the motor's power output (PWM). Correct configuration here is vital
+for clean current sensing.  
+
+ - `AUTO_BIAS` When the robot is stationary (not in motion), the system measures the sensor output to find the **zero** point, automatically updating `CS_LEFT_OFFSET` and `CS_RIGHT_OFFSET`.
+ - `ADC_SYNC` Triggers the ADC sample exactly in the middle of the PWM **ON** pulse. This avoids switching noise at the edges. Required for Cascaded Mode.
+ - `ADC_MULTIPHASE` Measures at **ON**, **OFF**, and Middle points to reconstruct the current curve. It integrates the curve but specifically excludes the **OFF** time readings from the total, compensating for **Back-EMF** effects.
+ - `ADC_BIPHASE` Samples the signal twice: once in the middle of the PWM **ON** time and once in the middle of the **OFF** time.
 
 __ADC Bias Calibration__
 
@@ -620,15 +628,13 @@ CS_RIGHT_OFFSET: 0
 | CS_LEFT_OFFSET  | int16 | Current Sense Calibration Value Left  | 0       |
 | CS_RIGHT_OFFSET | int16 | Current Sense Calibration Value Right | 0       |
 
+This section contains the static calibration values for the current sensors.
+These are hardcoded integer offsets used to **zero out** the sensors if `AUTO_BIAS` is 
+disabled or if fine-tuning is required.
+
 {% endcapture %}
 
 {% capture tab11 %}
-
-__Enable Features__
-
-
-
-
 {% endcapture %}
 
 {% capture tab12 %}
