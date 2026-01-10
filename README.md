@@ -95,11 +95,6 @@ ROSRider can drive a wide range of encoder gear motors, from simple DC motors to
 
 </div>
 
-__Firmware Update__
-
-To ensure long-term usability and adaptability, the ROSRider card supports firmware updates via USB.
-This allows for continuous improvement and the addition of new features, without requiring specialized programming tools or hardware modifications.
-
 <div class="sl">
     <div class="sl1">
         > Cascaded Control Architecture

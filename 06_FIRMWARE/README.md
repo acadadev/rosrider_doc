@@ -11,6 +11,9 @@ description: "Updating Firmware of ROSRider control card"
     </div>
 </div>
 
+To ensure long-term usability and adaptability, the ROSRider card supports firmware updates via USB.
+This allows for continuous improvement and the addition of new features, without requiring specialized programming tools or hardware modifications.  
+
 __Enter Bootloader Mode:__
 - Press and Hold the Reset Button: Keep the reset button pressed.
 - Press and Hold the Boot Button: While still holding the reset button, press the boot button.
