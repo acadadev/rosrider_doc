@@ -2,7 +2,7 @@
 layout: default
 title_url: /07_PHYSICS/README.html
 title: "Controller Physics"
-description: "Feed forwards, Friction Model and Cascaded Current Control Explained"
+description: "Feed-forwards, Friction Model and Cascaded Current Control Explained"
 ---
 
 <div class="sl">
@@ -18,7 +18,7 @@ but instead of generating a direct PWM duty cycle,
 it translates the control effort into a precise Current Reference (amps)  
 
 This stage effectively linearizes the mechanical response;
-mechanical feed forwards, such as the current required to accelerate the rotor inertia or
+mechanical feed-forwards, such as the current required to accelerate the rotor inertia or
 break static friction, are calculated here and summed directly into the
 amperage target (control_effort_amps)  
 
@@ -34,7 +34,7 @@ for the physical forces required to move the load.
 The cascaded PID controller utilizes a nested loop architecture, where the outer loop calculates the 
 desired current reference, and the inner faster loop modulates the motor voltage to strictly regulate torque.
 
-This inner stage employs a **physics-based feed forward strategy**, injecting calculated terms for resistive voltage drop and estimated Back-EMF (BEMF) directly into the control output.
+This inner stage employs a **physics-based feed-forward strategy**, injecting calculated terms for resistive voltage drop and estimated Back-EMF (BEMF) directly into the control output.
 By utilizing DSP-filtered velocity and current data to predict the motor's electrical requirements, the PI controller is relieved of the bulk control effort and focuses solely on disturbance rejection.
 This decoupling of electrical dynamics from mechanical load simplifies tuning and ensures the system remains robust and stable even if the robot's weight or inertia changes significantly.
 
