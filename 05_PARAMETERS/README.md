@@ -308,7 +308,7 @@ the motor's generated voltage.
 
 {% capture tab6 %}
 
-__Physics Feed-Forwards__
+__Kinematic Feed-Forwards__
 
 ```yaml
 OUTER_FEEDFORWARD: True
@@ -338,7 +338,7 @@ __Coefficients__
 
 <div class="ck">
     <div class="ck1">
-        ⚠️&nbsp;Importnt
+        ⚠️&nbsp;Important
     </div>
     <div class="ck2">
         Velocity Feed-Forward is NOT used in Cascaded Mode. 
