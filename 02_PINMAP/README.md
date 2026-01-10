@@ -221,4 +221,4 @@ There are two I2C ports on the Jetson AGX:
   </figure>
 </div>
 
-__Next Chapter:__ [Troubleshooting](../10_DEBUG/README.md)
+__Next Chapter:__ [Updating Firmware](../06_FIRMWARE/README.md)

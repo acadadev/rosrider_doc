@@ -633,4 +633,4 @@ For configurations involving the ROS2RPI card, refer to the [ROS2RPI documentati
    tab16_content=tab16
 %}
 
-__Next Chapter:__ [Updating Firmware](../06_FIRMWARE/README.md)
+__Next Chapter:__ [Procedures in Robotics](../08_PROCEDURES/README.md)

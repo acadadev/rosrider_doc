@@ -10,9 +10,6 @@
 - title: Parameters
   url: /rosrider_doc/05_PARAMETERS/
 
-- title: Firmware Update
-  url: /rosrider_doc/06_FIRMWARE/
-
 - title: Procedures in Robotics
   url: /rosrider_doc/08_PROCEDURES/
 
@@ -21,6 +18,9 @@
 
 - title: PINMAP
   url: /rosrider_doc/02_PINMAP/
+
+- title: Firmware Update
+  url: /rosrider_doc/06_FIRMWARE/
 
 - title: Troubleshooting
   url: /rosrider_doc/10_DEBUG/
