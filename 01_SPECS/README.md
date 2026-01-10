@@ -33,7 +33,7 @@ description: "Hardware Specifications"
 | ***Synchronized ADC*** | ADC samples current synchronized with the PWM generator and selectively integrates waveform |
 | ***Current Measurement*** | Motor currents are measured and filtered |
 | ***Velocity Measurement*** | Velocity is measured via hardware QEI (Quadrature Encoder Interface) and filtered |
-| ***Kinematic Feed forwards*** | Acceleration and Velocity Feed forwards |
+| ***Kinematic Feed-forwards*** | Acceleration and Velocity Feed-forwards |
 | ***Stribeck Friction Model*** | Static Kick, Coulomb Run, Viscous Friction |
 | ***BEMF Compensation*** | Back-EMF compensated from current measurements |
 | ***Selectable Filters*** | The firmware also implements custom selectable filters for both current (I) and rotational speed (ω) filtering |
