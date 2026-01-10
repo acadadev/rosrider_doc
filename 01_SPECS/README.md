@@ -12,15 +12,15 @@ description: "Hardware Specifications"
 </div>
 
 | :---| :---|
-| ***MCU*** | 32-bit ARM Cortex: TM4C123GH6PM |
-| ***Motor Drivers*** | Two channel up to 2.5 amps with current feedback |
-| ***Hardware QEI*** | Can use any encoder gear motor, single or double phase |
-| ***Servo Control*** | Two channel standard servos |
-| ***Connections*** | Uses standard JST connectors and commodity JST cables |
-| ***RTC*** | The integrated Real-Time Clock enables precise timekeeping |
-| ***Firmware Update*** | Device firmware is updatable by end user over USB |
-| ***Enhanced Diagnostics*** | The system publishes detailed diagnostic information including battery voltage, current consumption and motor current feedback |
-| ***Synchronization***| Synchronizes with the host computer to ensure low-latency data transmission |
+| **MCU** | 32-bit ARM Cortex: TM4C123GH6PM |
+| **Motor Drivers** | Two channel up to 2.5 amps with current feedback |
+| **Hardware QEI** | Can use any encoder gear motor, single or double phase |
+| **Servo Control** | Two channel standard servos |
+| **Connections** | Uses standard JST connectors and commodity JST cables |
+| **RTC** | The integrated Real-Time Clock enables precise timekeeping |
+| **Firmware Update** | Device firmware is updatable by end user over USB |
+| **Enhanced Diagnostics** | The system publishes detailed diagnostic information including battery voltage, current consumption and motor current feedback |
+| **Synchronization**| Synchronizes with the host computer to ensure low-latency data transmission |
 
 <div class="sl">
     <div class="sl1">
@@ -29,14 +29,14 @@ description: "Hardware Specifications"
 </div>
 
 | :---| :---|
-| ***Cascaded Current Loop*** | A cascaded current loop enables precise torque control and superior dynamic response |
-| ***Synchronized ADC*** | ADC samples current synchronized with the PWM generator and selectively integrates waveform |
-| ***Current Measurement*** | Motor currents are measured and filtered |
-| ***Velocity Measurement*** | Velocity is measured via hardware QEI (Quadrature Encoder Interface) and filtered |
-| ***Kinematic Feed-forwards*** | Acceleration and Velocity Feed-forwards |
-| ***Stribeck Friction Model*** | Static Kick, Coulomb Run, Viscous Friction |
-| ***BEMF Compensation*** | Back-EMF compensated from current measurements |
-| ***Selectable Filters*** | The firmware also implements custom selectable filters for both current (I) and rotational speed (ω) filtering |
+| **Cascaded Current Loop** | A cascaded current loop enables precise torque control and superior dynamic response |
+| **Synchronized ADC** | ADC samples current synchronized with the PWM generator and selectively integrates waveform |
+| **Current Measurement** | Motor currents are measured and filtered |
+| **Velocity Measurement** | Velocity is measured via hardware QEI (Quadrature Encoder Interface) and filtered |
+| **Kinematic Feed-forwards** | Acceleration and Velocity Feed-forwards |
+| **Stribeck Friction Model** | Static Kick, Coulomb Run, Viscous Friction |
+| **BEMF Compensation** | Back-EMF compensated from current measurements |
+| **Selectable Filters** | The firmware also implements custom selectable filters for both current (I) and rotational speed (ω) filtering |
 
 The inclusion of a cascaded current loop significantly enhances the control architecture by 
 placing a high-bandwidth current controller inside the velocity loop; this allows for precise torque control, 
@@ -56,13 +56,13 @@ faster response to disturbances, and a more stable overall system compared to si
 </div>
 
 | :---| :---|
-| ***Power Input*** | 6V to 15V wide input voltage |
-| ***Software Controllable Switch*** | MOSFET switch, reverse current protection |
-| ***Hibernation*** | Auto sleep, Device hibernates if not used certain time |
-| ***Current Protection*** | PTC Resettable Fuse, and also software current protection |
-| ***Power Input Connector*** | XT30 or Klemens Type Connector |
-| ***Power Output*** | Software Controllable Auxiliary Power Output 5V, 400mA |
-| ***Power Monitoring*** | Measures and reports bus voltage, bus current, independent motor currents |
+| **Power Input** | 6V to 15V wide input voltage |
+| **Software Controllable Switch** | MOSFET switch, reverse current protection |
+| **Hibernation** | Auto sleep, Device hibernates if not used certain time |
+| **Current Protection** | PTC Resettable Fuse, and also software current protection |
+| **Power Input Connector** | XT30 or Klemens Type Connector |
+| **Power Output** | Software Controllable Auxiliary Power Output 5V, 400mA |
+| **Power Monitoring** | Measures and reports bus voltage, bus current, independent motor currents |
 
 Built-in current monitoring and a hardware-resettable fuse safeguard the motors and battery. Software-based current limiting and remote threshold configuration enhance safety and flexibility.
 A 5V power supply can be enabled or disabled via software, providing flexibility for powering external sensors and devices.
@@ -88,11 +88,11 @@ The device currently uses I2C for communication, but it can also operate over US
 </div>
 
 | :---| :---|
-| ***ROS Drivers*** | C++ Drivers for ROS2 Humble and ROS2 Jazzy |
-| ***Gazebo Environment*** | Gazebo implementation and environments for our robots |
-| ***PID Tuning*** | Custom software for PID Tuning |
-| ***Parameter Manager*** | Custom software to quickly and remotely set parameters. Useful for tuning |
-| ***Calibration Software*** | Scripts to determine torque constant of motors |
+| **ROS Drivers** | C++ Drivers for ROS2 Humble and ROS2 Jazzy |
+| **Gazebo Environment** | Gazebo implementation and environments for our robots |
+| **PID Tuning** | Custom software for PID Tuning |
+| **Parameter Manager** | Custom software to quickly and remotely set parameters. Useful for tuning |
+| **Calibration Software** | Scripts to determine torque constant of motors |
 
 This project is primarily a software-driven effort, and we continually develop and update our software as part of an ongoing, continuous development cycle.
 
