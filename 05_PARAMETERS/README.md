@@ -544,15 +544,15 @@ It is typically used to **sharpen** the response or map the linear PID output to
 
 __Output Filter Scalers__
 
-```yaml
-TANH_DIV: 2.0  
-SIGM_DIV: 10.0  
-```
-
 | Parameter | Type  | Description                                                  | Default |
 |-----------|-------|--------------------------------------------------------------|---------|
 | TANH_DIV  | float | Divider to scale the Tanh input range. Controls curve width. | 2.0     |
 | SIGM_DIV  | float | Divider to scale the Sigmoid input range.                    | 10.0    |
+
+```yaml
+TANH_DIV: 2.0  
+SIGM_DIV: 10.0  
+```
 
 The Output Filter applies a non-linear transformation (Hyperbolic Tangent or Sigmoid) to the final
 control signal, creating a **soft clipping** effect that smooths out aggressive commands near the
@@ -572,14 +572,6 @@ For every calculation below, you have a binary choice:
  - `False` **Raw Data**: The controller sees the sensor data exactly as it happens. It is instant but can be "jittery" or noisy.
  - `True` **Filtered Data**: The controller sees a smoothed-out version of the data. It eliminates noise but reacts slightly slower (milliseconds of delay).
 
-```yaml
-VOLTAGE_FILTER: True  
-BEMF_FILTERED_OMEGA: True  
-PID_FILTERED_OMEGA: True  
-SCV_FILTERED_OMEGA: True  
-CURRENT_OMEGA_FILTER: True  
-```
-
 | Parameter            | Type    | Description                                           | Default |
 |----------------------|---------|-------------------------------------------------------|---------|
 | VOLTAGE_FILTER       | boolean | Use Filtered voltage for Cascaded Loop Calculations   | False   |
@@ -587,6 +579,14 @@ CURRENT_OMEGA_FILTER: True
 | PID_FILTERED_OMEGA   | boolean | Use Filtered Omega for PID Error Calculations         | False   |
 | SCV_FILTERED_OMEGA   | boolean | Use Filtered Omega for SCV Model                      | False   |
 | CURRENT_OMEGA_FILTER | boolean | Use Filterd Omega for Current Multiplier Compensation | False   |
+
+```yaml
+VOLTAGE_FILTER: True  
+BEMF_FILTERED_OMEGA: True  
+PID_FILTERED_OMEGA: True  
+SCV_FILTERED_OMEGA: True  
+CURRENT_OMEGA_FILTER: True  
+```
 
 {% endcapture %}
 
