@@ -30,7 +30,7 @@ The ROSRider firmware incorporates a timing control feature that synchronizes it
     </div>
 </div>
 
-Create a ROS Workspace
+Create a ROS Workspace:
 
 <div class="highlight notranslate position-relative">
   <div class="highlight">
@@ -47,7 +47,7 @@ cd rosrider_ws/src</pre>
   </clipboard-copy>
 </div>
 
-Clone the ROSRider Repository
+Clone the ROSRider Repository:
 
 <div class="highlight notranslate position-relative">
   <div class="highlight">
@@ -63,7 +63,7 @@ Clone the ROSRider Repository
   </clipboard-copy>
 </div>
 
-If not done during ROS installation, Initialize ROS Dependency System.
+If not done during ROS installation, Initialize ROS Dependency System:
 
 <div class="highlight notranslate position-relative">
   <div class="highlight">
@@ -80,7 +80,7 @@ rosdep update</pre>
   </clipboard-copy>
 </div>
 
-Install ROS Dependencies
+Install ROS Dependencies:
 
 <div class="highlight notranslate position-relative">
   <div class="highlight">
@@ -97,7 +97,7 @@ rosdep install --from-paths src -y --ignore-src</pre>
   </clipboard-copy>
 </div>
 
-Build the Workspace
+Build the Workspace:
 
 <div class="highlight notranslate position-relative">
   <div class="highlight">
