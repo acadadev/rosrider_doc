@@ -361,6 +361,30 @@ SCV_LATCH_THRESHOLD: 1.0
 | SCV_OMEGA_THRESHOLD    | float   | Below this threshold SCV will not be triggered         | 0.05    | 
 | SCV_LATCH_THRESHOLD    | float   | Below this threshold Static kick will not be triggered | 1.0     | 
 
+__Advanced Friction Compensation (Stribeck Model)__
+
+This model implements a comprehensive physics-based friction model entirely within the outer **PID loop.**
+By preemptively calculating the voltage required to overcome mechanical resistance, it allows the
+controller to break stiction and maintain motion without waiting for integral error to build up.
+
+The model dynamically calculates a feedforward voltage that decays exponentially from a high 
+**Static Kick** down to a steady **Coulomb level** as speed increases, while simultaneously adding a linear **Viscous** term.
+
+To prevent jitter at very low speeds, the model features a specific gating mechanism controlled by 
+`SCV_LATCH_THRESHOLD`.  
+
+ - **Above Threshold:** The full Stribeck model is active. (Static Kick + Coulomb + Viscous)
+ - **Below Thrshold:** The aggressive static kick and viscous terms are **disabled.** Only the constant `COULOMB_RUN` voltage is applied. This prevents low-speed oscillation while maintaining sufficient holding force to keep the robot ready to move.
+
+__Parameters__
+
+ - `OUTER_SCV` Enables SCV Model. If `False` simple deadzones are used
+ - `STATIC_KICK` The high initial voltage spike required to break static friction (stiction) when starting motion. This is the peak value of the exponential curve
+ - `COULOMB_RUN` The **floor** voltage required to keep the motor spinning at the lowest possible non-zero speed. When velocity is below the latch threshold, this is the only voltage applied
+ - `STRIBECK_WIDTH` The exponential decay rate. A higher value causes the **Static Kick** to fade away more sharply as the robot accelerates, transitioning quickly to the Coulomb level
+ - `VISCOUS_FRICTION`
+ - `SCV_LATCH_THRESHOLD`
+
 __Dead Zones__
 
 ```yaml
