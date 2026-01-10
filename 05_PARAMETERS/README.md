@@ -311,7 +311,7 @@ K_FF_ACCEL: 0.08
 | K_FF_VEL          | float   | Velocity Feed-forward / s      | 0.16    |
 | K_FF_ACCEL        | float   | Acceleration Feed-forward / s² | 0.12    | 
 
-__Physics Based Feed-Forwards__
+__Physics Feed-Forwards (Outer Loop)__
 
 Adds predictive control signals to the outer loop.
 Instead of waiting for an error to develop (as PID does),
