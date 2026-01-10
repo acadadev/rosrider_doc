@@ -14,7 +14,6 @@ Unlike pre-built kits that can be costly and limiting, it can be integrated with
 This approach encourages creativity, reduces costs, and promotes the reuse of existing components, making robotics accessible to a wider audience.
 
 <div class="img_dv">
-
   <figure class="img_fg25">
     <img class="img_sh" src="images/rosrider/sorcerer_rosrider.png" alt="Sorcerer with ROSRider" style="width: 100%;">
     <figcaption>Fig 1. Minimal chassis designed for lane-following tasks using image processing</figcaption>
