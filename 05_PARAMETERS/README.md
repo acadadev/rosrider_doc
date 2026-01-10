@@ -206,6 +206,30 @@ K_FB_WINDUP: 0.5
 | RIGHT_KD    | float  | PID differential for right motor | 0.0     |
 | K_FB_WINDUP | float  | Anti windup coefficient          | 0.5     |
 
+__PID Control Loop Parameters__
+
+These parameters govern the closed-loop velocity control for the drive motors.
+The system uses a classic PID controller with a back-calculation anti-windup
+strategy to manage integrator saturation.  
+
+__PID Coefficients__
+
+Standard tuning constants for the outer velocity loop.
+These values determine how aggressively the motor corrects errors between
+the target velocity and the actual velocity.  
+
+ - `LEFT_KP` / `RIGHT_KP` Determines the immediate reaction to the current error. A higher value provides a faster response but may cause oscillation
+ - `LEFT_KI` / `RIGHT_KI` Accumulates past errors to eliminate steady-state offset, ensuring the motor reaches the exact target speed over time
+ - `LEFT_KD` / `RIGHT_KD` Predicts future error based on the rate of change, acting as a damper to reduce overshoot and oscillation
+
+__Output Constraints & Saturation__
+
+ - `UPPER_LIMIT` Hard caps the controller output to match the physical limits of the motor driver or to limit maximum voltage.
+
+__Anti-Windup__
+
+ - `K_FB_WINDUP` A **back-calculation** gain used to dynamically desaturate the integral term
+
 {% endcapture %}
 
 {% capture tab5 %}
