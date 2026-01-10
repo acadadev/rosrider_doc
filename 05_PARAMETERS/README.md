@@ -378,14 +378,21 @@ To prevent jitter at very low speeds, the model features a specific gating mecha
 
 __Parameters__
 
- - `OUTER_SCV` Enables SCV Model. If `False` simple deadzones are used
+ - `OUTER_SCV` Enables SCV Model. If `False` simple dead zones are used
  - `STATIC_KICK` The high initial voltage spike required to break static friction (stiction) when starting motion. This is the peak value of the exponential curve
  - `COULOMB_RUN` The **floor** voltage required to keep the motor spinning at the lowest possible non-zero speed. When velocity is below the latch threshold, this is the only voltage applied
  - `STRIBECK_WIDTH` The exponential decay rate. A higher value causes the **Static Kick** to fade away more sharply as the robot accelerates, transitioning quickly to the Coulomb level
- - `VISCOUS_FRICTION`
- - `SCV_LATCH_THRESHOLD`
+ - `VISCOUS_FRICTION` The linear friction coefficient. Accounts for resistance that scales with speed. (e.g., grease viscosity, floor drag)
+ - `SCV_LATCH_THRESHOLD` The low-speed safety gate. When velocity (ω) is below this value, the Static Kick and Viscous terms are disabled to prevent oscillation, leaving only the steady Coulomb Run voltage.
+ - `VISCOUS_FRICTION_LIMIT` Hard limits the maximum voltage contribution from the viscous friction term
+ - `EB_FF_LIMIT` Limits the maximum voltage that the Back-EMF estimator is allowed to inject into the controller
+ - `SCV_OMEGA_THRESHOLD` Zero-Velocity Noise Gate. A cutoff value below which the target velocity (ω) is mathematically treated as exactly **0.0**
 
 __Dead Zones__
+
+When the advanced Stribeck Compensation Velocity (SCV) model is disabled,
+these parameters define a constant PWM offset that is added to the motor output to linearly
+overcome static friction and hardware deadbands.  
 
 ```yaml
 LEFT_FORWARD_DEADZONE: 12  
@@ -400,6 +407,7 @@ RIGHT_REVERSE_DEADZONE: 12
 | LEFT_REVERSE_DEADZONE  | int16 | Left Motor Reverse Deadzone  | 0       |
 | RIGHT_FORWARD_DEADZONE | int16 | Right Motor Forward Deadzone | 0       |
 | RIGHT_REVERSE_DEADZONE | int16 | Right Motor Reverse Deadzone | 0       |
+
 {% endcapture %}
 
 {% capture tab8 %}
@@ -435,7 +443,6 @@ The `MotorConstantLeft` and `MotorConstantRight` values are used to multiply the
 - `TRIM_GAIN` is a global gain factor that scales the overall motor output
 - `TRIM_MOTOR_K` is the nominal motor constant
 - `TRIM_CONSTANT` is a small value used to adjust the motor output
-
 
 By adjusting the TRIM parameter, we can effectively fine-tune the motor outputs to ensure accurate and precise robot motion, even in the presence of minor variations in motor performance or mechanical alignment.    
 
