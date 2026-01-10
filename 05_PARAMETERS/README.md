@@ -636,9 +636,6 @@ disabled or if fine-tuning is required.
 {% endcapture %}
 
 {% capture tab11 %}
-{% endcapture %}
-
-{% capture tab12 %}
 
 | Parameter     | Type    | Description                                                                                                   | Default |
 |---------------|---------|---------------------------------------------------------------------------------------------------------------|---------|
@@ -678,7 +675,7 @@ guaranteeing fresh data is available without race conditions.
 
 {% endcapture %}
 
-{% capture tab13 %}
+{% capture tab12 %}
 
 __ROS Parameters__
 
@@ -704,7 +701,7 @@ PUB_DIAGNOSTICS: True
 
 {% endcapture %}
 
-{% capture tab14 %}
+{% capture tab13 %}
 
 __Electrical Limits__
 
@@ -728,7 +725,7 @@ INA219_CAL: 8192
 
 {% endcapture %}
 
-{% capture tab15 %}
+{% capture tab14 %}
 
 __Experimental Features__
 
@@ -824,18 +821,16 @@ For configurations involving the ROS2RPI card, refer to the [ROS2RPI documentati
    tab9_content=tab9
    tab10_title="ADC" 
    tab10_content=tab10
-   tab11_title="Features" 
+   tab11_title="Sync" 
    tab11_content=tab11
-   tab12_title="Sync" 
+   tab12_title="ROS" 
    tab12_content=tab12
-   tab13_title="ROS" 
+   tab13_title="Limits" 
    tab13_content=tab13
-   tab14_title="Limits" 
+   tab14_title="Experimental" 
    tab14_content=tab14
-   tab15_title="Experimental" 
+   tab15_title="System" 
    tab15_content=tab15
-   tab16_title="System" 
-   tab16_content=tab16
 %}
 
-__Next Chapter:__ [Procedures in Robotics](../08_PROCEDURES/README.md)
+__Next Chapter:__ [Procedures](../08_PROCEDURES/README.md)
