@@ -222,11 +222,11 @@ To ensure proper I2C communication, verify that I2C is enabled at the kernel lev
 There are two I2C ports on the Jetson AGX:
 
 <div class="img_dv">
-  <figure class="img_fg25">
+  <figure class="img_fg33">
     <img class="img_sh" src="../images/rosrider/jetson_agx_i2c_0.png" alt="Jetson AGX I2C Port 1" style="width: 100%;">
     <figcaption>Jetson AGX I2C Port 0</figcaption>
   </figure>
-  <figure class="img_fg25">
+  <figure class="img_fg33">
     <img class="img_sh" src="../images/rosrider/jetson_agx_i2c_1.png" alt="Jetson AGX I2C Port 2" style="width: 100%;">
     <figcaption>Jetson AGX I2C Port 1</figcaption>
   </figure>

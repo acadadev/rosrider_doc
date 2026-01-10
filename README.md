@@ -45,50 +45,42 @@ This feature prevents boot conflicts caused by LiDAR serial output during system
   </figure>
 </div>
 
-__Gazebo Simulation Support__
-
-To further enhance the integration of ROSRider with open-source robotics, we have developed two open-source robot platforms: Sorcerer and Caretta. These low-cost, pre-built robots, accompanied by URDF files for ROS and Gazebo simulation, streamline the development process. Developers can rapidly prototype and test algorithms in simulation before deploying them to physical hardware, significantly accelerating development time and reducing costs associated with physical experimentation.
-
-<div class="img_dv">
-  
-  <figure class="img_fg25">
-    <img class="img_sh" src="images/rosrider/gazebo_caretta.png" alt="Gazebo CARETTA" style="width: 100%;">
-    <figcaption>Fig 5. Gazebo Simulation with CARETTA</figcaption>
-  </figure>
-
-  <figure class="img_fg25">
-    <img class="img_sh" src="images/rosrider/gazebo_sorcerer.png" alt="Gazebo SORCERER" style="width: 100%;">
-    <figcaption>Fig 6. Gazebo Simulation with SORCERER</figcaption>
-  </figure>
-
-  <figure class="img_fg25">
-    <img class="img_sh" src="images/rosrider/rviz_cartographer_sq.png" alt="Cartographer RVIZ" style="width: 100%;">
-    <figcaption>Fig 7. RVIZ visualization of Simulated Robot</figcaption>
-  </figure>
-
-</div>
-
 __Supported Motors__
 
 ROSRider can drive a wide range of encoder gear motors, from simple DC motors to high-precision gear motors commonly found in robotic vacuum cleaners. It supports both single-phase and dual-phase encoders, with parameters such as encoder PPR and gear reduction ratio configurable through YAML files. The dual-channel drivers, delivering 1A continuous and 2.8A peak current, provide ample power for various robotic applications.
 
 <div class="img_dv" style="padding-bottom:20px;">
-  
   <figure class="img_fg25">
     <img class="img_sh" src="images/rosrider/metal_gear_motor_a.png" alt="Metal Gear Motor" style="width: 100%;">
     <figcaption>Fig 8. Metal Gear Motor</figcaption>
   </figure>
-
   <figure class="img_fg25">
     <img class="img_sh" src="images/rosrider/plastic_gear_motor.png" alt="Plastic Gear Motor" style="width: 100%;">
     <figcaption>Fig 9. Plastic Gear Motor (DG01D-E)</figcaption>
   </figure>
-
   <figure class="img_fg25">
     <img class="img_sh" src="images/rosrider/vacuum_robot_motor.png" alt="Vacuum cleaner robot spare motor" style="width: 100%;">
     <figcaption>Fig 10. Vacuum Cleaner Spare Part</figcaption>
   </figure>
+</div>
 
+__Gazebo Simulation Support__
+
+To further enhance the integration of ROSRider with open-source robotics, we have developed two open-source robot platforms: Sorcerer and Caretta. These low-cost, pre-built robots, accompanied by URDF files for ROS and Gazebo simulation, streamline the development process. Developers can rapidly prototype and test algorithms in simulation before deploying them to physical hardware, significantly accelerating development time and reducing costs associated with physical experimentation.
+
+<div class="img_dv">
+  <figure class="img_fg25">
+    <img class="img_sh" src="images/rosrider/gazebo_caretta.png" alt="Gazebo CARETTA" style="width: 100%;">
+    <figcaption>Fig 5. Gazebo Simulation with CARETTA</figcaption>
+  </figure>
+  <figure class="img_fg25">
+    <img class="img_sh" src="images/rosrider/gazebo_sorcerer.png" alt="Gazebo SORCERER" style="width: 100%;">
+    <figcaption>Fig 6. Gazebo Simulation with SORCERER</figcaption>
+  </figure>
+  <figure class="img_fg25">
+    <img class="img_sh" src="images/rosrider/rviz_cartographer_sq.png" alt="Cartographer RVIZ" style="width: 100%;">
+    <figcaption>Fig 7. RVIZ visualization of Simulated Robot</figcaption>
+  </figure>
 </div>
 
 <div class="sl">
