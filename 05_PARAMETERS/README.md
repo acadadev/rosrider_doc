@@ -651,7 +651,6 @@ CS_LEFT_OFFSET: 0
 CS_RIGHT_OFFSET: 0  
 ```
 
-
 {% endcapture %}
 
 {% capture tab11 %}
@@ -665,16 +664,6 @@ CS_RIGHT_OFFSET: 0
 | SYNC_INTERVAL | uint8   | Defines how often the sync logic runs (e.g., 8 means check and adjust every 8th loop cycle).                  | 8       |
 | DT_I2C        | uint16  | The desired delay between the sync event and the loop start.                                                  | 32      |
 | DT_THRESHOLD  | uint16  | If the phase error is less than this value (in ticks), no adjustment is made. Prevents **hunting** or jitter. | 2       |
-
-```yaml
-AUTO_SYNC: True  
-SYNC_KP: 256  
-SYNC_KI: 4  
-SYNC_LIMIT: 4096  
-SYNC_INTERVAL: 8  
-DT_I2C: 32  
-DT_THRESHOLD: 2  
-```
 
 This feature functions as a software-based Phase Locked Loop (PLL).
 It synchronizes the device's internal interrupt timer with an external 
@@ -691,12 +680,21 @@ The system targets a specific delay `DT_I2C` rather than zero delay.
 This ensures the calculation loop always starts exactly 1ms (32 ticks) after data reception,
 guaranteeing fresh data is available without race conditions.  
 
+__Typical Values__
+
+```yaml
+AUTO_SYNC: True  
+SYNC_KP: 256  
+SYNC_KI: 4  
+SYNC_LIMIT: 4096  
+SYNC_INTERVAL: 8  
+DT_I2C: 32  
+DT_THRESHOLD: 2  
+```
 
 {% endcapture %}
 
 {% capture tab12 %}
-
-__ROS Parameters__
 
 | Parameter       | Type   | Description                                     | Default          |
 |-----------------|--------|-------------------------------------------------|------------------|
@@ -707,6 +705,30 @@ __ROS Parameters__
 | PUB_ODOMETRY    | bool   | Enables or disables odometry data publication   | True             |
 | PUB_JOINTS      | bool   | Enables or disables joint state publication     | True             |
 | PUB_DIAGNOSTICS | bool   | Enables or disables diagnostic data publication | True             |
+
+This section defines how the driver interacts with the ROS, 
+including the TF Tree (coordinate frames), Topic Names, and Data Publishing toggles.
+
+**Coordinate Frames & TF Tree**
+
+These parameters define the naming convention for the robot's coordinate systems.
+The driver uses these IDs when constructing the standard `nav_msgs/Odometry` packet.
+The `header.frame_id` will be set to `ODOM_FRAME_ID` and the `child_frame_id` will be set to `BASE_FRAME_ID`.  
+
+ - `ODOM_FRAME_ID` The driver publishes the transform from this frame to the main frame.
+ - `BASE_FRAME_ID` The name of the frame for the mobile robot.
+
+**Data Publishing Toggles**
+
+These booleans act as switches for the driver's output streams.
+You can disable specific streams to save bandwidth or avoid conflicts.
+
+ - `BROADCAST_TF2` Set to `False` if you are using an external localizer (like `robot_localization` or `cartographer`) to handle the TF tree.
+ - `PUB_ODOMETRY` Decides if the driver publishes `nav_msgs/Odometry` messages containing position and velocity covariance.
+ - `PUB_JOINTS` Required for `robot_state_publisher` to visualize wheel rotation in URDF / RViz.
+ - `PUB_DIAGNOSTICS ` Decides if the driver publishes `msg/Diagnostics.msg` containing battery voltage, error flags, and internal status.
+
+__Typical Values__
 
 ```yaml
 ODOM_FRAME_ID: 'odom'  
@@ -733,6 +755,8 @@ __Electrical Limits__
 | RIGHT_AMP_LIMIT | float  | Maximum current limit for the right motor      | 1.6     |
 | INA219_CAL      | uint16 | INA219 Calibration Value                       | 8192    |
 
+__Typical Values__
+
 ```yaml
 MAIN_AMP_LIMIT: 3.6  
 BAT_VOLTS_HIGH: 15.0  
@@ -755,16 +779,18 @@ __Experimental Features__
 | CROSS_K_LEFT          | float | Cross Feedback Left Coefficient  | 1.0     |
 | CROSS_K_RIGHT         | float | Cross Feedback Right Coefficient | 1.0     |
 
+| Parameter  | Type    | Description                      | Default |
+|------------|---------|----------------------------------|---------|
+| AUTO_BRAKE | boolean | Auto Brake Enabled               | False   |
+
+__Typical Values__
+
 ```yaml
 CROSS_COUPLED_CONTROL: True  
 CROSS_KP: 4.0  
 CROSS_K_LEFT: 1.0  
 CROSS_K_RIGHT: 1.0  
 ```
-
-| Parameter  | Type    | Description                      | Default |
-|------------|---------|----------------------------------|---------|
-| AUTO_BRAKE | boolean | Auto Brake Enabled               | False   |
 
 ```yaml
 AUTO_BRAKE: False
