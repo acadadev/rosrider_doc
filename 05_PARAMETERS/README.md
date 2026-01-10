@@ -265,8 +265,8 @@ This allows for direct torque control and faster disturbance rejection.
 __Loop Constraints & Calibration__
 
  - `INNER_LIMIT` The maximum allowable PWM duty cycle for the current loop output
- - `CURRENT_LEFT_MULTIPLIER` / `CURRENT_MULTIPLIER_RIGHT` A multiplier applied to the raw current sensor reading to match the scale of the current reference setpoint.
- - `CURRENT_OMEGA_K_LEFT` / `CURRENT_OMEGA_K_RIGHT` These values are added to or subtracted from the base multiplier, scaled linearly as speed increases from 0 to ω max. This corrects for drift or gain changes in the current sensing circuit at high rotational speeds.
+ - `CURRENT_LEFT_MULTIPLIER` / `CURRENT_MULTIPLIER_RIGHT` A multiplier applied to the raw current sensor reading to match the scale of the current reference setpoint
+ - `CURRENT_OMEGA_K_LEFT` / `CURRENT_OMEGA_K_RIGHT` These values are added to or subtracted from the base multiplier, scaled linearly as speed increases from 0 to ω max. This corrects for drift or gain changes in the current sensing circuit at high rotational speeds
 
 __PI Controller__
 
