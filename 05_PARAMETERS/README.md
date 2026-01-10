@@ -21,6 +21,12 @@ Dynamic parameters, such as PID control gains, can be adjusted on-the-fly using 
 
 {% capture tab1 %}
 
+| Parameter    | Type  | Description                         | Default |
+|--------------|-------|-------------------------------------|---------|
+| CONFIG_FLAGS | uint8 | Hardware Config Bitmask             | 48      |
+| UPDATE_RATE  | uint8 | Outer PID Loop Update Rate          | 20      |
+| DRIVE_MODE   | uint8 | Drive Mode Configuration, 3 for ROS | 3       |
+
 ```yaml
 CONFIG_FLAGS: 112  
 UPDATE_RATE: 20  
@@ -70,17 +76,17 @@ __Drive Mode__
 
 {% capture tab2 %}
 
-```yaml
-PWM_DIV: 16  
-PWM_SCALE: 256  
-PWM_FRQ: 1000  
-```
-
 | Parameter | Type   | Description                         | Default |
 |-----------|--------|-------------------------------------|---------|
 | PWM_DIV   | uint8  | Drive Mode Configuration, 3 for ROS | 64      |
 | PWM_SCALE | uint16 | Hardware Config Bitmask             | 256     |
 | PWM_FRQ   | uint16 | Outer PID Loop Update Rate          | 50      |
+
+```yaml
+PWM_DIV: 16  
+PWM_SCALE: 256  
+PWM_FRQ: 1000  
+```
 
 __Understanding PWM Frequency and its Impact on Motor Control__
 
