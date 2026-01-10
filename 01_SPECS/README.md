@@ -75,9 +75,9 @@ ROSRider utilizes standard JST connectors for motor and I2C connections, allowin
 </div>
 
 | :---| :---|
-| ***I2C*** | Dual QWIC ports, also available on header |
-| ***USB*** | CDC-USB Serial, 921600 Bauds |
-| ***Serial*** | Standard Serial Port, available as JST connector or header |
+| **I2C** | Dual QWIC ports, also available on header |
+| **USB** | CDC-USB Serial, 921600 Bauds |
+| **Serial** | Standard Serial Port, available as JST connector or header |
 
 The device currently uses I2C for communication, but it can also operate over USB, which is primarily used for firmware updates.
 
