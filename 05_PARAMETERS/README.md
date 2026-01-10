@@ -27,12 +27,6 @@ Dynamic parameters, such as PID control gains, can be adjusted on-the-fly using 
 | UPDATE_RATE  | uint8 | Outer PID Loop Update Rate          | 20      |
 | DRIVE_MODE   | uint8 | Drive Mode Configuration, 3 for ROS | 3       |
 
-```yaml
-CONFIG_FLAGS: 112  
-UPDATE_RATE: 20  
-DRIVE_MODE: 3  
-```
-
 __Hardware Configuration Flags__
 
 The `CONFIG_FLAGS` parameter in the ROSRider configuration file is a bitmask that controls various hardware settings. By setting specific bits within this flag, you can configure different aspects of the ROSRider's behavior.
@@ -71,6 +65,13 @@ __Drive Mode__
 | MODE_VEL   | 2     | Command Velocity |
 | MODE_PID   | 3     | PID, ROS Default |              
 
+__Typical Values__
+
+```yaml
+CONFIG_FLAGS: 112  
+UPDATE_RATE: 20  
+DRIVE_MODE: 3  
+```
 
 {% endcapture %}
 
@@ -81,12 +82,6 @@ __Drive Mode__
 | PWM_DIV   | uint8  | Drive Mode Configuration, 3 for ROS | 64      |
 | PWM_SCALE | uint16 | Hardware Config Bitmask             | 256     |
 | PWM_FRQ   | uint16 | Outer PID Loop Update Rate          | 50      |
-
-```yaml
-PWM_DIV: 16  
-PWM_SCALE: 256  
-PWM_FRQ: 1000  
-```
 
 __Understanding PWM Frequency and its Impact on Motor Control__
 
@@ -133,10 +128,17 @@ __Practical Considerations:__
 
 By carefully considering these factors and adjusting the `PWM_DIV` and `PWM_FRQ` parameters, you can optimize your ROSRider's performance and efficiency.
 
+__Typical Values__
+
+```yaml
+PWM_DIV: 16  
+PWM_SCALE: 256  
+PWM_FRQ: 1000  
+```
+
 {% endcapture %}
 
 {% capture tab3 %}
-
 
 | Parameter   | Type   | Description                   | Default |
 |-------------|--------|-------------------------------|---------|
@@ -145,14 +147,6 @@ By carefully considering these factors and adjusting the `PWM_DIV` and `PWM_FRQ`
 | WHEEL_DIA   | float  | Diameter of the wheels        | 0.0685  |
 | BASE_WIDTH  | float  | Distance between the wheels   | 0.168   |
 | MAX_RPM     | float  | Distance between the wheels   | 90.0    |
-
-```yaml
-GEAR_RATIO: 65.0  
-ENCODER_PPR: 48  
-WHEEL_DIA: 0.0685  
-BASE_WIDTH: 0.174  
-MAX_RPM: 160.0  
-```
 
 __Motor & Encoder Specifications__
 
@@ -172,7 +166,17 @@ These parameters define the physical dimensions of the robot base, essential for
 __Control Limits__
 
   - `MAX_RPM` The maximum output shaft speed defined in RPM for readability, used to normalize control inputs and cap velocity commands before conversion to the system's native `rad/s`.
-  
+
+__Typical Values__
+
+```yaml
+GEAR_RATIO: 65.0  
+ENCODER_PPR: 48  
+WHEEL_DIA: 0.0685  
+BASE_WIDTH: 0.174  
+MAX_RPM: 160.0  
+```
+
 {% endcapture %}
 
 {% capture tab4 %}
@@ -187,17 +191,6 @@ __Control Limits__
 | RIGHT_KI    | float  | PID integral for right motor     | 1.2     |
 | RIGHT_KD    | float  | PID differential for right motor | 0.0     |
 | K_FB_WINDUP | float  | Anti windup coefficient          | 0.5     |
-
-```yaml
-UPPER_LIMIT: 240  
-LEFT_KP: 8.0  
-LEFT_KI: 6.0  
-LEFT_KD: 0.0  
-RIGHT_KP: 8.0  
-RIGHT_KI: 6.0  
-RIGHT_KD: 0.0  
-K_FB_WINDUP: 0.5  
-```
 
 __PID Control Loop Parameters__
 
@@ -223,6 +216,19 @@ __Anti-Windup__
 
  - `K_FB_WINDUP` A **feed-back** gain used to dynamically desaturate the integral term. When the calculated PWM output exceeds `UPPER_LIMIT`, the difference (excess) is multiplied by `K_FB_WINDUP` and subtracted from the integral accumulator.
 
+__Typical Values__
+
+```yaml
+UPPER_LIMIT: 240  
+LEFT_KP: 8.0  
+LEFT_KI: 6.0  
+LEFT_KD: 0.0  
+RIGHT_KP: 8.0  
+RIGHT_KI: 6.0  
+RIGHT_KD: 0.0  
+K_FB_WINDUP: 0.5  
+```
+
 {% endcapture %}
 
 {% capture tab5 %}
@@ -238,18 +244,6 @@ __Anti-Windup__
 | CURRENT_OMEGA_K_LEFT    | float   | Current Omega Compensation Left       | 0.0     |
 | CURRENT_OMEGA_K_RIGHT   | float   | Current Omega Compensation Right      | 0.0     |
 | R_ARM                   | float   | Motor Armature Resistance             | 2.0     |
-
-```yaml
-CASCADED: True  
-INNER_LIMIT: 240  
-CURRENT_KP: 8.0  
-CURRENT_KI: 6.0  
-CURRENT_MULTIPLIER_LEFT: 4.8  
-CURRENT_MULTIPLIER_RIGHT: 4.8  
-CURRENT_OMEGA_K_LEFT: -2.4  
-CURRENT_OMEGA_K_RIGHT: -2.4  
-R_ARM: 2.0  
-```
 
 __Cascaded control architecture__
 
@@ -280,13 +274,6 @@ Accurate modeling here improves the feedforward performance and odometry estimat
 
 __Torque Constant & Back-EMF Model__
 
-```yaml
-LEFT_KT: 0.016
-LEFT_KT_W: -0.008
-RIGHT_KT: 0.016
-RIGHT_KT_W: -0.008
-```
-
 | Parameter  | Type  | Description                              | Default |
 |------------|-------|------------------------------------------|---------|
 | LEFT_KT    | float | Torque Constant for Left Motor           | 0.016   |
@@ -302,6 +289,27 @@ the motor's generated voltage.
  - `LEFT_KT` / `RIGHT_KT` The constant used to calculate the Back-EMF voltage from the motor's angular velocity (ω) when the motor is beginning to spin.
  - `LEFT_KT_W` / `RIGHT_KT_W` A compensation factor that adjusts the Torque Constant linearly as the motor speed increases toward its maximum.
 
+__Typical Values__
+
+```yaml
+CASCADED: True  
+INNER_LIMIT: 240  
+CURRENT_KP: 8.0  
+CURRENT_KI: 6.0  
+CURRENT_MULTIPLIER_LEFT: 4.8  
+CURRENT_MULTIPLIER_RIGHT: 4.8  
+CURRENT_OMEGA_K_LEFT: -2.4  
+CURRENT_OMEGA_K_RIGHT: -2.4  
+R_ARM: 2.0  
+```
+
+```yaml
+LEFT_KT: 0.016
+LEFT_KT_W: -0.008
+RIGHT_KT: 0.016
+RIGHT_KT_W: -0.008
+```
+
 {% endcapture %}
 
 {% capture tab6 %}
@@ -311,12 +319,6 @@ the motor's generated voltage.
 | OUTER_FEEDFORWARD | boolean | Enable Outer Loop Feed-forward | False   |
 | K_FF_VEL          | float   | Velocity Feed-forward / s      | 0.16    |
 | K_FF_ACCEL        | float   | Acceleration Feed-forward / s² | 0.12    | 
-
-```yaml
-OUTER_FEEDFORWARD: True
-K_FF_VEL: 0.12  
-K_FF_ACCEL: 0.08  
-```
 
 __Physics Feed-Forwards (Outer Loop)__
 
@@ -343,6 +345,14 @@ __Coefficients__
     </div>
 </div>
 
+__Typical Values__
+
+```yaml
+OUTER_FEEDFORWARD: True
+K_FF_VEL: 0.12  
+K_FF_ACCEL: 0.08  
+```
+
 {% endcapture %}
 
 {% capture tab7 %}
@@ -358,18 +368,6 @@ __Coefficients__
 | EB_FF_LIMIT            | float   | Calculated BEMF Limit in Volts                         | 12.0    | 
 | SCV_OMEGA_THRESHOLD    | float   | Below this threshold SCV will not be triggered         | 0.05    | 
 | SCV_LATCH_THRESHOLD    | float   | Below this threshold Static kick will not be triggered | 1.0     | 
-
-```yaml
-OUTER_SCV: True
-STATIC_KICK: 0.8  
-COULOMB_RUN: 0.2  
-STRIBECK_WIDTH: 2.1  
-VISCOUS_FRICTION: 0.064  
-VISCOUS_FRICTION_LIMIT: 1.2  
-EB_FF_LIMIT: 12.0  
-SCV_OMEGA_THRESHOLD: 0.05  
-SCV_LATCH_THRESHOLD: 1.0  
-```
 
 __Advanced Friction Compensation (Stribeck Model)__
 
@@ -413,6 +411,20 @@ __Parameters__
 | RIGHT_FORWARD_DEADZONE | int16 | Right Motor Forward Deadzone | 0       |
 | RIGHT_REVERSE_DEADZONE | int16 | Right Motor Reverse Deadzone | 0       |
 
+__Typical Values__
+
+```yaml
+OUTER_SCV: True
+STATIC_KICK: 0.8  
+COULOMB_RUN: 0.2  
+STRIBECK_WIDTH: 2.1  
+VISCOUS_FRICTION: 0.064  
+VISCOUS_FRICTION_LIMIT: 1.2  
+EB_FF_LIMIT: 12.0  
+SCV_OMEGA_THRESHOLD: 0.05  
+SCV_LATCH_THRESHOLD: 1.0  
+```
+
 ```yaml
 LEFT_FORWARD_DEADZONE: 12  
 LEFT_REVERSE_DEADZONE: 12  
@@ -429,12 +441,6 @@ RIGHT_REVERSE_DEADZONE: 12
 | TRIM_GAIN     | float | Overall Gain Factor                   | 1.0     |
 | TRIM_MOTOR_K  | float | Motor constant for output calculation | 1.0     |
 | TRIM_CONSTANT | float | Trim value for motor output           | 1.0     | 
-
-```yaml
-TRIM_GAIN: 1.0  
-TRIM_MOTOR_K: 1.0  
-TRIM_CONSTANT: 0.0  
-```
 
 __Trim Model__
 
@@ -458,6 +464,14 @@ The `MotorConstantLeft` and `MotorConstantRight` values are used to multiply the
 
 By adjusting the TRIM parameter, we can effectively fine-tune the motor outputs to ensure accurate and precise robot motion, even in the presence of minor variations in motor performance or mechanical alignment.    
 
+__Typical Values__
+
+```yaml
+TRIM_GAIN: 1.0  
+TRIM_MOTOR_K: 1.0  
+TRIM_CONSTANT: 0.0  
+```
+
 {% endcapture %}
 
 {% capture tab9 %}
@@ -467,12 +481,6 @@ By adjusting the TRIM parameter, we can effectively fine-tune the motor outputs 
 | OMEGA_FILTER_TYPE   | uint8 | Velocity Filter Type | 1       |
 | CURRENT_FILTER_TYPE | uint8 | Current Filter Type  | 3       |
 | OUTPUT_FILTER_TYPE  | uint8 | Output Filter Type   | 0       | 
-
-```yaml
-OMEGA_FILTER_TYPE: 1  
-CURRENT_FILTER_TYPE: 3  
-OUTPUT_FILTER_TYPE: 0  
-```
 
 __Velocity Measurement Filter__
 
@@ -549,11 +557,6 @@ __Output Filter Scalers__
 | TANH_DIV  | float | Divider to scale the Tanh input range. Controls curve width. | 2.0     |
 | SIGM_DIV  | float | Divider to scale the Sigmoid input range.                    | 10.0    |
 
-```yaml
-TANH_DIV: 2.0  
-SIGM_DIV: 10.0  
-```
-
 The Output Filter applies a non-linear transformation (Hyperbolic Tangent or Sigmoid) to the final
 control signal, creating a **soft clipping** effect that smooths out aggressive commands near the
 maximum limit. The shape of this response curve is tunable via divisor parameters (`TANH_DIV`, `SIGM_DIV`),
@@ -580,6 +583,19 @@ For every calculation below, you have a binary choice:
 | SCV_FILTERED_OMEGA   | boolean | Use Filtered Omega for SCV Model                      | False   |
 | CURRENT_OMEGA_FILTER | boolean | Use Filterd Omega for Current Multiplier Compensation | False   |
 
+__Typical Values__
+
+```yaml
+OMEGA_FILTER_TYPE: 1  
+CURRENT_FILTER_TYPE: 3  
+OUTPUT_FILTER_TYPE: 0  
+```
+
+```yaml
+TANH_DIV: 2.0  
+SIGM_DIV: 10.0  
+```
+
 ```yaml
 VOLTAGE_FILTER: True  
 BEMF_FILTERED_OMEGA: True  
@@ -599,13 +615,6 @@ CURRENT_OMEGA_FILTER: True
 | ADC_MULTIPHASE | boolean | Multi-Phase ADC Measurement. BEMF compensated Mode   | False   |
 | ADC_BIPHASE    | boolean | Bi-Phase ADC Measurement                             | False   |
 
-```yaml
-AUTO_BIAS: True  
-ADC_SYNC: True  
-ADC_MULTIPHASE: True  
-ADC_BIPHASE: False
-```
-
 __ADC & Calibration Configuration__
 
 This section controls how the microcontroller calibrates its sensors and synchronizes its analog
@@ -624,14 +633,24 @@ __ADC Bias Calibration__
 | CS_LEFT_OFFSET  | int16 | Current Sense Calibration Value Left  | 0       |
 | CS_RIGHT_OFFSET | int16 | Current Sense Calibration Value Right | 0       |
 
+This section contains the static calibration values for the current sensors.
+These are hardcoded integer offsets used to **zero out** the sensors if `AUTO_BIAS` is 
+disabled or if fine-tuning is required.
+
+__Typical Values__
+
+```yaml
+AUTO_BIAS: True  
+ADC_SYNC: True  
+ADC_MULTIPHASE: True  
+ADC_BIPHASE: False
+```
+
 ```yaml
 CS_LEFT_OFFSET: 0  
 CS_RIGHT_OFFSET: 0  
 ```
 
-This section contains the static calibration values for the current sensors.
-These are hardcoded integer offsets used to **zero out** the sensors if `AUTO_BIAS` is 
-disabled or if fine-tuning is required.
 
 {% endcapture %}
 
