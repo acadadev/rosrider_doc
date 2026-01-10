@@ -823,7 +823,7 @@ This brings the robot to a stop quickly and makes it hard to push.
       ⚠️&nbsp;MODE1 Override
     </div>
     <div class="ck2">
-      This parameter is ignored if <code class="language-plaintext highlighter-rouge">MODE1t</code> is enabled in your <code class="language-plaintext highlighter-rouge">CONFIG_FLAGS</code>.
+      <code class="language-plaintext highlighter-rouge">AUTO_BRAKE</code>  parameter is ignored if <code class="language-plaintext highlighter-rouge">MODE1</code> is enabled in your <code class="language-plaintext highlighter-rouge">CONFIG_FLAGS</code>.
     </div>
 </div>
 
