@@ -171,7 +171,7 @@ __Chassis Geometry__
 These parameters define the physical dimensions of the robot base,
 essential for converting wheel velocities into robot velocities (inverse kinematics).
 
-  - `WHEEL_DIA` This parameter acts as the scalar for converting rotational motion (motor RPM or encoder ticks) into linear displacement. It is fundamental to the odometry calculation, defining the wheel circumference `C = pi * D`
+  - `WHEEL_DIA` This parameter acts as the scalar for converting rotational motion (motor RPM or encoder ticks) into linear displacement. It is fundamental to the odometry calculation, defining the wheel circumference `C = 𝜋 * D`
   - `BASE_WIDTH` Used to calculate the robot's angular velocity (ω) and turning radius (𝑅). A smaller base width results in faster rotation for the same wheel speed differential
 
 __Control Limits__
