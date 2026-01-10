@@ -455,8 +455,6 @@ By adjusting the TRIM parameter, we can effectively fine-tune the motor outputs 
 
 {% capture tab9 %}
 
-__Filter Configuration__
-
 ```yaml
 OMEGA_FILTER_TYPE: 1  
 CURRENT_FILTER_TYPE: 3  
@@ -469,15 +467,23 @@ OUTPUT_FILTER_TYPE: 0
 | CURRENT_FILTER_TYPE | uint8 | Current Filter Type  | 3       |
 | OUTPUT_FILTER_TYPE  | uint8 | Output Filter Type   | 0       | 
 
-__Omega Filter__
+ROSRider employs three distinct filtering stages to process noisy sensor data and smooth controller outputs.
+Each stage is configurable using a specific `FILTER_TYPE` ID.
 
-| Name            | ID | Filter Type                           | Details                      |
-|-----------------|----|---------------------------------------|------------------------------|
-| EWMA4           | 0  | Exponentially Weighted Moving Average | Last 4 Values                | 
-| EWMA8           | 1  | Exponentially Weighted Moving Average | Last 8 Values                |
-| EWMA16          | 2  | Exponentially Weighted Moving Average | Last 16 Values               |
-| BIQUAD_20HZ_2HZ | 3  | Biquad Filter                         | 20HZ update rate, 2HZ cutoff |
-| BIQUAD_20HZ_4HZ | 4  | Biquad Filter                         | 20HZ update rate, 4HZ cutoff |
+__Velocity Measurement Filter__
+
+This filter processes the raw velocity feedback (ω) calculated from the encoders.
+Filtering here is critical because differentiation of encoder ticks often produces discrete, **step-like**
+noise that can destabilize the PID loop.
+
+
+| Name            | ID | Type          | Details                                                                                   |
+|-----------------|----|---------------|-------------------------------------------------------------------------------------------|
+| EWMA4           | 0  | EWMA          | Exponentially Weighted Moving Average.  Low lag, light smoothing (Last 4 samples)         | 
+| EWMA8           | 1  | EWMA          | Exponentially Weighted Moving Average (Last 8 samples)                                    |
+| EWMA16          | 2  | EWMA          | Exponentially Weighted Moving Average (Last 16 samples)                                   |
+| BIQUAD_20HZ_2HZ | 3  | Biquad Filter | 2nd Order Low-Pass Filter. Cutoff at 2Hz. (assuming 20Hz loop) aggressive noise rejection |
+| BIQUAD_20HZ_4HZ | 4  | Biquad Filter | 2nd Order Low-Pass Filter. Cutoff at 4Hz.                                                 |
 
 __Current Filter__
 
