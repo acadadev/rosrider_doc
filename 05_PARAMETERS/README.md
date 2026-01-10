@@ -104,7 +104,7 @@ The optimal PWM frequency depends on several factors, including:
 - Desired Performance: Higher frequencies can lead to smoother and quieter operation, but they may also increase power consumption and complexity of the control system
 - Hardware Limitations: The microcontroller and power electronics used in the system may have limitations on the maximum achievable PWM frequency
 
-__The Impact of PWM Frequency on ROSRider:__
+__The Impact of PWM Frequency:__
 
 The `PWM_FRQ` parameter in the ROSRider configuration file plays a crucial role in determining the performance and efficiency of your robot's motors.
 By carefully selecting this value, you can optimize motor smoothness, responsiveness, power consumption, and electromagnetic interference (EMI).  

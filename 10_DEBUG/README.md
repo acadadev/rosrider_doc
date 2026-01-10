@@ -108,7 +108,7 @@ __TODO__
 
 - revisit parameters, add more description
 - Procedures
-- rosrider_diag, documentation
-- rosrider_node documentation
-- maybe software section
-- make videos of pid debug tool and put some screenshots between things, maybe even a video
+- rosrider_diag, vis-pid
+- rosrider_diag, parameter-manager
+- rosrider_node documentation on github
+- make videos of pid debug tool
