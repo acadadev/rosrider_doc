@@ -160,11 +160,12 @@ To launch the ROSRider node and establish communication between ROS and your ROS
   </clipboard-copy>
 </div>
 
-The following output indicates that the ROSRider Node has started successfully and is ready to communicate with your ROSRider hardware.
+Once this command executes, the driver will start and attempt to synchronize with the hardware.
+If the parameters in your ROS configuration differ from those currently stored on the board, the driver will
+automatically write the new values to the EEPROM.  
 
-<div class="img_dv">
-   <img class="replay" src="../images/rosrider/rosrider_launch.gif" alt="ROSRider Node Launch" style="width: 65%;">
-</div>
+You may see a few checksum errors in the logs during the initial handshake process.
+This is completely normal behavior as the connection stabilizes and does not indicate a hardware fault.  
 
 <div class="ck">
     <div class="ck1">
