@@ -467,9 +467,6 @@ OUTPUT_FILTER_TYPE: 0
 | CURRENT_FILTER_TYPE | uint8 | Current Filter Type  | 3       |
 | OUTPUT_FILTER_TYPE  | uint8 | Output Filter Type   | 0       | 
 
-ROSRider employs three distinct filtering stages to process noisy sensor data and smooth controller outputs.
-Each stage is configurable using a specific `FILTER_TYPE` ID.
-
 __Velocity Measurement Filter__
 
 This filter processes the raw velocity feedback (ω) calculated from the encoders.
@@ -518,15 +515,21 @@ It is typically used to **sharpen** the response or map the linear PID output to
 | TANH | 1  | Tanh        |
 | SIGM | 2  | Sigmoid     |
 
+
 ```yaml
 TANH_DIV: 2.0  
 SIGM_DIV: 10.0  
 ```
 
-| Parameter | Type  | Description                     | Default |
-|-----------|-------|---------------------------------|---------|
-| TANH_DIV  | float | Tanh filter prescaler           | 2.0     |
-| SIGM_DIV  | float | Sigmoid output filter prescaler | 10.0    |
+| Parameter | Type  | Description                                                  | Default |
+|-----------|-------|--------------------------------------------------------------|---------|
+| TANH_DIV  | float | Divider to scale the Tanh input range. Controls curve width. | 2.0     |
+| SIGM_DIV  | float | Divider to scale the Sigmoid input range.                    | 10.0    |
+
+The **Output Filter** applies a non-linear transformation (Hyperbolic Tangent or Sigmoid) to the final
+control signal, creating a **soft clipping** effect that smooths out aggressive commands near the
+maximum limit. The shape of this response curve is tunable via divisor parameters (`TANH_DIV`, `SIGM_DIV`),
+allowing you to adjust how sharply the motor power saturates.  
 
 __Filter Use__
 
