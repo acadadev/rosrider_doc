@@ -76,7 +76,7 @@ __Supported Motors__
 
 ROSRider can drive a wide range of encoder gear motors, from simple DC motors to high-precision gear motors commonly found in robotic vacuum cleaners. It supports both single-phase and dual-phase encoders, with parameters such as encoder PPR and gear reduction ratio configurable through YAML files. The dual-channel drivers, delivering 1A continuous and 2.8A peak current, provide ample power for various robotic applications.
 
-<div class="img_dv_center">
+<div class="img_dv_center" style="padding-bottom:20px;">
   
   <figure class="img_fgc25">
     <img class="img_sh" src="images/rosrider/metal_gear_motor_a.png" alt="Metal Gear Motor" style="width: 100%;">
