@@ -258,6 +258,20 @@ R_ARM: 2.0
 | CURRENT_OMEGA_K_RIGHT   | float  | Current Omega Compensation Right      | 0.0     |
 | R_ARM                   | float  | Motor Armature Resistance             | 2.0     |
 
+ROSRider employs a cascaded control architecture where the outer velocity loop 
+calculates a current setpoint, which is then tracked by this inner PI loop. 
+This allows for direct torque control and faster disturbance rejection.  
+
+__Loop Constraints & Calibration__
+
+ - `INNER_LIMIT` The maximum allowable PWM duty cycle for the current loop output
+ - `CURRENT_LEFT_MULTIPLIER` / `CURRENT_MULTIPLIER_RIGHT` A multiplier applied to the raw current sensor reading to match the scale of the current reference setpoint.
+
+__PI Controller__
+
+ - `CURRENT_KP` The proportional term for the inner PI loop, reacting to the immediate difference between the current reference and the measured current
+ - `CURRENT_KI` The integral term for the inner PI loop. It accumulates error over time to ensure the measured current accurately tracks the current reference setpoint
+
 __Torque Constant__
 
 ```yaml
@@ -273,6 +287,13 @@ RIGHT_KT_W: -0.008
 | LEFT_KT_W  | float | Torque Constant Omega Compensation Left  | -0.008  |
 | RIGHT_KT   | float | Torque Constant for Right Motor          | 0.016   |
 | RIGHT_KT_W | float | Torque Constant Omega Compensation Right | -0.008  |
+
+__Armature Resistance__ 
+
+These parameters model the physical characteristics of the DC motors.
+Accurate modeling here improves the feedforward performance and odometry estimation.  
+
+ - `R_ARM` Used to calculate the voltage drop required to drive a specific current ( 𝑉 = 𝐼 × 𝑅 )
 
 {% endcapture %}
 
