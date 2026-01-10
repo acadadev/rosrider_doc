@@ -651,15 +651,30 @@ DT_I2C: 32
 DT_THRESHOLD: 2  
 ```
 
-| Parameter     | Type    | Description                                        | Default |
-|---------------|---------|----------------------------------------------------|---------|
-| AUTO_SYNC     | boolean | Automatic Syncronization Enabled                   | True    |
-| SYNC_KP       | uint16  | Phase Error Proportional Coefficient               | 256     |
-| SYNC_KI       | uint16  | Phase Error Integral Coefficient                   | 4       |
-| SYNC_LIMIT    | uint16  | Timer Adjustment Limit                             | 4096    |
-| SYNC_INTERVAL | uint8   | Timer Adjustment Interval                          | 8       |
-| DT_I2C        | uint16  | Desired Phase Error                                | 32      |
-| DT_THRESHOLD  | uint16  | If below this threshold Timer will not be adjusted | 2       |
+This feature functions as a software-based Phase Locked Loop (PLL).
+It synchronizes the device's internal interrupt timer with an external 
+event stream (typically I2C communication packets) to prevent clock drift.  
+
+__The Core Concept: Clock Drift Compensation__
+
+Even with high-precision crystals, two separate devices will eventually drift apart.
+This feature measures the **Phase Error**
+(the time difference between when an I2C packet arrives and when the internal loop starts)
+and dynamically adjusts the Interrupt Timer Frequency to keep them locked together.  
+
+The system targets a specific delay `DT_I2C` rather than zero delay.
+This ensures the calculation loop always starts exactly 1ms (32 ticks) after data reception,
+guaranteeing fresh data is available without race conditions.  
+
+| Parameter     | Type    | Description                                                                                                   | Default |
+|---------------|---------|---------------------------------------------------------------------------------------------------------------|---------|
+| AUTO_SYNC     | boolean | Enables the automatic timer frequency adjustment logic.                                                       | True    |
+| SYNC_KP       | uint16  | How hard the timer corrects for immediate phase errors.                                                       | 256     |
+| SYNC_KI       | uint16  | How strictly the timer compensates for long-term drift (accumulated error).                                   | 4       |
+| SYNC_LIMIT    | uint16  | The maximum amount the timer period can be changed in a single step. Prevents instability.                    | 4096    |
+| SYNC_INTERVAL | uint8   | Defines how often the sync logic runs (e.g., 8 means check and adjust every 8th loop cycle).                  | 8       |
+| DT_I2C        | uint16  | The desired delay between the sync event and the loop start.                                                  | 32      |
+| DT_THRESHOLD  | uint16  | If the phase error is less than this value (in ticks), no adjustment is made. Prevents **hunting** or jitter. | 2       |
 
 {% endcapture %}
 
