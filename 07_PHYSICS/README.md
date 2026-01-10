@@ -71,13 +71,13 @@ This effectively linearizes the motor response, ensuring the control loop is dri
 
 <div class="sl">
     <div class="sl1">
-        > Velocity and Acceleration Feed Forwards
+        > Velocity and Acceleration Feed-Forwards
     </div>
 </div>
 
-### Velocity Feed forward
+### Velocity Feed-forward
 
-Velocity feed forward prevents the controller from lagging by proactively supplying the voltage necessary
+Velocity feed-forward prevents the controller from lagging by proactively supplying the voltage necessary
 to counteract the motor’s Back Electromotive Force (Back-EMF) at a given speed.
 In standard operation, this acts as a direct voltage adder proportional to the target velocity.  
 
