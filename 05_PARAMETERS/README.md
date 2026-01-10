@@ -159,6 +159,24 @@ MAX_RPM: 160.0
 | BASE_WIDTH  | float  | Distance between the wheels   | 0.168   |
 | MAX_RPM     | float  | Distance between the wheels   | 90.0    |
 
+__Motor & Encoder Specifications__
+
+1. These parameters describe the electromechanical properties of the drive motors.
+
+  - `GEAR_RATIO` is the reduction ratio of the gearbox attached to the motor
+  - `ENCODER_PPR` is the raw pulses per revolution of the motor shaft, before the gearbox
+
+2. Chassis Geometry
+
+These parameters define the physical dimensions of the robot base,
+essential for converting wheel velocities into robot velocities (inverse kinematics).
+
+  - `WHEEL_DIA` The diameter of the wheel, used to calculate how many meters we go with each wheel turn
+  - `BASE_WIDTH` The seperation between wheels, used to calculate turning radius
+
+3. Control Limits
+  - `MAX_RPM` The maximum rotational speed of the wheel output shaft in Revolutions Per Minute. Used for safety scaling and normalization.
+
 {% endcapture %}
 
 {% capture tab4 %}
