@@ -161,20 +161,21 @@ MAX_RPM: 160.0
 
 __Motor & Encoder Specifications__
 
-1. These parameters describe the electromechanical properties of the drive motors.
+These parameters describe the electromechanical properties of the drive motors.
 
   - `GEAR_RATIO` is the reduction ratio of the gearbox attached to the motor
   - `ENCODER_PPR` is the raw pulses per revolution of the motor shaft, before the gearbox
 
-2. Chassis Geometry
+__Chassis Geometry__
 
 These parameters define the physical dimensions of the robot base,
 essential for converting wheel velocities into robot velocities (inverse kinematics).
 
-  - `WHEEL_DIA` The diameter of the wheel, used to calculate how many meters we go with each wheel turn
-  - `BASE_WIDTH` The seperation between wheels, used to calculate turning radius
+  - `WHEEL_DIA` This parameter acts as the scalar for converting rotational motion (motor RPM or encoder ticks) into linear displacement. It is fundamental to the odometry calculation, defining the wheel circumference `C = pi * D`
+  - `BASE_WIDTH` Used to calculate the robot's angular velocity (ω) and turning radius (𝑅). A smaller base width results in faster rotation for the same wheel speed differential
 
-3. Control Limits
+__Control Limits__
+
   - `MAX_RPM` The maximum rotational speed of the wheel output shaft in Revolutions Per Minute. Used for safety scaling and normalization.
 
 {% endcapture %}
