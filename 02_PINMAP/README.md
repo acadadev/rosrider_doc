@@ -162,7 +162,7 @@ After installation, verify the connection using `sudo i2cdetect -y 1` to detect 
 __Raspberry PI Wiring Diagram__
 
 <div class="img_dv">
-  <figure class="img_fg_60">
+  <figure class="img_fg60">
     <img src="../images/rosrider/RPI5_WIRING_DIAGRAM.png" alt="Raspberry PI Wiring Diagram" style="width: 100%;">
   </figure>
 </div>
