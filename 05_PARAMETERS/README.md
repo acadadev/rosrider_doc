@@ -808,7 +808,7 @@ It prioritizes **Synchronization** over absolute speed.
 
 This parameter controls the physical behavior of the H-Bridge when the robot is receiving Zero Velocity commands (idle).
 
- - `AUTO_BRAKE` `True` **Braking**, `False` **Coasting**
+ - `AUTO_BRAKE` If `False` Coasting, If `True` Braking
 
 In **Coasting** Mode, the controller opens all MOSFETs (High-Impedance). The motor spins freely,
 and the robot's inertia will make it roll to a gradual stop. 
