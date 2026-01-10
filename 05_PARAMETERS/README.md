@@ -755,6 +755,17 @@ __Electrical Limits__
 | RIGHT_AMP_LIMIT | float  | Maximum current limit for the right motor      | 1.6     |
 | INA219_CAL      | uint16 | INA219 Calibration Value                       | 8192    |
 
+This section defines the safety boundaries for your power system.
+It relies on two different measurement sources: the **INA219** Monitoring chip (for total system power)
+and the **Internal Motor Sense** (for individual motor software fuses).
+
+ - `MAIN_AMP_LIMIT` The maximum allowable current for the entire board (motors + electronics). Uses a Rolling Average Filter to ignore short spikes.
+ - `BAT_VOLTS_HIGH` The system will disable motor drivers if the battery voltage exceeds this limit.
+ - `BAT_VOLTS_LOW` The system will disable motor drivers down to protect the system.
+ - `LEFT_AMP_LIMIT` A fast-acting safety trip for the left motor channel. If current exceeds this value, the **Software Fuse** trips and disables the motor immediately.
+ - `RIGHT_AMP_LIMIT` A fast-acting safety trip for the right motor channel. If current exceeds this value, the **Software Fuse** trips and disables the motor immediately.
+ - `INA219_CAL` The raw calibration value loaded into the **INA219** chip register to ensure Volts and Amps are reported accurately.
+
 __Typical Values__
 
 ```yaml
