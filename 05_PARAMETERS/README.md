@@ -490,11 +490,11 @@ noise that can destabilize the PID loop.
 
 __Filter Types Explained__
 
- - ***EWMA (Exponentially Weighted Moving Average):*** A computationally efficient filter that gives more weight to recent data.
+ - **EWMA** (Exponentially Weighted Moving Average) A computationally efficient filter that gives more weight to recent data.
    - Pros: Very fast to calculate, good for general noise.
    - Cons: Can introduce lag if the window size (4, 8, 16) is too large.
    
- - ***Bi-Quad (Biquadratic Filter):*** A second-order recursive linear filter.
+ - **Bi-Quad** (Biquadratic Filter) A second-order recursive linear filter.
    - Pros: Capable of sharp cutoffs (removing specific frequencies) better than EWMA.
    - Cons: More complex; incorrect configuration can lead to instability.
 
