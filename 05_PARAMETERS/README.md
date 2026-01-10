@@ -503,7 +503,7 @@ __Filter Types Explained__
       ⚠️&nbsp;CRITICAL WARNING
     </div>
     <div class="ck2">
-        The Biquad filter implementation is mathematically tuned strictly for a 20Hz update configuration.
+        The Biquad filter implementation is mathematically tuned strictly for a 20Hz update configuration. Do not use them with other update rates.
     </div>
 </div>
 
@@ -518,6 +518,17 @@ High-frequency noise here is common due to PWM switching and brush arcing.
 | EWMA4  | 1  | EWMA        | Exponentially Weighted Moving Average (Last 4 samples)  | 
 | EWMA8  | 2  | EWMA        | Exponentially Weighted Moving Average (Last 8 samples)  |
 | EWMA16 | 3  | EWMA        | Exponentially Weighted Moving Average (Last 16 samples) |
+
+<div class="ck">
+    <div class="ck1">
+      ⚠️&nbsp;CRITICAL WARNING
+    </div>
+    <div class="ck2">
+        When the current filter is disabled or set to a low EWMA,
+        sensor noise spikes may inadvertently trigger software fuses;
+        consider increasing software fuse thresholds to compensate if this configuration is required.  
+    </div>
+</div>
 
 __Output Filter__
 
