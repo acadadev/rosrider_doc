@@ -12,7 +12,7 @@ description: "ROSRider Motor Control Theory of Operation"
 </div>
 
 The standard control mode uses a single-loop PID architecture augmented with predictive compensation terms.
-To improve tracking during dynamic maneuvers, the controller applies **velocity and acceleration feedforwards,**
+To improve tracking during dynamic maneuvers, the controller applies **velocity and acceleration feed forwards,**
 essentially supplying the energy needed for the motion profile before any error occurs.
 We also implemented a **physics-based Stribeck friction model** to counteract mechanical resistance like stiction and viscous drag.
 This effectively linearizes the motor response, ensuring the control loop is driving the load rather than just fighting against friction thresholds.  
@@ -32,7 +32,7 @@ This effectively linearizes the motor response, ensuring the control loop is dri
 The cascaded PID controller utilizes a nested loop architecture, where the outer loop calculates the 
 desired current reference, and the inner faster loop modulates the motor voltage to strictly regulate torque.
 
-This inner stage employs a **physics-based feedforward strategy**, injecting calculated terms for resistive voltage drop and estimated Back-EMF (BEMF) directly into the control output.
+This inner stage employs a **physics-based feed forward strategy**, injecting calculated terms for resistive voltage drop and estimated Back-EMF (BEMF) directly into the control output.
 By utilizing DSP-filtered velocity and current data to predict the motor's electrical requirements, the PI controller is relieved of the bulk control effort and focuses solely on disturbance rejection.
 This decoupling of electrical dynamics from mechanical load simplifies tuning and ensures the system remains robust and stable even if the robot's weight or inertia changes significantly.
 

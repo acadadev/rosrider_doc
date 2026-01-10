@@ -243,11 +243,11 @@ K_FF_VEL: 0.12
 K_FF_ACCEL: 0.08  
 ```
 
-| Parameter         | Type    | Description                    | Default |
-|-------------------|---------|--------------------------------|---------|
-| OUTER_FEEDFORWARD | boolean | Enable Outer Loop Feedforwards | False   |
-| K_FF_VEL          | float   | Velocity Feedforward / s       | 0.16    |
-| K_FF_ACCEL        | float   | Acceleration Feedforward / s²  | 0.12    | 
+| Parameter         | Type    | Description                     | Default |
+|-------------------|---------|---------------------------------|---------|
+| OUTER_FEEDFORWARD | boolean | Enable Outer Loop Feed forwards | False   |
+| K_FF_VEL          | float   | Velocity Feed forward / s       | 0.16    |
+| K_FF_ACCEL        | float   | Acceleration Feed forward / s²  | 0.12    | 
 {% endcapture %}
 
 {% capture tab7 %}
