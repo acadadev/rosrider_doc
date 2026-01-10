@@ -753,7 +753,7 @@ AUTO_BRAKE: False
 
 {% endcapture %}
 
-{% capture tab16 %}
+{% capture tab15 %}
 
 __System Configuration__
 
