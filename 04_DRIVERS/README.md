@@ -116,7 +116,7 @@ source devel/setup.bash</pre>
   </clipboard-copy>
 </div>	
 
-__Adding ROSRider to Your Bash Environment__
+__Adding ROSRider to your Bash Environment__
 
 To ensure that your system can find the necessary ROSRider components, you'll need to add the following line to your Bash configuration file:
 
