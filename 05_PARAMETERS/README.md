@@ -228,7 +228,7 @@ __Output Constraints & Saturation__
 
 __Anti-Windup__
 
- - `K_FB_WINDUP` A **back-calculation** gain used to dynamically desaturate the integral term
+ - `K_FB_WINDUP` A **feed-back** gain used to dynamically desaturate the integral term. When the calculated PWM output exceeds `UPPER_LIMIT`, the difference (excess) is multiplied by `K_FB_WINDUP` and subtracted from the integral accumulator
 
 {% endcapture %}
 
