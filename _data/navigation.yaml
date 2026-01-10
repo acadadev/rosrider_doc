@@ -1,14 +1,11 @@
 - title: ROSRider
   url: /rosrider_doc/
 
-- title: Specifications
-  url: /rosrider_doc/01_SPECS/
+- title: Controller Physics
+  url: /rosrider_doc/07_PHYSICS/
 
 - title: ROS2 Drivers
   url: /rosrider_doc/04_DRIVERS/
-
-- title: Controller Physics
-  url: /rosrider_doc/07_PHYSICS/
 
 - title: Parameters
   url: /rosrider_doc/05_PARAMETERS/
@@ -19,7 +16,10 @@
 - title: Procedures in Robotics
   url: /rosrider_doc/08_PROCEDURES/
 
-- title: Pinmap
+- title: Specifications
+  url: /rosrider_doc/01_SPECS/
+
+- title: PINMAP
   url: /rosrider_doc/02_PINMAP/
 
 - title: Troubleshooting
