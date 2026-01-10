@@ -562,13 +562,15 @@ CURRENT_OMEGA_FILTER: True
 __ADC Config__
 
 ```yaml
+AUTO_BIAS: True  
 ADC_SYNC: True  
 ADC_MULTIPHASE: True  
-ADC_BIPHASE: False  
+ADC_BIPHASE: False
 ```
 
 | Parameter      | Type    | Description                                          | Default |
 |----------------|---------|------------------------------------------------------|---------|
+| AUTO_BIAS      | boolean | Auto Bias Enabled                                    | True    |
 | ADC_SYNC       | boolean | ADC Syncronized with PWM. Required for Cascaded Mode | False   |
 | ADC_MULTIPHASE | boolean | Multi-Phase ADC Measurement. BEMF compensated Mode   | False   |
 | ADC_BIPHASE    | boolean | Bi-Phase ADC Measurement                             | False   |
@@ -592,16 +594,12 @@ CS_RIGHT_OFFSET: 0
 __Enable Features__
 
 ```yaml
-AUTO_SYNC: True  
-AUTO_BIAS: True  
 AUTO_BRAKE: False  
 CASCADED: True  
 ```
 
 | Parameter  | Type    | Description                      | Default |
 |------------|---------|----------------------------------|---------|
-| AUTO_SYNC  | boolean | Automatic Syncronization Enabled | True    |
-| AUTO_BIAS  | boolean | Auto Bias Enabled                | True    |
 | AUTO_BRAKE | boolean | Auto Brake Enabled               | False   |
 | CASCADED   | boolean | Cascaded Inner Loop Enabled      | False   |
 
@@ -612,6 +610,7 @@ CASCADED: True
 __Synchronization__
 
 ```yaml
+AUTO_SYNC: True  
 SYNC_KP: 256  
 SYNC_KI: 4  
 SYNC_LIMIT: 4096  
@@ -620,14 +619,15 @@ DT_I2C: 32
 DT_THRESHOLD: 2  
 ```
 
-| Parameter     | Type   | Description                                        | Default |
-|---------------|--------|----------------------------------------------------|---------|
-| SYNC_KP       | uint16 | Phase Error Proportional Coefficient               | 256     |
-| SYNC_KI       | uint16 | Phase Error Integral Coefficient                   | 4       |
-| SYNC_LIMIT    | uint16 | Timer Adjustment Limit                             | 4096    |
-| SYNC_INTERVAL | uint8  | Timer Adjustment Interval                          | 8       |
-| DT_I2C        | uint16 | Desired Phase Error                                | 32      |
-| DT_THRESHOLD  | uint16 | If below this threshold Timer will not be adjusted | 2       |
+| Parameter     | Type    | Description                                        | Default |
+|---------------|---------|----------------------------------------------------|---------|
+| AUTO_SYNC     | boolean | Automatic Syncronization Enabled                   | True    |
+| SYNC_KP       | uint16  | Phase Error Proportional Coefficient               | 256     |
+| SYNC_KI       | uint16  | Phase Error Integral Coefficient                   | 4       |
+| SYNC_LIMIT    | uint16  | Timer Adjustment Limit                             | 4096    |
+| SYNC_INTERVAL | uint8   | Timer Adjustment Interval                          | 8       |
+| DT_I2C        | uint16  | Desired Phase Error                                | 32      |
+| DT_THRESHOLD  | uint16  | If below this threshold Timer will not be adjusted | 2       |
 
 {% endcapture %}
 
