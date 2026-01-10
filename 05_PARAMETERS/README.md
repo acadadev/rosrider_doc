@@ -337,9 +337,6 @@ __Coefficients__
  - `K_FF_ACCEL` Adds output power proportional to the requested acceleration (change in velocity)
 
 <div class="ck">
-    <div class="ck1">
-        ⚠️&nbsp;Important
-    </div>
     <div class="ck2">
         Velocity Feed-Forward is NOT used in Cascaded Mode. 
         In Cascaded mode, the inner loop's Back-EMF estimator already
