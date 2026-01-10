@@ -43,7 +43,7 @@ placing a high-bandwidth current controller inside the velocity loop; this allow
 faster response to disturbances, and a more stable overall system compared to simple single-loop designs.
 
 <div class="img_dv">
-  <figure class="img_fg60">
+  <figure class="img_fg75">
     <img class="img_sh" src="../images/rosrider/ROSRider_PID_Visualization_LEFT.png" alt="ROSRider PID Tuner" style="width: 100%;">
     <figcaption style="padding-left:0 !important; font-size: 0.85em;">Visualizing real-time OMEGA, PWM output, target setpoints, and current draw for both the left and right motors.</figcaption>
   </figure>
