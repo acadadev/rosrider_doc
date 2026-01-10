@@ -269,7 +269,7 @@ __Armature Resistance__
 These parameters model the physical characteristics of the DC motors.
 Accurate modeling here improves the feedforward performance and odometry estimation.  
 
- - `R_ARM` Used to calculate the voltage drop required to drive a specific current ( 𝑉 = 𝐼 × 𝑅 )
+ - `R_ARM` Used to calculate the voltage drop required to drive a specific current. ( 𝑉 = 𝐼 × 𝑅 )
 
 __Torque Constant & Back-EMF Model__
 
