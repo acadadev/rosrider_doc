@@ -14,22 +14,19 @@ Unlike pre-built kits that can be costly and limiting, it can be integrated with
 This approach encourages creativity, reduces costs, and promotes the reuse of existing components, making robotics accessible to a wider audience.
 
 <div class="img_dv">
-  
+
   <figure class="img_fg25">
     <img class="img_sh" src="images/rosrider/sorcerer_rosrider.png" alt="Sorcerer with ROSRider" style="width: 100%;">
     <figcaption>Fig 1. Minimal chassis designed for lane-following tasks using image processing</figcaption>
   </figure>
-
   <figure class="img_fg25">
     <img class="img_sh" src="images/rosrider/caretta_top_sq.jpg" alt="Caretta with ROS2RPI" style="width: 100%;">
     <figcaption>Fig 2. Chassis with LIDAR designed for  SLAM / Navigation</figcaption>
   </figure>
-
   <figure class="img_fg25">
     <img class="img_sh" src="images/rosrider/ROSRider4D_sq.png" alt="ROSRider Control Card" style="width: 100%;">
     <figcaption>Fig 3. ROSRider Control Card</figcaption>
   </figure>
-
 </div>
 
 __ROS Enabled Robotics__
