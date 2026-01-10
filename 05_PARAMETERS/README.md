@@ -21,8 +21,6 @@ Dynamic parameters, such as PID control gains, can be adjusted on-the-fly using 
 
 {% capture tab1 %}
 
-__Driver Configuration__
-
 ```yaml
 CONFIG_FLAGS: 112  
 UPDATE_RATE: 20  
@@ -77,8 +75,6 @@ __Drive Mode__
 {% endcapture %}
 
 {% capture tab2 %}
-
-__PWM Configuration__
 
 ```yaml
 PWM_DIV: 16  
@@ -141,8 +137,6 @@ By carefully considering these factors and adjusting the `PWM_DIV` and `PWM_FRQ`
 
 {% capture tab3 %}
 
-__Motor Configuration__
-
 ```yaml
 GEAR_RATIO: 65.0  
 ENCODER_PPR: 48  
@@ -181,8 +175,6 @@ __Control Limits__
 {% endcapture %}
 
 {% capture tab4 %}
-
-__PID Configuration__
 
 ```yaml
 UPPER_LIMIT: 240  
@@ -233,8 +225,6 @@ __Anti-Windup__
 {% endcapture %}
 
 {% capture tab5 %}
-
-__Cascaded Loop__
 
 ```yaml
 INNER_LIMIT: 240  
@@ -308,8 +298,6 @@ the motor's generated voltage.
 
 {% capture tab6 %}
 
-__Kinematic Feed-Forwards__
-
 ```yaml
 OUTER_FEEDFORWARD: True
 K_FF_VEL: 0.12  
@@ -348,8 +336,6 @@ __Coefficients__
 {% endcapture %}
 
 {% capture tab7 %}
-
-__Stribeck Friction Model__
 
 ```yaml
 OUTER_SCV: True
@@ -394,8 +380,6 @@ RIGHT_REVERSE_DEADZONE: 12
 
 {% capture tab8 %}
 
-__Trim Model__
-
 ```yaml
 TRIM_GAIN: 1.0  
 TRIM_MOTOR_K: 1.0  
@@ -407,6 +391,8 @@ TRIM_CONSTANT: 0.0
 | TRIM_GAIN     | float | Overall Gain Factor                   | 1.0     |
 | TRIM_MOTOR_K  | float | Motor constant for output calculation | 1.0     |
 | TRIM_CONSTANT | float | Trim value for motor output           | 1.0     | 
+
+__Trim Model__
 
 In the context of motor control, the motor constant is a proportionality factor that relates the input voltage to the output speed or torque. By adjusting the motor constant, we can compensate for differences in motor performance, such as variations in motor efficiency or mechanical load.
 
