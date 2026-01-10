@@ -538,10 +538,10 @@ control signal, creating a **soft clipping** effect that smooths out aggressive 
 maximum limit. The shape of this response curve is tunable via divisor parameters (`TANH_DIV`, `SIGM_DIV`),
 allowing you to adjust how sharply the motor power saturates.  
 
-__Filter Types Explained__
+__Output Filters Explained__
 
- - **TANH (Hyperbolic Tangent):** A symmetric S-shaped transfer function that creates a **soft clip** effect. It is linear for small errors but smoothly saturates as the output approaches the limit.
- - **SIGM (Sigmoid):** A non-linear activation function that maps the control signal to a gradual S-curve.
+ - **TANH** (Hyperbolic Tangent) A symmetric S-shaped transfer function that creates a **soft clip** effect. It is linear for small errors but smoothly saturates as the output approaches the limit.
+ - **SIGM** (Sigmoid) A non-linear activation function that maps the control signal to a gradual S-curve.
 
 __Filter Routing Configuration__
 
