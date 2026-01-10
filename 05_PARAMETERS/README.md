@@ -60,7 +60,7 @@ By carefully configuring these flags, you can ensure that the ROSRider can work 
 
 __Update Rate__
 
-`UPDATE_RATE` determines outer PID loop speed. Use 20 HZ for normal operation. Supported values are 10, 16, 20, 32, 50, 64
+`UPDATE_RATE` determines outer PID loop speed. Use 20 HZ for normal operation. Supported values are 10, 16, 20, 32, 50, 64.
 
 __Drive Mode__
 
@@ -119,7 +119,7 @@ To achieve the desired PWM frequency, you'll need to set the `PWM_DIV` parameter
 This parameter divides the system clock to generate the PWM clock. A higher `PWM_DIV` value results in a lower PWM clock frequency.  
 
 - This setting determines the clock frequency for the PWM module.
-- It's a hardware-based division of the system clock .(80000000)
+- It's a hardware-based division of the system clock. (80000000)
 
 __Practical Considerations:__
 
@@ -234,7 +234,7 @@ CURRENT_MULTIPLIER_LEFT: 4.8
 CURRENT_MULTIPLIER_RIGHT: 4.8  
 CURRENT_OMEGA_K_LEFT: -2.4  
 CURRENT_OMEGA_K_RIGHT: -2.4  
-R_ARM: 2.0
+R_ARM: 2.0  
 ```
 
 | Parameter               | Type   | Description                           | Default |
@@ -381,15 +381,15 @@ To prevent jitter at very low speeds, the model features a specific gating mecha
 
 __Parameters__
 
- - `OUTER_SCV` Enables SCV Model. If `False` simple dead zones are used
- - `STATIC_KICK` The high initial voltage spike required to break static friction (stiction) when starting motion. This is the peak value of the exponential curve
- - `COULOMB_RUN` The **floor** voltage required to keep the motor spinning at the lowest possible non-zero speed. When velocity is below the latch threshold, this is the only voltage applied
- - `STRIBECK_WIDTH` The exponential decay rate. A higher value causes the **Static Kick** to fade away more sharply as the robot accelerates, transitioning quickly to the Coulomb level
+ - `OUTER_SCV` Enables SCV Model. If `False` simple dead zones are applied.
+ - `STATIC_KICK` The high initial voltage spike required to break static friction (stiction) when starting motion. This is the peak value of the exponential curve.
+ - `COULOMB_RUN` The **floor** voltage required to keep the motor spinning at the lowest possible non-zero speed. When velocity is below the latch threshold, this is the only voltage applied.
+ - `STRIBECK_WIDTH` The exponential decay rate. A higher value causes the **Static Kick** to fade away more sharply as the robot accelerates, transitioning quickly to the Coulomb level.
  - `VISCOUS_FRICTION` The linear friction coefficient. Accounts for resistance that scales with speed. (e.g., grease viscosity, floor drag)
  - `SCV_LATCH_THRESHOLD` The low-speed safety gate. When velocity (ω) is below this value, the Static Kick and Viscous terms are disabled to prevent oscillation, leaving only the steady Coulomb Run voltage.
- - `VISCOUS_FRICTION_LIMIT` Hard limits the maximum voltage contribution from the viscous friction term
- - `EB_FF_LIMIT` Limits the maximum voltage that the Back-EMF estimator is allowed to inject into the controller
- - `SCV_OMEGA_THRESHOLD` Zero-Velocity Noise Gate. A cutoff value below which the target velocity (ω) is mathematically treated as exactly **0.0**
+ - `VISCOUS_FRICTION_LIMIT` Hard limits the maximum voltage contribution from the viscous friction term.
+ - `EB_FF_LIMIT` Limits the maximum voltage that the Back-EMF estimator is allowed to inject into the controller.
+ - `SCV_OMEGA_THRESHOLD` Zero-Velocity Noise Gate. A cutoff value below which the target velocity (ω) is mathematically treated as exactly **0.0**.
 
 __Dead Zones__
 
@@ -442,10 +442,10 @@ MotorConstantRight = (GAIN - TRIM) / MOTOR_CONSTANT;
 
 The `MotorConstantLeft` and `MotorConstantRight` values are used to multiply the algorithm output (typically from a PID controller) to determine the appropriate PWM values for the left and right motors. These adjusted motor constants account for variations in motor performance and mechanical factors, ensuring precise and coordinated motor control.
 
-- `MotorConstantLeft` and `MotorConstantRight` are the adjusted motor constants for the left and right motors, respectively
-- `TRIM_GAIN` is a global gain factor that scales the overall motor output
-- `TRIM_MOTOR_K` is the nominal motor constant
-- `TRIM_CONSTANT` is a small value used to adjust the motor output
+- `MotorConstantLeft` and `MotorConstantRight` are the adjusted motor constants for the left and right motors.
+- `TRIM_GAIN` is a global gain factor that scales the overall motor output.
+- `TRIM_MOTOR_K` is the nominal motor constant.
+- `TRIM_CONSTANT` is a small value used to adjust the motor output.
 
 By adjusting the TRIM parameter, we can effectively fine-tune the motor outputs to ensure accurate and precise robot motion, even in the presence of minor variations in motor performance or mechanical alignment.    
 
