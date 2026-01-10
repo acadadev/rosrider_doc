@@ -781,8 +781,6 @@ INA219_CAL: 8192
 
 {% capture tab14 %}
 
-__Experimental Features__
-
 | Parameter             | Type  | Description                      | Default |
 |-----------------------|-------|----------------------------------|---------|
 | CROSS_COUPLED_CONTROL | bool  | Enable Cross Coupled Control     | False   |
@@ -844,8 +842,6 @@ AUTO_BRAKE: False
 
 {% capture tab15 %}
 
-__System Configuration__
-
 | Parameter        | Type   | Description                                                  | Default |
 |------------------|--------|--------------------------------------------------------------|---------|
 | ROS2RPI_CONFIG   | uint8  | Configuration for the ROS2RPI board (if used)                | 0x00    |
@@ -857,16 +853,16 @@ __System Configuration__
 | MONITOR_RATE     | uint8  | Rate at which current sensor data is monitored               | 100     |
 | MAX_IDLE_SECONDS | uint16 | Maximum idle seconds before entering hibernate mode          | 3600    |
 
-```yaml
-ROS2RPI_CONFIG: 0x33 # 0x00 # 0x0F # 0x33  
-I2C_ADDRESS: 0x3c  
-I2C_ENABLED: True  
-DEBUG: False  
-RTC_TRIM: 0x7FFF  
-ALLOWED_SKIP: 3  
-MONITOR_RATE: 100  
-MAX_IDLE_SECONDS: 1800  
-```
+This section covers the fundamental settings for board identity, communication interfaces, and power management.
+
+ - `ROS2RPI_CONFIG`
+ - `I2C_ADDRESS` The 7-bit address used by the host to communicate with this card.
+ - `I2C_ENABLED` This is primarily for development / debugging. Disabling this will prevent the driver from communicating with the board.
+ - `DEBUG` Enables internal verbose logging or specific testing behaviors.
+ - `RTC_TRIM` A calibration value for the Real-Time Clock (RTC). This parameter adjusts the internal oscillator to compensate for drift, ensuring time-based calculations remain accurate over long periods.
+ - `ALLOWED_SKIP`
+ - `MONITOR_RATE` Defines how frequently (in Hz) the background task checks monitoring sensors.
+ - `MAX_IDLE_SECONDS` The duration of inactivity (no commands received) allowed before the board enters a low-power Hibernate mode to save battery.
 
 __ALLOWED_SKIP__
 
@@ -886,6 +882,19 @@ If the ROSRider card is deployed independently (standalone configuration), set t
 | 0x33        | ROSRider ON, LIDAR ON, Serial Routed to LIDAR |
 
 For configurations involving the ROS2RPI card, refer to the [ROS2RPI documentation](https://docs.acada.dev/ros2rpi_doc) for appropriate parameter selection.
+
+__Typical Values__
+
+```yaml
+ROS2RPI_CONFIG: 0x33 # 0x00 # 0x0F # 0x33  
+I2C_ADDRESS: 0x3c  
+I2C_ENABLED: True  
+DEBUG: False  
+RTC_TRIM: 0x7FFF  
+ALLOWED_SKIP: 3  
+MONITOR_RATE: 100  
+MAX_IDLE_SECONDS: 1800  
+```
 
 {% endcapture %}
 
