@@ -592,19 +592,19 @@ CURRENT_OMEGA_FILTER: True
 
 {% capture tab10 %}
 
-```yaml
-AUTO_BIAS: True  
-ADC_SYNC: True  
-ADC_MULTIPHASE: True  
-ADC_BIPHASE: False
-```
-
 | Parameter      | Type    | Description                                          | Default |
 |----------------|---------|------------------------------------------------------|---------|
 | AUTO_BIAS      | boolean | Auto Bias Enabled                                    | True    |
 | ADC_SYNC       | boolean | ADC Syncronized with PWM. Required for Cascaded Mode | False   |
 | ADC_MULTIPHASE | boolean | Multi-Phase ADC Measurement. BEMF compensated Mode   | False   |
 | ADC_BIPHASE    | boolean | Bi-Phase ADC Measurement                             | False   |
+
+```yaml
+AUTO_BIAS: True  
+ADC_SYNC: True  
+ADC_MULTIPHASE: True  
+ADC_BIPHASE: False
+```
 
 __ADC & Calibration Configuration__
 
@@ -619,15 +619,15 @@ for clean current sensing.
 
 __ADC Bias Calibration__
 
-```yaml
-CS_LEFT_OFFSET: 0  
-CS_RIGHT_OFFSET: 0  
-```
-
 | Parameter       | Type  | Description                           | Default |
 |-----------------|-------|---------------------------------------|---------|
 | CS_LEFT_OFFSET  | int16 | Current Sense Calibration Value Left  | 0       |
 | CS_RIGHT_OFFSET | int16 | Current Sense Calibration Value Right | 0       |
+
+```yaml
+CS_LEFT_OFFSET: 0  
+CS_RIGHT_OFFSET: 0  
+```
 
 This section contains the static calibration values for the current sensors.
 These are hardcoded integer offsets used to **zero out** the sensors if `AUTO_BIAS` is 
@@ -639,6 +639,16 @@ disabled or if fine-tuning is required.
 {% endcapture %}
 
 {% capture tab12 %}
+
+| Parameter     | Type    | Description                                                                                                   | Default |
+|---------------|---------|---------------------------------------------------------------------------------------------------------------|---------|
+| AUTO_SYNC     | boolean | Enables the automatic timer frequency adjustment logic.                                                       | True    |
+| SYNC_KP       | uint16  | How hard the timer corrects for immediate phase errors.                                                       | 256     |
+| SYNC_KI       | uint16  | How strictly the timer compensates for long-term drift (accumulated error).                                   | 4       |
+| SYNC_LIMIT    | uint16  | The maximum amount the timer period can be changed in a single step. Prevents instability.                    | 4096    |
+| SYNC_INTERVAL | uint8   | Defines how often the sync logic runs (e.g., 8 means check and adjust every 8th loop cycle).                  | 8       |
+| DT_I2C        | uint16  | The desired delay between the sync event and the loop start.                                                  | 32      |
+| DT_THRESHOLD  | uint16  | If the phase error is less than this value (in ticks), no adjustment is made. Prevents **hunting** or jitter. | 2       |
 
 ```yaml
 AUTO_SYNC: True  
@@ -665,31 +675,12 @@ The system targets a specific delay `DT_I2C` rather than zero delay.
 This ensures the calculation loop always starts exactly 1ms (32 ticks) after data reception,
 guaranteeing fresh data is available without race conditions.  
 
-| Parameter     | Type    | Description                                                                                                   | Default |
-|---------------|---------|---------------------------------------------------------------------------------------------------------------|---------|
-| AUTO_SYNC     | boolean | Enables the automatic timer frequency adjustment logic.                                                       | True    |
-| SYNC_KP       | uint16  | How hard the timer corrects for immediate phase errors.                                                       | 256     |
-| SYNC_KI       | uint16  | How strictly the timer compensates for long-term drift (accumulated error).                                   | 4       |
-| SYNC_LIMIT    | uint16  | The maximum amount the timer period can be changed in a single step. Prevents instability.                    | 4096    |
-| SYNC_INTERVAL | uint8   | Defines how often the sync logic runs (e.g., 8 means check and adjust every 8th loop cycle).                  | 8       |
-| DT_I2C        | uint16  | The desired delay between the sync event and the loop start.                                                  | 32      |
-| DT_THRESHOLD  | uint16  | If the phase error is less than this value (in ticks), no adjustment is made. Prevents **hunting** or jitter. | 2       |
 
 {% endcapture %}
 
 {% capture tab13 %}
 
 __ROS Parameters__
-
-```yaml
-ODOM_FRAME_ID: 'odom'  
-BASE_FRAME_ID: 'base_footprint'  
-CMD_VEL_TOPIC: 'cmd_vel_nav'  
-BROADCAST_TF2: True  
-PUB_ODOMETRY: True  
-PUB_JOINTS: True  
-PUB_DIAGNOSTICS: True  
-```
 
 | Parameter       | Type   | Description                                     | Default          |
 |-----------------|--------|-------------------------------------------------|------------------|
@@ -701,20 +692,21 @@ PUB_DIAGNOSTICS: True
 | PUB_JOINTS      | bool   | Enables or disables joint state publication     | True             |
 | PUB_DIAGNOSTICS | bool   | Enables or disables diagnostic data publication | True             |
 
+```yaml
+ODOM_FRAME_ID: 'odom'  
+BASE_FRAME_ID: 'base_footprint'  
+CMD_VEL_TOPIC: 'cmd_vel_nav'  
+BROADCAST_TF2: True  
+PUB_ODOMETRY: True  
+PUB_JOINTS: True  
+PUB_DIAGNOSTICS: True  
+```
+
 {% endcapture %}
 
 {% capture tab14 %}
 
 __Electrical Limits__
-
-```yaml
-MAIN_AMP_LIMIT: 3.6  
-BAT_VOLTS_HIGH: 15.0  
-BAT_VOLTS_LOW: 6.0  
-LEFT_AMP_LIMIT: 2.4  
-RIGHT_AMP_LIMIT: 2.4  
-INA219_CAL: 8192  
-```
 
 | Parameter       | Type   | Description                                    | Default |
 |-----------------|--------|------------------------------------------------|---------|
@@ -725,18 +717,20 @@ INA219_CAL: 8192
 | RIGHT_AMP_LIMIT | float  | Maximum current limit for the right motor      | 1.6     |
 | INA219_CAL      | uint16 | INA219 Calibration Value                       | 8192    |
 
+```yaml
+MAIN_AMP_LIMIT: 3.6  
+BAT_VOLTS_HIGH: 15.0  
+BAT_VOLTS_LOW: 6.0  
+LEFT_AMP_LIMIT: 2.4  
+RIGHT_AMP_LIMIT: 2.4  
+INA219_CAL: 8192  
+```
+
 {% endcapture %}
 
 {% capture tab15 %}
 
 __Experimental Features__
-
-```yaml
-CROSS_COUPLED_CONTROL: True  
-CROSS_KP: 4.0  
-CROSS_K_LEFT: 1.0  
-CROSS_K_RIGHT: 1.0  
-```
 
 | Parameter             | Type  | Description                      | Default |
 |-----------------------|-------|----------------------------------|---------|
@@ -746,29 +740,25 @@ CROSS_K_RIGHT: 1.0
 | CROSS_K_RIGHT         | float | Cross Feedback Right Coefficient | 1.0     |
 
 ```yaml
-AUTO_BRAKE: False
+CROSS_COUPLED_CONTROL: True  
+CROSS_KP: 4.0  
+CROSS_K_LEFT: 1.0  
+CROSS_K_RIGHT: 1.0  
 ```
 
 | Parameter  | Type    | Description                      | Default |
 |------------|---------|----------------------------------|---------|
 | AUTO_BRAKE | boolean | Auto Brake Enabled               | False   |
 
+```yaml
+AUTO_BRAKE: False
+```
+
 {% endcapture %}
 
 {% capture tab16 %}
 
 __System Configuration__
-
-```yaml
-ROS2RPI_CONFIG: 0x33 # 0x00 # 0x0F # 0x33  
-I2C_ADDRESS: 0x3c  
-I2C_ENABLED: True  
-DEBUG: False  
-RTC_TRIM: 0x7FFF  
-ALLOWED_SKIP: 3  
-MONITOR_RATE: 100  
-MAX_IDLE_SECONDS: 1800  
-```
 
 | Parameter        | Type   | Description                                                  | Default |
 |------------------|--------|--------------------------------------------------------------|---------|
@@ -780,6 +770,17 @@ MAX_IDLE_SECONDS: 1800
 | ALLOWED_SKIP     | uint8  | Command timeout in units of 1 / UPDATE_RATE.                 | 3       |
 | MONITOR_RATE     | uint8  | Rate at which current sensor data is monitored               | 100     |
 | MAX_IDLE_SECONDS | uint16 | Maximum idle seconds before entering hibernate mode          | 3600    |
+
+```yaml
+ROS2RPI_CONFIG: 0x33 # 0x00 # 0x0F # 0x33  
+I2C_ADDRESS: 0x3c  
+I2C_ENABLED: True  
+DEBUG: False  
+RTC_TRIM: 0x7FFF  
+ALLOWED_SKIP: 3  
+MONITOR_RATE: 100  
+MAX_IDLE_SECONDS: 1800  
+```
 
 __ALLOWED_SKIP__
 
