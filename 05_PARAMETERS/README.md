@@ -137,13 +137,6 @@ By carefully considering these factors and adjusting the `PWM_DIV` and `PWM_FRQ`
 
 {% capture tab3 %}
 
-```yaml
-GEAR_RATIO: 65.0  
-ENCODER_PPR: 48  
-WHEEL_DIA: 0.0685  
-BASE_WIDTH: 0.174  
-MAX_RPM: 160.0  
-```
 
 | Parameter   | Type   | Description                   | Default |
 |-------------|--------|-------------------------------|---------|
@@ -152,6 +145,14 @@ MAX_RPM: 160.0
 | WHEEL_DIA   | float  | Diameter of the wheels        | 0.0685  |
 | BASE_WIDTH  | float  | Distance between the wheels   | 0.168   |
 | MAX_RPM     | float  | Distance between the wheels   | 90.0    |
+
+```yaml
+GEAR_RATIO: 65.0  
+ENCODER_PPR: 48  
+WHEEL_DIA: 0.0685  
+BASE_WIDTH: 0.174  
+MAX_RPM: 160.0  
+```
 
 __Motor & Encoder Specifications__
 
@@ -176,17 +177,6 @@ __Control Limits__
 
 {% capture tab4 %}
 
-```yaml
-UPPER_LIMIT: 240  
-LEFT_KP: 8.0  
-LEFT_KI: 6.0  
-LEFT_KD: 0.0  
-RIGHT_KP: 8.0  
-RIGHT_KI: 6.0  
-RIGHT_KD: 0.0  
-K_FB_WINDUP: 0.5  
-```
-
 | Parameter   | Type   | Description                      | Default |
 |-------------|--------|----------------------------------|---------|
 | UPPER_LIMIT | uint16 | Maximum Controller PWM output    | 192     |
@@ -197,6 +187,17 @@ K_FB_WINDUP: 0.5
 | RIGHT_KI    | float  | PID integral for right motor     | 1.2     |
 | RIGHT_KD    | float  | PID differential for right motor | 0.0     |
 | K_FB_WINDUP | float  | Anti windup coefficient          | 0.5     |
+
+```yaml
+UPPER_LIMIT: 240  
+LEFT_KP: 8.0  
+LEFT_KI: 6.0  
+LEFT_KD: 0.0  
+RIGHT_KP: 8.0  
+RIGHT_KI: 6.0  
+RIGHT_KD: 0.0  
+K_FB_WINDUP: 0.5  
+```
 
 __PID Control Loop Parameters__
 
@@ -226,18 +227,6 @@ __Anti-Windup__
 
 {% capture tab5 %}
 
-```yaml
-CASCADED: True  
-INNER_LIMIT: 240  
-CURRENT_KP: 8.0  
-CURRENT_KI: 6.0  
-CURRENT_MULTIPLIER_LEFT: 4.8  
-CURRENT_MULTIPLIER_RIGHT: 4.8  
-CURRENT_OMEGA_K_LEFT: -2.4  
-CURRENT_OMEGA_K_RIGHT: -2.4  
-R_ARM: 2.0  
-```
-
 | Parameter               | Type    | Description                           | Default |
 |-------------------------|---------|---------------------------------------|---------|
 | CASCADED                | boolean | Cascaded Inner Loop Enabled           | False   |
@@ -249,6 +238,18 @@ R_ARM: 2.0
 | CURRENT_OMEGA_K_LEFT    | float   | Current Omega Compensation Left       | 0.0     |
 | CURRENT_OMEGA_K_RIGHT   | float   | Current Omega Compensation Right      | 0.0     |
 | R_ARM                   | float   | Motor Armature Resistance             | 2.0     |
+
+```yaml
+CASCADED: True  
+INNER_LIMIT: 240  
+CURRENT_KP: 8.0  
+CURRENT_KI: 6.0  
+CURRENT_MULTIPLIER_LEFT: 4.8  
+CURRENT_MULTIPLIER_RIGHT: 4.8  
+CURRENT_OMEGA_K_LEFT: -2.4  
+CURRENT_OMEGA_K_RIGHT: -2.4  
+R_ARM: 2.0  
+```
 
 __Cascaded control architecture__
 
@@ -305,17 +306,17 @@ the motor's generated voltage.
 
 {% capture tab6 %}
 
-```yaml
-OUTER_FEEDFORWARD: True
-K_FF_VEL: 0.12  
-K_FF_ACCEL: 0.08  
-```
-
 | Parameter         | Type    | Description                    | Default |
 |-------------------|---------|--------------------------------|---------|
 | OUTER_FEEDFORWARD | boolean | Enable Outer Loop Feed-forward | False   |
 | K_FF_VEL          | float   | Velocity Feed-forward / s      | 0.16    |
 | K_FF_ACCEL        | float   | Acceleration Feed-forward / s² | 0.12    | 
+
+```yaml
+OUTER_FEEDFORWARD: True
+K_FF_VEL: 0.12  
+K_FF_ACCEL: 0.08  
+```
 
 __Physics Feed-Forwards (Outer Loop)__
 
@@ -346,18 +347,6 @@ __Coefficients__
 
 {% capture tab7 %}
 
-```yaml
-OUTER_SCV: True
-STATIC_KICK: 0.8  
-COULOMB_RUN: 0.2  
-STRIBECK_WIDTH: 2.1  
-VISCOUS_FRICTION: 0.064  
-VISCOUS_FRICTION_LIMIT: 1.2  
-EB_FF_LIMIT: 12.0  
-SCV_OMEGA_THRESHOLD: 0.05  
-SCV_LATCH_THRESHOLD: 1.0  
-```
-
 | Parameter              | Type    | Description                                            | Default |
 |------------------------|---------|--------------------------------------------------------|---------|
 | OUTER_SCV              | boolean | Enable SCV if not deadzone will be used                | False   |
@@ -369,6 +358,18 @@ SCV_LATCH_THRESHOLD: 1.0
 | EB_FF_LIMIT            | float   | Calculated BEMF Limit in Volts                         | 12.0    | 
 | SCV_OMEGA_THRESHOLD    | float   | Below this threshold SCV will not be triggered         | 0.05    | 
 | SCV_LATCH_THRESHOLD    | float   | Below this threshold Static kick will not be triggered | 1.0     | 
+
+```yaml
+OUTER_SCV: True
+STATIC_KICK: 0.8  
+COULOMB_RUN: 0.2  
+STRIBECK_WIDTH: 2.1  
+VISCOUS_FRICTION: 0.064  
+VISCOUS_FRICTION_LIMIT: 1.2  
+EB_FF_LIMIT: 12.0  
+SCV_OMEGA_THRESHOLD: 0.05  
+SCV_LATCH_THRESHOLD: 1.0  
+```
 
 __Advanced Friction Compensation (Stribeck Model)__
 
@@ -405,13 +406,6 @@ __Parameters__
     </div>
 </div>
 
-```yaml
-LEFT_FORWARD_DEADZONE: 12  
-LEFT_REVERSE_DEADZONE: 12  
-RIGHT_FORWARD_DEADZONE: 12  
-RIGHT_REVERSE_DEADZONE: 12  
-```
-
 | Parameter              | Type  | Description                  | Default |
 |------------------------|-------|------------------------------|---------|
 | LEFT_FORWARD_DEADZONE  | int16 | Left Motor Forward Deadzone  | 0       |
@@ -419,21 +413,28 @@ RIGHT_REVERSE_DEADZONE: 12
 | RIGHT_FORWARD_DEADZONE | int16 | Right Motor Forward Deadzone | 0       |
 | RIGHT_REVERSE_DEADZONE | int16 | Right Motor Reverse Deadzone | 0       |
 
+```yaml
+LEFT_FORWARD_DEADZONE: 12  
+LEFT_REVERSE_DEADZONE: 12  
+RIGHT_FORWARD_DEADZONE: 12  
+RIGHT_REVERSE_DEADZONE: 12  
+```
+
 {% endcapture %}
 
 {% capture tab8 %}
-
-```yaml
-TRIM_GAIN: 1.0  
-TRIM_MOTOR_K: 1.0  
-TRIM_CONSTANT: 0.0  
-```
 
 | Parameter     | Type  | Description                           | Default |
 |---------------|-------|---------------------------------------|---------|
 | TRIM_GAIN     | float | Overall Gain Factor                   | 1.0     |
 | TRIM_MOTOR_K  | float | Motor constant for output calculation | 1.0     |
 | TRIM_CONSTANT | float | Trim value for motor output           | 1.0     | 
+
+```yaml
+TRIM_GAIN: 1.0  
+TRIM_MOTOR_K: 1.0  
+TRIM_CONSTANT: 0.0  
+```
 
 __Trim Model__
 
@@ -461,17 +462,17 @@ By adjusting the TRIM parameter, we can effectively fine-tune the motor outputs 
 
 {% capture tab9 %}
 
-```yaml
-OMEGA_FILTER_TYPE: 1  
-CURRENT_FILTER_TYPE: 3  
-OUTPUT_FILTER_TYPE: 0  
-```
-
 | Parameter           | Type  | Description          | Default |
 |---------------------|-------|----------------------|---------|
 | OMEGA_FILTER_TYPE   | uint8 | Velocity Filter Type | 1       |
 | CURRENT_FILTER_TYPE | uint8 | Current Filter Type  | 3       |
 | OUTPUT_FILTER_TYPE  | uint8 | Output Filter Type   | 0       | 
+
+```yaml
+OMEGA_FILTER_TYPE: 1  
+CURRENT_FILTER_TYPE: 3  
+OUTPUT_FILTER_TYPE: 0  
+```
 
 __Velocity Measurement Filter__
 
