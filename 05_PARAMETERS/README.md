@@ -494,16 +494,6 @@ High-frequency noise here is common due to PWM switching and brush arcing.
 | EWMA8  | 2  | EWMA        | Exponentially Weighted Moving Average (Last 8 samples)  |
 | EWMA16 | 3  | EWMA        | Exponentially Weighted Moving Average (Last 16 samples) |
 
-__Filter Types Explained__
-
- - ***EWMA (Exponentially Weighted Moving Average):*** A computationally efficient filter that gives more weight to recent data.
-   - Pros: Very fast to calculate, good for general noise.
-   - Cons: Can introduce lag if the window size (4, 8, 16) is too large.
-   
- - ***Bi-Quad (Biquadratic Filter):*** A second-order recursive linear filter.
-   - Pros: Capable of sharp cutoffs (removing specific frequencies) better than EWMA.
-   - Cons: More complex; incorrect configuration can lead to instability.
-
 __Output Filter__
 
 This filter is applied to the final output of the control loop before it is sent to the motors. 
@@ -515,6 +505,7 @@ It is typically used to **sharpen** the response or map the linear PID output to
 | TANH | 1  | Tanh        |
 | SIGM | 2  | Sigmoid     |
 
+__Output Filter Scalers__
 
 ```yaml
 TANH_DIV: 2.0  
@@ -531,6 +522,23 @@ control signal, creating a **soft clipping** effect that smooths out aggressive 
 maximum limit. The shape of this response curve is tunable via divisor parameters (`TANH_DIV`, `SIGM_DIV`),
 allowing you to adjust how sharply the motor power saturates.  
 
+__Filter Types Explained__
+
+ - ***EWMA (Exponentially Weighted Moving Average):*** A computationally efficient filter that gives more weight to recent data.
+   - Pros: Very fast to calculate, good for general noise.
+   - Cons: Can introduce lag if the window size (4, 8, 16) is too large.
+   
+ - ***Bi-Quad (Biquadratic Filter):*** A second-order recursive linear filter.
+   - Pros: Capable of sharp cutoffs (removing specific frequencies) better than EWMA.
+   - Cons: More complex; incorrect configuration can lead to instability.
+   
+ - ***TANH (Hyperbolic Tangent):*** A symmetric S-shaped transfer function that creates a **soft clip** effect. It is linear for small errors but smoothly saturates as the output approaches the limit.
+   - Pros: Prevents abrupt mechanical jerk by eliminating hard hits to the voltage ceiling; keeps control linear at low speeds.
+   - Cons: Can make the robot feel sluggish or unresponsive at high speeds if the scaling (divisor) is set too low.
+
+ - ***SIGM (Sigmoid):*** A non-linear activation function that maps the control signal to a gradual S-curve.
+   - Pros: rovides an extremely organic acceleration profile; suppresses high-frequency jitter near the maximum output limits.
+   - Cons: 
 __Filter Use__
 
 ```yaml
