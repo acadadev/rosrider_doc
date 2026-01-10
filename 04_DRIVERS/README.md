@@ -47,7 +47,7 @@ cd rosrider_ws/src</pre>
   </clipboard-copy>
 </div>
 
-__Clone the ROSRider Repository:__
+__Clone the ROSRider Repository__
 
 <div class="highlight notranslate position-relative">
   <div class="highlight">
@@ -63,7 +63,9 @@ __Clone the ROSRider Repository:__
   </clipboard-copy>
 </div>
 
-__Initialize ROS Dependency System (if not done during ROS installation)__
+__Initialize ROS Dependency System__
+
+If not done during ROS installation, initialize the dependency system.
 
 <div class="highlight notranslate position-relative">
   <div class="highlight">
