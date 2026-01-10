@@ -301,7 +301,7 @@ the spinning motor. This voltage estimate is added to the controller output as a
 allowing the PID loop to focus solely on driving the required current rather than overcoming
 the motor's generated voltage.
 
- - `LEFT_KT` / `RIGHT_KT` The constant used to calculate the Back-EMF voltage from the motor's angular velocity (ω) when the motor is beginning to spin.
+ - `LEFT_KT` / `RIGHT_KT` The constant used to calculate the Back-EMF voltage from the motor's angular velocity (ω) when the motor is beginning to spin
  - `LEFT_KT_W` / `RIGHT_KT_W` A compensation factor that adjusts the Torque Constant linearly as the motor speed increases toward its maximum
 
 {% endcapture %}
@@ -333,8 +333,20 @@ __Configuration__
 
 __Coefficients__
 
- - `K_FF_VEL` Adds output power proportional to the target velocity
+ - `K_FF_VEL` Adds output power proportional to the target velocity to compensate for kinetic friction
  - `K_FF_ACCEL` Adds output power proportional to the requested acceleration (change in velocity)
+
+<div class="ck">
+    <div class="ck1">
+        ⚠️&nbsp;Importnt
+    </div>
+    <div class="ck2">
+        Velocity Feed-Forward is NOT used in Cascaded Mode. 
+        In Cascaded mode, the inner loop's Back-EMF estimator already
+        calculates and fights back against the induced voltage,
+        making this external feed-forward redundant.
+    </div>
+</div>
 
 {% endcapture %}
 
