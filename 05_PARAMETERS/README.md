@@ -27,12 +27,6 @@ UPDATE_RATE: 20
 DRIVE_MODE: 3  
 ```
 
-| Parameter    | Type  | Description                         | Default |
-|--------------|-------|-------------------------------------|---------|
-| CONFIG_FLAGS | uint8 | Hardware Config Bitmask             | 48      |
-| UPDATE_RATE  | uint8 | Outer PID Loop Update Rate          | 20      |
-| DRIVE_MODE   | uint8 | Drive Mode Configuration, 3 for ROS | 3       |
-
 __Hardware Configuration Flags__
 
 The `CONFIG_FLAGS` parameter in the ROSRider configuration file is a bitmask that controls various hardware settings. By setting specific bits within this flag, you can configure different aspects of the ROSRider's behavior.
@@ -639,8 +633,6 @@ disabled or if fine-tuning is required.
 
 {% capture tab12 %}
 
-__Synchronization__
-
 ```yaml
 AUTO_SYNC: True  
 SYNC_KP: 256  
@@ -655,7 +647,7 @@ This feature functions as a software-based Phase Locked Loop (PLL).
 It synchronizes the device's internal interrupt timer with an external 
 event stream (typically I2C communication packets) to prevent clock drift.  
 
-__The Core Concept: Clock Drift Compensation__
+__The Core Concept: Clock Drift Synchronization__
 
 Even with high-precision crystals, two separate devices will eventually drift apart.
 This feature measures the **Phase Error**
