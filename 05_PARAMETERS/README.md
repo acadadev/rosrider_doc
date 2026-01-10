@@ -497,7 +497,16 @@ __Filter Types Explained__
  - ***Bi-Quad (Biquadratic Filter):*** A second-order recursive linear filter.
    - Pros: Capable of sharp cutoffs (removing specific frequencies) better than EWMA.
    - Cons: More complex; incorrect configuration can lead to instability.
-   
+
+<div class="ck">
+    <div class="ck1">
+      ⚠️&nbsp;CRITICAL WARNING
+    </div>
+    <div class="ck2">
+        The Biquad filter implementation is mathematically tuned strictly for a 20Hz update configuration.
+    </div>
+</div>
+
 __Current Measurement Filter__
 
 This filter processes the noisy analog data from the current sensors before it enters the inner current loop.
