@@ -391,11 +391,13 @@ __Parameters__
  - `EB_FF_LIMIT` Limits the maximum voltage that the Back-EMF estimator is allowed to inject into the controller.
  - `SCV_OMEGA_THRESHOLD` Zero-Velocity Noise Gate. A cutoff value below which the target velocity (ω) is mathematically treated as exactly **0.0**.
 
-__Dead Zones__
-
-When the advanced Stribeck Compensation Velocity (SCV) model is disabled,
-these parameters define a constant PWM offset that is added to the motor output to linearly
-overcome static friction and hardware deadbands.  
+<div class="ck">
+    <div class="ck2">
+      When the advanced Stribeck Compensation Velocity (SCV) model is disabled,
+      these parameters define a constant PWM offset that is added to the motor output to linearly
+      overcome static friction and hardware deadbands.  
+    </div>
+</div>
 
 ```yaml
 LEFT_FORWARD_DEADZONE: 12  
