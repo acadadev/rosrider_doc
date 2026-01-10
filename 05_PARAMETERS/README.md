@@ -818,6 +818,15 @@ This shorts the motor terminals together.
 Any movement generates Back-EMF, which creates a current loop that fights the motion.
 This brings the robot to a stop quickly and makes it hard to push.  
 
+<div class="ck">
+    <div class="ck1">
+      ⚠️&nbsp;MODE1 Override
+    </div>
+    <div class="ck2">
+      This parameter is ignored if <code class="language-plaintext highlighter-rouge">MODE1t</code> is enabled in your <code class="language-plaintext highlighter-rouge">CONFIG_FLAGS</code>.
+    </div>
+</div>
+
 __Typical Values__
 
 ```yaml
