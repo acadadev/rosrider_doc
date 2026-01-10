@@ -762,8 +762,8 @@ and the **Internal Motor Sense** (for individual motor software fuses).
  - `MAIN_AMP_LIMIT` The maximum allowable current for the entire board (motors + electronics). Uses a Rolling Average Filter to ignore short spikes.
  - `BAT_VOLTS_HIGH` The system will disable motor drivers if the battery voltage exceeds this limit.
  - `BAT_VOLTS_LOW` The system will disable motor drivers down to protect the system.
- - `LEFT_AMP_LIMIT` A fast-acting safety trip for the left motor channel. If current exceeds this value, the **Software Fuse** trips and disables the motor immediately.
- - `RIGHT_AMP_LIMIT` A fast-acting safety trip for the right motor channel. If current exceeds this value, the **Software Fuse** trips and disables the motor immediately.
+ - `LEFT_AMP_LIMIT` A fast-acting safety trip for the left motor channel. If current exceeds this value, the **Software Fuse** trips and disables the motor drivers.
+ - `RIGHT_AMP_LIMIT` A fast-acting safety trip for the right motor channel. If current exceeds this value, the **Software Fuse** trips and disables the motor drivers.
  - `INA219_CAL` The raw calibration value loaded into the **INA219** chip register to ensure Volts and Amps are reported accurately.
 
 __Typical Values__
@@ -790,9 +790,33 @@ __Experimental Features__
 | CROSS_K_LEFT          | float | Cross Feedback Left Coefficient  | 1.0     |
 | CROSS_K_RIGHT         | float | Cross Feedback Right Coefficient | 1.0     |
 
+This feature improves the robot's ability to drive in a straight line, especially on uneven terrain.
+In a standard differential drive robot, the Left and Right motors have separate PID controllers. They don't talk to each other.  
+
+Cross-Coupled Control links the two PID loops together.
+If the Left wheel falls behind, the controller intentionally slows down the Right wheel to match it.
+It prioritizes **Synchronization** over absolute speed.  
+
+ - `CROSS_COUPLED_CONTROL` Enable disable cross coupled control.
+ - `CROSS_KP` Coupling Stiffness. Determines how strongly the motors are **tied** together. Higher values create a stiffer **virtual shaft** but can cause oscillation.
+ - `CROSS_K_LEFT` How much the Right Error affects the Left Motor. Used to balance asymmetric motors.
+ - `CROSS_K_RIGHT` How much the Left Error affects the Right Motor.
+
 | Parameter  | Type    | Description                      | Default |
 |------------|---------|----------------------------------|---------|
 | AUTO_BRAKE | boolean | Auto Brake Enabled               | False   |
+
+This parameter controls the physical behavior of the H-Bridge when the robot is receiving Zero Velocity commands (idle).
+
+ - `AUTO_BRAKE` `True` **Braking**, `False` **Coasting**
+
+In **Coasting** Mode, the controller opens all MOSFETs (High-Impedance). The motor spins freely,
+and the robot's inertia will make it roll to a gradual stop. 
+
+In **Brake** Mode, the controller turns on the bottom MOSFETs (Low-Side) for all phases.
+This shorts the motor terminals together.
+Any movement generates Back-EMF, which creates a current loop that fights the motion.
+This brings the robot to a stop quickly and makes it hard to push.  
 
 __Typical Values__
 
