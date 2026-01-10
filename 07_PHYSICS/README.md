@@ -90,13 +90,6 @@ This ensures that the voltage required to simply maintain speed is supplied imme
 allowing the current controller to focus entirely on torque generation rather
 than wasting gain trying to overcome the motor's own generated voltage.
 
-<div class="img_dv">
-  <figure class="img_fg70">
-    <img src="../images/rosrider/right_motor_classic.png" alt="PID Performance with no feed forwards nor friction" style="width: 100%;">
-    <figcaption>Classic PID, set with default values, struggling to catch the target</figcaption>  
-  </figure>
-</div>
-
 ### Acceleration Feed forward
 
 Acceleration feed forward compensates for the system's mechanical inertia by injecting an
@@ -111,14 +104,7 @@ When the controller operates in Cascaded mode, this logic adapts by converting
 the acceleration demand into an equivalent current target `control_effort_amps`; 
 using the motor's armature resistance `R_ARM`, the system calculates exactly
 how much extra current is required to generate the torque needed for that specific acceleration,
-adding this directly to the inner loop’s reference target.  
-
-<div class="img_dv">
-  <figure class="img_fg70">
-    <img src="../images/rosrider/left_motor_cascaded.png" alt="PID Performance with feed forwards, friction and cascaded loop" style="width: 100%;">
-    <figcaption>Cascaded PID, with acceleration feed forward and friction compensation</figcaption>
-  </figure>
-</div>
+adding this directly to the inner loop’s reference target.
 
 <div class="sl">
     <div class="sl1">
