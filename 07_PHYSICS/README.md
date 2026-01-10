@@ -7,11 +7,9 @@ description: "Feedforwards, Friction Model and Cascaded Current Control Explaine
 
 <div class="sl">
     <div class="sl1">
-        > Controller Physics
+        > Cascaded Control Architecture
     </div>
 </div>
-
-### Cascaded Control Architecture
 
 In Cascaded Mode, the controller splits the regulation task into two distinct loops. An outer velocity loop 
 and an inner current loop—transforming the primary control output from **Voltage** to **Torque**
@@ -124,7 +122,11 @@ The graph below shows the total added friction volts as a function of angular ve
   </figure>
 </div>
 
-### Standard PID Mode
+<div class="sl">
+    <div class="sl1">
+        > Standard PID Mode
+    </div>
+</div>
 
 The standard control mode uses a single-loop PID architecture augmented with predictive compensation terms.
 To improve tracking during dynamic maneuvers, the controller applies **velocity and acceleration feedforwards,**
