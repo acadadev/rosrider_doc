@@ -476,24 +476,31 @@ This filter processes the raw velocity feedback (ω) calculated from the encoder
 Filtering here is critical because differentiation of encoder ticks often produces discrete, **step-like**
 noise that can destabilize the PID loop.
 
-
 | Name            | ID | Type          | Details                                                                                   |
 |-----------------|----|---------------|-------------------------------------------------------------------------------------------|
-| EWMA4           | 0  | EWMA          | Exponentially Weighted Moving Average.  Low lag, light smoothing (Last 4 samples)         | 
-| EWMA8           | 1  | EWMA          | Exponentially Weighted Moving Average (Last 8 samples)                                    |
-| EWMA16          | 2  | EWMA          | Exponentially Weighted Moving Average (Last 16 samples)                                   |
-| BIQUAD_20HZ_2HZ | 3  | Biquad Filter | 2nd Order Low-Pass Filter. Cutoff at 2Hz. (assuming 20Hz loop) aggressive noise rejection |
-| BIQUAD_20HZ_4HZ | 4  | Biquad Filter | 2nd Order Low-Pass Filter. Cutoff at 4Hz.                                                 |
+| NONE            | 0  | N / A         | No Filter                                                                                 |
+| EWMA4           | 1  | EWMA          | Exponentially Weighted Moving Average.  Low lag, light smoothing (Last 4 samples)         | 
+| EWMA8           | 2  | EWMA          | Exponentially Weighted Moving Average (Last 8 samples)                                    |
+| EWMA16          | 3  | EWMA          | Exponentially Weighted Moving Average (Last 16 samples)                                   |
+| BIQUAD_20HZ_2HZ | 4  | Biquad Filter | 2nd Order Low-Pass Filter. Cutoff at 2Hz. (assuming 20Hz loop) aggressive noise rejection |
+| BIQUAD_20HZ_4HZ | 5  | Biquad Filter | 2nd Order Low-Pass Filter. Cutoff at 4Hz.                                                 |
 
-__Current Filter__
+__Current Measurement Filter__
 
-| Name            | ID | Filter Type                           | Details                      |
-|-----------------|----|---------------------------------------|------------------------------|
-| EWMA4           | 0  | Exponentially Weighted Moving Average | Last 4 Values                | 
-| EWMA8           | 1  | Exponentially Weighted Moving Average | Last 8 Values                |
-| EWMA16          | 2  | Exponentially Weighted Moving Average | Last 16 Values               |
+This filter processes the noisy analog data from the current sensors before it enters the inner current loop.
+High-frequency noise here is common due to PWM switching and brush arcing.
+
+| Name   | ID | Filter Type | Details                                                 |
+|--------|----|-------------|---------------------------------------------------------|
+| NONE   | 0  | N / A       | No Filter                                               |
+| EWMA4  | 1  | EWMA        | Exponentially Weighted Moving Average (Last 4 samples)  | 
+| EWMA8  | 2  | EWMA        | Exponentially Weighted Moving Average (Last 8 samples)  |
+| EWMA16 | 3  | EWMA        | Exponentially Weighted Moving Average (Last 16 samples) |
 
 __Output Filter__
+
+This filter is applied to the final output of the control loop before it is sent to the motors. 
+It is typically used to **sharpen** the response or map the linear PID output to a non-linear actuator curve.
 
 | Name | ID | Filter Type |
 |------|----|-------------|
