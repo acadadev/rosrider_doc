@@ -497,6 +497,16 @@ High-frequency noise here is common due to PWM switching and brush arcing.
 | EWMA8  | 2  | EWMA        | Exponentially Weighted Moving Average (Last 8 samples)  |
 | EWMA16 | 3  | EWMA        | Exponentially Weighted Moving Average (Last 16 samples) |
 
+__Filter Types Explained__
+
+ - ***EWMA (Exponentially Weighted Moving Average):*** A computationally efficient filter that gives more weight to recent data.
+   - Pros: Very fast to calculate, good for general noise
+   - Cons: Can introduce lag if the window size (4, 8, 16) is too large
+   
+ - ***Biquad (Biquadratic Filter):*** A second-order recursive linear filter.
+   - Pros: Capable of sharp cutoffs (removing specific frequencies) better than EWMA.
+   - Cons: More complex; incorrect configuration can lead to instability.
+
 __Output Filter__
 
 This filter is applied to the final output of the control loop before it is sent to the motors. 
