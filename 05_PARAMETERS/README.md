@@ -227,6 +227,7 @@ __Anti-Windup__
 {% capture tab5 %}
 
 ```yaml
+CASCADED: True  
 INNER_LIMIT: 240  
 CURRENT_KP: 8.0  
 CURRENT_KI: 6.0  
@@ -237,22 +238,27 @@ CURRENT_OMEGA_K_RIGHT: -2.4
 R_ARM: 2.0  
 ```
 
-| Parameter               | Type   | Description                           | Default |
-|-------------------------|--------|---------------------------------------|---------|
-| INNER_LIMIT             | uint16 | Maximum Controller PWM output         | 192     |
-| CURRENT_KP              | float  | Inner Loop Current Error Proportional | 2.4     |
-| CURRENT_KI              | float  | Inner Loop Current Error Integral     | 1.2     |
-| CURRENT_MULTIPLIER_LEFT | float  | Current Multiplier Left               | 4.8     |
-| CURRENT_MULTIPLIER_LEFT | float  | Current Multiplier Right              | 4.8     |
-| CURRENT_OMEGA_K_LEFT    | float  | Current Omega Compensation Left       | 0.0     |
-| CURRENT_OMEGA_K_RIGHT   | float  | Current Omega Compensation Right      | 0.0     |
-| R_ARM                   | float  | Motor Armature Resistance             | 2.0     |
+| Parameter               | Type    | Description                           | Default |
+|-------------------------|---------|---------------------------------------|---------|
+| CASCADED                | boolean | Cascaded Inner Loop Enabled           | False   |
+| INNER_LIMIT             | uint16  | Maximum Controller PWM output         | 192     |
+| CURRENT_KP              | float   | Inner Loop Current Error Proportional | 2.4     |
+| CURRENT_KI              | float   | Inner Loop Current Error Integral     | 1.2     |
+| CURRENT_MULTIPLIER_LEFT | float   | Current Multiplier Left               | 4.8     |
+| CURRENT_MULTIPLIER_LEFT | float   | Current Multiplier Right              | 4.8     |
+| CURRENT_OMEGA_K_LEFT    | float   | Current Omega Compensation Left       | 0.0     |
+| CURRENT_OMEGA_K_RIGHT   | float   | Current Omega Compensation Right      | 0.0     |
+| R_ARM                   | float   | Motor Armature Resistance             | 2.0     |
 
 __Cascaded control architecture__
 
 The outer loop calculates a current setpoint, which is then tracked by the inner PI loop. 
 This allows for direct torque control and faster disturbance rejection.  
 
+__Configuration__
+
+ - `CASCADED` Enables or disables the Cascaded Loop.
+ 
 __Loop Constraints & Calibration__
 
  - `INNER_LIMIT` The maximum allowable PWM duty cycle for the current loop output.
@@ -575,6 +581,7 @@ ADC_BIPHASE: False
 | ADC_MULTIPHASE | boolean | Multi-Phase ADC Measurement. BEMF compensated Mode   | False   |
 | ADC_BIPHASE    | boolean | Bi-Phase ADC Measurement                             | False   |
 
+
 __ADC Bias Calibration__
 
 ```yaml
@@ -593,15 +600,8 @@ CS_RIGHT_OFFSET: 0
 
 __Enable Features__
 
-```yaml
-AUTO_BRAKE: False  
-CASCADED: True  
-```
 
-| Parameter  | Type    | Description                      | Default |
-|------------|---------|----------------------------------|---------|
-| AUTO_BRAKE | boolean | Auto Brake Enabled               | False   |
-| CASCADED   | boolean | Cascaded Inner Loop Enabled      | False   |
+
 
 {% endcapture %}
 
@@ -699,6 +699,13 @@ CROSS_K_RIGHT: 1.0
 | CROSS_K_LEFT          | float | Cross Feedback Left Coefficient  | 1.0     |
 | CROSS_K_RIGHT         | float | Cross Feedback Right Coefficient | 1.0     |
 
+```yaml
+AUTO_BRAKE: False
+```
+
+| Parameter  | Type    | Description                      | Default |
+|------------|---------|----------------------------------|---------|
+| AUTO_BRAKE | boolean | Auto Brake Enabled               | False   |
 
 {% endcapture %}
 
@@ -776,7 +783,7 @@ For configurations involving the ROS2RPI card, refer to the [ROS2RPI documentati
    tab12_content=tab12
    tab13_title="ROS" 
    tab13_content=tab13
-   tab14_title="Safety" 
+   tab14_title="Limits" 
    tab14_content=tab14
    tab15_title="Experimental" 
    tab15_content=tab15
