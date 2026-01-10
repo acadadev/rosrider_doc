@@ -13,7 +13,7 @@ ROSRider is designed to empower makers and students, to build robots using readi
 Unlike pre-built kits that can be costly and limiting, it can be integrated with existing hardware.
 This approach encourages creativity, reduces costs, and promotes the reuse of existing components, making robotics accessible to a wider audience.
 
-<div class="img_dv_center">
+<div class="img_dv">
   
   <figure class="img_fgc25">
     <img class="img_sh" src="images/rosrider/sorcerer_rosrider.png" alt="Sorcerer with ROSRider" style="width: 100%;">
