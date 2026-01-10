@@ -161,7 +161,7 @@ MAX_RPM: 160.0
 
 __Motor & Encoder Specifications__
 
-These parameters describe the electromechanical properties of the drive motors.
+These parameters describe the mechanical properties of the drive motors.
 
   - `GEAR_RATIO` is the reduction ratio of the gearbox attached to the motor
   - `ENCODER_PPR` is the raw pulses per revolution of the motor shaft, before the gearbox
@@ -176,7 +176,9 @@ essential for converting wheel velocities into robot velocities (inverse kinemat
 
 __Control Limits__
 
-  - `MAX_RPM` The maximum rotational speed of the wheel output shaft in Revolutions Per Minute. Used for safety scaling and normalization.
+  - `MAX_RPM` 
+  - he maximum output shaft speed defined in RPM for readability, used to normalize control inputs and cap velocity commands before conversion to the system's native `rad/s
+  - The maximum rotational speed of the wheel output shaft in Revolutions Per Minute. Used for scaling and normalization. Although entire system runs on `rad/s` this parameter is RPMs
 
 {% endcapture %}
 
