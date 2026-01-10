@@ -482,6 +482,16 @@ noise that can destabilize the PID loop.
 | BIQUAD_20HZ_2HZ | 4  | Bi-Quad Filter | 2nd Order Low-Pass Filter. Cutoff at 2Hz. (assuming 20Hz loop) aggressive noise rejection |
 | BIQUAD_20HZ_4HZ | 5  | Bi-Quad Filter | 2nd Order Low-Pass Filter. Cutoff at 4Hz.                                                 |
 
+__Filter Types Explained__
+
+ - ***EWMA (Exponentially Weighted Moving Average):*** A computationally efficient filter that gives more weight to recent data.
+   - Pros: Very fast to calculate, good for general noise.
+   - Cons: Can introduce lag if the window size (4, 8, 16) is too large.
+   
+ - ***Bi-Quad (Biquadratic Filter):*** A second-order recursive linear filter.
+   - Pros: Capable of sharp cutoffs (removing specific frequencies) better than EWMA.
+   - Cons: More complex; incorrect configuration can lead to instability.
+   
 __Current Measurement Filter__
 
 This filter processes the noisy analog data from the current sensors before it enters the inner current loop.
@@ -524,21 +534,9 @@ allowing you to adjust how sharply the motor power saturates.
 
 __Filter Types Explained__
 
- - ***EWMA (Exponentially Weighted Moving Average):*** A computationally efficient filter that gives more weight to recent data.
-   - Pros: Very fast to calculate, good for general noise.
-   - Cons: Can introduce lag if the window size (4, 8, 16) is too large.
-   
- - ***Bi-Quad (Biquadratic Filter):*** A second-order recursive linear filter.
-   - Pros: Capable of sharp cutoffs (removing specific frequencies) better than EWMA.
-   - Cons: More complex; incorrect configuration can lead to instability.
-   
  - ***TANH (Hyperbolic Tangent):*** A symmetric S-shaped transfer function that creates a **soft clip** effect. It is linear for small errors but smoothly saturates as the output approaches the limit.
-   - Pros: Prevents abrupt mechanical jerk by eliminating hard hits to the voltage ceiling; keeps control linear at low speeds.
-   - Cons: Can make the robot feel sluggish or unresponsive at high speeds if the scaling (divisor) is set too low.
-
  - ***SIGM (Sigmoid):*** A non-linear activation function that maps the control signal to a gradual S-curve.
-   - Pros: rovides an extremely organic acceleration profile; suppresses high-frequency jitter near the maximum output limits.
-   - Cons: 
+
 __Filter Use__
 
 ```yaml
