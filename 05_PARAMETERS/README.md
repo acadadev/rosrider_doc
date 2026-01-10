@@ -509,7 +509,7 @@ __Filter Types Explained__
 
 <div class="ck">
     <div class="ck1">
-      ⚠️&nbsp;CRITICAL WARNING
+      ⚠️&nbsp;Critical WARNING
     </div>
     <div class="ck2">
         The Biquad filter implementation is mathematically tuned strictly for a 20Hz update configuration. Do not use them with other update rates.
@@ -530,7 +530,7 @@ High-frequency noise here is common due to PWM switching and brush arcing.
 
 <div class="ck">
     <div class="ck1">
-      ⚠️&nbsp;SOFTWARE FUSES
+      ⚠️&nbsp;Software Fuses
     </div>
     <div class="ck2">
         When the current filter is disabled or set to a low EWMA,
@@ -655,15 +655,15 @@ CS_RIGHT_OFFSET: 0
 
 {% capture tab11 %}
 
-| Parameter     | Type    | Description                                                                                                   | Default |
-|---------------|---------|---------------------------------------------------------------------------------------------------------------|---------|
-| AUTO_SYNC     | boolean | Enables the automatic timer frequency adjustment logic.                                                       | True    |
-| SYNC_KP       | uint16  | How hard the timer corrects for immediate phase errors.                                                       | 256     |
-| SYNC_KI       | uint16  | How strictly the timer compensates for long-term drift (accumulated error).                                   | 4       |
-| SYNC_LIMIT    | uint16  | The maximum amount the timer period can be changed in a single step. Prevents instability.                    | 4096    |
-| SYNC_INTERVAL | uint8   | Defines how often the sync logic runs (e.g., 8 means check and adjust every 8th loop cycle).                  | 8       |
-| DT_I2C        | uint16  | The desired delay between the sync event and the loop start.                                                  | 32      |
-| DT_THRESHOLD  | uint16  | If the phase error is less than this value (in ticks), no adjustment is made. Prevents **hunting** or jitter. | 2       |
+| Parameter     | Type    | Description                                                                                               | Default |
+|---------------|---------|-----------------------------------------------------------------------------------------------------------|---------|
+| AUTO_SYNC     | boolean | Enables the automatic timer frequency adjustment logic.                                                   | True    |
+| SYNC_KP       | uint16  | How hard the timer corrects for immediate phase errors.                                                   | 256     |
+| SYNC_KI       | uint16  | How strictly the timer compensates for long-term drift (accumulated error).                               | 4       |
+| SYNC_LIMIT    | uint16  | The maximum amount the timer period can be changed in a single step. Prevents instability.                | 4096    |
+| SYNC_INTERVAL | uint8   | Defines how often the sync logic runs (e.g., 8 means check and adjust every 8th loop cycle).              | 8       |
+| DT_I2C        | uint16  | The desired delay between the sync event and the loop start.                                              | 32      |
+| DT_THRESHOLD  | uint16  | If the phase error is less than this value (in ticks), no adjustment is made. Prevents hunting or jitter. | 2       |
 
 This feature functions as a software-based Phase Locked Loop (PLL).
 It synchronizes the device's internal interrupt timer with an external 
