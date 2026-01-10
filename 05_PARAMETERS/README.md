@@ -248,8 +248,9 @@ R_ARM: 2.0
 | CURRENT_OMEGA_K_RIGHT   | float  | Current Omega Compensation Right      | 0.0     |
 | R_ARM                   | float  | Motor Armature Resistance             | 2.0     |
 
-ROSRider employs a cascaded control architecture where the outer velocity loop 
-calculates a current setpoint, which is then tracked by this inner PI loop. 
+__Cascaded control architecture__
+
+The outer loop calculates a current setpoint, which is then tracked by the inner PI loop. 
 This allows for direct torque control and faster disturbance rejection.  
 
 __Loop Constraints & Calibration__
@@ -310,7 +311,9 @@ K_FF_ACCEL: 0.08
 | K_FF_VEL          | float   | Velocity Feed-forward / s      | 0.16    |
 | K_FF_ACCEL        | float   | Acceleration Feed-forward / s² | 0.12    | 
 
-Adds predictive control signals to the outer velocity loop.
+__Physics Based Feed-Forwards__
+
+Adds predictive control signals to the outer loop.
 Instead of waiting for an error to develop (as PID does),
 feed-forward uses the physics of the robot to **guess** the required output for a given target
 velocity and acceleration. This significantly reduces lag during rapid speed changes.  
