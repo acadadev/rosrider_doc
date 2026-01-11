@@ -324,8 +324,6 @@ Instead of waiting for an error to develop (as PID does),
 feed-forward uses the physics of the robot to **guess** the required output for a given target
 velocity and acceleration. This significantly reduces lag during rapid speed changes.
 
-__Configuration__
-
  - `OUTER_FEEDFORWARD` Enables or disables the physics-based feed-forward terms in the outer control loop.
 
 __Coefficients__
