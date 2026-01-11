@@ -44,6 +44,8 @@ You should see a message indicating successful entry into bootloader mode, which
    <img class="replay" src="../images/rosrider/tailing_syslog.gif" alt="Bootloader Mode Output">
 </div>
 
+### Updating ROSRider Firmware with I2CRider.dfu
+
 <div class="ck">
     <div class="ck1">
         ⚠️&nbsp;Before Starting Update: Important Considerations
@@ -58,8 +60,6 @@ You should see a message indicating successful entry into bootloader mode, which
         <strong>Firmware Compatibility:</strong> Before proceeding with the firmware update, ensure you have the correct firmware file for your specific ROSRider model. Incorrect firmware can lead to device malfunction.
     </div>
 </div>
-
-### Updating ROSRider Firmware with I2CRider.dfu
 
 __Prerequisites__
 
