@@ -364,6 +364,10 @@ K_FF_ACCEL: 0.08
 | SCV_OMEGA_THRESHOLD    | float   | Below this threshold SCV will not be triggered         | 0.05    | 
 | SCV_LATCH_THRESHOLD    | float   | Below this threshold Static kick will not be triggered | 1.0     | 
 
+![Stribeck Friction Model](../images/rosrider/plot_scv.png)
+
+The graph above shows the total added friction volts as a function of angular velocity. `STATIC_KICK = 6V`, `STRIBECK_WIDTH = 16`, `COULOMB_RUN = 3V`, `VISCOUS_FRICTION = 0.001`, `SCV_LATCH_THRESHOLD = 2 rad/s`
+
 __Advanced Friction Compensation (Stribeck Model)__
 
 This model implements a comprehensive physics-based friction model entirely within the outer **PID loop.**
@@ -378,12 +382,6 @@ To prevent jitter at very low speeds, the model features a specific gating mecha
 
  - **Above Threshold:** The full Stribeck model is active. (Static Kick + Coulomb + Viscous)
  - **Below Thrshold:** The aggressive static kick and viscous terms are **disabled.** Only the constant `COULOMB_RUN` voltage is applied. This prevents low-speed oscillation while maintaining sufficient holding force to keep the robot ready to move.
-
-__Friction Compensation Voltage vs Angular Velocity__
-
-The graph below shows the total added friction volts as a function of angular velocity. `STATIC_KICK = 6V`, `STRIBECK_WIDTH = 16`, `COULOMB_RUN = 3V`, `VISCOUS_FRICTION = 0.001`, `SCV_LATCH_THRESHOLD = 2 rad/s`
-
-![Stribeck Friction Model](../images/rosrider/plot_scv.png)
 
 __Parameters__
 
@@ -443,6 +441,14 @@ RIGHT_REVERSE_DEADZONE: 12
 | TRIM_MOTOR_K  | float | Motor constant for output calculation | 1.0     |
 | TRIM_CONSTANT | float | Trim value for motor output           | 1.0     |
 
+![Trim Model](../images/rosrider/plot_trim.png)
+
+This image above demonstrates how the TRIM parameter affects differential drive robot trajectory:
+a positive TRIM value (+0.01) increases the left motor constant relative to the right,
+causing the robot to curve left (red path), while a negative TRIM value (-0.01) has the opposite effect,
+curving the robot right (blue path), and zero TRIM (0.00) results in straight-line motion (gray path)
+with equal motor constants.  
+
 __Trim Model__
 
 In the context of motor control, the motor constant is a proportionality factor that relates the input voltage to the output speed or torque. By adjusting the motor constant, we can compensate for differences in motor performance, such as variations in motor efficiency or mechanical load.
@@ -464,14 +470,6 @@ The `MotorConstantLeft` and `MotorConstantRight` values are used to multiply the
 
 By adjusting the TRIM parameter, we can effectively fine-tune the motor outputs to ensure accurate and precise robot motion, even in the presence of minor variations in motor performance or mechanical alignment.
 
-![Trim Model](../images/rosrider/plot_trim.png)
-
-This image above demonstrates how the TRIM parameter affects differential drive robot trajectory:
-a positive TRIM value (+0.01) increases the left motor constant relative to the right,
-causing the robot to curve left (red path), while a negative TRIM value (-0.01) has the opposite effect,
-curving the robot right (blue path), and zero TRIM (0.00) results in straight-line motion (gray path)
-with equal motor constants.  
-
 __Typical Values__
 
 ```yaml
@@ -489,6 +487,15 @@ TRIM_CONSTANT: 0.0
 | OMEGA_FILTER_TYPE   | uint8 | Velocity Filter Type | 1       |
 | CURRENT_FILTER_TYPE | uint8 | Current Filter Type  | 3       |
 | OUTPUT_FILTER_TYPE  | uint8 | Output Filter Type   | 0       | 
+
+![EWMA Filter Plot](../images/rosrider/plot_biquad_ewma.png)
+
+This plot compares the step response characteristics of five low-pass filters when subjected to a step input from 0 to 24 at iteration 16.
+Three Exponential Weighted Moving Average (EWMA) filters with window sizes N=4, 8, and 16 are compared against two second-order Biquad filters
+designed for a 20Hz sampling rate with cutoff frequencies of 2Hz and 4Hz.
+The EWMA4 filter provides the fastest response but with the least smoothing, while EWMA16 offers the smoothest output at the cost of slower settling time.
+The BiQuad filters demonstrate superior frequency response control, with the 2Hz variant providing smooth steady-state performance and the 4Hz variant
+offering a balance between responsiveness and filtering effectiveness.  
 
 __Velocity Measurement Filter__
 
@@ -514,15 +521,6 @@ __Filters Explained__
  - **Bi-Quad:** *(Biquadratic Filter)* A second-order recursive linear filter.
    - Pros: Capable of sharp cutoffs (removing specific frequencies) better than EWMA.
    - Cons: More complex; incorrect configuration can lead to instability.
-
-![EWMA Filter Plot](../images/rosrider/plot_biquad_ewma.png)
-
-This plot compares the step response characteristics of five low-pass filters when subjected to a step input from 0 to 24 at iteration 16.
-Three Exponential Weighted Moving Average (EWMA) filters with window sizes N=4, 8, and 16 are compared against two second-order Biquad filters
-designed for a 20Hz sampling rate with cutoff frequencies of 2Hz and 4Hz.
-The EWMA4 filter provides the fastest response but with the least smoothing, while EWMA16 offers the smoothest output at the cost of slower settling time.
-The Biquad filters demonstrate superior frequency response control, with the 2Hz variant providing smooth steady-state performance and the 4Hz variant
-offering a balance between responsiveness and filtering effectiveness.  
 
 <div class="ck">
     <div class="ck1">
