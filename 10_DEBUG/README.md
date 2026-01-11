@@ -31,7 +31,7 @@ This package includes a suite of utilities enabling you to:
 A red LED indicates a system fault. While rare, these errors are usually recoverable.
 Please check the status codes listed below to diagnose the problem and find the appropriate solution.  
 
-### Status Registers
+### POWER Status
 
 | PWR_STATUS    | Bit | Description                                   |
 |---------------|-----|-----------------------------------------------|
@@ -47,7 +47,7 @@ Please check the status codes listed below to diagnose the problem and find the 
 Send a SYSCTL command to **Soft-Reset** the board in case of over-current events (`RIGHT_AMP`, `LEFT_AMP`, `MAIN_FUSE`),
 or **Hard-Reset** the board for critical power supply faults (`POWER_BAD`, `OVER_VOLTAGE`, `UNDER_VOLTAGE`).  
 
----
+### MOTOR Status
 
 | MTR_STATUS     | Bit | Description                        |
 |----------------|-----|------------------------------------|
@@ -75,7 +75,7 @@ The software utilizes a more precise method for monitoring bus voltage and curre
 For standard ROS operations, use `MODE_PID`. `MODE_PWM` is reserved specifically for Torque Constant calibration.
 Please note that while `MODE_VEL is functional`, it remains untested and is not currently supported by the driver.  
 
----
+### SYSTEM Status
 
 | SYS_STATUS           | Bit | Description                                                                                |
 |----------------------|-----|--------------------------------------------------------------------------------------------|
@@ -94,11 +94,17 @@ __OTHER CHAPTERS__
 
 __TODO__
 
-- add images to parameters { adc, sync }
 - PID tuner video and GIF
-- Mode that image from 01-specs out.
+
 - Procedures
 - rosrider_diag, vis-pid
 - rosrider_diag, parameter-manager
 - rosrider_node documentation on github
-- make videos of pid debug tool
+
+
+__ILLUSTRATIONS__
+
+ - params, FF, overshooting vel
+ - trim, maybe an illustration
+ - adc, illusration
+ - sync, direct plot.
