@@ -48,8 +48,8 @@ Please check the status codes listed below to diagnose the problem and find the 
 | UNDER_VOLTAGE | b1  | Battery Under Voltage, System Disabled        |
 | AUX_PWR       | b0  | Auxillary Power Supply ON                     |
 
-Send a SYSCTL command to ***Soft-Reset*** the board in case of over-current events (`RIGHT_AMP`, `LEFT_AMP`, `MAIN_FUSE`),
-or ***Hard-Reset*** the board for critical power supply faults (`POWER_BAD`, `OVER_VOLTAGE`, `UNDER_VOLTAGE`).  
+Send a SYSCTL command to **Soft-Reset** the board in case of over-current events (`RIGHT_AMP`, `LEFT_AMP`, `MAIN_FUSE`),
+or **Hard-Reset** the board for critical power supply faults (`POWER_BAD`, `OVER_VOLTAGE`, `UNDER_VOLTAGE`).  
 
 ---
 
@@ -88,7 +88,7 @@ Please note that while `MODE_VEL is functional`, it remains untested and is not 
 | INITIAL_UPDATE_ERROR | b1  | If a parameter value from EEPROM can not pass input validation at startup. System Disabled |
 | EEPROM_WRITE_ERROR   | b0  | Denotes EEPROM write error                                                                 |
 
-If `INITIAL_UPDATE_ERROR` you can try to send a SYSCTL command to ***restore factory defaults***  
+If `INITIAL_UPDATE_ERROR` you can try to send a SYSCTL command to **restore factory defaults**  
 
 __OTHER CHAPTERS__
 
