@@ -489,6 +489,12 @@ noise that can destabilize the PID loop.
 | BIQUAD_20HZ_2HZ | 4  | Bi-Quad Filter | 2nd Order Low-Pass Filter. Cutoff at 2Hz. (assuming 20Hz loop) aggressive noise rejection |
 | BIQUAD_20HZ_4HZ | 5  | Bi-Quad Filter | 2nd Order Low-Pass Filter. Cutoff at 4Hz.                                                 |
 
+<div class="img_dv">
+  <figure class="img_fg60">
+    <img src="../images/rosrider/velocity_filtering.png" alt="Velocity Filter Illustration" style="width: 100%;">
+  </figure>
+</div>
+
 __Filter Types Explained__
 
  - **EWMA** (Exponentially Weighted Moving Average) A computationally efficient filter that gives more weight to recent data.
