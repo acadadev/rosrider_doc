@@ -156,14 +156,6 @@ Use CR1225 3V coin battery.
    tab12_content=tab12
 %}
 
-### Port Diagram
-
-<div class="img_dv">
-  <figure class="img_fg60">
-    <img src="../images/rosrider/ROSRider4D_portmap.png" alt="ROSRider Port Diagram" style="width: 100%;">
-  </figure>
-</div>
-
 ### Connecting ROSRider to Raspberry PI
 
 This wiring diagram illustrates direct I2C communication with the Raspberry PI.
