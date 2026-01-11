@@ -14,6 +14,21 @@ description: "Updating Firmware of ROSRider control card"
 To ensure long-term usability and adaptability, the ROSRider card supports firmware updates via USB.
 This allows for continuous improvement and the addition of new features, without requiring specialized programming tools or hardware modifications.  
 
+<div class="ck">
+    <div class="ck1">
+        ⚠️&nbsp;Before Starting Update
+    </div>
+    <div class="ck2">
+        <strong>Power Supply:</strong> Ensure a stable power supply during the update process.
+    </div>
+    <div class="ck2">
+        <strong>USB Connection:</strong> A reliable USB connection is crucial.
+    </div>
+    <div class="ck2">
+        <strong>Firmware Compatibility:</strong> Before proceeding with the firmware update, ensure you have the correct firmware file for your specific ROSRider model. Incorrect firmware can lead to device malfunction.
+    </div>
+</div>
+
 ### Enter Bootloader Mode
 
 - **Press and Hold the Reset Button:** Keep the reset button pressed.
@@ -42,21 +57,6 @@ You should see a message indicating successful entry into bootloader mode, which
 
 <div class="img_dv">
    <img class="replay" src="../images/rosrider/tailing_syslog.gif" alt="Bootloader Mode Output">
-</div>
-
-<div class="ck">
-    <div class="ck1">
-        ⚠️&nbsp;Before Starting Update
-    </div>
-    <div class="ck2">
-        <strong>Power Supply:</strong> Ensure a stable power supply during the update process.
-    </div>
-    <div class="ck2">
-        <strong>USB Connection:</strong> A reliable USB connection is crucial.
-    </div>
-    <div class="ck2">
-        <strong>Firmware Compatibility:</strong> Before proceeding with the firmware update, ensure you have the correct firmware file for your specific ROSRider model. Incorrect firmware can lead to device malfunction.
-    </div>
 </div>
 
 ### Updating ROSRider Firmware with I2CRider.dfu
