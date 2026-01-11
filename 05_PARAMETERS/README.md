@@ -802,16 +802,13 @@ It prioritizes **Synchronization** over absolute speed.
 |------------|---------|----------------------------------|---------|
 | AUTO_BRAKE | boolean | Auto Brake Enabled               | False   |
 
-This parameter controls the physical behavior of the H-Bridge when the robot is receiving Zero Velocity commands (idle).
+This parameter controls the physical behavior of the H-Bridge when the robot is receiving Zero Velocity commands (idle).  
 
- - `AUTO_BRAKE` If `False` Coasting, If `True` Braking
-
-In **Coasting** Mode, the controller opens all MOSFETs (High-Impedance). The motor spins freely,
+In **Coasting** Mode ( `AUTO_BRAKE: False` ), the controller opens all MOSFETs (High-Impedance). The motor spins freely,
 and the robot's inertia will make it roll to a gradual stop. 
 
-In **Brake** Mode, the controller turns on the bottom MOSFETs (Low-Side) for all phases.
-This shorts the motor terminals together.
-Any movement generates Back-EMF, which creates a current loop that fights the motion.
+In **Brake** Mode ( `AUTO_BRAKE: True` ), the controller turns on the bottom MOSFETs (Low-Side) for all phases.
+This shorts the motor terminals together. Any movement generates Back-EMF, which creates a current loop that fights the motion.
 This brings the robot to a stop quickly and makes it hard to push.  
 
 <div class="ck">
