@@ -94,6 +94,9 @@ __TODO__
 
 - PID tuner video and GIF
 
+- read_status, set drive mode
+- kt calibration
+
 - Procedures
 - rosrider_diag, vis-pid
 - rosrider_diag, parameter-manager
