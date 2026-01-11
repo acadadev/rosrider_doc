@@ -527,7 +527,7 @@ __Filters Explained__
       ⚠️&nbsp;Critical WARNING
     </div>
     <div class="ck2">
-        The Biquad filter implementation is mathematically tuned strictly for a 20Hz update configuration. Do not use them with other update rates.
+        The BiQuad filter implementation is mathematically tuned strictly for a 20Hz update configuration. Do not use them with other update rates.
     </div>
 </div>
 
@@ -630,7 +630,7 @@ CURRENT_OMEGA_FILTER: True
 | ADC_MULTIPHASE | boolean | Multi-Phase ADC Measurement. BEMF compensated Mode   | False   |
 | ADC_BIPHASE    | boolean | Bi-Phase ADC Measurement                             | False   |
 
-![ADC PWM Syncronization](../images/rosrider/plot_adc_pwm.png)
+![ADC PWM Syncronization](../images/rosrider/plot_adc_sync.png)
 
 The figure above highlights the synchronization between the PWM control signal and the system's ADC,
 where the marked states (`UP`, `LOAD`, `DOWN`, `ZERO`) indicate precisely when the ADC triggers a measurement to capture the current value.
