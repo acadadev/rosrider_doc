@@ -339,11 +339,9 @@ __Coefficients__
 
 __Classic PID struggling to catch the target setpoint__
 
-![Classic PID](../images/rosrider/right_motor_classic.png)
+![PID Mode Comparison](../images/rosrider/PID_mode_comparison.png)
 
-__Cascaded PID with feed-forward terms__
 
-![Cascaded PID](../images/rosrider/left_motor_cascaded.png)
 
 __Typical Values__
 
