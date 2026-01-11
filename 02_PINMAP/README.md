@@ -5,12 +5,6 @@ title: "Pinmaps and Connections"
 description: "Pinmaps and Connections of ROSRider Card"
 ---
 
-<div class="img_dv">
-  <figure class="img_fg60">
-    <img src="" alt="ROSRider Port Diagram" style="width: 100%;">
-  </figure>
-</div>
-
 {% capture tab1 %}
 
 __Port Diagram__
