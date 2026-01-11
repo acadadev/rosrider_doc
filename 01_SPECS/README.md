@@ -22,11 +22,7 @@ description: "Hardware Specifications"
 | **Enhanced Diagnostics** | The system publishes detailed diagnostic information including battery voltage, current consumption and motor current feedback |
 | **Synchronization**| Synchronizes with the host computer to ensure low-latency data transmission |
 
-<div class="sl">
-    <div class="sl1">
-        > Advanced Features
-    </div>
-</div>
+### Advanced Features
 
 | :---| :---|
 | **Cascaded Current Loop** | A cascaded current loop enables precise torque control and superior dynamic response |
@@ -49,11 +45,7 @@ faster response to disturbances, and a more stable overall system compared to si
   </figure>
 </div>
 
-<div class="sl">
-    <div class="sl1">
-        > Power
-    </div>
-</div>
+### Power
 
 | :---| :---|
 | **Power Input** | 6V to 15V wide input voltage |
@@ -68,11 +60,7 @@ Built-in current monitoring and a hardware-resettable fuse safeguard the motors 
 A 5V power supply can be enabled or disabled via software, providing flexibility for powering external sensors and devices.
 ROSRider utilizes standard JST connectors for motor and I2C connections, allowing for easy assembly and customization. Additionally, two QWIC connectors provide convenient expansion options for integrating various sensors and modules.
 
-<div class="sl">
-    <div class="sl1">
-        > Communications
-    </div>
-</div>
+### Communications
 
 | :---| :---|
 | **I2C** | Dual QWIC ports, also available on header |
@@ -81,11 +69,7 @@ ROSRider utilizes standard JST connectors for motor and I2C connections, allowin
 
 The device currently uses I2C for communication, but it can also operate over USB, which is primarily used for firmware updates.
 
-<div class="sl">
-    <div class="sl1">
-        > Software
-    </div>
-</div>
+### Software
 
 | :---| :---|
 | **ROS Drivers** | C++ Drivers for ROS2 Humble and ROS2 Jazzy |
@@ -96,11 +80,7 @@ The device currently uses I2C for communication, but it can also operate over US
 
 This project is primarily a software-driven effort, and we continually develop and update our software as part of an ongoing, continuous development cycle.
 
-<div class="sl">
-    <div class="sl1">
-        > Supported Platforms
-    </div>
-</div>
+### Supported Platforms
 
 ROSRider is primarily designed for Raspberry Pi and Jetson platforms, leveraging their powerful processing capabilities and compact form factors. However, the card is compatible with any Linux-based system equipped with an I2C port.
 
