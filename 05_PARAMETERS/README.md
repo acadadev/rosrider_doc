@@ -317,11 +317,7 @@ __Physics Feed-Forwards (Outer Loop)__
 Adds predictive control signals to the outer loop.
 Instead of waiting for an error to develop (as PID does),
 feed-forward uses the physics of the robot to **guess** the required output for a given target
-velocity and acceleration. This significantly reduces lag during rapid speed changes.  
-
-![Classic PID](../images/rosrider/right_motor_classic.png)
-
-![Cascaded PID](../images/rosrider/left_motor_cascaded.png)
+velocity and acceleration. This significantly reduces lag during rapid speed changes.
 
 __Configuration__
 
@@ -340,6 +336,14 @@ __Coefficients__
         making this external feed-forward redundant.
     </div>
 </div>
+
+__Classic PID struggling to catch the target setpoint__
+
+![Classic PID](../images/rosrider/right_motor_classic.png)
+
+__Cascaded PID with feed-forward terms__
+
+![Cascaded PID](../images/rosrider/left_motor_cascaded.png)
 
 __Typical Values__
 
