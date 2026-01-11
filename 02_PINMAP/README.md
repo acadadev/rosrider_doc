@@ -5,6 +5,12 @@ title: "Pinmaps and Connections"
 description: "Pinmaps and Connections of ROSRider Card"
 ---
 
+<div class="sl">
+    <div class="sl1">
+        > Pinmaps and Connections
+    </div>
+</div>
+
 {% capture tab1 %}
 
 __Port Diagram__
