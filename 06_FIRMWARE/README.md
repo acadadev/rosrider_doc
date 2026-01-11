@@ -14,7 +14,8 @@ description: "Updating Firmware of ROSRider control card"
 To ensure long-term usability and adaptability, the ROSRider card supports firmware updates via USB.
 This allows for continuous improvement and the addition of new features, without requiring specialized programming tools or hardware modifications.  
 
-__Enter Bootloader Mode:__
+### Enter Bootloader Mode:
+
 - Press and Hold the Reset Button: Keep the reset button pressed.
 - Press and Hold the Boot Button: While still holding the reset button, press the boot button.
 - Release the Reset Button: Once the reset button is released, you can also release the boot button.
@@ -43,11 +44,11 @@ You should see a message indicating successful entry into bootloader mode, which
    <img class="replay" src="../images/rosrider/tailing_syslog.gif" alt="Bootloader Mode Output">
 </div>
 
-__Before Starting Update: Important Considerations__
+### Before Starting Update: Important Considerations
 
- - ***Power Supply:*** Ensure a stable power supply during the update process.
- - ***USB Connection:*** A reliable USB connection is crucial.
- - ***Firmware Compatibility*** Always use the firmware provided by ACADA Robotics for your specific model.
+ - **Power Supply:** Ensure a stable power supply during the update process.
+ - **USB Connection:** A reliable USB connection is crucial.
+ - **Firmware Compatibility** Always use the firmware provided by ACADA Robotics for your specific model.
 
 By following these steps and adhering to the specific instructions provided by ACADA Robotics, you can successfully update your ROSRider's firmware and enhance its capabilities.
 
@@ -60,11 +61,7 @@ By following these steps and adhering to the specific instructions provided by A
     </div>
 </div>
 
-<div class="sl">
-    <div class="sl1">
-        > Updating ROSRider Firmware with I2CRider.dfu
-    </div>
-</div>
+### Updating ROSRider Firmware with I2CRider.dfu
 
 __Prerequisites:__
 
