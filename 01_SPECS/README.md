@@ -24,6 +24,10 @@ description: "Hardware Specifications"
 
 ### Advanced Features
 
+The inclusion of a cascaded current loop significantly enhances the control architecture by 
+placing a high-bandwidth current controller inside the velocity loop; this allows for precise torque control, 
+faster response to disturbances, and a more stable overall system compared to simple single-loop designs.
+
 | :---| :---|
 | **Cascaded Current Loop** | A cascaded current loop enables precise torque control and superior dynamic response |
 | **Synchronized ADC** | ADC samples current synchronized with the PWM generator and selectively integrates waveform |
@@ -33,12 +37,6 @@ description: "Hardware Specifications"
 | **Stribeck Friction Model** | Static Kick, Coulomb Run, Viscous Friction |
 | **BEMF Compensation** | Back-EMF compensated from current measurements |
 | **Selectable Filters** | The firmware also implements custom selectable filters for both current (I) and rotational speed (ω) filtering |
-
-The inclusion of a cascaded current loop significantly enhances the control architecture by 
-placing a high-bandwidth current controller inside the velocity loop; this allows for precise torque control, 
-faster response to disturbances, and a more stable overall system compared to simple single-loop designs.
-
-![ROSRider PID Tuner](../images/rosrider/ROSRider_PID_Visualization_LEFT.png)
 
 ### Power
 

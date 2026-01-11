@@ -96,6 +96,7 @@ __TODO__
 
 - add images to parameters { adc, sync }
 - PID tuner video and GIF
+- Mode that image from 01-specs out.
 - Procedures
 - rosrider_diag, vis-pid
 - rosrider_diag, parameter-manager
