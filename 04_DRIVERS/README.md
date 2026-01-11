@@ -172,7 +172,7 @@ This is completely normal behavior as the connection stabilizes and does not ind
     </div>
 </div>
 
-__Monitoring Diagnostics__
+### Monitoring Diagnostics
 
 To monitor the health and performance of your ROSRider, you can view real-time diagnostic information by using the following command:
 
@@ -206,7 +206,7 @@ This command will output the following diagnostic information to your terminal:
 
 By monitoring these values, you can ensure optimal performance and troubleshoot any potential issues.
 
-__Monitoring Odometry__
+### Monitoring Odometry
 
 To monitor the odometry data being published by the ROSRider, you can use the following command:
 
