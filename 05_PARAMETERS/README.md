@@ -247,9 +247,7 @@ eliminating the lag and slow rise time seen in the classic implementation.
 __Cascaded control architecture__
 
 The outer loop calculates a current setpoint, which is then tracked by the inner PI loop. 
-This allows for direct torque control and faster disturbance rejection.  
-
-__Configuration__
+This allows for direct torque control and faster disturbance rejection.
 
  - `CASCADED` Enables or disables the Cascaded Loop.
  
