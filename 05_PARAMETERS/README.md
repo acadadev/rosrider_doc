@@ -237,13 +237,12 @@ K_FB_WINDUP: 0.5
 | CURRENT_OMEGA_K_RIGHT   | float   | Current Omega Compensation Right      | 0.0     |
 | R_ARM                   | float   | Motor Armature Resistance             | 2.0     |
 
-
-These plots compare the step response of a classic PID controller (left)
-versus a cascaded PID with feedforward and Stribeck friction modeling (right).
+These plots below compare the step response of a **classic PID controller** (left)
+versus a **cascaded PID with** feedforwards and stribeck friction modeling (right).
 The advanced control scheme on the right demonstrates significantly tighter tracking,
-eliminating the lag and slow rise time seen in the classic implementation.
+eliminating the lag and slow rise time seen in the classic implementation.  
 
-![PID Mode Comparison](../images/rosrider/PID_modes.png)
+![PID Mode Comparison](../images/rosrider/PID_modes_comparison.png)
 
 __Cascaded control architecture__
 
