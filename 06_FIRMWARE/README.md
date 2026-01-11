@@ -44,15 +44,9 @@ You should see a message indicating successful entry into bootloader mode, which
    <img class="replay" src="../images/rosrider/tailing_syslog.gif" alt="Bootloader Mode Output">
 </div>
 
-### : Important Considerations
-
- - **Power Supply:** Ensure a stable power supply during the update process.
- - **** .
- - **Firmware Compatibility** Always use the firmware provided by ACADA Robotics for your specific model.
-
 <div class="ck">
     <div class="ck1">
-        ⚠️&nbsp;Before Starting Update
+        ⚠️&nbsp;Before Starting Update: Important Considerations
     </div>
     <div class="ck2">
         <strong>Power Supply:</strong> Ensure a stable power supply during the update process.
