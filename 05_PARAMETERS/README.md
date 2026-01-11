@@ -859,6 +859,7 @@ This section covers the fundamental settings for board identity, communication i
  - `MAX_IDLE_SECONDS` The duration of inactivity (no commands received) allowed before the board enters a low-power Hibernate mode to save battery.
  - `ROS2RPI_CONFIG` When operating the ROSRider card in conjunction with the ROS2RPI card on a Raspberry Pi platform, the driver provides the capability to transmit commands to the ROS2RPI card.
 
+__ROS2RPI_CONFIG__
 
 This functionality is particularly valuable for controlling peripheral devices, such as lidar units, during the driver initialization sequence.
 If the ROSRider card is deployed independently (standalone configuration), set this parameter to 0.
