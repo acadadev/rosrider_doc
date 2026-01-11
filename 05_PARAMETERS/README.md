@@ -693,7 +693,7 @@ The red `AUTO_SYNC` marker indicates when the automatic synchronization feature 
 Within a few seconds, the system corrects the phase drift, stabilizing the phase delay to the value
 given on `DT_I2C`.  
 
-![Phase Error](../images/rosrider/plot_auto_sync.png)
+![Phase Error](../images/rosrider/plot_adc_sync.png)
 
 __The Core Concept: Clock Drift Synchronization__
 
