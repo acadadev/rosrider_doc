@@ -186,14 +186,4 @@ the aggressive static kick and viscous terms are strictly disabled,
 applying only the constant Coulomb Run voltage to prevent low-speed oscillation 
 while maintaining sufficient holding force.
 
-#### Friction Compensation Voltage vs Angular Velocity
-
-The graph below shows the total added friction volts as a function of angular velocity. `STATIC_KICK = 6V`, `STRIBECK_WIDTH = 16`, `COULOMB_RUN = 3V`, `VISCOUS_FRICTION = 0.001`, `SCV_LATCH_THRESHOLD = 2 rad/s`
-
-<div class="img_dv">
-  <figure class="img_fg75">
-    <img src="images/rosrider/scv_friction_model.png" alt="Stribeck Friction Model" style="width: 100%;">
-  </figure>
-</div>
-
 __Next Chapter:__ [ROS Drivers](04_DRIVERS/README.md)
