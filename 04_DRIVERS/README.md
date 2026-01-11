@@ -30,6 +30,8 @@ The ROSRider firmware incorporates a timing control feature that synchronizes it
     </div>
 </div>
 
+### Driver Installation
+
 Create a ROS Workspace:
 
 <div class="highlight notranslate position-relative">
@@ -140,6 +142,8 @@ To ensure that your system can find the necessary ROSRider components, you'll ne
         If it returns <code class="language-plaintext highlighter-rouge">Package not found</code>, you must run the source command above.
     </div>
 </div>
+
+### Starting ROSRider
 
 Once you've successfully installed the ROSRider package and configured your environment, it's time to bring the ROSRider board to life!
 Make sure you have sourced the setup script `source devel/setup.bash` either manually before running the command, or have permanently configured it in your `.bashrc` file.  
