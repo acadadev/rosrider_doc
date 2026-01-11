@@ -242,7 +242,7 @@ versus a **cascaded PID with** feedforwards and stribeck friction modeling (righ
 The advanced control scheme on the right demonstrates significantly tighter tracking,
 eliminating the lag and slow rise time seen in the classic implementation.  
 
-![PID Mode Comparison](../images/rosrider/PID_modes_comparison.png)
+![PID Mode Comparison](../images/rosrider/PID_modes.png)
 
 __Cascaded control architecture__
 
