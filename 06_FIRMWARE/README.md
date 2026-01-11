@@ -14,7 +14,7 @@ description: "Updating Firmware of ROSRider control card"
 To ensure long-term usability and adaptability, the ROSRider card supports firmware updates via USB.
 This allows for continuous improvement and the addition of new features, without requiring specialized programming tools or hardware modifications.  
 
-### Enter Bootloader Mode:
+### Enter Bootloader Mode
 
 - Press and Hold the Reset Button: Keep the reset button pressed.
 - Press and Hold the Boot Button: While still holding the reset button, press the boot button.
@@ -63,13 +63,13 @@ By following these steps and adhering to the specific instructions provided by A
 
 ### Updating ROSRider Firmware with I2CRider.dfu
 
-__Prerequisites:__
+__Prerequisites__
 
 - Linux Computer: You'll need a Linux-based computer (e.g., Ubuntu, Debian) to perform the firmware update.
 - `dfu-util`: Ensure you have `dfu-util` installed on your system. It's a common tool for device firmware updates.
 - `I2CRider.dfu`: Obtain this file from Acada Robotics. It contains the firmware update for your ROSRider.
 
-__Steps:__
+__Steps__
 
 Execute the following commands to set the suffix and prefix for the DFU device:
 
