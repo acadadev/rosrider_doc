@@ -447,7 +447,7 @@ causing the robot to curve left (red path), while a negative TRIM value (-0.01) 
 curving the robot right (blue path), and zero TRIM (0.00) results in straight-line motion (gray path)
 with equal motor constants.  
 
-![Trim Model](../images/rosrider/plot_trim.png)
+![Trim Model](../images/rosrider/plot_trim_model.png)
 
 __Trim Model__
 
