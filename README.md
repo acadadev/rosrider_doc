@@ -38,7 +38,12 @@ This eliminates the need for manual intervention, such as disconnecting batterie
 The ROS2RPI card offers flexible serial port routing, enabling remote access to the Raspberry Pi and other devices like LiDAR sensors.
 This feature prevents boot conflicts caused by LiDAR serial output during system startup and allows for remote control of the LiDAR, extending its operational life and simplifying maintenance procedures.
 
-![Odometry Plot](images/rosrider/odometry-house-sm.gif)
+<div class="img_dv">
+  <figure class="img_fg50">
+    <img class="img_sh" src="images/rosrider/odometry-house-sm.gif" alt="" style="width: 100%;">
+    <figcaption>Fig 4. Odometry and LIDAR data visualization</figcaption>
+  </figure>
+</div>
 
 ### Supported Motors
 
