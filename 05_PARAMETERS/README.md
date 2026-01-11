@@ -464,7 +464,7 @@ The `MotorConstantLeft` and `MotorConstantRight` values are used to multiply the
 
 By adjusting the TRIM parameter, we can effectively fine-tune the motor outputs to ensure accurate and precise robot motion, even in the presence of minor variations in motor performance or mechanical alignment.
 
-![Trim Model](../images/rosrider/trim_model.png)
+![Trim Model](../images/rosrider/plot_trim_model.png)
 
 This image above demonstrates how the TRIM parameter affects differential drive robot trajectory:
 a positive TRIM value (+0.01) increases the left motor constant relative to the right,
@@ -517,7 +517,7 @@ __Biquadratic Filter__
    - Pros: Capable of sharp cutoffs (removing specific frequencies) better than EWMA.
    - Cons: More complex; incorrect configuration can lead to instability.
 
-![EWMA Filter Plot](../images/rosrider/biquad_ewma_plot.png)
+![EWMA Filter Plot](../images/rosrider/plot_biquad_ewma.png)
 
 This plot compares the step response characteristics of five low-pass filters when subjected to a step input from 0 to 24 at iteration 16.
 Three Exponential Weighted Moving Average (EWMA) filters with window sizes N=4, 8, and 16 are compared against two second-order Biquad filters
