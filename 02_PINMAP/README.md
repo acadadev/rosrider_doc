@@ -5,13 +5,6 @@ title: "Pinmaps and Connections"
 description: "Pinmaps and Connections of ROSRider Card"
 ---
 
-
-
-
-
-
-### Connector Pinmaps
-
 {% capture tab1 %}
 
 __Left Motor Connector__
