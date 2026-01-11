@@ -119,7 +119,7 @@ XT30 Power Connector. Apply maximum 12V.
 
 {% capture tab12 %}
 
-__Battery__
+__Backup Battery__
 
 Use CR1225 3V coin battery.
 
