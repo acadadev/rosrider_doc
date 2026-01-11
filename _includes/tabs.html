@@ -39,3 +39,27 @@
   {% if include.tab15_title %}<div class="tab-content" data-tab-id="tab15">{{ include.tab15_content | markdownify }}</div>{% endif %}
   {% if include.tab16_title %}<div class="tab-content" data-tab-id="tab16">{{ include.tab16_content | markdownify }}</div>{% endif %}
 </div>
+
+<div class="tab-container">
+  <div class="tab-header">
+    {% if include.tab1_title %}
+      {% assign t1_slug = include.tab1_title | slugify %}
+      <button class="tab-btn active" onclick="openTab(event, '{{ t1_slug }}')">{{ include.tab1_title }}</button>
+    {% endif %}
+
+    {% if include.tab2_title %}
+      {% assign t2_slug = include.tab2_title | slugify %}
+      <button class="tab-btn" onclick="openTab(event, '{{ t2_slug }}')">{{ include.tab2_title }}</button>
+    {% endif %}
+
+    </div>
+
+  <div id="{{ include.tab1_title | slugify }}" class="tab-content" style="display: block;">
+    {{ include.tab1_content | markdownify }}
+  </div>
+
+  <div id="{{ include.tab2_title | slugify }}" class="tab-content">
+    {{ include.tab2_content | markdownify }}
+  </div>
+
+  </div>

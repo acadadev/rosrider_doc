@@ -98,7 +98,7 @@
       });
     </script>
 
-    <script>
+    <!--script>
       function openTab(evt, tabId) {
         var container = evt.currentTarget.closest('.tab-container');
         var contents = container.getElementsByClassName("tab-content");
@@ -114,6 +114,42 @@
             target.style.display = "block";
             evt.currentTarget.classList.add("active");
         }
+      }
+    </script -->
+
+    <script>
+      function openTab(evt, tabId) {
+        var container;
+        if(evt) {
+            container = evt.currentTarget.closest('.tab-container');
+            history.replaceState(null, null, '#' + tabId);
+        } else {
+            container = document.querySelector('.tab-container');
+        }
+
+        var contents = container.getElementsByClassName("tab-content");
+        for (var i = 0; i < contents.length; i++) {
+          contents[i].style.display = "none";
+        }
+
+        var btns = container.getElementsByClassName("tab-btn");
+        for (var i = 0; i < btns.length; i++) {
+          btns[i].classList.remove("active");
+        }
+
+        document.getElementById(tabId).style.display = "block";
+
+        var activeBtn = container.querySelector("button[onclick*='" + tabId + "']");
+        if(activeBtn) activeBtn.classList.add("active");
+      }
+
+      if (window.location.hash) {
+          var hash = window.location.hash.substring(1);
+          var el = document.getElementById(hash);
+          if (el && el.classList.contains('tab-content')) {
+              openTab(null, hash);
+              el.scrollIntoView();
+          }
       }
     </script>
   </body>
