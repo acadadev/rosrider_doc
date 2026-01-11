@@ -441,13 +441,13 @@ RIGHT_REVERSE_DEADZONE: 12
 | TRIM_MOTOR_K  | float | Motor constant for output calculation | 1.0     |
 | TRIM_CONSTANT | float | Trim value for motor output           | 1.0     |
 
-![Trim Model](../images/rosrider/plot_trim.png)
-
-This image above demonstrates how the TRIM parameter affects differential drive robot trajectory:
+This graph below demonstrates how the TRIM parameter affects differential drive robot trajectory:
 a positive TRIM value (+0.01) increases the left motor constant relative to the right,
 causing the robot to curve left (red path), while a negative TRIM value (-0.01) has the opposite effect,
 curving the robot right (blue path), and zero TRIM (0.00) results in straight-line motion (gray path)
 with equal motor constants.  
+
+![Trim Model](../images/rosrider/plot_trim.png)
 
 __Trim Model__
 
