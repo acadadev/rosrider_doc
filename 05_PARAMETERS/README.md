@@ -689,6 +689,10 @@ This feature functions as a software-based Phase Locked Loop (PLL).
 It synchronizes the device's internal interrupt timer with an external 
 event stream (typically I2C communication packets) to prevent clock drift.  
 
+The red `AUTO_SYNC` marker indicates when the automatic synchronization feature is enabled.
+Within a few seconds, the system corrects the phase drift, stabilizing the phase delay to the value
+given on `DT_I2C`.  
+
 ![Phase Error](../images/rosrider/plot_phase_error.png)
 
 __The Core Concept: Clock Drift Synchronization__
