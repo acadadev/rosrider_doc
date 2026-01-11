@@ -5,11 +5,7 @@ title: "ROS Drivers"
 description: "Compiling and Installing ROS2 Drivers"
 ---
 
-<div class="sl">
-    <div class="sl1">
-        > Installing ROSRider Drivers
-    </div>
-</div>
+### Installing ROSRider Drivers
 
 The ROSRider package provides the necessary ROS nodes and drivers to interact with the ROSRider board. It allows you to control motors, read sensor data, and perform other tasks using ROS.
 
@@ -232,11 +228,7 @@ To monitor the odometry data being published by the ROSRider, you can use the fo
    <img class="replay" src="../images/rosrider/verifying_odom.gif" alt="Monitoring Odometry Output">
 </div>
 
-<div class="sl">
-    <div class="sl1">
-        > ROS Parameter Server
-    </div>
-</div>
+### ROS Parameter Server
 
 The ROS Parameter Server is a mechanism that allows you to dynamically configure parameters in your ROS nodes.
 When you launch a ROS node with a YAML file, the parameters defined in the file are loaded into the ROS Parameter Server.
