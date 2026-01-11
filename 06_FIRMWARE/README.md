@@ -31,9 +31,9 @@ This allows for continuous improvement and the addition of new features, without
 
 ### Enter Bootloader Mode
 
-- **Press and Hold the Reset Button:** Keep the reset button pressed.
-- **Press and Hold the Boot Button:** While still holding the reset button, press the boot button.
-- **Release the Reset Button:** Once the reset button is released, you can also release the boot button.
+- **Press and Hold the RESET Button:** Keep the reset button pressed.
+- **Press and Hold the BOOT Button:** While still holding the reset button, press the boot button.
+- **Release the RESET Button:** Once the reset button is released, you can also release the boot button.
 
 The ROSRider should now enter bootloader mode. This is indicated by the green LED lighting up constantly.
 
