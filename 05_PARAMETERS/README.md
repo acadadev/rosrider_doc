@@ -849,7 +849,7 @@ AUTO_BRAKE: False
 | MONITOR_RATE     | uint8  | Rate at which current sensor data is monitored               | 100     |
 | MAX_IDLE_SECONDS | uint16 | Maximum idle seconds before entering hibernate mode          | 3600    |
 
-This section covers the fundamental settings for board identity, communication interfaces, and power management.
+This section covers the settings for ROSRider board.
 
  - `I2C_ADDRESS` The 7-bit address used by the host to communicate with this card.
  - `I2C_ENABLED` This is primarily for development / debugging. Disabling this will prevent the driver from communicating with the board.
