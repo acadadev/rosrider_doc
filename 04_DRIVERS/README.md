@@ -232,4 +232,15 @@ To monitor the odometry data being published by the ROSRider, you can use the fo
    <img class="replay" src="../images/rosrider/verifying_odom.gif" alt="Monitoring Odometry Output">
 </div>
 
+__ROS Parameter Server__
+
+The ROS Parameter Server is a mechanism that allows you to dynamically configure parameters in your ROS nodes.
+When you launch a ROS node with a YAML file, the parameters defined in the file are loaded into the ROS Parameter Server.
+This makes them accessible to other nodes and allows you to modify them at runtime using tools like `ros2 param`.
+
+The ROSRider node reads the configuration parameters from the YAML file and stores them in its non-volatile memory (EEPROM).
+This allows the ROSRider to retain its configuration settings even after a power cycle.
+Dynamic parameters, such as PID control gains, can be adjusted on-the-fly using tools like `ros2 param` or our custom `ROSRider Parameter Manager` and the changes are immediately applied.
+
+
 __Next Chapter:__ [Parameters](../05_PARAMETERS/README.md)
