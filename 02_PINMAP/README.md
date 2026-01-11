@@ -5,23 +5,12 @@ title: "Pinmaps and Connections"
 description: "Pinmaps and Connections of ROSRider Card"
 ---
 
-<div class="sl">
-    <div class="sl1">
-        > Port Diagram
-    </div>
-</div>
 
-<div class="img_dv">
-  <figure class="img_fg60">
-    <img src="../images/rosrider/ROSRider4D_portmap.png" alt="ROSRider Port Diagram" style="width: 100%;">
-  </figure>
-</div>
 
-<div class="sl">
-    <div class="sl1">
-        > Connector Pinmaps
-    </div>
-</div>
+
+
+
+### Connector Pinmaps
 
 {% capture tab1 %}
 
@@ -158,11 +147,15 @@ Use CR1225 3V coin battery.
    tab11_content=tab11
 %}
 
-<div class="sl">
-    <div class="sl1">
-        > Connecting ROSRider to Raspberry PI
-    </div>
+### Port Diagram
+
+<div class="img_dv">
+  <figure class="img_fg60">
+    <img src="../images/rosrider/ROSRider4D_portmap.png" alt="ROSRider Port Diagram" style="width: 100%;">
+  </figure>
 </div>
+
+### Connecting ROSRider to Raspberry PI
 
 This wiring diagram illustrates direct I2C communication with the Raspberry PI.
 To enable I2C communication on a Raspberry Pi running Ubuntu, first ensure I2C is enabled by adding
@@ -177,11 +170,7 @@ After installation, verify the connection using `sudo i2cdetect -y 1` to detect 
   </figure>
 </div>
 
-<div class="sl">
-    <div class="sl1">
-        > Detecting I2C Devices
-    </div>
-</div>
+### Detecting I2C Devices
 
 For troubleshooting purposes, you may want to detect I2C devices connected to your computer.
 To do this, you can use the `i2cdetect` command in the terminal. Run the following command to install i2c-tools: `sudo apt install i2c-tools`.
@@ -208,11 +197,7 @@ Use the `i2cdetect` command to scan the I2C bus and identify connected devices:
 This command will display a table of I2C addresses. The default address of the ROSRider is `0x3C`, and the default address of the ROS2RPI card is `0x20`.
 If you only have a ROSRider connected directly, you should only see the address `0x3C`.
 
-<div class="sl">
-    <div class="sl1">
-        > Connecting ROSRider to NVIDIA Jetson
-    </div>
-</div>
+### Connecting ROSRider to NVIDIA Jetson
 
 The NVIDIA Jetson has two I2C ports accessible via the header.
 To ensure proper communication with I2C devices, it's crucial to configure the I2C voltage level.
