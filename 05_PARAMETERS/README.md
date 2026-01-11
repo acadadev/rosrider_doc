@@ -495,7 +495,7 @@ The EWMA4 filter provides the fastest response but with the least smoothing, whi
 The BiQuad filters demonstrate superior frequency response control, with the 2Hz variant providing smooth steady-state performance and the 4Hz variant
 offering a balance between responsiveness and filtering effectiveness.  
 
-![EWMA Filter Plot](../images/rosrider/plot_filter.png)
+![EWMA Filter Plot](../images/rosrider/plot_filter_response.png)
 
 __Velocity Measurement Filter__
 
