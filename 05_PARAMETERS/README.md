@@ -505,17 +505,19 @@ noise that can destabilize the PID loop.
 | BIQUAD_20HZ_2HZ | 4  | Bi-Quad Filter | 2nd Order Low-Pass Filter. Cutoff at 2Hz. (assuming 20Hz loop) aggressive noise rejection |
 | BIQUAD_20HZ_4HZ | 5  | Bi-Quad Filter | 2nd Order Low-Pass Filter. Cutoff at 4Hz.                                                 |
 
-__Filter Types Explained__
+__Exponentially Weighted Moving Average__
 
- - **EWMA** (Exponentially Weighted Moving Average) A computationally efficient filter that gives more weight to recent data.
+ - **EWMA** A computationally efficient filter that gives more weight to recent data.
    - Pros: Very fast to calculate, good for general noise.
    - Cons: Can introduce lag if the window size (4, 8, 16) is too large.
-   
- - **Bi-Quad** (Biquadratic Filter) A second-order recursive linear filter.
+
+__Biquadratic Filter__
+
+ - **Bi-Quad**  A second-order recursive linear filter.
    - Pros: Capable of sharp cutoffs (removing specific frequencies) better than EWMA.
    - Cons: More complex; incorrect configuration can lead to instability.
 
-![EWMA Filter Plot](../images/rosrider/ewma_step24_response.png)
+![EWMA Filter Plot](../images/rosrider/biquad_ewma_plot.png)
 
 <div class="ck">
     <div class="ck1">
