@@ -383,7 +383,7 @@ __Friction Compensation Voltage vs Angular Velocity__
 
 The graph below shows the total added friction volts as a function of angular velocity. `STATIC_KICK = 6V`, `STRIBECK_WIDTH = 16`, `COULOMB_RUN = 3V`, `VISCOUS_FRICTION = 0.001`, `SCV_LATCH_THRESHOLD = 2 rad/s`
 
-![Stribeck Friction Model](../images/rosrider/plot_scv_friction.png)
+![Stribeck Friction Model](../images/rosrider/plot_scv.png)
 
 __Parameters__
 
@@ -517,7 +517,7 @@ __Biquadratic Filter__
    - Pros: Capable of sharp cutoffs (removing specific frequencies) better than EWMA.
    - Cons: More complex; incorrect configuration can lead to instability.
 
-![EWMA Filter Plot](../images/rosrider/plot_biquad_ewma.png)
+![EWMA Filter Plot](../images/rosrider/plot_biquad.png)
 
 This plot compares the step response characteristics of five low-pass filters when subjected to a step input from 0 to 24 at iteration 16.
 Three Exponential Weighted Moving Average (EWMA) filters with window sizes N=4, 8, and 16 are compared against two second-order Biquad filters
