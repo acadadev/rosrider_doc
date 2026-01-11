@@ -631,7 +631,7 @@ CURRENT_OMEGA_FILTER: True
 | ADC_MULTIPHASE | boolean | Multi-Phase ADC Measurement. BEMF compensated Mode   | False   |
 | ADC_BIPHASE    | boolean | Bi-Phase ADC Measurement                             | False   |
 
-![ADC PWM Syncronization](../images/rosrider/plot_adc.png)
+![ADC PWM Syncronization](../images/rosrider/plot_.png)
 
 The figure above highlights the synchronization between the PWM control signal and the system's ADC,
 where the marked states (`UP`, `LOAD`, `DOWN`, `ZERO`) indicate precisely when the ADC triggers a measurement to capture the current value.
@@ -688,13 +688,13 @@ CS_RIGHT_OFFSET: 0
 
 This feature functions as a software-based Phase Locked Loop (PLL).
 It synchronizes the device's internal interrupt timer with an external 
-event stream (typically I2C communication packets) to prevent clock drift.  
+event stream (typically I2C communication packets) to prevent clock drift.
+
+![Phase Error](../images/rosrider/plot_adc_sync.png)
 
 The red `AUTO_SYNC` marker indicates when the automatic synchronization feature is enabled.
 Within a few seconds, the system corrects the phase drift, stabilizing the phase delay to the value
 given on `DT_I2C`.  
-
-![Phase Error](../images/rosrider/plot_adc_sync.png)
 
 __The Core Concept: Clock Drift Synchronization__
 
