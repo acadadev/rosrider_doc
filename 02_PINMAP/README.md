@@ -13,8 +13,6 @@ description: "Pinmaps and Connections of ROSRider Card"
 
 {% capture tab1 %}
 
-__Port Diagram__
-
 ![ROSRider Port Diagram](../images/rosrider/ROSRider4D_portmap_tab.png)
 
 {% endcapture %}
