@@ -464,7 +464,7 @@ The `MotorConstantLeft` and `MotorConstantRight` values are used to multiply the
 
 By adjusting the TRIM parameter, we can effectively fine-tune the motor outputs to ensure accurate and precise robot motion, even in the presence of minor variations in motor performance or mechanical alignment.    
 
-![Trim Model](../images/rosrider/trim_model_plot.png)
+![Trim Model](../images/rosrider/trim_model.png)
 
 __Typical Values__
 
