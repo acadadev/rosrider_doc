@@ -5,11 +5,7 @@ title: "Troubleshooting"
 description: "Error codes and conditions on the ROSRider control card"
 ---
 
-<div class="sl">
-    <div class="sl1">
-        > ROSRider SMBUS
-    </div>
-</div>
+### ROSRider SMBUS
 
 The ROSRider SMBus library allows for direct control of the ROSRider board using Python, independent of standard ROS drivers.
 The source code is available at [https://github.com/acadadev/rosrider_smbus](https://github.com/acadadev/rosrider_smbus)
@@ -39,11 +35,7 @@ This package includes a suite of utilities enabling you to:
 A red LED indicates a system fault. While rare, these errors are usually recoverable.
 Please check the status codes listed below to diagnose the problem and find the appropriate solution.  
 
-<div class="sl">
-    <div class="sl1">
-        > Status Registers
-    </div>
-</div>
+### Status Registers
 
 | PWR_STATUS    | Bit | Description                                   |
 |---------------|-----|-----------------------------------------------|
