@@ -339,9 +339,7 @@ __Coefficients__
 
 __Classic PID struggling to catch the target setpoint__
 
-![PID Mode Comparison](../images/rosrider/PID_mode_comparison.png)
-
-
+![PID Mode Comparison](../images/rosrider/PID_modes.png)
 
 __Typical Values__
 
