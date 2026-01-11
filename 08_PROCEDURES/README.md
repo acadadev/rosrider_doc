@@ -1,13 +1,13 @@
 ---
 layout: default
 title_url: /08_PROCEDURES/README.html
-title: "Procedures in Robotics"
+title: "Procedures"
 description: "Detailed Procedures for working with a ROSRider robot"
 ---
 
 <div class="sl">
     <div class="sl1">
-        > Procedures in Robotics
+        > Procedures
     </div>
 </div>
 
