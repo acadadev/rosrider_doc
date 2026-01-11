@@ -443,6 +443,8 @@ RIGHT_REVERSE_DEADZONE: 12
 | TRIM_MOTOR_K  | float | Motor constant for output calculation | 1.0     |
 | TRIM_CONSTANT | float | Trim value for motor output           | 1.0     | 
 
+![Trim Model](../images/rosrider/trim_model.png)
+
 __Trim Model__
 
 In the context of motor control, the motor constant is a proportionality factor that relates the input voltage to the output speed or torque. By adjusting the motor constant, we can compensate for differences in motor performance, such as variations in motor efficiency or mechanical load.
