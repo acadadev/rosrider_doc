@@ -443,7 +443,7 @@ RIGHT_REVERSE_DEADZONE: 12
 | TRIM_MOTOR_K  | float | Motor constant for output calculation | 1.0     |
 | TRIM_CONSTANT | float | Trim value for motor output           | 1.0     | 
 
-![Trim Model](../images/rosrider/trim_model.png)
+![Trim Model](../images/rosrider/trim_model_plot.png)
 
 __Trim Model__
 
