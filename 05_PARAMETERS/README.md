@@ -383,7 +383,7 @@ __Friction Compensation Voltage vs Angular Velocity__
 
 The graph below shows the total added friction volts as a function of angular velocity. `STATIC_KICK = 6V`, `STRIBECK_WIDTH = 16`, `COULOMB_RUN = 3V`, `VISCOUS_FRICTION = 0.001`, `SCV_LATCH_THRESHOLD = 2 rad/s`
 
-![Stribeck Friction Model](../images/rosrider/scv_friction_model.png)
+![Stribeck Friction Model](../images/rosrider/plot_scv_friction.png)
 
 __Parameters__
 
