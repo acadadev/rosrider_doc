@@ -139,12 +139,6 @@ This effectively linearizes the motor response, ensuring the control loop is dri
   </figure>
 </div>
 
-<div class="sl">
-    <div class="sl1">
-        > Velocity and Acceleration Feed-Forwards
-    </div>
-</div>
-
 ### Velocity Feed-forward
 
 Velocity feed-forward prevents the controller from lagging by proactively supplying the voltage necessary
@@ -176,11 +170,7 @@ using the motor's armature resistance `R_ARM`, the system calculates exactly
 how much extra current is required to generate the torque needed for that specific acceleration,
 adding this directly to the inner loop’s reference target.
 
-<div class="sl">
-    <div class="sl1">
-        > Stiction and Friction Injection (SCV)
-    </div>
-</div>
+### Stiction and Friction Injection (SCV)
 
 The friction compensation utilizes a comprehensive physics-based model—combining
 `STATIC_KICK`, `COULOMB_RUN`, and `VISCOUS_FRICTION` terms—calculated entirely within
