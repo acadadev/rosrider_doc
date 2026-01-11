@@ -71,7 +71,7 @@ __Prerequisites:__
 
 __Steps:__
 
-1. Execute the following commands to set the suffix and prefix for the DFU device:
+Execute the following commands to set the suffix and prefix for the DFU device:
 
 <div class="highlight notranslate position-relative">
   <div class="highlight">
@@ -88,7 +88,7 @@ dfu-prefix -s 0x2800 -a I2CRider.dfu</pre>
   </clipboard-copy>
 </div>
 
-2. Run the following command to initiate the firmware update process:
+Run the following command to initiate the firmware update process:
 
 <div class="highlight notranslate position-relative">
   <div class="highlight">
