@@ -689,6 +689,8 @@ This feature functions as a software-based Phase Locked Loop (PLL).
 It synchronizes the device's internal interrupt timer with an external 
 event stream (typically I2C communication packets) to prevent clock drift.  
 
+![Phase Error](../images/rosrider/plot_phase_error.png)
+
 __The Core Concept: Clock Drift Synchronization__
 
 Even with high-precision crystals, two separate devices will eventually drift apart.
