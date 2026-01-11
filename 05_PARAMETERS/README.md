@@ -515,6 +515,8 @@ __Filter Types Explained__
    - Pros: Capable of sharp cutoffs (removing specific frequencies) better than EWMA.
    - Cons: More complex; incorrect configuration can lead to instability.
 
+![EWMA Filter Plot](../images/rosrider/ewma_step_response.png)
+
 <div class="ck">
     <div class="ck1">
       ⚠️&nbsp;Critical WARNING
