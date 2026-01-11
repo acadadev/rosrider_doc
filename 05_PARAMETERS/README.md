@@ -441,14 +441,11 @@ RIGHT_REVERSE_DEADZONE: 12
 |---------------|-------|---------------------------------------|---------|
 | TRIM_GAIN     | float | Overall Gain Factor                   | 1.0     |
 | TRIM_MOTOR_K  | float | Motor constant for output calculation | 1.0     |
-| TRIM_CONSTANT | float | Trim value for motor output           | 1.0     | 
-
-![Trim Model](../images/rosrider/trim_model_plot.png)
+| TRIM_CONSTANT | float | Trim value for motor output           | 1.0     |
 
 __Trim Model__
 
 In the context of motor control, the motor constant is a proportionality factor that relates the input voltage to the output speed or torque. By adjusting the motor constant, we can compensate for differences in motor performance, such as variations in motor efficiency or mechanical load.
-
 The trim parameter, on the other hand, is used to introduce a small offset to the motor's output. This can be helpful in compensating for slight misalignments in the robot's mechanical structure or differences in motor characteristics.
 
 In the given equations:
@@ -466,6 +463,8 @@ The `MotorConstantLeft` and `MotorConstantRight` values are used to multiply the
 - `TRIM_CONSTANT` is a small value used to adjust the motor output.
 
 By adjusting the TRIM parameter, we can effectively fine-tune the motor outputs to ensure accurate and precise robot motion, even in the presence of minor variations in motor performance or mechanical alignment.    
+
+![Trim Model](../images/rosrider/trim_model_plot.png)
 
 __Typical Values__
 
