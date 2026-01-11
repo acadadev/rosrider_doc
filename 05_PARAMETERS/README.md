@@ -630,6 +630,8 @@ CURRENT_OMEGA_FILTER: True
 | ADC_MULTIPHASE | boolean | Multi-Phase ADC Measurement. BEMF compensated Mode   | False   |
 | ADC_BIPHASE    | boolean | Bi-Phase ADC Measurement                             | False   |
 
+![ADC PWM Syncronization](../images/rosrider/adc_sync.png)
+
 __ADC & Calibration Configuration__
 
 This section controls how the microcontroller calibrates its sensors and synchronizes its analog
