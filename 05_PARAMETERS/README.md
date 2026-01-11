@@ -13,6 +13,12 @@ description: "Parametric Configuration of the ROSRider control card"
 
 {% capture tab1 %}
 
+<div class="sl">
+    <div class="sl1">
+        > Driver
+    </div>
+</div>
+
 | Parameter    | Type  | Description                         | Default |
 |--------------|-------|-------------------------------------|---------|
 | CONFIG_FLAGS | uint8 | Hardware Config Bitmask             | 48      |
@@ -68,6 +74,12 @@ DRIVE_MODE: 3
 {% endcapture %}
 
 {% capture tab2 %}
+
+<div class="sl">
+    <div class="sl1">
+        > PWM
+    </div>
+</div>
 
 | Parameter | Type   | Description                         | Default |
 |-----------|--------|-------------------------------------|---------|
