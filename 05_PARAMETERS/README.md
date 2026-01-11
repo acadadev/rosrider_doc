@@ -744,8 +744,6 @@ PUB_DIAGNOSTICS: True
 
 {% capture tab13 %}
 
-__Electrical Limits__
-
 | Parameter       | Type   | Description                                    | Default |
 |-----------------|--------|------------------------------------------------|---------|
 | MAIN_AMP_LIMIT  | float  | Maximum current draw for the main power supply | 3.6     |
