@@ -490,12 +490,13 @@ TRIM_CONSTANT: 0.0
 
 This plot below compares the step response characteristics of five low-pass filters when subjected to a step input from 0 to 24 at iteration 16.
 Three Exponential Weighted Moving Average (EWMA) filters with window sizes N=4, 8, and 16 are compared against two second-order Biquad filters
-designed for a 20Hz sampling rate with cutoff frequencies of 2Hz and 4Hz.
+designed for a 20Hz sampling rate with cutoff frequencies of 2Hz and 4Hz.  
+
+![EWMA Filter Plot](../images/rosrider/plot_filter_response.png)
+
 The EWMA4 filter provides the fastest response but with the least smoothing, while EWMA16 offers the smoothest output at the cost of slower settling time.
 The BiQuad filters demonstrate superior frequency response control, with the 2Hz variant providing smooth steady-state performance and the 4Hz variant
 offering a balance between responsiveness and filtering effectiveness.  
-
-![EWMA Filter Plot](../images/rosrider/plot_filter_response.png)
 
 __Velocity Measurement Filter__
 
