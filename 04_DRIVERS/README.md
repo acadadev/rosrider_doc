@@ -232,7 +232,11 @@ To monitor the odometry data being published by the ROSRider, you can use the fo
    <img class="replay" src="../images/rosrider/verifying_odom.gif" alt="Monitoring Odometry Output">
 </div>
 
-__ROS Parameter Server__
+<div class="sl">
+    <div class="sl1">
+        > ROS Parameter Server
+    </div>
+</div>
 
 The ROS Parameter Server is a mechanism that allows you to dynamically configure parameters in your ROS nodes.
 When you launch a ROS node with a YAML file, the parameters defined in the file are loaded into the ROS Parameter Server.
