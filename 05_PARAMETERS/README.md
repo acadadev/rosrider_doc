@@ -850,23 +850,16 @@ AUTO_BRAKE: False
 
 This section covers the fundamental settings for board identity, communication interfaces, and power management.
 
- - `ROS2RPI_CONFIG`
  - `I2C_ADDRESS` The 7-bit address used by the host to communicate with this card.
  - `I2C_ENABLED` This is primarily for development / debugging. Disabling this will prevent the driver from communicating with the board.
  - `DEBUG` Enables internal verbose logging or specific testing behaviors.
  - `RTC_TRIM` A calibration value for the Real-Time Clock (RTC). This parameter adjusts the internal oscillator to compensate for drift, ensuring time-based calculations remain accurate over long periods.
- - `ALLOWED_SKIP`
+ - `ALLOWED_SKIP` The ROSRider employs a command timeout mechanism to ensure safe operation and prevent unintended movement. This mechanism monitors the frequency of incoming commands from the host computer. If the system fails to receive a command within a specified time frame, it enters a state that restrains movement. The `ALLOWED_SKIP` parameter in the ROSRider configuration determines the maximum number of consecutive command cycles that can be skipped before triggering the timeout. This value, when multiplied by the inverse of the `UPDATE_RATE` (measured in milliseconds), sets the overall timeout duration. For instance, if `ALLOWED_SKIP` is set to 3 and the `UPDATE_RATE` is 20Hz, the timeout duration would be 150 milliseconds.
  - `MONITOR_RATE` Defines how frequently (in Hz) the background task checks monitoring sensors.
  - `MAX_IDLE_SECONDS` The duration of inactivity (no commands received) allowed before the board enters a low-power Hibernate mode to save battery.
+ - `ROS2RPI_CONFIG` When operating the ROSRider card in conjunction with the ROS2RPI card on a Raspberry Pi platform, the driver provides the capability to transmit commands to the ROS2RPI card.
 
-__ALLOWED_SKIP__
 
-The ROSRider employs a command timeout mechanism to ensure safe operation and prevent unintended movement. This mechanism monitors the frequency of incoming commands from the host computer. If the system fails to receive a command within a specified time frame, it enters a state that restrains movement.
-The `ALLOWED_SKIP` parameter in the ROSRider configuration determines the maximum number of consecutive command cycles that can be skipped before triggering the timeout. This value, when multiplied by the inverse of the `UPDATE_RATE` (measured in milliseconds), sets the overall timeout duration. For instance, if `ALLOWED_SKIP` is set to 3 and the `UPDATE_RATE` is 20Hz, the timeout duration would be 150 milliseconds.
-
-__ROS2RPI_CONFIG__
-
-When operating the ROSRider card in conjunction with the ROS2RPI card on a Raspberry Pi platform, the driver provides the capability to transmit commands to the ROS2RPI card.
 This functionality is particularly valuable for controlling peripheral devices, such as lidar units, during the driver initialization sequence.
 If the ROSRider card is deployed independently (standalone configuration), set this parameter to 0.
 
