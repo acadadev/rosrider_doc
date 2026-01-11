@@ -57,6 +57,9 @@ By following these steps and adhering to the specific instructions provided by A
         ⚠️&nbsp;Checkpoint
     </div>
     <div class="ck2">
+        <strong>Power Supply:</strong> Ensure a stable power supply during the update process.
+    </div>
+    <div class="ck2">
         Before proceeding with the firmware update, ensure you have the correct firmware file for your specific ROSRider model. Incorrect firmware can lead to device malfunction.
     </div>
 </div>
