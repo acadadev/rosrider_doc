@@ -18,11 +18,7 @@ This package includes a suite of utilities enabling you to:
  - Set PID and PWM Targets
  - Profile Motor Torque Constant
 
-<div class="sl">
-    <div class="sl1">
-        > LED Blink Codes
-    </div>
-</div>
+### LED Blink Codes
 
 | Color | Visual Pattern | Duration | System State     | Description                                           |
 |-------|----------------|----------|------------------|-------------------------------------------------------|
