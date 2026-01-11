@@ -630,7 +630,12 @@ CURRENT_OMEGA_FILTER: True
 | ADC_MULTIPHASE | boolean | Multi-Phase ADC Measurement. BEMF compensated Mode   | False   |
 | ADC_BIPHASE    | boolean | Bi-Phase ADC Measurement                             | False   |
 
-![ADC PWM Syncronization](../images/rosrider/adc_sync.png)
+This figure illustrates the relationship between a digital PWM control signal (grey square wave) and its resulting analog response (blue curve),
+showing how the voltage exponentially charges and discharges in reaction to the control timing.
+Color-coded markers identify key transition events UP, LOAD, DOWN, and ZERO — highlighting exactly where the analog waveform intersects
+with these specific points in the cycle.
+
+![ADC PWM Syncronization](../images/rosrider/plot_adc_sync.png)
 
 __ADC & Calibration Configuration__
 
