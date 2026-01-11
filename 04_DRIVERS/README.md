@@ -134,7 +134,7 @@ To ensure that your system can find the necessary ROSRider components, you'll ne
 
 <div class="ck">
     <div class="ck1">
-        ⚠️&nbsp;Checkpoint:&nbsp;Verify Workspace Sourcing
+        ⚠️&nbsp;Verify Workspace Sourcing&nbsp;
     </div>
     <div class="ck2">
         Confirm that ROS 2 can find the ROSRider package by running:
