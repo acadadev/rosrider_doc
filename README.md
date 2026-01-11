@@ -83,11 +83,7 @@ To further enhance the integration of ROSRider with open-source robotics, we hav
   </figure>
 </div>
 
-<div class="sl">
-    <div class="sl1">
-        > Cascaded Control Architecture
-    </div>
-</div>
+### Cascaded Control Architecture
 
 In Cascaded Mode, the controller splits the regulation task into two distinct loops. An outer velocity loop 
 and an inner current loop—transforming the primary control output from **Voltage** to **Torque**
@@ -129,11 +125,7 @@ By proactively supplying the voltage for these known physical properties,
 the inner PI controller only needs to correct for  small disturbances and transient errors
 between the target and observed current,  resulting in a stiffer and more accurate control response.
 
-<div class="sl">
-    <div class="sl1">
-        > Standard PID Mode
-    </div>
-</div>
+### Standard PID Mode
 
 The standard control mode uses a single-loop PID architecture augmented with predictive compensation terms.
 To improve tracking during dynamic maneuvers, the controller applies **velocity and acceleration feed-forwards,**
