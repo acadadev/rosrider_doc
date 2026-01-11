@@ -490,7 +490,7 @@ noise that can destabilize the PID loop.
 | BIQUAD_20HZ_4HZ | 5  | Bi-Quad Filter | 2nd Order Low-Pass Filter. Cutoff at 4Hz.                                                 |
 
 <div class="img_dv">
-  <figure class="img_fg75">
+  <figure class="img_fg60">
     <img src="../images/rosrider/velocity_filtering.png" alt="Velocity Filter Illustration" style="width: 100%;">
   </figure>
 </div>
