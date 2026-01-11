@@ -464,6 +464,12 @@ The `MotorConstantLeft` and `MotorConstantRight` values are used to multiply the
 
 By adjusting the TRIM parameter, we can effectively fine-tune the motor outputs to ensure accurate and precise robot motion, even in the presence of minor variations in motor performance or mechanical alignment.    
 
+This visualization demonstrates how the TRIM parameter affects differential drive robot trajectory:
+a positive TRIM value (+0.01) increases the left motor constant relative to the right,
+causing the robot to curve left (red path), while a negative TRIM value (-0.01) has the opposite effect,
+curving the robot right (blue path), and zero TRIM (0.00) results in straight-line motion (gray path)
+with equal motor constants.  
+
 ![Trim Model](../images/rosrider/trim_model.png)
 
 __Typical Values__
