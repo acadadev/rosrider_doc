@@ -40,6 +40,10 @@ faster response to disturbances, and a more stable overall system compared to si
 
 ### Power
 
+Built-in current monitoring and a hardware-resettable fuse safeguard the motors and battery. Software-based current limiting and remote threshold configuration enhance safety and flexibility.
+A 5V power supply can be enabled or disabled via software, providing flexibility for powering external sensors and devices.
+ROSRider utilizes standard JST connectors for motor and I2C connections, allowing for easy assembly and customization. Additionally, two QWIC connectors provide convenient expansion options for integrating various sensors and modules.
+
 | :---| :---|
 | **Power Input** | 6V to 15V wide input voltage |
 | **Software Controllable Switch** | MOSFET switch, reverse current protection |
@@ -49,20 +53,20 @@ faster response to disturbances, and a more stable overall system compared to si
 | **Power Output** | Software Controllable Auxiliary Power Output 5V, 400mA |
 | **Power Monitoring** | Measures and reports bus voltage, bus current, independent motor currents |
 
-Built-in current monitoring and a hardware-resettable fuse safeguard the motors and battery. Software-based current limiting and remote threshold configuration enhance safety and flexibility.
-A 5V power supply can be enabled or disabled via software, providing flexibility for powering external sensors and devices.
-ROSRider utilizes standard JST connectors for motor and I2C connections, allowing for easy assembly and customization. Additionally, two QWIC connectors provide convenient expansion options for integrating various sensors and modules.
 
 ### Communications
+
+The device currently uses I2C for communication, but it can also operate over USB, which is primarily used for firmware updates.
 
 | :---| :---|
 | **I2C** | Dual QWIC ports, also available on header |
 | **USB** | CDC-USB Serial, 921600 Bauds |
 | **Serial** | Standard Serial Port, available as JST connector or header |
 
-The device currently uses I2C for communication, but it can also operate over USB, which is primarily used for firmware updates.
 
 ### Software
+
+This project is primarily a software-driven effort, and we continually develop and update our software as part of an ongoing, continuous development cycle.
 
 | :---| :---|
 | **ROS Drivers** | C++ Drivers for ROS2 Humble and ROS2 Jazzy |
@@ -71,7 +75,6 @@ The device currently uses I2C for communication, but it can also operate over US
 | **Parameter Manager** | Custom software to quickly and remotely set parameters. Useful for tuning |
 | **Calibration Software** | Scripts to determine torque constant of motors |
 
-This project is primarily a software-driven effort, and we continually develop and update our software as part of an ongoing, continuous development cycle.
 
 ### Supported Platforms
 
