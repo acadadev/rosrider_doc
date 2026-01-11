@@ -61,9 +61,7 @@ or **Hard-Reset** the board for critical power supply faults (`POWER_BAD`, `OVER
 | DRIVE_MODE_LSB | b0  | Drive Mode Right Bit               |
 
 Although `FAULT_RIGHT` and `FAULT_LEFT` are monitored by the hardware (active below 12V), they are redundant in this implementation.
-The software utilizes a more precise method for monitoring bus voltage and current, so these specific flags can be safely ignored.  
-
----
+The software utilizes a more precise method for monitoring bus voltage and current, so these specific flags can be safely ignored.
 
 | DRIVE_MODE | Mode | Description                                                         |
 |------------|------|---------------------------------------------------------------------|
