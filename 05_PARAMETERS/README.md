@@ -337,10 +337,6 @@ __Coefficients__
     </div>
 </div>
 
-__Classic PID struggling to catch the target setpoint__
-
-![PID Mode Comparison](../images/rosrider/PID_modes.png)
-
 __Typical Values__
 
 ```yaml
