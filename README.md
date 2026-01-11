@@ -28,7 +28,7 @@ This approach encourages creativity, reduces costs, and promotes the reuse of ex
   </figure>
 </div>
 
-__ROS Enabled Robotics__
+### ROS Enabled Robotics
 
 The typical minimal setup incorporates two encoder gear motors, a Raspberry Pi computer, and a ROSRider card, all seamlessly integrated into a minimal footprint.
 This integrated control card, paired with its comprehensive ROS software package, streamlines development by handling complex low-level tasks. This empowers developers to rapidly prototype and experiment with autonomous vehicle concepts, making it an ideal toolkit for learning and innovation in robotics.
@@ -45,7 +45,7 @@ This feature prevents boot conflicts caused by LiDAR serial output during system
   </figure>
 </div>
 
-__Supported Motors__
+### Supported Motors
 
 ROSRider can drive a wide range of encoder gear motors, from simple DC motors to high-precision gear motors commonly found in robotic vacuum cleaners. It supports both single-phase and dual-phase encoders, with parameters such as encoder PPR and gear reduction ratio configurable through YAML files. The dual-channel drivers, delivering 1A continuous and 2.8A peak current, provide ample power for various robotic applications.
 
@@ -64,7 +64,7 @@ ROSRider can drive a wide range of encoder gear motors, from simple DC motors to
   </figure>
 </div>
 
-__Gazebo Simulation Support__
+### Gazebo Simulation Support
 
 To further enhance the integration of ROSRider with open-source robotics, we have developed two open-source robot platforms: Sorcerer and Caretta. These low-cost, pre-built robots, accompanied by URDF files for ROS and Gazebo simulation, streamline the development process. Developers can rapidly prototype and test algorithms in simulation before deploying them to physical hardware, significantly accelerating development time and reducing costs associated with physical experimentation.
 
