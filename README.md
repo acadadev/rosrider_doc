@@ -147,7 +147,7 @@ In standard operation, this acts as a direct voltage adder proportional to the t
 
 Crucially, in **Cascaded mode**, this feed-forward is not ignored but rather architecturally
 shifted to the inner loop to improve physical accuracy; because the motor’s generated
-Back-EMF naturally "fights back" against the driving current, the inner loop explicitly calculates and 
+Back-EMF naturally **fights back** against the driving current, the inner loop explicitly calculates and 
 injects a Back-EMF compensation term (`EB_ff`).  
 
 This ensures that the voltage required to simply maintain speed is supplied immediately, 
