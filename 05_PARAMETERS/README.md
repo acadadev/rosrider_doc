@@ -515,7 +515,7 @@ __Filters Explained__
    - Pros: Capable of sharp cutoffs (removing specific frequencies) better than EWMA.
    - Cons: More complex; incorrect configuration can lead to instability.
 
-![EWMA Filter Plot](../images/rosrider/plot_biquad.png)
+![EWMA Filter Plot](../images/rosrider/plot_biquad_ewma.png)
 
 This plot compares the step response characteristics of five low-pass filters when subjected to a step input from 0 to 24 at iteration 16.
 Three Exponential Weighted Moving Average (EWMA) filters with window sizes N=4, 8, and 16 are compared against two second-order Biquad filters
