@@ -50,8 +50,6 @@ You should see a message indicating successful entry into bootloader mode, which
  - **** .
  - **Firmware Compatibility** Always use the firmware provided by ACADA Robotics for your specific model.
 
-By following these steps and adhering to the specific instructions provided by ACADA Robotics, you can successfully update your ROSRider's firmware and enhance its capabilities.
-
 <div class="ck">
     <div class="ck1">
         ⚠️&nbsp;Before Starting Update
