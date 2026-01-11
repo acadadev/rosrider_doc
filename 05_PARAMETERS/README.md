@@ -184,13 +184,13 @@ MAX_RPM: 160.0
 | RIGHT_KD    | float  | PID differential for right motor | 0.0     |
 | K_FB_WINDUP | float  | Anti windup coefficient          | 0.5     |
 
-__PID Control Loop Parameters__
+__Control Loop Parameters__
 
 These parameters govern the closed-loop velocity control for the drive motors.
 The system uses a classic PID controller with a back-calculation anti-windup
 strategy to manage integrator saturation.  
 
-__PID Coefficients__
+__Coefficients__
 
 Standard tuning constants for the outer velocity loop.
 These values determine how aggressively the motor corrects errors between
@@ -204,7 +204,7 @@ __Output Constraints & Saturation__
 
  - `UPPER_LIMIT` Hard caps the controller output to match the physical limits of the motor driver or to limit maximum voltage.
 
-__Anti-Windup__
+__Anti Windup__
 
  - `K_FB_WINDUP` A **feed-back** gain used to dynamically desaturate the integral term. When the calculated PWM output exceeds `UPPER_LIMIT`, the difference (excess) is multiplied by `K_FB_WINDUP` and subtracted from the integral accumulator.
 
