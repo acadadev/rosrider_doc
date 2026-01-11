@@ -94,7 +94,8 @@ __OTHER CHAPTERS__
 
 __TODO__
 
-- revisit parameters, add more description
+- add images to parameters { adc, sync }
+- PID tuner video and GIF
 - Procedures
 - rosrider_diag, vis-pid
 - rosrider_diag, parameter-manager
