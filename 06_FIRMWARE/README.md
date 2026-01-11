@@ -11,9 +11,6 @@ description: "Updating Firmware of ROSRider control card"
     </div>
 </div>
 
-To ensure long-term usability and adaptability, the ROSRider card supports firmware updates via USB.
-This allows for continuous improvement and the addition of new features, without requiring specialized programming tools or hardware modifications.  
-
 <div class="ck">
     <div class="ck1">
         ⚠️&nbsp;Before Starting Update
