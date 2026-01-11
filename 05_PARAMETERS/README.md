@@ -376,6 +376,8 @@ To prevent jitter at very low speeds, the model features a specific gating mecha
  - **Above Threshold:** The full Stribeck model is active. (Static Kick + Coulomb + Viscous)
  - **Below Thrshold:** The aggressive static kick and viscous terms are **disabled.** Only the constant `COULOMB_RUN` voltage is applied. This prevents low-speed oscillation while maintaining sufficient holding force to keep the robot ready to move.
 
+![Stribeck Friction Model](../images/rosrider/scv_friction_model.png)
+
 __Parameters__
 
  - `OUTER_SCV` Enables SCV Model. If `False` simple dead zones are applied.
