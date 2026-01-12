@@ -239,22 +239,9 @@ K_FB_WINDUP: 0.5
 
 __Classic PID Controller__
 
-In this graph, the system relies entirely on the error signal
-(the difference between the target and actual speed) to react. 
-Because the PID controller only knows something is wrong after it sees an error, 
-there is a significant time lag and slow rise time. 
-The **sluggish** behavior occurs because the integral term (I) has to slowly build up enough 
-effort to overcome static friction and inertia before the robot starts moving toward the 0.4 m/s target.
-
 ![PID Classic](../images/rosrider/plot_pid_classic.png)
 
 __Cascaded PID with Feedforwards__
-
-This graph shows the benefit of a hierarchical and predictive approach. The key drivers for this tight tracking are:
-
- - **Acceleration Feedforward:** Unlike the classic version, this system sees the 0.4 m/s target *step* and immediately calculates the torque (current) required to accelerate that mass. It injects this into the output before an error even exists.
- - **Stribeck Friction Modeling:** By modeling the friction curve, the controller pre-compensates for the *break-away* force needed at 0 velocity, effectively *neutralizing* the friction so the PID only has to handle minor disturbances.
- - **Velocity-to-Current Cascade** The outer velocity loop doesn't talk to the motor voltage directly; it tells the inner loop, **I need X amount of current.** The inner current loop is much faster, ensuring the motor torque actually matches what the velocity loop (and feedforwards) requested, leading to the near-perfect step response.
 
 ![PID Cascaded](../images/rosrider/plot_pid_cascaded.png)
 
