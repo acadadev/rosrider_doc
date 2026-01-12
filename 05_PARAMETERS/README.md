@@ -241,9 +241,9 @@ K_FB_WINDUP: 0.5
 
 This graph above illustrates a well-tuned PID loop where the Omega (green) tracks the Target (red) with minimal overshoot and stable convergence.
 
- - **Acceleration Feedforward:** Unlike the classic version, this system sees the 0.4 m/s target *step* and immediately calculates the torque (current) required to accelerate that mass. It injects this into the output before an error even exists.
- - **Stribeck Friction Modeling:** By modeling the friction curve, the controller pre-compensates for the *break-away* force needed at 0 velocity, effectively *neutralizing* the friction so the PID only has to handle minor disturbances.
- - **Velocity-to-Current Cascade** The outer velocity loop doesn't talk to the motor voltage directly; it tells the inner loop, **I need X amount of current.** The inner current loop is much faster, ensuring the motor torque actually matches what the velocity loop (and feedforwards) requested, leading to the near-perfect step response.
+ - **Acceleration Feedforward:** Unlike the classic version, this system sees the 0.4 m/s target **step** and immediately calculates the torque (current) required to accelerate that mass. It injects this into the output before an error even exists.
+ - **Stribeck Friction Modeling:** By modeling the friction curve, the controller pre-compensates for the **break-away** force needed at 0 velocity, effectively **neutralizing** the friction so the PID only has to handle minor disturbances.
+ - **Velocity-to-Current Cascade** The outer velocity loop doesn't talk to the motor voltage directly; it tells the inner loop, *I need X amount of current.* The inner current loop is much faster, ensuring the motor torque actually matches what the velocity loop (and feedforwards) requested, leading to the near-perfect step response.
 
 __Cascaded control architecture__
 
