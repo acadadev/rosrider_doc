@@ -365,9 +365,9 @@ K_FF_ACCEL: 0.08
 | SCV_OMEGA_THRESHOLD    | float   | Below this threshold SCV will not be triggered         | 0.05    | 
 | SCV_LATCH_THRESHOLD    | float   | Below this threshold Static kick will not be triggered | 1.0     | 
 
-The graph below shows the total added friction volts as a function of angular velocity. `STATIC_KICK = 6V`, `STRIBECK_WIDTH = 16`, `COULOMB_RUN = 3V`, `VISCOUS_FRICTION = 0.001`, `SCV_LATCH_THRESHOLD = 2 rad/s`
-
 ![Stribeck Friction Model](../images/rosrider/plot_scv_model.png)
+
+The graph above shows the total added friction volts as a function of angular velocity. `STATIC_KICK = 6V`, `STRIBECK_WIDTH = 16`, `COULOMB_RUN = 3V`, `VISCOUS_FRICTION = 0.001`, `SCV_LATCH_THRESHOLD = 2 rad/s`
 
 __Advanced Friction Compensation (Stribeck Model)__
 
@@ -442,13 +442,15 @@ RIGHT_REVERSE_DEADZONE: 12
 | TRIM_MOTOR_K  | float | Motor constant for output calculation | 1.0     |
 | TRIM_CONSTANT | float | Trim value for motor output           | 1.0     |
 
-This graph below demonstrates how the TRIM parameter affects differential drive robot trajectory:
+![Trim Model](../images/rosrider/plot_trim.png)
+
+This graph above demonstrates how the TRIM parameter affects differential drive robot trajectory:
 a positive TRIM value (+0.01) increases the left motor constant relative to the right,
 causing the robot to curve left (red path), while a negative TRIM value (-0.01) has the opposite effect,
 curving the robot right (blue path), and zero TRIM (0.00) results in straight-line motion (gray path)
 with equal motor constants.  
 
-![Trim Model](../images/rosrider/plot_trim.png)
+
 
 __Trim Model__
 
@@ -489,11 +491,11 @@ TRIM_CONSTANT: 0.0
 | CURRENT_FILTER_TYPE | uint8 | Current Filter Type  | 3       |
 | OUTPUT_FILTER_TYPE  | uint8 | Output Filter Type   | 0       | 
 
-This plot below compares the step response characteristics of five low-pass filters when subjected to a step input from 0 to 24 at iteration 16.
-Three Exponential Weighted Moving Average (EWMA) filters with window sizes N=4, 8, and 16 are compared against two second-order Biquad filters
-designed for a 20Hz sampling rate with cutoff frequencies of 2Hz and 4Hz.  
-
 ![EWMA Filter Plot](../images/rosrider/plot_filter_response.png)
+
+This plot above compares the step response characteristics of five low-pass filters when subjected to a step input from 0 to 24 at iteration 16.
+Three Exponential Weighted Moving Average (EWMA) filters with window sizes N=4, 8, and 16 are compared against two second-order Biquad filters
+designed for a 20Hz sampling rate with cutoff frequencies of 2Hz and 4Hz. 
 
 The EWMA4 filter provides the fastest response but with the least smoothing, while EWMA16 offers the smoothest output at the cost of slower settling time.
 The BiQuad filters demonstrate superior frequency response control, with the 2Hz variant providing smooth steady-state performance and the 4Hz variant
