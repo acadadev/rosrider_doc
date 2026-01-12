@@ -240,9 +240,9 @@ K_FB_WINDUP: 0.5
 These plots below compare the step response of a **classic PID controller** (left)
 versus a **cascaded PID** with feedforwards and stribeck friction modeling (right).
 The control scheme on the right demonstrates significantly tighter tracking,
-eliminating the lag and slow rise time seen in the classic implementation.  
+eliminating the lag and slow rise time seen in the classic implementation.
 
-![PID Mode Comparison](../images/rosrider/plot_pid_modes.png)
+![PID Target High](../images/rosrider/pid_target_high.png)
 
 __Cascaded control architecture__
 
