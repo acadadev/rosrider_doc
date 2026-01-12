@@ -84,6 +84,43 @@ Please note that while `MODE_VEL is functional`, it remains untested and is not 
 
 If `INITIAL_UPDATE_ERROR` you can try to send a SYSCTL command to **restore factory defaults**  
 
+### System Control Commands
+
+This service is used to send high-level, single-byte system commands to control the overall state or
+mode of the robot's embedded system.
+
+| SYS COMMAND                  | Code | Description                        |
+|:-----------------------------|------|------------------------------------|
+| SYSCTL_CODE_RESET            | 0x01 | System Hard Reset                  |
+| SYSCTL_CODE_SOFTRESET        | 0x02 | System Soft Reset                  |
+| SYSCTL_CODE_ENCODER_RESET    | 0x04 | System Encoder Reset               |
+| SYSCTL_CODE_HIBERNATE        | 0x05 | System Hibernate Sleep             |
+| SYSCTL_CODE_PRINT_PARAMETERS | 0x06 | Print parameters on serial out     |
+| SYSCTL_CODE_PRINT_STATUS     | 0x07 | Print status on serial out         |
+| SYSCTL_CODE_RECORD_PID       | 0x08 | Record PID values in flash         |
+| SYSCTL_CODE_PRINT_KPID       | 0x09 | Print PID values on serial out     |
+| SYSCTL_CODE_DIR_LEFT_FWD     | 0x30 | Left motor forward override        |
+| SYSCTL_CODE_DIR_LEFT_REV     | 0x31 | Left motor reverse override        |
+| SYSCTL_CODE_DIR_RIGHT_FWD    | 0x32 | Right motor forward override       | 
+| SYSCTL_CODE_DIR_RIGHT_REV    | 0x33 | Right motor reverse override       |
+| SYSCTL_CODE_DIR_BOTH_FWD     | 0x34 | Motor directions forward override  |
+| SYSCTL_CODE_DIR_BOTH_REV     | 0x35 | Motor directions reverse override  |
+| SYSCTL_CODE_MODE1_ON         | 0x40 | Drivers MODE1 enabled              |
+| SYSCTL_CODE_MODE1_OFF        | 0x41 | Drivers MODE1 off                  |
+| SYSCTL_CODE_MODE2_ON         | 0x42 | Drivers MODE2 enabled (servo mode) |
+| SYSCTL_CODE_MODE2_OFF        | 0x43 | Drivers MODE2 off                  |
+| SYSCTL_CODE_AUX_ON           | 0x50 | 5V Aux power supply on             |
+| SYSCTL_CODE_AUX_OFF          | 0x51 | 5V Aux power supply off            |
+| SYSCTL_CODE_FACTORY_DEFAULTS | 0x99 | Factory Defaults. Requires reset   |
+| SYSCTL_CODE_PRINT_RTC        | 0xAA | Print RTC time on serial out       |
+| SYSCTL_CODE_ADC_START        | 0xE0 | Start ADC                          |
+| SYSCTL_CODE_ADC_STOP         | 0xE1 | Stop ADC                           |
+
+These system control commands provide the capability to **override critical settings** at the hardware level.
+While they can be used to issue commands to **recover the robot** from a difficult or unresponsive state, **users must exercise extreme caution**.
+Certain commands will result in the immediate **loss of connection** with the driver,
+potentially requiring a **system restart and/or direct physical intervention (e.g., pressing a reset button)** on the robot.
+
 __OTHER CHAPTERS__
 
 - slam
@@ -96,6 +133,7 @@ __TODO__
 
 - read_status, set drive mode
 - kt calibration
+- system control commands
 
 - Procedures
 - rosrider_diag, vis-pid
