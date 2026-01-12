@@ -237,12 +237,12 @@ K_FB_WINDUP: 0.5
 | CURRENT_OMEGA_K_RIGHT   | float   | Current Omega Compensation Right      | 0.0     |
 | R_ARM                   | float   | Motor Armature Resistance             | 2.0     |
 
-These plots below compare the step response of a **classic PID controller** (left)
-versus a **cascaded PID** with feedforwards and stribeck friction modeling (right).
-The control scheme on the right demonstrates significantly tighter tracking,
-eliminating the lag and slow rise time seen in the classic implementation.
+
+The plot displays real telemetry recorded during a controlled acceleration from 0 to 0.4 m/s.
 
 ![PID Target High](../images/rosrider/pid_target_high.png)
+
+This data illustrates a well-tuned PID loop where the Omega (green) tracks the Target (red) with minimal overshoot and stable convergence.
 
 __Cascaded control architecture__
 
