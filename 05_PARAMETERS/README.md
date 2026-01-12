@@ -237,17 +237,13 @@ K_FB_WINDUP: 0.5
 | CURRENT_OMEGA_K_RIGHT   | float   | Current Omega Compensation Right      | 0.0     |
 | R_ARM                   | float   | Motor Armature Resistance             | 2.0     |
 
-__Cascaded PID with Feedforwards__
+![PID Cascaded](../images/rosrider/plot_pid_cascaded.png)
 
-This graph shows the benefit of a hierarchical and predictive approach. The key drivers for this tight tracking are:
+This graph above illustrates a well-tuned PID loop where the Omega (green) tracks the Target (red) with minimal overshoot and stable convergence.
 
  - **Acceleration Feedforward:** Unlike the classic version, this system sees the 0.4 m/s target *step* and immediately calculates the torque (current) required to accelerate that mass. It injects this into the output before an error even exists.
  - **Stribeck Friction Modeling:** By modeling the friction curve, the controller pre-compensates for the *break-away* force needed at 0 velocity, effectively *neutralizing* the friction so the PID only has to handle minor disturbances.
  - **Velocity-to-Current Cascade** The outer velocity loop doesn't talk to the motor voltage directly; it tells the inner loop, **I need X amount of current.** The inner current loop is much faster, ensuring the motor torque actually matches what the velocity loop (and feedforwards) requested, leading to the near-perfect step response.
-
-![PID Cascaded](../images/rosrider/plot_pid_cascaded.png)
-
-This data illustrates a well-tuned PID loop where the Omega (green) tracks the Target (red) with minimal overshoot and stable convergence.
 
 __Cascaded control architecture__
 
