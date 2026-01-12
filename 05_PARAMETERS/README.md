@@ -237,7 +237,7 @@ K_FB_WINDUP: 0.5
 | CURRENT_OMEGA_K_RIGHT   | float   | Current Omega Compensation Right      | 0.0     |
 | R_ARM                   | float   | Motor Armature Resistance             | 2.0     |
 
-__Plot 1: Classic PID Controller__
+__Classic PID Controller__
 
 In this graph, the system relies entirely on the error signal
 (the difference between the target and actual speed) to react. 
