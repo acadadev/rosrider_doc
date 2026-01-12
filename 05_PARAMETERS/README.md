@@ -242,9 +242,13 @@ versus a **cascaded PID** with feedforwards and stribeck friction modeling (righ
 The control scheme on the right demonstrates significantly tighter tracking,
 eliminating the lag and slow rise time seen in the classic implementation.
 
-The plot displays real telemetry recorded during a controlled acceleration from 0 to 0.4 m/s.
+Thes plot displays real telemetry recorded during a controlled acceleration from 0 to 0.4 m/s.
 
-![PID Target High](../images/rosrider/pid_target_high.png)
+![PID Classic](../images/rosrider/plot_pid_classic.png)
+
+![PID Cascaded](../images/rosrider/plot_pid_cascaded.png)
+
+
 
 This data illustrates a well-tuned PID loop where the Omega (green) tracks the Target (red) with minimal overshoot and stable convergence.
 
